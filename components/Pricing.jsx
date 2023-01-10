@@ -35,9 +35,9 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                Basic
+                10 Yard Dump Trailer
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$0</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$320</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 per month
               </p>
@@ -57,7 +57,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Full Access to Landingfolio
+                  Dump Fees Included
                 </li>
 
                 <li className="flex items-center">
@@ -75,7 +75,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  100 GB Free Storage
+                  Good for Rooms
                 </li>
 
                 <li className="flex items-center">
@@ -93,7 +93,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Unlimited Visitors
+                  Empty Small Storage
                 </li>
 
                 <li className="flex items-center">
@@ -111,7 +111,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  10 Agents
+                  Personal Projects
                 </li>
 
                 <li className="flex items-center">
@@ -177,9 +177,9 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                Standard
+                10 Yard Dump Trailer
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$29</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$360</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 per month
               </p>
@@ -199,7 +199,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Full Access to Landingfolio
+                  Dump Fees Included
                 </li>
 
                 <li className="flex items-center">
@@ -217,7 +217,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  100 GB Free Storage
+                  Good for roofing
                 </li>
 
                 <li className="flex items-center">
@@ -235,7 +235,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Unlimited Visitors
+                  Home Remodels
                 </li>
 
                 <li className="flex items-center">
@@ -253,7 +253,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  10 Agents
+                  Small businesses
                 </li>
 
                 <li className="flex items-center">
@@ -310,8 +310,10 @@ export default function Pricing() {
                   />
                 </svg>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-gray-900">Pro</h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$49</p>
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">
+                15 Yard Dump Trailer
+              </h3>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 per month
               </p>
@@ -331,7 +333,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Full Access to Landingfolio
+                  Dump Fees Included
                 </li>
 
                 <li className="flex items-center">
@@ -349,7 +351,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  100 GB Free Storage
+                  Large Garages
                 </li>
 
                 <li className="flex items-center">
@@ -367,7 +369,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Unlimited Visitors
+                  Personal Projects
                 </li>
 
                 <li className="flex items-center">
@@ -385,7 +387,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  10 Agents
+                  Property Cleanout
                 </li>
 
                 <li className="flex items-center">
@@ -443,9 +445,9 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                Exclusive
+                15 Yard Dump Trailer
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$99</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 per month
               </p>
@@ -465,7 +467,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Full Access to Landingfolio
+                  Dump Fees Included
                 </li>
 
                 <li className="flex items-center">
@@ -483,7 +485,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  100 GB Free Storage
+                  Large roofing project
                 </li>
 
                 <li className="flex items-center">
@@ -501,7 +503,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Unlimited Visitors
+                  Remodel Projects
                 </li>
 
                 <li className="flex items-center">
@@ -519,7 +521,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  10 Agents
+                  Contractors
                 </li>
 
                 <li className="flex items-center">
