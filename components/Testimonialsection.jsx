@@ -84,8 +84,8 @@ export default function Testimonialsection() {
                   </div>
                   <Link
                     href={testimonial.link}
+                    target="_blank"
                     rel="noopener noreferrer"
-                    _target="blank"
                     className="inline-block"
                   >
                     <svg
@@ -108,7 +108,7 @@ export default function Testimonialsection() {
                     <Link
                       href={testimonial.link}
                       className="block text-green-700 mt-4"
-                      _target="blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       See Review

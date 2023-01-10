@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import truck from "../public/truck.png";
+import Link from "next/link";
 
 export default function Mission() {
   return (
@@ -27,16 +28,16 @@ export default function Mission() {
               Exercitation veniam consequat.
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-              <div className="absolute transition-all duration-200 rounded-md -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-              <a
-                href="#"
+              <Link
+                href="#contact"
                 title=""
-                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-md"
+                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-gray-200 bg-transparent 
+                border border-red-600 rounded-md hover:bg-red-600 hover:text-white transition-all duration-200"
                 role="button"
               >
                 {" "}
                 Book a Trailer{" "}
-              </a>
+              </Link>
             </div>
           </div>
 
