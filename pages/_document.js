@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -16,7 +17,6 @@ export default function Document() {
         `,
           }}
         />
-        <script dangerouslySetInnerHTML={{ __html: modeScript }} />
       </Head>
       <body className="bg-zinc-200 dark:bg-zinc-900">
         <Script
