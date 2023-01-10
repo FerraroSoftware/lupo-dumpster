@@ -91,7 +91,7 @@ export default function Footer() {
                   </ul>
                 </div>
 
-                <div>
+                {/* <div>
                   <h6 className="text-base font-semibold text-white">
                     Resources
                   </h6>
@@ -141,9 +141,9 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                   <h6 className="text-base font-semibold text-white">Legals</h6>
 
                   <ul className="mt-6 space-y-4">
@@ -191,7 +191,7 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
 
               <hr className="mt-12 border-gray-800 sm:mt-16" />
