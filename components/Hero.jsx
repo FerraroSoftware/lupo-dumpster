@@ -3,6 +3,7 @@ import Image from "next/image";
 import lupodumpster from "../public/lupo-dumpster.png";
 import logo from "../public/logo.svg";
 import Link from "next/link";
+import { Button } from "./Button";
 export default function Hero() {
   return (
     <div className="">
@@ -50,14 +51,20 @@ export default function Hero() {
             </div>
 
             <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4 sm:ml-auto">
-              <Link
+              {/* <Link
                 href="tel:7273176717"
                 title=""
-                className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-red-600 rounded-md hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-900"
+                className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-900"
                 role="button"
               >
                 Call Now
-              </Link>
+              </Link> */}
+              <Button
+                className="inline-flex"
+                href="tel:7273176717"
+                variant="outline"
+                content="Call Us Now"
+              ></Button>
             </div>
 
             <div className="flex ml-4 lg:hidden">
@@ -133,7 +140,7 @@ export default function Hero() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="#testimonial"
                   title=""
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
