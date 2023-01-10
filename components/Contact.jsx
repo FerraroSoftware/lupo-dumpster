@@ -159,7 +159,7 @@ export default function Contact() {
                       className="text-base font-medium text-gray-900"
                     >
                       {" "}
-                      Company name{" "}
+                      Days Needed{" "}
                     </label>
                     <div className="mt-2.5 relative">
                       <input
