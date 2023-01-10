@@ -16,7 +16,7 @@ export default function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 mt-12 text-center sm:grid-cols-2 xl:grid-cols-4 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 sm:mt-16 lg:mt-20">
-          <div className="bg-white border border-gray-200 rounded-2xl sm:rounded-3xl">
+          <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
                 <svg
@@ -137,7 +137,7 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   title=""
-                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now
@@ -150,7 +150,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          <div className="relative bg-white border border-red-600 rounded-2xl sm:rounded-3xl">
+          <div className="relative bg-white border border-red-600 rounded-2xl ">
             <div className="absolute inset-x-0 top-0 transform translate-y-px">
               <div className="flex justify-center transform -translate-y-1/2">
                 <span className="inline-flex px-4 py-1 text-xs font-semibold tracking-widest text-white uppercase bg-red-600 rounded-full ring-4 ring-white">
@@ -279,7 +279,7 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   title=""
-                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-xl  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
                   role="button"
                 >
                   Book Now
@@ -292,7 +292,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl sm:rounded-3xl">
+          <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
                 <svg
@@ -411,7 +411,7 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   title=""
-                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now
@@ -424,7 +424,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl sm:rounded-3xl">
+          <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
                 <svg
@@ -545,7 +545,7 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   title=""
-                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now

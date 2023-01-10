@@ -28,7 +28,8 @@ export default function Footer() {
               <Link
                 href="#contact"
                 title=""
-                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-transparent border border-red-600 rounded-md"
+                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal  bg-transparent 
+                 text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-red-600 hover:text-white"
                 role="button"
               >
                 {" "}
