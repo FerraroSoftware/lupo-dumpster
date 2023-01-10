@@ -25,11 +25,32 @@ export default function FeaturedServices() {
               <h3 className="text-sm font-normal tracking-widest uppercase">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-300">
                   {" "}
+                  Furniture Removal{" "}
+                </span>
+              </h3>
+              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
+                Furniture Removal
+              </p>
+              <p className="mt-4 text-base font-normal text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <div className="absolute inset-x-0 bottom-0 flex items-center justify-center">
+              <Image className="object-contain w-full" src={clean} alt="" />
+            </div>
+          </div>
+          <div className="relative overflow-hidden bg-zinc-700 rounded-2xl">
+            <div className="px-6 pt-8 pb-72 sm:pb-80 lg:pb-52 xl:pb-64 sm:px-12 lg:px-8 xl:px-12 sm:pt-14">
+              <h3 className="text-sm font-normal tracking-widest uppercase">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-300">
+                  {" "}
                   Unlimited resources{" "}
                 </span>
               </h3>
               <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Design Things Fast
+                Junk Removal
               </p>
               <p className="mt-4 text-base font-normal text-gray-400">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -51,33 +72,11 @@ export default function FeaturedServices() {
               <h3 className="text-sm font-normal tracking-widest uppercase">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-300">
                   {" "}
-                  Connect Easily{" "}
-                </span>
-              </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Grow Your Audience
-              </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-            </div>
-
-            <div className="absolute inset-x-0 bottom-0 flex items-center justify-center">
-              <Image className="object-contain w-full" src={clean} alt="" />
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden bg-zinc-700 rounded-2xl">
-            <div className="px-6 pt-8 pb-72 sm:pb-80 lg:pb-52 xl:pb-64 sm:px-12 lg:px-8 xl:px-12 sm:pt-14">
-              <h3 className="text-sm font-normal tracking-widest uppercase">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-300">
-                  {" "}
                   Use Anywhere{" "}
                 </span>
               </h3>
               <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Support All Devices
+                Clean Out Service
               </p>
               <p className="mt-4 text-base font-normal text-gray-400">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do

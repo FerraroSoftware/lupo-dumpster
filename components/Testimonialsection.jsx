@@ -4,51 +4,51 @@ const testimonials = [
   {
     name: "Brandi McLaughlin",
     review:
-      "I had a wonderful experience with Lupo Enterprises.  They were helpful and friendly and professional on the phone.  They showed up on time and were polite and efficient. They really helped me out of a jam ...",
+      "I had a wonderful experience with Lupo Enterprises.  They were helpful and friendly and professional on the phone.  They showed up on time and were polite and efficient. They really helped me out of a jam.",
     link: "https://g.co/kgs/r7rq87",
   },
   {
-    name: "John Doe",
+    name: "Star Hinshaw",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "I can’t say enough good things about Lupo Enterprises. Alex, Amanda, and the Lupo team did an excellent job helping me out. I was in a time sensitive bind selling property and needed junk removal services.",
+    link: "https://g.co/kgs/5SV4gd",
   },
   {
-    name: "John Doe",
+    name: "Don Brown",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "Purchased new living room furniture yesterday. To my surprise, they are delivering the next day! I needed to find someone to take the old furniture away asap! Luckily I found Lupo Enterprises!",
+    link: "https://g.co/kgs/fHknh9",
   },
 
   {
-    name: "John Doe",
+    name: "Vitina Stevens",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "Alex made it extremely easy to rent. He always responds back to text & checked in on us to see if all was well. The dumpster was the perfect size, 20 yard, and fit a whole house gutting. I would definitely reccommend.",
+    link: "https://g.co/kgs/9WPzpw",
   },
   {
-    name: "John Doe",
+    name: "Anne-Marie Hoeck",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "Alex was very quick to respond to messages and work out details of scope of work needed. Quick and efficient on the day of the job at multiple locations. Second time hiring him and will definitely again.",
+    link: "https://g.co/kgs/Z9fmVW",
   },
   {
-    name: "John Doe",
+    name: "Dominique Parise",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "Very professional & reliable. I've used other dumpster rentals years ago but this one was hassle FREE. Thank you for making this junk removal less stressful. I highly recommend Lupo Dumpster Rentals.",
+    link: "https://g.co/kgs/BM88tE",
   },
   {
-    name: "John Doe",
+    name: "Rosa Barbosa",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "Lupo Dumpster Rental is a great company. Their owners and employees are reliable, dependable and honest. They serve with excellence and go the extra mile to help their clients.",
+    link: "https://g.co/kgs/GvrQmk",
   },
   {
-    name: "John Doe",
+    name: "Don Lossing",
     review:
-      "Highly recommend this company. They were very professional and courteous. They were on time and the dumpster was delivered and picked up on time. I will definitely use them again.",
-    link: "#",
+      "I called Alex today with an urgent dumpster need. After explaining the details surrounding my delimma, Alex simply said, 'I can make this work.' - TOP NOTCH CUSTOMER SERVICE!",
+    link: "https://g.co/kgs/uGrBRx",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function Testimonialsection() {
                     href={testimonial.link}
                     rel="noopener noreferrer"
                     _target="blank"
-                    className="inline-block text-sky-500"
+                    className="inline-block"
                   >
                     <svg
                       width="26"

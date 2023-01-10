@@ -20,7 +20,7 @@ export default function Hero() {
               <Link
                 href="#services"
                 title=""
-                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
               >
                 Services
               </Link>
@@ -28,7 +28,7 @@ export default function Hero() {
               <Link
                 href="#pricing"
                 title=""
-                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
               >
                 Pricing
               </Link>
@@ -36,7 +36,7 @@ export default function Hero() {
               <Link
                 href="#testimonial"
                 title=""
-                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
               >
                 Testimonials
               </Link>
@@ -44,27 +44,27 @@ export default function Hero() {
               <Link
                 href="#contact"
                 title=""
-                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
               >
                 Contact
               </Link>
             </div>
 
             <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4 sm:ml-auto">
-              {/* <Link
+              <Link
                 href="tel:7273176717"
                 title=""
-                className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-900"
+                className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-red-600 hover:text-white "
                 role="button"
               >
                 Call Now
-              </Link> */}
-              <Button
+              </Link>
+              {/* <Button
                 className="inline-flex"
                 href="tel:7273176717"
                 variant="outline"
                 content="Call Us Now"
-              ></Button>
+              ></Button> */}
             </div>
 
             <div className="flex ml-4 lg:hidden">
@@ -133,7 +133,7 @@ export default function Hero() {
                 <Link
                   href="#contact"
                   title=""
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-[#BA2525] border border-transparent rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md shadow-sm hover:bg-red-500 focus:outline-none "
                   role="button"
                 >
                   Request Rental
@@ -142,7 +142,7 @@ export default function Hero() {
                 <Link
                   href="#testimonial"
                   title=""
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none hover:text-black"
                   role="button"
                 >
                   Learn More
