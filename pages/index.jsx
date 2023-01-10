@@ -26,7 +26,7 @@ export default function Home() {
       <Testimonialsection></Testimonialsection>
       <FeaturedServices></FeaturedServices>
       <Calltoaction></Calltoaction>
-      <Steps></Steps>
+      {/* <Steps></Steps> */}
       <Mission></Mission>
       <Pricing></Pricing>
       <Contact></Contact>

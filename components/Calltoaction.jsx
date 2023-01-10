@@ -27,12 +27,12 @@ export default function Calltoaction() {
 
           <div className="mt-8 sm:mt-10">
             <a
-              href="#"
+              href="#contact"
               title=""
               className="inline-flex items-center justify-center px-8 py-3 text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
               role="button"
             >
-              Explore Now
+              Contact Us Now
             </a>
           </div>
         </div>

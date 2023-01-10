@@ -35,7 +35,7 @@ export default function Mission() {
                 role="button"
               >
                 {" "}
-                Explore Blocks{" "}
+                Book a Trailer{" "}
               </a>
             </div>
           </div>

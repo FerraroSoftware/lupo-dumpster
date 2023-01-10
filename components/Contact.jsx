@@ -1,8 +1,8 @@
 import React from "react";
-
+import Link from "next/link";
 export default function Contact() {
   return (
-    <section className="py-10 sm:py-16 lg:py-24">
+    <section className="py-10 sm:py-16 lg:py-24" id="contact">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-100 sm:text-4xl lg:text-5xl">
@@ -32,9 +32,12 @@ export default function Contact() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <p className="mt-6 text-lg font-medium text-gray-900">
+                <Link
+                  href="tel:7273176717"
+                  className="mt-6 text-lg font-medium text-gray-900"
+                >
                   727-317-6717
-                </p>
+                </Link>
               </div>
             </div>
 
@@ -166,7 +169,7 @@ export default function Contact() {
                         type="text"
                         name=""
                         id=""
-                        placeholder="Enter How Many Rental Days"
+                        placeholder="Enter how many rental days you need"
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
                     </div>

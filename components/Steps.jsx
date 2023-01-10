@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Steps() {
   return (
-    <section className="py-12 bg-gray-50 sm:py-16 lg:py-20 xl:py-20">
+    <section className="py-12  sm:py-16 lg:py-20 xl:py-20">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-5xl lg:grid-cols-2 gap-y-12 gap-x-16">
-          <div>
+          <div className="">
             <p className="text-base font-semibold text-red-600">
               Say hello to Landingfolio
             </p>

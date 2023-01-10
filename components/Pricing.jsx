@@ -139,7 +139,7 @@ export default function Pricing() {
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
-                  Start for Free
+                  Book Now
                 </a>
               </div>
 
@@ -281,7 +281,7 @@ export default function Pricing() {
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-xl  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
                   role="button"
                 >
-                  Start 14 Days Trial
+                  Book Now
                 </a>
               </div>
 
@@ -413,7 +413,7 @@ export default function Pricing() {
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
-                  Start 14 Days Trial
+                  Book Now
                 </a>
               </div>
 
@@ -547,7 +547,7 @@ export default function Pricing() {
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
-                  Start 14 Days Trial
+                  Book Now
                 </a>
               </div>
 

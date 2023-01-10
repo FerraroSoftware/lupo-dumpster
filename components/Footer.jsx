@@ -39,10 +39,10 @@ export default function Footer() {
           <div className="overflow-hidden lg:-ml-12 lg:-my-8 bg-base-900 rounded-xl xl:col-span-4">
             <div className="p-8 sm:p-12">
               <div className="grid grid-cols-2 gap-y-12 sm:grid-cols-3 gap-x-12 xl:gap-x-16">
-                {/* <div>
-                  <h6 className="text-base font-semibold text-white">
-                    Platform
-                  </h6>
+                <div>
+                  <h2 className="text-base font-semibold text-white">
+                    Sections
+                  </h2>
 
                   <ul className="mt-6 space-y-4">
                     <li>
@@ -89,7 +89,7 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                </div> */}
+                </div>
 
                 {/* <div>
                   <h6 className="text-base font-semibold text-white">
@@ -143,7 +143,7 @@ export default function Footer() {
                   </ul>
                 </div> */}
 
-                <div>
+                {/* <div>
                   <h6 className="text-base font-semibold text-white">Legals</h6>
 
                   <ul className="mt-6 space-y-4">
@@ -191,7 +191,7 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
 
               <hr className="mt-12 border-gray-800 sm:mt-16" />
@@ -208,7 +208,7 @@ export default function Footer() {
                     title=""
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-gray-800 duraiton-200"
+                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-green-800 duraiton-200"
                   >
                     <svg
                       className="w-5 h-5"
@@ -225,7 +225,7 @@ export default function Footer() {
                     title=""
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-gray-800 duraiton-200"
+                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-green-800 duraiton-200"
                   >
                     <svg
                       className="w-5 h-5"
@@ -242,7 +242,7 @@ export default function Footer() {
                     title=""
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-gray-800 duraiton-200"
+                    className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-green-800 duraiton-200"
                   >
                     <svg
                       className="w-5 h-5"

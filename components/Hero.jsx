@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import lupodumpster from "../public/lupo-dumpster.png";
 import logo from "../public/logo.svg";
+import Link from "next/link";
 export default function Hero() {
   return (
     <div className="">
@@ -9,54 +10,54 @@ export default function Hero() {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="#" title="" className="">
+              <Link href="/" title="" className="">
                 <Image className="w-auto h-14" src={logo} alt="logo" />
-              </a>
+              </Link>
             </div>
 
             <div className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
-              <a
+              <Link
                 href="#"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
-                Products
-              </a>
+                Services
+              </Link>
 
-              <a
-                href="#"
-                title=""
-                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
-              >
-                Features
-              </a>
-
-              <a
+              <Link
                 href="#"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
                 Pricing
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="#"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
-                Support
-              </a>
+                Testimonials
+              </Link>
+
+              <Link
+                href="#"
+                title=""
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+              >
+                Contact
+              </Link>
             </div>
 
             <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4 sm:ml-auto">
-              <a
-                href="#"
+              <Link
+                href="tel:7273176717"
                 title=""
                 className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-red-600 rounded-md hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-900"
                 role="button"
               >
                 Call Now
-              </a>
+              </Link>
             </div>
 
             <div className="flex ml-4 lg:hidden">
@@ -122,23 +123,23 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-col items-stretch justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:mt-10 lg:justify-start sm:flex-wrap">
-                <a
-                  href="#"
+                <Link
+                  href="#contact"
                   title=""
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-[#BA2525] border border-transparent rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
                   role="button"
                 >
                   Request Rental
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   title=""
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

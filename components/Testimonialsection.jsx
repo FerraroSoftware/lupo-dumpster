@@ -107,7 +107,7 @@ export default function Testimonialsection() {
                     {testimonial.review}
                     <Link
                       href={testimonial.link}
-                      className="block text-sky-500"
+                      className="block text-green-700 mt-4"
                       _target="blank"
                       rel="noopener noreferrer"
                     >
