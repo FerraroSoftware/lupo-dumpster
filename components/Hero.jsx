@@ -5,7 +5,7 @@ import logo from "../public/logo.svg";
 export default function Hero() {
   return (
     <div className="">
-      <header className="py-4 bg-[#14120E] sm:py-5">
+      <header className="py-4 sm:py-5">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
@@ -73,9 +73,9 @@ export default function Hero() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
                       d="M4 6h16M4 12h16M4 18h16"
                     />
                   </svg>
@@ -90,9 +90,9 @@ export default function Hero() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>

@@ -1,5 +1,12 @@
 import Head from "next/head";
+import Calltoaction from "../components/Calltoaction";
+import Contact from "../components/Contact";
+import FeaturedServices from "../components/FeaturedServices";
 import Hero from "../components/Hero";
+import Mission from "../components/Mission";
+import Pricing from "../components/Pricing";
+import Steps from "../components/Steps";
+import Testimonialsection from "../components/Testimonialsection";
 
 export default function Home() {
   return (
@@ -11,6 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero></Hero>
+      <Testimonialsection></Testimonialsection>
+      <FeaturedServices></FeaturedServices>
+      <Calltoaction></Calltoaction>
+      <Steps></Steps>
+      <Mission></Mission>
+      <Pricing></Pricing>
+      <Contact></Contact>
     </>
   );
 }

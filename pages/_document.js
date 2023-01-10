@@ -18,7 +18,7 @@ export default function Document() {
           }}
         />
       </Head>
-      <body className="bg-zinc-200 dark:bg-zinc-900">
+      <body className="bg-[#14120E]">
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-V0GLH72P5Z"
