@@ -17,7 +17,7 @@ export default function Hero() {
 
             <div className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
               <Link
-                href="#"
+                href="#services"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
@@ -25,7 +25,7 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="#"
+                href="#pricing"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
@@ -33,7 +33,7 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="#"
+                href="#testimonial"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
@@ -41,7 +41,7 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="#"
+                href="#contact"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >

@@ -1,8 +1,9 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Pricing() {
   return (
-    <section className="py-12  sm:py-16 lg:py-20 xl:py-24">
+    <section className="py-12  sm:py-16 lg:py-20 xl:py-24" id="pricing">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
@@ -133,14 +134,14 @@ export default function Pricing() {
               </ul>
 
               <div className="mt-8">
-                <a
-                  href="#"
+                <Link
+                  href="#contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now
-                </a>
+                </Link>
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
@@ -275,14 +276,14 @@ export default function Pricing() {
               </ul>
 
               <div className="mt-8">
-                <a
-                  href="#"
+                <Link
+                  href="#contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-xl  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
                   role="button"
                 >
                   Book Now
-                </a>
+                </Link>
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
@@ -407,14 +408,14 @@ export default function Pricing() {
               </ul>
 
               <div className="mt-8">
-                <a
-                  href="#"
+                <Link
+                  href="#contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now
-                </a>
+                </Link>
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
@@ -541,14 +542,14 @@ export default function Pricing() {
               </ul>
 
               <div className="mt-8">
-                <a
-                  href="#"
+                <Link
+                  href="#contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-xl  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
                 >
                   Book Now
-                </a>
+                </Link>
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">

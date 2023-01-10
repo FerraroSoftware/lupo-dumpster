@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import noise from "../public/noise.png";
 import gradient from "../public/gradient.svg";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative py-12 overflow-hidden lg:py-20 xl:py-24 sm:py-16">
@@ -24,15 +25,15 @@ export default function Footer() {
               Serving all of Tampa Bay Area
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-              <a
-                href="#"
+              <Link
+                href="#contact"
                 title=""
                 className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-transparent border border-red-600 rounded-md"
                 role="button"
               >
                 {" "}
                 Book Trailer Now{" "}
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -46,47 +47,47 @@ export default function Footer() {
 
                   <ul className="mt-6 space-y-4">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="#services"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
                         {" "}
-                        About{" "}
-                      </a>
+                        Services{" "}
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="#pricing"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
                         {" "}
-                        Features{" "}
-                      </a>
+                        Pricing{" "}
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="#testimonial"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
                         {" "}
-                        Pricing & Plans{" "}
-                      </a>
+                        Testimonials{" "}
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="#contact"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
                         {" "}
                         Contact{" "}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
