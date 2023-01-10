@@ -166,7 +166,7 @@ export default function Contact() {
                         type="text"
                         name=""
                         id=""
-                        placeholder="Enter your full name"
+                        placeholder="Enter How Many Rental Days"
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
                     </div>
