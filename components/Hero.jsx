@@ -1,5 +1,7 @@
 import React from "react";
-
+import Image from "next/image";
+import lupodumpster from "../public/lupo-dumpster.png";
+import logo from "../public/logo.svg";
 export default function Hero() {
   return (
     <div className="">
@@ -8,7 +10,7 @@ export default function Hero() {
           <div className="flex items-center justify-between">
             <div className="shrink-0">
               <a href="#" title="" className="">
-                <img className="w-auto h-14" src="/logo.svg" alt="" />
+                <Image className="w-auto h-14" src={logo} alt="logo" />
               </a>
             </div>
 
@@ -110,11 +112,12 @@ export default function Hero() {
                   Lupo Dumpster Rentals
                 </h1>
                 <p className="mt-6 text-lg leading-7 text-gray-300 lg:leading-8 lg:text-xl">
-                  If you're located in the Holiday, FL area and searching for a
-                  reliable dumpster rental company, we've got you covered. Our
-                  company offers affordable prices, convenient junk removal
-                  services, and top-notch customer service. Don't hesitate to
-                  reach out to us for all your waste management needs.
+                  If you{"'"}re located in the Holiday, FL area and searching
+                  for a reliable dumpster rental company, we{"'"}ve got you
+                  covered. Our company offers affordable prices, convenient junk
+                  removal services, and top-notch customer service. Don{"'"}t
+                  hesitate to reach out to us for all your waste management
+                  needs.
                 </p>
               </div>
 
@@ -143,10 +146,10 @@ export default function Hero() {
           <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
             <div className="py-12 mt-6 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <div className="relative pl-10 -mr-40 sm:max-w-3xl lg:max-w-none lg:h-full lg:pl-24">
-                <img
+                <Image
                   className="w-full shadow-2xl rounded-xl  lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-red-100 lg:h-full lg:w-auto lg:max-w-none"
-                  src="/lupo-dumpster.png"
-                  alt=""
+                  src={lupodumpster}
+                  alt="Lupo dumpster rentals holiday fl"
                 />
               </div>
             </div>
