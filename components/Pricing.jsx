@@ -10,8 +10,8 @@ export default function Pricing() {
             Cost Effective Solutions for Your Needs
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
-            Clarity gives you the blocks & components you need to create a truly
-            professional website, landing page or admin panel for your SaaS.
+            we strive to offer affordable solutions that meet your needs without
+            compromising on the quality of our services.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function Pricing() {
           <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
-                <svg
+                {/* <svg
                   className="w-6 h-6 text-red-600"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -32,15 +32,37 @@ export default function Pricing() {
                     strokeLinejoin="round"
                     d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
                   />
+                </svg> */}
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_51_366)">
+                    <path
+                      d="M15.0002 19.1992C11.8002 19.1992 9.2002 21.7992 9.2002 24.9992C9.2002 28.1992 11.8002 30.7992 15.0002 30.7992C18.2002 30.7992 20.8002 28.1992 20.8002 24.9992C20.8002 21.7992 18.2002 19.1992 15.0002 19.1992ZM15.0002 29.1992C12.7002 29.1992 10.8002 27.2992 10.8002 24.9992C10.8002 22.6992 12.7002 20.7992 15.0002 20.7992C17.3002 20.7992 19.2002 22.6992 19.2002 24.9992C19.2002 27.2992 17.3002 29.1992 15.0002 29.1992Z"
+                      fill="#BA2525"
+                    />
+                    <path d="M14 24H16V26H14V24Z" fill="#BA2525" />
+                    <path
+                      d="M33 9H2V22.1C2 24.3 3.7 26 5.9 26H7V24H5.9C4.9 24 4.1 23.2 4 22.1V15H26V22.1C26 23.1 25.2 23.9 24.1 24H23V26H24.1C26.2 26 27.9 24.3 27.9 22.1V11H32.9C33.5 11 33.9 10.6 33.9 10C33.9 9.4 33.6 9 33 9V9ZM26 13H4V11H26V13Z"
+                      fill="#BA2525"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_51_366">
+                      <rect width="36" height="36" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 10 Yard Dump Trailer
               </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$320</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">
-                per month
-              </p>
+              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -161,7 +183,7 @@ export default function Pricing() {
 
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
-                <svg
+                {/* <svg
                   className="w-6 h-6 text-red-600"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -174,15 +196,25 @@ export default function Pricing() {
                     strokeLinejoin="round"
                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                   />
+                </svg> */}
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.625 3.28125V5.625H24.8438C25.2167 5.625 25.5744 5.77316 25.8381 6.03688C26.1018 6.3006 26.25 6.65829 26.25 7.03125C26.25 7.40421 26.1018 7.7619 25.8381 8.02562C25.5744 8.28934 25.2167 8.4375 24.8438 8.4375H5.15625C4.78329 8.4375 4.4256 8.28934 4.16188 8.02562C3.89816 7.7619 3.75 7.40421 3.75 7.03125C3.75 6.65829 3.89816 6.3006 4.16188 6.03688C4.4256 5.77316 4.78329 5.625 5.15625 5.625H9.375V3.28125C9.375 1.47 10.845 0 12.6562 0H17.3438C19.155 0 20.625 1.47 20.625 3.28125ZM8.43 12.5156L9.6675 24.8906C9.67913 25.0063 9.73335 25.1136 9.81963 25.1915C9.90591 25.2695 10.0181 25.3126 10.1344 25.3125H19.8656C19.9819 25.3126 20.0941 25.2695 20.1804 25.1915C20.2667 25.1136 20.3209 25.0063 20.3325 24.8906L21.57 12.5156C21.6165 12.1524 21.8028 11.8216 22.0894 11.5936C22.376 11.3657 22.7402 11.2585 23.1046 11.2949C23.469 11.3313 23.8048 11.5084 24.0407 11.7885C24.2765 12.0687 24.3938 12.4297 24.3675 12.795L23.13 25.17C23.0499 25.9799 22.6713 26.7311 22.0679 27.2773C21.4646 27.8235 20.6795 28.1257 19.8656 28.125H10.1344C9.32102 28.1249 8.53668 27.8227 7.93351 27.277C7.33035 26.7314 6.95134 25.9812 6.87 25.1719L5.6325 12.7969C5.60902 12.6107 5.62304 12.4217 5.67373 12.241C5.72443 12.0603 5.81078 11.8916 5.92769 11.7448C6.0446 11.598 6.18971 11.4761 6.35447 11.3863C6.51923 11.2964 6.70031 11.2405 6.88703 11.2217C7.07375 11.2029 7.26234 11.2217 7.44168 11.277C7.62103 11.3322 7.7875 11.4228 7.93129 11.5434C8.07509 11.664 8.19329 11.8121 8.27894 11.9791C8.36459 12.1461 8.41595 12.3285 8.43 12.5156ZM12.1875 3.28125V5.625H17.8125V3.28125C17.8125 3.15693 17.7631 3.0377 17.6752 2.94979C17.5873 2.86189 17.4681 2.8125 17.3438 2.8125H12.6562C12.5319 2.8125 12.4127 2.86189 12.3248 2.94979C12.2369 3.0377 12.1875 3.15693 12.1875 3.28125Z"
+                    fill="#BA2525"
+                  />
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 10 Yard Dump Trailer
               </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$360</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">
-                per month
-              </p>
+              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -295,7 +327,7 @@ export default function Pricing() {
           <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
-                <svg
+                {/* <svg
                   className="w-6 h-6 text-red-600"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -308,15 +340,25 @@ export default function Pricing() {
                     strokeLinejoin="round"
                     d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
                   />
+                </svg> */}
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 6L3 14H4.334L4.666 16H3V18H5L6 24V26H8V24H24V26H26V24L27 18H29V16H27.334L27.666 14H29L27 6H5ZM6.563 8H9.338L8.572 12H5.562L6.562 8H6.563ZM11.391 8H15V12H10.63L11.39 8H11.391ZM17 8H20.61L21.37 12H17V8ZM22.662 8H25.438L26.438 12H23.428L22.662 8ZM6.362 14H25.639L24.307 22H7.693L6.361 14H6.362Z"
+                    fill="#BA2525"
+                  />
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 15 Yard Dump Trailer
               </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">
-                per month
-              </p>
+              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -429,7 +471,7 @@ export default function Pricing() {
           <div className="bg-white border border-gray-200 rounded-2xl ">
             <div className="px-4 py-5 sm:px-6 sm:py-8">
               <div className="inline-flex items-center justify-center w-16 h-16 mx-auto bg-gray-100 rounded-full">
-                <svg
+                {/* <svg
                   className="w-6 h-6 text-red-600"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -442,15 +484,25 @@ export default function Pricing() {
                     strokeLinejoin="round"
                     d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
                   />
+                </svg> */}
+                <svg
+                  width="30"
+                  height="22"
+                  viewBox="0 0 30 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 0.5C1.00781 0.5 0 1.50781 0 2.75V14.75C0 15.9922 1.00781 17 2.25 17H3.05156C3.41719 14.4547 5.60156 12.5 8.25 12.5C10.8984 12.5 13.0828 14.4547 13.4484 17H28.5C29.3297 17 30 16.3297 30 15.5C30 14.6703 29.3297 14 28.5 14H25.5V2.75C25.5 1.50781 24.4922 0.5 23.25 0.5H2.25ZM3.75 3.5C4.1625 3.5 4.5 3.8375 4.5 4.25V10.4C3.96563 10.6766 3.45938 11.0047 3 11.3844V4.25C3 3.8375 3.3375 3.5 3.75 3.5ZM8.25 9.5C7.99687 9.5 7.74844 9.50937 7.5 9.53281V4.25C7.5 3.8375 7.8375 3.5 8.25 3.5C8.6625 3.5 9 3.8375 9 4.25V9.53281C8.75156 9.50937 8.50313 9.5 8.25 9.5ZM12 10.4V4.25C12 3.8375 12.3375 3.5 12.75 3.5C13.1625 3.5 13.5 3.8375 13.5 4.25V11.3844C13.0406 11.0047 12.5344 10.6719 12 10.4ZM17.25 3.5C17.6625 3.5 18 3.8375 18 4.25V13.25C18 13.6625 17.6625 14 17.25 14C16.8375 14 16.5 13.6625 16.5 13.25V4.25C16.5 3.8375 16.8375 3.5 17.25 3.5ZM22.5 4.25V13.25C22.5 13.6625 22.1625 14 21.75 14C21.3375 14 21 13.6625 21 13.25V4.25C21 3.8375 21.3375 3.5 21.75 3.5C22.1625 3.5 22.5 3.8375 22.5 4.25ZM8.25 21.5C10.3219 21.5 12 19.8219 12 17.75C12 15.6781 10.3219 14 8.25 14C6.17812 14 4.5 15.6781 4.5 17.75C4.5 19.8219 6.17812 21.5 8.25 21.5ZM8.25 19.25C7.42031 19.25 6.75 18.5797 6.75 17.75C6.75 16.9203 7.42031 16.25 8.25 16.25C9.07969 16.25 9.75 16.9203 9.75 17.75C9.75 18.5797 9.07969 19.25 8.25 19.25Z"
+                    fill="#BA2525"
+                  />
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 15 Yard Dump Trailer
               </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">
-                per month
-              </p>
+              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
