@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import lupodumpster from "../public/lupo-dumpster.png";
 import logo from "../public/logo.svg";
 import Link from "next/link";
 import { Button } from "./Button";
 export default function Hero() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="">
       <header className="py-4 sm:py-5">
@@ -59,55 +60,111 @@ export default function Hero() {
               >
                 Call Now
               </Link>
-              {/* <Button
-                className="inline-flex"
-                href="tel:7273176717"
-                variant="outline"
-                content="Call Us Now"
-              ></Button> */}
             </div>
 
+            {/* menu */}
             <div className="flex ml-4 lg:hidden">
               <button
                 type="button"
-                className="inline-flex items-center p-2.5 text-gray-300 duration-200 border border-gray-900 rounded-md hover:bg-gray-900 hover:text-white transiton-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 focus:bg-gray-900 focus:text-white"
+                className="inline-flex items-center p-2.5 text-gray-300 duration-200 border border-zinc-700 rounded-md hover:bg-zinc-900 hover:text-white transiton-all "
+                onClick={() => setIsOpen(!isOpen)}
               >
-                <span x-show="!expanded" aria-hidden="true">
-                  <svg
-                    className="w-6 h-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                </span>
-
-                <span x-show="expanded" aria-hidden="true">
-                  <svg
-                    className="w-6 h-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </span>
+                {!isOpen ? (
+                  <span x-show="!expanded" aria-hidden="true">
+                    <svg
+                      className="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  </span>
+                ) : (
+                  <span x-show="expanded" aria-hidden="true">
+                    <svg
+                      className="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </span>
+                )}
               </button>
             </div>
           </div>
+          {isOpen ? (
+            <nav>
+              <div className="flex flex-col pt-8 pb-4 space-y-6 text-center">
+                <Link
+                  href="#services"
+                  title=""
+                  className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {" "}
+                  Services{" "}
+                </Link>
+
+                <Link
+                  href="#pricing"
+                  title=""
+                  className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {" "}
+                  Pricing{" "}
+                </Link>
+
+                <Link
+                  href="#testimonial"
+                  title=""
+                  className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {" "}
+                  Testimonials{" "}
+                </Link>
+
+                <Link
+                  href="#contact"
+                  title=""
+                  className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {" "}
+                  Contact{" "}
+                </Link>
+
+                <div className="relative inline-flex items-center justify-center group">
+                  <Link
+                    href="#contact"
+                    title=""
+                    className="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-transparent border border-red-600 rounded-md hover:bg-opacity-90"
+                    role="button"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    {" "}
+                    Book now{" "}
+                  </Link>
+                </div>
+              </div>
+            </nav>
+          ) : null}
         </div>
       </header>
 
