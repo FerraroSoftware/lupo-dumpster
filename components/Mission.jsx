@@ -13,19 +13,23 @@ export default function Mission() {
               Our Commitment to Excellence
             </h2>
             <p className="mt-8 text-lg font-normal text-gray-400">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat.
+              At Lupo Dumpster Rentals, our mission is to provide our customers
+              with unparalleled service and solutions for their waste management
+              needs. Our team is committed to safety, integrity, and quality in
+              everything we do.
             </p>
+            {/* <p className="mt-8 text-lg font-normal text-gray-400">
+              Our team is committed to safety, integrity, and quality in
+              everything we do. We are dedicated to making a difference in our
+              industry and providing our customers with a seamless and
+              stress-free experience.
+            </p> */}
             <p className="mt-8 text-lg font-normal text-gray-400">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat.
-            </p>
-            <p className="mt-8 text-lg font-normal text-gray-400">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat.
+              We are proud to provide our services to the residents and
+              businesses in Pasco County and surrounding areas, including
+              Holiday, Tampa, South Tampa, Port Richey, New Port Richey, Dade
+              City, Spring Hill, Pinellas County, Land O Lakes, Lutz, Odessa,
+              Hudson, Trinity, Oldsmar, and Palm Harbor.
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
               <Link
@@ -47,21 +51,21 @@ export default function Mission() {
             <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">
               <div>
                 <h3 className="text-xl font-normal text-white">
-                  Unlimited Usages
+                  Customer Satisfaction
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint velit officia.
+                  We strive to exceed our customer expectations and ensure
+                  satisfaction for every rental.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-normal text-white">
-                  Made with TailwindCSS
+                  Ethical Standards
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint velit officia.
+                  We operate with integrity and adhere to the highest ethical
+                  standards in all our business practices.
                 </p>
               </div>
             </div>
