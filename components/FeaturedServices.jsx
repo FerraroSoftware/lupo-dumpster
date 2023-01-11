@@ -6,7 +6,7 @@ import junkremoval from "../public/junk-removal.png";
 
 export default function FeaturedServices() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 xl:py-24" id="services">
+    <section className="pb-12 sm:pb-16 lg:pb-20 xl:pb-24 " id="services">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-lg mx-auto text-center lg:max-w-3xl">
           <h2 className="text-3xl font-normal text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
