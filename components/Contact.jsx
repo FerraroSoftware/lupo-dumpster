@@ -1,6 +1,50 @@
 import React from "react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const notify = () => toast("Your message has been sent successfully!");
+
+  const onSubmit = (data) => {
+    // console.log(data);
+    handlesub(data);
+    reset();
+    notify();
+  };
+  const handlesub = async (e) => {
+    // console.log("sending");
+    if (true) {
+      // console.log("sending");
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: watch("email"),
+          fullname: watch("fullname"),
+          message: watch("message"),
+          phonenumber: watch("phonenumber"),
+          days: watch("days"),
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      // console.log(res);
+
+      const { error } = await res.json();
+    }
+    console.log("COMPLETE");
+  };
+
   return (
     <section className="py-10 sm:py-16 lg:py-24" id="contact">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -99,7 +143,7 @@ export default function Contact() {
                 Send us a message
               </h3>
 
-              <form action="#" method="POST" className="mt-14">
+              <form onSubmit={handleSubmit(onSubmit)} className="mt-14">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                   <div>
                     <label
@@ -111,12 +155,16 @@ export default function Contact() {
                     </label>
                     <div className="mt-2.5 relative">
                       <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Enter your full name"
+                        defaultValue=""
+                        placeholder="Enter Your Full Name"
+                        {...register("fullname", { required: true })}
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
+                      {errors.fullname && (
+                        <span className="text-base font-normal text-red">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -130,12 +178,16 @@ export default function Contact() {
                     </label>
                     <div className="mt-2.5 relative">
                       <input
-                        type="email"
-                        name=""
-                        id=""
-                        placeholder="Enter your full name"
+                        {...register("email", { required: true })}
+                        defaultValue=""
+                        placeholder="Enter Your Email"
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
+                      {errors.message && (
+                        <span className="text-base font-normal text-red">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -149,12 +201,18 @@ export default function Contact() {
                     </label>
                     <div className="mt-2.5 relative">
                       <input
-                        type="tel"
-                        name=""
-                        id=""
-                        placeholder="Enter your full name"
+                        defaultValue=""
+                        placeholder="Enter Your Phone Number"
+                        {...register("phonenumber", { required: true })}
+                        maxLength={14}
+                        minLength={8}
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
+                      {errors.message && (
+                        <span className="text-base font-normal text-red">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -168,12 +226,16 @@ export default function Contact() {
                     </label>
                     <div className="mt-2.5 relative">
                       <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Enter how many rental days you need"
+                        {...register("days", { required: true })}
+                        defaultValue=""
+                        placeholder="Enter How Many Rental Days"
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
+                      {errors.message && (
+                        <span className="text-base font-normal text-red">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -187,12 +249,16 @@ export default function Contact() {
                     </label>
                     <div className="mt-2.5 relative">
                       <textarea
-                        name=""
-                        id=""
-                        placeholder=""
+                        {...register("message", {})}
+                        placeholder="Your Message"
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-red-600 caret-red-600"
                         rows="4"
                       ></textarea>
+                      {errors.message && (
+                        <span className="text-base font-normal text-red">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -203,6 +269,18 @@ export default function Contact() {
                     >
                       Send
                     </button>
+                    <ToastContainer
+                      position="top-center"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                      newestOnTop={false}
+                      closeOnClick
+                      rtl={false}
+                      pauseOnFocusLoss
+                      draggable
+                      pauseOnHover
+                      theme="dark"
+                    />
                   </div>
                 </div>
               </form>
