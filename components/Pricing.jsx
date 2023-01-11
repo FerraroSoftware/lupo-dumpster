@@ -61,6 +61,10 @@ export default function Pricing() {
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 10 Yard Dump Trailer
               </h3>
+
+              <h3 className="mt-2 text-lg font-semibold text-red-600">
+                Household Items
+              </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$320</p>
               <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
@@ -213,6 +217,9 @@ export default function Pricing() {
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 10 Yard Dump Trailer
               </h3>
+              <h3 className="mt-2 text-lg font-semibold text-red-600">
+                Roofing Materials
+              </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$360</p>
               <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
@@ -357,6 +364,9 @@ export default function Pricing() {
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 15 Yard Dump Trailer
               </h3>
+              <h3 className="mt-2 text-lg font-semibold text-red-600">
+                Household Items
+              </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
               <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
@@ -500,6 +510,9 @@ export default function Pricing() {
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 15 Yard Dump Trailer
+              </h3>
+              <h3 className="mt-2 text-lg font-semibold text-red-600">
+                Roofing Materials
               </h3>
               <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
               <p className="mt-1 text-sm font-normal text-gray-500">per day</p>

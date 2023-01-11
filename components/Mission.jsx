@@ -65,7 +65,7 @@ export default function Mission() {
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
                   We operate with integrity and adhere to the highest ethical
-                  standards in all our business practices.
+                  standards in all of our business practices.
                 </p>
               </div>
             </div>

@@ -228,6 +228,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener"
                     className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-green-800 duraiton-200"
+                    aria-label="facebook"
                   >
                     <svg
                       className="w-5 h-5"
@@ -245,6 +246,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener"
                     className="inline-flex items-center justify-center w-8 h-8 text-white transition-all bg-transparent rounded-full hover:bg-green-800 duraiton-200"
+                    aria-label="instagram"
                   >
                     <svg
                       className="w-5 h-5"

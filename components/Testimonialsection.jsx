@@ -110,6 +110,7 @@ export default function Testimonialsection() {
                       className="block text-green-700 mt-4"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Read review"
                     >
                       See Review
                     </Link>

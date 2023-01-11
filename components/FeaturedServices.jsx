@@ -29,7 +29,7 @@ export default function FeaturedServices() {
               <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
                 Furniture Removal
               </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
+              <p className="mt-4 text-base font-normal text-zinc-300">
                 Let our professional movers handle all the heavy lifting and
                 transport your furniture with precision and efficiency.
               </p>
@@ -50,7 +50,7 @@ export default function FeaturedServices() {
               <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
                 Junk Removal
               </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
+              <p className="mt-4 text-base font-normal text-zinc-300">
                 Don{"'"}t let clutter and junk take over your space any longer!
                 Schedule your junk removal and regain control of your home or
                 business.
@@ -77,7 +77,7 @@ export default function FeaturedServices() {
               <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
                 Clean Out Service
               </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
+              <p className="mt-4 text-base font-normal text-zinc-300">
                 Our team of experts will help declutter, sort and dispose of any
                 unwanted items, leaving you with a fresh start.
               </p>

@@ -66,6 +66,7 @@ export default function Hero() {
             <div className="flex ml-4 lg:hidden">
               <button
                 type="button"
+                aria-label="menu button"
                 className="inline-flex items-center p-2.5 text-gray-300 duration-200 border border-zinc-700 rounded-md hover:bg-zinc-900 hover:text-white transiton-all "
                 onClick={() => setIsOpen(!isOpen)}
               >
