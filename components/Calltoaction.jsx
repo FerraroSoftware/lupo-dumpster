@@ -18,11 +18,12 @@ export default function Calltoaction() {
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Give your pet a great comfortness
+            Experience You Can Count On
           </h2>
           <p className="mt-4 text-base font-normal leading-7 text-white sm:mt-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc
-            nisl eu consectetur. Mi massa elementum odio eu viverra amet.
+            Our expertise has been honed through years of practice, ensuring
+            quality service. Clients have trusted us for our experience and
+            results, time and time again.
           </p>
 
           <div className="mt-8 sm:mt-10">

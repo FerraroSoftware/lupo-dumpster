@@ -10,7 +10,7 @@ export default function Mission() {
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-16 gap-y-12">
           <div className="text-center lg:col-span-5 sm:text-left">
             <h2 className="text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl">
-              1400+ Unique Coded Blocks
+              Our Commitment to Excellence
             </h2>
             <p className="mt-8 text-lg font-normal text-gray-400">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
