@@ -87,6 +87,7 @@ export default function Testimonialsection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block"
+                    aria-label="Read review"
                   >
                     <svg
                       width="26"
