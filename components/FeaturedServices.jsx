@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import clean from "../public/clean.png";
-import cleanup from "../public/cleanup.png";
+import furnitureremoval from "../public/furniture-removal.png";
+import cleanup from "../public/clean-out-service.png";
 import junkremoval from "../public/junk-removal.png";
 
 export default function FeaturedServices() {
@@ -36,7 +36,11 @@ export default function FeaturedServices() {
             </div>
 
             <div className="absolute inset-x-0 bottom-0 flex items-center justify-center">
-              <Image className="object-contain w-full" src={clean} alt="" />
+              <Image
+                className="object-contain w-full"
+                src={furnitureremoval}
+                alt="furiture removal"
+              />
             </div>
           </div>
           <div className="relative overflow-hidden bg-zinc-700 rounded-2xl">
@@ -61,7 +65,7 @@ export default function FeaturedServices() {
               <Image
                 className="object-contain w-full"
                 src={junkremoval}
-                alt=""
+                alt="junk removal"
               />
             </div>
           </div>
@@ -84,7 +88,11 @@ export default function FeaturedServices() {
             </div>
 
             <div className="absolute inset-x-0 bottom-0 flex items-center justify-center">
-              <Image className="object-contain w-full" src={cleanup} alt="" />
+              <Image
+                className="object-contain w-full"
+                src={cleanup}
+                alt="Clean out service"
+              />
             </div>
           </div>
         </div>

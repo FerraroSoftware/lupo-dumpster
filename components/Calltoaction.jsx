@@ -9,7 +9,7 @@ export default function Calltoaction() {
         <Image
           className="object-cover w-full h-full"
           src={lupotestimonial}
-          alt=""
+          alt="testimonial with customer"
         />
       </div>
 

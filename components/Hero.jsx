@@ -3,7 +3,7 @@ import Image from "next/image";
 import lupodumpster from "../public/lupo-dumpster.png";
 import logo from "../public/logo.svg";
 import Link from "next/link";
-import { Button } from "./Button";
+
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   return (
