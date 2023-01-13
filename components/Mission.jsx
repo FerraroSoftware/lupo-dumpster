@@ -55,17 +55,19 @@ export default function Mission() {
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
                   We strive to exceed our customer expectations and ensure
-                  satisfaction for every rental.
+                  satisfaction for every dump trailer rental, property clean out
+                  junk hauling service.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-normal text-white">
-                  Ethical Standards
+                  Dump Trailer Rentals
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
-                  We operate with integrity and adhere to the highest ethical
-                  standards in all of our business practices.
+                  We offer 10, 15, and 20 yard dump trailers for rent. Perfect
+                  for roofers, contractors, and homeowners, construction crews
+                  and more.
                 </p>
               </div>
             </div>
