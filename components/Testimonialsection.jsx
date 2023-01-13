@@ -148,6 +148,37 @@ export default function Testimonialsection() {
             </div>
           ))}
         </div>
+        <div class="mt-10 text-center">
+          <a
+            href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
+            title=""
+            class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md shadow-sm hover:bg-red-500 focus:outline-none
+                "
+            role="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See All Google Reviews
+            <svg
+              class="w-6 h-6 ml-2"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );
