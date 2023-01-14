@@ -71,7 +71,11 @@ export default function Mission() {
               whileInView="onscreen"
               variants={cardVariants}
             >
-              <Image className="w-full" src={truck} alt="dump trailer" />
+              <Image
+                className="w-full rounded-md"
+                src={truck}
+                alt="dump trailer"
+              />
             </motion.div>
             <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">
               <div>
@@ -90,9 +94,9 @@ export default function Mission() {
                   Dump Trailer Rentals
                 </h3>
                 <p className="mt-3 text-base font-normal text-gray-400">
-                  We offer 10, 15, and 20 yard dump trailers for rent. Perfect
-                  for roofers, contractors, and homeowners, construction crews
-                  and more.
+                  We offer 10 and 15 yard dump trailers for rent. Perfect for
+                  roofers, contractors, and homeowners, construction crews and
+                  more.
                 </p>
               </div>
             </div>

@@ -145,11 +145,11 @@ export default function Testimonialsection() {
             </motion.div>
           ))}
         </div>
-        <div class="mt-10 text-center">
+        <div className="mt-10 text-center">
           <a
             href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
             title=""
-            class="
+            className="
                     inline-flex
                     items-center
                     justify-center
@@ -161,16 +161,16 @@ export default function Testimonialsection() {
           >
             See All Google Reviews
             <svg
-              class="w-6 h-6 ml-2"
+              className="w-6 h-6 ml-2"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               />
             </svg>

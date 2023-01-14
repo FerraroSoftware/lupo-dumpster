@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Calltoaction from "../components/Calltoaction";
 import Contact from "../components/Contact";
+import Featuredlist from "../components/Featuredlist";
 import FeaturedServices from "../components/FeaturedServices";
 import Hero from "../components/Hero";
 import Mission from "../components/Mission";
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <Steps></Steps> */}
       <Mission></Mission>
       <Pricing></Pricing>
+      <Featuredlist></Featuredlist>
       <Contact></Contact>
     </>
   );
