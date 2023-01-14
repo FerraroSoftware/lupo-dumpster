@@ -253,6 +253,7 @@ export default function Hero() {
                   className="w-full shadow-2xl rounded-xl  lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-red-100 lg:h-full lg:w-auto lg:max-w-none"
                   src={lupodumpster}
                   alt="Lupo dumpster rentals holiday fl"
+                  priority
                 />
               </motion.div>
             </div>
