@@ -180,7 +180,7 @@ export default function Hero() {
                   initial={{ scale: 0.2, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{
-                    duration: 1,
+                    duration: 0,
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0,
                   }}
@@ -192,7 +192,7 @@ export default function Hero() {
                   initial={{ scale: 0.2, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{
-                    duration: 1,
+                    duration: 0,
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0.2,
                   }}
@@ -211,7 +211,7 @@ export default function Hero() {
                 initial={{ scale: 0.2, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{
-                  duration: 1,
+                  duration: 0,
                   ease: [0, 0.71, 0.2, 1.01],
                   delay: 0.4,
                 }}
@@ -244,7 +244,7 @@ export default function Hero() {
                 initial={{ scale: 1, opacity: 0, x: 100 }}
                 animate={{ scale: 1, opacity: 1, x: 0 }}
                 transition={{
-                  duration: 1,
+                  duration: 0,
                   ease: [0, 0.71, 0.2, 1.01],
                   delay: 0.5,
                 }}
