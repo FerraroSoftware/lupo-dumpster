@@ -175,47 +175,20 @@ export default function Hero() {
           <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div className="lg:mt-16">
               <div className="mx-auto text-center sm:max-w-lg lg:max-w-xl lg:text-left lg:mx-0">
-                <motion.h1
-                  className="text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-7xl sm:tracking-tight"
-                  initial={{ scale: 0.2, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{
-                    duration: 0,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    delay: 0,
-                  }}
-                >
+                <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-7xl sm:tracking-tight">
                   Lupo Dumpster Rentals
-                </motion.h1>
-                <motion.p
-                  className="mt-6 text-lg leading-7 text-gray-300 lg:leading-8 lg:text-xl"
-                  initial={{ scale: 0.2, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{
-                    duration: 0,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    delay: 0.2,
-                  }}
-                >
+                </h1>
+                <p className="mt-6 text-lg leading-7 text-gray-300 lg:leading-8 lg:text-xl">
                   If you{"'"}re located in the Holiday, FL area and searching
                   for a reliable dumpster rental company, we{"'"}ve got you
                   covered. Our company offers affordable prices, convenient junk
                   removal services, and top-notch customer service. Don{"'"}t
                   hesitate to reach out to us for all your waste management
                   needs.
-                </motion.p>
+                </p>
               </div>
 
-              <motion.div
-                className="flex flex-col items-stretch justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:mt-10 lg:justify-start sm:flex-wrap"
-                initial={{ scale: 0.2, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  duration: 0,
-                  ease: [0, 0.71, 0.2, 1.01],
-                  delay: 0.4,
-                }}
-              >
+              <div className="flex flex-col items-stretch justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:mt-10 lg:justify-start sm:flex-wrap">
                 <Link
                   href="#contact"
                   title=""
@@ -233,29 +206,20 @@ export default function Hero() {
                 >
                   Learn More
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </div>
 
           <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
             <div className="py-12 mt-6 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <motion.div
-                className="relative pl-10 -mr-40 sm:max-w-3xl lg:max-w-none lg:h-full lg:pl-24"
-                initial={{ scale: 1, opacity: 0, x: 100 }}
-                animate={{ scale: 1, opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0,
-                  ease: [0, 0.71, 0.2, 1.01],
-                  delay: 0.5,
-                }}
-              >
+              <div className="relative pl-10 -mr-40 sm:max-w-3xl lg:max-w-none lg:h-full lg:pl-24">
                 <Image
                   className="w-full shadow-2xl rounded-xl  lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-red-100 lg:h-full lg:w-auto lg:max-w-none"
                   src={lupodumpster}
                   alt="Lupo dumpster rentals holiday fl"
                   priority
                 />
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
