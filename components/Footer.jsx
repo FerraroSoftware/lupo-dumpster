@@ -261,6 +261,15 @@ export default function Footer() {
                   </Link>
                 </div>
               </div>
+              <div className="text-gray-500 mt-2 hover:text-green-800">
+                <Link
+                  href="https://www.ferrarosoftware.com/"
+                  _target="blank"
+                  rel="noopener noreferrer"
+                >
+                  © Created by Ferraro Software{" "}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
