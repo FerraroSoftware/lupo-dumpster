@@ -93,7 +93,7 @@ export default function Calltoaction() {
             <a
               href="#contact"
               title=""
-              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-gray-100 transition-all duration-200 border focus:outline-none border-red-600 rounded-md hover:bg-red-600 hover:text-white"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90"
               role="button"
             >
               Contact Us Now
