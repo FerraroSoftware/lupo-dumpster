@@ -21,7 +21,7 @@ const cardVariants = {
   offscreen: {
     opacity: 0.2,
     scale: 1,
-    x: 100,
+    y: 60,
   },
   onscreen: {
     opacity: 1,
@@ -31,7 +31,7 @@ const cardVariants = {
       ease: [0, 0.31, 0.5, 1.01],
     },
     delay: 0,
-    x: 0,
+    y: 0,
   },
 };
 
