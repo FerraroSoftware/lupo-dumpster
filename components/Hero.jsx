@@ -194,7 +194,7 @@ export default function Hero() {
                   transition={{
                     duration: 1,
                     ease: [0, 0.71, 0.2, 1.01],
-                    delay: 0.2,
+                    delay: 0.1,
                   }}
                 >
                   If you{"'"}re located in the Holiday, FL area and searching
@@ -213,7 +213,7 @@ export default function Hero() {
                 transition={{
                   duration: 1,
                   ease: [0, 0.71, 0.2, 1.01],
-                  delay: 0.4,
+                  delay: 0.3,
                 }}
               >
                 <Link
@@ -246,7 +246,7 @@ export default function Hero() {
                 transition={{
                   duration: 0.5,
                   ease: [0, 0.21, 0.35, 0.48],
-                  delay: 0.5,
+                  delay: 0.4,
                 }}
               >
                 <Image
