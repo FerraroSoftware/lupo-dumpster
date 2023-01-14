@@ -2,6 +2,25 @@ import React from "react";
 import Image from "next/image";
 import truck from "../public/dump-trailer.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  offscreen: {
+    opacity: 0.2,
+    scale: 1,
+    x: 100,
+  },
+  onscreen: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1.4,
+      ease: [0, 0.31, 0.5, 1.01],
+    },
+    delay: 0,
+    x: 0,
+  },
+};
 
 export default function Mission() {
   return (
@@ -46,8 +65,14 @@ export default function Mission() {
           </div>
 
           <div className="lg:col-span-7">
-            <Image className="w-full" src={truck} alt="dump trailer" />
-
+            <motion.div
+              viewport={{ once: true }}
+              initial="offscreen"
+              whileInView="onscreen"
+              variants={cardVariants}
+            >
+              <Image className="w-full" src={truck} alt="dump trailer" />
+            </motion.div>
             <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">
               <div>
                 <h3 className="text-xl font-normal text-white">

@@ -1,6 +1,51 @@
 import React from "react";
 import Image from "next/image";
 import lupotestimonial from "../public/lupo-testimonial.png";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  offscreen: {
+    opacity: 0.2,
+    scale: 1,
+    y: 100,
+  },
+  onscreen: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: [0, 0.31, 0.5, 1.01],
+    },
+    delay: 0,
+    y: 0,
+  },
+};
+
+const cardVariantstwo = {
+  offscreen: {
+    opacity: 0.2,
+    scale: 1,
+    y: 100,
+  },
+  onscreen: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: [0, 0.31, 0.5, 1.01],
+    },
+    delay: 0.3,
+    y: 0,
+  },
+};
+
+// initial={{ scale: 0.2, opacity: 0 }}
+// animate={{ scale: 1, opacity: 1 }}
+// transition={{
+//   duration: 1,
+//   ease: [0, 0.71, 0.2, 1.01],
+//   delay: 0.4,
+// }}
 
 export default function Calltoaction() {
   return (
@@ -17,16 +62,34 @@ export default function Calltoaction() {
 
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+          <motion.h2
+            className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+            viewport={{ once: true }}
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+          >
             Experience You Can Count On
-          </h2>
-          <p className="mt-4 text-base font-normal leading-7 text-white sm:mt-6">
+          </motion.h2>
+          <motion.p
+            className="mt-4 text-base font-normal leading-7 text-white sm:mt-6"
+            viewport={{ once: true }}
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+          >
             Our expertise has been honed through years of practice, ensuring
             quality service. Clients have trusted us for our experience and
             results, time and time again.
-          </p>
+          </motion.p>
 
-          <div className="mt-8 sm:mt-10">
+          <motion.div
+            className="mt-8 sm:mt-10"
+            viewport={{ once: true }}
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+          >
             <a
               href="#contact"
               title=""
@@ -35,7 +98,7 @@ export default function Calltoaction() {
             >
               Contact Us Now
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

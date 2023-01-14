@@ -1,5 +1,22 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  offscreen: {
+    opacity: 0,
+    scale: 0.2,
+  },
+  onscreen: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1.5,
+      ease: [0, 0.71, 0.2, 1.01],
+    },
+    delay: 0,
+  },
+};
 const testimonials = [
   {
     name: "Brandi McLaughlin",
@@ -62,13 +79,20 @@ export default function Testimonialsection() {
           </h2>
           <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-300">
             Read about the real-life successes of our customers and how our
-            product/service played a part
+            service played a part
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
           {testimonials.map((testimonial, index) => (
-            <div className="overflow-hidden bg-white rounded-md" key={index}>
+            <motion.div
+              className="overflow-hidden bg-white rounded-md"
+              key={index}
+              viewport={{ once: true }}
+              initial="offscreen"
+              whileInView="onscreen"
+              variants={cardVariants}
+            >
               <div className="px-5 py-6">
                 <div className="flex items-center justify-between ">
                   {/* <img
@@ -115,37 +139,10 @@ export default function Testimonialsection() {
                     >
                       See Review
                     </Link>
-                    {/* <a
-                      href="#"
-                      title=""
-                      className="inline-flex items-center justify-center mt-10 font-sans text-base font-normal text-black group hover:text-green-400 duration-200"
-                    >
-                      See Review
-                      <div className="inline-flex items-center justify-center w-8 h-8 ml-2 bg-transparent ">
-                        <svg
-                          className="w-6 h-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M13 7l5 5m0 0l-5 5m5-5H6"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="absolute inset-0"
-                        aria-hidden="true"
-                      ></span>
-                    </a> */}
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div class="mt-10 text-center">
