@@ -11,7 +11,7 @@ const featureditems = [
   "Yard Waste Removal",
   "Trash Removal",
   "Appliance Removal",
-  "Television Disposal",
+  "Television Recycling",
   "Furniture Removal",
   "E-Waste Disposal",
   "Hot Tub Disposal",
