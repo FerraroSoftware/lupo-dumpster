@@ -57,7 +57,7 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                10 Yard Dump Trailer
+                10 Cubic Yard Dump Trailer
               </h3>
 
               <h3 className="mt-2 text-lg font-semibold text-red-600">
@@ -213,7 +213,7 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                10 Yard Dump Trailer
+                10 Cubic Yard Dump Trailer
               </h3>
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
@@ -362,7 +362,7 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                15 Yard Dump Trailer
+                15 Cubic Yard Dump Trailer
               </h3>
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Household Items
@@ -511,7 +511,7 @@ export default function Pricing() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-gray-900">
-                15 Yard Dump Trailer
+                15 Cubic Yard Dump Trailer
               </h3>
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
