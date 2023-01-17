@@ -79,8 +79,8 @@ export default function Calltoaction() {
             variants={cardVariants}
           >
             Our expertise has been honed through years of practice, ensuring
-            quality service. Clients have trusted us for our experience and
-            results, time and time again.
+            quality service. Clients have trusted us in New Port Richey for our
+            experience and results, time and time again.
           </motion.p>
 
           <motion.div

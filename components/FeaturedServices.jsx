@@ -14,6 +14,7 @@ export default function FeaturedServices() {
           </h2>
           <p className="mt-6 text-lg font-normal text-gray-400">
             Flexible solutions that align with your unique business objectives
+            in New Port Richey
           </p>
         </div>
 
