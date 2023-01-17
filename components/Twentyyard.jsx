@@ -117,7 +117,7 @@ export default function Twentyyard2() {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        3 Tons Included
+                        4 Tons Included
                       </li>
 
                       <li className="flex items-center">
