@@ -8,7 +8,7 @@ import Mission from "../components/Mission";
 import Pricing from "../components/Pricing";
 import Steps from "../components/Steps";
 import Testimonialsection from "../components/Testimonialsection";
-
+import Twentyyard from "../components/Twentyyard";
 export default function Home() {
   return (
     <>
@@ -28,9 +28,10 @@ export default function Home() {
       <FeaturedServices></FeaturedServices>
       <Calltoaction></Calltoaction>
       {/* <Steps></Steps> */}
-      <Mission></Mission>
-      <Pricing></Pricing>
       <Featuredlist></Featuredlist>
+      <Pricing></Pricing>
+      <Mission></Mission>
+      <Twentyyard></Twentyyard>
       <Contact></Contact>
     </>
   );
