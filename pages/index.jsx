@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals - Junk Removal Services for Holiday FL
+          Lupo Dumpster Rentals - Junk Removal for New Port Richey, FL
         </title>
         <meta
           name="description"
-          content="Need to clear out your space? Lupo Dumpster Rentals provides reliable junk removal services for both residential and commercial properties in Holiday, FL."
+          content="Need to clear out your space? Lupo Dumpster Rentals provides reliable junk removal services for both residential and commercial properties in New Port Richey, FL."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

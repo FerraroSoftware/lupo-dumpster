@@ -63,8 +63,10 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Household Items
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$320</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$320+</p>
+              <p className="mt-1 text-sm font-normal text-gray-500">
+                Up to 3 days
+              </p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -153,7 +155,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Live Chat Support
+                  2 ton included in price
                 </li>
               </ul>
 
@@ -169,7 +171,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
-                No credit card required
+                Variables affect pricing
               </p>
             </div>
           </div>
@@ -216,8 +218,10 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$360</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$360+</p>
+              <p className="mt-1 text-sm font-normal text-gray-500">
+                Up to 3 days
+              </p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -306,7 +310,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Live Chat Support
+                  2 ton included in price
                 </li>
               </ul>
 
@@ -322,7 +326,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
-                No credit card required
+                Variables affect pricing
               </p>
             </div>
           </div>
@@ -363,8 +367,10 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Household Items
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$400+</p>
+              <p className="mt-1 text-sm font-normal text-gray-500">
+                Up to 4 days
+              </p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -453,7 +459,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Live Chat Support
+                  3 ton included in price
                 </li>
               </ul>
 
@@ -469,7 +475,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
-                No credit card required
+                Variables affect pricing
               </p>
             </div>
           </div>
@@ -510,8 +516,10 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$400</p>
-              <p className="mt-1 text-sm font-normal text-gray-500">per day</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$400+</p>
+              <p className="mt-1 text-sm font-normal text-gray-500">
+                Up to 4 days
+              </p>
               <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
                 <li className="flex items-center">
                   <svg
@@ -600,7 +608,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  Live Chat Support
+                  3 ton included in price
                 </li>
               </ul>
 
@@ -616,7 +624,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-sm font-normal text-gray-500">
-                No credit card required
+                Variables affect pricing
               </p>
             </div>
           </div>

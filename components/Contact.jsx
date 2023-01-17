@@ -110,7 +110,7 @@ export default function Contact() {
                   />
                 </svg>
                 <p className="mt-6 text-lg font-medium leading-relaxed text-gray-900">
-                  Based in Holiday, FL 34690 Serving all of Tampa Bay
+                  Based in New Port Richey, FL 34690 Serving all of Tampa Bay
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                   />
                 </svg>
                 <p className="mt-6 text-md sm:text-lg font-medium text-gray-900">
-                  lupodumpsterrentals@gmail.com
+                  lupodumpsters@gmail.com
                 </p>
               </div>
             </div>

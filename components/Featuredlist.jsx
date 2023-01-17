@@ -105,13 +105,13 @@ export default function Featuredlist() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
                 No Job Too Big or Small.
               </span>{" "}
-              We have 10 and 15 foot dump trailers.
+              We have 10, 15 and 20 foot dump trailers.
             </p>
             <p className="mt-8 text-lg font-normal text-gray-400">
-              Lupo Dumpster Rentals is near you in Holiday to serve all your
-              dumpster needs. Whether you{"'"}re undertaking a home renovation
-              or remodel or a contractor needing a waste management solution for
-              a job site, we
+              Lupo Dumpster Rentals is near you in New Port Richey to serve all
+              your dumpster needs. Whether you{"'"}re undertaking a home
+              renovation or remodel or a contractor needing a waste management
+              solution for a job site, we
               {"'"}ve got you covered. Our dumpsters are reliable and
               convenient. Call us today to get a free quote, or reserve your
               dumpster using our online booking system.

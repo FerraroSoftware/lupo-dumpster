@@ -197,12 +197,12 @@ export default function Hero() {
                     delay: 0.1,
                   }}
                 >
-                  If you{"'"}re located in the Holiday, FL area and searching
-                  for a reliable dumpster rental company, we{"'"}ve got you
-                  covered. Our company offers affordable prices, convenient junk
-                  removal services, and top-notch customer service. Don{"'"}t
-                  hesitate to reach out to us for all your waste management
-                  needs.
+                  If you{"'"}re located in the New Port Richey, FL area and
+                  searching for a reliable dumpster rental company, we{"'"}ve
+                  got you covered. Our company offers affordable prices,
+                  convenient junk removal services, and top-notch customer
+                  service. Don{"'"}t hesitate to reach out to us for all your
+                  waste management needs.
                 </motion.p>
               </div>
 
@@ -252,7 +252,7 @@ export default function Hero() {
                 <Image
                   className="w-full shadow-2xl rounded-xl  lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-red-100 lg:h-full lg:w-auto lg:max-w-none"
                   src={lupodumpster}
-                  alt="Lupo dumpster rentals holiday fl"
+                  alt="Lupo dumpster rentals new port richey fl"
                 />
               </motion.div>
             </div>
