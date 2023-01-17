@@ -155,7 +155,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  2 ton included in price
+                  2 tons included in price
                 </li>
               </ul>
 
@@ -310,7 +310,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  2 ton included in price
+                  2 tons included in price
                 </li>
               </ul>
 
@@ -459,7 +459,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  3 ton included in price
+                  3 tons included in price
                 </li>
               </ul>
 
@@ -608,7 +608,7 @@ export default function Pricing() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  3 ton included in price
+                  3 tons included in price
                 </li>
               </ul>
 
