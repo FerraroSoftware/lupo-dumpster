@@ -215,9 +215,9 @@ export default function services() {
                   />
                 </svg>
               </div> */}
-              <h2 className="mt-10 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
+              <h1 className="mt-10 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
                 Waste Management Services
-              </h2>
+              </h1>
               <p className="mt-6 leading-relaxed  text-lg font-normal text-gray-400">
                 With Lupo Dumpster Rentals, you can rest assured that your waste
                 management needs will be taken care of quickly and efficiently.
