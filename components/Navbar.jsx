@@ -111,7 +111,7 @@ export default function Navbar() {
             <nav>
               <div className="flex flex-col pt-8 pb-4 space-y-6 text-center">
                 <Link
-                  href="#services"
+                  href="/services"
                   title=""
                   className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
                   onClick={() => setIsOpen(!isOpen)}
