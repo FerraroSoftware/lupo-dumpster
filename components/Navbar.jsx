@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <div className="shrink-0">
               <Link href="/" title="" className="">
-                <Image className="w-auto h-14" src={logo} alt="logo" />
+                <Image className="w-auto h-14" src={logo} alt="logo" priority />
               </Link>
             </div>
 
