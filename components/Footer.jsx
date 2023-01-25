@@ -69,7 +69,7 @@ export default function Footer() {
                       </Link>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <Link
                         href="#testimonial"
                         title=""
@@ -78,7 +78,7 @@ export default function Footer() {
                         {" "}
                         Testimonials{" "}
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                       <Link
