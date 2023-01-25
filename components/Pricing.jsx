@@ -10,7 +10,7 @@ export default function Pricing() {
             Cost Effective Solutions for Your Needs
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
-            we strive to offer affordable solutions that meet your needs without
+            We strive to offer affordable solutions that meet your needs without
             compromising on the quality of our services.
           </p>
         </div>

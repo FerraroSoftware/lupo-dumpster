@@ -49,7 +49,7 @@ export default function Footer() {
                   <ul className="mt-6 space-y-4">
                     <li>
                       <Link
-                        href="#services"
+                        href="/services"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
