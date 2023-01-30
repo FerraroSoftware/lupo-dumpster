@@ -82,7 +82,7 @@ export default function Footer() {
 
                     <li>
                       <Link
-                        href="#contact"
+                        href="/contact"
                         title=""
                         className="flex text-base font-normal text-gray-400 transition-all transform hover:text-white duration hover:translate-x-1"
                       >
