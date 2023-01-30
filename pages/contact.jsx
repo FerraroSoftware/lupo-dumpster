@@ -2,10 +2,22 @@ import React from "react";
 import Contact from "../components/Contact";
 import Image from "next/image";
 import dumpsterrental from "../public/dumpsterrental.png";
+import Head from "next/head";
 
 export default function contact() {
   return (
     <>
+      <Head>
+        <title>
+          Lupo Dumpster Rental New Port Richey, FL- Contact Us Today
+        </title>
+        <meta
+          name="description"
+          content="Need a dumpster rental? Contact Lupo Dumpster Rentals today to get a quote, schedule delivery, and rent a dumpster for your next project. Don't let your trash sit around."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="relative bg-zinc-700">
         <div className="absolute inset-0">
           <Image

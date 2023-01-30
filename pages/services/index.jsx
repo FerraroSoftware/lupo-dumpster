@@ -35,6 +35,7 @@ const servicelist = [
     description: "Design System",
     image: cleanoutservice,
     link: "/services/garage-cleaning-service-new-port-richey-fl",
+    alttext: "Garage Cleaning Service",
   },
   // {
   //   name: "Hoarding Cleanup & Removal",
@@ -96,6 +97,7 @@ const pickupitems = [
     description: "Design System",
     image: constructiondebris,
     link: "/services/construction-debris-removal-new-port-richey-fl",
+    alttext: "Construction Debris Removal",
   },
   // {
   //   name: "Electronics",
