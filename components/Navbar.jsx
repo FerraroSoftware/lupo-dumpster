@@ -42,7 +42,7 @@ export default function Navbar() {
               </Link> */}
 
               <Link
-                href="#contact"
+                href="/contact"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
               >
@@ -141,7 +141,7 @@ export default function Navbar() {
                 </Link> */}
 
                 <Link
-                  href="#contact"
+                  href="/contact"
                   title=""
                   className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
                   onClick={() => setIsOpen(!isOpen)}

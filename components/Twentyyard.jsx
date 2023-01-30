@@ -417,7 +417,7 @@ export default function Twentyyard2() {
                   </div>
 
                   <Link
-                    href="#contact"
+                    href="/contact"
                     title=""
                     className="
                                    inline-flex

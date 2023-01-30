@@ -22,9 +22,10 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
-import dump1 from "../../public/dump1.png";
-import dump2 from "../../public/dump2.png";
+import cleanoutservice from "../../public/garage-clean-out-service.png";
 import Head from "next/head";
+import messygarage from "../../public/messy-garage.png";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -61,65 +62,38 @@ const points = [
 
 const faqs = [
   {
-    question: "What is a roll-off dumpster?",
+    question: "What does a garage cleanout service include?",
     answer:
-      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
+      "A garage cleanout service typically includes sorting through items, separating things to keep from things to dispose of, hauling away unwanted items, and disposing of them in an eco-friendly manner. Some companies may offer additional services, such as organizing and rearranging things in the garage.",
     items: [],
   },
   {
-    question: "Why would I rent a dumpster?",
+    question: "How much does a garage cleanout cost?",
     answer:
-      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
-    items: [
-      "Refrigerator Disposal",
-      "Garbage Removal",
-      "Mattress Disposal",
-      "Foreclosure Clean Outs",
-      "Construction Waste Removal",
-      "Yard Waste Removal",
-      "Trash Removal",
-      "Appliance Removal",
-      "Television Disposal & Recycling",
-      "Furniture Removal",
-      "E-Waste Disposal",
-      "Hot Tub Disposal",
-    ],
-  },
-  {
-    question:
-      "What are my options when renting a dumpster from Lupo Dumpster Rentals?",
-    answer:
-      "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
+      "The cost of a garage cleanout can vary depending on the volume of items being removed, and the location. We typically charge by the hour or by the object's size. Be sure to get a quote from us before scheduling service.",
     items: [],
   },
   {
-    question: "How much does it cost to rent a dumpster?",
+    question: "How do I prepare for a garage cleanout service?",
     answer:
-      "The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
+      "You can prepare for a garage cleanout service by separating items you want to keep from things you want to be removed, clearing a path to the articles, and ensuring that the items are easy to access. It's best to check with the company to see if they have specific instructions or requirements.",
     items: [],
   },
   {
-    question: " Why rent from Lupo Dumpster Rentals?",
+    question: "Do you recycle or donate items during the removal process?",
     answer:
-      "Lupo Dumpster Rental in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "Yes we do! We do take items to the New Port Richey recycling center and donate items to local charities.",
     items: [],
   },
   {
-    question: "What items can’t go in a dumpster?",
+    question: "Are there any items that your service can't remove?",
     answer:
       "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
     items: [],
   },
   {
-    question: "How can I use a dumpster in a move?",
-    answer:
-      "A dumpster can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
-    items: [],
-  },
-  {
-    question: "Are there dumpster alternatives?",
-    answer:
-      "Yes, there are alternative options for waste disposal, such as our junk removal service. This alternative may be more appropriate depending on the amount and type of waste or debris you dispose of.",
+    question: "Are you licensed and insured?",
+    answer: "Yes we are! Our license and insurance number is L20000153106.",
     items: [],
   },
 ];
@@ -173,16 +147,16 @@ const features = [
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function dumpsterrental() {
+export default function garagecleaningservicenewportricheyfl() {
   return (
     <>
       <Head>
         <title>
-          Dumpster Rental Services in New Port Richey, FL - Affordable
+          Lupo Dumpster Rentals: Garage Cleaning Service in New Port Richey, FL
         </title>
         <meta
           name="description"
-          content="Dumpster Rental Services in New Port Richey, FL. We offer affordable and convenient dumpster rental services for any project. Look no further and contact us today!"
+          content="Trust Lupo Dumpster Rentals for efficient garage cleaning services in New Port Richey, FL. We handle the heavy lifting, allowing you to relax. Call us today!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -191,11 +165,12 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Dumpster Rental New Port Richey, FL
+              Unclutter Your Garage: Professional Garage Cleanout Services
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Get rid of your waste efficiently with Lupo Dumpster Rental
+              Efficient and Thorough Cleanout Solutions for Your Home or
+              Business in New Port Richey FL
             </p>
           </div>
         </div>
@@ -217,14 +192,22 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Affordable Dumpster Rentals for Your Next Cleanup Project
+                    Leave the Heavy Lifting to Us: Our Garage Cleanout Team is
+                    Here to Help
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Affordable dumpster rentals are essential to any New Port
-                    Richey, FL, cleanup project. With our competitive pricing
-                    and flexible rental options, you can find the perfect
-                    dumpster for your next cleanup project in New Port Richey,
-                    FL, without breaking the bank.
+                    Are you overwhelmed by the amount of clutter and junk in
+                    your garage in New Port Richey? We understand that cleaning
+                    out a garage can be daunting, especially when lifting and
+                    disposing of unwanted items. Let our skilled garage cleanout
+                    team take care of it for you. We will sort through your
+                    items, separating the things you want to keep from those you
+                    no longer need. We
+                    {"'"}ll take care of hauling away undesirable items and
+                    dispose of them in an eco-friendly manner. Don{"'"}t let the
+                    clutter in your garage hold you back any longer. Contact us
+                    today to schedule your garage cleanout, and let us handle
+                    the heavy lifting.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -267,9 +250,9 @@ export default function dumpsterrental() {
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none opacity-80"
+                  src={messygarage}
+                  alt="Garage Clean out service New Port Richey, FL"
                 />
               </div>
             </div>
@@ -289,17 +272,22 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Efficient and Convenient Dumpster Rental Services
+                    Garage Cleanout Done Right: Prompt, Professional, and
+                    Reliable Service
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Efficient and convenient dumpster rental services are
-                    necessary for any construction or cleanup project. Whether
-                    you{"'"}re a contractor, a construction team, a small
-                    business owner, or a homeowner, our dumpster rental services
-                    provide fast and flexible solutions for all your waste
-                    disposal needs. We offer prompt delivery and easy trash
-                    pickup options. This allows you to focus on your project and
-                    leave waste management to us.
+                    Are you tired of looking at the clutter and mess in your
+                    garage? Let us help you with our proficient and efficient
+                    garage cleanout services. We understand that every garage is
+                    unique, and we will work with you to create a plan that fits
+                    your needs and budget. We pride ourselves on our prompt,
+                    professional, and reliable service in New Port Richey. We
+                    will show up on time, work efficiently and leave your garage
+                    spotless. We also make every effort to recycle and donate
+                    items whenever possible. Don{"'"}t let the clutter in your
+                    garage hold you back any longer. Contact us today to
+                    schedule your garage cleanout and enjoy the benefits of a
+                    clean and organized space.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -318,8 +306,8 @@ export default function dumpsterrental() {
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump2}
-                  alt="Dumpster rental services"
+                  src={cleanoutservice}
+                  alt="Clean out services"
                 />
               </div>
             </div>
@@ -332,14 +320,14 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rentals
+              Garage Cleaning Services
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Dumpster Service, Every Time
+              Complete Garage Cleanout Services: From Organizing to Hauling Away
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Count on us for dependable and consistent service, every time you
-              need a dumpster rental in New Port Richey, FL.
+              Professional and Efficient Garage Cleanout Services for Your Home
+              or Business
             </p>
           </div>
 

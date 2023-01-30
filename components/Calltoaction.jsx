@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import lupotestimonial from "../public/lupo-testimonial.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const cardVariants = {
   offscreen: {
@@ -90,14 +91,14 @@ export default function Calltoaction() {
             whileInView="onscreen"
             variants={cardVariants}
           >
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               title=""
               className="inline-flex items-center justify-center px-8 py-3 text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90"
               role="button"
             >
               Contact Us Now
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

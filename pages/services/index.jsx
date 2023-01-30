@@ -12,6 +12,8 @@ import Head from "next/head";
 import dominique from "../../public/dominique.png";
 import review from "../../public/review.png";
 import wastemanagement from "../../public/waste-management.png";
+import cleanoutservice from "../../public/garage-clean-out-service.png";
+import constructiondebris from "../../public/construction-debris.png";
 
 const servicelist = [
   {
@@ -28,12 +30,12 @@ const servicelist = [
     link: "/services/junk-removal-new-port-richey-fl",
     alttext: "Junk Removal & Recycling",
   },
-  // {
-  //   name: "Garage Cleanout Removal",
-  //   description: "Design System",
-  //   image: "/waste-management.png",
-  //   link: "/services/dumpster-rental-new-port-richey-fl",
-  // },
+  {
+    name: "Garage Cleaning Service",
+    description: "Design System",
+    image: cleanoutservice,
+    link: "/services/garage-cleaning-service-new-port-richey-fl",
+  },
   // {
   //   name: "Hoarding Cleanup & Removal",
   //   description: "Design System",
@@ -89,11 +91,12 @@ const pickupitems = [
   //   description: "Design System",
   //   image: "/waste-management.png",
   // },
-  // {
-  //   name: "Construction Debris",
-  //   description: "Design System",
-  //   image: "/waste-management.png",
-  // },
+  {
+    name: "Construction Debris Removal",
+    description: "Design System",
+    image: constructiondebris,
+    link: "/services/construction-debris-removal-new-port-richey-fl",
+  },
   // {
   //   name: "Electronics",
   //   description: "Design System",
@@ -510,17 +513,6 @@ export default function services() {
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl max-w-xl">
                 Real Reviews from Real Customers - See What They Have to Say
               </h2>
-            </div>
-
-            <div className="mt-8 text-center md:mt-16 md:order-3">
-              <a
-                href="#"
-                title=""
-                className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600  focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
-              >
-                {" "}
-                Check all 2,157 reviews{" "}
-              </a>
             </div>
 
             <div className="relative mt-10 md:mt-24 md:order-2">

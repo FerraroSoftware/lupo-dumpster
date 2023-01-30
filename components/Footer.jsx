@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
               <Link
-                href="#contact"
+                href="/contact"
                 title=""
                 className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal  bg-transparent 
                  text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-red-600 hover:text-white"

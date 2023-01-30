@@ -161,7 +161,7 @@ export default function Pricing() {
 
               <div className="mt-8">
                 <Link
-                  href="#contact"
+                  href="/contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
@@ -316,7 +316,7 @@ export default function Pricing() {
 
               <div className="mt-8">
                 <Link
-                  href="#contact"
+                  href="/contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
                   role="button"
@@ -465,7 +465,7 @@ export default function Pricing() {
 
               <div className="mt-8">
                 <Link
-                  href="#contact"
+                  href="/contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"
@@ -614,7 +614,7 @@ export default function Pricing() {
 
               <div className="mt-8">
                 <Link
-                  href="#contact"
+                  href="/contact"
                   title=""
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-300 rounded-md  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   role="button"

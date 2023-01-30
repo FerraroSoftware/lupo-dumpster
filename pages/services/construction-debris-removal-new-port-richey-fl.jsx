@@ -24,6 +24,8 @@ import Image from "next/image";
 import jordan from "../../public/jordan.png";
 import dump1 from "../../public/dump1.png";
 import dump2 from "../../public/dump2.png";
+import constructiondebriss from "../../public/construction-debris.png";
+import cleanconstruction from "../../public/clean-construction.png";
 import Head from "next/head";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -61,65 +63,40 @@ const points = [
 
 const faqs = [
   {
-    question: "What is a roll-off dumpster?",
+    question: "What types of construction debris do you remove?",
     answer:
-      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
+      "We remove all types of construction debris, including branches, wood, drywall, roofing materials, and more, in New Port Richey.",
     items: [],
   },
   {
-    question: "Why would I rent a dumpster?",
+    question: "How do you handle and dispose of construction debris?",
     answer:
-      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
-    items: [
-      "Refrigerator Disposal",
-      "Garbage Removal",
-      "Mattress Disposal",
-      "Foreclosure Clean Outs",
-      "Construction Waste Removal",
-      "Yard Waste Removal",
-      "Trash Removal",
-      "Appliance Removal",
-      "Television Disposal & Recycling",
-      "Furniture Removal",
-      "E-Waste Disposal",
-      "Hot Tub Disposal",
-    ],
+      "We also comply with all local and state construction debris removal and disposal laws.",
+    items: [],
   },
   {
     question:
       "What are my options when renting a dumpster from Lupo Dumpster Rentals?",
     answer:
-      "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
+      "We also comply with all local and state construction debris removal and disposal laws.",
     items: [],
   },
   {
-    question: "How much does it cost to rent a dumpster?",
+    question: "How do I schedule a construction debris removal service?",
     answer:
-      "The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
+      "You can schedule a construction debris removal service by calling or booking online. We will work with you to schedule a time suitable for your project and provide you with a total for the service.",
     items: [],
   },
   {
-    question: " Why rent from Lupo Dumpster Rentals?",
+    question: "Do you offer same-day construction debris removal services?",
     answer:
-      "Lupo Dumpster Rental in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "Yes, we offer same-day services for construction debris removal for clients in New Port Richey. Contact us, and we will do our best to accommodate your needs.",
     items: [],
   },
   {
-    question: "What items can’t go in a dumpster?",
+    question: "How much does construction debris removal cost?",
     answer:
-      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
-    items: [],
-  },
-  {
-    question: "How can I use a dumpster in a move?",
-    answer:
-      "A dumpster can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
-    items: [],
-  },
-  {
-    question: "Are there dumpster alternatives?",
-    answer:
-      "Yes, there are alternative options for waste disposal, such as our junk removal service. This alternative may be more appropriate depending on the amount and type of waste or debris you dispose of.",
+      "The cost of construction debris removal depends on several factors, including the type and amount of debris, the location of the project, and any additional services required.",
     items: [],
   },
 ];
@@ -167,22 +144,25 @@ const features = [
   //   description:
   //     "Create a safe, organized and functional space, by removing any unwanted items, clutter, and hazardous materials.",
   // },
+
   // {
   //   name: "Yard Waste",
+  //   link: "/services/construction-debris-removal-new-port-richey-fl",
   //   description:
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function dumpsterrental() {
+export default function constructiondebris() {
   return (
     <>
       <Head>
         <title>
-          Dumpster Rental Services in New Port Richey, FL - Affordable
+          Construction Debris Removal Services in New Port Richey, FL -
+          Affordable
         </title>
         <meta
           name="description"
-          content="Dumpster Rental Services in New Port Richey, FL. We offer affordable and convenient dumpster rental services for any project. Look no further and contact us today!"
+          content="Construction Debris Removal Services in New Port Richey, FL. We offer affordable and convenient Construction Debris Removal services for any project. Look no further and contact us today!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -191,7 +171,7 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Dumpster Rental New Port Richey, FL
+              Construction Debris Removal New Port Richey, FL
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
@@ -217,14 +197,22 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Affordable Dumpster Rentals for Your Next Cleanup Project
+                    Complete Construction Debris Cleanup Services
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Affordable dumpster rentals are essential to any New Port
-                    Richey, FL, cleanup project. With our competitive pricing
-                    and flexible rental options, you can find the perfect
-                    dumpster for your next cleanup project in New Port Richey,
-                    FL, without breaking the bank.
+                    We understand that construction projects can generate a lot
+                    of waste. It{"'"}s essential to have a reliable and timely
+                    solution for disposing of it. Lupo Dumpster rentals in New
+                    Port Richey offers Debris Cleanup Services near you. We are
+                    your one-stop solution for all your construction debris
+                    removal needs. We handle all types of construction debris,
+                    including bricks, concrete, wood, and more. We offer
+                    flexible scheduling and can work around your schedule to
+                    ensure that your construction site is left spotless and that
+                    the debris is disposed of properly. And with our easy online
+                    booking and multiple locations, you can find the nearest
+                    Complete Construction Debris Cleanup Services location near
+                    you and have it delivered to your construction site.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -268,8 +256,8 @@ export default function dumpsterrental() {
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  src={constructiondebriss}
+                  alt="Construction Debris Removal New Port Richey, FL"
                 />
               </div>
             </div>
@@ -289,17 +277,18 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Efficient and Convenient Dumpster Rental Services
+                    Efficient and Reliable Construction Debris Disposal
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Efficient and convenient dumpster rental services are
-                    necessary for any construction or cleanup project. Whether
-                    you{"'"}re a contractor, a construction team, a small
-                    business owner, or a homeowner, our dumpster rental services
-                    provide fast and flexible solutions for all your waste
-                    disposal needs. We offer prompt delivery and easy trash
-                    pickup options. This allows you to focus on your project and
-                    leave waste management to us.
+                    We understand that getting rid of construction debris can be
+                    a headache. Construction projects can generate a lot of
+                    waste, and it{"'"}s essential to have a dedicated and timely
+                    solution for disposing of it. Lupo Dumpster Rental in New
+                    Port Richey is a leading efficient, and reliable debris
+                    disposal service provider. We will get your mess cleaned up
+                    the same day we arrive. Give us a call for a custom quote
+                    today! Never worry about searching for debris removal near
+                    me again, and save our number for next time.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -318,8 +307,8 @@ export default function dumpsterrental() {
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump2}
-                  alt="Dumpster rental services"
+                  src={cleanconstruction}
+                  alt="Construction Debris Removal services"
                 />
               </div>
             </div>
@@ -332,14 +321,14 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rentals
+              Construction Debris Removals
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Dumpster Service, Every Time
+              Affordable Construction Debris Removal Solutions
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Count on us for dependable and consistent service, every time you
-              need a dumpster rental in New Port Richey, FL.
+              Cost-Effective and Budget-Friendly Construction Debris Removal
+              Services for Your Project in New Port Richey.
             </p>
           </div>
 

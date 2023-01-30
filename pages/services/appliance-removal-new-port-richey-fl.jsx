@@ -114,6 +114,12 @@ const features = [
       "Get rid of your old refrigerators, washing machines, dryers, ovens, dishwashers, and air conditioners.",
     link: "/services/appliance-removal-new-port-richey-fl",
   },
+  {
+    name: "Construction Debris",
+    link: "/services/construction-debris-removal-new-port-richey-fl",
+    description:
+      "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
+  },
   // {
   //   name: "Home furniture removal",
   //   description:
@@ -212,13 +218,13 @@ export default function Applianceremoval() {
                     freshen up your space today!
                   </p>
                   <div className="mt-6">
-                    <a
-                      href="#contact"
+                    <Link
+                      href="/contact"
                       className="inline-flex px-4 py-1.5  leading-7  shadow-sm ring-1 ring-red-600 
                       text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
                       Book Trailer Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -289,14 +295,14 @@ export default function Applianceremoval() {
                     room for new ones. Give us a call today!
                   </p>
                   <div className="mt-6">
-                    <a
-                      href="#contact"
+                    <Link
+                      href="/contact"
                       className="inline-flex  px-4 py-1.5 leading-7  shadow-sm ring-1  hover:ring-red-700
                       ring-red-600 
                       text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -442,7 +448,7 @@ export default function Applianceremoval() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="rounded-md bg-white px-4 py-1.5  text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Rent a dumpster
