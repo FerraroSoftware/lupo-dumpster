@@ -220,18 +220,18 @@ export default function dumpsterrentalholiday() {
                   <p className="mt-4 text-lg text-gray-400">
                     At Lupo Dumpster Rentals, we understand the importance of
                     reliable and efficient waste management solutions for your
-                    projects in Holiday, Florida. That's why we offer a range of
-                    dumpster rentals to fit your specific needs, whether you're
-                    cleaning out a home, working on a construction site, or
-                    tackling any other type of project. Our team is dedicated to
-                    providing top-notch customer service, and we strive to make
-                    renting a dumpster as simple and hassle-free as possible.
-                    With flexible rental periods and competitive pricing, you
-                    can trust us to find the perfect solution to meet your
-                    budget and timeline. Contact us today to learn more about
-                    our dumpster rental options in Holiday, FL, and to schedule
-                    your delivery. We look forward to helping you make your
-                    project a success.
+                    projects in Holiday, Florida. That{"'"}s why we offer a
+                    range of dumpster rentals to fit your specific needs,
+                    whether you{"'"}re cleaning out a home, working on a
+                    construction site, or tackling any other type of project.
+                    Our team is dedicated to providing top-notch customer
+                    service, and we strive to make renting a dumpster as simple
+                    and hassle-free as possible. With flexible rental periods
+                    and competitive pricing, you can trust us to find the
+                    perfect solution to meet your budget and timeline. Contact
+                    us today to learn more about our dumpster rental options in
+                    Holiday, FL, and to schedule your delivery. We look forward
+                    to helping you make your project a success.
                   </p>
                   <div className="mt-6">
                     <Link
