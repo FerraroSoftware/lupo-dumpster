@@ -52,14 +52,14 @@ export default function Mission() {
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
               <Link
-                href="#contact"
+                href="/services/dumpster-rental-holiday-fl"
                 title=""
                 className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-gray-200 bg-transparent 
                 border border-red-600 rounded-md hover:bg-red-600 hover:text-white transition-all duration-200"
                 role="button"
               >
                 {" "}
-                Book a Trailer{" "}
+                Read More{" "}
               </Link>
             </div>
           </div>
