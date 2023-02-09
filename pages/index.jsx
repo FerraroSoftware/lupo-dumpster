@@ -18,7 +18,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Need to clear out your space? Lupo Dumpster Rentals provides reliable junk removal services for both residential and commercial properties in New Port Richey, FL."
+          content="Flat Rate Prices | Zero Hidden Fees For All Dumpster Rentals in New Port Richey, Florida. Call now for a local and effortless experience with Lupo Dumpster Rentals."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
