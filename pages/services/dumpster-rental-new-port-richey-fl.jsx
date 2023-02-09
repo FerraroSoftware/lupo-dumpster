@@ -178,7 +178,7 @@ export default function dumpsterrental() {
     <>
       <Head>
         <title>
-          Dumpster Rental Services in New Port Richey, FL - Affordable
+          Dumpster Rental Services in New Port Richey, FL | Flat Prices
         </title>
         <meta
           name="description"

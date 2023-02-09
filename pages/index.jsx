@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals - Junk Removal for New Port Richey, FL
+          Lupo Dumpster Rentals | Junk Removal for New Port Richey, FL
         </title>
         <meta
           name="description"

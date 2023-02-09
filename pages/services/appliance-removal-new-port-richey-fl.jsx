@@ -161,7 +161,7 @@ export default function Applianceremoval() {
     <>
       <Head>
         <title>
-          Appliance Removal Services in New Port Richey, FL - Fast Service
+          Appliance Removal Services in New Port Richey, FL | Fast Service
         </title>
         <meta
           name="description"

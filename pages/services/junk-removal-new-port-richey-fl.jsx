@@ -158,7 +158,7 @@ export default function junkremoval() {
     <>
       <Head>
         <title>
-          Junk Removal Services in New Port Richey, FL - Hassle-Free
+          Junk Removal Services in New Port Richey, FL | Hassle-Free
         </title>
         <meta
           name="description"

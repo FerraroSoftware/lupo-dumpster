@@ -152,7 +152,7 @@ export default function garagecleaningservicenewportricheyfl() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals: Garage Cleaning Service in New Port Richey, FL
+          Lupo Dumpster Rentals | Garage Cleaning Service in New Port Richey, FL
         </title>
         <meta
           name="description"

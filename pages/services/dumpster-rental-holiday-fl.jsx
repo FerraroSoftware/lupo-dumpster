@@ -177,7 +177,7 @@ export default function dumpsterrentalholiday() {
   return (
     <>
       <Head>
-        <title>Dumpster Rental Services in Holiday, FL - Affordable</title>
+        <title>Dumpster Rental Services in Holiday, FL | Flat Rates</title>
         <meta
           name="description"
           content="Flat Rate Prices | Family Owned | Zero Hidden Fees For All Dumpster Rentals in Holiday, Florida. Call now for a local and effortless experience with Lupo Dumpster Rentals."

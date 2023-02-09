@@ -166,7 +166,7 @@ export default function services() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals - Affordable and Reliable Waste Services
+          Lupo Dumpster Rentals | Affordable and Reliable Waste Services
         </title>
         <meta
           name="description"
