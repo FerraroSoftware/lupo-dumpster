@@ -14,6 +14,7 @@ import review from "../../public/review.png";
 import wastemanagement from "../../public/waste-management.png";
 import cleanoutservice from "../../public/garage-clean-out-service.png";
 import constructiondebris from "../../public/construction-debris.png";
+import hoardingservices from "../../public/hoarding-services.png";
 
 const servicelist = [
   {
@@ -37,11 +38,13 @@ const servicelist = [
     link: "/services/garage-cleaning-service-new-port-richey-fl",
     alttext: "Garage Cleaning Service",
   },
-  // {
-  //   name: "Hoarding Cleanup & Removal",
-  //   description: "Design System",
-  //   image: "/waste-management.png",
-  // },
+  {
+    name: "Hoarding Cleanup & Removal",
+    description: "Design System",
+    image: hoardingservices,
+    link: "/services/hoarding-cleanup-new-port-richey-fl",
+    alttext: "Hoarding Cleanup",
+  },
   // {
   //   name: "Basement Cleanout",
   //   description: "Design System",
