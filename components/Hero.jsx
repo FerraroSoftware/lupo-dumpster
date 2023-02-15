@@ -34,7 +34,7 @@ export default function Hero() {
                     delay: 0.1,
                   }}
                 >
-                  If you{"'"}re located in the New Port Richey, FL area and
+                  If you{"'"}re located in the greater Tampa Bay area and
                   searching for a reliable dumpster rental company, we{"'"}ve
                   got you covered. Our company offers affordable prices,
                   convenient junk removal services, and top-notch customer
