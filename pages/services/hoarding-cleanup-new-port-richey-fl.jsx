@@ -167,8 +167,7 @@ export default function garagecleaningservicenewportricheyfl() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals | Hoarder Cleaning Service in New Port Richey,
-          FL | Flat Rates
+          Flat Rates | Hoarder Cleaning Service in New Port Richey, FL
         </title>
         <meta
           name="description"
