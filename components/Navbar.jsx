@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="shrink-0">
               <Link href="/" title="" className="">
                 {/* priority */}
-                <Image className="w-auto h-14" src={logo} alt="logo" />
+                <Image className="w-auto h-14" src={logo} alt="logo" priority />
               </Link>
             </div>
 
