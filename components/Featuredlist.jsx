@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import trailer from "../public/dump-trailers.png";
+import Link from "next/link";
 const featureditems = [
   "Refrigerator Disposal",
   "Garbage Removal",
@@ -105,7 +106,14 @@ export default function Featuredlist() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
                 No Job Too Big or Small.
               </span>{" "}
-              We have 10, 15 and 20 cubic yard dump trailers.
+              We have 10,{" "}
+              <Link
+                href="/services/15-yard-dump-trailer"
+                className="hover:text-red-600"
+              >
+                15
+              </Link>{" "}
+              and 20 cubic yard dump trailers.
             </p>
             <p className="mt-8 text-lg font-normal text-gray-400">
               Lupo Dumpster Rentals is near you in New Port Richey to serve all

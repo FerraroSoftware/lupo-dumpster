@@ -70,7 +70,7 @@ const faqs = [
   {
     question: "Can I schedule a junk removal service on the same day?",
     answer:
-      "We offer same day services in New Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
+      "We offer same day services in Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
     items: [],
   },
   {
@@ -82,17 +82,18 @@ const faqs = [
   {
     question: "Do you recycle or donate items during the removal process?",
     answer:
-      "Yes we do! We do take items to the New Port Richey recycling center and donate items to local charities.",
+      "Yes we do! We do take items to the Port Richey recycling center and donate items to local charities.",
     items: [],
   },
   {
-    question: "Are there any items that your service can't remove?",
+    question:
+      "Are there any items that your junk removal service can't remove?",
     answer:
       "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
     items: [],
   },
   {
-    question: "Are you licensed and insured?",
+    question: "Are you licensed and insured for junk removal?",
     answer: "Yes we are! Our license and insurance number is L20000153106.",
     items: [],
   },
@@ -157,10 +158,10 @@ export default function junkremoval() {
   return (
     <>
       <Head>
-        <title>Junk Removal Services New Port Richey | Trash Disposal</title>
+        <title>Junk Removal Services Port Richey | Trash Disposal</title>
         <meta
           name="description"
-          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk removal services in New Port Richey, FL will leave your space clean and organized."
+          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk removal services in Port Richey, FL will leave your space clean and organized."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -174,8 +175,8 @@ export default function junkremoval() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Professional and Efficient Junk Removal Services for Your Home or
-              Business in New Port Richey, FL
+              Professional and Efficient Junk Removal Services in Port Richey
+              for Your Home or Business in Port Richey, FL
             </p>
           </div>
         </div>
@@ -198,19 +199,16 @@ export default function junkremoval() {
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
                     Efficient and Affordable Junk Removal for Your Home or
-                    Business
+                    Business in Port Richey
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    If you want to declutter your home or business in New Port
-                    Richey, our junk removal services are here to help. We
-                    provide efficient and affordable solutions for removing
-                    unwanted items. Whether it is a piece of furniture or a
-                    whole house full of clutter, our team of professionals will
-                    handle all the hauling and disposal of your junk, leaving
-                    you with a clean and organized space. With our efficient and
-                    affordable services, you can eliminate junk and enjoy a
-                    cleaner, more organized home or business. Connect with us
-                    below to schedule your junk removal service.
+                    Lupo dumpster rentals is near you in Port Richey to remove
+                    your junk. We offer affordable solutions for removing your
+                    junk. We handle almost any item, including furniture,
+                    refrigerators, and more. Give us a quick call to confirm. We
+                    are ready to dispose of your waste the same day you call,
+                    giving you a more organized space. Call us now! Let us help
+                    clean up your trash.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -275,20 +273,19 @@ export default function junkremoval() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Get Rid of Your Junk Hassle-Free with Our Professional
-                    Removal Services
+                    Hassle-Free Junk Removal Services in Port Richey, FL
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Say goodbye to untidy spaces and hello to a cleaner, more
-                    organized home or business with our professional junk
-                    removal services. Our team of experts from New Port Richey
-                    will handle all the heavy lifting, hauling, and disposing of
-                    your unwanted items, making the process hassle-free. We help
-                    clean single rooms, garages, houses, and commercial spaces.
-                    With our efficient and affordable services, you can finally
-                    eliminate the clutter and enjoy a cleaner space. Connect
-                    with us today to schedule your junk removal and see the
-                    difference.
+                    Experience transforming your living or working environment
+                    with our exceptional junk removal services. Bid farewell to
+                    disorderly spaces and say hello to a more organized home or
+                    business. Our team of proficient specialists in Port Richey
+                    is ready to handle all the lifting, hauling, and disposal of
+                    your unwanted belongings. We can clean a single room,
+                    garage, house, or commercial space with the utmost
+                    efficiency and affordability. Schedule your junk removal
+                    with us today and witness the remarkable difference for
+                    yourself.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -321,7 +318,7 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Junk Removal
+              Junk Removal Port Richey
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
               Efficient and Eco-Friendly Junk Removal: We Recycle and Donate
@@ -329,7 +326,7 @@ export default function junkremoval() {
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               Reduce Your Carbon Footprint with Our Sustainable Junk Removal
-              Services in New Port Richey, FL
+              Services in Port Richey, FL
             </p>
           </div>
 
@@ -439,7 +436,7 @@ export default function junkremoval() {
                 Don{"'"}t let your junk take over. Rent a dumpster today.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Efficient clutter disposal in New Port Richey with our dumpster
+                Efficient clutter disposal in Port Richey with our dumpster
                 rental services. Rent one today and experience the convenience
                 and peace of mind.
               </p>

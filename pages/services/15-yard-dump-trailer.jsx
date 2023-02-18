@@ -22,10 +22,9 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
-import dumpsterrental from "../../public/dumpsterrental.png";
-import junkremoving from "../../public/junkremoval.png";
+import dump1 from "../../public/dump1.png";
+import dump2 from "../../public/dump2.png";
 import Head from "next/head";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -62,44 +61,65 @@ const points = [
 
 const faqs = [
   {
-    question: "What items can be removed with junk removal services?",
+    question: "What is a roll-off dumpster?",
     answer:
-      "Junk removal services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
+      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
     items: [],
   },
   {
-    question: "Can I schedule a junk removal service on the same day?",
+    question: "Why would I rent a 15 yard dump trailer?",
     answer:
-      "We offer same day services in New Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
+      "There are multiple reasons why someone might choose to rent a 15 yard dump trailer. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
+    items: [
+      "Refrigerator Disposal",
+      "Garbage Removal",
+      "Mattress Disposal",
+      "Foreclosure Clean Outs",
+      "Construction Waste Removal",
+      "Yard Waste Removal",
+      "Trash Removal",
+      "Appliance Removal",
+      "Television Disposal & Recycling",
+      "Furniture Removal",
+      "E-Waste Disposal",
+      "Hot Tub Disposal",
+    ],
+  },
+  {
+    question:
+      "What are my options when renting a 15 yard dump trailer from Lupo Dumpster Rentals?",
+    answer:
+      "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
     items: [],
   },
   {
-    question: "How much does junk removal cost?",
+    question: "How much does it cost to rent a 15 yard dump trailer?",
     answer:
-      "This will depend on the types of items you have. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
+      "The cost of renting a 15 yard dunp trailer can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
     items: [],
   },
   {
-    question: "Do you recycle or donate items during the removal process?",
+    question: "Why rent a 15 yard dump trailer from Lupo Dumpster Rentals?",
     answer:
-      "Yes we do! We do take items to the New Port Richey recycling center and donate items to local charities.",
+      "Lupo Dumpster Rentals near you in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods including 15 yard dump trailers. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
     items: [],
   },
   {
-    question: "Are there any items that your service can't remove?",
+    question: "What items can’t go in a 15 yard dump trailer?",
     answer:
-      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
+      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos in our 15 yard dumpster trailers.",
     items: [],
   },
   {
-    question: "Are you licensed and insured?",
-    answer: "Yes we are! Our license and insurance number is L20000153106.",
+    question: "How can I use a 15 yard dump trailer in a move?",
+    answer:
+      "A 15 yard dump trailer can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
     items: [],
   },
   {
-    question: "How do I prepare for a junk removal service?",
+    question: "Are there alternatives to a 15 yard dump trailer?",
     answer:
-      "You can prepare for a junk removal service by separating items that you want removed, clearing a path to the items, and making sure that the items are easy to access.",
+      "Yes, there are alternative options for waste disposal, such as our junk removal service. This alternative may be more appropriate depending on the amount and type of waste or debris you dispose of.",
     items: [],
   },
 ];
@@ -153,14 +173,16 @@ const features = [
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function junkremoval() {
+export default function fifteenyarddumpster() {
   return (
     <>
       <Head>
-        <title>Junk Removal Services New Port Richey | Trash Disposal</title>
+        <title>
+          Flat Rates | 15 Yard Dump Trailer Rentals | Lupo Dumpster Rental
+        </title>
         <meta
           name="description"
-          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk removal services in New Port Richey, FL will leave your space clean and organized."
+          content="Flat Rate Price, Family Owned, Zero Hidden Fees For All 15 Yard Trailer Rentals. Call now for a local and effortless experience with Lupo Dumpster Rentals."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -169,13 +191,12 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Say Goodbye to Clutter and Hello to a Cleaner Space with Our Junk
-              Removal
+              15 Yard Dump Trailer Rentals
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Professional and Efficient Junk Removal Services for Your Home or
-              Business in New Port Richey, FL
+              Call us today and get rid of your junk efficiently with a 15 yard
+              dump trailer
             </p>
           </div>
         </div>
@@ -197,20 +218,17 @@ export default function junkremoval() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Efficient and Affordable Junk Removal for Your Home or
-                    Business
+                    Your One-Stop Shop for 15 Yard Dump Trailers
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    If you want to declutter your home or business in New Port
-                    Richey, our junk removal services are here to help. We
-                    provide efficient and affordable solutions for removing
-                    unwanted items. Whether it is a piece of furniture or a
-                    whole house full of clutter, our team of professionals will
-                    handle all the hauling and disposal of your junk, leaving
-                    you with a clean and organized space. With our efficient and
-                    affordable services, you can eliminate junk and enjoy a
-                    cleaner, more organized home or business. Connect with us
-                    below to schedule your junk removal service.
+                    Don&apos;t let trash become a headache. With our 15 yard
+                    dump trailers, you can quickly get rid of your trash without
+                    hassle. We&apos;ll deliver the dumpster to your location and
+                    pick it up when you&apos;re done, taking the stress out of
+                    waste removal. Plus, our team is committed to disposing of
+                    waste responsibly, so you can have peace of mind knowing
+                    you&apos;re doing your part for the environment. We are near
+                    you for dumpster rentals. Contact us today to get started.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -254,8 +272,8 @@ export default function junkremoval() {
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dumpsterrental}
-                  alt="junk removal"
+                  src={dump1}
+                  alt="Dumpster Rental New Port Richey, FL"
                 />
               </div>
             </div>
@@ -275,20 +293,20 @@ export default function junkremoval() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Get Rid of Your Junk Hassle-Free with Our Professional
-                    Removal Services
+                    Rent a 15 Yard Dumpster Trailer For Your Next Remodel
+                    Project
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Say goodbye to untidy spaces and hello to a cleaner, more
-                    organized home or business with our professional junk
-                    removal services. Our team of experts from New Port Richey
-                    will handle all the heavy lifting, hauling, and disposing of
-                    your unwanted items, making the process hassle-free. We help
-                    clean single rooms, garages, houses, and commercial spaces.
-                    With our efficient and affordable services, you can finally
-                    eliminate the clutter and enjoy a cleaner space. Connect
-                    with us today to schedule your junk removal and see the
-                    difference.
+                    At our dumpster rental company, we&apos;re committed to
+                    providing efficient and eco-friendly waste management
+                    solutions for any size project. Our 15 yard dump trailer is
+                    excellent for any size project you have. Our dumpsters are
+                    designed to make waste removal simple and stress-free while
+                    minimizing the environmental impact. We&apos;ll work with
+                    you to find the right dumpster size and schedule for your
+                    project and ensure that your waste is disposed of
+                    responsibly and sustainably. We are near you for dumpster
+                    rentals. Contact us today!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -307,8 +325,8 @@ export default function junkremoval() {
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={junkremoving}
-                  alt="junk removal services"
+                  src={dump2}
+                  alt="Dumpster rental services"
                 />
               </div>
             </div>
@@ -321,15 +339,13 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Junk Removal
+              15 Yard Dumpster Trailers
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Efficient and Eco-Friendly Junk Removal: We Recycle and Donate
-              Whenever Possible
+              Reliable Dumpster Service, Every Time
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Reduce Your Carbon Footprint with Our Sustainable Junk Removal
-              Services in New Port Richey, FL
+              The Right Dumpster for Your New Port Richey Waste Removal Needs
             </p>
           </div>
 
@@ -373,8 +389,9 @@ export default function junkremoval() {
               Are you looking for a reliable and environmentally conscious waste
               management solution? Look no further! We specialize in proper
               disposal methods to minimize our impact on the environment. From
-              one-time cleanouts to ongoing services, we{"'"}ve got you covered.
-              Call us today, and let us take care of your waste worries!
+              one-time cleanouts to ongoing services, we&apos;ve got you
+              covered. Call us today, and let us take care of your waste
+              worries!
             </p>
           </div>
           <div className="mt-20 lg:col-span-2 lg:mt-0">
