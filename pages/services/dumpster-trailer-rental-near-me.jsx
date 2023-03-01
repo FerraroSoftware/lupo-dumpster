@@ -25,8 +25,6 @@ import jordan from "../../public/jordan.png";
 import dump1 from "../../public/dump1.png";
 import dump2 from "../../public/dump2.png";
 import Head from "next/head";
-import Reviews from "../../components/Reviews";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -42,7 +40,7 @@ const points = [
   {
     name: "On Time Delivery & Pick Up",
     description:
-      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your dumpster rental.",
+      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your dumpster trailer.",
 
     icon: ClockIcon,
   },
@@ -63,15 +61,15 @@ const points = [
 
 const faqs = [
   {
-    question: "What is a roll-off dumpster?",
+    question: "What is a dumpster trailer?",
     answer:
-      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
+      "A dumpster trailer is delivered to a job site by us via truck and then onto the ground. Dumpsters trailers are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs. We offer 10, 15, and 20 cubic yard dumpsters trailers near you.",
     items: [],
   },
   {
     question: "Why would I rent a dumpster?",
     answer:
-      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
+      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster trailer:",
     items: [
       "Refrigerator Disposal",
       "Garbage Removal",
@@ -89,7 +87,7 @@ const faqs = [
   },
   {
     question:
-      "What are my options when renting a dumpster from Lupo Dumpster Rentals?",
+      "What are my options when renting a dumpster from Lupo dumpster trailers?",
     answer:
       "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
     items: [],
@@ -97,13 +95,13 @@ const faqs = [
   {
     question: "How much does it cost to rent a dumpster?",
     answer:
-      "The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
+      "The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs for your New Port Richey project.",
     items: [],
   },
   {
-    question: " Why rent from Lupo Dumpster Rentals?",
+    question: " Why rent from Lupo dumpster trailers?",
     answer:
-      "Lupo Dumpster Rental in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "Lupo dumpster trailer offers dumpster trailers in New Port Richey. We are a well-known and reputable dumpster trailer company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
     items: [],
   },
   {
@@ -115,7 +113,7 @@ const faqs = [
   {
     question: "How can I use a dumpster in a move?",
     answer:
-      "A dumpster can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
+      "A dumpster can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. dumpster trailers can make the moving process less stressful and more efficient.",
     items: [],
   },
   {
@@ -131,11 +129,11 @@ const features = [
     name: "Home appliance recycling",
     description:
       "Get rid of your old refrigerators, washing machines, dryers, ovens, dishwashers, and air conditioners.",
-    link: "/services/appliance-removal-new-port-richey-fl",
+    link: "/services/appliance-removal-palm-harbor-fl",
   },
   {
     name: "Construction Debris",
-    link: "/services/construction-debris-removal-new-port-richey-fl",
+    link: "/services/construction-debris-removal-palm-harbor-fl",
     description:
       "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
   },
@@ -179,12 +177,10 @@ export default function dumpsterrental() {
   return (
     <>
       <Head>
-        <title>
-          Dumpster Rental Services in New Port Richey, FL | Flat Prices
-        </title>
+        <title>Dumpster Trailer Services | Flat Prices | New Port Richey</title>
         <meta
           name="description"
-          content="Dumpster Rental Services in New Port Richey, FL. We offer affordable and convenient dumpster rental services for any project. Look no further and contact us today!"
+          content="Dumpster trailer services in New Port Richey, FL. We offer affordable and convenient dumpster trailer services for any project. Look no further and contact us today!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -193,11 +189,12 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Dumpster Rental New Port Richey, FL
+              Dumpster Trailer Rentals
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Get rid of your waste efficiently with Lupo Dumpster Rental
+              Get rid of your waste efficiently with Lupo Dumpster Rentals near
+              you in New Port Richey.
             </p>
           </div>
         </div>
@@ -219,14 +216,23 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Affordable Dumpster Rentals for Your Next Cleanup Project
+                    Rent a Dumpster Trailer and Keep Your Work Site Clean and
+                    Organized
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Affordable dumpster rentals are essential to any New Port
-                    Richey, FL, cleanup project. With our competitive pricing
-                    and flexible rental options, you can find the perfect
-                    dumpster for your next cleanup project in New Port Richey,
-                    FL, without breaking the bank.
+                    Renting a dumpster trailer is an excellent solution for
+                    keeping your work site clean and organized in New Port
+                    Richey. With a dumpster trailer, you can quickly dispose of
+                    all types of waste, including construction debris, yard
+                    waste, and household junk. A dumpster trailer rental allows
+                    you to choose the size that fits your needs, and you only
+                    pay for the rental duration. This means you can focus on
+                    your work without worrying about how you will dispose of
+                    waste. With a dumpster trailer on site, you can maintain a
+                    safer work environment and avoid clutter and debris
+                    accumulation that can pose safety hazards. So, rent a
+                    dumpster trailer today and enjoy the convenience and peace
+                    of mind of a clean and organized work site.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -271,7 +277,7 @@ export default function dumpsterrental() {
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  alt="dumpster trailer New Port Richey, FL"
                 />
               </div>
             </div>
@@ -291,17 +297,21 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Efficient and Convenient Dumpster Rental Services
+                    Easy and Convenient Dumpster Trailer Rentals Near You
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Efficient and convenient dumpster rental services are
-                    necessary for any construction or cleanup project. Whether
-                    you{"'"}re a contractor, a construction team, a small
-                    business owner, or a homeowner, our dumpster rental services
-                    provide fast and flexible solutions for all your waste
-                    disposal needs. We offer prompt delivery and easy trash
-                    pickup options. This allows you to focus on your project and
-                    leave waste management to us.
+                    Looking for an easy and convenient dumpster trailer rental
+                    near you in New Port Richey? Look no further! We offer a
+                    wide range of dumpster trailer sizes to choose from and
+                    deliver them directly to your location. Our rental process
+                    is hassle-free and straightforward, and we take care of all
+                    the logistics so that you can focus on your project. With
+                    our affordable pricing and flexible rental options, you can
+                    rent a dumpster trailer for as long as you need it. Whether
+                    you&apos;re a homeowner, contractor, or business owner, we
+                    have the perfect dumpster trailer for your needs. So,
+                    contact us today to rent a dumpster trailer and enjoy a
+                    stress-free waste disposal experience.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -321,7 +331,7 @@ export default function dumpsterrental() {
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={dump2}
-                  alt="Dumpster rental services"
+                  alt="dumpster trailer services"
                 />
               </div>
             </div>
@@ -334,14 +344,14 @@ export default function dumpsterrental() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rentals
+              Dumpster trailers New Port Richey
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Dumpster Service, Every Time
+              Reliable Dumpster Trailers, Every Time
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               Count on us for dependable and consistent service, every time you
-              need a dumpster rental in New Port Richey, FL.
+              need a dumpster trailer in New Port Richey, FL.
             </p>
           </div>
 
@@ -385,8 +395,9 @@ export default function dumpsterrental() {
               Are you looking for a reliable and environmentally conscious waste
               management solution? Look no further! We specialize in proper
               disposal methods to minimize our impact on the environment. From
-              one-time cleanouts to ongoing services, we{"'"}ve got you covered.
-              Call us today, and let us take care of your waste worries!
+              one-time cleanouts to ongoing services, we&apos;ve got you
+              covered. Call us today, and let us take care of your waste
+              worries!
             </p>
           </div>
           <div className="mt-20 lg:col-span-2 lg:mt-0">
@@ -414,9 +425,6 @@ export default function dumpsterrental() {
           </div>
         </div>
       </div>
-
-      {/* testimonials */}
-      {/* <Reviews></Reviews> */}
 
       {/* call to action */}
       {/* <div className="bg-lightgray">

@@ -15,6 +15,7 @@ import wastemanagement from "../../public/waste-management.png";
 import cleanoutservice from "../../public/garage-clean-out-service.png";
 import constructiondebris from "../../public/construction-debris.png";
 import hoardingservices from "../../public/hoarding-services.png";
+import dumptrailer from "../../public/dump-trailer.png";
 
 const servicelist = [
   {
@@ -44,6 +45,13 @@ const servicelist = [
     image: hoardingservices,
     link: "/services/hoarding-cleanup-new-port-richey-fl",
     alttext: "Hoarding Cleanup",
+  },
+  {
+    name: "Dumpster Trailer Rentals",
+    description: "Design System",
+    image: dumptrailer,
+    link: "/services/dumpster-trailer-rental-near-me",
+    alttext: "Dumpster trailer rentals near you",
   },
   // {
   //   name: "Basement Cleanout",
@@ -84,7 +92,7 @@ const servicelist = [
 
 const pickupitems = [
   {
-    name: "Appliances",
+    name: "Appliance Removal",
     description: "Design System",
     image: appliances,
     alttext: "Appliances",
