@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import Featuredlist from "../components/Featuredlist";
 import FeaturedServices from "../components/FeaturedServices";
 import Hero from "../components/Hero";
+import Junkremoval from "../components/Junkremoval";
 import Mission from "../components/Mission";
 import Pricing from "../components/Pricing";
 import Steps from "../components/Steps";
@@ -32,6 +33,7 @@ export default function Home() {
       <Pricing></Pricing>
       <Mission></Mission>
       <Twentyyard></Twentyyard>
+      <Junkremoval></Junkremoval>
       <Contact></Contact>
     </>
   );
