@@ -25,6 +25,8 @@ import jordan from "../../public/jordan.png";
 import dumpsterrental from "../../public/dumpsterrental.png";
 import junkremoving from "../../public/junkremoval.png";
 import Head from "next/head";
+import Reviews from "../../components/Reviews";
+import Junkcost from "../../components/Junkcost";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -62,6 +64,12 @@ const points = [
 
 const faqs = [
   {
+    question: "How much does junk removal cost?",
+    answer:
+      "Our rates start at $75. The rate will increase depending on the amount of items you have and the distance of travel. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
+    items: [],
+  },
+  {
     question: "What items can be removed with junk removal services?",
     answer:
       "Junk removal services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
@@ -73,12 +81,7 @@ const faqs = [
       "We offer same day services in New Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
     items: [],
   },
-  {
-    question: "How much does junk removal cost?",
-    answer:
-      "This will depend on the types of items you have. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
-    items: [],
-  },
+
   {
     question: "Do you recycle or donate items during the removal process?",
     answer:
@@ -117,18 +120,21 @@ const features = [
     description:
       "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
   },
+
+  {
+    name: "Dumpster Rental",
+    link: "/services/dumpster-rental-new-port-richey-fl",
+    description:
+      "Rent a dumpster to get rid of your old appliances, furniture, and other household items.",
+  },
+  {
+    name: "Garage Cleaning",
+    link: "/services/garage-cleaning-service-new-port-richey-fl",
+    description:
+      "Call us to declutter your garage and make more room at the house. Enjoy the extra space you have now.",
+  },
   // {
-  //   name: "Home furniture removal",
-  //   description:
-  //     "Get rid of old furniture, to declutter and free up space in the home. Make room for the new stuff.",
-  // },
-  // {
-  //   name: "Mattress removal and disposal",
-  //   description:
-  //     "Get rid of old, worn-out, or unwanted mattresses, and to prevent the spread of allergens, and other harmful organisms.",
-  // },
-  // {
-  //   name: "Scarp metal pick up and recycling",
+  //   name: "Hoarding Cleanup",
   //   description:
   //     "Conserve natural resources by reusing metals, reduces energy consumption and pollution.",
   // },
@@ -329,7 +335,7 @@ export default function junkremoval() {
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               Reduce Your Carbon Footprint with Our Sustainable Junk Removal
-              Services in New Port Richey, FL
+              Services near New Port Richey, FL
             </p>
           </div>
 
@@ -357,7 +363,9 @@ export default function junkremoval() {
           </div>
         </div>
       </div>
-      <Pricing></Pricing>
+      <Junkcost></Junkcost>
+
+      <Reviews></Reviews>
 
       {/* items */}
       <div className="">
@@ -402,7 +410,7 @@ export default function junkremoval() {
           </div>
         </div>
       </div>
-
+      <Pricing></Pricing>
       {/* call to action */}
       {/* <div className="bg-lightgray">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">

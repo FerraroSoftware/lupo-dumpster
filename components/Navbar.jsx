@@ -19,6 +19,13 @@ export default function Navbar() {
 
             <div className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
               <Link
+                href="/services/junk-removal-new-port-richey-fl"
+                title=""
+                className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
+              >
+                Junk Removal
+              </Link>
+              <Link
                 href="/services"
                 title=""
                 className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-300 transition-all duration-200 border border-transparent rounded-md hover:text-white"
@@ -111,6 +118,15 @@ export default function Navbar() {
           {isOpen ? (
             <nav>
               <div className="flex flex-col pt-8 pb-4 space-y-6 text-center">
+                <Link
+                  href="/services/junk-removal-new-port-richey-fl"
+                  title=""
+                  className="text-base font-normal text-zinc-300 transition-all duration-200 hover:text-zinc-100"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {" "}
+                  Junk Removal{" "}
+                </Link>
                 <Link
                   href="/services"
                   title=""
