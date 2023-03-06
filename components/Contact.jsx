@@ -52,9 +52,12 @@ export default function Contact() {
           <h2 className="text-3xl font-bold leading-tight text-gray-100 sm:text-4xl lg:text-5xl">
             We{"'"}re Here to Help <br></br> Contact Us Now
           </h2>
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
+          <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
             Don{"'"}t hesitate to let us assist you in finding the solution that
-            best fits your needs for your project.
+            best fits your needs for your project. We service all of Tampa Bay,
+            including Holiday, Tampa, South Tampa, Port Richey, New Port Richey,
+            Dade City, Spring Hill, Pinellas County, Land O Lakes, Lutz, Odessa,
+            Hudson, Trinity, Oldsmar, and Palm Harbor
           </p>
         </div>
 
