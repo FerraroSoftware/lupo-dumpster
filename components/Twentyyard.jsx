@@ -8,7 +8,7 @@ export default function Twentyyard2() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl ">
-            Handle Your Biggest Projects with Ease
+            Handle Your Biggest Projects with Ease With Our 20 Yard Trailer
           </h2>
         </div>
 

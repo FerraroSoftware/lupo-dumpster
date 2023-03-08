@@ -9,6 +9,7 @@ import {
 import junkpickup from "../public/junk-pickup.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const cardVariants = {
   offscreen: {
@@ -82,6 +83,18 @@ export default function Junkremoval() {
                   </div>
                 ))}
               </dl>
+            </div>
+            <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
+              <Link
+                href="/services/junk-removal-new-port-richey-fl"
+                title=""
+                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-gray-200 bg-transparent 
+                border border-red-600 rounded-md hover:bg-red-600 hover:text-white transition-all duration-200"
+                role="button"
+              >
+                {" "}
+                More on Junk Removal{" "}
+              </Link>
             </div>
           </div>
           <motion.div

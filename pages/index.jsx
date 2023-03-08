@@ -10,6 +10,7 @@ import Pricing from "../components/Pricing";
 import Steps from "../components/Steps";
 import Testimonialsection from "../components/Testimonialsection";
 import Twentyyard from "../components/Twentyyard";
+
 export default function Home() {
   return (
     <>

@@ -70,7 +70,7 @@ export default function Calltoaction() {
             whileInView="onscreen"
             variants={cardVariants}
           >
-            Experience You Can Count On
+            Dumpster Rental Experience You Can Count On
           </motion.h2>
           <motion.p
             className="mt-4 text-base font-normal leading-7 text-white sm:mt-6"

@@ -55,9 +55,29 @@ export default function Contact() {
           <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
             Don{"'"}t hesitate to let us assist you in finding the solution that
             best fits your needs for your project. We service all of Tampa Bay,
-            including Holiday, Tampa, South Tampa, Port Richey, New Port Richey,
-            Dade City, Spring Hill, Pinellas County, Land O Lakes, Lutz, Odessa,
-            Hudson, Trinity, Oldsmar, and Palm Harbor
+            including{" "}
+            <Link
+              href="/services/dumpster-rental-holiday-fl"
+              className="hover:text-red-500"
+            >
+              Holiday
+            </Link>
+            , Tampa, South Tampa, Port Richey,{" "}
+            <Link
+              href="/services/dumpster-rental-new-port-richey-fl"
+              className="hover:text-red-500"
+            >
+              {" "}
+              New Port Richey{" "}
+            </Link>
+            , Dade City, Spring Hill, Pinellas County, Land O Lakes, Lutz,
+            Odessa, Hudson, Trinity, Oldsmar, and{" "}
+            <Link
+              href="/services/dumpster-rental-holiday-fl"
+              className="hover:text-red-500"
+            >
+              Palm Harbor
+            </Link>
           </p>
         </div>
 

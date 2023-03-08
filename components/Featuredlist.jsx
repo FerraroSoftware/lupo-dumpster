@@ -100,7 +100,7 @@ export default function Featuredlist() {
 
           <div className="lg:col-span-4">
             <h2 className="text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl">
-              Our Wide Range of Disposal Services
+              Our Wide Range of Dumpster Services
             </h2>
             <p className="mt-8 text-xl font-normal text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
