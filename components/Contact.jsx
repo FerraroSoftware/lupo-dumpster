@@ -73,7 +73,7 @@ export default function Contact() {
             , Dade City, Spring Hill, Pinellas County, Land O Lakes, Lutz,
             Odessa, Hudson, Trinity, Oldsmar, and{" "}
             <Link
-              href="/services/dumpster-rental-holiday-fl"
+              href="/services/dumpster-rental-palm-harbor"
               className="hover:text-red-500"
             >
               Palm Harbor
