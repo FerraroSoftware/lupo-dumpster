@@ -55,8 +55,8 @@ export default function Contact() {
           <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
             Don{"'"}t hesitate to let us assist you in finding the solution that
             best fits your needs for your project. We service all of Tampa Bay,
-            including{" "}
-            <Link
+            including:{" "}
+            {/* <Link
               href="/services/dumpster-rental-holiday-fl"
               className="hover:text-red-500"
             >
@@ -77,8 +77,103 @@ export default function Contact() {
               className="hover:text-red-500"
             >
               Palm Harbor
-            </Link>
+            </Link> */}
           </p>
+
+          {/*  */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-400 mt-6">
+            <div className="col-span-1">
+              <ul className="list-none">
+                <Link href="/services/dumpster-rental-holiday-fl">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Holiday
+                  </h3>
+                </Link>
+                {/* <Link href="/tampa"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Tampa
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/south-tampa"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  South Tampa
+                </h3>
+                {/* </Link> */}
+                <Link href="/services/junk-removal-port-richey">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Port Richey
+                  </h3>
+                </Link>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <ul className="list-none">
+                <Link href="/services/dumpster-rental-new-port-richey-fl">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    New Port Richey
+                  </h3>
+                </Link>
+                {/* <Link href="/dade-city"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Dade City
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/spring-hill"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Spring Hill
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/pinellas-county"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Pinellas County
+                </h3>
+                {/* </Link> */}
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <ul className="list-none">
+                {/* <Link href="/lutz"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Lutz
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/odessa"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Odessa
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/hudson"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Hudson
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/trinity"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Trinity
+                </h3>
+                {/* </Link> */}
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <ul className="list-none">
+                <Link href="/services/dumpster-rental-palm-harbor">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Palm Harbor
+                  </h3>
+                </Link>
+                {/* <Link href="/oldsmar"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Oldsmar
+                </h3>
+                {/* </Link> */}
+                {/* <Link href="/land-o-lakes"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Land O Lakes
+                </h3>
+                {/* </Link> */}
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto mt-12 sm:mt-16">
