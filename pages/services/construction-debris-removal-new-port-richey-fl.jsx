@@ -114,6 +114,31 @@ const features = [
     description:
       "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
   },
+
+  {
+    name: "Dumpster Rental",
+    link: "/services/dumpster-rental-new-port-richey-fl",
+    description:
+      "Rent a dumpster to get rid of your old appliances, furniture, and other household items.",
+  },
+  {
+    name: "Garage Cleaning",
+    link: "/services/garage-cleaning-service-new-port-richey-fl",
+    description:
+      "Call us to declutter your garage and make more room at the house. Enjoy the extra space you have now.",
+  },
+  {
+    name: "Mattress Disposal",
+    link: "/services/mattress-disposal",
+    description:
+      "Get rid of your old mattress and prevent the spread of allergens and other harmful organisms.",
+  },
+  {
+    name: "Junk Removal",
+    link: "/services/junk-removal-new-port-richey-fl",
+    description:
+      "Get rid of your old appliances, furniture, and other household items.",
+  },
   // {
   //   name: "Home furniture removal",
   //   description:

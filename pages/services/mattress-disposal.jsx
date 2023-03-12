@@ -22,9 +22,10 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
-import dump1 from "../../public/dump1.png";
-import dump2 from "../../public/dump2.png";
+import dump1 from "../../public/mattress-disposal.png";
+import dump2 from "../../public/mattress-removal.png";
 import Head from "next/head";
+import Junkcost from "../../components/Junkcost";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -61,65 +62,44 @@ const points = [
 
 const faqs = [
   {
-    question: "What is a roll-off dumpster?",
+    question: "Why it's important to dispose of a mattress properly?",
     answer:
-      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
+      "Mattresses can take up a lot of space in landfills and release harmful chemicals into the environment if not disposed of properly. By disposing of your mattress responsibly, you can help reduce waste and protect the environment.",
     items: [],
   },
   {
-    question: "Why would I rent a 15 yard dump trailer?",
+    question: "What are my options for mattress disposal?",
     answer:
-      "There are multiple reasons why someone might choose to rent a 15 yard dump trailer. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
-    items: [
-      "Refrigerator Disposal",
-      "Garbage Removal",
-      "Mattress Disposal",
-      "Foreclosure Clean Outs",
-      "Construction Waste Removal",
-      "Yard Waste Removal",
-      "Trash Removal",
-      "Appliance Removal",
-      "Television Disposal & Recycling",
-      "Furniture Removal",
-      "E-Waste Disposal",
-      "Hot Tub Disposal",
-    ],
-  },
-  {
-    question:
-      "What are my options when renting a 15 yard dump trailer from Lupo Dumpster Rentals?",
-    answer:
-      "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
+      "There are several options for mattress disposal, including donating it to a charity or recycling it. You can also schedule a pickup with Lupo Dumpster Rentals, a professional disposal company that handles the process for you.",
     items: [],
   },
   {
-    question: "How much does it cost to rent a 15 yard dump trailer?",
+    question: "Can I recycle my old mattress?",
     answer:
-      "The cost of renting a 15 yard dunp trailer can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
+      "Many mattress components can be recycled, including metal springs, wood frames, and foam padding. Lupo Dumpster Rentals offers mattress recycling services, so you can trust that your mattress will be disposed of responsibly.",
     items: [],
   },
   {
-    question: "Why rent a 15 yard dump trailer from Lupo Dumpster Rentals?",
+    question: "How much does mattress disposal cost?",
     answer:
-      "Lupo Dumpster Rentals near you in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods including 15 yard dump trailers. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "The cost of mattress disposal can vary depending on the location, size of the mattress, and disposal method. Contact us at Lupo Dumpster Rentals for a free quote on their mattress disposal services.",
     items: [],
   },
   {
-    question: "What items can’t go in a 15 yard dump trailer?",
+    question: "Is it possible to dispose of a mattress myself?",
     answer:
-      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos in our 15 yard dumpster trailers.",
+      "It is possible to dispose of a mattress, but it can be difficult and time-consuming. Many cities have restrictions on how mattresses can be disposed of, so it's essential to check with your local waste management department before attempting to dispose of them yourself. Consider using Lupo Dumpster Rentals' mattress pickup and disposal services for a hassle-free solution.",
     items: [],
   },
   {
-    question: "How can I use a 15 yard dump trailer in a move?",
+    question: "Can Lupo Dumpster Rentals pick up my mattress from my home?",
     answer:
-      "A 15 yard dump trailer can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
+      "Lupo Dumpster Rentals offers pickup services for mattresses and other bulky items. Contact us to learn more about our pickup services and fees.",
     items: [],
   },
   {
-    question: "Are there alternatives to a 15 yard dump trailer?",
-    answer:
-      "Yes, there are alternative options for waste disposal, such as our junk removal service. This alternative may be more appropriate depending on the amount and type of waste or debris you dispose of.",
+    question: "Are you licensed and insured?",
+    answer: "Yes we are! Our license and insurance number is L20000153106.",
     items: [],
   },
 ];
@@ -198,16 +178,16 @@ const features = [
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function fifteenyarddumpster() {
+export default function dumpsterrental() {
   return (
     <>
       <Head>
         <title>
-          Flat Rates | 15 Yard Dump Trailer Rentals | Lupo Dumpster Rental
+          Hassle-Free Mattress Disposal Services | Lupo Dumpster Rentals
         </title>
         <meta
           name="description"
-          content="Flat Rate Price, Family Owned, Zero Hidden Fees For All 15 Yard Trailer Rentals. Call now for a local and effortless experience with Lupo Dumpster Rentals."
+          content="Keep your old mattress from taking up valuable space - trust Lupo Dumpster Rentals for hassle-free mattress disposal services. Contact us today for a quote!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -216,12 +196,12 @@ export default function fifteenyarddumpster() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              15 Yard Dump Trailer Rentals
+              Mattress Disposal Made Easy - Say Goodbye to Your Old Bed Today!
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Call us today and get rid of your junk efficiently with a 15 yard
-              dump trailer
+              Get rid of your waste efficiently with Lupo Dumpster Rental near
+              you in Tampa Bay.
             </p>
           </div>
         </div>
@@ -243,17 +223,21 @@ export default function fifteenyarddumpster() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Your One-Stop Shop for 15 Yard Dump Trailers
+                    Dispose of Your Old Mattress Responsibly - Book Your Pickup
+                    Today!
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Don&apos;t let trash become a headache. With our 15 yard
-                    dump trailers, you can quickly get rid of your trash without
-                    hassle. We&apos;ll deliver the dumpster to your location and
-                    pick it up when you&apos;re done, taking the stress out of
-                    waste removal. Plus, our team is committed to disposing of
-                    waste responsibly, so you can have peace of mind knowing
-                    you&apos;re doing your part for the environment. We are near
-                    you for dumpster rentals. Contact us today to get started.
+                    Say goodbye to your old mattress, and let us dispose of it
+                    responsibly. Our team is here to help! With our convenient
+                    mattress pickup and disposal services, you can trust that
+                    your old bed will be disposed of in an
+                    environmentally-friendly manner. At our company, we believe
+                    in responsible waste management and recycling, and we're
+                    committed to making the process as effortless as possible
+                    for you. Book your pickup today, and our team will take care
+                    of the rest so that you can enjoy a clutter-free home and a
+                    clear conscience. Don't wait - book your mattress disposal
+                    pickup today!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -261,7 +245,7 @@ export default function fifteenyarddumpster() {
                       className="inline-flex px-4 py-1.5  leading-7  shadow-sm ring-1 ring-red-600 
                       text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Book Trailer Now
+                      Book Mattress Removal Now
                     </Link>
                   </div>
                 </div>
@@ -298,7 +282,7 @@ export default function fifteenyarddumpster() {
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  alt="Dumpster Rental Tampa Bay, FL"
                 />
               </div>
             </div>
@@ -318,20 +302,22 @@ export default function fifteenyarddumpster() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Rent a 15 Yard Dumpster Trailer For Your Next Remodel
-                    Project
+                    Say Goodbye to Your Old Mattress with Our Hassle-Free
+                    Disposal Services!
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    At our dumpster rental company, we&apos;re committed to
-                    providing efficient and eco-friendly waste management
-                    solutions for any size project. Our 15 yard dump trailer is
-                    excellent for any size project you have. Our dumpsters are
-                    designed to make waste removal simple and stress-free while
-                    minimizing the environmental impact. We&apos;ll work with
-                    you to find the right dumpster size and schedule for your
-                    project and ensure that your waste is disposed of
-                    responsibly and sustainably. We are near you for dumpster
-                    rentals. Contact us today!
+                    Is your old mattress taking up valuable space in your home
+                    or office? Say goodbye to it with our hassle-free mattress
+                    disposal services! We understand that getting rid of a bed
+                    can be a hassle, so we offer a stress-free solution to help
+                    you declutter your space. Our experienced team will handle
+                    the pickup and disposal of your old mattress, so you don't
+                    have to worry about a thing. Plus, we take care to dispose
+                    of your bed in an environmentally-friendly manner. With our
+                    reliable and convenient services, you can finally say
+                    goodbye to your old mattress and make room for the new one.
+                    Contact us today to schedule your hassle-free mattress
+                    disposal service!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -364,13 +350,14 @@ export default function fifteenyarddumpster() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              15 Yard Dumpster Trailers
+              Mattress Disposal
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Dumpster Service, Every Time
+              Reliable Mattress Removal, Every Time
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              The Right Dumpster for Your New Port Richey Waste Removal Needs
+              Count on us for dependable and consistent service, every time you
+              need a mattress removed in the Tampa Bay area.
             </p>
           </div>
 
@@ -398,6 +385,7 @@ export default function fifteenyarddumpster() {
           </div>
         </div>
       </div>
+      <Junkcost></Junkcost>
       <Pricing></Pricing>
 
       {/* items */}
@@ -481,7 +469,7 @@ export default function fifteenyarddumpster() {
                 Don{"'"}t let your junk take over. Rent a dumpster today.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Efficient clutter disposal in New Port Richey with our dumpster
+                Efficient clutter disposal in Tampa Bay with our dumpster
                 rental services. Rent one today and experience the convenience
                 and peace of mind.
               </p>

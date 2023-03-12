@@ -133,6 +133,18 @@ const features = [
     description:
       "Call us to declutter your garage and make more room at the house. Enjoy the extra space you have now.",
   },
+  {
+    name: "Mattress Disposal",
+    link: "/services/mattress-disposal",
+    description:
+      "Get rid of your old mattress and prevent the spread of allergens and other harmful organisms.",
+  },
+  {
+    name: "Junk Removal",
+    link: "/services/junk-removal-new-port-richey-fl",
+    description:
+      "Get rid of your old appliances, furniture, and other household items.",
+  },
   // {
   //   name: "Hoarding Cleanup",
   //   description:

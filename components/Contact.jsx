@@ -67,11 +67,11 @@ export default function Contact() {
                     Holiday
                   </h3>
                 </Link>
-                {/* <Link href="/tampa"> */}
-                <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                  Tampa
-                </h3>
-                {/* </Link> */}
+                <Link href="/services/dumpster-rental-tampa-bay">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Tampa
+                  </h3>
+                </Link>
                 {/* <Link href="/south-tampa"> */}
                 <h3 className="cursor-pointer hover:underline hover:text-red-500">
                   South Tampa

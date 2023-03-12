@@ -16,6 +16,7 @@ import cleanoutservice from "../../public/garage-clean-out-service.png";
 import constructiondebris from "../../public/construction-debris.png";
 import hoardingservices from "../../public/hoarding-services.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import mattressremoval from "../../public/mattress-removal.png";
 
 const servicelist = [
   {
@@ -110,6 +111,13 @@ const pickupitems = [
     link: "/services/construction-debris-removal-new-port-richey-fl",
     alttext: "Construction Debris Removal",
   },
+  {
+    name: "Mattress Disposal",
+    description: "Design System",
+    image: mattressremoval,
+    link: "/services/mattress-disposal",
+    alttext: "Mattress removal",
+  },
   // {
   //   name: "Electronics",
   //   description: "Design System",
@@ -150,11 +158,7 @@ const pickupitems = [
   //   description: "Design System",
   //   image: "/waste-management.png",
   // },
-  // {
-  //   name: "Mattresses",
-  //   description: "Design System",
-  //   image: "/waste-management.png",
-  // },
+
   // {
   //   name: "TV Disposal",
   //   description: "Design System",

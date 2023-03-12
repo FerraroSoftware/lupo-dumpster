@@ -22,7 +22,7 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
-import dump1 from "../../public/dump1.png";
+import dump1 from "../../public/dumpster-rental-tampa-bay.png";
 import dump2 from "../../public/dump2.png";
 import Head from "next/head";
 function classNames(...classes) {
@@ -63,13 +63,13 @@ const faqs = [
   {
     question: "What is a roll-off dumpster?",
     answer:
-      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs.",
+      "A roll-off dumpster is delivered to a job site by us via truck and then onto the ground. Roll-off dumpsters are available in various sizes and are typically used for more significant construction, demolition projects, or large-scale clean-outs. We offer 10, 15, and 20 cubic yard dumpsters for our Tampa Bay customers.",
     items: [],
   },
   {
-    question: "Why would I rent a 15 yard dump trailer?",
+    question: "Why would I rent a dumpster?",
     answer:
-      "There are multiple reasons why someone might choose to rent a 15 yard dump trailer. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
+      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
     items: [
       "Refrigerator Disposal",
       "Garbage Removal",
@@ -87,37 +87,37 @@ const faqs = [
   },
   {
     question:
-      "What are my options when renting a 15 yard dump trailer from Lupo Dumpster Rentals?",
+      "What are my options when renting a dumpster from Lupo Dumpster Rentals?",
     answer:
       "When renting a dumpster, you can choose the size and rental period. We offer 10, 15, and 20 cubic yard dump trailers that all start with a rental period of three days.",
     items: [],
   },
   {
-    question: "How much does it cost to rent a 15 yard dump trailer?",
+    question: "How much does it cost to rent a dumpster?",
     answer:
-      "The cost of renting a 15 yard dunp trailer can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs.",
+      "The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services. Our prices start at $320 and range up to $500 for a rental period of three to five days. Reach out to get a quote from us for an accurate price based on your specific needs for your Tampa Bay project.",
     items: [],
   },
   {
-    question: "Why rent a 15 yard dump trailer from Lupo Dumpster Rentals?",
+    question: " Why rent from Lupo Dumpster Rentals?",
     answer:
-      "Lupo Dumpster Rentals near you in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods including 15 yard dump trailers. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "Lupo Dumpster Rental offers dumpster rentals in Tampa Bay. We are a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
     items: [],
   },
   {
-    question: "What items can’t go in a 15 yard dump trailer?",
+    question: "What items can’t go in a dumpster?",
     answer:
-      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos in our 15 yard dumpster trailers.",
+      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
     items: [],
   },
   {
-    question: "How can I use a 15 yard dump trailer in a move?",
+    question: "How can I use a dumpster in a move?",
     answer:
-      "A 15 yard dump trailer can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
+      "A dumpster can be a convenient and cost-effective option for disposing unwanted items during a move. Use one of our dumpsters to dispose of large items such as mattresses, appliances, and boxes of unwanted items. Dumpster rentals can make the moving process less stressful and more efficient.",
     items: [],
   },
   {
-    question: "Are there alternatives to a 15 yard dump trailer?",
+    question: "Are there dumpster alternatives?",
     answer:
       "Yes, there are alternative options for waste disposal, such as our junk removal service. This alternative may be more appropriate depending on the amount and type of waste or debris you dispose of.",
     items: [],
@@ -198,16 +198,16 @@ const features = [
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function fifteenyarddumpster() {
+export default function dumpsterrental() {
   return (
     <>
       <Head>
         <title>
-          Flat Rates | 15 Yard Dump Trailer Rentals | Lupo Dumpster Rental
+          Say Goodbye to Junk - Affordable Dumpster Rental in Tampa Bay
         </title>
         <meta
           name="description"
-          content="Flat Rate Price, Family Owned, Zero Hidden Fees For All 15 Yard Trailer Rentals. Call now for a local and effortless experience with Lupo Dumpster Rentals."
+          content="Get your space clutter-free in no time with Lupo Dumpster Rental in Tampa Bay. Choose from a range of dumpster sizes and get rid of your junk quickly and affordably."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -216,12 +216,12 @@ export default function fifteenyarddumpster() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              15 Yard Dump Trailer Rentals
+              Dumpster Rental Tampa Bay: Your Ticket to a Stress-Free Cleanup!
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Call us today and get rid of your junk efficiently with a 15 yard
-              dump trailer
+              Get rid of your waste efficiently with Lupo Dumpster Rental near
+              you in Tampa Bay.
             </p>
           </div>
         </div>
@@ -243,17 +243,20 @@ export default function fifteenyarddumpster() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Your One-Stop Shop for 15 Yard Dump Trailers
+                    Don't Let Junk Pile Up - Rent a Dumpster in Tampa Bay!
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Don&apos;t let trash become a headache. With our 15 yard
-                    dump trailers, you can quickly get rid of your trash without
-                    hassle. We&apos;ll deliver the dumpster to your location and
-                    pick it up when you&apos;re done, taking the stress out of
-                    waste removal. Plus, our team is committed to disposing of
-                    waste responsibly, so you can have peace of mind knowing
-                    you&apos;re doing your part for the environment. We are near
-                    you for dumpster rentals. Contact us today to get started.
+                    Is your home or business cluttered with unwanted junk? Keep
+                    it from piling up and creating a mess. At Lupo Dumpster
+                    Rental, we offer affordable and reliable dumpster rental
+                    services in Tampa Bay that can help you declutter and
+                    eliminate unwanted items quickly and efficiently. We offer a
+                    variety of dumpster rental sizes to choose from, so you can
+                    find the perfect dumpster for your specific needs. Our
+                    professionals will deliver the dumpster to your location and
+                    pick it up when you finish. Don't let junk pile up any
+                    longer - rent a dumpster from Lupo Dumpster Rental today and
+                    start enjoying a clutter-free space!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -298,7 +301,7 @@ export default function fifteenyarddumpster() {
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  alt="Dumpster Rental Tampa Bay, FL"
                 />
               </div>
             </div>
@@ -318,20 +321,22 @@ export default function fifteenyarddumpster() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Rent a 15 Yard Dumpster Trailer For Your Next Remodel
-                    Project
+                    Get Rid of Your Junk in a Flash with Dumpster Rental Tampa
+                    Bay!
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    At our dumpster rental company, we&apos;re committed to
-                    providing efficient and eco-friendly waste management
-                    solutions for any size project. Our 15 yard dump trailer is
-                    excellent for any size project you have. Our dumpsters are
-                    designed to make waste removal simple and stress-free while
-                    minimizing the environmental impact. We&apos;ll work with
-                    you to find the right dumpster size and schedule for your
-                    project and ensure that your waste is disposed of
-                    responsibly and sustainably. We are near you for dumpster
-                    rentals. Contact us today!
+                    Are you tired of looking at piles of junk around your home
+                    or business? Get rid of it quickly with dumpster rental
+                    services from Tampa Bay's top provider - Lupo Dumpster
+                    Rental! Our dumpsters come in various sizes and can
+                    accommodate all types of waste, including construction
+                    debris, household junk, and more. Our team of professionals
+                    will deliver the dumpster to your location and pick it up
+                    when you're finished, so you can focus on getting rid of
+                    your unwanted items quickly and easily. Don't let junk take
+                    up valuable space any longer - rent a dumpster from Lupo
+                    Dumpster Rental in Tampa Bay and start enjoying a
+                    clutter-free environment today!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -364,13 +369,14 @@ export default function fifteenyarddumpster() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              15 Yard Dumpster Trailers
+              Dumpster Rentals Tampa Bay
             </h2>
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
               Reliable Dumpster Service, Every Time
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              The Right Dumpster for Your New Port Richey Waste Removal Needs
+              Count on us for dependable and consistent service, every time you
+              need a dumpster rental in Tampa Bay, FL.
             </p>
           </div>
 
@@ -481,7 +487,7 @@ export default function fifteenyarddumpster() {
                 Don{"'"}t let your junk take over. Rent a dumpster today.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Efficient clutter disposal in New Port Richey with our dumpster
+                Efficient clutter disposal in Tampa Bay with our dumpster
                 rental services. Rent one today and experience the convenience
                 and peace of mind.
               </p>
