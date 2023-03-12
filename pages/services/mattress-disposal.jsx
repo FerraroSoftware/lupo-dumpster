@@ -232,12 +232,12 @@ export default function dumpsterrental() {
                     mattress pickup and disposal services, you can trust that
                     your old bed will be disposed of in an
                     environmentally-friendly manner. At our company, we believe
-                    in responsible waste management and recycling, and we're
-                    committed to making the process as effortless as possible
-                    for you. Book your pickup today, and our team will take care
-                    of the rest so that you can enjoy a clutter-free home and a
-                    clear conscience. Don't wait - book your mattress disposal
-                    pickup today!
+                    in responsible waste management and recycling, and
+                    we&apos;re committed to making the process as effortless as
+                    possible for you. Book your pickup today, and our team will
+                    take care of the rest so that you can enjoy a clutter-free
+                    home and a clear conscience. Don&apos;t wait - book your
+                    mattress disposal pickup today!
                   </p>
                   <div className="mt-6">
                     <Link
@@ -311,13 +311,13 @@ export default function dumpsterrental() {
                     disposal services! We understand that getting rid of a bed
                     can be a hassle, so we offer a stress-free solution to help
                     you declutter your space. Our experienced team will handle
-                    the pickup and disposal of your old mattress, so you don't
-                    have to worry about a thing. Plus, we take care to dispose
-                    of your bed in an environmentally-friendly manner. With our
-                    reliable and convenient services, you can finally say
-                    goodbye to your old mattress and make room for the new one.
-                    Contact us today to schedule your hassle-free mattress
-                    disposal service!
+                    the pickup and disposal of your old mattress, so you
+                    don&apos;t have to worry about a thing. Plus, we take care
+                    to dispose of your bed in an environmentally-friendly
+                    manner. With our reliable and convenient services, you can
+                    finally say goodbye to your old mattress and make room for
+                    the new one. Contact us today to schedule your hassle-free
+                    mattress disposal service!
                   </p>
                   <div className="mt-6">
                     <Link

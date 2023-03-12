@@ -243,7 +243,7 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Don't Let Junk Pile Up - Rent a Dumpster in Tampa Bay!
+                    Don&apos;t Let Junk Pile Up - Rent a Dumpster in Tampa Bay!
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
                     Is your home or business cluttered with unwanted junk? Keep
@@ -254,7 +254,7 @@ export default function dumpsterrental() {
                     variety of dumpster rental sizes to choose from, so you can
                     find the perfect dumpster for your specific needs. Our
                     professionals will deliver the dumpster to your location and
-                    pick it up when you finish. Don't let junk pile up any
+                    pick it up when you finish. Don&apos;t let junk pile up any
                     longer - rent a dumpster from Lupo Dumpster Rental today and
                     start enjoying a clutter-free space!
                   </p>
@@ -327,15 +327,15 @@ export default function dumpsterrental() {
                   <p className="mt-4 text-lg text-gray-400">
                     Are you tired of looking at piles of junk around your home
                     or business? Get rid of it quickly with dumpster rental
-                    services from Tampa Bay's top provider - Lupo Dumpster
+                    services from Tampa Bay&apos;s top provider - Lupo Dumpster
                     Rental! Our dumpsters come in various sizes and can
                     accommodate all types of waste, including construction
                     debris, household junk, and more. Our team of professionals
                     will deliver the dumpster to your location and pick it up
-                    when you're finished, so you can focus on getting rid of
-                    your unwanted items quickly and easily. Don't let junk take
-                    up valuable space any longer - rent a dumpster from Lupo
-                    Dumpster Rental in Tampa Bay and start enjoying a
+                    when you&apos;re finished, so you can focus on getting rid
+                    of your unwanted items quickly and easily. Don&apos;t let
+                    junk take up valuable space any longer - rent a dumpster
+                    from Lupo Dumpster Rental in Tampa Bay and start enjoying a
                     clutter-free environment today!
                   </p>
                   <div className="mt-6">
