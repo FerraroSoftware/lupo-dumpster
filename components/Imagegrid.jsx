@@ -40,12 +40,12 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval3,
+    source: trashremoval4,
   },
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval4,
+    source: trashremoval3,
   },
   {
     title: "IMG_4985.HEIC",
