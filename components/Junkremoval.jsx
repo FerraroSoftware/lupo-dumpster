@@ -7,6 +7,7 @@ import {
   ClockIcon,
   HomeModernIcon,
   HandThumbUpIcon,
+  HomeIcon,
 } from "@heroicons/react/20/solid";
 import junkpickup from "../public/junk-pickup.png";
 import Image from "next/image";
@@ -54,7 +55,7 @@ const features = [
     name: "Property Clean Outs.",
     description:
       "We offer property services for all your junk removal needs. Contact us today for a free quote.",
-    icon: UsersIcon,
+    icon: HomeIcon,
   },
 ];
 
