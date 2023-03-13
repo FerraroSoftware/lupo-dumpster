@@ -27,9 +27,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero></Hero>
-      <Testimonialsection></Testimonialsection>
       <FeaturedServices></FeaturedServices>
       <Junkremoval></Junkremoval>
+      <Testimonialsection></Testimonialsection>
       <Calltoaction></Calltoaction>
       <Imagegrid></Imagegrid>
       <Pricing></Pricing>
