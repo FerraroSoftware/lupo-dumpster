@@ -5,6 +5,8 @@ import {
   CurrencyDollarIcon,
   UsersIcon,
   ClockIcon,
+  HomeModernIcon,
+  HandThumbUpIcon,
 } from "@heroicons/react/20/solid";
 import junkpickup from "../public/junk-pickup.png";
 import Image from "next/image";
@@ -31,21 +33,27 @@ const cardVariants = {
 
 const features = [
   {
-    name: "Flat Rate Pricing.",
+    name: "Estate Clean Outs.",
     description:
-      "We offer flat rate pricing for all of our junk removal services. No hidden fees or surprises.",
-    icon: CurrencyDollarIcon,
+      "We offer flat rate pricing for all of our services. No hidden fees or surprises.",
+    icon: HomeModernIcon,
   },
   {
-    name: "On Time Pickup",
+    name: "Demolition Clean Ups.",
     description:
-      "Our team is on time and ready to help you with all your junk removal needs near New Port Richey.",
+      "Our team is on time and ready to help you with all your demo clean ups needs near New Port Richey.",
     icon: ClockIcon,
   },
   {
-    name: "Family Owned.",
+    name: "Tree Removal.",
     description:
-      "We are a family owned and operated business. We are here to help you with all your junk removal needs.",
+      "We offer affordable tree removal services in the greater Tampa Bay area. ",
+    icon: UsersIcon,
+  },
+  {
+    name: "Property Clean Outs.",
+    description:
+      "We offer property services for all your junk removal needs. Contact us today for a free quote.",
     icon: UsersIcon,
   },
 ];

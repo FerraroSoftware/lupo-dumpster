@@ -10,6 +10,7 @@ import Pricing from "../components/Pricing";
 import Steps from "../components/Steps";
 import Testimonialsection from "../components/Testimonialsection";
 import Twentyyard from "../components/Twentyyard";
+import Imagegrid from "../components/Imagegrid";
 
 export default function Home() {
   return (
@@ -28,13 +29,15 @@ export default function Home() {
       <Hero></Hero>
       <Testimonialsection></Testimonialsection>
       <FeaturedServices></FeaturedServices>
+      <Junkremoval></Junkremoval>
       <Calltoaction></Calltoaction>
+      <Imagegrid></Imagegrid>
+      <Pricing></Pricing>
       {/* <Steps></Steps> */}
       <Featuredlist></Featuredlist>
-      <Pricing></Pricing>
-      <Mission></Mission>
       <Twentyyard></Twentyyard>
-      <Junkremoval></Junkremoval>
+      <Mission></Mission>
+
       <Contact></Contact>
     </>
   );
