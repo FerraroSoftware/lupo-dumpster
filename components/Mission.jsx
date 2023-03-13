@@ -28,7 +28,7 @@ export default function Mission() {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-16 gap-y-12">
           <div className="text-center lg:col-span-5 sm:text-left">
-            <h2 className="text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               Our Commitment to Excellence
             </h2>
             <p className="mt-8 text-lg font-normal text-gray-400">
