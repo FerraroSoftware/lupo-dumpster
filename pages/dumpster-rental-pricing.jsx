@@ -79,7 +79,7 @@ export default function dumpsterrentalpricing() {
                   Household Items
                 </h3>
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
-                  $320+
+                  $250+
                 </p>
                 <p className="mt-1 text-sm font-normal text-gray-500">
                   Up to 3 days
@@ -236,7 +236,7 @@ export default function dumpsterrentalpricing() {
                   Roofing Materials
                 </h3>
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
-                  $360+
+                  $260+
                 </p>
                 <p className="mt-1 text-sm font-normal text-gray-500">
                   Up to 3 days
@@ -387,7 +387,7 @@ export default function dumpsterrentalpricing() {
                   Household Items
                 </h3>
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
-                  $400+
+                  $350+
                 </p>
                 <p className="mt-1 text-sm font-normal text-gray-500">
                   Up to 4 days
@@ -538,7 +538,7 @@ export default function dumpsterrentalpricing() {
                   Roofing Materials
                 </h3>
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
-                  $400+
+                  $360+
                 </p>
                 <p className="mt-1 text-sm font-normal text-gray-500">
                   Up to 4 days

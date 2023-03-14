@@ -63,7 +63,7 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Household Items
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$320+</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$250+</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 Up to 3 days
               </p>
@@ -218,7 +218,7 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$360+</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$260+</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 Up to 3 days
               </p>
@@ -367,7 +367,7 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Household Items
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$400+</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$350+</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 Up to 4 days
               </p>
@@ -516,7 +516,7 @@ export default function Pricing() {
               <h3 className="mt-2 text-lg font-semibold text-red-600">
                 Roofing Materials
               </h3>
-              <p className="mt-6 text-5xl font-semibold text-gray-900">$400+</p>
+              <p className="mt-6 text-5xl font-semibold text-gray-900">$360+</p>
               <p className="mt-1 text-sm font-normal text-gray-500">
                 Up to 4 days
               </p>

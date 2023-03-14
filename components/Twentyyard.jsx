@@ -413,7 +413,7 @@ export default function Twentyyard2() {
 
                 <div className="mt-10 md:mt-0">
                   <div className="flex items-end">
-                    <p className="text-5xl font-bold text-white ">$475+</p>
+                    <p className="text-5xl font-bold text-white ">$450+</p>
                   </div>
 
                   <Link
