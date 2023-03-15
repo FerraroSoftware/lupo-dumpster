@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     <>
       <main className={inter.className}>
         <Navbar></Navbar>
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
         <Component {...pageProps} />
         <Footer></Footer>
       </main>

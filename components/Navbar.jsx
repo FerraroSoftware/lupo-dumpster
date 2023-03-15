@@ -176,7 +176,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     {" "}
-                    Call Now{" "}
+                    Text Us{" "}
                   </Link>
                 </div>
               </div>
