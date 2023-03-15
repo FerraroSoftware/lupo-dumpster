@@ -15,8 +15,8 @@ export default function Sidebar() {
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           viewBox="0 0 50 50"
         >
           <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23c12.683,0,23-10.317,23-23S37.683,2,25,2z M32,16h-3.29 C26.772,16,26,16.455,26,17.806V21h6l-1,5h-5v13h-6V26h-3v-5h3v-2.774C20,14.001,21.686,11,26.581,11C29.203,11,32,12,32,12V16z"></path>
@@ -48,7 +48,7 @@ export default function Sidebar() {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-14 h-12 mt-2 fill-red-700 hover:fill-white"
+          class="w-12 h-10 mt-2 fill-red-700 hover:fill-white"
         >
           <path
             stroke-linecap="round"
