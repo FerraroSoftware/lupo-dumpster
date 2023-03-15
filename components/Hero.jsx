@@ -63,12 +63,12 @@ export default function Hero() {
                 </Link>
 
                 <Link
-                  href="#testimonial"
+                  href="tel:7273176717"
                   title=""
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none hover:text-black"
                   role="button"
                 >
-                  Learn More
+                  Call Now
                 </Link>
               </motion.div>
             </div>

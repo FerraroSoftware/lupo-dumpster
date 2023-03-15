@@ -92,12 +92,12 @@ export default function Calltoaction() {
             variants={cardVariants}
           >
             <Link
-              href="/contact"
+              href="tel:7273176717"
               title=""
               className="inline-flex items-center justify-center px-8 py-3 text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90"
               role="button"
             >
-              Contact Us Now
+              Call Us Now
             </Link>
           </motion.div>
         </div>
