@@ -169,14 +169,14 @@ export default function Navbar() {
 
                 <div className="relative inline-flex items-center justify-center group">
                   <Link
-                    href="#contact"
+                    href="tel:7273176717"
                     title=""
                     className="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-transparent border border-red-600 rounded-md hover:bg-opacity-90"
                     role="button"
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     {" "}
-                    Book now{" "}
+                    Call Now{" "}
                   </Link>
                 </div>
               </div>
