@@ -11,7 +11,7 @@ export default function Sidebar() {
         rel="noopener noreferrer"
       >
         <svg
-          class="fill-red-800 hover:fill-white"
+          class="fill-red-700 hover:fill-white"
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
@@ -31,7 +31,7 @@ export default function Sidebar() {
         //   rel="noopener noreferrer"
       >
         {/* <svg
-          class="fill-red-800 hover:fill-white"
+          class="fill-red-700 hover:fill-white"
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
@@ -48,7 +48,7 @@ export default function Sidebar() {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-14 h-12 mt-2 fill-red-800 hover:fill-white"
+          class="w-14 h-12 mt-2 fill-red-700 hover:fill-white"
         >
           <path
             stroke-linecap="round"
@@ -66,7 +66,7 @@ export default function Sidebar() {
         rel="noopener noreferrer"
       >
         <svg
-          class="fill-red-800 hover:fill-white"
+          class="fill-red-700 hover:fill-white"
           width="50"
           height="46"
           viewBox="0 0 45 46"
