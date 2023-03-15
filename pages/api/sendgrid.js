@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
       to: "a.lupollc@gmail.com",
       cc: "lupodumpsterrentals@gmail.com",
       from: "contact@ferrarosoftware.com", // your website email address here
-      subject: `[Lead from website] : NEW BUSINESS EMAIL`,
+      subject: `[Dumpster Inquiry]`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -27,7 +27,8 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${req.body.fullname}, their email is: ✉️${req.body.email} </h3>
+              <h3>${req.body.fullname}</h3>
+              <h3>Email: ✉️${req.body.email}</h3>
               <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${req.body.message}</p>
