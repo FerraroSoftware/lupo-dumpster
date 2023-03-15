@@ -36,7 +36,7 @@ async function sendEmail(req, res) {
               <p>${req.body.message}</p>
               <br>
               </div>
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Kind Regards,<br>Mike<br>Founder of FerraroSoftware<br></p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Lupo Dumpster Rental,<br>727-317-6717</p>
               </div>
       </body>
       </html>`,
