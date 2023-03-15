@@ -27,17 +27,13 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>${req.body.fullname}</h3>
-              <h3>Email: ✉️${req.body.email}</h3>
+              <h3>Customer Name: ${req.body.fullname}</h3>
+              <h3>Customer Email: ✉️${req.body.email}</h3>
+              <p>Phone number: ${req.body.phonenumber}</p>
+              <p>Number of days requested: ${req.body.days}</p>
               <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${req.body.message}</p>
-              <br>
-              <p>Phone number:</p>
-              <p>${req.body.phonenumber}</p>
-              <br>
-              <p>Number of days requested:</p>
-              <p>${req.body.days}</p>
               <br>
               </div>
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Kind Regards,<br>Mike<br>Founder of FerraroSoftware<br></p>
