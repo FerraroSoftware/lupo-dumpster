@@ -3,18 +3,19 @@ import Image from "next/image";
 import furnitureremoval from "../public/furniture-removal.png";
 import cleanup from "../public/clean-out-service.png";
 import junkremoval from "../public/junk-removal.png";
+import Link from "next/link";
 
 export default function FeaturedServices() {
   return (
-    <section className="pb-12 sm:pb-16 lg:pb-20 xl:pb-24 " id="services">
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 " id="services">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-lg mx-auto text-center lg:max-w-3xl">
           <h2 className=" sm:mt-8 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Tailored Services to Meet Your Specific Needs
+            Tailored Junk Removal Services to Meet Your Specific Needs
           </h2>
           <p className="mt-6 text-lg font-normal text-gray-400">
-            Flexible solutions that align with your unique business objectives
-            in New Port Richey
+            Flexible junk removal solutions that align with your unique business
+            objectives in New Port Richey and surrounding areas.
           </p>
         </div>
 
@@ -27,9 +28,14 @@ export default function FeaturedServices() {
                   Professional Disposal{" "}
                 </span>
               </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Furniture Removal
-              </p>
+              <h3 className="mt-3 text-2xl font-normal text-white xl:text-3xl">
+                <Link
+                  href="/services/mattress-disposal"
+                  className="hover:text-red-600"
+                >
+                  Furniture Removal
+                </Link>
+              </h3>
               <p className="mt-4 text-base font-normal text-zinc-300">
                 Let our professional movers handle all the heavy lifting and
                 transport your furniture with precision and efficiency.
@@ -52,9 +58,14 @@ export default function FeaturedServices() {
                   Top-Quality Service{" "}
                 </span>
               </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Junk Removal
-              </p>
+              <h3 className="mt-3 text-2xl font-normal text-white xl:text-3xl">
+                <Link
+                  href="/services/junk-removal-new-port-richey-fl"
+                  className="hover:text-red-600"
+                >
+                  Junk Removal
+                </Link>
+              </h3>
               <p className="mt-4 text-base font-normal text-zinc-300">
                 Don{"'"}t let clutter and junk take over your space any longer!
                 Schedule your junk removal and regain control of your home or
@@ -79,9 +90,14 @@ export default function FeaturedServices() {
                   Effortless Disposal{" "}
                 </span>
               </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Clean Out Service
-              </p>
+              <h3 className="mt-3 text-2xl font-normal text-white xl:text-3xl">
+                <Link
+                  href="/services/garage-cleaning-service-new-port-richey-fl"
+                  className="hover:text-red-600"
+                >
+                  Clean Out Service
+                </Link>
+              </h3>
               <p className="mt-4 text-base font-normal text-zinc-300">
                 Our team of experts will help declutter, sort and dispose of any
                 unwanted items, leaving you with a fresh start.

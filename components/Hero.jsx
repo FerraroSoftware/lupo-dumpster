@@ -22,7 +22,7 @@ export default function Hero() {
                     delay: 0,
                   }}
                 >
-                  Lupo Dumpster Rentals
+                  Lupo Dumpster Rentals and Junk Removal
                 </motion.h1>
                 <motion.p
                   className="mt-6 text-lg leading-7 text-gray-300 lg:leading-8 lg:text-xl"

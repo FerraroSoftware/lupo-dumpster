@@ -11,6 +11,7 @@ import Steps from "../components/Steps";
 import Testimonialsection from "../components/Testimonialsection";
 import Twentyyard from "../components/Twentyyard";
 import Imagegrid from "../components/Imagegrid";
+import Herotwo from "../components/Herotwo";
 
 export default function Home() {
   return (
@@ -26,7 +27,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
+      <Herotwo></Herotwo>
       <FeaturedServices></FeaturedServices>
       <Junkremoval></Junkremoval>
       <Testimonialsection></Testimonialsection>
