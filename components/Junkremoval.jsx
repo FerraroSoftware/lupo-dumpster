@@ -73,10 +73,10 @@ export default function Junkremoval() {
                 Clean Up Your Space with Affordable Junk Removal Options
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-400">
-                Have junk that needs to be removed? We offer affordable junk
-                removal services in the greater Tampa Bay area. Our team is
-                ready to help you with all your junk removal needs. Give us a
-                call today for a free quote!
+                Have junk that needs to be removed near New Port Richey? We
+                offer affordable junk removal services in the greater Tampa Bay
+                area. Our team is ready to help you with all your junk removal
+                needs. Give us a call today for a free quote!
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-400 lg:max-w-none">
                 {features.map((feature) => (

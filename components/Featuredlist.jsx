@@ -100,7 +100,7 @@ export default function Featuredlist() {
 
           <div className="lg:col-span-4">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Our Wide Range of Dumpster Services
+              Our Wide Range of Dumpster Services in New Port Richey
             </h2>
             <p className="mt-8 text-xl font-normal text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">

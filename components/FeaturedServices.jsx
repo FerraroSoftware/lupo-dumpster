@@ -37,8 +37,9 @@ export default function FeaturedServices() {
                 </Link>
               </h3>
               <p className="mt-4 text-base font-normal text-zinc-300">
-                Let our professional movers handle all the heavy lifting and
-                transport your furniture with precision and efficiency.
+                Let our professional movers in New Port Richey handle all the
+                heavy lifting and transport your furniture with precision and
+                efficiency.
               </p>
             </div>
 
@@ -99,8 +100,9 @@ export default function FeaturedServices() {
                 </Link>
               </h3>
               <p className="mt-4 text-base font-normal text-zinc-300">
-                Our team of experts will help declutter, sort and dispose of any
-                unwanted items, leaving you with a fresh start.
+                Our team of experts in New Port Richey will help declutter, sort
+                and dispose of any unwanted items, leaving you with a fresh
+                start.
               </p>
             </div>
 

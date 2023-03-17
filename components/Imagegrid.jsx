@@ -73,13 +73,15 @@ export default function Example() {
   return (
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-9xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center pb-10">
+        <div className="max-w-3xl mx-auto text-center pb-10">
           <h2 className="text-3xl font-bold text-gray-100 sm:text-4xl xl:text-5xl ">
-            We Offer Junk Removal, Property Clean Outs and Much More
+            We Offer Junk Removal, Property Clean Outs and Much More Near New
+            Port Richey
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
             If you have junk, tree debris, construction debris, or any other
-            type of debris that needs to be removed, we can help.
+            type of debris that needs to be removed near New Port Richey, we can
+            help. Contact us for a free quote.
           </p>
         </div>
         <ul

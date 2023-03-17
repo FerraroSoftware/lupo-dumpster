@@ -77,9 +77,11 @@ export default function Testimonialsection() {
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl ">
             Unsolicited Praise from <br></br>Our Customers
           </h2>
-          <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-300">
-            Read about the real-life successes of our customers and how our
-            service played a part
+          <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
+            At Lupo Dumpster Rentals, we take pride in providing exceptional
+            products and services that exceed our customers&apos; expectations.
+            Read on to see what our satisfied customers in New Port Richey have
+            to say about their experiences with us.
           </p>
         </div>
 
