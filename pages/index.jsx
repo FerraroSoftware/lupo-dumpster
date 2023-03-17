@@ -12,6 +12,7 @@ import Testimonialsection from "../components/Testimonialsection";
 import Twentyyard from "../components/Twentyyard";
 import Imagegrid from "../components/Imagegrid";
 import Herotwo from "../components/Herotwo";
+import Contacttwo from "../components/Contacttwo";
 
 export default function Home() {
   return (
@@ -32,8 +33,9 @@ export default function Home() {
       <FeaturedServices></FeaturedServices>
       <Junkremoval></Junkremoval>
       <Testimonialsection></Testimonialsection>
-      <Calltoaction></Calltoaction>
+      <Contacttwo></Contacttwo>
       <Imagegrid></Imagegrid>
+      <Calltoaction></Calltoaction>
       <Pricing></Pricing>
       {/* <Steps></Steps> */}
       <Featuredlist></Featuredlist>

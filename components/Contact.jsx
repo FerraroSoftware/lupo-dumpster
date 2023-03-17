@@ -259,7 +259,7 @@ export default function Contact() {
                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
                       />
                       {errors.fullname && (
-                        <span className="text-base font-normal text-red">
+                        <span className="text-base font-normal text-red-400">
                           This field is required
                         </span>
                       )}
