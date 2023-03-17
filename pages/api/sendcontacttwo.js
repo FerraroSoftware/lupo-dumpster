@@ -5,8 +5,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY || "");
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      // to: "a.lupollc@gmail.com",
-      to: "ferraro2ndbase@gmail.com",
+      to: "a.lupollc@gmail.com",
       cc: "lupodumpsterrentals@gmail.com",
       from: "contact@ferrarosoftware.com", // your website email address here
       subject: `[Junk Removal Inquiry]`,
