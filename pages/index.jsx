@@ -32,13 +32,13 @@ export default function Home() {
       <Herotwo></Herotwo>
       <FeaturedServices></FeaturedServices>
       <Junkremoval></Junkremoval>
-      <Testimonialsection></Testimonialsection>
       <Contacttwo></Contacttwo>
       <Imagegrid></Imagegrid>
       <Calltoaction></Calltoaction>
+      <Testimonialsection></Testimonialsection>
+      <Featuredlist></Featuredlist>
       <Pricing></Pricing>
       {/* <Steps></Steps> */}
-      <Featuredlist></Featuredlist>
       <Twentyyard></Twentyyard>
       <Mission></Mission>
 
