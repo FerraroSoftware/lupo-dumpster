@@ -19,11 +19,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals | Junk Removal for New Port Richey, FL
+          Lupo Dumpster Rentals and Junk Removal for New Port Richey, FL
         </title>
         <meta
           name="description"
-          content="Flat Rate Prices | Zero Hidden Fees For All Dumpster Rentals in New Port Richey, Florida. Call now for a local and effortless experience with Lupo Dumpster Rentals."
+          content="Discover Lupo Dumpster Rentals, your reliable junk removal solution. Offering various sizes of dumpsters for residential and commercial projects. Book online now!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
