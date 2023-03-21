@@ -25,6 +25,7 @@ import jordan from "../../public/jordan.png";
 import dump1 from "../../public/dump1.png";
 import dump2 from "../../public/dump2.png";
 import Head from "next/head";
+import Contacttwo from "../../components/Contacttwo";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -363,6 +364,7 @@ export default function dumpsterrental() {
           </div>
         </div>
       </div>
+      <Contacttwo></Contacttwo>
       {/* <Testimonials></Testimonials> */}
       {/*points  */}
       <div className=" py-16 sm:py-24">

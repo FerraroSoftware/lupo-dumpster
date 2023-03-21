@@ -27,6 +27,7 @@ import junkremoving from "../../public/junkremoval.png";
 import Head from "next/head";
 import Reviews from "../../components/Reviews";
 import Junkcost from "../../components/Junkcost";
+import Contacttwo from "../../components/Contacttwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -333,6 +334,7 @@ export default function junkremoval() {
           </div>
         </div>
       </div>
+      <Contacttwo></Contacttwo>
       {/* <Testimonials></Testimonials> */}
       {/*points  */}
       <div className=" py-16 sm:py-24">

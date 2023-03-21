@@ -25,6 +25,7 @@ import jordan from "../../public/jordan.png";
 import cleanoutservice from "../../public/hoarding-services.png";
 import Head from "next/head";
 import messygarage from "../../public/hoarding-junk-removal.png";
+import Contacttwo from "../../components/Contacttwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -349,6 +350,7 @@ export default function garagecleaningservicenewportricheyfl() {
           </div>
         </div>
       </div>
+      <Contacttwo></Contacttwo>
       {/* <Testimonials></Testimonials> */}
       {/*points  */}
       <div className=" py-16 sm:py-24">

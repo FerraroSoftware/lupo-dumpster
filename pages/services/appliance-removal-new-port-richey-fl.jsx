@@ -25,6 +25,7 @@ import applianceone from "../../public/appliance-1.png";
 import appliancetwo from "../../public/appliance-2.png";
 import jordan from "../../public/jordan.png";
 import Head from "next/head";
+import Contacttwo from "../../components/Contacttwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -345,6 +346,7 @@ export default function Applianceremoval() {
         </div>
       </div>
       {/* <Testimonials></Testimonials> */}
+      <Contacttwo></Contacttwo>
       {/*points  */}
       <div className=" py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
