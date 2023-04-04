@@ -32,10 +32,10 @@ export default function Mission() {
               Our Commitment to Excellence
             </h2>
             <p className="mt-8 text-lg font-normal text-gray-400">
-              At Lupo Dumpster Rentals, our mission is to provide our customers
-              with unparalleled service and solutions for their waste management
-              needs. Our team is committed to safety, integrity, and quality in
-              everything we do.
+              At Lupo Dumpster Rentals and Junk Removal, our mission is to
+              provide our customers with unparalleled service and solutions for
+              their waste management needs. Our team is committed to safety,
+              integrity, and quality in everything we do.
             </p>
             {/* <p className="mt-8 text-lg font-normal text-gray-400">
               Our team is committed to safety, integrity, and quality in

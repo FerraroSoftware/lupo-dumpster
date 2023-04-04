@@ -28,6 +28,8 @@ import Head from "next/head";
 import Reviews from "../../components/Reviews";
 import Junkcost from "../../components/Junkcost";
 import Contacttwo from "../../components/Contacttwo";
+import Imagegrid from "../../components/Imagegrid";
+import Mission from "../../components/Mission";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -335,6 +337,7 @@ export default function junkremoval() {
         </div>
       </div>
       <Contacttwo></Contacttwo>
+      <Imagegrid></Imagegrid>
       {/* <Testimonials></Testimonials> */}
       {/*points  */}
       <div className=" py-16 sm:py-24">
@@ -343,10 +346,9 @@ export default function junkremoval() {
             <h2 className="text-lg font-semibold leading-8 text-red-600">
               Junk Removal
             </h2>
-            <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Efficient and Eco-Friendly Junk Removal: We Recycle and Donate
-              Whenever Possible
-            </p>
+            <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+              Efficient and Eco-Friendly Junk Removal Services
+            </h3>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               Reduce Your Carbon Footprint with Our Sustainable Junk Removal
               Services near New Port Richey, FL
@@ -425,6 +427,7 @@ export default function junkremoval() {
         </div>
       </div>
       <Pricing></Pricing>
+      <Mission></Mission>
       {/* call to action */}
       {/* <div className="bg-lightgray">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
