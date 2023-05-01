@@ -39,12 +39,9 @@ export default function Hero() {
                 delay: 0.1,
               }}
             >
-              If you&apos;re located in the greater Tampa Bay area and searching
-              for a reliable dumpster rental and junk removal company,
-              we&apos;ve got you covered. Our company based in New Port Richey
-              offers affordable prices, convenient junk removal services, and
-              top-notch customer service. Don&apos;t hesitate to reach out to us
-              for all your waste management needs.
+              From junk removal to dumpster rentals, we've got you covered in
+              New Port Richey. Let us be your hero in waste management. Contact
+              us now for affordable and reliable solutions!
             </motion.p>
             <motion.div
               className="mt-10 flex items-center justify-center gap-x-6"

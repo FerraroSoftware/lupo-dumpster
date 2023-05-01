@@ -13,6 +13,7 @@ import Twentyyard from "../components/Twentyyard";
 import Imagegrid from "../components/Imagegrid";
 import Herotwo from "../components/Herotwo";
 import Contacttwo from "../components/Contacttwo";
+import Process from "../components/Process";
 
 export default function Home() {
   return (
@@ -28,10 +29,11 @@ export default function Home() {
       </Head>
       {/* <Hero></Hero> */}
       <Herotwo></Herotwo>
-      <FeaturedServices></FeaturedServices>
+      <Process />
       <Junkremoval></Junkremoval>
       <Contacttwo></Contacttwo>
       <Imagegrid></Imagegrid>
+      <FeaturedServices></FeaturedServices>
       <Calltoaction></Calltoaction>
       <Testimonialsection></Testimonialsection>
       <Featuredlist></Featuredlist>

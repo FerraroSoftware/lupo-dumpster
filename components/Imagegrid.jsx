@@ -71,7 +71,7 @@ const files = [
 
 export default function Example() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20">
+    <section className="pt-12 sm:pt-16 lg:pt-20">
       <div className="px-4 mx-auto max-w-9xl sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center pb-10">
           <h2 className="text-3xl font-bold text-gray-100 sm:text-4xl xl:text-5xl ">

@@ -149,6 +149,10 @@ export default function Contact() {
                   Land O Lakes
                 </h3>
                 {/* </Link> */}
+                {/* <Link href="/tarpon-springs"> */}
+                <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                  Tarpon Springs
+                </h3>
               </ul>
             </div>
           </div>
