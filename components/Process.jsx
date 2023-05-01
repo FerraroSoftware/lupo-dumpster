@@ -70,8 +70,8 @@ export default function Process() {
                   Hassle-Free Trailer Drop-Off
                 </h3>
                 <p className="mt-4 text-sm font-normal text-gray-300">
-                  We'll drop off a dumpster trailer at your property for easy
-                  loading or handle it for you.
+                  We&apos;ll drop off a dumpster trailer at your property for
+                  easy loading or handle it for you.
                 </p>
               </div>
             </div>

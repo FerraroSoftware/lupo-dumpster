@@ -39,9 +39,9 @@ export default function Hero() {
                 delay: 0.1,
               }}
             >
-              From junk removal to dumpster rentals, we've got you covered in
-              New Port Richey. Let us be your hero in waste management. Contact
-              us now for affordable and reliable solutions!
+              From junk removal to dumpster rentals, we&apos;ve got you covered
+              in New Port Richey. Let us be your hero in waste management.
+              Contact us now for affordable and reliable solutions!
             </motion.p>
             <motion.div
               className="mt-10 flex items-center justify-center gap-x-6"
