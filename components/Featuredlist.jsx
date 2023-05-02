@@ -158,10 +158,10 @@ export default function Featuredlist() {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span className="ml-4 text-lg font-normal text-white">
+                  <h3 className="ml-4 text-lg font-normal text-white">
                     {" "}
                     {item}{" "}
-                  </span>
+                  </h3>
                 </li>
               ))}
             </ul>
