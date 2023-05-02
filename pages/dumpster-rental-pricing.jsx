@@ -655,7 +655,7 @@ export default function dumpsterrentalpricing() {
         </div>
       </section>
       <Twentyyard></Twentyyard>
-      <section className="pb-12 bg-[#ECECEC] sm:pb-16 lg:pb-20">
+      <section className="pb-12 bg-white sm:pb-16 lg:pb-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl ">
