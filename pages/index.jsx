@@ -33,9 +33,9 @@ export default function Home() {
       <Junkremoval></Junkremoval>
       <Contacttwo></Contacttwo>
       <Imagegrid></Imagegrid>
-      <FeaturedServices></FeaturedServices>
-      <Calltoaction></Calltoaction>
       <Testimonialsection></Testimonialsection>
+      <Calltoaction></Calltoaction>
+      <FeaturedServices></FeaturedServices>
       <Featuredlist></Featuredlist>
       <Pricing></Pricing>
       {/* <Steps></Steps> */}

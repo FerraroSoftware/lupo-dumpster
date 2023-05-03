@@ -49,18 +49,18 @@ const testimonials = [
       "Alex was very quick to respond to messages and work out details of scope of work needed. Quick and efficient on the day of the job at multiple locations. Second time hiring him and will definitely again.",
     link: "https://g.co/kgs/Z9fmVW",
   },
-  {
-    name: "Dominique Parise",
-    review:
-      "Very professional & reliable. I've used other dumpster rentals years ago but this one was hassle FREE. Thank you for making this junk removal less stressful. I highly recommend Lupo Dumpster Rentals.",
-    link: "https://g.co/kgs/BM88tE",
-  },
-  {
-    name: "Rosa Barbosa",
-    review:
-      "Lupo Dumpster Rental is a great company. Their owners and employees are reliable, dependable and honest. They serve with excellence and go the extra mile to help their clients.",
-    link: "https://g.co/kgs/GvrQmk",
-  },
+  // {
+  //   name: "Dominique Parise",
+  //   review:
+  //     "Very professional & reliable. I've used other dumpster rentals years ago but this one was hassle FREE. Thank you for making this junk removal less stressful. I highly recommend Lupo Dumpster Rentals.",
+  //   link: "https://g.co/kgs/BM88tE",
+  // },
+  // {
+  //   name: "Rosa Barbosa",
+  //   review:
+  //     "Lupo Dumpster Rental is a great company. Their owners and employees are reliable, dependable and honest. They serve with excellence and go the extra mile to help their clients.",
+  //   link: "https://g.co/kgs/GvrQmk",
+  // },
   {
     name: "Don Lossing",
     review:
@@ -75,7 +75,7 @@ export default function Testimonialsection() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl ">
-            Unsolicited Praise from <br></br>Our Customers
+            Over 100+ Five Star<br></br>Google Reviews
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
             At Lupo Dumpster Rentals, we take pride in providing exceptional
@@ -85,7 +85,7 @@ export default function Testimonialsection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-3 sm:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <motion.div
               className="overflow-hidden bg-white rounded-md"
