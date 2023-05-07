@@ -31,6 +31,7 @@ import Contacttwo from "../../components/Contacttwo";
 import Imagegrid from "../../components/Imagegrid";
 import Mission from "../../components/Mission";
 import Junkheader from "../../components/Junkheader";
+import junktrailer from "../../public/junk-trailer.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -370,8 +371,8 @@ export default function junkremoval() {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={junkremoving}
+                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none contrast-125"
+                  src={junktrailer}
                   alt="junk removal services"
                 />
               </div>
