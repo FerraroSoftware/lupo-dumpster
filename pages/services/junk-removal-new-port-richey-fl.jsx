@@ -30,6 +30,7 @@ import Junkcost from "../../components/Junkcost";
 import Contacttwo from "../../components/Contacttwo";
 import Imagegrid from "../../components/Imagegrid";
 import Mission from "../../components/Mission";
+import Junkheader from "../../components/Junkheader";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -46,7 +47,7 @@ const points = [
   {
     name: "On Time Delivery & Pick Up",
     description:
-      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your dumpster rental.",
+      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your junk removal.",
 
     icon: ClockIcon,
   },
@@ -186,21 +187,63 @@ export default function junkremoval() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="">
+
+      <Junkheader></Junkheader>
+
+      <div className=" py-16 sm:py-24" id="junkremoval">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="sm:text-center">
+            <h2 className="text-lg font-semibold leading-8 text-red-600">
+              Junk Removal New Port Richey
+            </h2>
+            <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+              Efficient and Eco-Friendly Junk Removal Services
+            </h3>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+              Reduce Your Carbon Footprint with Our Sustainable Junk Removal
+              Services near you in New Port Richey.
+            </p>
+          </div>
+
+          <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
+            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+              {points.map((feature, key) => (
+                <div
+                  key={key}
+                  className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white sm:shrink-0">
+                    <feature.icon className="h-8 w-8" aria-hidden="true" />
+                  </div>
+                  <div className="sm:min-w-0 sm:flex-1">
+                    <p className="text-lg font-semibold leading-8 text-white">
+                      {feature.name}
+                    </p>
+                    <p className="mt-2 text-base leading-7 text-gray-400">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Say Goodbye to Clutter and Hello to a Cleaner Space with Our Junk
-              Removal
+            <h1 className="text-3xl font-bold leading-tight text-red-600 sm:text-4xl lg:text-5xl">
+              New Port Richey&apos;s Premier Junk Removal Service
             </h1>
 
-            <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
+            <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-red-100">
               Professional and Efficient Junk Removal Services for Your Home or
               Business in New Port Richey, FL
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* pic sections */}
       <div className="relative overflow-hidden py-16 sm:py-24">
@@ -209,7 +252,7 @@ export default function junkremoval() {
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-700">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600">
                     <TrashIcon
                       className="h-8 w-8 text-white"
                       aria-hidden="true"
@@ -237,9 +280,9 @@ export default function junkremoval() {
                     <Link
                       href="/contact"
                       className="inline-flex px-4 py-1.5  leading-7  shadow-sm ring-1 ring-red-600 
-                      text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
+                      text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Book Trailer Now
+                      Book Junk Removal Now
                     </Link>
                   </div>
                 </div>
@@ -247,7 +290,7 @@ export default function junkremoval() {
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <blockquote>
                   <div>
-                    <p className="text-base text-gray-400">
+                    <p className="text-base text-zinc-100">
                       &ldquo;Alex and his crew are the best in the business.
                       They show up on time (even day of) and tackle any job I
                       throw at them. Very professional and hard working
@@ -263,7 +306,7 @@ export default function junkremoval() {
                           alt="testimonial"
                         />
                       </div>
-                      <div className="text-base font-medium text-gray-400">
+                      <div className="text-base font-medium text-green-400">
                         Jordan Selders
                       </div>
                     </div>
@@ -287,7 +330,7 @@ export default function junkremoval() {
             <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-700">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600">
                     <GlobeAmericasIcon
                       className="h-8 w-8 text-white"
                       aria-hidden="true"
@@ -314,11 +357,11 @@ export default function junkremoval() {
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex  px-4 py-1.5 leading-7  shadow-sm ring-1  hover:ring-red-700
+                      className="inline-flex  px-4 py-1.5 leading-7  shadow-sm ring-1  hover:ring-red-600
                       ring-red-600 
-                      text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
+                      text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Contact Us
+                      Contact Us Today!
                     </Link>
                   </div>
                 </div>
@@ -340,7 +383,7 @@ export default function junkremoval() {
       <Imagegrid></Imagegrid>
       {/* <Testimonials></Testimonials> */}
       {/*points  */}
-      <div className=" py-16 sm:py-24">
+      {/* <div className=" py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
@@ -378,7 +421,7 @@ export default function junkremoval() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Junkcost></Junkcost>
 
       <Reviews></Reviews>

@@ -71,11 +71,11 @@ const testimonials = [
 
 export default function Testimonialsection() {
   return (
-    <section className="py-10 sm:py-16 lg:py-24" id="testimonial">
+    <section className="pb-10 sm:pb-16 lg:pb-24" id="testimonial">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl ">
-            Over 100 Five Star<br></br>Google Reviews
+            Over 100 Five Star<br></br>Google Reviews!
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
             At Lupo Dumpster Rentals, we take pride in providing exceptional

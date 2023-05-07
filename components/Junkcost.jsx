@@ -424,7 +424,7 @@ export default function Junkcost() {
                                    items-center
                                    justify-center
                                    px-9
-                                   py-3.5
+                                   py-2.5
                                    mt-5
                                   text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90
                                "
