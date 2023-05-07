@@ -4,6 +4,7 @@ import Pricing from "../components/Pricing";
 import Head from "next/head";
 import Twentyyard from "../components/Twentyyard";
 import Link from "next/link";
+import Mission from "../components/Mission";
 
 export default function dumpsterrentalpricing() {
   return (
@@ -25,8 +26,8 @@ export default function dumpsterrentalpricing() {
               Lupo Dumpster Rental Pricing
             </h1>
             <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
-              We strive to offer affordable solutions that meet your needs
-              without compromising on the quality of our services.
+              We strive to offer cheap dumpster rental solutions that meet your
+              needs without compromising on the quality of our services.
             </p>
           </div>
 
@@ -654,8 +655,8 @@ export default function dumpsterrentalpricing() {
           </div>
         </div>
       </section>
-      <Twentyyard></Twentyyard>
-      <section className="pb-12 bg-white sm:pb-16 lg:pb-20">
+
+      <section className="py-12 bg-white sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl ">
@@ -679,7 +680,7 @@ export default function dumpsterrentalpricing() {
                       <ul className="space-y-3 text-base font-medium text-white ">
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -697,7 +698,7 @@ export default function dumpsterrentalpricing() {
 
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -715,7 +716,7 @@ export default function dumpsterrentalpricing() {
 
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -737,7 +738,7 @@ export default function dumpsterrentalpricing() {
                       <ul className="space-y-3 text-base font-medium text-white ">
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -755,7 +756,7 @@ export default function dumpsterrentalpricing() {
 
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -773,7 +774,7 @@ export default function dumpsterrentalpricing() {
 
                         <li className="flex items-center">
                           <svg
-                            className="w-5 h-5 mr-2"
+                            className="w-5 h-5 mr-2 text-green-400"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -795,7 +796,7 @@ export default function dumpsterrentalpricing() {
                   <div className="block md:hidden lg:block">
                     <div className="hidden lg:block">
                       <svg
-                        className="w-4 h-auto text-gray-600"
+                        className="w-4 h-auto text-green-800"
                         viewBox="0 0 16 123"
                         fill="none"
                         stroke="currentColor"
@@ -1075,7 +1076,7 @@ export default function dumpsterrentalpricing() {
                                    items-center
                                    justify-center
                                    px-9
-                                   py-3.5
+                                   py-2.5
                                    mt-5
                                   text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90
                                "
@@ -1090,6 +1091,10 @@ export default function dumpsterrentalpricing() {
           </div>
         </div>
       </section>
+      <Mission></Mission>
+
+      <Twentyyard></Twentyyard>
+
       <Contact></Contact>
     </>
   );
