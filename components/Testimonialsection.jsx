@@ -64,7 +64,7 @@ const testimonials = [
   {
     name: "Don Lossing",
     review:
-      "I called Alex today with an urgent dumpster need. After explaining the details surrounding my delimma, Alex simply said, 'I can make this work.' - TOP NOTCH CUSTOMER SERVICE!",
+      "I called Alex today with an urgent dumpster need I had. After explaining the details surrounding my delimma, Alex simply said, 'I can make this work.' - TOP NOTCH CUSTOMER SERVICE!",
     link: "https://g.co/kgs/uGrBRx",
   },
 ];
