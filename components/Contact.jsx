@@ -125,11 +125,11 @@ export default function Contact() {
                   Hudson
                 </h3>
                 {/* </Link> */}
-                {/* <Link href="/trinity"> */}
-                <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                  Trinity
-                </h3>
-                {/* </Link> */}
+                <Link href="/services/dumpster-rental-trinity-fl">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Trinity
+                  </h3>
+                </Link>
               </ul>
             </div>
             <div className="col-span-1">
