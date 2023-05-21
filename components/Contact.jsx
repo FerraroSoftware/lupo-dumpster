@@ -96,11 +96,11 @@ export default function Contact() {
                   Dade City
                 </h3>
                 {/* </Link> */}
-                {/* <Link href="/spring-hill"> */}
-                <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                  Spring Hill
-                </h3>
-                {/* </Link> */}
+                <Link href="/services/dumpster-rental-spring-hill">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Spring Hill
+                  </h3>
+                </Link>
                 {/* <Link href="/pinellas-county"> */}
                 <h3 className="cursor-pointer hover:underline hover:text-red-500">
                   Pinellas County
