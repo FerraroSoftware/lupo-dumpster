@@ -34,7 +34,7 @@ import Junkheader from "../../components/Junkheader";
 import junktrailer from "../../public/junk-trailer.png";
 import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 import dumptrailers from "../../public/dump-trailers.png";
-
+import dumpstertampa from "../../public/dumpster-rental-tampa-bay.png";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -50,7 +50,7 @@ const points = [
   {
     name: "On Time Delivery & Pick Up",
     description:
-      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your Dumpster Rental.",
+      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your dumpster trailer rental.",
 
     icon: ClockIcon,
   },
@@ -71,28 +71,30 @@ const points = [
 
 const faqs = [
   {
-    question: "How much does Dumpster Rental cost?",
+    question: "How much does dumpster trailer rental cost?",
     answer:
       "Our rates start at $250. The rate will increase depending on the amount of items you have and the distance of travel. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
     items: [],
   },
   {
-    question: "What items can be removed with Dumpster Rental services?",
+    question:
+      "What items can be removed with dumpster trailer rental services?",
     answer:
-      "Dumpster Rental services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
+      "dumpster trailer rental services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
     items: [],
   },
   {
-    question: "Can I schedule a Dumpster Rental service on the same day?",
+    question:
+      "Can I schedule a dumpster trailer rental service on the same day?",
     answer:
-      "We offer same day services in Spring Hill, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
+      "We offer same day services in Tampa Bay, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
     items: [],
   },
 
   {
     question: "Do you recycle or donate items during the removal process?",
     answer:
-      "Yes we do! We do take items to the Spring Hill recycling center and donate items to local charities.",
+      "Yes we do! We do take items to the Tampa Bay recycling center and donate items to local charities.",
     items: [],
   },
   {
@@ -107,9 +109,9 @@ const faqs = [
     items: [],
   },
   {
-    question: "How do I prepare for a Dumpster Rental service?",
+    question: "How do I prepare for a dumpster trailer rental service?",
     answer:
-      "You can prepare for a Dumpster Rental service by separating items that you want removed, clearing a path to the items, and making sure that the items are easy to access.",
+      "You can prepare for a dumpster trailer rental service by separating items that you want removed, clearing a path to the items, and making sure that the items are easy to access.",
     items: [],
   },
 ];
@@ -129,7 +131,7 @@ const features = [
   },
 
   {
-    name: "Dumpster Rental",
+    name: "Dumpster trailer rental",
     link: "/services/dumpster-rental-new-port-richey-fl",
     description:
       "Rent a dumpster to get rid of your old appliances, furniture, and other household items.",
@@ -182,10 +184,10 @@ export default function junkremoval() {
   return (
     <>
       <Head>
-        <title>Dumpster Rental Spring Hill || Junk Removal || Call Now</title>
+        <title>Dumpster Trailer Rental Tampa Bay || Call Now</title>
         <meta
           name="description"
-          content="Cluttered space? Let us take care of it. Our professional and hassle-free Dumpster Rental services in Spring Hill, FL will leave your space clean and organized."
+          content="Cluttered space? Let us take care of it. Our professional and hassle-free dumpster trailer rental services in Tampa Bay, FL will leave your space clean and organized."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -203,23 +205,21 @@ export default function junkremoval() {
                     <Image
                       className="h-full w-full object-cover"
                       src={dumpstertrailer}
-                      alt="dumpster rental"
+                      alt="dumpster trailer rental"
                     />
                     <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
                   </div>
                   <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                     <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                      <span className="block text-white">
-                        Spring Hill&apos;s Best
-                      </span>
+                      <span className="block text-white">Your Local</span>
                       <span className="block text-red-600">
-                        Dumpster Rental Service
+                        Dumpster Trailer Rental Service
                       </span>
                     </h1>
                     <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
-                      Experience professionalism and efficiency with Spring
-                      Hill&apos;s best Dumpster Rental service. We offer a wide
-                      variety of dumpster sizes to suit any project.
+                      Experience professionalism and efficiency with the best
+                      dumpster trailer rental service. We offer a wide variety
+                      of dumpster sizes to suit any project.
                     </p>
                     <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                       <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
@@ -251,14 +251,15 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rental Spring Hill
+              Dumpster Trailer Rental
             </h2>
             <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Simplify Your Junk Removal Process
+              Save Time and Energy with Dumpster Trailer Rentals
             </h3>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Reduce Your Carbon Footprint with Our Sustainable Dumpster Rental
-              Services near you in Spring Hill.
+              With our dumpster trailer rentals, you can easily manage waste
+              from your project, saving you both time and energy that can be
+              better spent elsewhere.
             </p>
           </div>
 
@@ -291,12 +292,12 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-red-600 sm:text-4xl lg:text-5xl">
-              Spring Hill&apos;s Premier Dumpster Rental Service
+              Tampa Bay&apos;s Premier dumpster trailer rental Service
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-red-100">
-              Professional and Efficient Dumpster Rental Services for Your Home or
-              Business in Spring Hill, FL
+              Professional and Efficient dumpster trailer rental Services for Your Home or
+              Business in Tampa Bay, FL
             </p>
           </div>
         </div>
@@ -318,19 +319,20 @@ export default function junkremoval() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Affordable Dumpster Rentals for Your Next Major Cleanout
+                    Experience the Benefits of Dumpster Trailer Rentals
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Planning a major cleanout? Turn your next major cleanout
-                    into an easy and cost-effective task with our dumpster
-                    rental services. Our affordable dumpster rentals are the
-                    perfect fit for your needs. We offer a variety of sizes to
-                    accommodate any project, whether it&apos;s a home
-                    renovation, office decluttering, or yard cleanup. Not only
-                    are our dumpster rentals budget-friendly, but they also
-                    streamline the junk removal process, saving you time and
-                    effort. Choose a delivery and pickup schedule that works for
-                    you, and let us handle the waste management.
+                    When it comes to waste management for your project,
+                    experience the benefits of dumpster trailer rentals. These
+                    mobile and flexible solutions are perfect for various needs,
+                    whether conducting a small home cleanout or managing waste
+                    from a larger construction project. The convenience of a
+                    dumpster trailer rental means less time spent transporting
+                    waste and more time focusing on the tasks. They&apos;re
+                    space-efficient and easy to load, ensuring a more
+                    streamlined and less labor-intensive clean-up. Choose
+                    dumpster trailer rentals for a hassle-free, efficient, and
+                    effective waste management solution.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -338,7 +340,7 @@ export default function junkremoval() {
                       className="inline-flex px-4 py-1.5  leading-7  shadow-sm ring-1 ring-red-600 
                       text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Book Dumpster Rental Now
+                      Book dumpster trailer rental Now
                     </Link>
                   </div>
                 </div>
@@ -375,12 +377,13 @@ export default function junkremoval() {
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={dumpsterrental}
-                  alt="Dumpster Rental"
+                  alt="dumpster trailer rental"
                 />
               </div>
             </div>
           </div>
         </div>
+        <Reviews></Reviews>
         <div className="mt-24">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
@@ -395,19 +398,20 @@ export default function junkremoval() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Dependable Dumpster Rentals for Complete Property Cleanouts
+                    Trust Our Reliable Dumpster Trailer Rentals for Your
+                    Cleanout Needs
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Are you preparing for a complete property cleanout? Our
-                    dependable dumpster rentals are exactly what you need. We
-                    provide a wide range of dumpster sizes, making it easy to
-                    find the right fit for any project size, whether residential
-                    or commercial. Our commitment to reliability means we
-                    deliver and pick up on schedule, ensuring your project
-                    remains on track. With our dumpster rentals, you can
-                    concentrate on your cleanout while we manage the waste.
-                    Trust in our service to make your complete property cleanout
-                    smoother and more efficient.
+                    You can trust our reliable dumpster trailer rentals when
+                    handling your cleanout needs. Our services cater to various
+                    projects, from residential decluttering to large-scale
+                    construction cleanups. With a focus on reliability and
+                    customer satisfaction, we ensure timely delivery and pick-up
+                    to keep your project on schedule. Our dumpster trailers are
+                    easy to use, and their flexibility allows for convenient
+                    placement, even in tighter spaces. Rely on our dumpster
+                    trailer rentals to make your waste management efficient,
+                    organized, and hassle-free.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -426,8 +430,8 @@ export default function junkremoval() {
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none contrast-125"
-                  src={dumptrailers}
-                  alt="Dumpster Rental services"
+                  src={dumpstertampa}
+                  alt="dumpster trailer rental services"
                 />
               </div>
             </div>
@@ -442,14 +446,14 @@ export default function junkremoval() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rental
+              dumpster trailer rental
             </h2>
             <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Efficient and Eco-Friendly Dumpster Rental Services
+              Efficient and Eco-Friendly dumpster trailer rental Services
             </h3>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Reduce Your Carbon Footprint with Our Sustainable Dumpster Rental
-              Services near Spring Hill, FL
+              Reduce Your Carbon Footprint with Our Sustainable dumpster trailer rental
+              Services near Tampa Bay, FL
             </p>
           </div>
 
@@ -479,23 +483,21 @@ export default function junkremoval() {
       </div> */}
       <Junkcost></Junkcost>
 
-      <Reviews></Reviews>
-
       {/* items */}
       <div className="">
         <div className="mx-auto max-w-7xl py-16 sm:py-24 px-6  lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 ">
           <div>
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-red-600">
-              Spring Hill Dumpster Services
+              Dumpster Trailer Services
             </h2>
             <p className="mt-2 text-4xl font-bold tracking-tight text-white">
               We Take Care of Your Waste
             </p>
             <p className="mt-6 text-base leading-7 text-gray-400">
-              With our Spring Hill Dumpster Services, you can focus on your
-              project and leave waste management to us. Whether you&apos;re
-              undertaking a small home cleanout or a large construction project,
-              our dependable dumpster rentals are designed to streamline the
+              With our Dumpster Trailer Services, you can focus on your project
+              and leave waste management to us. Whether you&apos;re undertaking
+              a small home cleanout or a large construction project, our
+              dependable dumpster trailer rentals are designed to streamline the
               process. We offer a range of sizes to suit your specific needs,
               and our prompt delivery and pick-up service ensure your project
               proceeds without a hitch. Trust us to make your spring cleaning,
@@ -565,7 +567,7 @@ export default function junkremoval() {
                 Don{"'"}t let your junk take over. Rent a dumpster today.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Efficient clutter disposal in Spring Hill with our dumpster
+                Efficient clutter disposal in Tampa Bay with our dumpster
                 rental services. Rent one today and experience the convenience
                 and peace of mind.
               </p>
