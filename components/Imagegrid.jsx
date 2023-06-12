@@ -69,7 +69,7 @@ const files = [
   },
 ];
 
-export default function Example() {
+export default function Imagegrid() {
   return (
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-9xl sm:px-6 lg:px-8">

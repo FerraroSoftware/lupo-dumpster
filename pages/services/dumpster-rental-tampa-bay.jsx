@@ -26,6 +26,10 @@ import dump1 from "../../public/dumpster-rental-tampa-bay.png";
 import dump2 from "../../public/dump2.png";
 import Head from "next/head";
 import Contacttwo from "../../components/Contacttwo";
+
+import dumpstertrailer from "../../public/dumpster-trailer-1.png";
+import Imagegrid from "../../components/Imagegrid";
+import Reviews from "../../components/Reviews";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -214,19 +218,105 @@ export default function dumpsterrental() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="">
-        <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Dumpster Rental Tampa Bay: Your Ticket to a Stress-Free Cleanup!
-            </h1>
+        <main>
+          <div>
+            {/* Hero card */}
+            <div className="relative pt-20">
+              <div className="absolute inset-x-0 bottom-0 h-1/2 " />
+              <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+                  <div className="absolute inset-0">
+                    <Image
+                      className="h-full w-full object-cover"
+                      src={dumpstertrailer}
+                      alt="dumpster rental"
+                    />
+                    <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
+                  </div>
+                  <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+                    <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                      <span className="block text-white">
+                        Tampa Bay&apos;s Best
+                      </span>
+                      <span className="block text-red-600">
+                        Dumpster Rental Service
+                      </span>
+                    </h1>
+                    <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
+                      Experience professionalism and efficiency with Tampa
+                      Bay&apos;s premier Dumpster Rental service, catering to
+                      all your disposal needs responsibly.
+                    </p>
+                    <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                      <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                        <Link
+                          href="/contact"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
+                        >
+                          Contact Us Now
+                        </Link>
+                        <Link
+                          href="/"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                        >
+                          Learn More
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
-              Get rid of your waste efficiently with Lupo Dumpster Rental near
-              you in Tampa Bay.
+          {/* More main page content here... */}
+        </main>
+      </div>
+
+      {/*points  */}
+      <div className=" py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="sm:text-center">
+            <h2 className="text-lg font-semibold leading-8 text-red-600">
+              Dumpster Rentals Tampa Bay
+            </h2>
+            <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+              Reliable Dumpster Service, Every Time
             </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+              Count on us for dependable and consistent service, every time you
+              need a dumpster rental in Tampa Bay, FL.
+            </p>
+          </div>
+
+          <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
+            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+              {points.map((feature, key) => (
+                <div
+                  key={key}
+                  className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white sm:shrink-0">
+                    <feature.icon className="h-8 w-8" aria-hidden="true" />
+                  </div>
+                  <div className="sm:min-w-0 sm:flex-1">
+                    <p className="text-lg font-semibold leading-8 text-white">
+                      {feature.name}
+                    </p>
+                    <p className="mt-2 text-base leading-7 text-gray-400">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
+      <Imagegrid></Imagegrid>
+
+      <Contacttwo />
 
       {/* pic sections */}
       <div className="relative overflow-hidden py-16 sm:py-24">
@@ -308,6 +398,9 @@ export default function dumpsterrental() {
             </div>
           </div>
         </div>
+
+        <Reviews />
+
         <div className="mt-24">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
@@ -364,48 +457,9 @@ export default function dumpsterrental() {
           </div>
         </div>
       </div>
-      <Contacttwo></Contacttwo>
+      {/* <Contacttwo></Contacttwo> */}
       {/* <Testimonials></Testimonials> */}
-      {/*points  */}
-      <div className=" py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="sm:text-center">
-            <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Dumpster Rentals Tampa Bay
-            </h2>
-            <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Dumpster Service, Every Time
-            </p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Count on us for dependable and consistent service, every time you
-              need a dumpster rental in Tampa Bay, FL.
-            </p>
-          </div>
 
-          <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
-            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
-              {points.map((feature, key) => (
-                <div
-                  key={key}
-                  className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white sm:shrink-0">
-                    <feature.icon className="h-8 w-8" aria-hidden="true" />
-                  </div>
-                  <div className="sm:min-w-0 sm:flex-1">
-                    <p className="text-lg font-semibold leading-8 text-white">
-                      {feature.name}
-                    </p>
-                    <p className="mt-2 text-base leading-7 text-gray-400">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
       <Pricing></Pricing>
 
       {/* items */}
