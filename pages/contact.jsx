@@ -45,7 +45,7 @@ export default function contact() {
         </div>
       </div>
       <Contact></Contact>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
     </>
   );
 }
