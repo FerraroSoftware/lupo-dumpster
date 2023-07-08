@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import Image from "next/image";
 import dumpsterrental from "../public/dumpsterrental.png";
 import Head from "next/head";
+import Pricing from "../components/Pricing";
 
 export default function contact() {
   return (
@@ -44,6 +45,7 @@ export default function contact() {
         </div>
       </div>
       <Contact></Contact>
+      <Pricing></Pricing>
     </>
   );
 }
