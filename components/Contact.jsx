@@ -3,8 +3,10 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
 
 export default function Contact() {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -19,6 +21,8 @@ export default function Contact() {
     handlesub(data);
     reset();
     notify();
+
+    router.push("/thank-you");
   };
   const handlesub = async (e) => {
     // console.log("sending");
