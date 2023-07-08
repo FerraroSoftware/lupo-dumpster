@@ -32,7 +32,7 @@ export default function thankyou() {
         </div>
         <Image
           src={castle}
-          className="mx-auto max-w-5xl rounded-md py-4 "
+          className="mx-auto max-w-sm md:max-w-xl lg:max-w-3xl xl:max-w-5xl rounded-md py-4 "
           alt="thank you "
         />
       </div>
