@@ -40,7 +40,7 @@ export default function Hero() {
               }}
             >
               From junk removal to dumpster rentals, we&apos;ve got you covered
-              in New Port Richey. Let us be your hero in waste management.
+              in New Port Richey. Let us be your hero in removing your junk.
               Contact us now for affordable and reliable solutions!
             </motion.p>
             <motion.div
