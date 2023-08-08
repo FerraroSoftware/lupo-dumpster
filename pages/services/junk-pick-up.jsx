@@ -22,13 +22,17 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
-import dump1 from "../../public/dump1.png";
-import dump2 from "../../public/dump2.png";
+import dumpsterrental from "../../public/dumpsterrental.png";
+import junkremoving from "../../public/junkremoval.png";
 import Head from "next/head";
 import Reviews from "../../components/Reviews";
+import Junkcost from "../../components/Junkcost";
 import Contacttwo from "../../components/Contacttwo";
-import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 import Imagegrid from "../../components/Imagegrid";
+import Mission from "../../components/Mission";
+import Junkheader from "../../components/Junkheader";
+import junktrailer from "../../public/junk-trailer.png";
+import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -45,7 +49,7 @@ const points = [
   {
     name: "On Time Delivery & Pick Up",
     description:
-      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your dumpster rental.",
+      "We pride ourselves on providing prompt and reliable delivery and pick-up service, so you can stay on schedule with your project. Contact us today to schedule your junk pick up.",
 
     icon: ClockIcon,
   },
@@ -66,51 +70,45 @@ const points = [
 
 const faqs = [
   {
-    question: "What items can be included in trash pick up?",
+    question: "How much does junk pick up cost?",
     answer:
-      "Our trash pick up service handles most general waste, which includes household trash, yard waste, and non-hazardous materials. For a detailed list or specific item inquiries, please get in touch with our team.",
+      "Our rates start at $75. The rate will increase depending on the amount of items you have and the distance of travel. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
     items: [],
   },
   {
-    question: "Why would I rent a dumpster?",
+    question: "What items can be removed with junk pick up services?",
     answer:
-      "There are multiple reasons why someone might choose to rent a dumpster. Some common causes include disposing of large amounts of waste or debris from a construction or demolition project, a large-scale home renovation or remodel, or a large clean-out of a home or property. Renting a dumpster can also be a convenient and cost-effective way to dispose of waste. Here are a some examples of when you might need a dumpster rental:",
-    items: [
-      "Refrigerator Disposal",
-      "Garbage Removal",
-      "Mattress Disposal",
-      "Foreclosure Clean Outs",
-      "Construction Waste Removal",
-      "Yard Waste Removal",
-      "Trash Removal",
-      "Appliance Removal",
-      "Television Disposal & Recycling",
-      "Furniture Removal",
-      "E-Waste Disposal",
-      "Hot Tub Disposal",
-    ],
-  },
-  {
-    question: "How much does the trash pick up service cost?",
-    answer:
-      "The cost for trash pick-up depends on various factors, such as the volume of trash, frequency of pick-ups, and specific requirements. Pricing starts at $75. Please reach out to us for a personalized quote.",
+      "Junk pick up services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
     items: [],
   },
   {
-    question: "How do I schedule a trash pick up?",
+    question: "Can I schedule a junk pick up service on the same day?",
     answer:
-      "You can schedule a trash pick up by contacting our team via phone, email, or our website's booking system.",
+      "We offer same day services in New Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
+    items: [],
+  },
+
+  {
+    question: "Do you recycle or donate items during the removal process?",
+    answer:
+      "Yes we do! We do take items to the New Port Richey recycling center and donate items to local charities.",
     items: [],
   },
   {
-    question: " Why have Lupo Dumpster Rentals pick up your trash?",
+    question: "Are there any items that your service can't remove?",
     answer:
-      "Lupo Dumpster Rental in New Port Richey is a well-known and reputable dumpster rental company that offers a wide range of dumpster sizes and rental periods. We have a team of dedicated professionals who can assist with determining the appropriate dumpster size for your project. Our goal is excellent customer service and competitive prices.",
+      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
     items: [],
   },
   {
     question: "Are you licensed and insured?",
     answer: "Yes we are! Our license and insurance number is L20000153106.",
+    items: [],
+  },
+  {
+    question: "How do I prepare for a junk pick up service?",
+    answer:
+      "You can prepare for a junk pick up service by separating items that you want removed, clearing a path to the items, and making sure that the items are easy to access.",
     items: [],
   },
 ];
@@ -160,17 +158,7 @@ const features = [
       "Let us take care of your junk. We are ready for pick up today!",
   },
   // {
-  //   name: "Home furniture removal",
-  //   description:
-  //     "Get rid of old furniture, to declutter and free up space in the home. Make room for the new stuff.",
-  // },
-  // {
-  //   name: "Mattress removal and disposal",
-  //   description:
-  //     "Get rid of old, worn-out, or unwanted mattresses, and to prevent the spread of allergens, and other harmful organisms.",
-  // },
-  // {
-  //   name: "Scarp metal pick up and recycling",
+  //   name: "Hoarding Cleanup",
   //   description:
   //     "Conserve natural resources by reusing metals, reduces energy consumption and pollution.",
   // },
@@ -195,85 +183,80 @@ const features = [
   //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
   // },
 ];
-export default function dumpsterrental() {
+export default function junkremoval() {
   return (
     <>
       <Head>
-        <title>
-          Trash Pick Up Services || New Port Richey, FL || Flat Rates
-        </title>
+        <title>Junk Pick Up New Port Richey | Call Now | Lupo Dumpsters</title>
         <meta
           name="description"
-          content="Trash Pick Up Services in New Port Richey, FL. We offer affordable and convenient junk removal services for any project. Look no further and contact us today!"
+          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk pick up services in New Port Richey, FL will leave your space clean and organized."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="">
-        <main>
-          <div>
-            {/* Hero card */}
-            <div className="relative pt-20">
-              <div className="absolute inset-x-0 bottom-0 h-1/2 " />
-              <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-                  <div className="absolute inset-0">
-                    <Image
-                      className="h-full w-full object-cover"
-                      src={dumpstertrailer}
-                      alt="dumpster rental"
-                    />
-                    <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
-                  </div>
-                  <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
-                    <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                      <span className="block text-white">New Port Richey</span>
-                      <span className="block text-red-600">Trash Pick Up</span>
-                    </h1>
-                    <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
-                      Experience unparalleled professionalism and efficiency
-                      with New Port Richey&apos;s premier Dumpster Rental
-                      service, catering to all your disposal needs responsibly.
-                    </p>
-                    <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                      <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                        <Link
-                          href="/contact"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
-                        >
-                          Contact Us Now
-                        </Link>
-                        <Link
-                          href="#trash-pick-up"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
-                        >
-                          Learn More
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+
+      {/* <Junkheader></Junkheader> */}
+
+      {/* Hero card */}
+      <div className="relative pt-20">
+        <div className="absolute inset-x-0 bottom-0 h-1/2 " />
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+            <div className="absolute inset-0">
+              <Image
+                className="h-full w-full object-cover"
+                src={dumpstertrailer}
+                alt="dumpster rental"
+              />
+              <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
+            </div>
+            <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+              <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                <span className="block text-white">New Port Richey</span>
+                <span className="block text-red-600">
+                  Junk Pick Up Services
+                </span>
+              </h1>
+              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
+                Experience unparalleled professionalism and efficiency with New
+                Port Richey&apos;s premier Dumpster Rental service, catering to
+                all your disposal needs responsibly.
+              </p>
+              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                  <Link
+                    href="/contact"
+                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
+                  >
+                    Contact Us Now
+                  </Link>
+                  <Link
+                    href="#junkremoval"
+                    className="flex items-center justify-center rounded-md border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* More main page content here... */}
-        </main>
+        </div>
       </div>
 
-      {/* features */}
-      <div className=" py-16 sm:py-24" id="trash-pick-up">
+      <div className=" py-16 sm:py-24" id="junkremoval">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-red-600">
-              Trash Pick Up Services
+              Junk Pick Up New Port Richey
             </h2>
-            <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
-              Reliable Trash Pick Up, Every Time
-            </p>
+            <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+              Benefits of Choosing Our Junk Pick Up Service
+            </h3>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-              Count on us for dependable and consistent service, every time you
-              need your trash picked up in New Port Richey, FL.
+              Why opt for our Junk Pick Up service? It’s simple – we offer
+              reliability, environmental responsibility, and a hassle-free
+              experience.
             </p>
           </div>
 
@@ -302,8 +285,20 @@ export default function dumpsterrental() {
         </div>
       </div>
 
-      <Imagegrid></Imagegrid>
-      <Contacttwo></Contacttwo>
+      {/* <div className="">
+        <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold leading-tight text-red-600 sm:text-4xl lg:text-5xl">
+              New Port Richey&apos;s Premier Junk Removal Service
+            </h1>
+
+            <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-red-100">
+              Professional and Efficient Junk Removal Services for Your Home or
+              Business in New Port Richey, FL
+            </p>
+          </div>
+        </div>
+      </div> */}
 
       {/* pic sections */}
       <div className="relative overflow-hidden py-16 sm:py-24">
@@ -312,7 +307,7 @@ export default function dumpsterrental() {
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-700">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600">
                     <TrashIcon
                       className="h-8 w-8 text-white"
                       aria-hidden="true"
@@ -321,22 +316,22 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Reliable Trash Collection Solutions
+                    Junk Pick Up for Businesses: Keeping Your Workplace Clean
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    At Lupo Dumpster Rental and Junk Removal, we pride ourselves
-                    on reliable trash collection solutions. We guarantee timely
-                    and efficient service, ensuring your premises stay clean.
-                    Count on us for a hassle-free, punctual trash collection
-                    experience that leaves you with a clutter-free space.
+                    Every business accumulates junk, whether it&apos;s old
+                    office furniture or outdated equipment. Our specialized Junk
+                    Pick-Up service for businesses ensures that your commercial
+                    spaces remain uncluttered and functional, reflecting
+                    professionalism and attention to detail.
                   </p>
                   <div className="mt-6">
                     <Link
                       href="/contact"
                       className="inline-flex px-4 py-1.5  leading-7  shadow-sm ring-1 ring-red-600 
-                      text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
+                      text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Book Trailer Now
+                      Book Junk Pick Up Now
                     </Link>
                   </div>
                 </div>
@@ -344,7 +339,7 @@ export default function dumpsterrental() {
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <blockquote>
                   <div>
-                    <p className="text-base text-gray-400">
+                    <p className="text-base text-zinc-100">
                       &ldquo;Alex and his crew are the best in the business.
                       They show up on time (even day of) and tackle any job I
                       throw at them. Very professional and hard working
@@ -360,7 +355,7 @@ export default function dumpsterrental() {
                           alt="testimonial"
                         />
                       </div>
-                      <div className="text-base font-medium text-gray-400">
+                      <div className="text-base font-medium text-green-400">
                         Jordan Selders
                       </div>
                     </div>
@@ -372,21 +367,19 @@ export default function dumpsterrental() {
               <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump1}
-                  alt="Dumpster Rental New Port Richey, FL"
+                  src={dumpsterrental}
+                  alt="junk pick up"
                 />
               </div>
             </div>
           </div>
         </div>
-
-        <Reviews></Reviews>
         <div className="mt-24">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
               <div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-700">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600">
                     <GlobeAmericasIcon
                       className="h-8 w-8 text-white"
                       aria-hidden="true"
@@ -395,24 +388,24 @@ export default function dumpsterrental() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Timely and Dependable Trash Removal
+                    Residential Junk Pick Up: Making Home Cleanouts Easy
                   </h2>
                   <p className="mt-4 text-lg text-gray-400">
-                    Our commitment at Lupo Dumpster Rental and Junk Removal is
-                    to provide timely and dependable trash removal services. We
-                    understand the importance of prompt waste removal for your
-                    home or business and deliver just that. Rely on our
-                    professional team to keep your premises clean and
-                    waste-free, respecting your schedule every time.
+                    Homes often become repositories of memories and, sometimes,
+                    unwanted items. Our Residential Junk Pick Up service is
+                    designed for homeowners looking to create more space, safely
+                    dispose of old things, or freshen up their living
+                    environment. Let us do the heavy lifting so you can enjoy
+                    your rejuvenated space.
                   </p>
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex  px-4 py-1.5 leading-7  shadow-sm ring-1  hover:ring-red-700
+                      className="inline-flex  px-4 py-1.5 leading-7  shadow-sm ring-1  hover:ring-red-600
                       ring-red-600 
-                      text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
+                      text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none"
                     >
-                      Contact Us
+                      Contact Us Today!
                     </Link>
                   </div>
                 </div>
@@ -421,34 +414,77 @@ export default function dumpsterrental() {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <Image
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={dump2}
-                  alt="Dumpster rental services"
+                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none contrast-125"
+                  src={junktrailer}
+                  alt="junk pick up services"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Contacttwo></Contacttwo>
+      <Imagegrid></Imagegrid>
+      {/* <Testimonials></Testimonials> */}
+      {/*points  */}
+      {/* <div className=" py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="sm:text-center">
+            <h2 className="text-lg font-semibold leading-8 text-red-600">
+              Junk Removal
+            </h2>
+            <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+              Efficient and Eco-Friendly Junk Removal Services
+            </h3>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+              Reduce Your Carbon Footprint with Our Sustainable Junk Removal
+              Services near New Port Richey, FL
+            </p>
+          </div>
 
-      <Pricing></Pricing>
+          <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
+            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+              {points.map((feature, key) => (
+                <div
+                  key={key}
+                  className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white sm:shrink-0">
+                    <feature.icon className="h-8 w-8" aria-hidden="true" />
+                  </div>
+                  <div className="sm:min-w-0 sm:flex-1">
+                    <p className="text-lg font-semibold leading-8 text-white">
+                      {feature.name}
+                    </p>
+                    <p className="mt-2 text-base leading-7 text-gray-400">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <Junkcost></Junkcost>
+
+      <Reviews></Reviews>
 
       {/* items */}
       <div className="">
         <div className="mx-auto max-w-7xl py-16 sm:py-24 px-6  lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 ">
           <div>
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-red-600">
-              All Your Trash Removal Needs
+              Fast Junk Pick Up
             </h2>
             <p className="mt-2 text-4xl font-bold tracking-tight text-white">
               We Take Care of Your Waste
             </p>
             <p className="mt-6 text-base leading-7 text-gray-400">
-              Are you looking for a reliable and environmentally conscious waste
-              management solution? Look no further! We specialize in proper
-              disposal methods to minimize our impact on the environment. From
-              one-time cleanouts to ongoing services, we{"'"}ve got you covered.
-              Call us today, and let us take care of your waste worries!
+              Are you looking for a reliable and environmentally conscious junk
+              pick up? Look no further! From one-time cleanouts to ongoing
+              services, we{"'"}ve got you covered. Call us today, and let us
+              take care of your waste worries!
             </p>
           </div>
           <div className="mt-20 lg:col-span-2 lg:mt-0">
@@ -476,10 +512,8 @@ export default function dumpsterrental() {
           </div>
         </div>
       </div>
-
-      {/* testimonials */}
-      {/* <Reviews></Reviews> */}
-
+      <Pricing></Pricing>
+      <Mission></Mission>
       {/* call to action */}
       {/* <div className="bg-lightgray">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -552,7 +586,7 @@ export default function dumpsterrental() {
       <div className="bg-lightgray py-16 " id="faq">
         <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
-            Frequently asked questions
+            Junk Pick UP FAQ
           </h2>
           <div className="mt-8">
             <dl className="divide-y divide-gray-200">

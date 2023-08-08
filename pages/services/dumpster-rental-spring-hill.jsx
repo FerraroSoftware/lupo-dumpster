@@ -152,6 +152,12 @@ const features = [
     description:
       "Get rid of your old appliances, furniture, and other household items.",
   },
+  {
+    name: "Junk Pick Up",
+    link: "/services/junk-pick-up",
+    description:
+      "Let us take care of your junk. We are ready for pick up today!",
+  },
   // {
   //   name: "Hoarding Cleanup",
   //   description:
