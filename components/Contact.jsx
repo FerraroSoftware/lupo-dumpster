@@ -114,11 +114,11 @@ export default function Contact() {
             </div>
             <div className="col-span-1">
               <ul className="list-none">
-                {/* <Link href="/lutz"> */}
-                <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                  Lutz
-                </h3>
-                {/* </Link> */}
+                <Link href="/services/dumpster-rental-lutz-fl">
+                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                    Lutz
+                  </h3>
+                </Link>
                 {/* <Link href="/odessa"> */}
                 <h3 className="cursor-pointer hover:underline hover:text-red-500">
                   Odessa
