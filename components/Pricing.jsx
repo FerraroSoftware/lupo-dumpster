@@ -6,7 +6,7 @@ export default function Pricing() {
     <section className="py-12  sm:py-16 lg:py-20 xl:py-24" id="pricing">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
             Affordable Dumpster Rentals for Your Needs
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
