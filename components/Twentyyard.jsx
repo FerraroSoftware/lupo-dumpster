@@ -22,8 +22,9 @@ export default function Twentyyard2() {
 
           <div className="relative overflow-hidden bg-black">
             <div className="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
-              <div className="md:flex md:items-center md:space-x-12 lg:space-x-24">
-                <div className="grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24">
+              {/* <div className="md:flex md:items-center md:space-x-12 lg:space-x-24"> */}
+              <div className="flex flex-col items-center justify-center md:flex md:items-center md:flex-row md:space-x-12 lg:space-x-24">
+                <div className="grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24 ">
                   <div>
                     <ul className="space-y-3 text-base font-medium text-white ">
                       <li className="flex items-center">

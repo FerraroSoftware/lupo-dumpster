@@ -221,7 +221,7 @@ export default function Testimonialsection() {
           </a>
         </div> */}
         <div
-          className="mt-10 flex items-center justify-center gap-x-6"
+          className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6 gap-y-4 md:gap-y-0"
           initial={{ scale: 0.2, opacity: 0.2 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{
@@ -243,13 +243,13 @@ export default function Testimonialsection() {
           </Link>
 
           <Link
-            href="tel:7273176717"
+            href="/contact"
             title=""
-            className="border border-red-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+            className="border border-red-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
                 transition-all duration-300 uppercase"
             role="button"
           >
-            Call Now
+            Book a Trailer
           </Link>
         </div>
       </div>
