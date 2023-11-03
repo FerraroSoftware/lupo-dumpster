@@ -14,6 +14,8 @@ import Imagegrid from "../components/Imagegrid";
 import Herotwo from "../components/Herotwo";
 import Contacttwo from "../components/Contacttwo";
 import Process from "../components/Process";
+import Features from "../components/Features";
+import Coreservices from "../components/Coreservices";
 
 export default function Home() {
   return (
@@ -29,18 +31,20 @@ export default function Home() {
       </Head>
       {/* <Hero></Hero> */}
       <Herotwo></Herotwo>
+      <Features></Features>
+      <Coreservices></Coreservices>
       <Process />
-      <Junkremoval></Junkremoval>
-      <Contacttwo></Contacttwo>
-      <Imagegrid></Imagegrid>
       <Testimonialsection></Testimonialsection>
-      <Calltoaction></Calltoaction>
-      <FeaturedServices></FeaturedServices>
+      {/* <Junkremoval></Junkremoval> */}
+      {/* <Contacttwo></Contacttwo> */}
       <Featuredlist></Featuredlist>
+      <Imagegrid></Imagegrid>
       <Pricing></Pricing>
-      {/* <Steps></Steps> */}
       <Twentyyard></Twentyyard>
-      <Mission></Mission>
+      {/* <Calltoaction></Calltoaction> */}
+      {/* <FeaturedServices></FeaturedServices> */}
+      {/* <Steps></Steps> */}
+      {/* <Mission></Mission> */}
 
       <Contact></Contact>
     </>

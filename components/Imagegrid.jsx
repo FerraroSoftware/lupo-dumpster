@@ -6,6 +6,8 @@ import trashremoval5 from "../public/trash-removal-5.png";
 import trashremoval6 from "../public/trash-removal-6.png";
 import trashremoval7 from "../public/trash-removal-7.png";
 import trashremoval8 from "../public/trash-removal-8.png";
+import dumpsterrental from "../public/dumpsterrental.png";
+import dumpstertrailer1 from "../public/dumpster-trailer-1.png";
 
 import Image from "next/image";
 
@@ -45,12 +47,12 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval3,
+    source: trashremoval7,
   },
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval5,
+    source: dumpstertrailer1,
   },
   {
     title: "IMG_4985.HEIC",
@@ -60,7 +62,7 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval7,
+    source: dumpsterrental,
   },
   {
     title: "IMG_4985.HEIC",
@@ -72,11 +74,10 @@ const files = [
 export default function Imagegrid() {
   return (
     <section className="py-12 sm:py-16 lg:py-20">
-      <div className="px-4 mx-auto max-w-9xl sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center pb-10">
-          <h2 className="text-3xl font-bold text-gray-100 sm:text-4xl xl:text-5xl ">
-            We Offer Junk Removal, Property Clean Outs and Much More Near New
-            Port Richey
+      <div className=" mx-auto max-w-9xl ">
+        <div className="max-w-4xl mx-auto text-center pb-10">
+          <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+            Your Local Junk Removal Experts Located Near New Port Richey
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
             If you have junk, tree debris, construction debris, or any other
@@ -86,12 +87,12 @@ export default function Imagegrid() {
         </div>
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+          className="grid grid-cols-2  sm:grid-cols-3  lg:grid-cols-4 "
         >
           {files.map((file) => (
             <li key={file.source} className="relative">
-              <motion.div
-                className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg"
+              <div
+                className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden"
                 viewport={{ once: true }}
                 initial="offscreen"
                 whileInView="onscreen"
@@ -108,13 +109,7 @@ export default function Imagegrid() {
                 >
                   <span className="sr-only">View details for {file.title}</span>
                 </button>
-              </motion.div>
-              {/* <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-100">
-                {file.title}
-              </p>
-              <p className="pointer-events-none block text-sm font-medium text-gray-500">
-                {file.size}
-              </p> */}
+              </div>
             </li>
           ))}
         </ul>

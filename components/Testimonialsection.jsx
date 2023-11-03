@@ -71,24 +71,22 @@ const testimonials = [
 
 export default function Testimonialsection() {
   return (
-    <section className="pb-10 sm:pb-16 lg:pb-24" id="testimonial">
+    <section className="py-10 sm:py-16 lg:py-24" id="testimonial">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl ">
-            Over 100 Five Star<br></br>Google Reviews!
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+            Over 100 Five Star Google Reviews!
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
+          <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-gray-100">
             At Lupo Dumpster Rentals, we take pride in providing exceptional
             products and services that exceed our customers&apos; expectations.
-            Read on to see what our satisfied customers in New Port Richey have
-            to say about their experiences with us.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-3 sm:grid-cols-2">
           {testimonials.map((testimonial, index) => (
-            <motion.div
-              className="overflow-hidden bg-white rounded-md"
+            <div
+              className="overflow-hidden bg-white "
               key={index}
               viewport={{ once: true }}
               initial="offscreen"
@@ -130,7 +128,7 @@ export default function Testimonialsection() {
                     <div className="relative ">
                       <div className="flex items-center">
                         <svg
-                          className="w-6 h-6 text-red-500"
+                          className="w-6 h-6 text-green-500"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -138,7 +136,7 @@ export default function Testimonialsection() {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                         <svg
-                          className="w-6 h-6 text-red-500"
+                          className="w-6 h-6 text-green-500"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -146,7 +144,7 @@ export default function Testimonialsection() {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                         <svg
-                          className="w-6 h-6 text-red-500"
+                          className="w-6 h-6 text-green-500"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -154,7 +152,7 @@ export default function Testimonialsection() {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                         <svg
-                          className="w-6 h-6 text-red-500"
+                          className="w-6 h-6 text-green-500"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -162,7 +160,7 @@ export default function Testimonialsection() {
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                         <svg
-                          className="w-6 h-6 text-red-500"
+                          className="w-6 h-6 text-green-500"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -178,7 +176,7 @@ export default function Testimonialsection() {
                     {testimonial.review}
                     <Link
                       href={testimonial.link}
-                      className="block text-green-700 mt-4"
+                      className="block text-gray-800 mt-4"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Read review"
@@ -188,10 +186,10 @@ export default function Testimonialsection() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <a
             href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
             title=""
@@ -199,7 +197,7 @@ export default function Testimonialsection() {
                     inline-flex
                     items-center
                     justify-center
-                    px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md shadow-sm hover:bg-red-500 focus:outline-none
+                    px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent  shadow-sm hover:bg-red-500 focus:outline-none
                 "
             role="button"
             target="_blank"
@@ -221,6 +219,38 @@ export default function Testimonialsection() {
               />
             </svg>
           </a>
+        </div> */}
+        <div
+          className="mt-10 flex items-center justify-center gap-x-6"
+          initial={{ scale: 0.2, opacity: 0.2 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: [0, 0.61, 0.2, 1.01],
+            delay: 0.3,
+          }}
+        >
+          <Link
+            href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
+            title=""
+            className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                transition-all duration-300 uppercase"
+            role="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See All Google Reviews
+          </Link>
+
+          <Link
+            href="tel:7273176717"
+            title=""
+            className="border border-red-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                transition-all duration-300 uppercase"
+            role="button"
+          >
+            Call Now
+          </Link>
         </div>
       </div>
     </section>

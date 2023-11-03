@@ -42,7 +42,7 @@ export default function Featuredlist() {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-7 lg:gap-x-20">
           <div className="lg:col-span-3 lg:order-last">
-            <motion.div
+            <div
               className="relative overflow-hidden shadow-2xl shadow-zinc-700"
               viewport={{ once: true }}
               initial="offscreen"
@@ -50,7 +50,7 @@ export default function Featuredlist() {
               variants={cardVariants}
             >
               <Image
-                className="object-cover w-full h-full rounded-md"
+                className="object-cover w-full h-full"
                 src={trailer}
                 alt=""
               />
@@ -95,11 +95,11 @@ export default function Featuredlist() {
                   </svg>
                 </a>
               </div> */}
-            </motion.div>
+            </div>
           </div>
 
           <div className="lg:col-span-4">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase">
               Our Wide Range of Dumpster Services in New Port Richey
             </h2>
             <p className="mt-8 text-xl font-normal text-white">
@@ -113,9 +113,9 @@ export default function Featuredlist() {
               >
                 15
               </Link>{" "}
-              and 20 cubic yard dump trailers.
+              and 20 cubic yard dump trailers ready for rental.
             </p>
-            <p className="mt-8 text-lg font-normal text-gray-400">
+            <p className="mt-8 text-lg font-normal text-gray-300">
               Lupo Dumpster Rentals is near you in New Port Richey to serve all
               your dumpster needs. Whether you{"'"}re undertaking a home
               renovation or remodel or a contractor needing a waste management

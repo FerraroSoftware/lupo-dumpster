@@ -6,8 +6,8 @@ export default function Twentyyard2() {
   return (
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl ">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase">
             Handle Your Biggest Projects with Ease With Our 20 Yard Trailer
           </h2>
         </div>
@@ -20,7 +20,7 @@ export default function Twentyyard2() {
             ></div>
           </div>
 
-          <div className="relative overflow-hidden bg-[#14120E] rounded-2xl">
+          <div className="relative overflow-hidden bg-black">
             <div className="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
               <div className="md:flex md:items-center md:space-x-12 lg:space-x-24">
                 <div className="grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24">
@@ -420,14 +420,14 @@ export default function Twentyyard2() {
                     href="/contact"
                     title=""
                     className="
-                                   inline-flex
-                                   items-center
-                                   justify-center
-                                   px-9
-                                   py-3.5
-                                   mt-5
-                                  text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent rounded-md hover:bg-opacity-90
-                               "
+                      inline-flex
+                      items-center
+                      justify-center
+                      px-9
+                      py-2.5
+                      mt-5
+                    text-sm font-semibold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent uppercase hover:bg-opacity-90
+                  "
                     role="button"
                   >
                     Book It Now

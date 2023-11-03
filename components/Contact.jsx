@@ -164,7 +164,7 @@ export default function Contact() {
 
         <div className="max-w-5xl mx-auto mt-12 sm:mt-16">
           <div className="grid grid-cols-1 gap-6 px-8 text-center md:px-0 md:grid-cols-3">
-            <div className="overflow-hidden bg-white rounded-xl">
+            <div className="overflow-hidden bg-white ">
               <div className="p-6 ">
                 <Link href="tel:7273176717">
                   <svg
@@ -193,7 +193,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="overflow-hidden bg-white rounded-xl">
+            <div className="overflow-hidden bg-white ">
               <div className="p-6">
                 <svg
                   className="flex-shrink-0 w-10 h-10 mx-auto text-gray-400"
@@ -220,7 +220,7 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-            <div className="overflow-hidden bg-white rounded-xl">
+            <div className="overflow-hidden bg-white ">
               <div className="p-6">
                 <svg
                   className="flex-shrink-0 w-10 h-10 mx-auto text-gray-400"
@@ -243,7 +243,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="mt-6 overflow-hidden bg-white rounded-xl">
+          <div className="mt-6 overflow-hidden bg-white ">
             <div className="px-6 py-12 sm:p-12">
               <h3 className="text-3xl font-semibold text-center text-gray-900">
                 Send us a message
@@ -264,7 +264,7 @@ export default function Contact() {
                         defaultValue=""
                         placeholder="Enter Your Full Name"
                         {...register("fullname", { required: true })}
-                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
+                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200  focus:outline-none focus:border-red-600 caret-red-600"
                       />
                       {errors.fullname && (
                         <span className="text-base font-normal text-red-400">
@@ -287,7 +287,7 @@ export default function Contact() {
                         {...register("email", { required: true })}
                         defaultValue=""
                         placeholder="Enter Your Email"
-                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
+                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200  focus:outline-none focus:border-red-600 caret-red-600"
                       />
                       {errors.message && (
                         <span className="text-base font-normal text-red">
@@ -312,7 +312,7 @@ export default function Contact() {
                         {...register("phonenumber", { required: true })}
                         maxLength={14}
                         minLength={8}
-                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
+                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200  focus:outline-none focus:border-red-600 caret-red-600"
                       />
                       {errors.message && (
                         <span className="text-base font-normal text-red">
@@ -335,7 +335,7 @@ export default function Contact() {
                         {...register("days", { required: true })}
                         defaultValue=""
                         placeholder="Enter How Many Rental Days"
-                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-red-600 caret-red-600"
+                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200  focus:outline-none focus:border-red-600 caret-red-600"
                       />
                       {errors.message && (
                         <span className="text-base font-normal text-red">
@@ -357,7 +357,7 @@ export default function Contact() {
                       <textarea
                         {...register("message", {})}
                         placeholder="Your Message"
-                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-red-600 caret-red-600"
+                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200  resize-y focus:outline-none focus:border-red-600 caret-red-600"
                         rows="4"
                       ></textarea>
                       {errors.message && (
@@ -371,9 +371,9 @@ export default function Contact() {
                   <div className="sm:col-span-2">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md focus:outline-none hover:bg-red-700 focus:bg-red-700"
+                      className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-red-600 border border-transparent  focus:outline-none hover:bg-red-700 focus:bg-red-700"
                     >
-                      Send
+                      Send Message
                     </button>
                     <ToastContainer
                       position="top-center"

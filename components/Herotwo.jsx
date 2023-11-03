@@ -12,13 +12,14 @@ export default function Hero() {
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
         priority
       />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-zinc-900/10" />
 
       <div className="px-6 lg:px-8">
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center">
-            <motion.h1
-              className="text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-7xl sm:tracking-tight"
+            <h1
+              className="text-4xl font-bold tracking-wide leading-10 text-white sm:text-5xl uppercase"
               initial={{ scale: 0.9, opacity: 0.2, y: -30 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               transition={{
@@ -28,8 +29,8 @@ export default function Hero() {
               }}
             >
               Lupo Dumpster Rentals and Junk Removal
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="mt-6 text-lg leading-8 text-gray-300"
               initial={{ scale: 0.2, opacity: 0.2 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -40,10 +41,10 @@ export default function Hero() {
               }}
             >
               From junk removal to dumpster rentals, we&apos;ve got you covered
-              in New Port Richey. Let us be your hero in removing your junk.
+              in Pasco County. Let us be your hero in removing your junk.
               Contact us now for affordable and reliable solutions!
-            </motion.p>
-            <motion.div
+            </p>
+            <div
               className="mt-10 flex items-center justify-center gap-x-6"
               initial={{ scale: 0.2, opacity: 0.2 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -56,7 +57,8 @@ export default function Hero() {
               <Link
                 href="/contact"
                 title=""
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-700 border border-transparent rounded-md shadow-sm hover:bg-red-500 focus:outline-none "
+                className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                transition-all duration-300 uppercase"
                 role="button"
               >
                 Request Rental
@@ -65,12 +67,13 @@ export default function Hero() {
               <Link
                 href="tel:7273176717"
                 title=""
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-300 transition-all duration-200 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none hover:text-black"
+                className="border border-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                transition-all duration-300 uppercase"
                 role="button"
               >
                 Call Now
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

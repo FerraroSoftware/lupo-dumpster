@@ -29,7 +29,7 @@ export default function Footer() {
                 href="/contact"
                 title=""
                 className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal  bg-transparent 
-                 text-gray-200 transition-all duration-200 border border-red-600 rounded-md hover:bg-red-600 hover:text-white"
+                 text-gray-200 transition-all duration-200 border border-red-600  hover:bg-red-600 hover:text-white"
                 role="button"
               >
                 {" "}
@@ -273,11 +273,11 @@ export default function Footer() {
               </div>
               <div className="text-gray-500 mt-2 hover:text-green-800">
                 <Link
-                  href="https://www.ferrarosoftware.com/"
+                  href="https://www.blackcatwebsitedesign.com/"
                   _target="blank"
                   rel="noopener noreferrer"
                 >
-                  © Created by Ferraro Software{" "}
+                  © Created by Black Cat Website Design{" "}
                 </Link>
               </div>
             </div>
