@@ -56,10 +56,10 @@ export default function Junkheader() {
       <main>
         <div>
           {/* Hero card */}
-          <div className="relative pt-20">
+          <div className="relative pt-2">
             <div className="absolute inset-x-0 bottom-0 h-1/2 " />
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+            <div className="mx-auto">
+              <div className="relative shadow-xl sm:overflow-hidden">
                 <div className="absolute inset-0">
                   <Image
                     className="h-full w-full object-cover"
@@ -86,13 +86,13 @@ export default function Junkheader() {
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                       <Link
                         href="/contact"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
+                        className="flex items-center justify-center border border-transparent bg-white px-4 py-3 text-base font-medium text-black shadow-sm hover:bg-red-50 sm:px-8"
                       >
                         Contact Us Now
                       </Link>
                       <Link
                         href="#junkremoval"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
                       >
                         Learn More
                       </Link>

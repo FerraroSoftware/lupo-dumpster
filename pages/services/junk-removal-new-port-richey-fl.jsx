@@ -32,6 +32,7 @@ import Imagegrid from "../../components/Imagegrid";
 import Mission from "../../components/Mission";
 import Junkheader from "../../components/Junkheader";
 import junktrailer from "../../public/junk-trailer.png";
+import Multiblock from "../../components/Multiblock";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -206,7 +207,7 @@ export default function junkremoval() {
             <h3 className="mt-2 text-3xl font-semibold tracking-tight text-gray-100 sm:text-4xl lg:text-5xl">
               Efficient and Eco-Friendly Junk Removal Services
             </h3>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
               Reduce Your Carbon Footprint with Our Sustainable Junk Removal
               Services near you in New Port Richey.
             </p>
@@ -219,14 +220,14 @@ export default function junkremoval() {
                   key={key}
                   className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white sm:shrink-0">
+                  <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0">
                     <feature.icon className="h-8 w-8" aria-hidden="true" />
                   </div>
                   <div className="sm:min-w-0 sm:flex-1">
                     <p className="text-lg font-semibold leading-8 text-white">
                       {feature.name}
                     </p>
-                    <p className="mt-2 text-base leading-7 text-gray-400">
+                    <p className="mt-2 text-base leading-7 text-gray-300">
                       {feature.description}
                     </p>
                   </div>
@@ -253,7 +254,7 @@ export default function junkremoval() {
       </div> */}
 
       {/* pic sections */}
-      <div className="relative overflow-hidden py-16 sm:py-24">
+      {/* <div className="relative overflow-hidden py-16 sm:py-24">
         <div className="relative">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
@@ -385,7 +386,8 @@ export default function junkremoval() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Multiblock></Multiblock>
       <Contacttwo></Contacttwo>
       <Imagegrid></Imagegrid>
       {/* <Testimonials></Testimonials> */}
@@ -429,8 +431,6 @@ export default function junkremoval() {
           </div>
         </div>
       </div> */}
-      <Junkcost></Junkcost>
-
       <Reviews></Reviews>
 
       {/* items */}
@@ -476,14 +476,15 @@ export default function junkremoval() {
           </div>
         </div>
       </div>
-      <Pricing></Pricing>
-      <Mission></Mission>
+      <Junkcost></Junkcost>
+      {/* <Pricing></Pricing> */}
+      {/* <Mission></Mission> */}
       {/* call to action */}
       {/* <div className="bg-lightgray">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-[#14120E] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
+        <div className="relative isolate overflow-hidden bg-[#14120E] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1024 1024"
               className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2"
               aria-hidden="true"
@@ -547,7 +548,7 @@ export default function junkremoval() {
       </div> */}
 
       {/* faq */}
-      <div className="bg-lightgray py-16 " id="faq">
+      <div className="bg-white py-16 " id="faq">
         <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
             Frequently asked questions
