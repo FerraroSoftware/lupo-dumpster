@@ -56,8 +56,8 @@ export default function Contacttwo() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 xl:gap-x-32">
             <div className="flex flex-col self-stretch justify-between">
               <div className="flex-1 pb-6">
-                <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl ">
-                  Ready to Remove Your Junk? Our Pricing Starts at $75
+                <h2 className="text-3xl font-semibold tracking-wide text-white sm:text-4xl uppercase">
+                  Our Junk Removal Pricing Starts at $75
                 </h2>
                 <p className="mt-4 text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
                   Discover New Port Richey&apos;s Premier Junk Removal Services

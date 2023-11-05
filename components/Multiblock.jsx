@@ -4,40 +4,20 @@ import junktrailer from "../public/junk-trailer.png";
 import dumpsterrental from "../public/dumpsterrental.png";
 import dumpstertrailer1 from "../public/dumpster-trailer-1.png";
 import junkremoval from "../public/junkremoval.jpg";
-const features = [
-  {
-    name: "Efficient and Reliable Junk Removal",
-    description:
-      "Our team provides fast, reliable junk removal services that cater to your busy schedule. With us, decluttering your space is hassle-free. Call now for a quick, no-obligation estimate.",
-    imageSrc: junkremoval,
-    imageAlt: "Professional team removing junk",
-  },
-  {
-    name: "Comprehensive Junk Removal for Every Need",
-    description:
-      "From residential to commercial, small-scale to large, we handle all forms of junk removal with efficiency and care. Discover a cleaner space today with our expert services.",
-    imageSrc: dumpsterrental,
-    imageAlt: "Diverse junk items ready for removal",
-  },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Multiblock() {
+export default function Multiblock({ features, header, ptag }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-full lg:px-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-semibold tracking-wide text-black sm:text-4xl uppercase">
-            Your Local Junk Removal Team
+            {header}
           </h2>
-          <p className="mt-4 text-gray-500">
-            Discover the benefits that make our services stand out. Quality,
-            reliability, and sustainability are the pillars of our exceptional
-            service offerings.
-          </p>
+          <p className="mt-4 text-gray-500">{ptag}</p>
         </div>
 
         <div className="mt-16 space-y-16 px-0 md:px-10">

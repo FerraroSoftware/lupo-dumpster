@@ -36,7 +36,9 @@ import dumpsterrental from "../../public/dumpsterrental.png";
 import junkremovals from "../../public/junkremoval.jpg";
 import Corefeatures from "../../components/Corefeatures";
 import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
+import trashremoval1 from "../../public/trash-removal-1.png";
 import Otherservices from "../../components/Otherservices";
+import trashremoval2 from "../../public/trash-removal-2.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -74,99 +76,94 @@ const points = [
 
 const faqs = [
   {
-    question: "How much does junk removal cost?",
+    question: "What items can you haul away?",
     answer:
-      "Our rates start at $75. The rate will increase depending on the amount of items you have and the distance of travel. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
+      "We haul away a wide variety of junk items, including furniture, appliances, yard waste, and construction debris. Contact us to confirm if your specific item can be taken.",
     items: [],
   },
   {
-    question: "What items can be removed with junk removal services?",
+    question: "How does the junk removal process work?",
     answer:
-      "Junk removal services can remove a wide variety of items, including household items, appliances, furniture, electronics, construction debris, yard waste, and more.",
+      "Simply schedule a pickup time that's convenient for you, and our team will come to your location to remove your junk. We handle the heavy lifting, hauling, and proper disposal.",
     items: [],
   },
   {
-    question: "Can I schedule a junk removal service on the same day?",
+    question: "Do you recycle the junk you haul away?",
     answer:
-      "We offer same day services in New Port Richey, and surrounding areas. This is contingent on distance, time of request for trailer and availability. It's best to check with us to see if they offer same-day service and if it's available in your area.",
-    items: [],
-  },
-
-  {
-    question: "Do you recycle or donate items during the removal process?",
-    answer:
-      "Yes we do! We do take items to the New Port Richey recycling center and donate items to local charities.",
+      "Sustainability is a priority for us. We make every effort to recycle or donate items whenever possible to minimize waste in landfills.",
     items: [],
   },
   {
-    question: "Are there any items that your service can't remove?",
+    question: "Can I get an estimate for my junk haul away service?",
     answer:
-      "Generally, we will not accept hazardous materials, such as chemicals, paint, and asbestos.",
+      "Absolutely! Call us or fill out our online form, and we'll provide you with a free, no-obligation estimate for your junk removal needs.",
+    items: [],
+  },
+  {
+    question: "How quickly can you come out to haul away my junk?",
+    answer:
+      "We pride ourselves on prompt service and can often provide same-day or next-day service to haul away your junk efficiently.",
     items: [],
   },
   {
     question: "Are you licensed and insured?",
-    answer: "Yes we are! Our license and insurance number is L20000153106.",
-    items: [],
-  },
-  {
-    question: "How do I prepare for a junk removal service?",
     answer:
-      "You can prepare for a junk removal service by separating items that you want removed, clearing a path to the items, and making sure that the items are easy to access.",
+      "Yes, we are fully licensed and insured, providing you with peace of mind when using our services. Our license and insurance number is L20000153106.",
     items: [],
   },
 ];
 
 const features = [
   {
-    name: "Efficient and Reliable Junk Removal",
+    name: "Quick and Convenient Junk Hauling",
     description:
-      "Our team provides fast, reliable junk removal services that cater to your busy schedule. With us, decluttering your space is hassle-free. Call now for a quick, no-obligation estimate.",
-    imageSrc: junkremovals,
-    imageAlt: "Professional team removing junk",
+      "Need to clear out space fast? Our team excels in quick and convenient junk hauling, ensuring that your space is decluttered in no time. Book with us and experience swift service.",
+    imageSrc: trashremoval2,
+    imageAlt: "Quick junk hauling service in action",
   },
   {
-    name: "Comprehensive Junk Removal for Every Need",
+    name: "Eco-Friendly Disposal",
     description:
-      "From residential to commercial, small-scale to large, we handle all forms of junk removal with efficiency and care. Discover a cleaner space today with our expert services.",
-    imageSrc: dumpstertrailer1,
-    imageAlt: "Diverse junk items ready for removal",
+      "With us, you can rest easy knowing that your junk is disposed of responsibly. We are committed to eco-friendly practices, recycling, and donating items whenever possible.",
+    imageSrc: junkremovals,
+    imageAlt: "Eco-friendly junk disposal",
   },
 ];
+
+const metatitle =
+  "Efficient Haul Away Junk Removal | Eco-Friendly Disposal | Get a Free Quote";
+const description =
+  "Looking for 'junk hauling near me'? Our team provides efficient and eco-friendly 'haul away junk' services. Call now for a quick estimate and let us take the hassle out of junk removal.";
+
 export default function junkremoval() {
   return (
     <>
       <Head>
-        <title>
-          Expert Junk Removal New Port Richey | Trash Disposal | Call Now
-        </title>
-        <meta
-          name="description"
-          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk removal services in New Port Richey, FL will leave your space clean and organized."
-        />
+        <title>{metatitle}</title>
+        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Junkheader
-        image={dumpsterrental}
-        alttext="junk removal new port richey"
-        location="New Port Richey's Premier"
-        service="Junk Removal Service"
-        ptag="Experience unparalleled professionalism and efficiency with New Port Richey's premier junk removal service, catering to all your disposal needs responsibly."
-        cta="Request Junk Removal"
+        image={trashremoval1}
+        alttext="Haul away junk removal service truck"
+        location="Your Trusted"
+        service="Junk Hauling Experts"
+        ptag="From old furniture to renovation debris, we haul junk away quickly and responsibly. Get your free quote today!"
+        cta="Schedule Junk Pickup"
       ></Junkheader>
 
       <Corefeatures
-        header="Junk Removal New Port Richey"
-        subheader="Efficient and Eco-Friendly Junk Removal Services"
-        ptag="Reduce Your Carbon Footprint with Our Sustainable Junk Removal Services near you in New Port Richey."
+        header="Professional Junk Hauling in New Port Richey"
+        subheader="Reliable and Sustainable Junk Removal Services"
+        ptag="Join our New Port Richey customers in choosing a greener way to get rid of your junk. Our team ensures efficient, eco-conscious 'haul away junk removal' services."
         points={points}
       />
 
       <Multiblock
-        header="YOUR LOCAL JUNK REMOVAL TEAM"
-        ptag="Discover the benefits that make our services stand out. Quality, reliability, and sustainability are the pillars of our exceptional service offerings."
+        header="YOUR GO-TO JUNK HAULERS"
+        ptag="We're not just any 'junk hauler near me'—we are committed to excellence in every aspect of our service. Whether it's a single item or a full cleanout, we're ready to help."
         features={features}
       ></Multiblock>
 
@@ -176,9 +173,9 @@ export default function junkremoval() {
 
       {/* items */}
       <Otherservices
-        header="Everything you need"
-        subheader="We Take Care of Your Waste"
-        ptag="We specialize in proper disposal methods to minimize our impact on the environment. Call us today, and let us take care of your waste worries!"
+        header="Junk Removal Solutions"
+        subheader="We Haul Junk "
+        ptag="Our mission to serve the community with integrity and dedication. Let's keep Pasco County clean together!"
       ></Otherservices>
 
       <Junkcost></Junkcost>

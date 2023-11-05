@@ -6,20 +6,13 @@ export default function Junkcost() {
   return (
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl ">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold tracking-wide text-black sm:text-4xl uppercase">
             Let Us Help You With Your Junk Removal Needs
           </h2>
         </div>
 
         <div className="relative max-w-5xl mx-auto mt-8 md:mt-16">
-          <div className="absolute -inset-4">
-            <div
-              className="w-full h-full mx-auto opacity-30 blur-lg filter"
-              //   style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
-            ></div>
-          </div>
-
           <div className="relative overflow-hidden bg-black">
             <div className="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
               <div className="flex flex-col items-center justify-center md:flex md:items-center md:flex-row md:space-x-12 lg:space-x-24">
