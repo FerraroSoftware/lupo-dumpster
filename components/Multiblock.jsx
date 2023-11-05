@@ -3,12 +3,13 @@ import Image from "next/image";
 import junktrailer from "../public/junk-trailer.png";
 import dumpsterrental from "../public/dumpsterrental.png";
 import dumpstertrailer1 from "../public/dumpster-trailer-1.png";
+import junkremoval from "../public/junkremoval.jpg";
 const features = [
   {
     name: "Efficient and Reliable Junk Removal",
     description:
       "Our team provides fast, reliable junk removal services that cater to your busy schedule. With us, decluttering your space is hassle-free. Call now for a quick, no-obligation estimate.",
-    imageSrc: dumpstertrailer1,
+    imageSrc: junkremoval,
     imageAlt: "Professional team removing junk",
   },
   {

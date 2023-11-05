@@ -8,6 +8,9 @@ import trashremoval7 from "../public/trash-removal-7.png";
 import trashremoval8 from "../public/trash-removal-8.png";
 import dumpsterrental from "../public/dumpsterrental.png";
 import dumpstertrailer1 from "../public/dumpster-trailer-1.png";
+import junktrailer from "../public/junk-trailer.png";
+import junkbefore from "../public/junkbefore.jpg";
+import junkafter from "../public/junkafter.jpg";
 
 import Image from "next/image";
 
@@ -42,12 +45,12 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval4,
+    source: junkbefore,
   },
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval7,
+    source: junkafter,
   },
   {
     title: "IMG_4985.HEIC",
@@ -57,12 +60,12 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: trashremoval6,
+    source: dumpsterrental,
   },
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: dumpsterrental,
+    source: junktrailer,
   },
   {
     title: "IMG_4985.HEIC",
