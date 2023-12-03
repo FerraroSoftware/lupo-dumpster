@@ -14,7 +14,7 @@ const featureditems = [
   "Appliance Removal",
   "Television Recycling",
   "Furniture Removal",
-  "E-Waste Disposal",
+  "Dumpster Trailer Rental",
   "Hot Tub Disposal",
 ];
 
@@ -55,46 +55,6 @@ export default function Featuredlist() {
                 alt=""
               />
               <div className="absolute inset-0 bg-zinc-900/10"></div>
-              {/* <div className="absolute bottom-0 left-0">
-                <a
-                  href="#"
-                  title=""
-                  className="inline-flex items-center px-5 py-3 text-base font-normal bg-black"
-                  role="button"
-                >
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
-                    {" "}
-                    Start Securing All Data{" "}
-                  </span>
-                  <svg
-                    className="w-auto h-5 ml-2"
-                    viewBox="0 0 19 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9"
-                      stroke="url(#paint0_linear_523_1470)"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_523_1470"
-                        x1="2.75"
-                        y1="3.75"
-                        x2="17.6868"
-                        y2="6.52979"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#dc2626" />
-                        <stop offset="1" stop-color="#f87171" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
-              </div> */}
             </div>
           </div>
 
@@ -127,7 +87,6 @@ export default function Featuredlist() {
 
             <hr className="mt-8 border-gray-800 sm:mt-12" />
 
-            {/* <ul className="grid grid-cols-1 mt-8 sm:grid-cols-2 sm:mt-12 gap-x-12 gap-y-8 sm:gap-y-12"> */}
             <ul className="grid grid-cols-1 mt-8 sm:grid-cols-2 sm:mt-12 ">
               {featureditems.map((item, index) => (
                 <li className="flex items-start" key={index}>
