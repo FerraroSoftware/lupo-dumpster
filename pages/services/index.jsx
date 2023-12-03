@@ -51,7 +51,7 @@ const servicelist = [
     name: "Dumpster Trailer Rentals",
     description: "Design System",
     image: dumptrailer,
-    link: "/services/dumpster-trailer-rental-near-me",
+    link: "/services/dumpster-trailer-rental",
     alttext: "Dumpster trailer rentals near you",
   },
   // {
