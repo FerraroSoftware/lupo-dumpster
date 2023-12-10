@@ -26,7 +26,7 @@ const categories = [
   },
   {
     name: "Clean Out Services",
-    href: "/services/hoarding-cleanup-new-port-richey-fl",
+    href: "/services/hoarding-cleanup",
     imageSrc: garagecleanout, // Replace with your actual image import or path
     imageAlt:
       "A cleared and clean space following a comprehensive clean out service.",
