@@ -123,14 +123,14 @@ export default function Footer() {
                       </li>
 
                       <li>
-                        <a
+                        <Link
                           href="/services/appliance-removal"
                           title=""
                           className="flex text-base font-normal text-gray-300 transition-all transform hover:text-white "
                         >
                           {" "}
                           Appliance Removal{" "}
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
