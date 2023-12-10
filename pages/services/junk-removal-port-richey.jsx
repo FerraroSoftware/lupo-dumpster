@@ -119,7 +119,6 @@ const features = [
     description:
       "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
   },
-
   {
     name: "Dumpster Rental",
     link: "/services/dumpster-rental-new-port-richey-fl",
@@ -150,41 +149,6 @@ const features = [
     description:
       "Let us take care of your junk. We are ready for pick up today!",
   },
-  // {
-  //   name: "Home furniture removal",
-  //   description:
-  //     "Get rid of old furniture, to declutter and free up space in the home. Make room for the new stuff.",
-  // },
-  // {
-  //   name: "Mattress removal and disposal",
-  //   description:
-  //     "Get rid of old, worn-out, or unwanted mattresses, and to prevent the spread of allergens, and other harmful organisms.",
-  // },
-  // {
-  //   name: "Scarp metal pick up and recycling",
-  //   description:
-  //     "Conserve natural resources by reusing metals, reduces energy consumption and pollution.",
-  // },
-  // {
-  //   name: "Garage cleanup",
-  //   description:
-  //     "Create more space, declutter, and organize the area to make it more functional and efficient.",
-  // },
-  // {
-  //   name: "Hotub cleanup",
-  //   description:
-  //     "Get rid of your old hot tubs, to declutter and make more room at the house. Enjoy the extra space you have now.",
-  // },
-  // {
-  //   name: "Basement cleanup",
-  //   description:
-  //     "Create a safe, organized and functional space, by removing any unwanted items, clutter, and hazardous materials.",
-  // },
-  // {
-  //   name: "Yard Waste",
-  //   description:
-  //     "Maintain the aesthetics and safety of the property by removing leaves, branches, and other debris.",
-  // },
 ];
 export default function junkremoval() {
   return (

@@ -1,9 +1,6 @@
 import Image from "next/image";
 
-import junktrailer from "../public/junk-trailer.png";
-import dumpsterrental from "../public/dumpsterrental.png";
-import dumpstertrailer1 from "../public/dumpster-trailer-1.png";
-import junkremoval from "../public/junkremoval.jpg";
+import { FadeIn } from "./FadeIn";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -22,7 +19,7 @@ export default function Multiblock({ features, header, ptag }) {
 
         <div className="mt-16 space-y-16 px-0 md:px-10">
           {features.map((feature, featureIdx) => (
-            <div
+            <FadeIn
               key={feature.name}
               className="flex flex-col-reverse lg:grid lg:grid-cols-12  lg:gap-x-8"
             >
@@ -58,8 +55,7 @@ export default function Multiblock({ features, header, ptag }) {
                   />
                 </div>
               </div>
-              {/* </div> */}
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

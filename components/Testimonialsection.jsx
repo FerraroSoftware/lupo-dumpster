@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { FadeIn } from "./FadeIn";
 const cardVariants = {
   offscreen: {
     opacity: 0,
@@ -72,48 +72,50 @@ const testimonials = [
 export default function Testimonialsection() {
   return (
     <section className="py-10 sm:py-16 lg:py-24" id="testimonial">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
-            Over 100 Five Star Google Reviews!
-          </h2>
-          <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-gray-100">
-            At Lupo Dumpster Rentals, we take pride in providing exceptional
-            products and services that exceed our customers&apos; expectations.
-          </p>
-        </div>
+      <FadeIn>
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+              Over 100 Five Star Google Reviews!
+            </h2>
+            <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-gray-100">
+              At Lupo Dumpster Rentals, we take pride in providing exceptional
+              products and services that exceed our customers&apos;
+              expectations.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-3 sm:grid-cols-2">
-          {testimonials.map((testimonial, index) => (
-            <div
-              className="overflow-hidden bg-white "
-              key={index}
-              viewport={{ once: true }}
-              initial="offscreen"
-              whileInView="onscreen"
-              variants={cardVariants}
-            >
-              <div className="px-5 py-6">
-                <div className="flex items-center justify-between ">
-                  {/* <img
+          <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-3 sm:grid-cols-2">
+            {testimonials.map((testimonial, index) => (
+              <div
+                className="overflow-hidden bg-white "
+                key={index}
+                viewport={{ once: true }}
+                initial="offscreen"
+                whileInView="onscreen"
+                variants={cardVariants}
+              >
+                <div className="px-5 py-6">
+                  <div className="flex items-center justify-between ">
+                    {/* <img
                     className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg"
                     alt=""
                   /> */}
-                  {/* ml-3 on this div */}
-                  <div className="min-w-0  mr-auto">
-                    <p className="text-base font-semibold text-black truncate">
-                      {testimonial.name}
-                    </p>
-                  </div>
-                  <Link
-                    href={testimonial.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                    aria-label="Read review"
-                  >
-                    {/* <svg
+                    {/* ml-3 on this div */}
+                    <div className="min-w-0  mr-auto">
+                      <p className="text-base font-semibold text-black truncate">
+                        {testimonial.name}
+                      </p>
+                    </div>
+                    <Link
+                      href={testimonial.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                      aria-label="Read review"
+                    >
+                      {/* <svg
                       width="26"
                       height="24"
                       viewBox="0 0 26 24"
@@ -125,71 +127,71 @@ export default function Testimonialsection() {
                         fill="#BA2525"
                       />
                     </svg> */}
-                    <div className="relative ">
-                      <div className="flex items-center">
-                        <svg
-                          className="w-6 h-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-6 h-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-6 h-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-6 h-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-6 h-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
+                      <div className="relative ">
+                        <div className="flex items-center">
+                          <svg
+                            className="w-6 h-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          <svg
+                            className="w-6 h-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          <svg
+                            className="w-6 h-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          <svg
+                            className="w-6 h-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          <svg
+                            className="w-6 h-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="mt-5 block ">
-                  <p className="text-base text-gray-800">
-                    {testimonial.review}
-                    <Link
-                      href={testimonial.link}
-                      className="block text-gray-800 mt-4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Read review"
-                    >
-                      See Review
                     </Link>
-                  </p>
+                  </div>
+                  <div className="mt-5 block ">
+                    <p className="text-base text-gray-800">
+                      {testimonial.review}
+                      <Link
+                        href={testimonial.link}
+                        className="block text-gray-800 mt-4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Read review"
+                      >
+                        See Review
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-        {/* <div className="mt-10 text-center">
+            ))}
+          </div>
+          {/* <div className="mt-10 text-center">
           <a
             href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
             title=""
@@ -220,39 +222,40 @@ export default function Testimonialsection() {
             </svg>
           </a>
         </div> */}
-        <div
-          className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6 gap-y-4 md:gap-y-0"
-          initial={{ scale: 0.2, opacity: 0.2 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{
-            duration: 1,
-            ease: [0, 0.61, 0.2, 1.01],
-            delay: 0.3,
-          }}
-        >
-          <Link
-            href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
-            title=""
-            className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
-                transition-all duration-300 uppercase"
-            role="button"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6 gap-y-4 md:gap-y-0"
+            initial={{ scale: 0.2, opacity: 0.2 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              duration: 1,
+              ease: [0, 0.61, 0.2, 1.01],
+              delay: 0.3,
+            }}
           >
-            See All Google Reviews
-          </Link>
+            <Link
+              href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
+              title=""
+              className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                transition-all duration-300 uppercase"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See All Google Reviews
+            </Link>
 
-          <Link
-            href="/contact"
-            title=""
-            className="border border-red-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+            <Link
+              href="/contact"
+              title=""
+              className="border border-red-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
                 transition-all duration-300 uppercase"
-            role="button"
-          >
-            Book a Trailer
-          </Link>
+              role="button"
+            >
+              Book a Trailer
+            </Link>
+          </div>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

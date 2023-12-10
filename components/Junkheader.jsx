@@ -12,6 +12,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import dumpsterrental from "../public/dumpsterrental.png";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeIn } from "./FadeIn";
 
 const solutions = [
   {
@@ -74,40 +75,42 @@ export default function Junkheader({
                   />
                   <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
                 </div>
-                <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
-                  <h1 className="text-center text-4xl font-bold tracking-wide leading-10 text-white sm:text-5xl uppercase">
-                    <span className="block text-white uppercase">
-                      {location}
-                    </span>
-                    <span className="block text-red-600 uppercase">
-                      {service}
-                    </span>
-                  </h1>
-                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
-                    {ptag}
-                  </p>
-                  <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <Link
-                      href="/contact"
-                      title=""
-                      className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                <FadeIn>
+                  <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+                    <h1 className="text-center text-4xl font-bold tracking-wide leading-10 text-white sm:text-5xl uppercase">
+                      <span className="block text-white uppercase">
+                        {location}
+                      </span>
+                      <span className="block text-red-600 uppercase">
+                        {service}
+                      </span>
+                    </h1>
+                    <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
+                      {ptag}
+                    </p>
+                    <div className="mt-10 flex items-center justify-center gap-x-6">
+                      <Link
+                        href="/contact"
+                        title=""
+                        className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
                 transition-all duration-300 uppercase"
-                      role="button"
-                    >
-                      {cta}
-                    </Link>
+                        role="button"
+                      >
+                        {cta}
+                      </Link>
 
-                    <Link
-                      href="tel:7273176717"
-                      title=""
-                      className="border border-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                      <Link
+                        href="tel:7273176717"
+                        title=""
+                        className="border border-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
                 transition-all duration-300 uppercase"
-                      role="button"
-                    >
-                      Call Us Now
-                    </Link>
+                        role="button"
+                      >
+                        Call Us Now
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                </FadeIn>
               </div>
             </div>
           </div>

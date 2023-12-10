@@ -2,6 +2,8 @@ import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
 
+import { FadeIn, FadeInStagger } from "./FadeIn";
+
 const services = [
   {
     name: "Home appliance recycling",
@@ -67,27 +69,31 @@ export default function Otherservices({ header, subheader, ptag }) {
           <p className="mt-6 text-base leading-7 text-gray-300">{ptag}</p>
         </div>
         <div className="mt-20 lg:col-span-2 lg:mt-0">
-          <dl className="grid grid-cols-1 gap-12 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-4">
-            {services.map((feature, key) => (
-              <div key={key} className="relative">
-                <dt>
-                  <ChevronDoubleRightIcon
-                    className="absolute mt-1 h-6 w-6 text-red-600"
-                    aria-hidden="true"
-                  />
-                  <Link
-                    className="ml-10 text-md font-semibold leading-8 text-white hover:text-red-600 uppercase"
-                    href={feature.link}
-                  >
-                    {feature.name}
-                  </Link>
-                </dt>
-                <dd className="mt-2 ml-10 text-base leading-7 text-gray-300">
-                  {feature.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <FadeInStagger faster={true}>
+            <dl className="grid grid-cols-1 gap-12 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-4">
+              {services.map((feature, key) => (
+                <div key={key} className="relative">
+                  <FadeIn>
+                    <dt>
+                      <ChevronDoubleRightIcon
+                        className="absolute mt-1 h-6 w-6 text-red-600"
+                        aria-hidden="true"
+                      />
+                      <Link
+                        className="ml-10 text-md font-semibold leading-8 text-white hover:text-red-600 uppercase"
+                        href={feature.link}
+                      >
+                        {feature.name}
+                      </Link>
+                    </dt>
+                    <dd className="mt-2 ml-10 text-base leading-7 text-gray-300">
+                      {feature.description}
+                    </dd>
+                  </FadeIn>
+                </div>
+              ))}
+            </dl>
+          </FadeInStagger>
         </div>
       </div>
     </div>

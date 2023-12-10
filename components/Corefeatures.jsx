@@ -1,4 +1,4 @@
-import React from "react";
+import { FadeIn, FadeInStagger } from "./FadeIn";
 
 function Corefeatures({ points, header, subheader, ptag }) {
   return (
@@ -17,26 +17,30 @@ function Corefeatures({ points, header, subheader, ptag }) {
         </div>
 
         <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
-          <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
-            {points.map((feature, key) => (
-              <div
-                key={key}
-                className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
-              >
-                <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0">
-                  <feature.icon className="h-8 w-8" aria-hidden="true" />
+          <FadeInStagger>
+            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+              {points.map((feature, key) => (
+                <div
+                  key={key}
+                  className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+                >
+                  <FadeIn>
+                    <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0">
+                      <feature.icon className="h-8 w-8" aria-hidden="true" />
+                    </div>
+                    <div className="sm:min-w-0 sm:flex-1">
+                      <p className="text-lg font-semibold uppercase leading-8 text-white">
+                        {feature.name}
+                      </p>
+                      <p className="mt-2 text-base leading-7 text-gray-300">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </FadeIn>
                 </div>
-                <div className="sm:min-w-0 sm:flex-1">
-                  <p className="text-lg font-semibold uppercase leading-8 text-white">
-                    {feature.name}
-                  </p>
-                  <p className="mt-2 text-base leading-7 text-gray-300">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </FadeInStagger>
         </div>
       </div>
     </div>
