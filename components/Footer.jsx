@@ -165,7 +165,7 @@ export default function Footer() {
 
                       <li>
                         <Link
-                          href="/pricing"
+                          href="/dumpster-rental-pricing"
                           title=""
                           className="flex text-base font-normal text-gray-300 transition-all transform hover:text-white "
                         >
