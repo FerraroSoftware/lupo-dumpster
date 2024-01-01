@@ -340,6 +340,7 @@ export default function Navbartwo() {
                 <Link
                   href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-700 uppercase"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact Us
                 </Link>
