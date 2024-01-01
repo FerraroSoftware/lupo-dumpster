@@ -18,91 +18,285 @@ import {
 
 import Link from "next/link";
 
-const commercial = [
+const residential = [
   {
-    name: "Appliance Removal",
+    name: "Garage Door Openers",
     description:
-      "Efficient removal and disposal of unwanted appliances from properties.",
-    href: "/services/appliance-removal",
+      "Effortless operation with our range of advanced garage door openers, designed for convenience and longevity.",
+    href: "/residential/garage-door-opener",
+    icon: CursorArrowRaysIcon,
   },
   {
-    name: "Construction Debris",
+    name: "Garage Door Repair",
     description:
-      "Rapid removal of debris from construction sites, ensuring safety and cleanliness.",
-    href: "/services/construction-debris-removal",
+      "Professional and timely repair services to restore functionality and ensure the longevity of your garage door.",
+    href: "/residential/garage-door-repair",
+    icon: CursorArrowRaysIcon,
   },
   {
-    name: "Dumpster Rentals",
+    name: "Garage Door Springs",
     description:
-      "Providing various sized dumpsters for rent to accommodate different waste disposal needs.",
-    href: "/services/dumpster-rental-new-port-richey-fl",
+      "High-quality springs designed for optimal performance, ensuring smooth operation and extended door life.",
+    href: "/residential/garage-door-springs",
+    icon: CursorArrowRaysIcon,
   },
   {
-    name: "Furniture Removal",
+    name: "New Garage Doors",
     description:
-      "Safe and efficient removal of unwanted furniture from homes or businesses.",
-    href: "/services/furniture-removal",
-  },
-  {
-    name: "Garage Cleaning",
-    description:
-      "Thorough cleaning services to declutter and organize residential garages.",
-    href: "/services/garage-cleaning-service",
-  },
-  {
-    name: "Haul Away Junk",
-    description:
-      "Professional services to remove and dispose of all types of junk from properties.",
-    href: "/services/haul-away-junk",
-  },
-  {
-    name: "Hoarding Cleanup",
-    description:
-      "Specialized cleaning and decluttering services for hoarding situations, restoring spaces to safe conditions.",
-    href: "/services/hoarding-cleanup",
-  },
-  {
-    name: "Junk Pick Up",
-    description:
-      "Convenient and timely pick-up services for household or commercial junk items.",
-    href: "/services/junk-pick-up",
-  },
-  {
-    name: "Junk Removal",
-    description:
-      "Comprehensive removal services for all types of junk, including large and bulky items.",
-    href: "/services/junk-removal-new-port-richey-fl",
-  },
-  {
-    name: "Mattress Removal",
-    description:
-      "Eco-friendly removal and disposal of old mattresses from residential or commercial properties.",
-    href: "/services/mattress-disposal",
-  },
-  {
-    name: "Trash Removal",
-    description:
-      "Efficient removal of trash from homes, businesses, and public spaces to maintain cleanliness.",
-    href: "/services/trash-removal",
-  },
-  {
-    name: "Yard Waste Removal",
-    description:
-      "Eco-friendly disposal of yard debris, leaves, branches, and other green waste to maintain beautiful outdoor spaces.",
-    href: "/services/yard-waste-removal",
+      "Explore our range of stylish and durable garage doors, tailored to enhance the aesthetics and security of your home.",
+    href: "/residential/new-garage-door",
+    icon: CursorArrowRaysIcon,
   },
 ];
 
-const commercialAction = [
-  { name: "Call Now", href: "tel:+17273176717", icon: PhoneIcon },
+const loadingdocks = [
   {
-    name: "View All Services",
-    href: "/services",
+    name: "Dock leveler",
+    description:
+      "Enhance efficiency and safety during loading and unloading with our premium dock levelers.",
+    href: "/loading-dock/dock-leveler",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Dock Lifts",
+    description:
+      "Crafted to elevate or lower goods to the perfect height, they bridge the gap for efficient transfers.",
+    href: "/loading-dock/dock-lift",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Dock Seals",
+    description:
+      "Protect your goods and maintain optimal temperatures with our Dock Seals.",
+    href: "/loading-dock/dock-seals",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Scissor Lifts",
+    description:
+      "Flexible elevation solutions, perfect for maintenance, inventory, and other vertical tasks.",
+    href: "/loading-dock/scissor-lift",
+    icon: CursorArrowRaysIcon,
+  },
+];
+
+const commercial = [
+  // Starting new
+  {
+    name: "Aircraft Hangar Doors",
+    description:
+      "Specialized doors designed for vast aviation facilities, ensuring optimal functionality.",
+    href: "/commercial/aircraft-hangar-doors",
+    icon: CursorArrowRaysIcon,
+  },
+  // {
+  //   name: "Aluminum-Framed Glass Doors",
+  //   description:
+  //     "Blending aesthetics with durability, these doors offer visibility and strength.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  {
+    name: "Automatic Doors",
+    description:
+      "Seamless, sensor-activated doors enhancing user convenience and flow.",
+    href: "/commercial/automatic-doors",
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: "Garage Door Repair",
+    description:
+      "Professional and timely repair services to restore functionality and longevity.",
+    href: "/commercial/commercial-garage-door-repair",
+    icon: SquaresPlusIcon,
+  },
+  // {
+  //   name: "Counter Doors",
+  //   description:
+  //     "Compact, functional doors ideal for service counters and similar spaces.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Fire Station Doors",
+  //   description:
+  //     "Rapid-response doors built to ensure immediate access during emergencies.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  {
+    name: "Fire-Rated Doors",
+    description:
+      "Safety-centric doors designed to resist and contain fire, safeguarding premises.",
+    href: "/commercial/fire-rated-doors",
+    icon: CursorArrowRaysIcon,
+  },
+  // {
+  //   name: "High Performance Doors",
+  //   description:
+  //     "Optimized for functionality and durability under frequent usage conditions.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "High-Speed Rubber Doors",
+  //   description:
+  //     "Rapid action doors made of resilient rubber for demanding environments.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "High-Speed Fabric Doors",
+  //   description:
+  //     "Lightweight yet sturdy, these doors offer quick access while ensuring security.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "High-Speed Metal Doors",
+  //   description:
+  //     "Metal-based doors designed for rapid operation without compromising on strength.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  {
+    name: "Hurricane Garage Doors",
+    description:
+      "Engineered to withstand extreme weather conditions, ensuring safety and security.",
+    href: "/commercial/hurricane-garage-doors",
+    icon: CursorArrowRaysIcon,
+  },
+  // {
+  //   name: "Insulated Sectional Steel-Back Doors",
+  //   description:
+  //     "Combining insulation with robust steel backing for energy efficiency and durability.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Loading Dock Doors",
+  //   description:
+  //     "Engineered for the rigors of loading docks, ensuring seamless logistics.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  {
+    name: "Overhead Doors",
+    description:
+      "Space-saving doors that retract overhead, suitable for varied commercial spaces.",
+    href: "/commercial/overhead-doors",
+    icon: CursorArrowRaysIcon,
+  },
+  // {
+  //   name: "Parking Facility Doors",
+  //   description:
+  //     "Optimized for frequent operation, ensuring smooth vehicle movement in parking areas.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Rolling Service Doors",
+  //   description:
+  //     "Compact, efficient doors that roll up, perfect for service areas and stores.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Rolling Sheet Doors",
+  //   description:
+  //     "Lightweight and easy to operate, these doors are ideal for storage units.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  {
+    name: "Roll Up Doors",
+    description:
+      "Compact, space-efficient doors designed for versatile commercial applications.",
+
+    href: "/commercial/roll-up-doors",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Rolling Shutters",
+    description:
+      "Offering both security and aesthetic appeal for storefronts and commercial outlets.",
+    href: "/commercial/rolling-shutters",
+    icon: CursorArrowRaysIcon,
+  },
+  // {
+  //   name: "Security Grilles",
+  //   description:
+  //     "Ensure premises security without compromising on visibility or aesthetics.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Sectional Steel Doors",
+  //   description:
+  //     "Modular doors that offer flexibility, durability, and security for varied needs.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Side Folding Grills",
+  //   description:
+  //     "Space-efficient grills that provide security and adapt to architectural needs.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Thermacore Doors",
+  //   description:
+  //     "Advanced insulated doors that optimize temperature control and energy conservation.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: "Wind Load Doors",
+  //   description:
+  //     "Reinforced doors designed to withstand strong wind pressures and adverse conditions.",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  // },
+];
+
+const commercialAction = [
+  { name: "Call Now", href: "tel:+18449440362", icon: PhoneIcon },
+  {
+    name: "View All Commercial Doors",
+    href: "/commercial",
     icon: RectangleGroupIcon,
   },
   {
-    name: "Facebook",
-    href: "https://www.facebook.com/LupoLLC/",
+    name: "Social Media",
+    href: "https://www.facebook.com/paratecdoor",
+    icon: PlayCircleIcon,
+  },
+];
+const residentialAction = [
+  { name: "Call Now", href: "tel:+18449440362", icon: PhoneIcon },
+  {
+    name: "View All Residential Solutions",
+    href: "/residential",
+    icon: RectangleGroupIcon,
+  },
+  {
+    name: "Social Media",
+    href: "https://www.facebook.com/paratecdoor",
+    icon: PlayCircleIcon,
+  },
+];
+
+const loadingDocksAction = [
+  { name: "Call Now", href: "tel:+18449440362", icon: PhoneIcon },
+  {
+    name: "View All Loading Solutions",
+    href: "/loading-dock",
+    icon: RectangleGroupIcon,
+  },
+  {
+    name: "Social Media",
+    href: "https://www.facebook.com/paratecdoor",
     icon: PlayCircleIcon,
   },
 ];
