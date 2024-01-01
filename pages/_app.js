@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Script from "next/script";
+import Navbartwo from "../components/Navbartwo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,8 @@ export default function App({ Component, pageProps }) {
       />
 
       <main className={inter.className}>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
+        <Navbartwo></Navbartwo>
         {/* <Sidebar></Sidebar> */}
         <Component {...pageProps} />
         <Footer></Footer>
