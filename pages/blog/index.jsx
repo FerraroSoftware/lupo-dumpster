@@ -78,22 +78,13 @@ export default function BlogPage({ paths }) {
   );
 }
 
-// export async function getServerSideProps() {
-//   const paths = await loadMDXMetadata("blog");
-
-//   return {
-//     props: {
-//       paths,
-//     },
-//   };
-// }
-
 export async function getStaticProps() {
   const paths = await loadMDXMetadata("blog");
+
+  console.log(paths);
   return {
     props: {
       paths,
     },
-    // revalidate: 10, // Optionally, add revalidation time in seconds
   };
 }

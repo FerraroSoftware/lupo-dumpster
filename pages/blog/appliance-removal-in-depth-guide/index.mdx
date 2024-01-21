@@ -1,5 +1,6 @@
 import Bloglayout from "../../../components/Bloglayout";
 import Contact from "../../../components/Contact";
+import Head from "next/head";
 
 export const article = {
   date: "2024-01-01",
@@ -10,15 +11,7 @@ export const article = {
   imageAlt: "hvls fans",
 };
 
-export const title =
-  "Appliance Removal: An In-Depth Guide | Lupo Dumpster Rentals";
-
-export const metadata = {
-  title: title,
-  description: article.description,
-};
-
-<Bloglayout title={article.title} date={article.date}>
+<Bloglayout title={article.title} date={article.date} description={article.description}>
 
 ![appliance removal](/applianceremoval/appliances-removal.png)
 

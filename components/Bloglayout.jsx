@@ -1,12 +1,20 @@
 import { Inter } from "next/font/google";
 import { formatDate } from "../lib/formatDate";
 import { FadeIn } from "../components/FadeIn";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Bloglayout({ children, title, date }) {
+export default function Bloglayout({ children, title, date, description }) {
   return (
     <>
+      <Head>
+        <title>{`${title} | Lupo Dumpster Rentals`}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <FadeIn className="">
         <div className="">
           <div className="mt-24">
