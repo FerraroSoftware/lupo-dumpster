@@ -12,7 +12,7 @@ export default function BlogPage({ paths }) {
         </title>
         <meta
           name="description"
-          content="Looking for a dumpster rental service that won't break the bank? Lupo Dumpster Rentals offers affordable and reliable waste removal services for your next project."
+          content="Learn more about dumpster rentals, junk removal, and waste management from our blog. We provide dumpster rentals and junk removal services in Pasco County."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
