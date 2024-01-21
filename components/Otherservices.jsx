@@ -9,11 +9,11 @@ const services = [
     name: "Home appliance recycling",
     description:
       "Get rid of your old refrigerators, washing machines, dryers, ovens, dishwashers, and air conditioners.",
-    link: "/services/appliance-removal-new-port-richey-fl",
+    link: "/services/appliance-removal",
   },
   {
     name: "Construction Debris",
-    link: "/services/construction-debris-removal-new-port-richey-fl",
+    link: "/services/construction-debris-removal",
     description:
       "Maintain the safety of the construction property by removing leaves, branches, and other debris.",
   },
@@ -31,7 +31,7 @@ const services = [
   },
   {
     name: "Garage Cleaning",
-    link: "/services/garage-cleaning-service-new-port-richey-fl",
+    link: "/services/garage-cleaning-service",
     description:
       "Call us to declutter your garage and make more room at the house. Enjoy the extra space you have now.",
   },

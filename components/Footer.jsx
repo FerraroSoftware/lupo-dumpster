@@ -187,12 +187,12 @@ export default function Footer() {
 
                       <li>
                         <Link
-                          href="/services/garage-cleaning-service"
+                          href="/blog"
                           title=""
                           className="flex text-base font-normal text-gray-300 transition-all transform hover:text-white "
                         >
                           {" "}
-                          Garage Cleaning{" "}
+                          Blog{" "}
                         </Link>
                       </li>
                     </ul>

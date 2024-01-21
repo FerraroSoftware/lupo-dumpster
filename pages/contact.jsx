@@ -10,7 +10,7 @@ export default function contact() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rental New Port Richey, FL- Contact Us Today
+          Contact Us Today | Lupo Dumpster Rental New Port Richey, FL
         </title>
         <meta
           name="description"
@@ -33,7 +33,7 @@ export default function contact() {
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl uppercase">
-            Book Your Dumpster Rental Today
+            Book Your Dumpster Rental
           </h1>
           <p className="mt-6 mx-auto max-w-3xl text-xl text-gray-100 text-center">
             Lupo Dumpster Rentals values clear communication and strives to

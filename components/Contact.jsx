@@ -7,6 +7,31 @@ import { useRouter } from "next/router";
 import { FadeIn } from "./FadeIn";
 
 export default function Contact() {
+  const cities = [
+    { name: "Dade City", url: "#" },
+    { name: "Holiday", url: "/services/dumpster-rental-holiday-fl" },
+    { name: "Hudson", url: "/services/dumpster-rental-hudson-fl" },
+    { name: "Land O Lakes", url: "#" },
+    { name: "Lutz", url: "/services/dumpster-rental-lutz-fl" },
+    {
+      name: "New Port Richey",
+      url: "/services/dumpster-rental-new-port-richey-fl",
+    },
+    { name: "Odessa", url: "/services/dumpster-rental-odessa-fl" },
+    { name: "Oldsmar", url: "#" },
+    { name: "Palm Harbor", url: "/services/dumpster-rental-palm-harbor" },
+    { name: "Pasco County", url: "#" },
+    {
+      name: "Pinellas County",
+      url: "/services/dumpster-rental-pinellas-county",
+    },
+    { name: "Port Richey", url: "/services/junk-removal-port-richey" },
+    { name: "Spring Hill", url: "/services/dumpster-rental-spring-hill" },
+    { name: "Tampa", url: "/services/dumpster-rental-tampa-bay" },
+    { name: "Tarpon Springs", url: "#" },
+    { name: "Trinity", url: "/services/dumpster-rental-trinity-fl" },
+  ];
+
   const router = useRouter();
   const {
     register,
@@ -56,7 +81,7 @@ export default function Contact() {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
-              Get In Touch Today
+              Get Rid of Your Junk Today
             </h2>
             <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
               Don&apos;t hesitate to let us assist you in finding the solution
@@ -65,102 +90,18 @@ export default function Contact() {
             </p>
 
             {/*  */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-400 mt-6">
-              <div className="col-span-1">
-                <ul className="list-none">
-                  <Link href="/services/dumpster-rental-holiday-fl">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Holiday
-                    </h3>
-                  </Link>
-                  <Link href="/services/dumpster-rental-tampa-bay">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Tampa
-                    </h3>
-                  </Link>
-                  {/* <Link href="/south-tampa"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    South Tampa
-                  </h3>
-                  {/* </Link> */}
-                  <Link href="/services/junk-removal-port-richey">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Port Richey
-                    </h3>
-                  </Link>
-                </ul>
-              </div>
-              <div className="col-span-1">
-                <ul className="list-none">
-                  <Link href="/services/dumpster-rental-new-port-richey-fl">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      New Port Richey
-                    </h3>
-                  </Link>
-                  {/* <Link href="/dade-city"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Dade City
-                  </h3>
-                  {/* </Link> */}
-                  <Link href="/services/dumpster-rental-spring-hill">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Spring Hill
-                    </h3>
-                  </Link>
-                  {/* <Link href="/pinellas-county"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Pinellas County
-                  </h3>
-                  {/* </Link> */}
-                </ul>
-              </div>
-              <div className="col-span-1">
-                <ul className="list-none">
-                  <Link href="/services/dumpster-rental-lutz-fl">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Lutz
-                    </h3>
-                  </Link>
-                  {/* <Link href="/odessa"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Odessa
-                  </h3>
-                  {/* </Link> */}
-                  {/* <Link href="/hudson"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Hudson
-                  </h3>
-                  {/* </Link> */}
-                  <Link href="/services/dumpster-rental-trinity-fl">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Trinity
-                    </h3>
-                  </Link>
-                </ul>
-              </div>
-              <div className="col-span-1">
-                <ul className="list-none">
-                  <Link href="/services/dumpster-rental-palm-harbor">
-                    <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                      Palm Harbor
-                    </h3>
-                  </Link>
-                  {/* <Link href="/oldsmar"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Oldsmar
-                  </h3>
-                  {/* </Link> */}
-                  {/* <Link href="/land-o-lakes"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Land O Lakes
-                  </h3>
-                  {/* </Link> */}
-                  {/* <Link href="/tarpon-springs"> */}
-                  <h3 className="cursor-pointer hover:underline hover:text-red-500">
-                    Tarpon Springs
-                  </h3>
-                </ul>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-gray-400 mt-6">
+              {cities.map((city, index) => (
+                <div key={index} className="col-span-1">
+                  <ul className="list-none">
+                    <Link href={city.url}>
+                      <h3 className="cursor-pointer hover:underline hover:text-red-500">
+                        {city.name}
+                      </h3>
+                    </Link>
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
 

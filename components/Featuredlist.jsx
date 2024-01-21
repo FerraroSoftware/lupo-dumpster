@@ -45,14 +45,14 @@ export default function Featuredlist() {
           <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-7 lg:gap-x-20">
             <div className="lg:col-span-3 lg:order-last">
               <div
-                className="relative overflow-hidden shadow-2xl shadow-zinc-700"
+                className="relative overflow-hidden "
                 viewport={{ once: true }}
                 initial="offscreen"
                 whileInView="onscreen"
                 variants={cardVariants}
               >
                 <Image
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full "
                   src={trailer}
                   alt=""
                 />
