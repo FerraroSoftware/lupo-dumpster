@@ -21,6 +21,11 @@ import furnitureremovals from "../../public/furniture-removals.png";
 import junkpickup from "../../public/junk-pick-up.png";
 import trashremoval from "../../public/trash-removal.png";
 import yardwasteremoval from "../../public/yard-waste-removal.png";
+import dumpstertrailer from "../../public/dumpster-trailer-1.png";
+import debris from "../../public/constructiondebris/debris.png";
+import dumptrailers from "../../public/dump-trailers.png";
+import junkbefore from "../../public/junkbefore.jpg";
+
 const servicelist = [
   {
     name: "Appliance Removal",
@@ -32,7 +37,7 @@ const servicelist = [
   {
     name: "Construction Debris Removal",
     description: "Design System",
-    image: constructiondebris,
+    image: debris,
     link: "/services/construction-debris-removal",
     alttext: "Construction Debris Removal",
   },
@@ -66,10 +71,18 @@ const servicelist = [
     alttext: "Garage Cleaning Service",
   },
   {
+    name: "Garbage Removal Service",
+    description:
+      "Comprehensive service for the removal and disposal of various types of garbage from residential and commercial locations.",
+    image: dumptrailers,
+    link: "/services/garbage-removal-service",
+    alttext: "Garbage Removal Service",
+  },
+  {
     name: "Haul Away Junk",
     description:
       "Professional services to remove and dispose of all types of junk from properties.",
-    image: dumptrailer,
+    image: junkbefore,
     link: "/services/haul-away-junk",
     alttext: "Haul away junk",
   },
@@ -102,6 +115,15 @@ const servicelist = [
     link: "/services/mattress-disposal",
     alttext: "Mattress removal",
   },
+  {
+    name: "Trash Pickup",
+    description:
+      "Dedicated trash collection service in Pasco County, offering timely and reliable waste management solutions.",
+    image: dumpstertrailer,
+    link: "/services/pasco-county-trash-pickup",
+    alttext: "Pasco County Trash Pickup",
+  },
+
   {
     name: "Trash Removal",
     description:
