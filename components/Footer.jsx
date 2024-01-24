@@ -260,7 +260,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      {/* </FadeIn> */}
+      </FadeIn>
     </footer>
   );
 }
