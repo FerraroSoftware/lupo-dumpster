@@ -192,6 +192,7 @@ export default function Navbartwo() {
                       >
                         <Link
                           href={item.href}
+                          onClick={() => setCommercialShowing(false)} // Add this line
                           className="mt-6 block font-semibold text-zinc-100 uppercase"
                         >
                           {item.name}
