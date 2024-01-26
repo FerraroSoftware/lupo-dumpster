@@ -253,7 +253,7 @@ export default function Navbartwo() {
             href="/contact"
             className="text-xs xl:text-sm uppercase lg:px-3 lg:py-2 leading-7 text-white transition-all duration-300 bg-black border-2 border-red-700 hover:bg-red-700 hover:text-white hover:border-red-700 "
           >
-            Rent a Dumpster{" "}
+            Call Now (727-317-6717){" "}
           </Link>
         </div>
       </nav>
