@@ -16,6 +16,7 @@ import Contacttwo from "../components/Contacttwo";
 import Process from "../components/Process";
 import Features from "../components/Features";
 import Coreservices from "../components/Coreservices";
+import Featureswhite from "../components/Featureswhite";
 
 export default function Home() {
   return (
@@ -29,23 +30,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Hero></Hero> */}
       <Herotwo></Herotwo>
-      <Features></Features>
-      <Coreservices></Coreservices>
       <Process />
-      <Testimonialsection></Testimonialsection>
-      {/* <Junkremoval></Junkremoval> */}
-      {/* <Contacttwo></Contacttwo> */}
-      <Featuredlist></Featuredlist>
-      <Imagegrid></Imagegrid>
       <Pricing></Pricing>
+      <Coreservices></Coreservices>
+      <Testimonialsection></Testimonialsection>
+      {/* <Features></Features> */}
+      {/* <Featureswhite></Featureswhite> */}
+      <Imagegrid></Imagegrid>
+      <Featuredlist></Featuredlist>
       <Twentyyard></Twentyyard>
-      {/* <Calltoaction></Calltoaction> */}
-      {/* <FeaturedServices></FeaturedServices> */}
-      {/* <Steps></Steps> */}
-      {/* <Mission></Mission> */}
-
       <Contact></Contact>
     </>
   );

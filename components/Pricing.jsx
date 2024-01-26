@@ -44,7 +44,7 @@ export default function Pricing() {
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
                   $250+
                 </p>
-                <p className="mt-1 text-sm font-normal text-gray-500">
+                <p className="mt-1 text-sm font-normal text-zinc-700">
                   Up to 3 days
                 </p>
                 <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
@@ -150,7 +150,7 @@ export default function Pricing() {
                   </Link>
                 </div>
 
-                <p className="mt-5 text-sm font-normal text-gray-500">
+                <p className="mt-5 text-sm font-normal text-zinc-700">
                   Variables affect pricing
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default function Pricing() {
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
                   $260+
                 </p>
-                <p className="mt-1 text-sm font-normal text-gray-500">
+                <p className="mt-1 text-sm font-normal text-zinc-700">
                   Up to 3 days
                 </p>
                 <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
@@ -352,7 +352,7 @@ export default function Pricing() {
                 <p className="mt-6 text-5xl font-semibold text-gray-900">
                   $350+
                 </p>
-                <p className="mt-1 text-sm font-normal text-gray-500">
+                <p className="mt-1 text-sm font-normal text-zinc-700">
                   Up to 4 days
                 </p>
                 <ul className="mt-8 space-y-4 text-base font-normal text-left text-gray-900">
