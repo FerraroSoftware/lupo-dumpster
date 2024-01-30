@@ -17,6 +17,8 @@ import Process from "../components/Process";
 import Features from "../components/Features";
 import Coreservices from "../components/Coreservices";
 import Featureswhite from "../components/Featureswhite";
+import NewPricing from "../components/NewPricing";
+import NewPricingtwo from "../components/NewPricingtwo";
 
 export default function Home() {
   return (
@@ -32,14 +34,16 @@ export default function Home() {
       </Head>
       <Herotwo></Herotwo>
       <Process />
-      <Pricing></Pricing>
-      <Coreservices></Coreservices>
+      {/* <Pricing></Pricing> */}
+      {/* <NewPricing></NewPricing> */}
+      <NewPricingtwo></NewPricingtwo>
       <Testimonialsection></Testimonialsection>
+      <Coreservices></Coreservices>
       {/* <Features></Features> */}
       {/* <Featureswhite></Featureswhite> */}
       <Imagegrid></Imagegrid>
       <Featuredlist></Featuredlist>
-      <Twentyyard></Twentyyard>
+      {/* <Twentyyard></Twentyyard> */}
       <Contact></Contact>
     </>
   );

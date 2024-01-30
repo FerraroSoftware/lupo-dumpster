@@ -76,7 +76,13 @@ export default function Testimonialsection() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
-              Over 100 Five Star Google Reviews!
+              Over 100 Five Star {""}
+              <span class="text-googleBlue">G</span>
+              <span class="text-googleRed">o</span>
+              <span class="text-googleYellow">o</span>
+              <span class="text-googleBlue">g</span>
+              <span class="text-googleGreen">l</span>
+              <span class="text-googleRed">e</span> Reviews!
             </h2>
             <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-gray-100">
               At Lupo Dumpster Rentals, we take pride in providing exceptional
