@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }) {
 
       <main className={inter.className}>
         {/* <Navbar></Navbar> */}
-        <Stickybar></Stickybar>
+        {/* <Stickybar></Stickybar> */}
         <Navbartwo></Navbartwo>
         {/* <Navbarthree></Navbarthree> */}
         {/* <Sidebar></Sidebar> */}
