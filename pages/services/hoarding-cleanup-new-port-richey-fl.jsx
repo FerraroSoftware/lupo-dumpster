@@ -26,6 +26,7 @@ import cleanoutservice from "../../public/hoarding-services.png";
 import Head from "next/head";
 import messygarage from "../../public/hoarding-junk-removal.png";
 import Contacttwo from "../../components/Contacttwo";
+import NewPricingtwo from "../../components/NewPricingtwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -398,7 +399,8 @@ export default function garagecleaningservicenewportricheyfl() {
           </div>
         </div>
       </div>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
+      <NewPricingtwo></NewPricingtwo>
 
       {/* items */}
       <div className="">

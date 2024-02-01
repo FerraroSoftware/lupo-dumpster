@@ -28,6 +28,8 @@ import constructiondebriss from "../../public/construction-debris.png";
 import cleanconstruction from "../../public/clean-construction.png";
 import Head from "next/head";
 import Contacttwo from "../../components/Contacttwo";
+import NewPricingtwo from "../../components/NewPricingtwo";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -389,7 +391,8 @@ export default function constructiondebris() {
           </div>
         </div>
       </div>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
+      <NewPricingtwo></NewPricingtwo>
 
       {/* items */}
       <div className="">

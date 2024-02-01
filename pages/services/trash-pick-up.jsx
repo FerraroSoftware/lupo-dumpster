@@ -29,6 +29,7 @@ import Reviews from "../../components/Reviews";
 import Contacttwo from "../../components/Contacttwo";
 import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 import Imagegrid from "../../components/Imagegrid";
+import NewPricingtwo from "../../components/NewPricingtwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -431,7 +432,8 @@ export default function dumpsterrental() {
         </div>
       </div>
 
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
+      <NewPricingtwo></NewPricingtwo>
 
       {/* items */}
       <div className="">

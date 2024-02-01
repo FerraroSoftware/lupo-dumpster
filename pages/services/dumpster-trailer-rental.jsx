@@ -26,6 +26,8 @@ import Otherservices from "../../components/Otherservices";
 import dumptrailer from "../../public/dump-trailer.png";
 import dumptrailers from "../../public/dump-trailers.png";
 
+import NewPricingtwo from "../../components/NewPricingtwo";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }

@@ -37,6 +37,7 @@ import junkremovals from "../../public/junkremoval.jpg";
 import Corefeatures from "../../components/Corefeatures";
 import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 import Otherservices from "../../components/Otherservices";
+import NewPricingtwo from "../../components/NewPricingtwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

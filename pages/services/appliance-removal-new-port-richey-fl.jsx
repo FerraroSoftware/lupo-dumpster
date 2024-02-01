@@ -26,6 +26,7 @@ import appliancetwo from "../../public/appliance-2.png";
 import jordan from "../../public/jordan.png";
 import Head from "next/head";
 import Contacttwo from "../../components/Contacttwo";
+import NewPricingtwo from "../../components/NewPricingtwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -393,7 +394,8 @@ export default function Applianceremoval() {
           </div>
         </div>
       </div>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
+      <NewPricingtwo></NewPricingtwo>
 
       {/* items */}
       <div className="">

@@ -40,6 +40,7 @@ import trashremoval1 from "../../public/trash-removal-1.png";
 import Otherservices from "../../components/Otherservices";
 import trashremoval2 from "../../public/trash-removal-2.png";
 import Faqs from "../../components/Faqs";
+import NewPricingtwo from "../../components/NewPricingtwo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
