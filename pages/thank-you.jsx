@@ -2,6 +2,7 @@ import logo from "../public/logo.svg";
 import Image from "next/image";
 import Head from "next/head";
 import castle from "../public/dumpster-trailer-1.png";
+import Script from "next/script";
 
 export default function thankyou() {
   return (
@@ -15,6 +16,27 @@ export default function thankyou() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-11112846382"
+        strategy="afterInteractive" // Loads script after page becomes interactive
+        async
+      />
+
+      {/* Inline script */}
+      <Script
+        id="gtag-init" // A unique ID (required for inline scripts)
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11112846382');
+          `,
+        }}
+      />
+
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-lg">
           <Image
