@@ -83,12 +83,12 @@ export default function Imagegrid() {
         <div className=" mx-auto max-w-9xl ">
           <div className="max-w-4xl mx-auto text-center pb-10">
             <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
-              Your Local Junk Removal Experts Located Near New Port Richey
+              Your Local Junk Removal Experts
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
               If you have junk, tree debris, construction debris, or any other
-              type of debris that needs to be removed near New Port Richey, we
-              can help. Contact us for a free quote.
+              type of debris that needs to be removed, we can help. Contact us
+              for a free quote.
             </p>
           </div>
           <ul

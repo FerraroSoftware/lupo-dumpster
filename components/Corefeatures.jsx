@@ -25,8 +25,11 @@ function Corefeatures({ points, header, subheader, ptag }) {
                   className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
                 >
                   <FadeIn>
-                    <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0">
-                      <feature.icon className="h-8 w-8" aria-hidden="true" />
+                    <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0 mb-4">
+                      <feature.icon
+                        className="h-12 w-12 bg-black shadow shadow-zinc-300 rounded-lg p-2 "
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="sm:min-w-0 sm:flex-1">
                       <p className="text-lg font-semibold uppercase leading-8 text-white">

@@ -9,6 +9,7 @@ import {
   UsersIcon,
   CurrencyDollarIcon,
   ScaleIcon,
+  CalendarDaysIcon,
 } from "@heroicons/react/24/outline";
 
 import Pricing from "../../components/Pricing";
@@ -27,6 +28,8 @@ import dumptrailer from "../../public/dump-trailer.png";
 import dumptrailers from "../../public/dump-trailers.png";
 
 import NewPricingtwo from "../../components/NewPricingtwo";
+import Process from "../../components/Process";
+import Testimonialsection from "../../components/Testimonialsection";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -55,7 +58,7 @@ const points = [
     name: "Flexible Rental Periods",
     description:
       "We offer customizable rental periods to match your project timeline. Rent a dumpster trailer for as long as you need.",
-    icon: ScaleIcon,
+    icon: CalendarDaysIcon,
   },
 ];
 
@@ -95,12 +98,6 @@ const faqs = [
     question: "Are you licensed and insured?",
     answer:
       "Yes, we are fully licensed and insured, ensuring a worry-free rental experience. Our license and insurance number is L20000153106.",
-    items: [],
-  },
-  {
-    question: "Do you offer eco-friendly disposal?",
-    answer:
-      "We are committed to sustainable practices and ensure that waste is disposed of responsibly.",
     items: [],
   },
 ];
@@ -154,21 +151,23 @@ export default function DumpsterTrailerRental() {
 
       <Multiblock
         header="EXPERT DUMPSTER TRAILER RENTALS"
-        ptag="We provide high-quality, dependable dumpster trailer rentals. Trust us for your waste management needs."
+        ptag="We provide high-quality, dependable dumpster trailer rentals. Trust us for your junk removal needs."
         features={features}
       />
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
+      <Process />
       <Imagegrid />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
-      <Otherservices
+      {/* <Otherservices
         header="Comprehensive Waste Management Solutions"
         subheader="Beyond Dumpster Trailer Rentals"
         ptag="From junk hauling to full-scale waste management, we've got you covered. Discover all our services and find the perfect fit for your project."
-      />
+      /> */}
 
-      <Junkcost />
+      {/* <Junkcost /> */}
 
       <div className="bg-white py-16" id="faq">
         <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
