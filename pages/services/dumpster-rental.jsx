@@ -37,15 +37,15 @@ function classNames(...classes) {
 
 const points = [
   {
-    name: "Various Dumpster Trailer Sizes",
+    name: "Various Dumpster Sizes",
     description:
-      "Choose from a range of dumpster trailer sizes to fit your project needs. Our trailers are perfect for both residential and commercial use.",
+      "Choose from a range of dumpster sizes to fit your project needs. Our dumpsters are perfect for both residential and commercial use.",
     icon: TruckIcon,
   },
   {
     name: "On Time Delivery & Pick Up",
     description:
-      "Experience timely delivery and pickup for your dumpster trailer rental. We value your schedule, ensuring punctuality and reliability.",
+      "Experience timely delivery and pickup for your dumpster rental. We value your schedule, ensuring punctuality and reliability.",
     icon: ClockIcon,
   },
   {
@@ -57,41 +57,40 @@ const points = [
   {
     name: "Flexible Rental Periods",
     description:
-      "We offer customizable rental periods to match your project timeline. Rent a dumpster trailer for as long as you need.",
+      "We offer customizable rental periods to match your project timeline. Rent a dumpster for as long as you need.",
     icon: CalendarDaysIcon,
   },
 ];
 
 const faqs = [
   {
-    question: "What sizes of dumpster trailers are available?",
+    question: "What sizes of dumpster are available?",
     answer:
-      "We offer a variety of sizes, including 10, 15, and 20-yard dumpster trailers, to accommodate different project scales.",
+      "We offer a variety of sizes, including 10, 15, and 20-yard dumpsters, to accommodate different project scales.",
     items: [],
   },
   {
-    question: "How does the dumpster trailer rental process work?",
+    question: "How does the dumpster rental process work?",
     answer:
       "Choose your size, schedule delivery and pickup dates, and we'll handle the rest. It's that simple!",
     items: [],
   },
   {
-    question:
-      "Are there restrictions on what I can put in the dumpster trailer?",
+    question: "Are there restrictions on what I can put in the dumpster?",
     answer:
       "Yes, there are certain restrictions. Hazardous materials are not permitted. Please contact us for a full list of prohibited items.",
     items: [],
   },
   {
-    question: "Can I extend my dumpster trailer rental period?",
+    question: "Can I extend my dumpster rental period?",
     answer:
-      "Absolutely! Just give us a call, and we'll accommodate your request based on trailer availability.",
+      "Absolutely! Just give us a call, and we'll accommodate your request based on availability.",
     items: [],
   },
   {
-    question: "Is there a weight limit for the dumpster trailer?",
+    question: "Is there a weight limit for the dumpster?",
     answer:
-      "Weight limits vary based on the size of the dumpster trailer. We'll provide you with all the details when you book.",
+      "Weight limits vary based on the size of the dumpster. We'll provide you with all the details when you book.",
     items: [],
   },
   {
@@ -104,11 +103,11 @@ const faqs = [
 
 const features = [
   {
-    name: "Convenient Dumpster Trailer Rental",
+    name: "Convenient Dumpster Rental",
     description:
-      "Our dumpster trailer rental service is designed for your convenience. Ideal for construction, renovation, or large-scale cleanups.",
+      "Our dumpster rental service is designed for your convenience. Ideal for construction, renovation, or large-scale cleanups.",
     imageSrc: dumptrailers,
-    imageAlt: "Dumpster trailer ready for rental",
+    imageAlt: "Dumpster ready for rental",
   },
   {
     name: "Affordable Dumpster Rentals",
@@ -119,9 +118,9 @@ const features = [
   },
 ];
 
-const metatitle = "Reliable Dumpster Trailer Rental | Versatile & Affordable";
+const metatitle = "Reliable Dumpster Rental | Quick & Affordable";
 const description =
-  "Explore top-notch dumpster trailer rental services for your project needs. Flexible rental options, various sizes, and competitive pricing.";
+  "Explore top-notch dumpster rental services for your project needs. Flexible rental options, various sizes, and competitive pricing.";
 
 export default function DumpsterTrailerRental() {
   return (
@@ -136,22 +135,22 @@ export default function DumpsterTrailerRental() {
       <Junkheader
         image={dumptrailer}
         alttext="Efficient dumpster trailer rental service"
-        location="Your Go-To Source"
-        service="For Dumpster Trailer Rentals"
-        ptag="Discover the ease and efficiency of our dumpster trailer rental services. Perfect for any project size, with flexible rental options to suit your needs."
-        cta="Rent a Dumpster Trailer"
+        location="Simplify Your Cleanup With"
+        service="Affordable Dumpster Rentals"
+        ptag="Discover the ease and efficiency of our dumpster rental services. Perfect for any project size, with flexible rental options to suit your needs."
+        cta="Rent a Dumpster"
       />
 
       <Corefeatures
-        header="Dumpster Trailer Rental Services"
+        header="Dumpster Rental Services"
         subheader="Flexible, Reliable, and Affordable"
-        ptag="Choose from a variety of dumpster trailer sizes for your project. With our reliable service, you can focus on the job at hand and let us handle the rest."
+        ptag="Choose from a variety of dumpster sizes for your project. With our reliable service, you can focus on the job at hand and let us handle the rest."
         points={points}
       />
 
       <Multiblock
-        header="EXPERT DUMPSTER TRAILER RENTALS"
-        ptag="We provide high-quality, dependable dumpster trailer rentals. Trust us for your junk removal needs."
+        header="EXPERT DUMPSTER RENTALS"
+        ptag="We provide high-quality, dependable dumpster rentals. Trust us for your junk removal needs."
         features={features}
       />
 
