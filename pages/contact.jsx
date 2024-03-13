@@ -37,10 +37,7 @@ export default function contact() {
           </h1>
           <p className="mt-6 mx-auto max-w-3xl text-xl text-gray-100 text-center">
             Lupo Dumpster Rentals values clear communication and strives to
-            provide the best service possible. If you have any questions or want
-            to know more about our services, please don&apos;t hesitate to
-            contact us. Our team is ready and willing to assist you in any way
-            possible.
+            provide the best service possible. Contact us today!
           </p>
         </div>
       </div>
