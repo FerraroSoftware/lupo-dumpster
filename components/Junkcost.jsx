@@ -408,7 +408,7 @@ export default function Junkcost() {
 
                   <div className="mt-10 md:mt-0">
                     <div className="flex items-end">
-                      <p className="text-5xl font-bold text-white ">$75+</p>
+                      <p className="text-4xl font-bold text-white ">$75+</p>
                     </div>
 
                     <Link
@@ -418,8 +418,8 @@ export default function Junkcost() {
                                    inline-flex
                                    items-center
                                    justify-center
-                                   px-9
-                                   py-2.5
+                                   px-6
+                                   py-2
                                    mt-5
                                   text-base font-bold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent uppercase hover:bg-opacity-90
                                "

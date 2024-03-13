@@ -36,7 +36,7 @@ const commercial = [
     name: "Dumpster Rentals",
     description:
       "Providing various sized dumpsters for rent to accommodate different waste disposal needs.",
-    href: "/services/dumpster-rental-new-port-richey-fl",
+    href: "/services/dumpster-rental",
   },
   {
     name: "Furniture Removal",
@@ -72,7 +72,7 @@ const commercial = [
     name: "Junk Removal",
     description:
       "Comprehensive removal services for all types of junk, including large and bulky items.",
-    href: "/services/junk-removal-new-port-richey-fl",
+    href: "/services/junk-removal",
   },
   {
     name: "Mattress Removal",

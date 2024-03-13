@@ -19,6 +19,7 @@ import Coreservices from "../components/Coreservices";
 import Featureswhite from "../components/Featureswhite";
 import NewPricing from "../components/NewPricing";
 import NewPricingtwo from "../components/NewPricingtwo";
+import NewPricingthree from "../components/NewPricingthree";
 
 export default function Home() {
   return (
@@ -36,7 +37,8 @@ export default function Home() {
       <Process />
       {/* <Pricing></Pricing> */}
       {/* <NewPricing></NewPricing> */}
-      <NewPricingtwo></NewPricingtwo>
+      {/* <NewPricingtwo></NewPricingtwo> */}
+      <NewPricingthree></NewPricingthree>
       <Testimonialsection></Testimonialsection>
       <Coreservices></Coreservices>
       {/* <Features></Features> */}

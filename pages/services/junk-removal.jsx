@@ -177,7 +177,7 @@ export default function junkremoval() {
         ptag="We specialize in proper disposal methods to minimize our impact on the environment. Call us today, and let us take care of your waste worries!"
       ></Otherservices>
 
-      {/* <Junkcost></Junkcost> */}
+      <Junkcost></Junkcost>
 
       {/* faq */}
       <div className="bg-white py-16 " id="faq">

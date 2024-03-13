@@ -27,7 +27,7 @@ function Corefeatures({ points, header, subheader, ptag }) {
                   <FadeIn>
                     <div className="flex h-12 w-12 items-center justify-center  text-red-600 sm:shrink-0 mb-4">
                       <feature.icon
-                        className="h-12 w-12 bg-black shadow shadow-zinc-300 rounded-lg p-2 "
+                        className="h-12 w-12 bg-black shadow shadow-zinc-700 rounded-lg p-2 "
                         aria-hidden="true"
                       />
                     </div>

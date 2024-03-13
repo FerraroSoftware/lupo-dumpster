@@ -6,6 +6,8 @@ import Twentyyard from "../components/Twentyyard";
 import Link from "next/link";
 import Mission from "../components/Mission";
 import NewPricingtwo from "../components/NewPricingtwo";
+import NewPricingthree from "../components/NewPricingthree";
+import Junkcost from "../components/Junkcost";
 
 export default function dumpsterrentalpricing() {
   return (
@@ -20,10 +22,11 @@ export default function dumpsterrentalpricing() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NewPricingtwo></NewPricingtwo>
-
+      {/* <NewPricingtwo></NewPricingtwo> */}
+      <NewPricingthree></NewPricingthree>
       {/* <Twentyyard></Twentyyard> */}
 
+      <Junkcost></Junkcost>
       <Mission></Mission>
 
       <Contact></Contact>
