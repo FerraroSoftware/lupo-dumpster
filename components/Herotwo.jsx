@@ -4,16 +4,18 @@ import autismcenter from "../public/junk-removal-new-port-richey.png";
 import { motion } from "framer-motion";
 import { FadeIn } from "./FadeIn";
 
+import dumpsterrentalpros from "../public/dumpster-rental-pros.jpg";
+
 export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden h-full pb-8 bg-[#14120E] sm:pb-12 lg:pb-12">
       <Image
-        src={autismcenter}
+        src={dumpsterrentalpros}
         alt="arise autism center"
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
         priority
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-zinc-900/10" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-neutral-900/10" />
       <FadeIn>
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">

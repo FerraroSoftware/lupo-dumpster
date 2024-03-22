@@ -37,8 +37,8 @@ export default function Home() {
       <Process />
       {/* <Pricing></Pricing> */}
       {/* <NewPricing></NewPricing> */}
-      {/* <NewPricingtwo></NewPricingtwo> */}
-      <NewPricingthree></NewPricingthree>
+      <NewPricingtwo></NewPricingtwo>
+      {/* <NewPricingthree></NewPricingthree> */}
       <Testimonialsection></Testimonialsection>
       <Coreservices></Coreservices>
       {/* <Features></Features> */}

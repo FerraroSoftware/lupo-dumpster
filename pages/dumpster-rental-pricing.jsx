@@ -22,8 +22,8 @@ export default function dumpsterrentalpricing() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <NewPricingtwo></NewPricingtwo> */}
-      <NewPricingthree></NewPricingthree>
+      <NewPricingtwo></NewPricingtwo>
+      {/* <NewPricingthree></NewPricingthree> */}
       {/* <Twentyyard></Twentyyard> */}
 
       <Junkcost></Junkcost>
