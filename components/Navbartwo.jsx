@@ -216,6 +216,7 @@ export default function Navbartwo() {
                               key={item.name}
                               href={item.href}
                               className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-zinc-100 hover:bg-zinc-800"
+                              onClick={() => setCommercialShowing(false)}
                             >
                               <item.icon
                                 className="h-5 w-5 flex-none text-zinc-400"
@@ -322,6 +323,7 @@ export default function Navbartwo() {
                               as="a"
                               href={item.href}
                               className="uppercase block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-300 hover:bg-zinc-800"
+                              onClick={() => setMobileMenuOpen(false)}
                             >
                               {item.name}
                             </Disclosure.Button>
