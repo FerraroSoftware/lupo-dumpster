@@ -47,7 +47,7 @@ export default function Contactwhite({ header }) {
 
   const onSubmit = (data) => {
     makeApiCall();
-    createContact(data);
+    // createContact(data);
     reset();
     router.push("/thank-you");
   };
@@ -69,9 +69,10 @@ export default function Contactwhite({ header }) {
     await fetch("/api/sendgrid", {
       body: JSON.stringify({
         email: watch("email"),
-        fullname: watch("fullname"),
+        firstname: watch("firstname"),
+        lastname: watch("lastname"),
         message: watch("message"),
-        phonenumber: watch("phonenumber"),
+        phone: watch("phone"),
         //   days: watch("days"),
       }),
       headers: {

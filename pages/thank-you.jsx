@@ -1,4 +1,4 @@
-import logo from "../public/logo.svg";
+import logo from "../public/logo3.svg";
 import Image from "next/image";
 import Head from "next/head";
 import castle from "../public/dumpster-trailer-1.png";
@@ -37,17 +37,17 @@ export default function thankyou() {
         }}
       />
 
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 bg-white">
         <div className="sm:mx-auto sm:w-full sm:max-w-lg">
           <Image
-            className="mx-auto h-10 w-auto"
+            className="mx-auto h-16 rounded-full w-auto"
             src={logo}
             alt="SmarTour logo"
           />
-          <h2 className="mt-10 text-center text-4xl font-bold leading-9 tracking-tight text-gray-100">
+          <h2 className="mt-10 text-center text-4xl font-bold leading-9 tracking-tight text-black">
             Thanks for reaching out to Lupo Dumpster Rentals and Junk Removal!
           </h2>
-          <p className="mt-4 text-center text-md leading-5 text-gray-300">
+          <p className="mt-4 text-center text-md leading-5 text-zinc-700">
             We have received your message and will get back to you as soon as
             possible.
           </p>
