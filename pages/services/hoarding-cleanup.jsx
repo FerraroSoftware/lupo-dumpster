@@ -23,6 +23,8 @@ import appliances from "../../public/appliances.png";
 import hoardingcleanup from "../../public/hoarding/hoarding-cleanup.png";
 import hoardingclean from "../../public/hoarding/hoarding-clean.png";
 import cleanoutservice from "../../public/hoarding-services.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -144,12 +146,13 @@ export default function HoardingCleanup() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Transforming Spaces with Care"
         ptag="View our before and after gallery to see the impact of our hoarding cleanup services."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="More Than Just Cleanup"
@@ -159,7 +162,8 @@ export default function HoardingCleanup() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for hoarding cleanup" />
     </>
   );
 }

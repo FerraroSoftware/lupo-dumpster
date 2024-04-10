@@ -39,6 +39,7 @@ import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 import Otherservices from "../../components/Otherservices";
 import NewPricingtwo from "../../components/NewPricingtwo";
 import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -165,7 +166,7 @@ export default function junkremoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegrid />
       {/* <Reviews /> */}
       <Testimonialsection></Testimonialsection>
@@ -212,7 +213,8 @@ export default function junkremoval() {
         </div>
       </div>
 
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
+      <Contactwhite header="Contact us for junk removal"></Contactwhite>
     </>
   );
 }

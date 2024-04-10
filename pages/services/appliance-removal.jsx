@@ -23,6 +23,8 @@ import {
 import appliancecleanup from "../../public/applianceremoval/appliance-cleanup.png";
 import appliancesremoval from "../../public/applianceremoval/appliances-removal.png";
 import oldappliances from "../../public/applianceremoval/old-appliances.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -150,14 +152,15 @@ export default function ApplianceRemoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Your Local Appliance Removal Experts"
         ptag="  If you have junk, tree debris, construction debris, or any other
               type of debris that needs to be removed near New Port Richey, we
               can help. Contact us for a free quote."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Removal Services"
@@ -167,7 +170,8 @@ export default function ApplianceRemoval() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for Appliance Removal" />
     </>
   );
 }

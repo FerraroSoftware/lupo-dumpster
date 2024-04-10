@@ -22,6 +22,8 @@ import furnitureRemovalImage from "../../public/mattress-disposal.png"; // Repla
 import furnitureremovals from "../../public/furniture-removals.png";
 import furniturepickup from "../../public/furniture-pick-up.png";
 import localfurnitureremoval from "../../public/local-furniture-removal.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -142,12 +144,13 @@ export default function FurnitureRemoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Before and After Furniture Removal"
         ptag="See the difference our service makes. Check out the before and after photos of our furniture removal projects."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Beyond Furniture Removal"
@@ -157,7 +160,8 @@ export default function FurnitureRemoval() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for furniture removal" />
     </>
   );
 }

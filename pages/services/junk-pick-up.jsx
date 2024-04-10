@@ -19,6 +19,8 @@ import {
   CurrencyDollarIcon,
   TrashIcon,
 } from "@heroicons/react/24/outline";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -139,12 +141,13 @@ export default function JunkPickUp() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Before and After: Junk Pick Up Transformations"
         ptag="Check out our gallery to see the impressive transformations we've achieved through our junk pick up services."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="More Than Just Junk Pick Up"
@@ -154,7 +157,8 @@ export default function JunkPickUp() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for junk pick up" />
     </>
   );
 }

@@ -23,6 +23,8 @@ import {
 import debris from "../../public/constructiondebris/debris.png";
 import constructiondebrisremoval from "../../public/constructiondebris/construction-debris-removal.png";
 import constructiontrash from "../../public/constructiondebris/construction-trash.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -149,14 +151,15 @@ export default function ConstructionDebrisRemoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
 
       <Imagegridclone
         header="Efficient Construction Site Cleanup"
         ptag="Browse our gallery to see how we efficiently handle various types of construction debris, keeping sites clean and safe."
       />
 
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Waste Management"
@@ -168,7 +171,8 @@ export default function ConstructionDebrisRemoval() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for Construction Debris Removal" />
     </>
   );
 }

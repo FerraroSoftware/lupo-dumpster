@@ -41,6 +41,8 @@ import Otherservices from "../../components/Otherservices";
 import trashremoval2 from "../../public/trash-removal-2.png";
 import Faqs from "../../components/Faqs";
 import NewPricingtwo from "../../components/NewPricingtwo";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -169,9 +171,10 @@ export default function junkremoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegrid />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       {/* items */}
       <Otherservices
@@ -185,7 +188,8 @@ export default function junkremoval() {
       {/* faq */}
       <Faqs faqs={faqs}></Faqs>
 
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
+      <Contactwhite header="Contact us for junk hauling"></Contactwhite>
     </>
   );
 }

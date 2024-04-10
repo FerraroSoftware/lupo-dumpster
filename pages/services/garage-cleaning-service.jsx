@@ -20,6 +20,8 @@ import appliances from "../../public/appliances.png";
 import garagecleaned from "../../public/garagecleanup/garage-cleaned.png";
 import garageclean from "../../public/garagecleanup/garage-clean.png";
 import cleanoutservice from "../../public/garage-clean-out-service.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -148,12 +150,13 @@ export default function GarageCleaningService() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="We are your Junk Removal Experts"
         ptag="Take a look at our before and after gallery to see the dramatic transformations we’ve achieved in garages just like yours."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Beyond Garage Cleaning"
@@ -163,7 +166,8 @@ export default function GarageCleaningService() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for garage cleaning" />
     </>
   );
 }

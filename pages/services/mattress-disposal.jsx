@@ -22,6 +22,8 @@ import {
 import mattressDisposalImage from "../../public/mattress-disposal.png"; // Replace with your image path
 import mattressremovals from "../../public/mattress-removals.png";
 import oldmattress from "../../public/old-mattress.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -142,12 +144,13 @@ export default function MattressDisposal() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Before and After Mattress Disposal"
         ptag="Take a look at how we've helped others clear out and responsibly dispose of their old mattresses."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Complete Junk Removal Services"
@@ -157,7 +160,8 @@ export default function MattressDisposal() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for mattress disposal" />
     </>
   );
 }

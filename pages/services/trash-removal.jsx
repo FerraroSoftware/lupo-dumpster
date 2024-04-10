@@ -20,6 +20,8 @@ import trashRemovalImage from "../../public/mattress-disposal.png"; // Replace w
 import trashremoval from "../../public/trash-removal.png";
 import dumptrailer from "../../public/dump-trailer.png";
 import trashremovalone from "../../public/trash-removal-1.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -140,12 +142,13 @@ export default function TrashRemoval() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Before and After Trash Removal"
         ptag="Witness the transformative power of professional trash removal through our gallery of before and after shots."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Waste Solutions"
@@ -155,7 +158,8 @@ export default function TrashRemoval() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Contact us for trash removal" />
     </>
   );
 }
