@@ -17,7 +17,7 @@ export default function Stickybar({ isMenuOpen }) {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Serving all of Pasco, Pinellas, and Hernando Counties
+          Serving all of Pasco and Pinellas County
         </a>
       </p>
       <div className="flex flex-1 justify-end"></div>
