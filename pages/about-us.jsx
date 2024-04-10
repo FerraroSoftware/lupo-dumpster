@@ -7,6 +7,7 @@ import trailerthree from "../public/trailer-3.jpg";
 import trailerfour from "../public/trailer-4.jpg";
 import junkremovalnewportrichey from "../public/junk-removal-new-port-richey.png";
 import construction from "../public/construction.jpg";
+import Head from "next/head";
 const timeline = [
   {
     name: "Founded company",
