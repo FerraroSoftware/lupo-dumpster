@@ -8,9 +8,10 @@ export default function Twentyyard2() {
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <FadeIn>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase">
-              Handle Your Biggest Projects with Ease With Our 20 Yard Trailer
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-semibold  text-black sm:text-3xl uppercase">
+              Handle Your Biggest Projects with Ease With Our 20 Yard Dumpster
+              Trailer
             </h2>
           </div>
 
@@ -22,7 +23,7 @@ export default function Twentyyard2() {
               ></div>
             </div>
 
-            <div className="relative overflow-hidden bg-black">
+            <div className="relative overflow-hidden bg-black rounded-md">
               <div className="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
                 {/* <div className="md:flex md:items-center md:space-x-12 lg:space-x-24"> */}
                 <div className="flex flex-col items-center justify-center md:flex md:items-center md:flex-row md:space-x-12 lg:space-x-24">
@@ -416,7 +417,7 @@ export default function Twentyyard2() {
 
                   <div className="mt-10 md:mt-0">
                     <div className="flex items-end">
-                      <p className="text-5xl font-bold text-white ">$450+</p>
+                      {/* <p className="text-5xl font-bold text-white ">$450+</p> */}
                     </div>
 
                     <Link
@@ -429,7 +430,8 @@ export default function Twentyyard2() {
                       px-9
                       py-2.5
                       mt-5
-                    text-sm font-semibold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent uppercase hover:bg-opacity-90
+                    text-sm font-semibold leading-7 text-gray-900 transition-all duration-200 bg-white border border-transparent uppercase hover:text-zinc-700
+                    rounded-md
                   "
                       role="button"
                     >

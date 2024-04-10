@@ -22,6 +22,8 @@ import appliancecleanup from "../../public/applianceremoval/appliance-cleanup.pn
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -138,17 +140,18 @@ export default function DumpsterRentalLutzFL() {
       />
 
       <Multiblock
-        header="RELIABLE DUMPSTER SOLUTIONS"
+        header="RELIABLE DUMPSTER SOLUTIONS Location in Lutz FL"
         ptag="Count on us for dependable dumpster rentals in Lutz, ensuring your project stays clean and organized."
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Explore Our Range of Dumpsters"
         ptag="View our variety of dumpster sizes, perfect for any project in Lutz, from residential cleanups to larger commercial sites."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Complete Waste Management Services"
@@ -158,7 +161,8 @@ export default function DumpsterRentalLutzFL() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Lutz Today"></Contactwhite>
     </>
   );
 }

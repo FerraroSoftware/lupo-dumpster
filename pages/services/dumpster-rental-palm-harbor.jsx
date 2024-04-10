@@ -22,6 +22,8 @@ import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -142,12 +144,13 @@ export default function DumpsterRentalPalmHarbor() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Our Dumpster Selection"
         ptag="Take a look at our diverse range of dumpsters, ideal for projects of all sizes in Palm Harbor."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Complete Waste Management Solutions"
@@ -157,7 +160,8 @@ export default function DumpsterRentalPalmHarbor() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Palm Harbor Today"></Contactwhite>
     </>
   );
 }

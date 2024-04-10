@@ -24,21 +24,21 @@ const cardVariants = {
 
 export default function Mission() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 xl:py-24">
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-white">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-16 gap-y-12">
           <div className="text-center lg:col-span-5 sm:text-left">
-            <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase">
+            <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase">
               Our Commitment to Excellence
             </h2>
-            <p className="mt-8 text-lg font-normal text-gray-300">
+            <p className="mt-8 text-lg font-normal text-zinc-700">
               At Lupo Dumpster Rentals and Junk Removal, our mission is to
               provide our customers with unparalleled service and solutions for
               their waste management needs. Our team is committed to safety,
               integrity, and quality in everything we do.
             </p>
 
-            <p className="mt-8 text-lg font-normal text-gray-300">
+            <p className="mt-8 text-lg font-normal text-zinc-700">
               We are proud to provide our services to the residents and
               businesses in Pasco County and surrounding areas, including
               Holiday, Tampa, South Tampa, Port Richey, New Port Richey, Dade
@@ -49,12 +49,12 @@ export default function Mission() {
               <Link
                 href="/services/dumpster-rental-new-port-richey-fl"
                 title=""
-                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-gray-200 bg-transparent 
-                border border-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 uppercase"
+                className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black rounded-md 
+                border border-black hover:bg-zinc-700 hover:text-white transition-all duration-300 uppercase"
                 role="button"
               >
                 {" "}
-                More on Dumpster Rentals{" "}
+                Read Our Story{" "}
               </Link>
             </div>
           </div>
@@ -74,10 +74,10 @@ export default function Mission() {
             </motion.div>
             <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">
               <div>
-                <h3 className="text-xl font-normal text-white">
+                <h3 className="text-xl font-normal text-black">
                   Customer Satisfaction
                 </h3>
-                <p className="mt-3 text-base font-normal text-gray-300">
+                <p className="mt-3 text-base font-normal text-zinc-700">
                   We strive to exceed our customer expectations and ensure
                   satisfaction for every dump trailer rental, property clean out
                   junk hauling service.
@@ -85,10 +85,10 @@ export default function Mission() {
               </div>
 
               <div>
-                <h3 className="text-xl font-normal text-white">
+                <h3 className="text-xl font-normal text-black">
                   Dump Trailer Rentals
                 </h3>
-                <p className="mt-3 text-base font-normal text-gray-300">
+                <p className="mt-3 text-base font-normal text-zinc-700">
                   We offer 10 and 15 yard dump trailers for rent. Perfect for
                   roofers, contractors, and homeowners, construction crews and
                   more.

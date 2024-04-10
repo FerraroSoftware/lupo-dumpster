@@ -71,11 +71,11 @@ const testimonials = [
 
 export default function Testimonialsection() {
   return (
-    <section className="py-10 sm:py-16 lg:py-24" id="testimonial">
+    <section className="py-10 sm:py-16 lg:py-24 bg-white" id="testimonial">
       <FadeIn>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+            <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase text-center">
               Over 100 Five Star {""}
               <span class="text-googleBlue">G</span>
               <span class="text-googleRed">o</span>
@@ -84,7 +84,7 @@ export default function Testimonialsection() {
               <span class="text-googleGreen">l</span>
               <span class="text-googleRed">e</span> Reviews!
             </h2>
-            <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-gray-100">
+            <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-zinc-700">
               At Lupo Dumpster Rentals, we take pride in providing exceptional
               products and services that exceed our customers&apos;
               expectations.
@@ -94,7 +94,7 @@ export default function Testimonialsection() {
           <div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-3 sm:grid-cols-2">
             {testimonials.map((testimonial, index) => (
               <div
-                className="overflow-hidden bg-white "
+                className="overflow-hidden bg-zinc-100 "
                 key={index}
                 viewport={{ once: true }}
                 initial="offscreen"
@@ -205,7 +205,7 @@ export default function Testimonialsection() {
                     inline-flex
                     items-center
                     justify-center
-                    px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-red-600 border border-transparent  shadow-sm hover:bg-red-500 focus:outline-none
+                    px-8 py-4 text-base font-medium text-black transition-all duration-200 bg-red-600 border border-transparent  shadow-sm hover:bg-red-500 focus:outline-none
                 "
             role="button"
             target="_blank"
@@ -241,7 +241,7 @@ export default function Testimonialsection() {
             <Link
               href="https://goo.gl/maps/S5ojfU5QjHpKAVq89"
               title=""
-              className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+              className="bg-black px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md focus-visible:outline-red-400
                 transition-all duration-300 uppercase"
               role="button"
               target="_blank"
@@ -253,7 +253,7 @@ export default function Testimonialsection() {
             <Link
               href="/contact"
               title=""
-              className="border border-red-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+              className="border border-black px-12 py-3.5 text-sm font-semibold text-black shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 rounded-md
                 transition-all duration-300 uppercase"
               role="button"
             >

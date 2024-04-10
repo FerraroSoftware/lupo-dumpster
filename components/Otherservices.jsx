@@ -57,16 +57,16 @@ const services = [
 
 export default function Otherservices({ header, subheader, ptag }) {
   return (
-    <div className="">
+    <div className="bg-zinc-100">
       <div className="mx-auto max-w-7xl py-16 sm:py-24 px-6  lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 ">
         <div>
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-red-600 uppercase">
             {header}
           </h2>
-          <h3 className="mt-2 text-3xl font-semibold tracking-wide text-white sm:text-4xl uppercase">
+          <h3 className="mt-2 text-3xl font-semibold tracking-wide text-black sm:text-4xl uppercase">
             {subheader}
           </h3>
-          <p className="mt-6 text-base leading-7 text-gray-300">{ptag}</p>
+          <p className="mt-6 text-base leading-7 text-zinc-700">{ptag}</p>
         </div>
         <div className="mt-20 lg:col-span-2 lg:mt-0">
           <FadeInStagger faster={true}>
@@ -80,13 +80,13 @@ export default function Otherservices({ header, subheader, ptag }) {
                         aria-hidden="true"
                       />
                       <Link
-                        className="ml-10 text-md font-semibold leading-8 text-white hover:text-red-600 uppercase"
+                        className="ml-10 text-md font-semibold leading-8 text-black hover:text-red-600 uppercase"
                         href={feature.link}
                       >
                         {feature.name}
                       </Link>
                     </dt>
-                    <dd className="mt-2 ml-10 text-base leading-7 text-gray-300">
+                    <dd className="mt-2 ml-10 text-base leading-7 text-zinc-700">
                       {feature.description}
                     </dd>
                   </FadeIn>

@@ -37,13 +37,13 @@ const categories = [
 
 export default function Coreservices() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <FadeIn>
         <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 ">
-          <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+          <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase text-center">
             Local Dumpster Rental Services
           </h2>
-          <p className="mt-4 text-base text-gray-300 text-center">
+          <p className="mt-4 text-base text-zinc-700 text-center">
             We provide a variety of dumpster sizes perfect for any project,
             ensuring efficient disposal with prompt delivery and pickup.
           </p>
@@ -57,7 +57,7 @@ export default function Coreservices() {
               >
                 <div
                   aria-hidden="true"
-                  className="aspect-h-2 aspect-w-3 overflow-hidden lg:aspect-h-6 lg:aspect-w-5 group-hover:contrast-125 transition-all duration-300"
+                  className="aspect-h-2 aspect-w-3 overflow-hidden lg:aspect-h-6 lg:aspect-w-5 group-hover:contrast-125 transition-all duration-300 rounded-md"
                 >
                   <Image
                     src={category.imageSrc}
@@ -65,10 +65,10 @@ export default function Coreservices() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-white uppercase">
+                <h3 className="mt-4 text-base font-semibold text-black uppercase">
                   {category.name}
                 </h3>
-                <p className="mt-2 text-sm text-gray-300">
+                <p className="mt-2 text-sm text-zinc-600">
                   {category.description}
                 </p>
               </a>

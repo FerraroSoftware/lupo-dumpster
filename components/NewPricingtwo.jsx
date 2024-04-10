@@ -54,17 +54,14 @@ function classNames(...classes) {
 
 export default function NewPricingtwo() {
   return (
-    <div className="bg-black py-24 sm:py-32">
+    <div className="bg-white py-24 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-red-600">
-            Pricing
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-black uppercase sm:text-4xl">
+            Affordable Dumpster Rental Pricing
           </h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white uppercase sm:text-4xl">
-            Affordable Dumpster Rentals
-          </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-zinc-700">
           We strive to offer affordable solutions that meet your needs without
           compromising on the quality of our services. Give us a call today.
         </p>
@@ -91,7 +88,7 @@ export default function NewPricingtwo() {
                     {tier.name}
                   </h3> */}
                   {tier.mostPopular ? (
-                    <p className="rounded-full bg-red-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-red-600">
+                    <p className="rounded-full bg-zinc-700/10 px-2.5 py-1 text-xs font-semibold leading-5 text-black">
                       Most popular
                     </p>
                   ) : null}
@@ -127,9 +124,9 @@ export default function NewPricingtwo() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? "bg-red-600 text-white shadow-sm hover:bg-red-500"
-                    : "text-red-600 ring-1 ring-inset ring-red-200 hover:ring-red-300",
-                  "mt-8 block  py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 uppercase"
+                    ? "bg-black text-white shadow-sm hover:bg-zinc-700"
+                    : "text-black ring-1 ring-inset ring-black hover:ring-zinc-700",
+                  "mt-8 block  py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 uppercase rounded-md"
                 )}
               >
                 Get a free quote

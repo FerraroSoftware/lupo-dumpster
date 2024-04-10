@@ -4,6 +4,7 @@ import Image from "next/image";
 import dumpsterrental from "../public/dumpsterrental.png";
 import Head from "next/head";
 import Pricing from "../components/Pricing";
+import ContactHero from "../components/ContactHero";
 
 export default function contact() {
   return (
@@ -19,7 +20,8 @@ export default function contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative bg-zinc-700">
+      <ContactHero header="Book Your Dumpster Rental or Junk Removal"></ContactHero>
+      {/* <div className="relative bg-zinc-700">
         <div className="absolute inset-0">
           <Image
             className="h-full w-full object-cover"
@@ -40,8 +42,8 @@ export default function contact() {
             provide the best service possible. Contact us today!
           </p>
         </div>
-      </div>
-      <Contact></Contact>
+      </div> */}
+      {/* <Contact></Contact> */}
       {/* <Pricing></Pricing> */}
     </>
   );

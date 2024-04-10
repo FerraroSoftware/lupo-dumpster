@@ -78,14 +78,14 @@ const files = [
 
 export default function Imagegridclone({ header, ptag }) {
   return (
-    <section className="py-12 sm:py-16 lg:py-20">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <FadeIn>
         <div className=" mx-auto max-w-9xl ">
           <div className="max-w-4xl mx-auto text-center pb-10">
-            <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase text-center">
+            <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase text-center">
               {header}
             </h2>
-            <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
+            <p className="mt-4 max-w-3xl mx-auto text-base font-normal leading-7 text-zinc-700 lg:text-lg lg:mt-6 lg:leading-8">
               {ptag}
             </p>
           </div>

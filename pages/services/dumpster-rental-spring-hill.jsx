@@ -21,6 +21,8 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -143,12 +145,14 @@ export default function DumpsterRentalSpringHill() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
+
       <Imagegridclone
         header="View Our Dumpster Projects"
         ptag="Our dumpsters are designed to cater to different project requirements in Spring Hill."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Beyond Dumpster Rentals"
@@ -158,7 +162,8 @@ export default function DumpsterRentalSpringHill() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Spring Hill Today"></Contactwhite>
     </>
   );
 }

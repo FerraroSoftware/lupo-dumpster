@@ -81,7 +81,7 @@ export default function Junkheader({
                       <span className="block text-white uppercase">
                         {location}
                       </span>
-                      <span className="block text-red-600 uppercase">
+                      <span className="block text-white uppercase">
                         {service}
                       </span>
                     </h1>
@@ -92,8 +92,8 @@ export default function Junkheader({
                       <Link
                         href="/contact"
                         title=""
-                        className="bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
-                transition-all duration-300 uppercase"
+                        className="bg-white rounded-md px-4 py-3.5 text-sm font-semibold text-black shadow-sm hover:text-zinc-700
+                transition-all duration-300 uppercase border border-white "
                         role="button"
                       >
                         {cta}
@@ -102,8 +102,8 @@ export default function Junkheader({
                       <Link
                         href="tel:7273176717"
                         title=""
-                        className="border border-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
-                transition-all duration-300 uppercase"
+                        className="border border-white px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black 
+                transition-all duration-300 uppercase rounded-md"
                         role="button"
                       >
                         Call Us Now

@@ -21,6 +21,8 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -145,12 +147,13 @@ export default function DumpsterRentalTampaBay() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Dumpster Projects in Tampa Bay"
         ptag="Explore our selection of dumpster sizes suitable for any type of project in Tampa."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Tampa Bay's Junk Experts"
@@ -160,7 +163,8 @@ export default function DumpsterRentalTampaBay() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Tampa Bay Today"></Contactwhite>
     </>
   );
 }

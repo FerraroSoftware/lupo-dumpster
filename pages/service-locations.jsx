@@ -8,30 +8,34 @@ import Mission from "../components/Mission";
 import NewPricingtwo from "../components/NewPricingtwo";
 import NewPricingthree from "../components/NewPricingthree";
 import Junkcost from "../components/Junkcost";
+import ContactHero from "../components/ContactHero";
+import Locations from "../components/Locations";
 import Contactwhite from "../components/Contactwhite";
 
 export default function dumpsterrentalpricing() {
   return (
     <>
       <Head>
-        <title>Lupo Dumpster Rental Pricing | New Port Richey</title>
+        <title>
+          Services Locations | Lupo Dumpster Rental and Junk Removal
+        </title>
         <meta
           name="description"
-          content="We have flat rate pricing for our dumpster rentals in New Port Richey, FL. We offer affordable and convenient dumpster trailer services for any project. Contact us today!"
+          content="We offer dumpster rentals and junk removal services in Pasco, Pinellas, and Hillsborough County. Contact us for affordable and reliable solutions!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Locations></Locations>
       <NewPricingtwo></NewPricingtwo>
       {/* <NewPricingthree></NewPricingthree> */}
       {/* <Twentyyard></Twentyyard> */}
 
-      <Junkcost></Junkcost>
       <Mission></Mission>
 
       {/* <Contact></Contact> */}
-      <Contactwhite header="Contact Us For an Affordable Dumpster"></Contactwhite>
+      <Contactwhite header="Rent A Dumpster Today"></Contactwhite>
     </>
   );
 }

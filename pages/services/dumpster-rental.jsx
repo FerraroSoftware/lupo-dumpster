@@ -30,6 +30,8 @@ import dumptrailers from "../../public/dump-trailers.png";
 import NewPricingtwo from "../../components/NewPricingtwo";
 import Process from "../../components/Process";
 import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
+import Imagegridclone from "../../components/Imagegridclone";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -155,8 +157,12 @@ export default function DumpsterTrailerRental() {
       />
 
       {/* <Contacttwo /> */}
-      <Process />
-      <Imagegrid />
+      {/* <Process /> */}
+      {/* <Imagegrid /> */}
+      <Imagegridclone
+        header="Rent your perfect dumpster trailer"
+        ptag="Clean up your junk today with our quick dumpster trailer drop off."
+      />
       {/* <Reviews /> */}
       <Testimonialsection />
 
@@ -193,7 +199,8 @@ export default function DumpsterTrailerRental() {
         </div>
       </div>
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster Today"></Contactwhite>
     </>
   );
 }

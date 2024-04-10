@@ -21,6 +21,9 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import ContactHero from "../../components/ContactHero";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -170,12 +173,13 @@ export default function DumpsterRentalHolidayFL() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Dumpster Projects in Holiday, FL"
         ptag="Explore our range of dumpsters, each designed to cater to different project types and sizes in Holiday, FL."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Your Dumpster Rental Experts"
@@ -185,7 +189,8 @@ export default function DumpsterRentalHolidayFL() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Holiday Today"></Contactwhite>
     </>
   );
 }

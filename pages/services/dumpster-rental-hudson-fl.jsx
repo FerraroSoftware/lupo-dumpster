@@ -21,6 +21,8 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -162,12 +164,13 @@ export default function DumpsterRentalHudsonFL() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
-        header="Our Dumpster Selection"
+        header="Our Dumpster Projects in Hudson, FL"
         ptag="Explore our range of dumpsters, suitable for a variety of projects in Hudson, FL."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Waste Solutions"
@@ -177,7 +180,8 @@ export default function DumpsterRentalHudsonFL() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Hudson Today"></Contactwhite>
     </>
   );
 }

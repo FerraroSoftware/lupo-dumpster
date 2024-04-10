@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Calltoaction from "../components/Calltoaction";
+import Calltoaction from "../components/Calltoactions";
 import Contact from "../components/Contact";
 import Featuredlist from "../components/Featuredlist";
 import FeaturedServices from "../components/FeaturedServices";
@@ -20,6 +20,8 @@ import Featureswhite from "../components/Featureswhite";
 import NewPricing from "../components/NewPricing";
 import NewPricingtwo from "../components/NewPricingtwo";
 import NewPricingthree from "../components/NewPricingthree";
+import ContactHero from "../components/ContactHero";
+import Virtualsteps from "../components/Virtualsteps";
 
 export default function Home() {
   return (
@@ -33,20 +35,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Herotwo></Herotwo>
-      <Process />
+      {/* <Herotwo></Herotwo> */}
+      <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero>
+      <Coreservices></Coreservices>
+      {/* <Process /> */}
       {/* <Pricing></Pricing> */}
       {/* <NewPricing></NewPricing> */}
       <NewPricingtwo></NewPricingtwo>
       {/* <NewPricingthree></NewPricingthree> */}
       <Testimonialsection></Testimonialsection>
-      <Coreservices></Coreservices>
+      <Virtualsteps></Virtualsteps>
+
       {/* <Features></Features> */}
       {/* <Featureswhite></Featureswhite> */}
-      <Imagegrid></Imagegrid>
+      {/* <Imagegrid></Imagegrid> */}
       <Featuredlist></Featuredlist>
-      {/* <Twentyyard></Twentyyard> */}
-      <Contact></Contact>
+      <Twentyyard></Twentyyard>
+      <Calltoaction></Calltoaction>
+      {/* <Contact></Contact> */}
     </>
   );
 }

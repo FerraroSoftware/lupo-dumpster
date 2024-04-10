@@ -239,12 +239,17 @@ export default function Navbartwo() {
               Pricing
             </Link>
             <Link
-              href="https://www.google.com/search?q=Lupo+Dumpster+Rentals+and+Junk+Removal&stick=H4sIAAAAAAAA_-NgU1I1qLCwSDayNExKs0gzMzU1Tza1MqgwNLA0s0i0MDFMTTRItkgyWsSq5lNakK_gUppbUFySWqQQlJpXkphTrJCYl6LgVZqXDRTIzS9LzAEA8FWdXFIAAAA&hl=en-US&mat=Cd5HiHnqFLTAElcB7PxHsfRGkZVXKNf9_PQRqEoxlePs5G42IjJpMyjK6OYTwtmxXUgcHuQDGlz6cym5Omb9IR7yq-jA4bPvQUNT4i6QbID6iOGPtSNL6fBoICiOdkZIFg4&authuser=6#lrd=0x88c291bf8f6557c5:0x10968a841ea0c8b2,1,,,,"
+              href="/service-locations"
               className="text-sm font-semibold leading-6 text-zinc-100 uppercase "
-              rel="noopener noreferrer"
-              target="_blank"
             >
-              Reviews
+              Service Locations
+            </Link>
+
+            <Link
+              href="/about-us"
+              className="text-sm font-semibold leading-6 text-zinc-100 uppercase "
+            >
+              About Us
             </Link>
             <Link
               href="/contact"
@@ -252,14 +257,22 @@ export default function Navbartwo() {
             >
               Contact
             </Link>
+            <Link
+              href="https://www.google.com/search?q=Lupo+Dumpster+Rentals+and+Junk+Removal&stick=H4sIAAAAAAAA_-NgU1I1qLCwSDayNExKs0gzMzU1Tza1MqgwNLA0s0i0MDFMTTRItkgyWsSq5lNakK_gUppbUFySWqQQlJpXkphTrJCYl6LgVZqXDRTIzS9LzAEA8FWdXFIAAAA&hl=en-US&mat=Cd5HiHnqFLTAElcB7PxHsfRGkZVXKNf9_PQRqEoxlePs5G42IjJpMyjK6OYTwtmxXUgcHuQDGlz6cym5Omb9IR7yq-jA4bPvQUNT4i6QbID6iOGPtSNL6fBoICiOdkZIFg4&authuser=6#lrd=0x88c291bf8f6557c5:0x10968a841ea0c8b2,1,,,,"
+              className="text-sm font-semibold leading-6 text-zinc-100 uppercase "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Reviews
+            </Link>
           </Popover.Group>
           {/* </div> */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
               href="/contact"
-              className="text-xs xl:text-sm uppercase lg:px-3 lg:py-2 leading-7 text-white transition-all duration-300 bg-black border-2 border-red-700 hover:bg-red-700 hover:text-white hover:border-red-700 "
+              className="text-xs xl:text-sm uppercase lg:px-3 lg:py-2 leading-7 text-black transition-all duration-300 bg-white border-2 border-white hover:bg-white hover:text-zinc-700 hover:border-white rounded-md"
             >
-              Call Now (727-317-6717){" "}
+              Get a Free Estimate{" "}
             </Link>
           </div>
         </nav>
@@ -326,13 +339,19 @@ export default function Navbartwo() {
                     Pricing
                   </Link>
                   <Link
-                    href="https://www.google.com/search?q=Lupo+Dumpster+Rentals+and+Junk+Removal&stick=H4sIAAAAAAAA_-NgU1I1qLCwSDayNExKs0gzMzU1Tza1MqgwNLA0s0i0MDFMTTRItkgyWsSq5lNakK_gUppbUFySWqQQlJpXkphTrJCYl6LgVZqXDRTIzS9LzAEA8FWdXFIAAAA&hl=en-US&mat=Cd5HiHnqFLTAElcB7PxHsfRGkZVXKNf9_PQRqEoxlePs5G42IjJpMyjK6OYTwtmxXUgcHuQDGlz6cym5Omb9IR7yq-jA4bPvQUNT4i6QbID6iOGPtSNL6fBoICiOdkZIFg4&authuser=6#lrd=0x88c291bf8f6557c5:0x10968a841ea0c8b2,1,,,,"
+                    href="/service-locations"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-700 uppercase"
-                    rel="noopener noreferrer"
-                    target="_blank"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Reviews
+                    Service Locations
+                  </Link>
+
+                  <Link
+                    href="/about-us"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-700 uppercase"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    About Us
                   </Link>
                   <Link
                     href="/contact"
@@ -340,6 +359,15 @@ export default function Navbartwo() {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Contact
+                  </Link>
+                  <Link
+                    href="https://www.google.com/search?q=Lupo+Dumpster+Rentals+and+Junk+Removal&stick=H4sIAAAAAAAA_-NgU1I1qLCwSDayNExKs0gzMzU1Tza1MqgwNLA0s0i0MDFMTTRItkgyWsSq5lNakK_gUppbUFySWqQQlJpXkphTrJCYl6LgVZqXDRTIzS9LzAEA8FWdXFIAAAA&hl=en-US&mat=Cd5HiHnqFLTAElcB7PxHsfRGkZVXKNf9_PQRqEoxlePs5G42IjJpMyjK6OYTwtmxXUgcHuQDGlz6cym5Omb9IR7yq-jA4bPvQUNT4i6QbID6iOGPtSNL6fBoICiOdkZIFg4&authuser=6#lrd=0x88c291bf8f6557c5:0x10968a841ea0c8b2,1,,,,"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-700 uppercase"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Reviews
                   </Link>
                 </div>
                 <div className="py-6">

@@ -25,6 +25,9 @@ import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 import debris from "../../public/constructiondebris/debris.png";
 import dumptrailers from "../../public/dump-trailers.png";
 import junkbefore from "../../public/junkbefore.jpg";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
+import trailerthree from "../../public/trailer-1.jpg";
 
 const servicelist = [
   {
@@ -147,7 +150,8 @@ export default function services() {
     <>
       <Head>
         <title>
-          Lupo Dumpster Rentals | Affordable and Reliable Waste Services
+          Lupo Dumpster Rentals | Affordable and Reliable Dumpster and Junk
+          Services
         </title>
         <meta
           name="description"
@@ -157,24 +161,24 @@ export default function services() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*  */}
-      <section className="py-10 sm:py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24 bg-white">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
             <div className="relative mb-12">
               <Image
                 className="contrast-125 w-full"
-                src={wastemanagement}
+                src={trailerthree}
                 alt="waste management"
               />
 
               <div className="absolute w-full max-w-xs px-4 -translate-x-1/2 sm:px-0 sm:max-w-sm left-1/2 -bottom-12">
-                <div className="overflow-hidden bg-white rounded">
+                <div className="overflow-hidden bg-black rounded">
                   <div className="px-10 py-6">
                     <div className="flex items-center">
                       <p className="flex-shrink-0 text-3xl font-bold text-red-600 sm:text-4xl">
                         7+
                       </p>
-                      <p className="pl-6 text-sm font-medium text-black sm:text-lg">
+                      <p className="pl-6 text-sm font-medium text-white sm:text-lg">
                         Years <br />
                         of Experience
                       </p>
@@ -185,10 +189,10 @@ export default function services() {
             </div>
 
             <div>
-              <h1 className="mt-10 text-3xl font-bold leading-tight text-white sm:text-4xl uppercase lg:leading-tight">
+              <h1 className="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl uppercase lg:leading-tight">
                 Pasco and Pinellas County Trash Services
               </h1>
-              <p className="mt-6 leading-relaxed  text-lg font-normal text-gray-300">
+              <p className="mt-6 leading-relaxed  text-lg font-normal text-zinc-700">
                 With Lupo Dumpster Rentals, you can rest assured that your waste
                 management needs will be taken care of quickly and efficiently.
                 Book a trailer now and experience our exceptional customer
@@ -198,8 +202,7 @@ export default function services() {
                 href="/contact"
                 title=""
                 className="inline-flex items-center justify-center   border border-transparent  focus:outline-none mt-9
-                
-                bg-red-600 px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400
+                bg-black px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-700 rounded-md
                 transition-all duration-300 uppercase"
                 role="button"
               >
@@ -211,13 +214,13 @@ export default function services() {
         </div>
       </section>
       {/* services */}
-      <section className="py-12 sm:py-16 lg:py-20 xl:py-24">
+      <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-white">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-base font-semibold text-red-600">
               Eco-Friendly Junk Removal Solutions
             </p>
-            <h2 className="mt-4 text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:mt-6">
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-black sm:text-4xl lg:leading-tight lg:mt-6">
               DUMPSTER AND JUNK REMOVAL SERVICES
             </h2>
           </div>
@@ -236,7 +239,7 @@ export default function services() {
                     alt={service.alttext}
                   />
                 </Link>
-                <h3 className="mt-6 text-lg font-semibold text-gray-100 xl:text-xl group-hover:text-gray-300">
+                <h3 className="mt-6 text-lg font-semibold text-black xl:text-xl group-hover:text-zinc-700">
                   <Link href={service.link} title="" className="">
                     {service.name}
                   </Link>
@@ -247,7 +250,7 @@ export default function services() {
         </div>
       </section>
 
-      <section className="py-12  sm:py-16 lg:py-20">
+      {/* <section className="py-12  sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="text-center">
@@ -508,12 +511,14 @@ export default function services() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Testimonialsection></Testimonialsection>
 
       <Twentyyard></Twentyyard>
 
-      <Pricing></Pricing>
-      <Contact></Contact>
+      {/* <Pricing></Pricing> */}
+      {/* <Contact></Contact> */}
+      <Contactwhite header="Contact Us Today For Any Service"></Contactwhite>
     </>
   );
 }

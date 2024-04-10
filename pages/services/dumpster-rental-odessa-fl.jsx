@@ -21,6 +21,8 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -155,12 +157,13 @@ export default function DumpsterRentalOdessa() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Explore Our Dumpster Range"
         ptag="Check out our selection of dumpsters suitable for various types of projects in Odessa."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Waste Solutions"
@@ -170,7 +173,8 @@ export default function DumpsterRentalOdessa() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Odessa Today"></Contactwhite>
     </>
   );
 }

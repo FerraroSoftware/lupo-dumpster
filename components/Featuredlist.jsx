@@ -4,6 +4,7 @@ import Image from "next/image";
 import trailer from "../public/dump-trailers.png";
 import Link from "next/link";
 import { FadeIn } from "./FadeIn";
+import truck from "../public/dump-trailer.png";
 const featureditems = [
   "Refrigerator Disposal",
   "Garbage Removal",
@@ -39,7 +40,7 @@ const cardVariants = {
 
 export default function Featuredlist() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 xl:py-24">
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-white">
       <FadeIn>
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-7 lg:gap-x-20">
@@ -54,18 +55,18 @@ export default function Featuredlist() {
                 <Image
                   className="object-cover w-full h-full "
                   src={trailer}
-                  alt=""
+                  alt="dump trailer"
                 />
                 <div className="absolute inset-0 bg-zinc-900/10"></div>
               </div>
             </div>
 
             <div className="lg:col-span-4">
-              <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl uppercase">
+              <h2 className="text-2xl font-medium tracking-wide text-black sm:text-3xl uppercase">
                 Our Wide Range of Dumpster Services in New Port Richey
               </h2>
-              <p className="mt-8 text-xl font-normal text-white">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
+              <p className="mt-8 text-xl font-normal text-zinc-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-red-500">
                   No Job Too Big or Small.
                 </span>{" "}
                 We have 10,{" "}
@@ -77,7 +78,7 @@ export default function Featuredlist() {
                 </Link>{" "}
                 and 20 cubic yard dump trailers ready for rental.
               </p>
-              <p className="mt-8 text-lg font-normal text-gray-300">
+              <p className="mt-8 text-lg font-normal text-zinc-700">
                 Lupo Dumpster Rentals is near you in New Port Richey to serve
                 all your dumpster needs. Whether you{"'"}re undertaking a home
                 renovation or remodel or a contractor needing a waste management
@@ -119,7 +120,7 @@ export default function Featuredlist() {
                         </linearGradient>
                       </defs>
                     </svg>
-                    <h3 className="ml-4 text-lg font-normal text-white">
+                    <h3 className="ml-4 text-lg font-normal text-black">
                       {" "}
                       {item}{" "}
                     </h3>

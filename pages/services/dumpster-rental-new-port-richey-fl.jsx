@@ -23,6 +23,8 @@ import appliancecleanup from "../../public/applianceremoval/appliance-cleanup.pn
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Testimonialsection from "../../components/Testimonialsection";
+import Contactwhite from "../../components/Contactwhite";
 
 const points = [
   {
@@ -143,17 +145,18 @@ export default function DumpsterRentalNewPortRichey() {
       />
 
       <Multiblock
-        header="RELIABLE DUMPSTER SERVICES"
+        header="RELIABLE DUMPSTER SERVICES Located In New Port Richey"
         ptag="We pride ourselves on providing timely and efficient dumpster services, ensuring your project runs smoothly without any waste management hassles."
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Explore Our Dumpster Options"
         ptag="Dumpsters available for different types of projects in New Port Richey."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="More Than Just Dumpster Rentals"
@@ -163,7 +166,8 @@ export default function DumpsterRentalNewPortRichey() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in New Port Richey Today"></Contactwhite>
     </>
   );
 }

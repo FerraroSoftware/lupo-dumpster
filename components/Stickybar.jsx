@@ -5,7 +5,7 @@ export default function Stickybar({ isMenuOpen }) {
 
   return (
     <div
-      className={`sticky top-0 z-50 flex items-center gap-x-6 bg-zinc-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${hiddenClass}`}
+      className={`sticky top-0 z-50 flex items-center gap-x-6 bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${hiddenClass}`}
     >
       <p className="text-sm leading-6 text-white">
         <a href="tel:7273176717">

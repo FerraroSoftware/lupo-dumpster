@@ -21,6 +21,8 @@ import {
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
+import Contactwhite from "../../components/Contactwhite";
+import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
   {
@@ -144,12 +146,13 @@ export default function DumpsterRentalPinellasCounty() {
         features={features}
       ></Multiblock>
 
-      <Contacttwo />
+      {/* <Contacttwo /> */}
       <Imagegridclone
         header="Explore Our Dumpster Projects"
         ptag="Dumpster rentals for different types of projects across Pinellas County."
       />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Testimonialsection />
 
       <Otherservices
         header="Comprehensive Junk Services"
@@ -159,7 +162,8 @@ export default function DumpsterRentalPinellasCounty() {
 
       <Faqs faqs={faqs} />
 
-      <Contact />
+      {/* <Contact /> */}
+      <Contactwhite header="Rent a Dumpster in Pinellas County Today"></Contactwhite>
     </>
   );
 }
