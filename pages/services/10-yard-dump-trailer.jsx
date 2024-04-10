@@ -121,7 +121,7 @@ export default function FifteenYardDumpsterRental() {
 
       <Junkheader
         image={dumpsterrental} // Update the image to show a 10-yard dumpster
-        altText="10 Yard Dumpster Trailer Rental"
+        alttext="10 Yard Dumpster Trailer Rental"
         location="Your Local Area"
         service="10 Yard Dumpster Trailer Rental"
         pTag="The ultimate solution for small-scale waste management with our 10-yard dumpster trailers. Perfect for various compact projects."
