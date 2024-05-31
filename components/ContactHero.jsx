@@ -243,7 +243,7 @@ export default function ContactHero({ header }) {
               {/* reviews */}
               <div className="flex gap-x-4">
                 <div className="mt-4">
-                  <p className="text-md font-normal text-black underline underline-offset-4 uppercase ">
+                  <p className="text-md font-bold text-black underline underline-offset-4 uppercase ">
                     Trusted by Hundreds of Locals
                   </p>
 
@@ -291,7 +291,7 @@ export default function ContactHero({ header }) {
                       </svg>
                     </div>
 
-                    <span className="ml-1 text-base font-normal text-neutral-700">
+                    <span className="ml-1 text-base font-normal text-neutral-900">
                       {" "}
                       (100+ Five Star Reviews){" "}
                     </span>
