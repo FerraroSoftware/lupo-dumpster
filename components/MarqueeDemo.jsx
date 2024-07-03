@@ -42,7 +42,7 @@ const reviews = [
     img: alexlupo,
   },
   {
-    name: "T Sava",
+    name: "Sava T",
     username: "@james",
     body: "Reservation and payment was easy, fair pricing. Quick delivery and pickup of the dumpster. Nice, professional people and high level of communication. Will use again if needed in the future.",
     img: alexlupo,
