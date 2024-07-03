@@ -22,6 +22,7 @@ import NewPricingtwo from "../components/NewPricingtwo";
 import NewPricingthree from "../components/NewPricingthree";
 import ContactHero from "../components/ContactHero";
 import Virtualsteps from "../components/Virtualsteps";
+import { MarqueeDemo } from "../components/MarqueeDemo";
 
 export default function Home() {
   return (
@@ -37,13 +38,14 @@ export default function Home() {
       </Head>
       {/* <Herotwo></Herotwo> */}
       <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero>
+      <MarqueeDemo></MarqueeDemo>
       <Coreservices></Coreservices>
       {/* <Process /> */}
       {/* <Pricing></Pricing> */}
       {/* <NewPricing></NewPricing> */}
       <NewPricingtwo></NewPricingtwo>
       {/* <NewPricingthree></NewPricingthree> */}
-      <Testimonialsection></Testimonialsection>
+      {/* <Testimonialsection></Testimonialsection> */}
       <Virtualsteps></Virtualsteps>
 
       {/* <Features></Features> */}

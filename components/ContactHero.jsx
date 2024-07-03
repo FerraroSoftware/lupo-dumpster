@@ -12,6 +12,7 @@ import {
   ShieldCheckIcon,
   WrenchScrewdriverIcon,
   HomeModernIcon,
+  CalendarDaysIcon,
   BuildingOfficeIcon,
   LockClosedIcon,
   CloudIcon,
@@ -34,6 +35,7 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import lupodumpster from "../public/lupo-dumpster.png";
+import { MarqueeDemo } from "./MarqueeDemo";
 
 export default function ContactHero({ header }) {
   const router = useRouter();
@@ -52,20 +54,6 @@ export default function ContactHero({ header }) {
     router.push("/thank-you");
   };
   const makeApiCall = async () => {
-    //  await fetch("/api/sendgrid", {
-    //    method: "POST",
-    //    headers: {
-    //      "Content-Type": "application/json",
-    //    },
-    //    body: JSON.stringify({
-    //      firstname: watch("firstname"),
-    //      lastname: watch("lastname"),
-    //      email: watch("email"),
-    //      phone: watch("phone"),
-    //      message: watch("message"),
-    //    }),
-    //  });
-
     await fetch("/api/sendgrid", {
       body: JSON.stringify({
         email: watch("email"),
@@ -104,40 +92,7 @@ export default function ContactHero({ header }) {
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-zinc-100 ring-1 ring-zinc-900/10 lg:w-1/2">
-              {/* <svg
-                className="absolute inset-0 h-full w-full stroke-zinc-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    x="100%"
-                    y={-1}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-                <svg x="100%" y={-1} className="overflow-visible fill-zinc-50">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect
-                  width="100%"
-                  height="100%"
-                  strokeWidth={0}
-                  fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
-                />
-              </svg> */}
-              {/* <Image
-                src={garagedoorsparatec}
-                className="absolute inset-0 h-full w-full object-cover"
-              ></Image> */}
-              {/* <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-zinc-900/10" /> */}
-            </div>
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-zinc-100 ring-1 ring-zinc-900/10 lg:w-1/2"></div>
             <h1 className="text-3xl md:text-4xl font-bold  text-zinc-900 uppercase">
               {header}
             </h1>
@@ -151,7 +106,7 @@ export default function ContactHero({ header }) {
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <TruckIcon
-                    className="h-7 w-6 text-red-500"
+                    className="h-7 w-6 text-green-600"
                     aria-hidden="true"
                   />
                 </dt>
@@ -162,57 +117,39 @@ export default function ContactHero({ header }) {
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <CurrencyDollarIcon
-                    className="h-7 w-6 text-red-500"
+                    className="h-7 w-6 text-green-600"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>Best Pricing Guaranteed</dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Address</span>
+                  <CalendarDaysIcon
+                    className="h-7 w-6 text-green-600"
+                    aria-hidden="true"
+                  />
+                </dt>
+                <dd>Flexible Rental & Same Day Drop Off</dd>
               </div>
               {/*  */}
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <ShieldCheckIcon
-                    className="h-7 w-6 text-red-500"
+                    className="h-7 w-6 text-green-600"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>Licensed &amp; Insured </dd>
               </div>
-              {/*  */}
-              {/* <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-zinc-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  6626 Orchid Lake Road
-                  <br />
-                  New Port Richey, Florida 34653
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-zinc-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  13654 N 12th St, Unit 01
-                  <br />
-                  Tampa, Florida 33612
-                </dd>
-              </div> */}
+
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon
-                    className="h-7 w-6 text-red-500"
+                    className="h-7 w-6 text-green-600"
                     aria-hidden="true"
                   />
                 </dt>
@@ -226,7 +163,7 @@ export default function ContactHero({ header }) {
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
                   <EnvelopeIcon
-                    className="h-7 w-6 text-red-500"
+                    className="h-7 w-6 text-green-600"
                     aria-hidden="true"
                   />
                 </dt>
@@ -243,11 +180,13 @@ export default function ContactHero({ header }) {
               {/* reviews */}
               <div className="flex gap-x-4">
                 <div className="mt-4">
-                  <p className="text-md font-bold text-black underline underline-offset-4 uppercase ">
+                  {/* <p className="text-md font-bold text-black underline underline-offset-4 uppercase ">
                     Trusted by Hundreds of Locals
-                  </p>
-
-                  <div className="flex items-center mt-3">
+                  </p> */}
+                  {/* <div className="mt-4 max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl"> */}
+                  {/* <MarqueeDemo /> */}
+                  {/* </div> */}
+                  {/* <div className="flex items-center mt-3">
                     <div className="flex">
                       <svg
                         className="w-5 h-5 text-green-500"
@@ -295,7 +234,7 @@ export default function ContactHero({ header }) {
                       {" "}
                       (100+ Five Star Reviews){" "}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </dl>
