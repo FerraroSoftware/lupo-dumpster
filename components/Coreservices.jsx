@@ -4,6 +4,8 @@ import autismcenter from "../public/junk-removal-new-port-richey.png";
 import dumptrailer from "../public/dump-trailer.png";
 import trashremoval1 from "../public/trash-removal-1.png";
 import { FadeIn } from "./FadeIn";
+import demolition from "../public/demolition.jpg";
+import lawncare from "../public/lawncare.jpg";
 
 const categories = [
   {
@@ -25,13 +27,21 @@ const categories = [
       "Professional junk removal services to help you declutter your space efficiently. We handle all the heavy lifting and proper disposal.",
   },
   {
-    name: "Clean Out Services",
-    href: "/services/hoarding-cleanup",
-    imageSrc: garagecleanout, // Replace with your actual image import or path
+    name: "Bot Cat Services",
+    href: "/services/bobcat-services",
+    imageSrc: demolition, // Replace with your actual image import or path
+    imageAlt: "bobcat",
+    description:
+      "Bobcat services for small demolition projects, diaster cleanup, deck removal, debris removal and much more. Call us today for a free quote.",
+  },
+  {
+    name: "Lawn Care Services",
+    href: "https://lupolawnservice.com/",
+    imageSrc: lawncare, // Replace with your actual image import or path
     imageAlt:
       "A cleared and clean space following a comprehensive clean out service.",
     description:
-      "Full-service clean out solutions for homes, estates, and businesses. Leave the clean-ups to us, and enjoy a hassle-free service.",
+      "Lawn care services for residential and commercial properties. We offer lawn mowing, edging, trimming, and more.",
   },
 ];
 
@@ -39,16 +49,16 @@ export default function Coreservices() {
   return (
     <div className="bg-white">
       <FadeIn>
-        <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 ">
+        <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-none lg:px-8 ">
           <h2 className="text-3xl font-bold tracking-wide text-black sm:text-4xl uppercase text-center">
-            Local Dumpster Rental Services
+            Lupo Enterprises Core Services
           </h2>
           <p className="mt-4 text-base text-zinc-700 text-center">
-            We provide a variety of dumpster sizes perfect for any project,
-            ensuring efficient disposal with prompt delivery and pickup.
+            We offer a wide range of services to help you with your project.
+            From dumpster rentals to junk removal, we have you covered.
           </p>
 
-          <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+          <div className="mt-10 space-y-12 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-y-0">
             {categories.map((category) => (
               <a
                 key={category.name}
