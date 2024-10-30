@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lupo Dumpster Rentals and Junk Removal || New Port Richey</title>
+        <title>Pasco County Dumpster Rental Professionals</title>
         <meta
           name="description"
           content="Get fast and easy junk removal and dumpster rentals. Lupo Dumpster Rentals and Junk Removal offers various sizes of dumpsters for residential and commercial projects. Book online now!"

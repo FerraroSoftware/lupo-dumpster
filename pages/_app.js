@@ -7,6 +7,7 @@ import Script from "next/script";
 import Navbartwo from "../components/Navbartwo";
 import Navbarthree from "../components/Navbarthree";
 import Stickybar from "../components/Stickybar";
+import LocationSchema from "../components/LocationSchema";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,6 +49,8 @@ export default function App({ Component, pageProps }) {
             `,
         }}
       />
+
+      <LocationSchema></LocationSchema>
 
       <main className={inter.className}>
         {/* <Navbar></Navbar> */}
