@@ -33,6 +33,9 @@ const LocationSchema = () => {
       postalCode: "34690",
       addressCountry: "US",
     },
+    hasMap:
+      "https://www.google.com/maps/place/Lupo+Enterprises+LLC/@28.2093916,-82.7205748,15z/data=!4m6!3m5!1s0x88c291bf8f6557c5:0x10968a841ea0c8b2!8m2!3d28.2093916!4d-82.7205748!16s%2Fg%2F11lq3z05y0?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D",
+
     sameAs: [
       "https://www.facebook.com/LupoLLC",
       "https://www.instagram.com/lupodumpsterrentals/?hl=en",
