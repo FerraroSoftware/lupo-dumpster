@@ -8,12 +8,16 @@ import Navbartwo from "../components/Navbartwo";
 import Navbarthree from "../components/Navbarthree";
 import Stickybar from "../components/Stickybar";
 import LocationSchema from "../components/LocationSchema";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <meta name="robots" content="index,follow" />
+      </Head>
       <Script
         id="facebook-pixel"
         dangerouslySetInnerHTML={{

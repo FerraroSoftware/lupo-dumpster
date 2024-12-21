@@ -23,6 +23,7 @@ import NewPricingthree from "../components/NewPricingthree";
 import ContactHero from "../components/ContactHero";
 import Virtualsteps from "../components/Virtualsteps";
 import { MarqueeDemo } from "../components/MarqueeDemo";
+import ContactUpdate from "../components/ContactUpdate";
 
 export default function Home() {
   return (
@@ -31,13 +32,14 @@ export default function Home() {
         <title>Pasco County Dumpster Rental Professionals</title>
         <meta
           name="description"
-          content="Get fast and easy junk removal and dumpster rentals. Lupo Dumpster Rentals and Junk Removal offers various sizes of dumpsters for residential and commercial projects. Book online now!"
+          content="Get fast and easy junk removal and dumpster rentals in Pasco County. Lupo Dumpster Rentals offers various sizes of dumpsters for residential and commercial projects."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Herotwo></Herotwo> */}
       <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero>
+      {/* <ContactUpdate></ContactUpdate> */}
       <MarqueeDemo></MarqueeDemo>
       <Coreservices></Coreservices>
       {/* <Process /> */}
