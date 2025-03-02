@@ -9,6 +9,7 @@ import Navbarthree from "../components/Navbarthree";
 import Stickybar from "../components/Stickybar";
 import LocationSchema from "../components/LocationSchema";
 import Head from "next/head";
+import LupoNavbar from "@/components/Navitem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,7 +60,8 @@ export default function App({ Component, pageProps }) {
       <main className={inter.className}>
         {/* <Navbar></Navbar> */}
         {/* <Stickybar></Stickybar> */}
-        <Navbartwo></Navbartwo>
+        {/* <Navbartwo></Navbartwo> */}
+        <LupoNavbar></LupoNavbar>
         {/* <Navbarthree></Navbarthree> */}
         {/* <Sidebar></Sidebar> */}
         <Component {...pageProps} />

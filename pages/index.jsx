@@ -24,6 +24,7 @@ import ContactHero from "../components/ContactHero";
 import Virtualsteps from "../components/Virtualsteps";
 import { MarqueeDemo } from "../components/MarqueeDemo";
 import ContactUpdate from "../components/ContactUpdate";
+import ContactHeroTwo from "../components/ContactHeroTwo";
 
 export default function Home() {
   return (
@@ -38,8 +39,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Herotwo></Herotwo> */}
-      <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero>
+      {/* <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero> */}
+      {/* <ContactHeroTwo header="Pasco County Dumpster Rental Professionals"></ContactHeroTwo> */}
       {/* <ContactUpdate></ContactUpdate> */}
+      <ContactHeroTwo />
       <MarqueeDemo></MarqueeDemo>
       <Coreservices></Coreservices>
       {/* <Process /> */}

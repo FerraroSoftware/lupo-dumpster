@@ -166,13 +166,14 @@ export const MarqueeDemo = () => {
       {/* header */}
       <div className="max-w-sm md:max-w-3xl mx-auto text-center pb-6">
         <h2 className="text-xl md:text-3xl font-bold tracking-wide text-black lg:text-4xl uppercase text-center">
-          Over 100 Five Star {""}
+          {/* Over 100 Five Star {""}
           <span class="text-googleBlue">G</span>
           <span class="text-googleRed">o</span>
           <span class="text-googleYellow">o</span>
           <span class="text-googleBlue">g</span>
           <span class="text-googleGreen">l</span>
-          <span class="text-googleRed">e</span> Reviews!
+          <span class="text-googleRed">e</span> Reviews! */}
+          See What Our Customers Are Saying
         </h2>
         <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-zinc-700">
           At Lupo Dumpster Rentals, we take pride in providing exceptional
@@ -183,12 +184,12 @@ export const MarqueeDemo = () => {
 
       {/* mar */}
 
-      <Marquee pauseOnHover className="[--duration:20s]">
+      <Marquee pauseOnHover className="[--duration:35s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <Marquee pauseOnHover reverse className="[--duration:20s]">
+      <Marquee pauseOnHover reverse className="[--duration:40s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
