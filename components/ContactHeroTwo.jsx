@@ -172,7 +172,7 @@ export default function HeroSection() {
             <div className="grid grid-cols-1 gap-4 text-white my-6">
               <div className="flex items-center gap-2">
                 <Truck className="h-5 w-5 text-red-500" />
-                <LucideHeading2>10, 15, 20 Yard Dumpsters</LucideHeading2>
+                <h2>10, 15, 20 Yard Dumpsters</h2>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-red-500" />
