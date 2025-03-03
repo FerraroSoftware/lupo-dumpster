@@ -173,7 +173,7 @@ export const MarqueeDemo = () => {
           <span class="text-googleBlue">g</span>
           <span class="text-googleGreen">l</span>
           <span class="text-googleRed">e</span> Reviews! */}
-          See What Our Customers Are Saying
+          What Our Customers Are Saying
         </h2>
         <p className="max-w-5xl mx-auto mt-4 text-base leading-relaxed text-zinc-700">
           At Lupo Dumpster Rentals, we take pride in providing exceptional
