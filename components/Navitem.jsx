@@ -218,9 +218,11 @@ export default function LupoNavbar() {
                 Contact
               </Link>
 
-              <Button className="bg-red-600 text-white hover:bg-red-700 transition-colors text-sm font-medium">
-                Book My Dumpster
-              </Button>
+              <Link href="/contact">
+                <Button className="bg-red-600 text-white hover:bg-red-700 transition-colors text-sm font-medium">
+                  Book My Dumpster
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -311,10 +313,12 @@ export default function LupoNavbar() {
               </Link>
 
               <div className="mt-4 px-3 space-y-2">
-                <Button className="w-full bg-red-600 text-white hover:bg-red-700 transition-colors font-medium">
-                  Book My Dumpster
-                </Button>
-                <a
+                <Link href="/contact">
+                  <Button className="w-full bg-red-600 text-white hover:bg-red-700 transition-colors font-medium">
+                    Book My Dumpster
+                  </Button>
+                </Link>
+                <Link
                   href="https://www.facebook.com/LupoLLC/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -322,7 +326,7 @@ export default function LupoNavbar() {
                 >
                   <Facebook className="h-4 w-4 mr-2" />
                   <span>Follow us on Facebook</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
