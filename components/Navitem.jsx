@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, Phone, Trash2, Facebook } from "lucide-react";
+import { ChevronDown, Menu, Phone, Facebook } from "lucide-react";
 import { Button } from "./ui/button";
 
 // Organized services into logical categories
@@ -248,6 +248,7 @@ export default function LupoNavbar() {
               <Link
                 href="/"
                 className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
@@ -282,6 +283,7 @@ export default function LupoNavbar() {
                           key={item.href}
                           href={item.href}
                           className="block w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2"
+                          onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {item.title}
                         </Link>
@@ -294,6 +296,7 @@ export default function LupoNavbar() {
               <Link
                 href="/about-us"
                 className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 About Us
               </Link>
@@ -301,6 +304,7 @@ export default function LupoNavbar() {
               <Link
                 href="/dumpster-rental-pricing"
                 className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Pricing
               </Link>
@@ -308,12 +312,16 @@ export default function LupoNavbar() {
               <Link
                 href="/contact"
                 className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </Link>
 
               <div className="mt-4 px-3 space-y-2">
-                <Link href="/contact">
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   <Button className="w-full bg-red-600 text-white hover:bg-red-700 transition-colors font-medium">
                     Book My Dumpster
                   </Button>
@@ -323,6 +331,7 @@ export default function LupoNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full text-white hover:text-red-500 transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <Facebook className="h-4 w-4 mr-2" />
                   <span>Follow us on Facebook</span>
