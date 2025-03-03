@@ -243,7 +243,7 @@ export default function LupoNavbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-black border-t border-zinc-800">
+          <div className="md:hidden bg-black border-t border-zinc-800 max-h-[80vh] overflow-y-auto">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 href="/"
@@ -269,7 +269,7 @@ export default function LupoNavbar() {
                 <div
                   className={
                     activeDropdown === "services"
-                      ? "px-4 py-2 bg-zinc-900 rounded-md mt-1"
+                      ? "px-4 py-2 bg-zinc-900 rounded-md mt-1 max-h-[60vh] overflow-y-auto"
                       : "hidden"
                   }
                 >
