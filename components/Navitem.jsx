@@ -7,22 +7,6 @@ import { Button } from "./ui/button";
 
 // Organized services into logical categories
 const services = {
-  "Junk Removal Services": [
-    {
-      title: "Junk Removal - New Port Richey",
-      href: "/services/junk-removal-new-port-richey-fl",
-    },
-    {
-      title: "Junk Removal - Palm Harbor",
-      href: "/services/junk-removal-palm-harbor",
-    },
-    {
-      title: "Junk Removal - Port Richey",
-      href: "/services/junk-removal-port-richey",
-    },
-    { title: "Junk Pick-Up", href: "/services/junk-pick-up" },
-    { title: "Haul Away Junk", href: "/services/haul-away-junk" },
-  ],
   "Dumpster Rental Locations": [
     {
       title: "New Port Richey",
@@ -57,9 +41,18 @@ const services = {
     },
     { title: "Mattress Disposal", href: "/services/mattress-disposal" },
   ],
-  "Additional Services": [
+  "Trash & Waste Services": [
+    { title: "Junk Removal", href: "/just-removal" },
+    { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
     { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
     { title: "Trash Removal", href: "/services/trash-removal" },
+    {
+      title: "Garbage Removal Service",
+      href: "/services/garbage-removal-service",
+    },
+    { title: "Trash Pickup", href: "/services/pasco-county-trash-pickup" },
+  ],
+  "Cleanup Services": [
     { title: "Appliance Removal", href: "/services/appliance-removal" },
     { title: "Hoarding Cleanup", href: "/services/hoarding-cleanup" },
     {
@@ -67,15 +60,6 @@ const services = {
       href: "/services/garage-cleaning-service",
     },
     { title: "Furniture Removal", href: "/services/furniture-removal" },
-    { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
-    {
-      title: "Garbage Removal Service",
-      href: "/services/garbage-removal-service",
-    },
-    {
-      title: "Pasco County Trash Pickup",
-      href: "/services/pasco-county-trash-pickup",
-    },
   ],
 };
 
