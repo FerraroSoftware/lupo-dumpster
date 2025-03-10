@@ -42,7 +42,7 @@ const services = {
     { title: "Mattress Disposal", href: "/services/mattress-disposal" },
   ],
   "Trash & Waste Services": [
-    { title: "Junk Removal", href: "/junk-removal" },
+    { title: "Junk Removal", href: "/services/junk-removal" },
     { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
     { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
     { title: "Trash Removal", href: "/services/trash-removal" },
