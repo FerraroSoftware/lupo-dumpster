@@ -10,6 +10,7 @@ import NewPricingthree from "../components/NewPricingthree";
 import Junkcost from "../components/Junkcost";
 import Contactwhite from "../components/Contactwhite";
 import NewPricinghero from "../components/NewPricinghero";
+import NewPricingHeros from "@/components/NewPricingHeros";
 
 export default function dumpsterrentalpricing() {
   return (
@@ -25,7 +26,8 @@ export default function dumpsterrentalpricing() {
       </Head>
 
       {/* <NewPricingtwo></NewPricingtwo> */}
-      <NewPricinghero></NewPricinghero>
+      {/* <NewPricinghero></NewPricinghero> */}
+      <NewPricingHeros></NewPricingHeros>
       {/* <NewPricingthree></NewPricingthree> */}
       {/* <Twentyyard></Twentyyard> */}
 
