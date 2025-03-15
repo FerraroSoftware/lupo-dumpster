@@ -195,12 +195,12 @@ export default function PricingSection() {
             <span className="font-semibold">Need help choosing?</span> Our team
             is ready to assist you in selecting the right dumpster size for your
             project.{" "}
-            <a
+            <Link
               href="/contact"
               className="text-red-600 hover:text-red-700 underline"
             >
               Contact us
-            </a>{" "}
+            </Link>{" "}
             for a free consultation.
           </p>
         </div>
