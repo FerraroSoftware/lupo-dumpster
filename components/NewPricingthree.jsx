@@ -57,17 +57,17 @@ function classNames(...classes) {
 
 export default function NewPricingthree() {
   return (
-    <div className="bg-black py-24 sm:py-32">
+    <div className="bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-red-600">
             Pricing
           </h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white uppercase sm:text-4xl">
+          <p className="mt-2 text-4xl font-bold tracking-tight text-black uppercase sm:text-4xl">
             Affordable Dumpster Rentals
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
           We strive to offer affordable solutions that meet your needs without
           compromising on the quality of our services. Give us a call today.
         </p>
@@ -138,9 +138,9 @@ export default function NewPricingthree() {
                 >
                   Book Now
                 </a>
-                <div className="text-center mt-2 text-gray-500 text-sm">
+                {/* <div className="text-center mt-2 text-gray-500 text-sm">
                   Variables affect final pricing
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

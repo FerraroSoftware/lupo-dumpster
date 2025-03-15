@@ -162,7 +162,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden  border bg-white py-20 md:shadow-xl">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden  border bg-white py-20 ">
       {/* header */}
       <div className="max-w-sm md:max-w-3xl mx-auto text-center pb-6">
         <h2 className="text-xl md:text-3xl font-bold tracking-wide text-black lg:text-4xl uppercase text-center">

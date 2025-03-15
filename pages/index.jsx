@@ -47,8 +47,8 @@ export default function Home() {
       <Coreservices></Coreservices>
       {/* <Process /> */}
       {/* <Pricing></Pricing> */}
-      {/* <NewPricing></NewPricing> */}
-      <NewPricingtwo></NewPricingtwo>
+      <NewPricing></NewPricing>
+      {/* <NewPricingtwo></NewPricingtwo> */}
       {/* <NewPricingthree></NewPricingthree> */}
       {/* <Testimonialsection></Testimonialsection> */}
       <Virtualsteps></Virtualsteps>

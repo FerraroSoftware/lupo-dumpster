@@ -7,59 +7,95 @@ import { Button } from "./ui/button";
 
 // Organized services into logical categories
 const services = {
-  "Dumpster Rental Locations": [
+  "Dumpster Rental": [
+    {
+      title: "Clearwater",
+      href: "/services/dumpster-rental-clearwater-fl",
+    },
+    {
+      title: "Holiday",
+      href: "/services/dumpster-rental-holiday-fl",
+    },
+    {
+      title: "Hudson",
+      href: "/services/dumpster-rental-hudson-fl",
+    },
+    {
+      title: "Lutz",
+      href: "/services/dumpster-rental-lutz-fl",
+    },
     {
       title: "New Port Richey",
       href: "/services/dumpster-rental-new-port-richey-fl",
     },
-    { title: "Hudson", href: "/services/dumpster-rental-hudson-fl" },
-    { title: "Odessa", href: "/services/dumpster-rental-odessa-fl" },
+    {
+      title: "Odessa",
+      href: "/services/dumpster-rental-odessa-fl",
+    },
+    {
+      title: "Palm Harbor",
+      href: "/services/dumpster-rental-palm-harbor",
+    },
     {
       title: "Pinellas County",
       href: "/services/dumpster-rental-pinellas-county",
     },
-    { title: "Lutz", href: "/services/dumpster-rental-lutz-fl" },
-    { title: "Trinity", href: "/services/dumpster-rental-trinity-fl" },
-    { title: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay" },
-    { title: "Holiday", href: "/services/dumpster-rental-holiday-fl" },
-    { title: "Spring Hill", href: "/services/dumpster-rental-spring-hill" },
-    { title: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor" },
-  ],
-  "Specialized Services": [
-    { title: "15-Yard Dump Trailer", href: "/services/15-yard-dump-trailer" },
     {
-      title: "Dumpster Trailer Rental",
-      href: "/services/dumpster-trailer-rental",
+      title: "Spring Hill",
+      href: "/services/dumpster-rental-spring-hill",
+    },
+    {
+      title: "Tampa Bay",
+      href: "/services/dumpster-rental-tampa-bay",
+    },
+    {
+      title: "Trinity",
+      href: "/services/dumpster-rental-trinity-fl",
+    },
+    {
+      title: "Westchase",
+      href: "/services/dumpster-rental-westchase-fl",
+    },
+  ],
+  "Cleanup Services": [
+    { title: "Appliance Removal", href: "/services/appliance-removal" },
+    { title: "Furniture Removal", href: "/services/furniture-removal" },
+    {
+      title: "Garage Cleaning Service",
+      href: "/services/garage-cleaning-service",
+    },
+    { title: "Hoarding Cleanup", href: "/services/hoarding-cleanup" },
+  ],
+
+  "Specialized Services": [
+    {
+      title: "15-Yard Dump Trailer",
+      href: "/services/15-yard-dump-trailer",
+    },
+    {
+      title: "Construction Debris Removal",
+      href: "/services/construction-debris-removal",
     },
     {
       title: "Construction Dumpster Rental",
       href: "/services/construction-dumpster-rental",
     },
     {
-      title: "Construction Debris Removal",
-      href: "/services/construction-debris-removal",
+      title: "Dumpster Trailer Rental",
+      href: "/services/dumpster-trailer-rental",
     },
     { title: "Mattress Disposal", href: "/services/mattress-disposal" },
   ],
   "Trash & Waste Services": [
-    { title: "Junk Removal", href: "/services/junk-removal" },
-    { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
-    { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
-    { title: "Trash Removal", href: "/services/trash-removal" },
     {
       title: "Garbage Removal Service",
       href: "/services/garbage-removal-service",
     },
+    { title: "Junk Removal", href: "/services/junk-removal" },
+    { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
     { title: "Trash Pickup", href: "/services/pasco-county-trash-pickup" },
-  ],
-  "Cleanup Services": [
-    { title: "Appliance Removal", href: "/services/appliance-removal" },
-    { title: "Hoarding Cleanup", href: "/services/hoarding-cleanup" },
-    {
-      title: "Garage Cleaning Service",
-      href: "/services/garage-cleaning-service",
-    },
-    { title: "Furniture Removal", href: "/services/furniture-removal" },
+    { title: "Trash Removal", href: "/services/trash-removal" },
+    { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
   ],
 };
 
@@ -112,7 +148,7 @@ export default function LupoNavbar() {
       {/* Main Navbar */}
       <nav
         className={`bg-black transition-all duration-300 ${
-          isScrolled ? "shadow-lg py-2" : "py-4"
+          isScrolled ? "shadow-lg py-2" : "py-2"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
