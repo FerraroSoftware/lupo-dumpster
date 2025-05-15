@@ -224,12 +224,12 @@ export default function LupoNavbar() {
                 About Us
               </Link>
 
-              <Link
+              {/* <Link
                 href="/dumpster-rental-pricing"
                 className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
               >
                 Pricing
-              </Link>
+              </Link> */}
 
               <Link
                 href="/contact"
@@ -321,13 +321,13 @@ export default function LupoNavbar() {
                 About Us
               </Link>
 
-              <Link
+              {/* <Link
                 href="/dumpster-rental-pricing"
                 className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Pricing
-              </Link>
+              </Link> */}
 
               <Link
                 href="/contact"
