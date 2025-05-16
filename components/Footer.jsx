@@ -37,7 +37,7 @@ const navigation = {
     { name: "Home", href: "/" },
   ],
   legal: [
-    { name: "Pricing", href: "/dumpster-rental-pricing" },
+    // { name: "Pricing", href: "/dumpster-rental-pricing" },
     { name: "10 Yard Dumpster", href: "/services/10-yard-dump-trailer" },
     { name: "15 Yard Dumpster", href: "/services/15-yard-dump-trailer" },
     { name: "20 Yard Dumpster", href: "/services/20-yard-dump-trailer" },
