@@ -31,7 +31,7 @@ export default function HeroUpdated() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
+          <h1 className="text-5xl lg:text-6xl font-semibold tracking-tight">
             #1 Pasco County Dumpster Rental Professionals
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
