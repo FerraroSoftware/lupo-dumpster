@@ -13,7 +13,7 @@ import Twentyyard from "../components/Twentyyard";
 import Imagegrid from "../components/Imagegrid";
 import Herotwo from "../components/Herotwo";
 import Contacttwo from "../components/Contacttwo";
-import Process from "../components/Process";
+
 import Features from "../components/Features";
 import Coreservices from "../components/Coreservices";
 import Featureswhite from "../components/Featureswhite";
@@ -25,6 +25,18 @@ import Virtualsteps from "../components/Virtualsteps";
 import { MarqueeDemo } from "../components/MarqueeDemo";
 import ContactUpdate from "../components/ContactUpdate";
 import ContactHeroTwo from "../components/ContactHeroTwo";
+import HeroUpdated from "@/components/HeroUpdated";
+import RequestForm from "@/components/new/request-form";
+import Testimonials from "@/components/new/testimonials";
+import Services from "@/components/new/services";
+import Process from "@/components/new/process";
+import DumpsterSizes from "@/components/new/dumpster-sizes";
+import HomeCleanouts from "@/components/new/home-cleanouts";
+import RoofersSection from "@/components/new/roofers-section";
+import ServiceLocations from "@/components/new/service-locations";
+import BlogSection from "@/components/new/blog-section";
+import FAQ from "@/components/new/faq";
+import AboutFounder from "@/components/new/about-founder";
 
 export default function Home() {
   return (
@@ -38,28 +50,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Herotwo></Herotwo> */}
-      {/* <ContactHero header="Pasco County Dumpster Rental Professionals"></ContactHero> */}
-      {/* <ContactHeroTwo header="Pasco County Dumpster Rental Professionals"></ContactHeroTwo> */}
-      {/* <ContactUpdate></ContactUpdate> */}
-      <ContactHeroTwo />
-      <MarqueeDemo></MarqueeDemo>
+  
+      <HeroUpdated></HeroUpdated>
+      <RequestForm />
+      <Testimonials />
+      <Services />
+      <Process />
+      {/* <DumpsterSizes /> */}
+      <HomeCleanouts />
+      <RoofersSection />
+      <ServiceLocations />
+      {/* <BlogSection /> */}
+      <FAQ />
+      <AboutFounder />
+
+
+      {/* <MarqueeDemo></MarqueeDemo>
       <Coreservices></Coreservices>
-      {/* <Process /> */}
-      {/* <Pricing></Pricing> */}
-      {/* <NewPricing></NewPricing> */}
-      {/* <NewPricingtwo></NewPricingtwo> */}
-      {/* <NewPricingthree></NewPricingthree> */}
-      {/* <Testimonialsection></Testimonialsection> */}
+    
       <Virtualsteps></Virtualsteps>
 
-      {/* <Features></Features> */}
-      {/* <Featureswhite></Featureswhite> */}
-      {/* <Imagegrid></Imagegrid> */}
+ 
       <Featuredlist></Featuredlist>
       <Twentyyard></Twentyyard>
-      <Calltoaction></Calltoaction>
-      {/* <Contact></Contact> */}
+      <Calltoaction></Calltoaction> */}
+      
     </>
   );
 }

@@ -5,6 +5,7 @@ import dumpsterrental from "../public/dumpsterrental.png";
 import Head from "next/head";
 import Pricing from "../components/Pricing";
 import ContactHero from "../components/ContactHero";
+import RequestFormHero from "@/components/new/request-form-hero";
 
 export default function contact() {
   return (
@@ -20,7 +21,8 @@ export default function contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ContactHero header="Book Your Dumpster Rental or Junk Removal"></ContactHero>
+      {/* <ContactHero header="Book Your Dumpster Rental or Junk Removal"></ContactHero> */}
+      <RequestFormHero />
       {/* <div className="relative bg-zinc-700">
         <div className="absolute inset-0">
           <Image
