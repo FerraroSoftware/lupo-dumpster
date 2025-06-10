@@ -1,112 +1,123 @@
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
+
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+
 import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
+
+import {
+  Check,
+  Phone,
+  Home,
+  Wrench,
+  Trees,
+  Building,
+  HelpCircle,
+  PackageCheck,
+  PackageX,
+  PhoneCall,
+  CalendarCheck2,
+  Truck,
+  Trash2,
+  Star,
+  CheckCircle2,
+} from "lucide-react";
+import RequestForm from "../..//components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { WhyChooseUs } from "@/components/new/why-choose-us";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
 
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Contactwhite from "../../components/Contactwhite";
-import Testimonialsection from "../../components/Testimonialsection";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-const points = [
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Trinity, FL",
+  title: "Affordable Dumpster Rentals in Trinity, Florida",
+  description:
+    "Your trusted local source for dumpster rentals in Trinity. We offer 10, 15, and 20-yard dumpsters for any residential or commercial project.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Trinity",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Trinity, FL",
+  imageOverlayText: "Serving Trinity & Beyond",
+};
+
+const trinityDumpsters = [
   {
-    name: "Versatile Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Trinity, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "A wide range of dumpster sizes suitable for various projects, big or small, in the Trinity area.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Prompt Delivery and Pickup",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Trinity, FL",
+    size: "15 Yard Dumpster",
     description:
-      "Efficient delivery and pickup services to ensure your project remains on schedule.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Transparent Pricing",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Trinity, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
     description:
-      "Clear and upfront pricing with no hidden costs, providing value and reliability every time.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Local Community Focus",
-    description:
-      "Dedicated to serving the Trinity community with a personal touch and understanding local needs.",
-    icon: UsersIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const faqs = [
-  {
-    question:
-      "How do I choose the right dumpster size for my project in Trinity?",
-    answer:
-      "Our experienced team will help you select the ideal dumpster size based on your project's specifics. Contact us to discuss your needs.",
-    items: [],
-  },
-  {
-    question: "What are the rates for dumpster rental in Trinity?",
-    answer:
-      "Rates vary depending on dumpster size and rental duration. We offer free, no-obligation quotes for your project.",
-    items: [],
-  },
-  {
-    question: "What can I dispose of in the rented dumpster?",
-    answer:
-      "Our dumpsters can accommodate a variety of materials, except for hazardous waste. We'll guide you on the acceptable items.",
-    items: [],
-  },
-  {
-    question:
-      "Can I extend my rental if my project takes longer than expected?",
-    answer:
-      "Absolutely. We offer flexible rental periods. Contact us to adjust your rental term as needed.",
-    items: [],
-  },
-  {
-    question: "Do you provide same-day dumpster rental services in Trinity?",
-    answer:
-      "We offer same-day services based on availability. Advance booking is recommended for the best service.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Reliable Dumpster Rental Services in Trinity, FL",
-    description:
-      "Experience top-notch dumpster rental services in Trinity, designed to meet your project's waste management needs efficiently.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Reliable dumpster rental services in Trinity",
-  },
-  {
-    name: "Committed to Customer Satisfaction",
-    description:
-      "Our dedication to customer service ensures a seamless and satisfactory dumpster rental experience in Trinity. Give us a call today for a free quote.",
-    imageSrc: dumptrailer,
-    imageAlt: "Focused on customer satisfaction in dumpster rental",
-  },
-];
-
-const metatitle =
-  "Trinity Dumpster Rental | Efficient & Cost-Effective | Call Now";
+const metatitle = "Trinity Dumpster Rental | Afforadable Dumpsters | Call Now";
 const description =
-  "Expert dumpster rental services in Trinity. Offering flexible scheduling, various sizes, and competitive pricing for your waste management needs.";
+  "Expert dumpster rental services in Trinity FL. Offering flexible scheduling, various sizes, and competitive pricing for your junk removal needs.";
 
 export default function DumpsterRentalTrinity() {
   return (
@@ -120,46 +131,69 @@ export default function DumpsterRentalTrinity() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Efficient dumpster rental in Trinity"
-        location="Trinity's Leading"
-        service="Dumpster Rental company"
-        ptag="Your go-to solution for all your dumpster rental needs in Trinity, ensuring your project stays clean and organized."
-        cta="Rent a Dumpster"
-      ></Junkheader>
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <HeroService
+          badgeText={heroData.badgeText}
+          title={heroData.title}
+          description={heroData.description}
+          heroChecklistItems={heroData.heroChecklistItems}
+          primaryButtonText={heroData.primaryButtonText}
+          imageSrc={heroData.imageSrc}
+          imageAlt={heroData.imageAlt}
+          imageOverlayText={heroData.imageOverlayText}
+        />
 
-      <Corefeatures
-        header="Top Dumpster Rental Service in Trinity"
-        subheader="Tailored to Your Project Needs"
-        ptag="From home renovations to commercial construction, we have the right dumpster size to efficiently manage your waste."
-        points={points}
-      />
+        {/* Dumpster Sizes Section */}
+        <DumpsterOptions
+          locationName="Trinity"
+          title="Choose the Perfect Dumpster Size for Your Trinity Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Trinity, from small home cleanouts to large construction jobs."
+          dumpsters={trinityDumpsters}
+        />
 
-      <Multiblock
-        header="YOUR TRUSTED PARTNER"
-        ptag="We are committed to providing reliable and affordable dumpster rental services to the Trinity community."
-        features={features}
-      ></Multiblock>
+        <RequestForm />
 
-      {/* <Contacttwo /> */}
-      <Imagegridclone
-        header="Explore Our Dumpster Projects"
-        ptag="We offer a variety of dumpster sizes, perfect for different types of projects in Trinity."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+        <Testimonials />
 
-      <Otherservices
-        header="Trinity's Junk Experts"
-        subheader="More than Just Dumpster Rentals"
-        ptag="Check out our comprehensive range of services, including junk removal and specialized disposal, alongside dumpster rentals."
-      ></Otherservices>
+        {/* Our Simple Rental Process in Trinity Section */}
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Trinity"
+          subtitle="Renting a dumpster for your Trinity project is quick and easy with Lupo."
+        />
 
-      <Faqs faqs={faqs} />
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster in Trinity Today"></Contactwhite>
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        {/* Trinity FAQ Section */}
+        <FaqSection
+          title="Trinity Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Trinity, FL."
+        />
+
+        {/* What Can/Cannot Go In Section */}
+        <DisposalGuidelines
+          title="What Can Go in Your Trinity Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Trinity rental."
+        />
+
+        {/* Common Dumpster Uses in Trinity Section */}
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Trinity"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Trinity area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }
