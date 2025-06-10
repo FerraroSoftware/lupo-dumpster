@@ -11,6 +11,8 @@ import LocationSchema from "../components/LocationSchema";
 import Head from "next/head";
 import LupoNavbar from "@/components/Navitem";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
@@ -65,6 +67,8 @@ export default function App({ Component, pageProps }) {
         {/* <Navbarthree></Navbarthree> */}
         {/* <Sidebar></Sidebar> */}
         <Component {...pageProps} />
+        <Analytics />
+
         <Footer></Footer>
       </main>
     </>
