@@ -182,7 +182,7 @@ export default function Footer() {
               <br />
               Phone: (727) 317-6717
               <br />
-              Hours: Wednesday - Tuesday: 7:00 AM - 8:00 PM
+              Hours: Monday - Sunday: 7:00 AM - 8:00 PM
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
