@@ -47,6 +47,7 @@ import { CallToActionSection } from "@/components/new/call-to-action-section";
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumptrailers from "../../public/dump-trailers.png";
 import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
+import LocationSchema from "@/components/new/LocationSchema";
 
 const heroData = {
   badgeText: "#1 Dumpster Rental Service in Trinity, FL",
@@ -127,9 +128,20 @@ export default function DumpsterRentalTrinity() {
         <meta name="description" content={description} />
         <meta property="og:title" content={metatitle} />
         <meta property="og:description" content={description} />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Trinity dumpster rental, dumpster rental Trinity FL, dumpster rental services, 10 yard dumpster Trinity, 15 yard dumpster, 20 yard dumpster Trinity, junk removal Trinity FL, roll off dumpster Trinity"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <LocationSchema
+        areaServed={["Trinity"]}
+        geoCoordinates={{ latitude: 28.1806, longitude: -82.6804 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-trinity-fl"
+        locationName="Trinity, FL"
+      />
 
       <main className="min-h-screen">
         {/* Hero Section */}

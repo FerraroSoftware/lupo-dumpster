@@ -1,110 +1,128 @@
+// pages/dumpster-rental-clearwater.tsx
+
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
+
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+
 import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
+
+import {
+  Check,
+  Phone,
+  Home,
+  Wrench,
+  Trees,
+  Building,
+  HelpCircle,
+  PackageCheck,
+  PackageX,
+  PhoneCall,
+  CalendarCheck2,
+  Truck,
+  Trash2,
+  Star,
+  CheckCircle2,
+} from "lucide-react";
+import RequestForm from "../..//components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { WhyChooseUs } from "@/components/new/why-choose-us";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
 
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Contactwhite from "../../components/Contactwhite";
-import Testimonialsection from "../../components/Testimonialsection";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-const points = [
+import LocationSchema from "@/components/new/LocationSchema";
+
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Clearwater, FL",
+  title: "Affordable Dumpster Rentals in Clearwater, Florida",
+  description:
+    "Your trusted local source for dumpster rentals in Clearwater. We offer 10, 15, and 20-yard dumpsters for any residential or commercial project.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Pinellas County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Clearwater",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Clearwater, FL",
+  imageOverlayText: "Serving Clearwater & Nearby Areas",
+};
+
+const clearwaterDumpsters = [
   {
-    name: "Multiple Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Clearwater, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "Choose from a variety of dumpster sizes to handle residential and commercial projects in Clearwater, FL.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Fast & Reliable Service",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Clearwater, FL",
+    size: "15 Yard Dumpster",
     description:
-      "We ensure timely delivery and pickup of dumpsters, keeping your project on track and hassle-free.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Upfront & Transparent Pricing",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Clearwater, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
     description:
-      "No hidden fees—just clear, competitive pricing to help you manage your budget with ease.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Local Experts in Waste Management",
-    description:
-      "Proudly serving the Clearwater community with trusted, professional dumpster rental services.",
-    icon: UsersIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const faqs = [
-  {
-    question:
-      "How do I choose the right dumpster size for my project in Clearwater?",
-    answer:
-      "Our team can guide you in selecting the perfect dumpster size based on the type and volume of waste you need to dispose of.",
-    items: [],
-  },
-  {
-    question: "What are the rental rates for dumpsters in Clearwater?",
-    answer:
-      "Pricing depends on the dumpster size and rental duration. Contact us for a free, no-obligation quote.",
-    items: [],
-  },
-  {
-    question: "What types of materials can I dispose of in a dumpster?",
-    answer:
-      "Most non-hazardous waste materials are accepted. We’ll provide you with guidelines on restricted items.",
-    items: [],
-  },
-  {
-    question: "Can I extend my rental period if needed?",
-    answer:
-      "Yes! We offer flexible rental extensions. Just give us a call to adjust your rental as needed.",
-    items: [],
-  },
-  {
-    question: "Do you offer same-day dumpster rental in Clearwater?",
-    answer:
-      "Yes, same-day services are available based on availability. We recommend booking in advance to secure your dumpster.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Reliable Dumpster Rental Services in Clearwater, FL",
-    description:
-      "Get hassle-free dumpster rental services tailored to your project’s waste disposal needs in Clearwater.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Reliable dumpster rental services in Clearwater",
-  },
-  {
-    name: "Customer-Focused Service",
-    description:
-      "We prioritize customer satisfaction, offering smooth and dependable dumpster rental services in Clearwater. Contact us today for a quote!",
-    imageSrc: dumptrailer,
-    imageAlt: "Top-notch customer service for dumpster rentals",
-  },
-];
-
-const metatitle = "Clearwater Dumpster Rental | Fast & Affordable | Call Today";
+const metatitle =
+  "Clearwater Dumpster Rental | Affordable Dumpsters | Call Now";
 const description =
-  "Looking for reliable dumpster rental services in Clearwater, FL? We offer flexible rental options, competitive pricing, and fast service. Get a free quote today!";
+  "Expert dumpster rental services in Clearwater FL. Offering flexible scheduling, various sizes, and competitive pricing for your junk removal needs.";
 
 export default function DumpsterRentalClearwater() {
   return (
@@ -112,50 +130,76 @@ export default function DumpsterRentalClearwater() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Clearwater dumpster rental, dumpster rental Clearwater FL, dumpster rental services, 10 yard dumpster Clearwater, 15 yard dumpster, 20 yard dumpster Clearwater, junk removal Clearwater, roll off dumpster Clearwater"
+        />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
         <meta property="og:description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-clearwater-fl"
+        />
       </Head>
 
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Reliable dumpster rental in Clearwater"
-        location="Clearwater's Trusted"
-        service="Dumpster Rental Provider"
-        ptag="Offering affordable and efficient dumpster rental services in Clearwater, FL. Keep your project clean and organized with us."
-        cta="Get a Dumpster Today"
+      <LocationSchema
+        areaServed={["Clearwater"]}
+        geoCoordinates={{ latitude: 27.9659, longitude: -82.8001 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-clearwater-fl"
+        locationName="Clearwater, FL"
       />
 
-      <Corefeatures
-        header="Top Dumpster Rental in Clearwater"
-        subheader="Dumpster Solutions for Every Project"
-        ptag="From home renovations to construction sites, our dumpster rentals are the perfect solution for all your waste management needs."
-        points={points}
-      />
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      <Multiblock
-        header="YOUR RELIABLE DUMPSTER PARTNER"
-        ptag="Providing high-quality, affordable dumpster rental services to Clearwater and surrounding areas."
-        features={features}
-      />
+        <DumpsterOptions
+          locationName="Clearwater"
+          title="Choose the Perfect Dumpster Size for Your Clearwater Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Clearwater, from small home cleanouts to large construction jobs."
+          dumpsters={clearwaterDumpsters}
+        />
 
-      <Imagegridclone
-        header="Dumpster Rental in Action"
-        ptag="Check out our range of dumpster sizes, perfect for residential and commercial projects in Clearwater."
-      />
+        <RequestForm />
 
-      <Testimonialsection />
+        <Testimonials />
 
-      <Otherservices
-        header="Clearwater's Junk Removal Experts"
-        subheader="More Than Just Dumpster Rentals"
-        ptag="We also provide junk removal and other waste disposal solutions to meet all your needs."
-      />
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Clearwater"
+          subtitle="Renting a dumpster for your Clearwater project is quick and easy with Lupo."
+        />
 
-      <Faqs faqs={faqs} />
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
 
-      <Contactwhite header="Book Your Dumpster in Clearwater Today" />
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Clearwater Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Clearwater, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Clearwater Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Clearwater rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Clearwater"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Clearwater area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }

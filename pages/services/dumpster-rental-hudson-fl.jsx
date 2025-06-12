@@ -1,187 +1,175 @@
+// pages/dumpster-rental-hudson.tsx
+
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
-import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
 
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-const points = [
-  {
-    name: "Wide Range of Dumpster Sizes",
-    description:
-      "Offering an array of dumpster sizes to accommodate various project needs in Hudson, FL, from small home cleanouts to large construction sites.",
-    icon: TruckIcon,
-  },
-  {
-    name: "Timely Delivery & Pickup",
-    description:
-      "Committed to providing punctual delivery and pickup to keep your project on schedule.",
-    icon: ClockIcon,
-  },
-  {
-    name: "Competitive and Clear Pricing",
-    description:
-      "Ensuring transparent and affordable pricing for dumpster rentals, with no hidden fees.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Local Expertise and Support",
-    description:
-      "Our local presence in Hudson, FL, means personalized service and expert guidance for your dumpster rental needs.",
-    icon: UsersIcon,
-  },
-];
+import RequestForm from "../../components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
 
-const faqs = [
+import LocationSchema from "@/components/new/LocationSchema";
+
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Hudson, FL",
+  title: "Affordable Dumpster Rentals in Hudson, Florida",
+  description:
+    "Fast and reliable dumpster rentals in Hudson, FL. We offer 10, 15, and 20-yard dumpsters for residential and commercial projects.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Hudson",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Hudson, FL",
+  imageOverlayText: "Serving Hudson & Nearby Communities",
+};
+
+const hudsonDumpsters = [
   {
-    question: "What is a dumpster trailer?",
-    answer:
-      "A dumpster trailer, delivered by truck, is ideal for construction, demolition projects, or large-scale cleanouts. We offer various sizes to suit your needs in Hudson, FL.",
-    items: [],
-  },
-  {
-    question: "Why would I rent a dumpster?",
-    answer:
-      "Renting a dumpster is useful for disposing of large amounts of waste from construction, renovation, or large clean-outs. Here are scenarios where a dumpster rental is beneficial:",
-    items: [
-      "Home renovations or remodels",
-      "Construction debris removal",
-      "Property cleanouts",
-      "Yard waste disposal",
-      "Large scale garbage removal",
-      // ... Other examples as in the provided structure
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Hudson, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
+    description:
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
     ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    question: "What are my options when renting a dumpster in Hudson, FL?",
-    answer:
-      "We offer dumpsters in various sizes, including 10, 15, and 20 cubic yards, with flexible rental periods starting from three days.",
-    items: [],
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Hudson, FL",
+    size: "15 Yard Dumpster",
+    description:
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    question: "How much does it cost to rent a dumpster in Hudson, FL?",
-    answer:
-      "Costs vary based on size, rental duration, and specific requirements. Our prices start competitively, with detailed quotes provided based on your project.",
-    items: [],
-  },
-  {
-    question: "Why rent from us in Hudson, FL?",
-    answer:
-      "We are a reputable dumpster rental service known for our range of options, professional guidance, excellent customer service, and competitive pricing.",
-    items: [],
-  },
-  {
-    question: "What items can’t go in a dumpster?",
-    answer:
-      "We generally prohibit hazardous materials, chemicals, paint, and asbestos for safety and environmental reasons.",
-    items: [],
-  },
-  {
-    question: "How can a dumpster assist during a move?",
-    answer:
-      "A dumpster is handy for disposing of large, unwanted items during a move, such as old furniture, appliances, and general clutter, making the process smoother and more efficient.",
-    items: [],
-  },
-  {
-    question: "Are there alternatives to dumpsters for waste disposal?",
-    answer:
-      "Yes, we also offer junk removal services, which might be more suitable depending on your waste disposal needs.",
-    items: [],
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Hudson, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
+    description:
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const features = [
-  {
-    name: "Customized Dumpster Rental Services",
-    description:
-      "Tailoring our dumpster rental solutions to meet the specific requirements of your projects in Hudson, FL.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Customized dumpster rental solutions in Hudson, FL",
-  },
-  {
-    name: "Commitment to Customer Satisfaction",
-    description:
-      "Our top priority is your satisfaction, ensuring a hassle-free rental experience from start to finish.",
-    imageSrc: dumptrailer,
-    imageAlt: "Focused on customer satisfaction in dumpster rental",
-  },
-];
-
-const metatitle = "Hudson FL Dumpster Rental | Affordable & Efficient";
+const metatitle = "Hudson Dumpster Rental | Affordable Dumpsters in Hudson FL";
 const description =
-  "Leading dumpster rental services in Hudson, FL. We provide various sizes, flexible scheduling, and competitive pricing for all your project needs.";
+  "Lupo Enterprises provides affordable dumpster rental services in Hudson, FL. Choose from 10, 15, or 20-yard dumpsters with fast delivery and great service.";
 
-export default function DumpsterRentalHudsonFL() {
+export default function DumpsterRentalHudson() {
   return (
     <>
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Hudson dumpster rental, dumpster rental Hudson FL, dumpster rental services, 10 yard dumpster Hudson, 15 yard dumpster, 20 yard dumpster Hudson, junk removal Hudson FL, roll off dumpster Hudson"
+        />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
         <meta property="og:description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-hudson-fl"
+        />
       </Head>
 
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Efficient dumpster rental in Hudson, FL"
-        location="Hudson's Top Choice"
-        service="Dumpster Rental Service"
-        ptag="Get the best dumpster rental experience in Hudson, FL with our reliable and affordable services."
-        cta="Rent a Dumpster"
-      ></Junkheader>
-
-      <Corefeatures
-        header="Dependable Dumpster Rental in Hudson"
-        subheader="Perfect for Every Project"
-        ptag="From small renovations to major constructions, our dumpsters fit all sizes of projects in Hudson, FL."
-        points={points}
+      <LocationSchema
+        areaServed={["Hudson"]}
+        geoCoordinates={{ latitude: 28.3644, longitude: -82.6932 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-hudson-fl"
+        locationName="Hudson, FL"
       />
 
-      <Multiblock
-        header="EXPERTS IN Junk removal"
-        ptag="We are dedicated to providing efficient and reliable dumpster rental services, simplifying your waste management in Hudson, FL."
-        features={features}
-      ></Multiblock>
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      {/* <Contacttwo /> */}
-      <Imagegridclone
-        header="Our Dumpster Projects in Hudson, FL"
-        ptag="Explore our range of dumpsters, suitable for a variety of projects in Hudson, FL."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+        <DumpsterOptions
+          locationName="Hudson"
+          title="Choose the Perfect Dumpster Size for Your Hudson Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Hudson, from home cleanouts to major construction jobs."
+          dumpsters={hudsonDumpsters}
+        />
 
-      <Otherservices
-        header="Comprehensive Waste Solutions"
-        subheader="More Than Just Dumpster Rentals"
-        ptag="We offer a complete suite of waste management services, ensuring all your needs are covered."
-      ></Otherservices>
+        <RequestForm />
 
-      <Faqs faqs={faqs} />
+        <Testimonials />
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster in Hudson Today"></Contactwhite>
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Hudson"
+          subtitle="Renting a dumpster in Hudson is easy and hassle-free with Lupo Enterprises."
+        />
+
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
+
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Hudson Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Hudson, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Hudson Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Hudson rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Hudson"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Hudson area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }
