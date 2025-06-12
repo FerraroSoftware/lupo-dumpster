@@ -41,7 +41,7 @@ const navigation = {
     },
     { name: "Odessa", href: "/services/dumpster-rental-odessa-fl" },
     { name: "San Antonio", href: "/services/dumpster-rental-san-antonio-fl" },
-    { name: "Spring Hill", href: "/services/dumpster-rental-spring-hill-fl" },
+    { name: "Spring Hill", href: "/services/dumpster-rental-spring-hill" },
     { name: "Trinity", href: "/services/dumpster-rental-trinity-fl" },
     {
       name: "Wesley Chapel",
@@ -56,7 +56,7 @@ const navigation = {
     { name: "Keystone", href: "/services/dumpster-rental-keystone-fl" },
     { name: "Largo", href: "/services/dumpster-rental-largo-fl" },
     { name: "Oldsmar", href: "/services/dumpster-rental-oldsmar-fl" },
-    { name: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor-fl" },
+    { name: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor" },
     {
       name: "Pinellas Park",
       href: "/services/dumpster-rental-pinellas-park-fl",
@@ -70,7 +70,7 @@ const navigation = {
       name: "St Petersburg",
       href: "/services/dumpster-rental-st-petersburg-fl",
     },
-    { name: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay-fl" },
+    { name: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay" },
   ],
   serviceLocationsCounties: [
     { name: "Brooksville", href: "/services/dumpster-rental-brooksville-fl" },
