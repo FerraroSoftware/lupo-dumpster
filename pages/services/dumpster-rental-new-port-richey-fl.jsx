@@ -89,8 +89,7 @@ const newPortRicheyDumpsters = [
   },
 ];
 
-const metatitle =
-  "New Port Richey Dumpster Rental | Affordable Dumpsters | Call Now";
+const metatitle = "New Port Richey Dumpster Rental | Affordable Dumpsters";
 const description =
   "Fast and affordable dumpster rental in New Port Richey, FL by Lupo Enterprises. Choose from 10, 15, and 20-yard dumpster sizes with same-day delivery.";
 
