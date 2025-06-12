@@ -1,8 +1,3 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
 // import { FadeIn } from "@/components/FadeIn";
 import { FadeIn } from "./FadeIn";
 import Link from "next/link";
@@ -31,18 +26,66 @@ const navigation = {
     { name: "About Us", href: "/about-us" },
     { name: "Contact", href: "/contact" },
     { name: "Service Locations", href: "/service-locations" },
-    // { name: "Garage Door Suppliers", href: "/garage-door-suppliers" },
-    // { name: "HVLS Fans", href: "/industrial-fans" },
     { name: "Blog", href: "/blog" },
     { name: "Home", href: "/" },
   ],
-  legal: [
-    // { name: "Pricing", href: "/dumpster-rental-pricing" },
-    { name: "10 Yard Dumpster", href: "/services/10-yard-dump-trailer" },
-    { name: "15 Yard Dumpster", href: "/services/15-yard-dump-trailer" },
-    { name: "20 Yard Dumpster", href: "/services/20-yard-dump-trailer" },
-    // { name: "Scissor Lifts", href: "/loading-dock/scissor-lift" },
-    { name: "All Dumpsters", href: "/dumpster-rental-pricing" },
+  serviceLocationsPasco: [
+    { name: "Dade City", href: "/services/dumpster-rental-dade-city-fl" },
+    { name: "Holiday", href: "/services/dumpster-rental-holiday-fl" },
+    { name: "Hudson", href: "/services/dumpster-rental-hudson-fl" },
+    { name: "Land O Lakes", href: "/services/dumpster-rental-land-o-lakes-fl" },
+    { name: "Lutz", href: "/services/dumpster-rental-lutz-fl" },
+    {
+      name: "New Port Richey",
+      href: "/services/dumpster-rental-new-port-richey-fl",
+    },
+    { name: "Odessa", href: "/services/dumpster-rental-odessa-fl" },
+    { name: "San Antonio", href: "/services/dumpster-rental-san-antonio-fl" },
+    { name: "Spring Hill", href: "/services/dumpster-rental-spring-hill-fl" },
+    { name: "Trinity", href: "/services/dumpster-rental-trinity-fl" },
+    {
+      name: "Wesley Chapel",
+      href: "/services/dumpster-rental-wesley-chapel-fl",
+    },
+    { name: "Westchase", href: "/services/dumpster-rental-westchase-fl" },
+    { name: "Zephyrhills", href: "/services/dumpster-rental-zephyrhills-fl" },
+  ],
+  serviceLocationsPinellas: [
+    { name: "Clearwater", href: "/services/dumpster-rental-clearwater-fl" },
+    { name: "Dunedin", href: "/services/dumpster-rental-dunedin-fl" },
+    { name: "Keystone", href: "/services/dumpster-rental-keystone-fl" },
+    { name: "Largo", href: "/services/dumpster-rental-largo-fl" },
+    { name: "Oldsmar", href: "/services/dumpster-rental-oldsmar-fl" },
+    { name: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor-fl" },
+    {
+      name: "Pinellas Park",
+      href: "/services/dumpster-rental-pinellas-park-fl",
+    },
+    {
+      name: "Safety Harbor",
+      href: "/services/dumpster-rental-safety-harbor-fl",
+    },
+    { name: "Seminole", href: "/services/dumpster-rental-seminole-fl" },
+    {
+      name: "St Petersburg",
+      href: "/services/dumpster-rental-st-petersburg-fl",
+    },
+    { name: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay-fl" },
+  ],
+  serviceLocationsCounties: [
+    { name: "Brooksville", href: "/services/dumpster-rental-brooksville-fl" },
+    {
+      name: "Hernando County",
+      href: "/services/dumpster-rental-hernando-county-fl",
+    },
+    {
+      name: "Hillsborough County",
+      href: "/services/dumpster-rental-hillsborough-county-fl",
+    },
+    {
+      name: "Pinellas County",
+      href: "/services/dumpster-rental-pinellas-county-fl",
+    },
   ],
   social: [
     {
@@ -71,46 +114,10 @@ const navigation = {
         </svg>
       ),
     },
-
-    // {
-    //   name: "LinkedIn",
-    //   href: "https://www.linkedin.com/company/paratec-door-solutions/",
-    //   icon: (props) => (
-    //     <svg fill="currentColor" viewBox="0 0 18 18" {...props}>
-    //       <path d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z" />
-    //     </svg>
-    //   ),
-    // },
-    // {
-    //   name: "Twitter",
-    //   href: "https://twitter.com/paratecdoor",
-    //   icon: (props) => (
-    //     <svg fill="currentColor" viewBox="0 0 22 20" {...props}>
-    //       <path d="M17.2048 0.25H20.5128L13.2858 8.51L21.7878 19.75H15.1298L9.91584 12.933L3.94984 19.75H0.639844L8.36984 10.915L0.214844 0.25H7.03984L11.7528 6.481L17.2028 0.25H17.2048ZM16.0438 17.77H17.8768L6.04484 2.126H4.07784L16.0438 17.77Z" />
-    //     </svg>
-    //   ),
-    // },
-    // {
-    //   name: "YouTube",
-    //   href: "#",
-    //   icon: (props) => (
-    //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-    //       <path
-    //         fillRule="evenodd"
-    //         d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-    //         clipRule="evenodd"
-    //       />
-    //     </svg>
-    //   ),
-    // },
     {
       name: "Call",
       href: "tel:+17273176717",
       icon: (props) => (
-        // <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-        //   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-        // </svg>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -167,11 +174,15 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-6 text-zinc-600">
+              Lupo Enterprises LLC
+              <br />
               LIC #L20000153106
               <br />
-              Located in New Port Richey <br /> Monday - Friday: 7:00 am - 8:00
-              pm <br /> Saturday: 7:00 am - 8:00 pm <br />
-              Sunday: 7:00 am - 8:00 pm
+              Address: 5647 Andrea Dr, Holiday, FL 34690
+              <br />
+              Phone: (727) 317-6717
+              <br />
+              Hours: Wednesday - Tuesday: 7:00 AM - 8:00 PM
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -186,11 +197,11 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
-                  Dumpster Services
+                  Services
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.solutions.map((item) => (
@@ -205,7 +216,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+              <div>
                 <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
                   Junk Removal
                 </h3>
@@ -222,14 +233,12 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
-                  Dumpster Sizes
+                  Pasco County
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {navigation.serviceLocationsPasco.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -241,25 +250,39 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-
               <div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
-                    Company
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {navigation.company.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm leading-6 text-zinc-600 hover:text-zinc-900"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
+                  Pinellas County
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.serviceLocationsPinellas.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-sm leading-6 text-zinc-600 hover:text-zinc-900"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold leading-6 text-zinc-900 uppercase">
+                  Company
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.company.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-sm leading-6 text-zinc-600 hover:text-zinc-900"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
