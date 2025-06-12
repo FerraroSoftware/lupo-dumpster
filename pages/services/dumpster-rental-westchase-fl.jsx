@@ -1,110 +1,98 @@
+// pages/dumpster-rental-westchase.tsx
+
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
-import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
 
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Contactwhite from "../../components/Contactwhite";
-import Testimonialsection from "../../components/Testimonialsection";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-const points = [
+import RequestForm from "../../components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
+import LocationSchema from "@/components/new/LocationSchema";
+
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Westchase, FL",
+  title: "Affordable Dumpster Rentals in Westchase, Florida",
+  description:
+    "Lupo Enterprises provides dependable dumpster rental services in Westchase, FL. Choose from 10, 15, and 20-yard dumpsters with fast delivery and fair pricing.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Hillsborough County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Westchase",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Westchase, FL",
+  imageOverlayText: "Serving Westchase & Nearby Communities",
+};
+
+const westchaseDumpsters = [
   {
-    name: "Multiple Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Westchase, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "Choose from a variety of dumpster sizes for residential and commercial projects in Westchase, FL.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Fast & Reliable Service",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Westchase, FL",
+    size: "15 Yard Dumpster",
     description:
-      "Timely dumpster delivery and pickup to keep your project running smoothly.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Upfront & Transparent Pricing",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Westchase, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
     description:
-      "No hidden fees—just clear, competitive pricing for stress-free dumpster rentals.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Local Experts in Waste Management",
-    description:
-      "Proudly serving the Westchase community with trusted dumpster rental services.",
-    icon: UsersIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const faqs = [
-  {
-    question:
-      "How do I choose the right dumpster size for my project in Westchase?",
-    answer:
-      "Our team can help you select the best dumpster size based on your waste disposal needs.",
-    items: [],
-  },
-  {
-    question: "What are the rental rates for dumpsters in Westchase?",
-    answer:
-      "Pricing depends on dumpster size and rental duration. Contact us for a free, no-obligation quote.",
-    items: [],
-  },
-  {
-    question: "What types of materials can I dispose of in a dumpster?",
-    answer:
-      "Most non-hazardous waste materials are accepted. We’ll provide you with a list of restricted items.",
-    items: [],
-  },
-  {
-    question: "Can I extend my rental period if needed?",
-    answer:
-      "Yes! We offer flexible rental extensions. Just give us a call to adjust your rental period.",
-    items: [],
-  },
-  {
-    question: "Do you offer same-day dumpster rental in Westchase?",
-    answer:
-      "Same-day services are available based on availability. We recommend booking in advance to secure your dumpster.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Reliable Dumpster Rental Services in Westchase, FL",
-    description:
-      "We provide hassle-free dumpster rental services for homeowners, businesses, and contractors in Westchase.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Reliable dumpster rental services in Westchase",
-  },
-  {
-    name: "Customer-Focused Service",
-    description:
-      "Our commitment to excellent customer service ensures a smooth dumpster rental experience in Westchase. Call today for a free quote!",
-    imageSrc: dumptrailer,
-    imageAlt: "Exceptional customer service for dumpster rentals",
-  },
-];
-
-const metatitle = "Westchase Dumpster Rental | Fast & Affordable | Book Now";
+const metatitle =
+  "Westchase Dumpster Rental | Affordable Dumpsters in Westchase FL";
 const description =
-  "Looking for reliable dumpster rental services in Westchase, FL? We offer flexible rental options, competitive pricing, and fast service. Get a free quote today!";
+  "Rent affordable dumpsters in Westchase, FL with Lupo Enterprises. Same-day delivery available on 10, 15, and 20-yard roll-off dumpsters for any project.";
 
 export default function DumpsterRentalWestchase() {
   return (
@@ -112,50 +100,76 @@ export default function DumpsterRentalWestchase() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Westchase dumpster rental, dumpster rental Westchase FL, dumpster rental services, 10 yard dumpster Westchase, 15 yard dumpster, 20 yard dumpster Westchase, junk removal Westchase FL, roll off dumpster Westchase"
+        />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
         <meta property="og:description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-westchase-fl"
+        />
       </Head>
 
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Reliable dumpster rental in Westchase"
-        location="Westchase's Trusted"
-        service="Dumpster Rental Provider"
-        ptag="Providing affordable and efficient dumpster rental services in Westchase, FL. Keep your project clean and organized with us."
-        cta="Get a Dumpster Today"
+      <LocationSchema
+        areaServed={["Westchase"]}
+        geoCoordinates={{ latitude: 28.055, longitude: -82.6095 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-westchase-fl"
+        locationName="Westchase, FL"
       />
 
-      <Corefeatures
-        header="Top Dumpster Rental in Westchase"
-        subheader="Dumpster Solutions for Every Project"
-        ptag="From home renovations to construction sites, our dumpster rentals are the perfect solution for all your waste management needs."
-        points={points}
-      />
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      <Multiblock
-        header="YOUR RELIABLE DUMPSTER PARTNER"
-        ptag="Providing high-quality, affordable dumpster rental services to Westchase and surrounding areas."
-        features={features}
-      />
+        <DumpsterOptions
+          locationName="Westchase"
+          title="Choose the Perfect Dumpster Size for Your Westchase Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Westchase, from home cleanouts to large-scale renovations."
+          dumpsters={westchaseDumpsters}
+        />
 
-      <Imagegridclone
-        header="Dumpster Rental in Action"
-        ptag="Check out our range of dumpster sizes, perfect for residential and commercial projects in Westchase."
-      />
+        <RequestForm />
 
-      <Testimonialsection />
+        <Testimonials />
 
-      <Otherservices
-        header="Westchase's Waste Management Experts"
-        subheader="More Than Just Dumpster Rentals"
-        ptag="We also provide junk removal and other waste disposal solutions to meet all your needs."
-      />
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Westchase"
+          subtitle="Renting a dumpster in Westchase is quick, easy, and affordable with Lupo Enterprises."
+        />
 
-      <Faqs faqs={faqs} />
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
 
-      <Contactwhite header="Book Your Dumpster in Westchase Today" />
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Westchase Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Westchase, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Westchase Dumpster?"
+          subtitle="Please follow these disposal guidelines to ensure safe, responsible waste management during your Westchase rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Westchase"
+          subtitle="Our dumpsters support all types of residential and commercial projects in Westchase and surrounding areas."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-rated service."
+        />
+      </main>
     </>
   );
 }

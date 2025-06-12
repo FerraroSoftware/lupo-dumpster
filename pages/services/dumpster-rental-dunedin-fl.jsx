@@ -1,4 +1,4 @@
-// pages/dumpster-rental-new-port-richey.tsx
+// pages/dumpster-rental-dunedin-fl.tsx
 
 import React from "react";
 import Head from "next/head";
@@ -23,27 +23,27 @@ import { CallToActionSection } from "@/components/new/call-to-action-section";
 import LocationSchema from "@/components/new/LocationSchema";
 
 const heroData = {
-  badgeText: "#1 Dumpster Rental Service in New Port Richey, FL",
-  title: "Affordable Dumpster Rentals in New Port Richey, Florida",
+  badgeText: "#1 Dumpster Rental Service in Dunedin, FL",
+  title: "Affordable Dumpster Rentals in Dunedin, Florida",
   description:
-    "Lupo Enterprises offers reliable and affordable dumpster rental services in New Port Richey. Choose from 10, 15, or 20-yard dumpsters for your project.",
+    "Lupo Enterprises provides reliable dumpster rental services in Dunedin, FL. Choose from 10, 15, and 20-yard dumpsters with fast delivery and transparent pricing.",
   heroChecklistItems: [
     { text: "Same-Day & Next-Day Delivery Available" },
     { text: "Transparent, Competitive Pricing" },
-    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Locally Owned & Operated in Pinellas County" },
     { text: "Residential & Commercial Dumpsters" },
   ],
-  primaryButtonText: "Get a Free Quote for New Port Richey",
+  primaryButtonText: "Get a Free Quote for Dunedin",
   imageSrc: dumpsterrentalpros,
-  imageAlt: "Lupo Dumpster Rental truck in New Port Richey, FL",
-  imageOverlayText: "Serving New Port Richey & Nearby Areas",
+  imageAlt: "Lupo Dumpster Rental truck in Dunedin, FL",
+  imageOverlayText: "Serving Dunedin & Surrounding Areas",
 };
 
-const newPortRicheyDumpsters = [
+const dunedinDumpsters = [
   {
     id: 1,
     imageUrl: dumpsterrental,
-    imageAlt: "10 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "10 Yard Dumpster Rental in Dunedin, FL",
     isPopular: true,
     size: "10 Yard Dumpster",
     description:
@@ -59,7 +59,7 @@ const newPortRicheyDumpsters = [
   {
     id: 2,
     imageUrl: dumpstertrailer1,
-    imageAlt: "15 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "15 Yard Dumpster Rental in Dunedin, FL",
     size: "15 Yard Dumpster",
     description:
       "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
@@ -74,7 +74,7 @@ const newPortRicheyDumpsters = [
   {
     id: 3,
     imageUrl: dumptrailers,
-    imageAlt: "20 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "20 Yard Dumpster Rental in Dunedin, FL",
     isPopular: false,
     size: "20 Yard Dumpster",
     description:
@@ -90,11 +90,11 @@ const newPortRicheyDumpsters = [
 ];
 
 const metatitle =
-  "New Port Richey Dumpster Rental | Affordable Dumpsters in New Port Richey FL";
+  "Dunedin Dumpster Rental | Affordable Dumpsters in Dunedin FL";
 const description =
-  "Fast and affordable dumpster rental in New Port Richey, FL by Lupo Enterprises. Choose from 10, 15, and 20-yard dumpster sizes with same-day delivery.";
+  "Get affordable dumpster rental services in Dunedin, FL from Lupo Enterprises. We offer 10, 15, and 20-yard dumpsters for residential and commercial use.";
 
-export default function DumpsterRentalNewPortRichey() {
+export default function DumpsterRentalDunedin() {
   return (
     <>
       <Head>
@@ -102,7 +102,7 @@ export default function DumpsterRentalNewPortRichey() {
         <meta name="description" content={description} />
         <meta
           name="keywords"
-          content="New Port Richey dumpster rental, dumpster rental New Port Richey FL, dumpster rental services, 10 yard dumpster New Port Richey, 15 yard dumpster, 20 yard dumpster New Port Richey, junk removal New Port Richey FL, roll off dumpster New Port Richey"
+          content="Dunedin dumpster rental, dumpster rental Dunedin FL, dumpster rental services, 10 yard dumpster Dunedin, 15 yard dumpster, 20 yard dumpster Dunedin, junk removal Dunedin FL, roll off dumpster Dunedin"
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
@@ -111,25 +111,25 @@ export default function DumpsterRentalNewPortRichey() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-dunedin-fl"
         />
       </Head>
 
       <LocationSchema
-        areaServed={["New Port Richey"]}
-        geoCoordinates={{ latitude: 28.2442, longitude: -82.7193 }}
-        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
-        locationName="New Port Richey, FL"
+        areaServed={["Dunedin"]}
+        geoCoordinates={{ latitude: 28.0199, longitude: -82.7718 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-dunedin-fl"
+        locationName="Dunedin, FL"
       />
 
       <main className="min-h-screen">
         <HeroService {...heroData} />
 
         <DumpsterOptions
-          locationName="New Port Richey"
-          title="Choose the Perfect Dumpster Size for Your New Port Richey Project"
-          subtitle="We offer a variety of dumpster sizes to accommodate any project in New Port Richey, from home cleanouts to major construction jobs."
-          dumpsters={newPortRicheyDumpsters}
+          locationName="Dunedin"
+          title="Choose the Perfect Dumpster Size for Your Dunedin Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Dunedin, from home cleanouts to large renovations."
+          dumpsters={dunedinDumpsters}
         />
 
         <RequestForm />
@@ -137,8 +137,8 @@ export default function DumpsterRentalNewPortRichey() {
         <Testimonials />
 
         <RentalProcessSteps
-          title="Our Simple Dumpster Rental Process in New Port Richey"
-          subtitle="Renting a dumpster in New Port Richey is quick and hassle-free with Lupo Enterprises."
+          title="Our Simple Dumpster Rental Process in Dunedin"
+          subtitle="Renting a dumpster in Dunedin is quick and hassle-free with Lupo Enterprises."
         />
 
         <ComparisonTableSection
@@ -151,23 +151,23 @@ export default function DumpsterRentalNewPortRichey() {
         <RoofersSection />
 
         <FaqSection
-          title="New Port Richey Dumpster Rental FAQs"
-          subtitle="Answers to common questions about renting a dumpster in New Port Richey, FL."
+          title="Dunedin Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Dunedin, FL."
         />
 
         <DisposalGuidelines
-          title="What Can Go in Your New Port Richey Dumpster?"
-          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your New Port Richey rental."
+          title="What Can Go in Your Dunedin Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Dunedin rental."
         />
 
         <CommonDumpsterUses
-          title="Common Dumpster Uses in New Port Richey"
-          subtitle="Our dumpsters are perfect for a wide range of projects in the New Port Richey area."
+          title="Common Dumpster Uses in Dunedin"
+          subtitle="Our dumpsters are ideal for a wide range of projects in the Dunedin area."
         />
 
         <CallToActionSection
           title="Ready for a Dumpster Rental?"
-          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-rated service."
         />
       </main>
     </>

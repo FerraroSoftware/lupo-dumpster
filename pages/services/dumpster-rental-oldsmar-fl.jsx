@@ -1,4 +1,4 @@
-// pages/dumpster-rental-new-port-richey.tsx
+// pages/dumpster-rental-oldsmar-fl.tsx
 
 import React from "react";
 import Head from "next/head";
@@ -23,27 +23,27 @@ import { CallToActionSection } from "@/components/new/call-to-action-section";
 import LocationSchema from "@/components/new/LocationSchema";
 
 const heroData = {
-  badgeText: "#1 Dumpster Rental Service in New Port Richey, FL",
-  title: "Affordable Dumpster Rentals in New Port Richey, Florida",
+  badgeText: "#1 Dumpster Rental Service in Oldsmar, FL",
+  title: "Affordable Dumpster Rentals in Oldsmar, Florida",
   description:
-    "Lupo Enterprises offers reliable and affordable dumpster rental services in New Port Richey. Choose from 10, 15, or 20-yard dumpsters for your project.",
+    "Lupo Enterprises offers fast and affordable dumpster rentals in Oldsmar, FL. Choose from 10, 15, or 20-yard dumpsters for your home or business.",
   heroChecklistItems: [
     { text: "Same-Day & Next-Day Delivery Available" },
     { text: "Transparent, Competitive Pricing" },
-    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Locally Owned & Operated in Pinellas County" },
     { text: "Residential & Commercial Dumpsters" },
   ],
-  primaryButtonText: "Get a Free Quote for New Port Richey",
+  primaryButtonText: "Get a Free Quote for Oldsmar",
   imageSrc: dumpsterrentalpros,
-  imageAlt: "Lupo Dumpster Rental truck in New Port Richey, FL",
-  imageOverlayText: "Serving New Port Richey & Nearby Areas",
+  imageAlt: "Lupo Dumpster Rental truck in Oldsmar, FL",
+  imageOverlayText: "Serving Oldsmar & Nearby Areas",
 };
 
-const newPortRicheyDumpsters = [
+const oldsmarDumpsters = [
   {
     id: 1,
     imageUrl: dumpsterrental,
-    imageAlt: "10 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "10 Yard Dumpster Rental in Oldsmar, FL",
     isPopular: true,
     size: "10 Yard Dumpster",
     description:
@@ -59,7 +59,7 @@ const newPortRicheyDumpsters = [
   {
     id: 2,
     imageUrl: dumpstertrailer1,
-    imageAlt: "15 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "15 Yard Dumpster Rental in Oldsmar, FL",
     size: "15 Yard Dumpster",
     description:
       "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
@@ -74,7 +74,7 @@ const newPortRicheyDumpsters = [
   {
     id: 3,
     imageUrl: dumptrailers,
-    imageAlt: "20 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "20 Yard Dumpster Rental in Oldsmar, FL",
     isPopular: false,
     size: "20 Yard Dumpster",
     description:
@@ -90,11 +90,11 @@ const newPortRicheyDumpsters = [
 ];
 
 const metatitle =
-  "New Port Richey Dumpster Rental | Affordable Dumpsters in New Port Richey FL";
+  "Oldsmar Dumpster Rental | Affordable Dumpsters in Oldsmar FL";
 const description =
-  "Fast and affordable dumpster rental in New Port Richey, FL by Lupo Enterprises. Choose from 10, 15, and 20-yard dumpster sizes with same-day delivery.";
+  "Need a dumpster in Oldsmar, FL? Lupo Enterprises offers affordable dumpster rentals in 10, 15, and 20-yard sizes for residential and commercial projects.";
 
-export default function DumpsterRentalNewPortRichey() {
+export default function DumpsterRentalOldsmar() {
   return (
     <>
       <Head>
@@ -102,7 +102,7 @@ export default function DumpsterRentalNewPortRichey() {
         <meta name="description" content={description} />
         <meta
           name="keywords"
-          content="New Port Richey dumpster rental, dumpster rental New Port Richey FL, dumpster rental services, 10 yard dumpster New Port Richey, 15 yard dumpster, 20 yard dumpster New Port Richey, junk removal New Port Richey FL, roll off dumpster New Port Richey"
+          content="Oldsmar dumpster rental, dumpster rental Oldsmar FL, dumpster rental services, 10 yard dumpster Oldsmar, 15 yard dumpster, 20 yard dumpster Oldsmar, junk removal Oldsmar FL, roll off dumpster Oldsmar"
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
@@ -111,25 +111,25 @@ export default function DumpsterRentalNewPortRichey() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-oldsmar-fl"
         />
       </Head>
 
       <LocationSchema
-        areaServed={["New Port Richey"]}
-        geoCoordinates={{ latitude: 28.2442, longitude: -82.7193 }}
-        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
-        locationName="New Port Richey, FL"
+        areaServed={["Oldsmar"]}
+        geoCoordinates={{ latitude: 28.0342, longitude: -82.6651 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-oldsmar-fl"
+        locationName="Oldsmar, FL"
       />
 
       <main className="min-h-screen">
         <HeroService {...heroData} />
 
         <DumpsterOptions
-          locationName="New Port Richey"
-          title="Choose the Perfect Dumpster Size for Your New Port Richey Project"
-          subtitle="We offer a variety of dumpster sizes to accommodate any project in New Port Richey, from home cleanouts to major construction jobs."
-          dumpsters={newPortRicheyDumpsters}
+          locationName="Oldsmar"
+          title="Choose the Perfect Dumpster Size for Your Oldsmar Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Oldsmar, from cleanouts to renovations."
+          dumpsters={oldsmarDumpsters}
         />
 
         <RequestForm />
@@ -137,8 +137,8 @@ export default function DumpsterRentalNewPortRichey() {
         <Testimonials />
 
         <RentalProcessSteps
-          title="Our Simple Dumpster Rental Process in New Port Richey"
-          subtitle="Renting a dumpster in New Port Richey is quick and hassle-free with Lupo Enterprises."
+          title="Our Simple Dumpster Rental Process in Oldsmar"
+          subtitle="Renting a dumpster in Oldsmar is easy and efficient with Lupo Enterprises."
         />
 
         <ComparisonTableSection
@@ -151,23 +151,23 @@ export default function DumpsterRentalNewPortRichey() {
         <RoofersSection />
 
         <FaqSection
-          title="New Port Richey Dumpster Rental FAQs"
-          subtitle="Answers to common questions about renting a dumpster in New Port Richey, FL."
+          title="Oldsmar Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Oldsmar, FL."
         />
 
         <DisposalGuidelines
-          title="What Can Go in Your New Port Richey Dumpster?"
-          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your New Port Richey rental."
+          title="What Can Go in Your Oldsmar Dumpster?"
+          subtitle="Please follow these guidelines to ensure safe and responsible disposal during your rental."
         />
 
         <CommonDumpsterUses
-          title="Common Dumpster Uses in New Port Richey"
-          subtitle="Our dumpsters are perfect for a wide range of projects in the New Port Richey area."
+          title="Common Dumpster Uses in Oldsmar"
+          subtitle="Our dumpsters are ideal for a wide range of projects in the Oldsmar area."
         />
 
         <CallToActionSection
           title="Ready for a Dumpster Rental?"
-          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-rated service."
         />
       </main>
     </>

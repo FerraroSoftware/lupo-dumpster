@@ -1,117 +1,125 @@
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
+
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+
 import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
+
+import {
+  Check,
+  Phone,
+  Home,
+  Wrench,
+  Trees,
+  Building,
+  HelpCircle,
+  PackageCheck,
+  PackageX,
+  PhoneCall,
+  CalendarCheck2,
+  Truck,
+  Trash2,
+  Star,
+  CheckCircle2,
+} from "lucide-react";
+import RequestForm from "../..//components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { WhyChooseUs } from "@/components/new/why-choose-us";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
 
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Contactwhite from "../../components/Contactwhite";
-import Testimonialsection from "../../components/Testimonialsection";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
+import LocationSchema from "@/components/new/LocationSchema";
 
-const points = [
-  {
-    name: "Diverse Dumpster Size Options",
-    description:
-      "Offering a variety of dumpster sizes to meet the needs of any project, large or small, in Spring Hill.",
-    icon: TruckIcon,
-  },
-  {
-    name: "Prompt Delivery & Pickup",
-    description:
-      "Guaranteeing on-time delivery and pickup to ensure your project stays on schedule without any hassle.",
-    icon: ClockIcon,
-  },
-  {
-    name: "Locally Operated Service",
-    description:
-      "As a locally operated business, we're committed to providing personalized service to the Spring Hill community.",
-    icon: UsersIcon,
-  },
-  {
-    name: "Transparent and Fair Pricing",
-    description:
-      "Our pricing is straightforward, with no hidden fees, providing you with a reliable and budget-friendly service.",
-    icon: CurrencyDollarIcon,
-  },
-];
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Spring Hill, FL",
+  title: "Affordable Dumpster Rentals in Spring Hill, Florida",
+  description:
+    "Your trusted local source for dumpster rentals in Spring Hill. We offer 10, 15, and 20-yard dumpsters for any residential or commercial project.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Hernando County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Spring Hill",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Spring Hill, FL",
+  imageOverlayText: "Serving Spring Hill & Nearby Areas",
+};
 
-const faqs = [
+const springHillDumpsters = [
   {
-    question: "What sizes of dumpsters are available in Spring Hill?",
-    answer:
-      "We offer various dumpster sizes, including but not limited to 10-yard, 15-yard, and 20-yard options, suitable for different project scales.",
-    items: [],
-  },
-  {
-    question: "How do I rent a dumpster in Spring Hill?",
-    answer:
-      "Simply contact us with your project details, and we'll assist you in choosing the right dumpster size and schedule your delivery.",
-    items: [],
-  },
-  {
-    question: "What are the rental rates for dumpsters in Spring Hill?",
-    answer:
-      "Our rates depend on the size of the dumpster and the duration of the rental. We provide upfront pricing tailored to your project's needs.",
-    items: [],
-  },
-  {
-    question: "Can the rental period be extended if needed?",
-    answer:
-      "Yes, we offer flexible rental periods. If you require an extension, just let us know in advance to accommodate your request.",
-    items: [],
-  },
-  {
-    question: "Do you offer expedited or same-day dumpster services?",
-    answer:
-      "We strive to meet your scheduling needs, including same-day service when possible. Advance booking is recommended for the best availability.",
-    items: [],
-  },
-  {
-    question:
-      "Are there any items prohibited from being placed in the dumpsters?",
-    answer:
-      "Certain items, like hazardous waste, are not permitted. We'll provide a complete list of prohibited items upon rental.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Efficient Dumpster Rental in Spring Hill",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Spring Hill, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "Our dumpster rental services are designed to be efficient and convenient, ensuring your waste management is seamless.",
-    imageSrc: dumptrailer,
-    imageAlt: "Efficient dumpster rental in Spring Hill",
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Dedicated Customer Support",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Spring Hill, FL",
+    size: "15 Yard Dumpster",
     description:
-      "Our team is committed to providing excellent customer service, ensuring your dumpster rental experience is smooth from start to finish.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Supportive dumpster rental team",
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
+  },
+  {
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Spring Hill, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
+    description:
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
 const metatitle =
-  "Spring Hill Dumpster Rental | Expert Junk Removal | Reliable & Affordable";
+  "Spring Hill Dumpster Rental | Affordable Dumpsters | Call Now";
 const description =
-  "Need a dumpster rental in Spring Hill? We offer reliable, affordable, and convenient dumpster solutions for your project needs.";
+  "Reliable dumpster rental services in Spring Hill, FL. Get fast delivery, upfront pricing, and a variety of dumpster sizes for your home or business cleanup.";
 
 export default function DumpsterRentalSpringHill() {
   return (
@@ -119,51 +127,75 @@ export default function DumpsterRentalSpringHill() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <meta property="og:title" content={metatitle} />
+        <meta property="og:description" content={description} />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Spring Hill dumpster rental, dumpster rental Spring Hill FL, dumpster rental services, 10 yard dumpster Spring Hill, 15 yard dumpster, 20 yard dumpster Spring Hill, junk removal Spring Hill FL, roll off dumpster Spring Hill"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-spring-hill"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Dumpster rental in Spring Hill"
-        location="Your Trusted"
-        service="Dumpster Rental in Spring Hill"
-        ptag="Experience hassle-free dumpster rental with our wide range of sizes and customer-first service approach in Spring Hill."
-        cta="Rent a Dumpster"
-      ></Junkheader>
-
-      <Corefeatures
-        header="Dumpster Rental Services Spring Hill"
-        subheader="Suitable for Any Project"
-        ptag="Select from our diverse dumpster sizes, ideal for both residential cleanouts and large construction projects in Spring Hill."
-        points={points}
+      <LocationSchema
+        areaServed={["Spring Hill"]}
+        geoCoordinates={{ latitude: 28.4769, longitude: -82.5255 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-spring-hill"
+        locationName="Spring Hill, FL"
       />
 
-      <Multiblock
-        header="DEPENDABLE DUMPSTER SERVICES"
-        ptag="Our focus on punctuality and reliability ensures that your waste management needs are efficiently met."
-        features={features}
-      ></Multiblock>
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      {/* <Contacttwo /> */}
+        <DumpsterOptions
+          locationName="Spring Hill"
+          title="Choose the Perfect Dumpster Size for Your Spring Hill Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Spring Hill, from home cleanouts to construction jobs."
+          dumpsters={springHillDumpsters}
+        />
 
-      <Imagegridclone
-        header="View Our Dumpster Projects"
-        ptag="Our dumpsters are designed to cater to different project requirements in Spring Hill."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+        <RequestForm />
 
-      <Otherservices
-        header="Beyond Dumpster Rentals"
-        subheader="Waste Solutions"
-        ptag="We provide comprehensive waste management services, including junk removal and specialized disposal services, in addition to dumpster rentals in Spring Hill."
-      ></Otherservices>
+        <Testimonials />
 
-      <Faqs faqs={faqs} />
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Spring Hill"
+          subtitle="Renting a dumpster in Spring Hill is quick and convenient with Lupo Enterprises."
+        />
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster in Spring Hill Today"></Contactwhite>
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
+
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Spring Hill Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Spring Hill, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Spring Hill Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Spring Hill rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Spring Hill"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Spring Hill area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }

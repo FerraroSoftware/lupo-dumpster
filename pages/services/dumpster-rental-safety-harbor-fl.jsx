@@ -1,4 +1,4 @@
-// pages/dumpster-rental-new-port-richey.tsx
+// pages/dumpster-rental-safety-harbor-fl.tsx
 
 import React from "react";
 import Head from "next/head";
@@ -23,27 +23,27 @@ import { CallToActionSection } from "@/components/new/call-to-action-section";
 import LocationSchema from "@/components/new/LocationSchema";
 
 const heroData = {
-  badgeText: "#1 Dumpster Rental Service in New Port Richey, FL",
-  title: "Affordable Dumpster Rentals in New Port Richey, Florida",
+  badgeText: "#1 Dumpster Rental Service in Safety Harbor, FL",
+  title: "Affordable Dumpster Rentals in Safety Harbor, Florida",
   description:
-    "Lupo Enterprises offers reliable and affordable dumpster rental services in New Port Richey. Choose from 10, 15, or 20-yard dumpsters for your project.",
+    "Get dependable dumpster rental services in Safety Harbor, FL with Lupo Enterprises. We offer 10, 15, and 20-yard roll-off dumpsters for residential and commercial projects.",
   heroChecklistItems: [
     { text: "Same-Day & Next-Day Delivery Available" },
     { text: "Transparent, Competitive Pricing" },
-    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Locally Owned & Operated in Pinellas County" },
     { text: "Residential & Commercial Dumpsters" },
   ],
-  primaryButtonText: "Get a Free Quote for New Port Richey",
+  primaryButtonText: "Get a Free Quote for Safety Harbor",
   imageSrc: dumpsterrentalpros,
-  imageAlt: "Lupo Dumpster Rental truck in New Port Richey, FL",
-  imageOverlayText: "Serving New Port Richey & Nearby Areas",
+  imageAlt: "Lupo Dumpster Rental truck in Safety Harbor, FL",
+  imageOverlayText: "Serving Safety Harbor & Nearby Areas",
 };
 
-const newPortRicheyDumpsters = [
+const safetyHarborDumpsters = [
   {
     id: 1,
     imageUrl: dumpsterrental,
-    imageAlt: "10 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "10 Yard Dumpster Rental in Safety Harbor, FL",
     isPopular: true,
     size: "10 Yard Dumpster",
     description:
@@ -59,7 +59,7 @@ const newPortRicheyDumpsters = [
   {
     id: 2,
     imageUrl: dumpstertrailer1,
-    imageAlt: "15 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "15 Yard Dumpster Rental in Safety Harbor, FL",
     size: "15 Yard Dumpster",
     description:
       "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
@@ -74,7 +74,7 @@ const newPortRicheyDumpsters = [
   {
     id: 3,
     imageUrl: dumptrailers,
-    imageAlt: "20 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "20 Yard Dumpster Rental in Safety Harbor, FL",
     isPopular: false,
     size: "20 Yard Dumpster",
     description:
@@ -90,11 +90,11 @@ const newPortRicheyDumpsters = [
 ];
 
 const metatitle =
-  "New Port Richey Dumpster Rental | Affordable Dumpsters in New Port Richey FL";
+  "Safety Harbor Dumpster Rental | Affordable Dumpsters in Safety Harbor FL";
 const description =
-  "Fast and affordable dumpster rental in New Port Richey, FL by Lupo Enterprises. Choose from 10, 15, and 20-yard dumpster sizes with same-day delivery.";
+  "Rent dumpsters in Safety Harbor, FL from Lupo Enterprises. Affordable pricing, fast delivery, and multiple sizes available for residential and commercial use.";
 
-export default function DumpsterRentalNewPortRichey() {
+export default function DumpsterRentalSafetyHarbor() {
   return (
     <>
       <Head>
@@ -102,7 +102,7 @@ export default function DumpsterRentalNewPortRichey() {
         <meta name="description" content={description} />
         <meta
           name="keywords"
-          content="New Port Richey dumpster rental, dumpster rental New Port Richey FL, dumpster rental services, 10 yard dumpster New Port Richey, 15 yard dumpster, 20 yard dumpster New Port Richey, junk removal New Port Richey FL, roll off dumpster New Port Richey"
+          content="Safety Harbor dumpster rental, dumpster rental Safety Harbor FL, dumpster rental services, 10 yard dumpster Safety Harbor, 15 yard dumpster, 20 yard dumpster Safety Harbor, junk removal Safety Harbor FL, roll off dumpster Safety Harbor"
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
@@ -111,25 +111,25 @@ export default function DumpsterRentalNewPortRichey() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-safety-harbor-fl"
         />
       </Head>
 
       <LocationSchema
-        areaServed={["New Port Richey"]}
-        geoCoordinates={{ latitude: 28.2442, longitude: -82.7193 }}
-        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
-        locationName="New Port Richey, FL"
+        areaServed={["Safety Harbor"]}
+        geoCoordinates={{ latitude: 27.9906, longitude: -82.6932 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-safety-harbor-fl"
+        locationName="Safety Harbor, FL"
       />
 
       <main className="min-h-screen">
         <HeroService {...heroData} />
 
         <DumpsterOptions
-          locationName="New Port Richey"
-          title="Choose the Perfect Dumpster Size for Your New Port Richey Project"
-          subtitle="We offer a variety of dumpster sizes to accommodate any project in New Port Richey, from home cleanouts to major construction jobs."
-          dumpsters={newPortRicheyDumpsters}
+          locationName="Safety Harbor"
+          title="Choose the Perfect Dumpster Size for Your Safety Harbor Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Safety Harbor, from home cleanouts to commercial renovations."
+          dumpsters={safetyHarborDumpsters}
         />
 
         <RequestForm />
@@ -137,8 +137,8 @@ export default function DumpsterRentalNewPortRichey() {
         <Testimonials />
 
         <RentalProcessSteps
-          title="Our Simple Dumpster Rental Process in New Port Richey"
-          subtitle="Renting a dumpster in New Port Richey is quick and hassle-free with Lupo Enterprises."
+          title="Our Simple Dumpster Rental Process in Safety Harbor"
+          subtitle="Renting a dumpster in Safety Harbor is fast and easy with Lupo Enterprises."
         />
 
         <ComparisonTableSection
@@ -151,23 +151,23 @@ export default function DumpsterRentalNewPortRichey() {
         <RoofersSection />
 
         <FaqSection
-          title="New Port Richey Dumpster Rental FAQs"
-          subtitle="Answers to common questions about renting a dumpster in New Port Richey, FL."
+          title="Safety Harbor Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Safety Harbor, FL."
         />
 
         <DisposalGuidelines
-          title="What Can Go in Your New Port Richey Dumpster?"
-          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your New Port Richey rental."
+          title="What Can Go in Your Safety Harbor Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Safety Harbor rental."
         />
 
         <CommonDumpsterUses
-          title="Common Dumpster Uses in New Port Richey"
-          subtitle="Our dumpsters are perfect for a wide range of projects in the New Port Richey area."
+          title="Common Dumpster Uses in Safety Harbor"
+          subtitle="Our dumpsters are ideal for a wide range of projects in the Safety Harbor area."
         />
 
         <CallToActionSection
           title="Ready for a Dumpster Rental?"
-          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-rated service."
         />
       </main>
     </>

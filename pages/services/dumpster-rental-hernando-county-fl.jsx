@@ -1,4 +1,4 @@
-// pages/dumpster-rental-new-port-richey.tsx
+// pages/dumpster-rental-hernando-county-fl.tsx
 
 import React from "react";
 import Head from "next/head";
@@ -23,27 +23,27 @@ import { CallToActionSection } from "@/components/new/call-to-action-section";
 import LocationSchema from "@/components/new/LocationSchema";
 
 const heroData = {
-  badgeText: "#1 Dumpster Rental Service in New Port Richey, FL",
-  title: "Affordable Dumpster Rentals in New Port Richey, Florida",
+  badgeText: "#1 Dumpster Rental Service in Hernando County, FL",
+  title: "Affordable Dumpster Rentals in Hernando County, Florida",
   description:
-    "Lupo Enterprises offers reliable and affordable dumpster rental services in New Port Richey. Choose from 10, 15, or 20-yard dumpsters for your project.",
+    "Lupo Enterprises proudly serves all of Hernando County with affordable dumpster rentals in 10, 15, and 20-yard sizes. Same-day delivery available.",
   heroChecklistItems: [
+    { text: "Serving Brooksville, Spring Hill, Weeki Wachee & more" },
     { text: "Same-Day & Next-Day Delivery Available" },
     { text: "Transparent, Competitive Pricing" },
-    { text: "Locally Owned & Operated in Pasco County" },
     { text: "Residential & Commercial Dumpsters" },
   ],
-  primaryButtonText: "Get a Free Quote for New Port Richey",
+  primaryButtonText: "Get a Free Quote for Hernando County",
   imageSrc: dumpsterrentalpros,
-  imageAlt: "Lupo Dumpster Rental truck in New Port Richey, FL",
-  imageOverlayText: "Serving New Port Richey & Nearby Areas",
+  imageAlt: "Lupo Dumpster Rental truck in Hernando County, FL",
+  imageOverlayText: "Proudly Serving All of Hernando County",
 };
 
-const newPortRicheyDumpsters = [
+const hernandoDumpsters = [
   {
     id: 1,
     imageUrl: dumpsterrental,
-    imageAlt: "10 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "10 Yard Dumpster Rental in Hernando County, FL",
     isPopular: true,
     size: "10 Yard Dumpster",
     description:
@@ -59,7 +59,7 @@ const newPortRicheyDumpsters = [
   {
     id: 2,
     imageUrl: dumpstertrailer1,
-    imageAlt: "15 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "15 Yard Dumpster Rental in Hernando County, FL",
     size: "15 Yard Dumpster",
     description:
       "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
@@ -74,7 +74,7 @@ const newPortRicheyDumpsters = [
   {
     id: 3,
     imageUrl: dumptrailers,
-    imageAlt: "20 Yard Dumpster Rental in New Port Richey, FL",
+    imageAlt: "20 Yard Dumpster Rental in Hernando County, FL",
     isPopular: false,
     size: "20 Yard Dumpster",
     description:
@@ -90,11 +90,11 @@ const newPortRicheyDumpsters = [
 ];
 
 const metatitle =
-  "New Port Richey Dumpster Rental | Affordable Dumpsters in New Port Richey FL";
+  "Hernando County Dumpster Rental | Brooksville & Spring Hill Dumpsters";
 const description =
-  "Fast and affordable dumpster rental in New Port Richey, FL by Lupo Enterprises. Choose from 10, 15, and 20-yard dumpster sizes with same-day delivery.";
+  "Affordable dumpster rentals in Hernando County, FL by Lupo Enterprises. Serving Brooksville, Spring Hill, Weeki Wachee & surrounding areas with same-day delivery.";
 
-export default function DumpsterRentalNewPortRichey() {
+export default function DumpsterRentalHernandoCounty() {
   return (
     <>
       <Head>
@@ -102,7 +102,7 @@ export default function DumpsterRentalNewPortRichey() {
         <meta name="description" content={description} />
         <meta
           name="keywords"
-          content="New Port Richey dumpster rental, dumpster rental New Port Richey FL, dumpster rental services, 10 yard dumpster New Port Richey, 15 yard dumpster, 20 yard dumpster New Port Richey, junk removal New Port Richey FL, roll off dumpster New Port Richey"
+          content="Hernando County dumpster rental, dumpster rental Brooksville FL, dumpster rental Spring Hill FL, 10 yard dumpster, 15 yard dumpster, 20 yard dumpster Hernando, junk removal Hernando County FL, roll off dumpster Hernando"
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={metatitle} />
@@ -111,25 +111,30 @@ export default function DumpsterRentalNewPortRichey() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-hernando-county-fl"
         />
       </Head>
 
       <LocationSchema
-        areaServed={["New Port Richey"]}
-        geoCoordinates={{ latitude: 28.2442, longitude: -82.7193 }}
-        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl"
-        locationName="New Port Richey, FL"
+        areaServed={[
+          "Brooksville",
+          "Spring Hill",
+          "Weeki Wachee",
+          "Hernando County",
+        ]}
+        geoCoordinates={{ latitude: 28.5556, longitude: -82.4215 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-hernando-county-fl"
+        locationName="Hernando County, FL"
       />
 
       <main className="min-h-screen">
         <HeroService {...heroData} />
 
         <DumpsterOptions
-          locationName="New Port Richey"
-          title="Choose the Perfect Dumpster Size for Your New Port Richey Project"
-          subtitle="We offer a variety of dumpster sizes to accommodate any project in New Port Richey, from home cleanouts to major construction jobs."
-          dumpsters={newPortRicheyDumpsters}
+          locationName="Hernando County"
+          title="Choose the Perfect Dumpster Size for Your Hernando County Project"
+          subtitle="We offer roll-off dumpster rentals throughout Brooksville, Spring Hill, and Weeki Wachee for all types of cleanup and renovation jobs."
+          dumpsters={hernandoDumpsters}
         />
 
         <RequestForm />
@@ -137,13 +142,13 @@ export default function DumpsterRentalNewPortRichey() {
         <Testimonials />
 
         <RentalProcessSteps
-          title="Our Simple Dumpster Rental Process in New Port Richey"
-          subtitle="Renting a dumpster in New Port Richey is quick and hassle-free with Lupo Enterprises."
+          title="Our Simple Dumpster Rental Process in Hernando County"
+          subtitle="We make it fast and easy to rent a dumpster in Brooksville, Spring Hill, and all of Hernando County."
         />
 
         <ComparisonTableSection
           title="How We Compare to Other Dumpster Rental Companies"
-          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services in Hernando County."
         />
 
         <ServiceLocations />
@@ -151,23 +156,23 @@ export default function DumpsterRentalNewPortRichey() {
         <RoofersSection />
 
         <FaqSection
-          title="New Port Richey Dumpster Rental FAQs"
-          subtitle="Answers to common questions about renting a dumpster in New Port Richey, FL."
+          title="Hernando County Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Brooksville, Spring Hill, and throughout Hernando County."
         />
 
         <DisposalGuidelines
-          title="What Can Go in Your New Port Richey Dumpster?"
-          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your New Port Richey rental."
+          title="What Can Go in Your Hernando Dumpster?"
+          subtitle="To ensure safe and responsible disposal, follow these guidelines when using a dumpster in Hernando County."
         />
 
         <CommonDumpsterUses
-          title="Common Dumpster Uses in New Port Richey"
-          subtitle="Our dumpsters are perfect for a wide range of projects in the New Port Richey area."
+          title="Common Dumpster Uses in Hernando County"
+          subtitle="Our dumpsters are ideal for a wide range of residential and commercial projects in Hernando County, FL."
         />
 
         <CallToActionSection
           title="Ready for a Dumpster Rental?"
-          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-rated service."
         />
       </main>
     </>

@@ -1,168 +1,174 @@
+// pages/dumpster-rental-lutz.tsx
+
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
-import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
 
-import appliancecleanup from "../../public/applianceremoval/appliance-cleanup.png";
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-const points = [
+import RequestForm from "../../components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
+import LocationSchema from "@/components/new/LocationSchema";
+
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Lutz, FL",
+  title: "Affordable Dumpster Rentals in Lutz, Florida",
+  description:
+    "Looking for dumpster rentals in Lutz, FL? Lupo Enterprises offers fast delivery, affordable pricing, and multiple sizes to fit any project.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in Pasco County" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Lutz",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Lutz, FL",
+  imageOverlayText: "Serving Lutz & Surrounding Areas",
+};
+
+const lutzDumpsters = [
   {
-    name: "Wide Selection of Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Lutz, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "Offering a range of dumpster sizes including 10, 15, and 20 cubic yard options, perfect for both residential and commercial projects in Lutz, FL.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "On Time Delivery & Pick Up",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Lutz, FL",
+    size: "15 Yard Dumpster",
     description:
-      "Our commitment to punctuality ensures your dumpster rental arrives and is picked up on schedule, facilitating smooth project management.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Local, Family-Owned Business",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Lutz, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
     description:
-      "Proudly serving Lutz, FL as a family-owned business, we emphasize personalized service and strong community ties.",
-    icon: UsersIcon,
-  },
-  {
-    name: "Transparent Pricing",
-    description:
-      "Enjoy clear, upfront pricing with no hidden fees. Our competitive rates are designed to provide value while accommodating your budget.",
-    icon: CurrencyDollarIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const faqs = [
-  {
-    question: "What dumpster sizes are available in Lutz, FL?",
-    answer:
-      "We offer various dumpster sizes to suit different needs, from smaller 10-yard dumpsters for minor cleanouts to larger 20-yard options for extensive projects.",
-    items: [],
-  },
-  {
-    question: "How do I rent a dumpster in Lutz?",
-    answer:
-      "Renting a dumpster is easy! Contact us to discuss your project, choose a dumpster size, and schedule a delivery date that works for you.",
-    items: [],
-  },
-  {
-    question: "What are your rates for dumpster rental in Lutz, FL?",
-    answer:
-      "Our rates vary based on the dumpster size and rental duration. We provide transparent pricing upon inquiry, tailored to your specific needs.",
-    items: [],
-  },
-  {
-    question: "Can I extend the rental period if needed?",
-    answer:
-      "Yes, we offer flexible rental periods. If you need to extend your rental, just let us know in advance to accommodate your request.",
-    items: [],
-  },
-  {
-    question: "Do you offer same-day dumpster delivery?",
-    answer:
-      "Subject to availability, we can provide same-day delivery. For the fastest service, we recommend scheduling in advance.",
-    items: [],
-  },
-  {
-    question: "Are there restrictions on what I can put in the dumpster?",
-    answer:
-      "Yes, certain items like hazardous materials, liquids, and flammable items are prohibited. We'll provide a complete list upon rental.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Dependable Dumpster Services",
-    description:
-      "Our reliable dumpster services ensure your waste management needs in Lutz, FL are handled effectively, supporting both small and large-scale projects.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Dependable dumpster service in Lutz, FL",
-  },
-  {
-    name: "Expert and Friendly Team",
-    description:
-      "Our experienced team is here to assist you every step of the way, offering advice and support for a hassle-free rental experience.",
-    imageSrc: dumptrailer,
-    imageAlt: "Expert dumpster rental team in Lutz, FL",
-  },
-];
-
-const metatitle =
-  "Lutz FL Dumpster Rental | Convenient & Cost-Effective | Book Now";
+const metatitle = "Lutz Dumpster Rental | Affordable Dumpsters in Lutz FL";
 const description =
-  "Discover hassle-free dumpster rental in Lutz, FL with our range of sizes and flexible rental terms. Ideal for both residential and commercial projects.";
+  "Lupo Enterprises offers affordable and fast dumpster rental services in Lutz, FL. Choose from 10, 15, or 20-yard dumpsters for your next project.";
 
-export default function DumpsterRentalLutzFL() {
+export default function DumpsterRentalLutz() {
   return (
     <>
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Lutz dumpster rental, dumpster rental Lutz FL, dumpster rental services, 10 yard dumpster Lutz, 15 yard dumpster, 20 yard dumpster Lutz, junk removal Lutz FL, roll off dumpster Lutz"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={metatitle} />
+        <meta property="og:description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-lutz-fl"
+        />
       </Head>
 
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Dumpster rental in Lutz, FL"
-        location="Lutz Go-To"
-        service="Dumpster Rental"
-        ptag="Efficient and affordable dumpster rental solutions for your projects in Lutz, FL. Experience hassle-free service tailored to your needs."
-        cta="Rent a Dumpster"
-      ></Junkheader>
-
-      <Corefeatures
-        header="Dumpster Rental in Lutz, FL"
-        subheader="Flexible and Reliable"
-        ptag="From home renovations to commercial construction projects, our dumpsters are suited for any job. Choose the size that fits your project."
-        points={points}
+      <LocationSchema
+        areaServed={["Lutz"]}
+        geoCoordinates={{ latitude: 28.1511, longitude: -82.4615 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-lutz-fl"
+        locationName="Lutz, FL"
       />
 
-      <Multiblock
-        header="RELIABLE DUMPSTER SOLUTIONS Location in Lutz FL"
-        ptag="Count on us for dependable dumpster rentals in Lutz, ensuring your project stays clean and organized."
-        features={features}
-      ></Multiblock>
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      {/* <Contacttwo /> */}
-      <Imagegridclone
-        header="Explore Our Range of Dumpsters"
-        ptag="View our variety of dumpster sizes, perfect for any project in Lutz, from residential cleanups to larger commercial sites."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+        <DumpsterOptions
+          locationName="Lutz"
+          title="Choose the Perfect Dumpster Size for Your Lutz Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Lutz, from home cleanouts to major construction jobs."
+          dumpsters={lutzDumpsters}
+        />
 
-      <Otherservices
-        header="Complete Waste Management Services"
-        subheader="More Than Just Dumpsters"
-        ptag="Looking beyond dumpster rental? We offer comprehensive waste solutions, including junk removal and recycling services."
-      ></Otherservices>
+        <RequestForm />
 
-      <Faqs faqs={faqs} />
+        <Testimonials />
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster in Lutz Today"></Contactwhite>
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Lutz"
+          subtitle="Renting a dumpster in Lutz is easy and hassle-free with Lupo Enterprises."
+        />
+
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
+
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Lutz Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Lutz, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Lutz Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Lutz rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Lutz"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Lutz area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }

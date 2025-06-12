@@ -1,117 +1,124 @@
 import React from "react";
 import Head from "next/head";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegridclone from "../../components/Imagegridclone";
-import Reviews from "../../components/Reviews";
-import Otherservices from "../../components/Otherservices";
-import Contact from "../../components/Contact";
-import Faqs from "../../components/Faqs";
+
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+
 import {
-  TruckIcon,
-  ScaleIcon,
-  CurrencyDollarIcon,
-  CalendarIcon,
-  ClockIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+
+import dumpsterrentalpros from "../../public/dumpster-rental-pros.jpg";
+
+import {
+  Check,
+  Phone,
+  Home,
+  Wrench,
+  Trees,
+  Building,
+  HelpCircle,
+  PackageCheck,
+  PackageX,
+  PhoneCall,
+  CalendarCheck2,
+  Truck,
+  Trash2,
+  Star,
+  CheckCircle2,
+} from "lucide-react";
+import RequestForm from "../..//components/new/request-form";
+import ServiceLocations from "@/components/new/service-locations";
+import Testimonials from "@/components/new/testimonials";
+import HeroService from "@/components/new/hero-service";
+import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { DisposalGuidelines } from "@/components/new/disposal-guidelines";
+import { CommonDumpsterUses } from "@/components/new/common-dumpster-uses";
+import { RentalProcessSteps } from "@/components/new/rental-process-steps";
+import { WhyChooseUs } from "@/components/new/why-choose-us";
+import { FaqSection } from "@/components/new/faq-section";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
+import RoofersSection from "@/components/new/roofers-section";
+import { CallToActionSection } from "@/components/new/call-to-action-section";
 
 import dumpsterrental from "../../public/dumpsterrental.png";
-import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import dumptrailers from "../../public/dump-trailers.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
+import LocationSchema from "@/components/new/LocationSchema";
 
-const points = [
+const heroData = {
+  badgeText: "#1 Dumpster Rental Service in Tampa Bay, FL",
+  title: "Affordable Dumpster Rentals in Tampa Bay, Florida",
+  description:
+    "Tampa Bay’s go-to source for dumpster rentals. We provide 10, 15, and 20-yard dumpsters for any residential or commercial cleanup, fast and affordably.",
+  heroChecklistItems: [
+    { text: "Same-Day & Next-Day Delivery Available" },
+    { text: "Transparent, Competitive Pricing" },
+    { text: "Locally Owned & Operated in the Bay Area" },
+    { text: "Residential & Commercial Dumpsters" },
+  ],
+  primaryButtonText: "Get a Free Quote for Tampa Bay",
+  imageSrc: dumpsterrentalpros,
+  imageAlt: "Lupo Dumpster Rental truck in Tampa Bay, FL",
+  imageOverlayText: "Serving Tampa Bay & Surrounding Cities",
+};
+
+const tampaBayDumpsters = [
   {
-    name: "Diverse Range of Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental in Tampa Bay, FL",
+    isPopular: true,
+    size: "10 Yard Dumpster",
     description:
-      "Providing a wide selection of dumpster sizes to accommodate any project in the Tampa Bay area, from residential cleanups to large construction sites.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Timely Delivery & Pickup Service",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental in Tampa Bay, FL",
+    size: "15 Yard Dumpster",
     description:
-      "Ensuring efficient operations with prompt delivery and pickup, keeping your project timelines on track.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Competitive Pricing Structure",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental in Tampa Bay, FL",
+    isPopular: false,
+    size: "20 Yard Dumpster",
     description:
-      "Offering transparent and fair pricing for all dumpster rental needs, ensuring value for services provided in Tampa Bay.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Personalized Customer Service",
-    description:
-      "Dedicated local team providing tailored services to meet your specific dumpster rental requirements in Tampa Bay.",
-    icon: UsersIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
   },
 ];
 
-const faqs = [
-  {
-    question:
-      "How do I select the right dumpster size for my needs in Tampa Bay?",
-    answer:
-      "Our experienced team will help you choose the ideal dumpster size based on the scope and nature of your project. Just give us a call!",
-    items: [],
-  },
-  {
-    question: "What are the rates for renting a dumpster in Tampa Bay?",
-    answer:
-      "Rates vary depending on the size of the dumpster and the length of the rental. We offer clear, upfront pricing to match your specific project needs.",
-    items: [],
-  },
-  {
-    question: "What types of waste can I dispose of in the dumpster?",
-    answer:
-      "Our dumpsters can accommodate a variety of materials, including household, construction, and yard waste. We'll guide you on any prohibited items.",
-    items: [],
-  },
-  {
-    question: "Can I extend my rental period?",
-    answer:
-      "Absolutely! We understand that project needs can change, so we offer flexible rental extensions. Just contact us to adjust your schedule.",
-    items: [],
-  },
-  {
-    question: "Do you offer same-day dumpster delivery in Tampa Bay?",
-    answer:
-      "Yes, we strive to accommodate same-day delivery requests based on current availability. It's best to schedule in advance when possible.",
-    items: [],
-  },
-  {
-    question: "Are there any items that cannot be placed in the dumpsters?",
-    answer:
-      "Certain materials, such as hazardous waste, cannot be placed in dumpsters due to safety and environmental regulations. We'll provide you with a detailed list.",
-    items: [],
-  },
-];
-
-const features = [
-  {
-    name: "Efficient Tampa Bay Dumpster Services",
-    description:
-      "Our services are designed for maximum efficiency, ensuring your waste management needs are met promptly and effectively.",
-    imageSrc: dumpstertrailerone,
-    imageAlt: "Efficient dumpster services in Tampa Bay",
-  },
-  {
-    name: "Committed to Customer Satisfaction",
-    description:
-      "We pride ourselves on delivering high-quality services with a focus on customer satisfaction and reliability.",
-    imageSrc: dumptrailer,
-    imageAlt: "Dedicated to customer satisfaction in dumpster rental",
-  },
-];
-
-const metatitle =
-  "Tampa Bay Dumpster Rental | Efficient & Affordable Services | Call Today";
+const metatitle = "Tampa Bay Dumpster Rental | Affordable Dumpsters | Call Now";
 const description =
-  "Top-rated dumpster rental services in Tampa Bay. Offering flexible scheduling, a variety of sizes, and competitive pricing for your waste management needs.";
+  "Dumpster rental in Tampa Bay made easy. Choose from 10, 15, and 20-yard dumpsters. Fast delivery, fair pricing, and trusted local service.";
 
 export default function DumpsterRentalTampaBay() {
   return (
@@ -121,50 +128,73 @@ export default function DumpsterRentalTampaBay() {
         <meta name="description" content={description} />
         <meta property="og:title" content={metatitle} />
         <meta property="og:description" content={description} />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Tampa Bay dumpster rental, dumpster rental Tampa Bay FL, dumpster rental services, 10 yard dumpster Tampa Bay, 15 yard dumpster, 20 yard dumpster Tampa Bay, junk removal Tampa Bay FL, roll off dumpster Tampa Bay"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental-tampa-bay"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Junkheader
-        image={dumpsterrental}
-        alttext="Dumpster rental service in Tampa Bay"
-        location="Tampa Bay's Preferred"
-        service="Dumpster Rental"
-        ptag="Secure the best dumpster rental experience in Tampa Bay with our reliable, flexible, and cost-effective solutions."
-        cta="Rent a Dumpster"
-      ></Junkheader>
-
-      <Corefeatures
-        header="Your Dumpster Rental Partner in Tampa Bay"
-        subheader="Flexible, Reliable, and Efficient"
-        ptag="From small home renovations to major construction projects, we provide the right dumpsters to manage your waste efficiently."
-        points={points}
+      <LocationSchema
+        areaServed={["Tampa Bay"]}
+        geoCoordinates={{ latitude: 27.9506, longitude: -82.4572 }}
+        locationUrl="https://www.lupodumpsterrentals.com/services/dumpster-rental-tampa-bay"
+        locationName="Tampa Bay, FL"
       />
 
-      <Multiblock
-        header="LEADING DUMPSTER RENTAL SERVICE"
-        ptag="Experience unparalleled dumpster rental services in Tampa Bay, focused on meeting your project's specific needs."
-        features={features}
-      ></Multiblock>
+      <main className="min-h-screen">
+        <HeroService {...heroData} />
 
-      {/* <Contacttwo /> */}
-      <Imagegridclone
-        header="Dumpster Projects in Tampa Bay"
-        ptag="Explore our selection of dumpster sizes suitable for any type of project in Tampa."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+        <DumpsterOptions
+          locationName="Tampa Bay"
+          title="Choose the Perfect Dumpster Size for Your Tampa Bay Project"
+          subtitle="We offer a variety of dumpster sizes to accommodate any project in Tampa Bay, from home cleanouts to large commercial jobs."
+          dumpsters={tampaBayDumpsters}
+        />
 
-      <Otherservices
-        header="Tampa Bay's Junk Experts"
-        subheader="More Than Just Dumpster Rentals"
-        ptag="In addition to dumpster rentals, we offer a variety of waste management services to fully support your project's disposal needs."
-      ></Otherservices>
+        <RequestForm />
 
-      <Faqs faqs={faqs} />
+        <Testimonials />
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster in Tampa Bay Today"></Contactwhite>
+        <RentalProcessSteps
+          title="Our Simple Dumpster Rental Process in Tampa Bay"
+          subtitle="Renting a dumpster in Tampa Bay is hassle-free with Lupo Enterprises."
+        />
+
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
+
+        <ServiceLocations />
+
+        <RoofersSection />
+
+        <FaqSection
+          title="Tampa Bay Dumpster Rental FAQs"
+          subtitle="Answers to common questions about renting a dumpster in Tampa Bay, FL."
+        />
+
+        <DisposalGuidelines
+          title="What Can Go in Your Tampa Bay Dumpster?"
+          subtitle="To ensure safe and responsible disposal, please follow these guidelines for your Tampa Bay rental."
+        />
+
+        <CommonDumpsterUses
+          title="Common Dumpster Uses in Tampa Bay"
+          subtitle="Our dumpsters are perfect for a wide range of projects in the Tampa Bay area."
+        />
+
+        <CallToActionSection
+          title="Ready for a Dumpster Rental?"
+          description="Let Lupo Enterprises handle the heavy lifting. Get a fast, free quote for your dumpster rental or junk removal project today and experience our top-notch service."
+        />
+      </main>
     </>
   );
 }
