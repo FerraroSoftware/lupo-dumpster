@@ -49,8 +49,22 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.lupodumpsterrentals.com/" />
+        <meta
+          name="keywords"
+          content="Pasco County dumpster rental, dumpster rental Pasco County, roll-off dumpsters, junk removal Pasco County, residential dumpsters, commercial dumpsters"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Pasco County Dumpster Rental Professionals"
+        />
+        <meta
+          property="og:description"
+          content="Get fast and easy dumpster rentals in Pasco County. Lupo Dumpster Rentals offers various sizes of dumpsters for residential and commercial projects."
+        />
       </Head>
-  
+
       <HeroUpdated></HeroUpdated>
       <RequestForm />
       <Testimonials />
@@ -64,7 +78,6 @@ export default function Home() {
       <FAQ />
       <AboutFounder />
 
-
       {/* <MarqueeDemo></MarqueeDemo>
       <Coreservices></Coreservices>
     
@@ -74,7 +87,6 @@ export default function Home() {
       <Featuredlist></Featuredlist>
       <Twentyyard></Twentyyard>
       <Calltoaction></Calltoaction> */}
-      
     </>
   );
 }
