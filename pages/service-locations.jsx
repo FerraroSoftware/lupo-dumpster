@@ -11,14 +11,13 @@ import Junkcost from "../components/Junkcost";
 import ContactHero from "../components/ContactHero";
 import Locations from "../components/Locations";
 import Contactwhite from "../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 
 export default function dumpsterrentalpricing() {
   return (
     <>
       <Head>
-        <title>
-          Services Locations | Lupo Dumpster Rental and Junk Removal
-        </title>
+        <title>Services Locations | Lupo Enterprises Dumpster Rentals</title>
         <meta
           name="description"
           content="We offer dumpster rentals and junk removal services in Pasco, Pinellas, and Hillsborough County. Contact us for affordable and reliable solutions!"
@@ -28,14 +27,15 @@ export default function dumpsterrentalpricing() {
       </Head>
 
       <Locations></Locations>
-      <NewPricingtwo></NewPricingtwo>
+      {/* <NewPricingtwo></NewPricingtwo> */}
       {/* <NewPricingthree></NewPricingthree> */}
       {/* <Twentyyard></Twentyyard> */}
 
       <Mission></Mission>
 
       {/* <Contact></Contact> */}
-      <Contactwhite header="Rent A Dumpster Today"></Contactwhite>
+      {/* <Contactwhite header="Rent A Dumpster Today"></Contactwhite> */}
+      <RequestForm />
     </>
   );
 }

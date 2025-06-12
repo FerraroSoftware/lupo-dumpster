@@ -47,7 +47,7 @@ export default function Mission() {
             </p>
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
               <Link
-                href="/services/dumpster-rental-new-port-richey-fl"
+                href="/about-us"
                 title=""
                 className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black rounded-md 
                 border border-black hover:bg-zinc-700 hover:text-white transition-all duration-300 uppercase"
