@@ -172,7 +172,7 @@ const serviceLocationsCounties = [
   },
   {
     name: "Pinellas County",
-    href: "/services/dumpster-rental-pinellas-county-fl",
+    href: "/services/dumpster-rental-pinellas-county",
     description: "Full Pinellas County service area coverage",
     gradient: "from-stone-500 to-stone-600",
   },
