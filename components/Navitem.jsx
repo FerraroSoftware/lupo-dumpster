@@ -93,7 +93,7 @@ export default function LupoNavbar() {
         }`}
       >
         {/* Increased max width from max-w-7xl to max-w-8xl */}
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-28">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
@@ -106,7 +106,9 @@ export default function LupoNavbar() {
                   alt="Lupo Dumpster Rentals"
                   className="h-12 mr-3 w-auto"
                 />
-                <span className="hidden sm:inline">Lupo Dumpster Rentals</span>
+                <span className="hidden sm:inline font-bold">
+                  Lupo Dumpster Rentals
+                </span>
               </Link>
             </div>
 
@@ -158,7 +160,7 @@ export default function LupoNavbar() {
                   Services{" "}
                   <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[600px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                   <div
                     className="p-6 bg-white"
                     role="menu"
@@ -235,7 +237,7 @@ export default function LupoNavbar() {
                 <a href="tel:+17273176717" className="flex items-center">
                   <Phone className="h-4 w-4 mr-1" />
                   <span className="hidden xs:inline">(727) 317-6717</span>
-                  <span className="xs:hidden">Call</span>
+                  <span className="xs:hidden">Call (727) 317-6717</span>
                 </a>
               </Button>
               <Button
