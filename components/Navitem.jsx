@@ -2,99 +2,67 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, Phone, Facebook } from "lucide-react";
+import { ChevronDown, Menu, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
-// Organized services into logical categories
+const serviceLocations = [
+  { title: "Clearwater", href: "/services/dumpster-rental-clearwater-fl" },
+  { title: "Holiday", href: "/services/dumpster-rental-holiday-fl" },
+  { title: "Hudson", href: "/services/dumpster-rental-hudson-fl" },
+  { title: "Lutz", href: "/services/dumpster-rental-lutz-fl" },
+  {
+    title: "New Port Richey",
+    href: "/services/dumpster-rental-new-port-richey-fl",
+  },
+  { title: "Odessa", href: "/services/dumpster-rental-odessa-fl" },
+  { title: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor" },
+  {
+    title: "Pinellas County",
+    href: "/services/dumpster-rental-pinellas-county",
+  },
+  { title: "Spring Hill", href: "/services/dumpster-rental-spring-hill" },
+  { title: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay" },
+  { title: "Trinity", href: "/services/dumpster-rental-trinity-fl" },
+  { title: "Westchase", href: "/services/dumpster-rental-westchase-fl" },
+];
+
 const services = {
-  "Dumpster Rental": [
-    {
-      title: "Clearwater",
-      href: "/services/dumpster-rental-clearwater-fl",
-    },
-    {
-      title: "Holiday",
-      href: "/services/dumpster-rental-holiday-fl",
-    },
-    {
-      title: "Hudson",
-      href: "/services/dumpster-rental-hudson-fl",
-    },
-    {
-      title: "Lutz",
-      href: "/services/dumpster-rental-lutz-fl",
-    },
-    {
-      title: "New Port Richey",
-      href: "/services/dumpster-rental-new-port-richey-fl",
-    },
-    {
-      title: "Odessa",
-      href: "/services/dumpster-rental-odessa-fl",
-    },
-    {
-      title: "Palm Harbor",
-      href: "/services/dumpster-rental-palm-harbor",
-    },
-    {
-      title: "Pinellas County",
-      href: "/services/dumpster-rental-pinellas-county",
-    },
-    {
-      title: "Spring Hill",
-      href: "/services/dumpster-rental-spring-hill",
-    },
-    {
-      title: "Tampa Bay",
-      href: "/services/dumpster-rental-tampa-bay",
-    },
-    {
-      title: "Trinity",
-      href: "/services/dumpster-rental-trinity-fl",
-    },
-    {
-      title: "Westchase",
-      href: "/services/dumpster-rental-westchase-fl",
-    },
-  ],
   "Cleanup Services": [
-    { title: "Appliance Removal", href: "/services/appliance-removal" },
-    { title: "Furniture Removal", href: "/services/furniture-removal" },
+    {
+      title: "Dumpster Trailers",
+      href: "/services/dumpster-trailer-rental",
+    },
+
     {
       title: "Garage Cleaning Service",
       href: "/services/garage-cleaning-service",
     },
     { title: "Hoarding Cleanup", href: "/services/hoarding-cleanup" },
   ],
-
-  "Specialized Services": [
-    {
-      title: "15-Yard Dump Trailer",
-      href: "/services/15-yard-dump-trailer",
-    },
-    {
-      title: "Construction Debris Removal",
-      href: "/services/construction-debris-removal",
-    },
+  "Quick Services": [
+    // { title: "15-Yard Dump Trailer", href: "/services/15-yard-dump-trailer" },
+    // {
+    //   title: "Construction Debris Removal",
+    //   href: "/services/construction-debris-removal",
+    // },
+    { title: "Appliance Removal", href: "/services/appliance-removal" },
     {
       title: "Construction Dumpster Rental",
       href: "/services/construction-dumpster-rental",
     },
-    {
-      title: "Dumpster Trailer Rental",
-      href: "/services/dumpster-trailer-rental",
-    },
+    { title: "Furniture Removal", href: "/services/furniture-removal" },
+
     { title: "Mattress Disposal", href: "/services/mattress-disposal" },
   ],
-  "Trash & Waste Services": [
-    {
-      title: "Garbage Removal Service",
-      href: "/services/garbage-removal-service",
-    },
+  "Junk Services": [
+    // {
+    //   title: "Garbage Removal Service",
+    //   href: "/services/garbage-removal-service",
+    // },
     { title: "Junk Removal", href: "/services/junk-removal" },
-    { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
-    { title: "Trash Pickup", href: "/services/pasco-county-trash-pickup" },
-    { title: "Trash Removal", href: "/services/trash-removal" },
+    // { title: "Trash Pick-Up", href: "/services/trash-pick-up" },
+    // { title: "Trash Pickup", href: "/services/pasco-county-trash-pickup" },
+    // { title: "Trash Removal", href: "/services/trash-removal" },
     { title: "Yard Waste Removal", href: "/services/yard-waste-removal" },
   ],
 };
@@ -118,98 +86,102 @@ export default function LupoNavbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-black">
-      {/* Top Bar - remains the same */}
-      <div className="bg-zinc-900 text-white py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between items-center text-sm">
-          <p className="text-center md:text-left mb-2 md:mb-0">
-            Serving all of Pasco and Pinellas County
-          </p>
-          <div className="flex items-center space-x-4">
-            <a
-              href="tel:+17273176717"
-              className="flex items-center hover:text-red-500 transition-colors"
-            >
-              <Phone className="h-4 w-4 mr-1" />
-              <span>Call Now - (727) 317-6717</span>
-            </a>
-            <a
-              href="https://www.facebook.com/LupoLLC/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover:text-red-500 transition-colors"
-              aria-label="Visit our Facebook page"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
       <nav
         className={`bg-black transition-all duration-300 ${
-          isScrolled ? "shadow-lg py-2" : "py-2"
+          isScrolled ? "shadow-lg py-3" : "py-4"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Increased max width from max-w-7xl to max-w-8xl */}
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo - remains the same */}
+            {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link
                 href="/"
                 className="text-xl font-normal tracking-wide text-white hover:text-red-500 transition-colors flex items-center"
               >
-                {/* <Trash2 className="h-6 w-6 mr-2" /> */}
-                {/* logo image icon */}
                 <img
                   src="/logo.svg"
                   alt="Lupo Dumpster Rentals"
                   className="h-12 mr-3 w-auto"
                 />
-                Lupo Dumpster Rentals
+                <span className="hidden sm:inline">Lupo Dumpster Rentals</span>
               </Link>
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/"
-                className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="text-white hover:text-red-500 transition-colors font-medium"
               >
                 Home
               </Link>
 
               <div className="relative group">
                 <button
-                  className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                  className="flex items-center text-white hover:text-red-500 transition-colors font-medium"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  Service Locations{" "}
+                  <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+                </button>
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[400px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                  <div
+                    className="p-6 bg-white"
+                    role="menu"
+                    aria-orientation="vertical"
+                  >
+                    <div className="grid grid-cols-2 gap-4">
+                      {serviceLocations.map((location) => (
+                        <Link
+                          key={location.href}
+                          href={location.href}
+                          className="block text-sm text-gray-700 hover:text-red-600 hover:bg-gray-50 transition-colors px-2 py-1.5 rounded"
+                        >
+                          {location.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <button
+                  className="flex items-center text-white hover:text-red-500 transition-colors font-medium"
                   aria-expanded="false"
                   aria-haspopup="true"
                 >
                   Services{" "}
-                  <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
+                  <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] rounded-md shadow-lg bg-black border border-zinc-800 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[600px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                   <div
-                    className="p-4"
+                    className="p-6 bg-white"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
                   >
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className="grid grid-cols-3 gap-6">
                       {Object.entries(services).map(([category, items]) => (
                         <div key={category}>
-                          <div className="font-medium text-red-500 mb-2">
+                          <div className="font-semibold text-red-600 mb-3 text-sm uppercase tracking-wide">
                             {category}
                           </div>
-                          {items.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="block w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-sm"
-                            >
-                              {item.title}
-                            </Link>
-                          ))}
+                          <div className="space-y-1">
+                            {items.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="block text-sm text-gray-700 hover:text-red-600 hover:bg-gray-50 transition-colors px-2 py-1.5 rounded"
+                              >
+                                {item.title}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -219,34 +191,53 @@ export default function LupoNavbar() {
 
               <Link
                 href="/about-us"
-                className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="text-white hover:text-red-500 transition-colors font-medium"
               >
                 About Us
               </Link>
 
-              {/* <Link
-                href="/dumpster-rental-pricing"
-                className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
-              >
-                Pricing
-              </Link> */}
-
               <Link
                 href="/contact"
-                className="flex items-center text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="text-white hover:text-red-500 transition-colors font-medium"
               >
                 Contact
               </Link>
 
-              <Link href="/contact">
-                <Button className="bg-red-600 text-white hover:bg-red-700 transition-colors text-sm font-medium">
-                  Book My Dumpster
+              <div className="flex items-center space-x-3">
+                <Button
+                  variant="outline"
+                  className="border-white/20 text-white hover:bg-white/10 hover:text-white font-medium bg-transparent"
+                  asChild
+                >
+                  <a href="tel:+17273176717" className="flex items-center">
+                    <Phone className="h-4 w-4 mr-2" />
+                    (727) 317-6717
+                  </a>
                 </Button>
-              </Link>
+
+                <Button
+                  className="bg-red-600 text-white hover:bg-red-700 transition-colors font-medium"
+                  asChild
+                >
+                  <Link href="/contact">Book My Dumpster</Link>
+                </Button>
+              </div>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
+            {/* Updated mobile call button to show phone number */}
+            <div className="md:hidden flex items-center space-x-2">
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-white/20 text-white hover:bg-white/10 hover:text-white font-medium bg-transparent text-xs"
+                asChild
+              >
+                <a href="tel:+17273176717" className="flex items-center">
+                  <Phone className="h-4 w-4 mr-1" />
+                  <span className="hidden xs:inline">(727) 317-6717</span>
+                  <span className="xs:hidden">Call</span>
+                </a>
+              </Button>
               <Button
                 variant="ghost"
                 size="sm"
@@ -267,7 +258,7 @@ export default function LupoNavbar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 href="/"
-                className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
@@ -275,13 +266,48 @@ export default function LupoNavbar() {
 
               <div className="relative">
                 <button
-                  className="flex items-center justify-between w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                  className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md font-medium"
+                  onClick={() => toggleDropdown("locations")}
+                  aria-expanded={activeDropdown === "locations"}
+                >
+                  <span>Service Locations</span>
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      activeDropdown === "locations" ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <div
+                  className={
+                    activeDropdown === "locations"
+                      ? "px-4 py-3 bg-zinc-900 rounded-md mt-1 max-h-[40vh] overflow-y-auto"
+                      : "hidden"
+                  }
+                >
+                  <div className="grid grid-cols-2 gap-1">
+                    {serviceLocations.map((location) => (
+                      <Link
+                        key={location.href}
+                        href={location.href}
+                        className="block text-sm text-white hover:text-red-500 hover:bg-white/10 transition-colors px-2 py-1.5 rounded"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {location.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <button
+                  className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md font-medium"
                   onClick={() => toggleDropdown("services")}
                   aria-expanded={activeDropdown === "services"}
                 >
                   <span>Services</span>
                   <ChevronDown
-                    className={`h-3 w-3 transition-transform duration-200 ${
+                    className={`h-4 w-4 transition-transform duration-200 ${
                       activeDropdown === "services" ? "rotate-180" : ""
                     }`}
                   />
@@ -289,25 +315,27 @@ export default function LupoNavbar() {
                 <div
                   className={
                     activeDropdown === "services"
-                      ? "px-4 py-2 bg-zinc-900 rounded-md mt-1 max-h-[60vh] overflow-y-auto"
+                      ? "px-4 py-3 bg-zinc-900 rounded-md mt-1 max-h-[60vh] overflow-y-auto"
                       : "hidden"
                   }
                 >
                   {Object.entries(services).map(([category, items]) => (
-                    <div key={category} className="mb-3">
-                      <div className="font-medium text-red-500 mb-1">
+                    <div key={category} className="mb-4">
+                      <div className="font-semibold text-red-400 mb-2 text-sm uppercase tracking-wide">
                         {category}
                       </div>
-                      {items.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className="block w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {item.title}
-                        </Link>
-                      ))}
+                      <div className="space-y-1">
+                        {items.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="block text-sm text-white hover:text-red-400 hover:bg-zinc-800 transition-colors px-2 py-1.5 rounded"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {item.title}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -315,47 +343,32 @@ export default function LupoNavbar() {
 
               <Link
                 href="/about-us"
-                className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About Us
               </Link>
 
-              {/* <Link
-                href="/dumpster-rental-pricing"
-                className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </Link> */}
-
               <Link
                 href="/contact"
-                className="flex items-center w-full text-sm text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md"
+                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2 rounded-md font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </Link>
 
-              <div className="mt-4 px-3 space-y-2">
-                <Link
-                  href="/contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
+              <div className="mt-4 px-3 space-y-3">
+                <Button
+                  className="w-full bg-red-600 text-white hover:bg-red-700 transition-colors font-medium"
+                  asChild
                 >
-                  <Button className="w-full bg-red-600 text-white hover:bg-red-700 transition-colors font-medium">
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Book My Dumpster
-                  </Button>
-                </Link>
-                <Link
-                  href="https://www.facebook.com/LupoLLC/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full text-white hover:text-red-500 transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <Facebook className="h-4 w-4 mr-2" />
-                  <span>Follow us on Facebook</span>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
