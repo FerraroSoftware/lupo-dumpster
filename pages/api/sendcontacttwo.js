@@ -7,7 +7,7 @@ async function sendEmail(req, res) {
     await sendgrid.send({
       to: "a.lupollc@gmail.com",
       cc: "lupodumpsterrentals@gmail.com",
-      from: "contact@ferrarosoftware.com", // your website email address here
+      from: "contact@blackcatwebsitedesign.com",
       subject: `[Junk Removal Inquiry]`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">

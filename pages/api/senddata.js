@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const msg = {
       to: "a.lupollc@gmail.com",
       cc: "lupodumpsterrentals@gmail.com",
-      from: "contact@ferrarosoftware.com",
+      from: "contact@blackcatwebsitedesign.com",
       subject: `New $275 Dumpster Deal Inquiry: ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6;">

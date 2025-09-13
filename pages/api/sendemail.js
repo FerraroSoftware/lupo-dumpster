@@ -187,7 +187,7 @@ export default async function handler(req, res) {
       // to: "contact@ferrarosoftware.com",
       to: "a.lupollc@gmail.com",
       cc: "lupodumpsterrentals@gmail.com",
-      from: "contact@ferrarosoftware.com",
+      from: "contact@blackcatwebsitedesign.com",
       subject: `New Dumpster Rental Request from ${data.name}`,
       text: textContent, // Fallback plain text version
       html: htmlContent, // HTML version
