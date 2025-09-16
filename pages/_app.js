@@ -23,6 +23,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Script
         id="facebook-pixel"
+        strategy="beforeInteractive" // Add this line
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
