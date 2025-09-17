@@ -13,6 +13,9 @@ import LupoNavbar from "@/components/Navitem";
 
 import { Analytics } from "@vercel/analytics/next";
 import FaqSchema from "@/components/faq-schema";
+import OrganizationSchema from "@/components/organization-schema";
+import ServiceSchema from "@/components/service-schema";
+import ReviewSchema from "@/components/review-schema";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,6 +74,9 @@ export default function App({ Component, pageProps }) {
 
       <LocationSchema></LocationSchema>
       <FaqSchema></FaqSchema>
+      <ServiceSchema></ServiceSchema>
+      <ReviewSchema></ReviewSchema>
+      <OrganizationSchema></OrganizationSchema>
 
       <main className={inter.className}>
         {/* <Navbar></Navbar> */}
