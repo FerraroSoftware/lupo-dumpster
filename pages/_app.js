@@ -75,7 +75,7 @@ export default function App({ Component, pageProps }) {
       <LocationSchema></LocationSchema>
       <FaqSchema></FaqSchema>
       <ServiceSchema></ServiceSchema>
-      <ReviewSchema></ReviewSchema>
+      {/* <ReviewSchema></ReviewSchema> */}
       <OrganizationSchema></OrganizationSchema>
 
       <main className={inter.className}>
