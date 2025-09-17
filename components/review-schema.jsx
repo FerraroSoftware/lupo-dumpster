@@ -3,7 +3,7 @@ import Script from "next/script";
 const ReviewSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Review",
     name: "Lupo Enterprises LLC",
     aggregateRating: {
       "@type": "AggregateRating",
