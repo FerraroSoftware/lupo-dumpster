@@ -6,24 +6,58 @@ import { ChevronDown, Menu, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 const serviceLocations = [
+  { title: "Brooksville", href: "/services/dumpster-rental-brooksville-fl" },
   { title: "Clearwater", href: "/services/dumpster-rental-clearwater-fl" },
+  { title: "Dade City", href: "/services/dumpster-rental-dade-city-fl" },
+  { title: "Dunedin", href: "/services/dumpster-rental-dunedin-fl" },
+  {
+    title: "Hernando",
+    href: "/services/dumpster-rental-hernando-county-fl",
+  },
+  {
+    title: "Hillsborough",
+    href: "/services/dumpster-rental-hillsborough-county-fl",
+  },
   { title: "Holiday", href: "/services/dumpster-rental-holiday-fl" },
   { title: "Hudson", href: "/services/dumpster-rental-hudson-fl" },
+  { title: "Keystone", href: "/services/dumpster-rental-keystone-fl" },
+  { title: "Land O Lakes", href: "/services/dumpster-rental-land-o-lakes-fl" },
+  { title: "Largo", href: "/services/dumpster-rental-largo-fl" },
   { title: "Lutz", href: "/services/dumpster-rental-lutz-fl" },
   {
     title: "New Port Richey",
     href: "/services/dumpster-rental-new-port-richey-fl",
   },
   { title: "Odessa", href: "/services/dumpster-rental-odessa-fl" },
+  { title: "Oldsmar", href: "/services/dumpster-rental-oldsmar-fl" },
   { title: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor" },
   {
     title: "Pinellas County",
-    href: "/services/dumpster-rental-pinellas-county",
+    href: "/services/dumpster-rental-pinellas-county-fl",
   },
+  {
+    title: "Pinellas Park",
+    href: "/services/dumpster-rental-pinellas-park-fl",
+  },
+  {
+    title: "Safety Harbor",
+    href: "/services/dumpster-rental-safety-harbor-fl",
+  },
+  { title: "San Antonio", href: "/services/dumpster-rental-san-antonio-fl" },
+  { title: "Seminole", href: "/services/dumpster-rental-seminole-fl" },
   { title: "Spring Hill", href: "/services/dumpster-rental-spring-hill" },
+  {
+    title: "St Petersburg",
+    href: "/services/dumpster-rental-st-petersburg-fl",
+  },
   { title: "Tampa Bay", href: "/services/dumpster-rental-tampa-bay" },
   { title: "Trinity", href: "/services/dumpster-rental-trinity-fl" },
+  {
+    title: "Wesley Chapel",
+    href: "/services/dumpster-rental-wesley-chapel-fl",
+  },
   { title: "Westchase", href: "/services/dumpster-rental-westchase-fl" },
+  { title: "Zephyrhills", href: "/services/dumpster-rental-zephyrhills-fl" },
 ];
 
 const services = {
@@ -130,13 +164,13 @@ export default function LupoNavbar() {
                   Service Locations{" "}
                   <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[400px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[700px] rounded-lg shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                   <div
                     className="p-6 bg-white"
                     role="menu"
                     aria-orientation="vertical"
                   >
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-4 gap-4">
                       {serviceLocations.map((location) => (
                         <Link
                           key={location.href}
