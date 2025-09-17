@@ -8,7 +8,7 @@ export default function thankyou() {
   return (
     <>
       <Script
-        id="facebook-pixel"
+        id="facebook-pixel-lead"
         strategy="beforeInteractive" // Add this line
         dangerouslySetInnerHTML={{
           __html: `
