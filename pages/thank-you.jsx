@@ -7,7 +7,7 @@ import Script from "next/script";
 export default function thankyou() {
   return (
     <>
-      <Script
+      {/* <Script
         id="facebook-pixel"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -24,7 +24,7 @@ export default function thankyou() {
         fbq('track', 'Lead');
     `,
         }}
-      />
+      /> */}
 
       <Head>
         <title>Lupo Dumpster Rentals || Thank you for contacting us!</title>
