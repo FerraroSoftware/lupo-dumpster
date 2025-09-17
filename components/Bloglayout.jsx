@@ -32,7 +32,7 @@ export default function Bloglayout({ children, title, date, description }) {
           </div>
 
           <div className="flex items-center justify-center py-2">
-            <div className="w-full max-w-4xl px-4">{children}</div>
+            <div className="w-full max-w-4xl px-4 pb-16">{children}</div>
           </div>
         </div>
       </FadeIn>
