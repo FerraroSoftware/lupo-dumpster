@@ -26,6 +26,15 @@ export default function thankyou() {
           `,
         }}
       />
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=892278365833500&ev=PageView&noscript=1"
+          alt=""
+        />
+      </noscript>
 
       <Head>
         <title>Lupo Dumpster Rentals || Thank you for contacting us!</title>
