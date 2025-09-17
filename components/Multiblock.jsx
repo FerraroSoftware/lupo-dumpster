@@ -11,7 +11,7 @@ export default function Multiblock({ features, header, ptag }) {
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-full lg:px-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-semibold tracking-wide text-black sm:text-4xl uppercase">
+          <h2 className="text-3xl font-semibold tracking-wide text-black sm:text-4xl ">
             {header}
           </h2>
           <p className="mt-4 text-gray-500">{ptag}</p>
@@ -31,7 +31,7 @@ export default function Multiblock({ features, header, ptag }) {
                   "mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4"
                 )}
               >
-                <h3 className="text-lg lg:text-2xl tracking-wide text-black uppercase">
+                <h3 className="text-lg lg:text-2xl tracking-wide text-black ">
                   {feature.name}
                 </h3>
                 <div className="border-black border w-12 mt-2"></div>
