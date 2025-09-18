@@ -41,7 +41,6 @@ const ServiceSchema = () => {
             },
             category: "Dumpster Rental",
           },
-          priceRange: "$$",
         },
         {
           "@type": "Offer",
@@ -61,7 +60,6 @@ const ServiceSchema = () => {
             },
             category: "Junk Removal",
           },
-          priceRange: "$$",
         },
         {
           "@type": "Offer",
@@ -81,7 +79,6 @@ const ServiceSchema = () => {
             },
             category: "Specialized Cleaning",
           },
-          priceRange: "$$",
         },
         {
           "@type": "Offer",
@@ -101,7 +98,6 @@ const ServiceSchema = () => {
             },
             category: "Construction Services",
           },
-          priceRange: "$$",
         },
         {
           "@type": "Offer",
@@ -121,7 +117,6 @@ const ServiceSchema = () => {
             },
             category: "Appliance Services",
           },
-          priceRange: "$$",
         },
       ],
     },
