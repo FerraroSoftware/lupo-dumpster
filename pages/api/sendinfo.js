@@ -10,41 +10,29 @@ export default async function handler(req, res) {
   }
 
   try {
-    const {
-      name,
-      email,
-      phone,
-      location,
-      dropoffDate,
-      dropoffTime,
-      contents,
-      details,
-    } = req.body;
+    const { firstName, lastName, email, phone, serviceNeeded, message } =
+      req.body;
 
     // Format the email content
     const emailContent = `
-      New Dumpster Rental Request
+      New Service Request
       
-      Name: ${name}
+      Name: ${firstName} ${lastName}
       Email: ${email}
       Phone: ${phone}
       
-      Drop-off Location: ${location}
-      Drop-off Date: ${dropoffDate}
-      Drop-off Time: ${dropoffTime}
-      
-      Contents: ${contents}
-      Additional Details: ${details || "None provided"}
+      Service Needed: ${serviceNeeded}
+      Message: ${message || "None provided"}
     `;
 
     // Configure email message
     const msg = {
       to: "a.lupollc@gmail.com",
       // to: "contact@blackcatwebsitedesign.com",
-      cc: "ferrarosoftwarellc@gmail.com",
+      cc: "contact@blackcatwebsitedesign.com",
       // from: "contact@ferrarosoftware.com",
       from: "contact@blackcatwebsitedesign.com",
-      subject: "New Dumpster Rental Request",
+      subject: "New Service Request", // Updated subject to be more generic
       text: emailContent,
       html: emailContent.replace(/\n/g, "<br>"),
     };
