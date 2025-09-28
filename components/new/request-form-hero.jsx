@@ -185,8 +185,8 @@ export default function ClientForm() {
                     </span>
                   </div>
                   <p className="text-sm text-gray-500 italic">
-                    "Got a quote in 30 minutes and service the next day.
-                    Incredible!"
+                    &quot;Got a quote in 30 minutes and service the next day.
+                    Incredible!&quot;
                   </p>
                   <p className="text-sm font-medium mt-1">
                     - Sarah M., Verified Customer
