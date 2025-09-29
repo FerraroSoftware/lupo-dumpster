@@ -36,6 +36,7 @@ import dumpsterrentalpros from "../public/dumpster-rental-pros.jpg";
 
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { ComparisonTableSection } from "@/components/new/comparison-table-section";
 
 const features = [
   {
@@ -153,7 +154,7 @@ export default function FacebookOfferPage() {
                     {[
                       {
                         title: "$275 Flat Rate:",
-                        desc: "Absolutely no hidden fees. Simple, transparent pricing.",
+                        desc: "Two tons included. Absolutely no hidden fees. Simple, transparent pricing.",
                       },
                       {
                         title: "10 Yard Dumpster:",
@@ -437,6 +438,11 @@ export default function FacebookOfferPage() {
             </div>
           </div>
         </section>
+
+        <ComparisonTableSection
+          title="How We Compare to Other Dumpster Rental Companies"
+          subtitle="See how Lupo Enterprises stacks up against other dumpster services."
+        />
 
         {/* What Can You Use It For? Section */}
         <section className="py-16 bg-gradient-to-br from-zinc-50 to-zinc-100">
