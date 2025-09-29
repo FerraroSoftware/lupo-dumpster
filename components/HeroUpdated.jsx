@@ -21,7 +21,7 @@ export default function HeroUpdated() {
       <div className="absolute inset-0 bg-black/60 z-10"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto space-y-8">
           <div className="flex flex-wrap gap-3 mb-6 justify-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium flex items-center">
               <Star className="h-4 w-4 mr-1.5 text-yellow-400" />
@@ -37,7 +37,7 @@ export default function HeroUpdated() {
             </div>
           </div>
 
-          <h1 className="text-5xl lg:text-6xl font-semibold tracking-tight">
+          <h1 className="text-5xl lg:text-7xl font-semibold tracking-tight">
             #1 Pasco County Dumpster Rental Professionals
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">

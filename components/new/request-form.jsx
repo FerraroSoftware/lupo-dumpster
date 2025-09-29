@@ -113,7 +113,7 @@ export default function ClientForm() {
                     },
                     {
                       icon: Phone,
-                      text: "Free estimates in 2 hours",
+                      text: "Free estimates in 30 minutes",
                       highlight: true,
                     },
                   ].map((item, i) => (
@@ -185,11 +185,11 @@ export default function ClientForm() {
                     </span>
                   </div>
                   <p className="text-sm text-gray-500 italic">
-                    &quot;Got a quote in 30 minutes and service the next day.
+                    &quot;Got a quote in 10 minutes and service the next day.
                     Incredible!&quot;
                   </p>
                   <p className="text-sm font-medium mt-1">
-                    - Sarah M., Verified Customer
+                    - Sara M., Verified Customer
                   </p>
                 </div>
               </div>
@@ -379,7 +379,7 @@ export default function ClientForm() {
                         ✓ No spam, ever
                       </p>
                       <p className="text-sm font-medium text-green-600">
-                        ✓ Response within 2 hours
+                        ✓ Response within 30 minutes
                       </p>
                       <p className="text-sm font-medium text-green-600">
                         ✓ Free consultation included

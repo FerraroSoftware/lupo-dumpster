@@ -19,7 +19,7 @@ const DumpsterCard = ({ dumpster, locationName }) => {
 
   return (
     <div className="bg-zinc-50 rounded-xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-md transition-all flex flex-col">
-      <div className="h-48 bg-zinc-200 relative">
+      <div className="h-56 bg-zinc-200 relative">
         <Image
           src={imageUrl || "/placeholder.svg"}
           alt={imageAlt}
