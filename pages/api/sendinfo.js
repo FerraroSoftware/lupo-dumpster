@@ -32,7 +32,7 @@ export default async function handler(req, res) {
       cc: "contact@blackcatwebsitedesign.com",
       // from: "contact@ferrarosoftware.com",
       from: "contact@blackcatwebsitedesign.com",
-      subject: "New Service Request", // Updated subject to be more generic
+      subject: "New Dumpster Service Request", // Updated subject to be more generic
       text: emailContent,
       html: emailContent.replace(/\n/g, "<br>"),
     };
