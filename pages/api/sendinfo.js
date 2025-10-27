@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     const msg = {
       to: "a.lupollc@gmail.com",
       // to: "contact@blackcatwebsitedesign.com",
-      cc: "contact@blackcatwebsitedesign.com",
+      cc: ["contact@blackcatwebsitedesign.com", "alupo825@gmail.com"],
       // from: "contact@ferrarosoftware.com",
       from: "contact@blackcatwebsitedesign.com",
       subject: "New Dumpster Service Request", // Updated subject to be more generic
