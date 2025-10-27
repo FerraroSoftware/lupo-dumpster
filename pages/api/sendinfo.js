@@ -3,6 +3,21 @@ import sgMail from "@sendgrid/mail";
 // Set SendGrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+function formatPhoneNumber(phone) {
+  // Remove all non-numeric characters
+  const cleaned = phone.replace(/\D/g, "");
+
+  // Format as (XXX) XXX-XXXX
+  if (cleaned.length === 10) {
+    return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(
+      6
+    )}`;
+  }
+
+  // Return original if not 10 digits
+  return phone;
+}
+
 export default async function handler(req, res) {
   // Only allow POST requests
   if (req.method !== "POST") {
@@ -37,13 +52,68 @@ export default async function handler(req, res) {
       html: emailContent.replace(/\n/g, "<br>"),
     };
 
-    // Send email
-    await sgMail.send(msg);
+    const emailPromise = sgMail.send(msg);
+
+    const easternTime = new Date().toLocaleString("en-US", {
+      timeZone: "America/New_York",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    });
+
+    const formattedPhone = formatPhoneNumber(phone);
+
+    // Send to Zapier webhook if URL is configured
+    const zapierPromise = process.env.ZAPIER_WEBHOOK_URL
+      ? fetch(process.env.ZAPIER_WEBHOOK_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            email,
+            phone: formattedPhone,
+            serviceNeeded,
+            message: message || "None provided",
+            timestamp: easternTime,
+          }),
+        })
+      : Promise.resolve(null);
+
+    // Wait for both operations to complete
+    const [emailResult, zapierResult] = await Promise.allSettled([
+      emailPromise,
+      zapierPromise,
+    ]);
+
+    // Check if email failed
+    if (emailResult.status === "rejected") {
+      console.error("Error sending email:", emailResult.reason);
+      throw new Error("Failed to send email");
+    }
+
+    // Log Zapier webhook result (don't fail if webhook fails)
+    if (zapierResult.status === "rejected") {
+      console.error("Error sending to Zapier webhook:", zapierResult.reason);
+    } else if (zapierResult.value) {
+      console.log(
+        "[v0] Zapier webhook response status:",
+        zapierResult.value.status
+      );
+    }
+
+    console.log("Zapier webhook result:", zapierResult);
 
     // Return success response
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.error("Error sending email:", error);
-    return res.status(500).json({ error: "Failed to send email" });
+    console.error("Error processing request:", error);
+    return res.status(500).json({ error: "Failed to process request" });
   }
 }
