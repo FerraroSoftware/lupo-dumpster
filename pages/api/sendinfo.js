@@ -1,4 +1,5 @@
 import sgMail from "@sendgrid/mail";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 // Set SendGrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -25,8 +26,35 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { firstName, lastName, email, phone, serviceNeeded, message } =
-      req.body;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      serviceNeeded,
+      message,
+      recaptchaToken,
+    } = req.body;
+
+    // Verify reCAPTCHA token with 0.9 minimum score
+    const recaptchaResult = await verifyRecaptcha(
+      recaptchaToken,
+      "submit_form",
+      0.9
+    );
+
+    if (!recaptchaResult.success) {
+      console.error("reCAPTCHA verification failed:", recaptchaResult.error);
+      return res.status(400).json({
+        error:
+          "Security verification failed. Please try again or contact us directly at (727) 317-6717.",
+        details: recaptchaResult.error,
+      });
+    }
+
+    console.log(
+      `reCAPTCHA verified successfully with score: ${recaptchaResult.score}`
+    );
 
     // Format the email content
     const emailContent = `

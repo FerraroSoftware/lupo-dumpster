@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
@@ -20,6 +20,21 @@ import Link from "next/link";
 export default function ClientForm() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [recaptchaReady, setRecaptchaReady] = useState(false);
+
+  useEffect(() => {
+    // Wait for reCAPTCHA to be ready
+    const checkRecaptcha = () => {
+      if (window.grecaptcha && window.grecaptcha.ready) {
+        window.grecaptcha.ready(() => {
+          setRecaptchaReady(true);
+        });
+      } else {
+        setTimeout(checkRecaptcha, 100);
+      }
+    };
+    checkRecaptcha();
+  }, []);
 
   const {
     register,
@@ -45,12 +60,21 @@ export default function ClientForm() {
     setIsSubmitting(true);
 
     try {
+      // Get reCAPTCHA token
+      const token = await window.grecaptcha.execute(
+        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+        { action: "submit_form" }
+      );
+
       const response = await fetch("/api/sendinfo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          ...data,
+          recaptchaToken: token,
+        }),
       });
 
       if (response.ok) {
@@ -58,11 +82,19 @@ export default function ClientForm() {
         router.push("/thank-you");
       } else {
         // Handle error
-        console.error("Form submission failed");
+        const errorData = await response.json();
+        console.error("Form submission failed:", errorData);
+        alert(
+          errorData.error ||
+            "Form submission failed. Please try again or call us directly."
+        );
         setIsSubmitting(false);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      alert(
+        "An error occurred. Please try again or call us directly at (727) 317-6717."
+      );
       setIsSubmitting(false);
     }
   };
@@ -355,13 +387,15 @@ export default function ClientForm() {
                   <Button
                     type="submit"
                     className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-6 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || !recaptchaReady}
                   >
                     {isSubmitting ? (
                       <div className="flex items-center gap-2">
                         <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                         Sending Your Request...
                       </div>
+                    ) : !recaptchaReady ? (
+                      "Loading security check..."
                     ) : (
                       "Get My FREE Quote Now →"
                     )}
@@ -384,6 +418,27 @@ export default function ClientForm() {
                       <p className="text-sm font-medium text-green-600">
                         ✓ Free consultation included
                       </p>
+                    </div>
+                    <div className="text-center text-xs text-gray-500 mt-4">
+                      This site is protected by reCAPTCHA and the Google{" "}
+                      <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-gray-700"
+                      >
+                        Privacy Policy
+                      </a>{" "}
+                      and{" "}
+                      <a
+                        href="https://policies.google.com/terms"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-gray-700"
+                      >
+                        Terms of Service
+                      </a>{" "}
+                      apply.
                     </div>
                   </div>
                 </form>

@@ -1,0 +1,118 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   reCAPTCHA v3 Flow Diagram                                 ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  USER VISITS FORM                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    │ reCAPTCHA script loads
+                                    │ (from _document.js)
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  BACKGROUND MONITORING                                                      │
+│  • reCAPTCHA analyzes user behavior                                         │
+│  • Mouse movements, clicks, typing patterns                                 │
+│  • NO VISIBLE CHALLENGE (v3 = invisible)                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    │ User fills form
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  USER CLICKS SUBMIT                                                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    │ Form onSubmit triggered
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  CLIENT: Generate Token                                                     │
+│  grecaptcha.execute(siteKey, { action: 'submit_form' })                     │
+│  ↓                                                                           │
+│  Token received (expires in 2 minutes)                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    │ POST /api/sendinfo
+                                    │ body: { ...formData, recaptchaToken }
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  SERVER: Verify Token                                                       │
+│  1. Call verifyRecaptcha(token, 'submit_form', 0.9)                         │
+│  2. POST to Google: https://www.google.com/recaptcha/api/siteverify        │
+│  3. Google responds with:                                                   │
+│     {                                                                        │
+│       "success": true,                                                      │
+│       "score": 0.95,         ← The critical number!                         │
+│       "action": "submit_form"                                               │
+│     }                                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │                                │
+          score >= 0.9?                   score < 0.9?
+                    │                                │
+                    ▼                                ▼
+    ┌──────────────────────────┐    ┌────────────────────────────┐
+    │  ✅ VERIFICATION PASSED   │    │  ❌ VERIFICATION FAILED     │
+    └──────────────────────────┘    └────────────────────────────┘
+                    │                                │
+                    │                                │
+                    ▼                                ▼
+    ┌──────────────────────────┐    ┌────────────────────────────┐
+    │  Process Form:           │    │  Return Error:             │
+    │  • Send email            │    │  Status: 400               │
+    │  • Send to Zapier        │    │  Message: "Security        │
+    │  • Return success        │    │    verification failed"    │
+    └──────────────────────────┘    └────────────────────────────┘
+                    │                                │
+                    │                                │
+                    ▼                                ▼
+    ┌──────────────────────────┐    ┌────────────────────────────┐
+    │  Redirect to:            │    │  Show Error Alert:         │
+    │  /thank-you              │    │  "Please try again or      │
+    │                          │    │   call (727) 317-6717"     │
+    └──────────────────────────┘    └────────────────────────────┘
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          Score Examples                                     ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║  Score: 0.95  →  ✅ ALLOWED   - Real human, natural behavior              ║
+║  Score: 0.91  →  ✅ ALLOWED   - Legitimate user                            ║
+║  Score: 0.90  →  ✅ ALLOWED   - Just meets threshold                       ║
+║  Score: 0.89  →  ❌ BLOCKED   - Below threshold                            ║
+║  Score: 0.70  →  ❌ BLOCKED   - Suspicious activity                        ║
+║  Score: 0.30  →  ❌ BLOCKED   - Very likely bot                            ║
+║  Score: 0.05  →  ❌ BLOCKED   - Definite bot                               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                      Environment Variables                                  ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║  NEXT_PUBLIC_RECAPTCHA_SITE_KEY                                            ║
+║  └─→ Used by: Client (browser)                                             ║
+║  └─→ Location: _document.js, form components                               ║
+║  └─→ Visibility: PUBLIC (in browser source)                                ║
+║                                                                             ║
+║  RECAPTCHA_SECRET_KEY                                                      ║
+║  └─→ Used by: Server (API routes)                                          ║
+║  └─→ Location: lib/recaptcha.js                                            ║
+║  └─→ Visibility: PRIVATE (server-side only)                                ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         Key Features                                        ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║  ✅ No CAPTCHA challenges (invisible to users)                             ║
+║  ✅ Scores every request (0.0 to 1.0)                                      ║
+║  ✅ Action-based verification ('submit_form')                              ║
+║  ✅ 0.9 threshold (very strict)                                            ║
+║  ✅ User-friendly error messages                                           ║
+║  ✅ Automatic token expiration (2 minutes)                                 ║
+║  ✅ Server-side verification (can't be bypassed)                           ║
+║  ✅ Detailed logging for monitoring                                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
