@@ -20,7 +20,7 @@ import yardWasteImage from "../../public/mattress-disposal.png"; // Replace with
 import yardwasteremoval from "../../public/yard-waste-removal.png";
 import dumpsterrental from "../../public/dumpsterrental.png";
 import dumptrailers from "../../public/dump-trailers.png";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
@@ -158,7 +158,7 @@ export default function YardWasteRemoval() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for yard waste removal" />
+      <RequestForm />
     </>
   );
 }

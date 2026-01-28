@@ -1,130 +1,181 @@
-import React from "react";
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Disclosure } from "@headlessui/react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
-  TruckIcon,
-  ClockIcon,
-  UsersIcon,
-  CurrencyDollarIcon,
-  ScaleIcon,
-  CalendarDaysIcon,
-} from "@heroicons/react/24/outline";
-
-import Pricing from "../../components/Pricing";
-import Contact from "../../components/Contact";
-import Reviews from "../../components/Reviews";
-import Junkcost from "../../components/Junkcost";
-import Contacttwo from "../../components/Contacttwo";
-import Imagegrid from "../../components/Imagegrid";
-import Mission from "../../components/Mission";
-import Junkheader from "../../components/Junkheader";
-import Corefeatures from "../../components/Corefeatures";
-import Multiblock from "../../components/Multiblock";
-import Otherservices from "../../components/Otherservices";
+  Phone,
+  Star,
+  Shield,
+  Truck,
+  Check,
+  CheckCircle,
+  ChevronDown,
+  ChevronUp,
+  Award,
+} from "lucide-react";
 
 import dumptrailer from "../../public/dump-trailer.png";
 import dumptrailers from "../../public/dump-trailers.png";
+import dumpsterrental from "../../public/dumpsterrental.png";
+import dumpstertrailer1 from "../../public/dumpster-trailer-1.png";
 
-import NewPricingtwo from "../../components/NewPricingtwo";
-import Process from "../../components/Process";
-import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
-import Imagegridclone from "../../components/Imagegridclone";
+import Testimonials from "../../components/new/testimonials";
+import RequestForm from "../../components/new/request-form";
+import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+const metatitle =
+  "Dumpster Rental Pasco County | 10, 15, 20 Yard Roll-Off Dumpsters";
+const description =
+  "Professional dumpster rental services in Pasco County. Choose from 10, 15, or 20-yard roll-off dumpsters for residential and commercial projects. Same-day delivery available. Transparent pricing with no hidden fees. Call (727) 317-6717 for a free quote.";
 
-const points = [
+const dumpsterSizes = [
   {
-    name: "Various Dumpster Sizes",
+    id: 1,
+    imageUrl: dumpsterrental,
+    imageAlt: "10 Yard Dumpster Rental",
+    size: "10 Yard Dumpster",
     description:
-      "Choose from a range of dumpster sizes to fit your project needs. Our dumpsters are perfect for both residential and commercial use.",
-    icon: TruckIcon,
+      "Perfect for small to medium projects like garage cleanouts, small remodels, or yard debris removal.",
+    features: [
+      "Holds approx. 3 pickup truck loads",
+      "Dimensions: 12' L x 8' W x 3.5' H",
+      "Weight limit: 2 tons included",
+      "Ideal for residential projects",
+    ],
+    buttonText: "Rent 10 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "On Time Delivery & Pick Up",
+    id: 2,
+    imageUrl: dumpstertrailer1,
+    imageAlt: "15 Yard Dumpster Rental",
+    isPopular: true,
+    size: "15 Yard Dumpster",
     description:
-      "Experience timely delivery and pickup for your dumpster rental. We value your schedule, ensuring punctuality and reliability.",
-    icon: ClockIcon,
+      "Ideal for medium-sized projects like kitchen remodels, flooring removal, or basement cleanouts.",
+    features: [
+      "Holds approx. 4-5 pickup truck loads",
+      "Dimensions: 14' L x 8' W x 4' H",
+      "Weight limit: 3 tons included",
+      "Most popular size",
+    ],
+    buttonText: "Rent 15 Yard",
+    buttonLink: "/contact",
   },
   {
-    name: "Competitive Pricing",
+    id: 3,
+    imageUrl: dumptrailers,
+    imageAlt: "20 Yard Dumpster Rental",
+    size: "20 Yard Dumpster",
     description:
-      "Get the best value for your rental with our competitive pricing. Transparent rates with no hidden fees.",
-    icon: CurrencyDollarIcon,
+      "Best for large projects like home renovations, construction debris, or complete property cleanouts.",
+    features: [
+      "Holds approx. 6-7 pickup truck loads",
+      "Dimensions: 16' L x 8' W x 5' H",
+      "Weight limit: 4 tons included",
+      "Perfect for major projects",
+    ],
+    buttonText: "Rent 20 Yard",
+    buttonLink: "/contact",
+  },
+];
+
+const processSteps = [
+  {
+    title: "Call for Your Free Quote",
+    description:
+      "Contact us at (727) 317-6717 or request a quote online. We'll help you choose the perfect dumpster size for your project and provide transparent pricing with no hidden fees.",
+    icon: <Phone className="h-10 w-10 text-red-500" />,
+    number: 1,
   },
   {
-    name: "Flexible Rental Periods",
+    title: "Schedule Delivery",
     description:
-      "We offer customizable rental periods to match your project timeline. Rent a dumpster for as long as you need.",
-    icon: CalendarDaysIcon,
+      "Choose your delivery date and location. We offer same-day and next-day delivery throughout Pasco County. We'll place the dumpster exactly where you need it.",
+    icon: <Truck className="h-10 w-10 text-red-500" />,
+    number: 2,
+  },
+  {
+    title: "Fill Your Dumpster",
+    description:
+      "Take your time filling the dumpster with your debris, junk, or construction waste. Our standard 4-day rental period gives you flexibility to work at your own pace.",
+    icon: <CheckCircle className="h-10 w-10 text-red-500" />,
+    number: 3,
+  },
+  {
+    title: "We Pick It Up",
+    description:
+      "When you're done, simply call us for pickup. We'll promptly remove the dumpster and handle all disposal responsibly, leaving you with a clean space.",
+    icon: <CheckCircle className="h-10 w-10 text-red-500" />,
+    number: 4,
   },
 ];
 
 const faqs = [
   {
-    question: "What sizes of dumpster are available?",
+    question: "What size dumpster do I need?",
     answer:
-      "We offer a variety of sizes, including 10, 15, and 20-yard dumpsters, to accommodate different project scales.",
-    items: [],
+      "The right size depends on your project scope. A 10-yard dumpster works well for garage cleanouts and small renovations. A 15-yard dumpster (our most popular) is ideal for kitchen remodels and basement cleanouts. A 20-yard dumpster suits major renovations and construction projects. We're happy to help you determine the perfect size—just call us at (727) 317-6717.",
   },
   {
-    question: "How does the dumpster rental process work?",
+    question: "How much does dumpster rental cost?",
     answer:
-      "Choose your size, schedule delivery and pickup dates, and we'll handle the rest. It's that simple!",
-    items: [],
+      "Dumpster rental prices in Pasco County vary based on size, rental duration, location, and the type of materials. Our pricing is transparent with no hidden fees and includes delivery, pickup, and disposal. Contact us for a free, customized quote that fits your specific project needs.",
   },
   {
-    question: "Are there restrictions on what I can put in the dumpster?",
+    question: "Do you offer same-day dumpster delivery?",
     answer:
-      "Yes, there are certain restrictions. Hazardous materials are not permitted. Please contact us for a full list of prohibited items.",
-    items: [],
+      "Yes! We offer same-day and next-day dumpster delivery throughout Pasco County based on availability. For the best chance of same-day service, call us early in the morning at (727) 317-6717. We'll do our best to accommodate your urgent project needs.",
   },
   {
-    question: "Can I extend my dumpster rental period?",
+    question: "How long can I keep the dumpster?",
     answer:
-      "Absolutely! Just give us a call, and we'll accommodate your request based on availability.",
-    items: [],
+      "Our standard rental period is 4 days, which works perfectly for most projects. If you need more time, we offer flexible extensions based on dumpster availability. Just let us know your timeline when you book, and we'll accommodate your schedule.",
   },
   {
-    question: "Is there a weight limit for the dumpster?",
+    question: "What can I put in a dumpster rental?",
     answer:
-      "Weight limits vary based on the size of the dumpster. We'll provide you with all the details when you book.",
-    items: [],
+      "You can dispose of most common materials including construction debris, household junk, furniture, appliances, yard waste, roofing materials, and renovation waste. However, hazardous materials like chemicals, paint, tires, batteries, and asbestos are not permitted. Contact us if you're unsure about specific items.",
+  },
+  {
+    question: "Is there a weight limit?",
+    answer:
+      "Yes, weight limits vary by dumpster size. Our 10-yard dumpsters include 2 tons, 15-yard dumpsters include 3 tons, and 20-yard dumpsters include 4 tons. Exceeding the weight limit may result in additional fees. We'll provide complete details when you book your rental.",
+  },
+  {
+    question: "Do I need a permit for a dumpster?",
+    answer:
+      "If the dumpster is placed on your private property (like your driveway), you typically don't need a permit in Pasco County. If it needs to be placed on a public street, you may need a permit from your local municipality. We can help guide you through this process.",
+  },
+  {
+    question: "Where do you deliver dumpsters?",
+    answer:
+      "We proudly serve all of Pasco County including New Port Richey, Hudson, Port Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City, Zephyrhills, and surrounding areas. Contact us to confirm service availability in your specific location.",
+  },
+  {
+    question: "Can I use dumpsters for commercial projects?",
+    answer:
+      "Absolutely! We provide dumpster rentals for both residential and commercial customers. We serve contractors, builders, property managers, restaurants, retail stores, and all types of businesses throughout Pasco County.",
   },
   {
     question: "Are you licensed and insured?",
     answer:
-      "Yes, we are fully licensed and insured, ensuring a worry-free rental experience. Our license and insurance number is L20000153106.",
-    items: [],
+      "Yes, Lupo Enterprises is fully licensed and insured (License #L20000153106). We maintain all required insurance and permits to operate legally throughout Pasco County, giving you complete peace of mind.",
   },
 ];
 
-const features = [
-  {
-    name: "Convenient Dumpster Rental",
-    description:
-      "Our dumpster rental service is designed for your convenience. Ideal for construction, renovation, or large-scale cleanups.",
-    imageSrc: dumptrailers,
-    imageAlt: "Dumpster ready for rental",
-  },
-  {
-    name: "Affordable Dumpster Rentals",
-    description:
-      "Discover budget-friendly dumpster rental options for all your project needs. Whether you're clearing out, renovating, or managing construction waste, we have the perfect size at competitive rates.",
-    imageSrc: dumptrailer,
-    imageAlt: "dumpster disposal",
-  },
-];
+export default function DumpsterRental() {
+  const [openQuestions, setOpenQuestions] = useState({});
 
-const metatitle = "Reliable Dumpster Rental | Quick & Affordable";
-const description =
-  "Explore top-notch dumpster rental services for your project needs. Flexible rental options, various sizes, and competitive pricing.";
+  const toggleQuestion = (index) => {
+    setOpenQuestions({
+      ...openQuestions,
+      [index]: !openQuestions[index],
+    });
+  };
 
-export default function DumpsterTrailerRental() {
   return (
     <>
       <Head>
@@ -132,75 +183,419 @@ export default function DumpsterTrailerRental() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://www.lupodumpsterrentals.com/services/dumpster-rental"
+        />
+        <meta
+          name="keywords"
+          content="dumpster rental, roll off dumpster, dumpster rental near me, rent a dumpster, 10 yard dumpster, 15 yard dumpster, 20 yard dumpster, Pasco County dumpster rental, dumpster rental services, waste removal"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={metatitle} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:url"
+          content="https://www.lupodumpsterrentals.com/services/dumpster-rental"
+        />
+        <meta property="og:type" content="website" />
       </Head>
 
-      <Junkheader
-        image={dumptrailer}
-        alttext="Efficient dumpster trailer rental service"
-        location="Simplify Your Cleanup With"
-        service="Affordable Dumpster Rentals"
-        ptag="Discover the ease and efficiency of our dumpster rental services. Perfect for any project size, with flexible rental options to suit your needs."
-        cta="Rent a Dumpster"
-      />
+      {/* Hero Section */}
+      <section className="relative bg-black text-white py-24 md:py-32 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10"></div>
+        <Image
+          src={dumptrailers}
+          alt="Dumpster Rental Pasco County"
+          fill
+          className="object-cover opacity-40"
+          priority
+        />
 
-      <Corefeatures
-        header="Dumpster Rental Services"
-        subheader="Flexible, Reliable, and Affordable"
-        ptag="Choose from a variety of dumpster sizes for your project. With our reliable service, you can focus on the job at hand and let us handle the rest."
-        points={points}
-      />
+        <div className="container mx-auto px-4 md:px-6 relative z-20 text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="flex flex-wrap gap-3 mb-6 justify-center">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium flex items-center">
+                <Star className="h-4 w-4 mr-1.5 text-yellow-400" />
+                5-Star Rated Service
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium flex items-center">
+                <Shield className="h-4 w-4 mr-1.5 text-red-400" />
+                Licensed & Insured
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium flex items-center">
+                <Award className="h-4 w-4 mr-1.5 text-green-400" />
+                Same-Day Delivery
+              </div>
+            </div>
 
-      <Multiblock
-        header="EXPERT DUMPSTER RENTALS"
-        ptag="We provide high-quality, dependable dumpster rentals. Trust us for your junk removal needs."
-        features={features}
-      />
+            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
+              Dumpster Rental Services in Pasco County
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+              Professional roll-off dumpster rentals for residential and
+              commercial projects. Choose from 10, 15, or 20-yard dumpsters with
+              flexible rental periods and transparent pricing.
+            </p>
 
-      {/* <Contacttwo /> */}
-      {/* <Process /> */}
-      {/* <Imagegrid /> */}
-      <Imagegridclone
-        header="Rent your perfect dumpster trailer"
-        ptag="Clean up your junk today with our quick dumpster trailer drop off."
-      />
-      {/* <Reviews /> */}
-      <Testimonialsection />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8"
+                asChild
+              >
+                <Link href="/contact">Get Free Quote</Link>
+              </Button>
+              <Link
+                href="tel:7273176717"
+                className="flex items-center justify-center gap-2 text-lg font-medium bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
+              >
+                <Phone className="h-5 w-5" />
+                <span>(727) 317-6717</span>
+              </Link>
+            </div>
 
-      {/* <Otherservices
-        header="Comprehensive Waste Management Solutions"
-        subheader="Beyond Dumpster Trailer Rentals"
-        ptag="From junk hauling to full-scale waste management, we've got you covered. Discover all our services and find the perfect fit for your project."
-      /> */}
-
-      {/* <Junkcost /> */}
-
-      <div className="bg-white py-16" id="faq">
-        <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
-          <h2 className="text-3xl font-semibold tracking-wide text-black sm:text-4xl uppercase">
-            Frequently Asked Questions
-          </h2>
-          <div className="mt-8">
-            <dl className="divide-y divide-gray-200">
-              {faqs.map((faq, key) => (
-                <div
-                  key={key}
-                  className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
-                >
-                  <dt className="text-base font-medium text-black uppercase md:col-span-5">
-                    {faq.question}
-                  </dt>
-                  <dd className="mt-2 md:col-span-7 md:mt-0">
-                    <p className="text-base text-gray-900">{faq.answer}</p>
-                  </dd>
+            <div className="pt-8 border-t border-white/20">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                  10, 15, 20 Yard Sizes
                 </div>
-              ))}
-            </dl>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                  Flexible 4-Day Rentals
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                  No Hidden Fees
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* <Contact /> */}
-      <Contactwhite header="Rent a Dumpster Today"></Contactwhite>
+      {/* Contact Form */}
+      <RequestForm />
+
+      {/* Dumpster Sizes Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <div className="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">
+              Dumpster Sizes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Choose Your Perfect Dumpster Size
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We offer three dumpster sizes to accommodate any project in Pasco
+              County, from small home cleanouts to major construction jobs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {dumpsterSizes.map((dumpster) => (
+              <Card
+                key={dumpster.id}
+                className={`relative overflow-hidden hover:shadow-xl transition-all duration-300 ${
+                  dumpster.isPopular ? "border-2 border-red-600" : "border"
+                }`}
+              >
+                {dumpster.isPopular && (
+                  <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+                    Most Popular
+                  </div>
+                )}
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={dumpster.imageUrl}
+                    alt={dumpster.imageAlt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold mb-2">{dumpster.size}</h3>
+                  <p className="text-gray-600 mb-4">{dumpster.description}</p>
+
+                  <div className="space-y-2 mb-6">
+                    {dumpster.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start">
+                        <Check className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Button
+                    className="w-full bg-red-600 hover:bg-red-700 text-white"
+                    asChild
+                  >
+                    <Link href={dumpster.buttonLink}>{dumpster.buttonText}</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Why Choose Us Section */}
+      <ComparisonTableSection
+        title="Why Choose Our Dumpster Rental Service?"
+        subtitle="See how Lupo Enterprises delivers superior dumpster rental services in Pasco County compared to other providers."
+      />
+
+      {/* Process Section */}
+      <section className="py-24 md:py-32 bg-black text-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-red-600/20 text-red-400 px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">
+                How It Works
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                Simple 4-Step Dumpster Rental Process
+              </h2>
+              <p className="text-lg text-gray-300 mb-8">
+                Renting a dumpster from Lupo Enterprises is quick and
+                hassle-free. We've streamlined our process to get you the waste
+                solution you need without the runaround.
+              </p>
+
+              <div className="space-y-6">
+                {processSteps.map((step, index) => (
+                  <div key={index} className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-xl">
+                      {step.number}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-300">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <Button
+                  size="lg"
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold"
+                  asChild
+                >
+                  <Link href="/contact">Rent a Dumpster Today</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="relative">
+              <Image
+                src={dumptrailer}
+                alt="Dumpster Rental Process"
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg">
+                Call (727) 317-6717
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white" id="faq">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <div className="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">
+              Frequently Asked Questions
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Dumpster Rental Questions Answered
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find answers to common questions about dumpster rentals in Pasco
+              County. Don't see your question? Call us at (727) 317-6717.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  className="flex justify-between items-center w-full p-6 text-left"
+                  onClick={() => toggleQuestion(index)}
+                  aria-expanded={openQuestions[index]}
+                >
+                  <span className="text-lg font-medium pr-4">
+                    {faq.question}
+                  </span>
+                  {openQuestions[index] ? (
+                    <ChevronUp className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  ) : (
+                    <ChevronDown className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  )}
+                </button>
+                <div
+                  className={`px-6 overflow-hidden transition-all duration-300 ${
+                    openQuestions[index] ? "max-h-96 pb-6" : "max-h-0"
+                  }`}
+                >
+                  <p className="text-gray-600">{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 bg-black text-white p-8 rounded-xl shadow-lg text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4">
+              Ready to Rent a Dumpster?
+            </h3>
+            <p className="text-gray-300 mb-6 max-w-xl mx-auto">
+              Our experienced team is ready to help with your Pasco County
+              project. Call us today for a free quote and same-day delivery
+              availability.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                className="bg-red-600 hover:bg-red-700 text-white"
+                asChild
+              >
+                <Link href="/contact">Request Free Quote</Link>
+              </Button>
+              <Button
+                variant="outline"
+                className="border-white text-black hover:bg-white/90"
+                asChild
+              >
+                <Link
+                  href="tel:7273176717"
+                  className="flex items-center gap-2"
+                >
+                  <Phone className="h-5 w-5" />
+                  <span>(727) 317-6717</span>
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="py-16 bg-zinc-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold mb-6">
+              Professional Dumpster Rental Services in Pasco County
+            </h2>
+            <p className="text-gray-700 mb-4">
+              When you need reliable <strong>dumpster rental</strong> services in
+              Pasco County, Lupo Enterprises delivers professional roll-off
+              dumpster solutions for any project. Whether you're tackling a home
+              renovation, construction project, estate cleanout, or major
+              decluttering, we make waste management simple and affordable.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Our <strong>roll-off dumpster rental</strong> services provide
+              convenient waste disposal for residential and commercial customers
+              throughout Pasco County. We offer three sizes—10, 15, and 20
+              yards—ensuring you get the perfect dumpster for your specific needs
+              without paying for more capacity than necessary.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Choosing the Right Dumpster Size
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Selecting the proper <strong>dumpster size</strong> is crucial for
+              project efficiency and cost-effectiveness. Our 10-yard dumpsters
+              are perfect for garage cleanouts, small remodels, and yard debris.
+              The 15-yard dumpster is our most popular size, ideal for kitchen
+              remodels, flooring removal, and basement cleanouts. Our 20-yard
+              dumpsters accommodate major renovations, construction debris, and
+              complete property cleanouts.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Same-Day Dumpster Delivery
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Need a <strong>dumpster rental</strong> quickly? We offer same-day
+              and next-day delivery throughout Pasco County. Whether you're
+              starting a project immediately or need emergency waste removal, our
+              fast delivery service ensures you stay on schedule. Just call us
+              early at (727) 317-6717 for same-day availability.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Transparent Pricing with No Hidden Fees
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Our <strong>dumpster rental prices</strong> are transparent and
+              competitive. We provide upfront quotes that include delivery,
+              pickup, disposal fees, and weight limits—no surprise charges or
+              hidden fees. What we quote is what you pay, making budgeting for
+              your project simple and straightforward.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Flexible Rental Periods
+            </h3>
+            <p className="text-gray-700 mb-4">
+              We understand that projects rarely follow predictable timelines.
+              That's why our standard 4-day <strong>dumpster rental</strong>{" "}
+              period includes the flexibility to extend based on your needs. Need
+              more time? Just call us—we offer affordable extensions to ensure
+              your project stays on track without rushing.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Serving All of Pasco County
+            </h3>
+            <p className="text-gray-700 mb-4">
+              We proudly provide <strong>dumpster rental services</strong>{" "}
+              throughout Pasco County, including New Port Richey, Hudson, Port
+              Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City,
+              Zephyrhills, and all surrounding communities. Our local expertise
+              means faster response times, competitive pricing, and personalized
+              service from people who know your area.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">
+              Residential & Commercial Dumpster Rental
+            </h3>
+            <p className="text-gray-700 mb-4">
+              We serve both homeowners and businesses. Our{" "}
+              <strong>commercial dumpster rental</strong> services support
+              contractors, builders, property managers, retailers, and businesses
+              of all sizes. We also provide reliable residential dumpster rentals
+              for homeowners tackling projects of any scale.
+            </p>
+
+            <div className="bg-red-50 border-l-4 border-red-600 p-6 mt-8">
+              <p className="text-lg font-semibold text-red-900 mb-2">
+                Need a Dumpster Rental Today?
+              </p>
+              <p className="text-gray-700">
+                Call us now at{" "}
+                <Link
+                  href="tel:7273176717"
+                  className="text-red-600 font-bold hover:text-red-700"
+                >
+                  (727) 317-6717
+                </Link>{" "}
+                or request a free quote online. Same-day dumpster delivery
+                available throughout Pasco County!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

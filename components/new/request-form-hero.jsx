@@ -63,7 +63,7 @@ export default function ClientForm() {
       // Get reCAPTCHA token
       const token = await window.grecaptcha.execute(
         process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
-        { action: "submit_form" }
+        { action: "submit_form" },
       );
 
       const response = await fetch("/api/sendinfo", {
@@ -86,14 +86,14 @@ export default function ClientForm() {
         console.error("Form submission failed:", errorData);
         alert(
           errorData.error ||
-            "Form submission failed. Please try again or call us directly."
+            "Form submission failed. Please try again or call us directly.",
         );
         setIsSubmitting(false);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert(
-        "An error occurred. Please try again or call us directly at (727) 317-6717."
+        "An error occurred. Please try again or call us directly at (727) 317-6717.",
       );
       setIsSubmitting(false);
     }

@@ -23,7 +23,7 @@ import appliances from "../../public/appliances.png";
 import hoardingcleanup from "../../public/hoarding/hoarding-cleanup.png";
 import hoardingclean from "../../public/hoarding/hoarding-clean.png";
 import cleanoutservice from "../../public/hoarding-services.png";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
@@ -163,7 +163,7 @@ export default function HoardingCleanup() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for hoarding cleanup" />
+      <RequestForm />
     </>
   );
 }

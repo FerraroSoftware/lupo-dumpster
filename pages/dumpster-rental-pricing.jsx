@@ -9,6 +9,7 @@ import NewPricingtwo from "../components/NewPricingtwo";
 import NewPricingthree from "../components/NewPricingthree";
 import Junkcost from "../components/Junkcost";
 import Contactwhite from "../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import NewPricinghero from "../components/NewPricinghero";
 import NewPricingHeros from "@/components/NewPricingHeros";
 
@@ -35,7 +36,8 @@ export default function dumpsterrentalpricing() {
       <Mission></Mission>
 
       {/* <Contact></Contact> */}
-      <Contactwhite header="Contact Us For an Affordable Dumpster"></Contactwhite>
+      {/* <Contactwhite header="Contact Us For an Affordable Dumpster"></Contactwhite> */}
+      <RequestForm />
     </>
   );
 }

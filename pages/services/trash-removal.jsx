@@ -21,7 +21,7 @@ import trashremoval from "../../public/trash-removal.png";
 import dumptrailer from "../../public/dump-trailer.png";
 import trashremovalone from "../../public/trash-removal-1.png";
 import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 
 const points = [
   {
@@ -159,7 +159,7 @@ export default function TrashRemoval() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for trash removal" />
+      <RequestForm />
     </>
   );
 }

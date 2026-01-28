@@ -20,7 +20,7 @@ import appliances from "../../public/appliances.png";
 import garagecleaned from "../../public/garagecleanup/garage-cleaned.png";
 import garageclean from "../../public/garagecleanup/garage-clean.png";
 import cleanoutservice from "../../public/garage-clean-out-service.png";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
@@ -167,7 +167,7 @@ export default function GarageCleaningService() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for garage cleaning" />
+      <RequestForm />
     </>
   );
 }

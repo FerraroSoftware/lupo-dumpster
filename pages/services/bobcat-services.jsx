@@ -23,7 +23,7 @@ import {
 import mattressDisposalImage from "../../public/mattress-disposal.png"; // Replace with your image path
 import mattressremovals from "../../public/mattress-removals.png";
 import oldmattress from "../../public/old-mattress.png";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 import lupobobcat from "../../public/lupo-bobcat.jpg";
@@ -159,7 +159,7 @@ export default function BobcatServices() {
 
       <Faqs faqs={faqs} />
 
-      <Contactwhite header="Contact us for Bobcat services today" />
+      <RequestForm />
     </>
   );
 }

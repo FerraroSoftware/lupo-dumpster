@@ -22,7 +22,7 @@ import {
 import mattressDisposalImage from "../../public/mattress-disposal.png"; // Replace with your image path
 import mattressremovals from "../../public/mattress-removals.png";
 import oldmattress from "../../public/old-mattress.png";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
@@ -161,7 +161,7 @@ export default function MattressDisposal() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for mattress disposal" />
+      <RequestForm />
     </>
   );
 }

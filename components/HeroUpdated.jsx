@@ -53,13 +53,19 @@ export default function HeroUpdated() {
             >
               <Link href="/contact">Request a Dumpster</Link>
             </Button>
-            <Link
-              href="tel:7273176717"
-              className="flex items-center justify-center gap-2 text-lg font-medium"
+            <Button
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold"
+              asChild
             >
-              <Phone className="h-5 w-5" />
-              <span>(727) 317-6717</span>
-            </Link>
+              <Link
+                href="tel:7273176717"
+                className="flex items-center justify-center gap-2 text-lg font-medium"
+              >
+                <Phone className="h-4 w-4" />
+                <span>(727) 317-6717</span>
+              </Link>
+            </Button>
           </div>
 
           <div className="pt-8 border-t border-white/20 max-w-2xl mx-auto">

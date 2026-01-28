@@ -23,7 +23,7 @@ import dumpsterrental from "../../public/dumpsterrental.png";
 import dumpstertrailerone from "../../public/dumpster-trailer-1.png";
 import dumptrailer from "../../public/dump-trailer.png";
 import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 
 const points = [
   {
@@ -158,7 +158,7 @@ export default function FifteenYardDumpsterRental() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Rent a 10 Yard Dumpster" />
+      <RequestForm />
     </>
   );
 }

@@ -41,7 +41,7 @@ import Otherservices from "../../components/Otherservices";
 import trashremoval2 from "../../public/trash-removal-2.png";
 import Faqs from "../../components/Faqs";
 import NewPricingtwo from "../../components/NewPricingtwo";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 function classNames(...classes) {
@@ -189,7 +189,7 @@ export default function junkremoval() {
       <Faqs faqs={faqs}></Faqs>
 
       {/* <Contact></Contact> */}
-      <Contactwhite header="Contact us for junk hauling"></Contactwhite>
+      <RequestForm />
     </>
   );
 }

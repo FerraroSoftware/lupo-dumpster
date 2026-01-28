@@ -19,7 +19,7 @@ import {
   CurrencyDollarIcon,
   TrashIcon,
 } from "@heroicons/react/24/outline";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import Testimonialsection from "../../components/Testimonialsection";
 
 const points = [
@@ -158,7 +158,7 @@ export default function JunkPickUp() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for junk pick up" />
+      <RequestForm />
     </>
   );
 }

@@ -11,7 +11,7 @@ function formatPhoneNumber(phone) {
   // Format as (XXX) XXX-XXXX
   if (cleaned.length === 10) {
     return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(
-      6
+      6,
     )}`;
   }
 
@@ -40,7 +40,7 @@ export default async function handler(req, res) {
     const recaptchaResult = await verifyRecaptcha(
       recaptchaToken,
       "submit_form",
-      0.9
+      0.9,
     );
 
     if (!recaptchaResult.success) {
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
     }
 
     console.log(
-      `reCAPTCHA verified successfully with score: ${recaptchaResult.score}`
+      `reCAPTCHA verified successfully with score: ${recaptchaResult.score}`,
     );
 
     // Format the email content
@@ -132,7 +132,7 @@ export default async function handler(req, res) {
     } else if (zapierResult.value) {
       console.log(
         "[v0] Zapier webhook response status:",
-        zapierResult.value.status
+        zapierResult.value.status,
       );
     }
 

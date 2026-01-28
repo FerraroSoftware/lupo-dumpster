@@ -24,7 +24,7 @@ import debris from "../../public/constructiondebris/debris.png";
 import constructiondebrisremoval from "../../public/constructiondebris/construction-debris-removal.png";
 import constructiontrash from "../../public/constructiondebris/construction-trash.png";
 import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 
 const points = [
   {
@@ -172,7 +172,7 @@ export default function ConstructionDebrisRemoval() {
       <Faqs faqs={faqs} />
 
       {/* <Contact /> */}
-      <Contactwhite header="Contact us for Construction Debris Removal" />
+      <RequestForm />
     </>
   );
 }

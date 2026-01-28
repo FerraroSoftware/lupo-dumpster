@@ -26,7 +26,7 @@ import debris from "../../public/constructiondebris/debris.png";
 import dumptrailers from "../../public/dump-trailers.png";
 import junkbefore from "../../public/junkbefore.jpg";
 import Testimonialsection from "../../components/Testimonialsection";
-import Contactwhite from "../../components/Contactwhite";
+import RequestForm from "@/components/new/request-form";
 import trailerthree from "../../public/trailer-1.jpg";
 
 const servicelist = [
@@ -518,7 +518,7 @@ export default function services() {
 
       {/* <Pricing></Pricing> */}
       {/* <Contact></Contact> */}
-      <Contactwhite header="Contact Us Today For Any Service"></Contactwhite>
+      <RequestForm />
     </>
   );
 }
