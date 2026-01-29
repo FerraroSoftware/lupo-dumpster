@@ -367,7 +367,7 @@ export default function DumpsterRentalHoliday() {
                 Simple 4-Step Dumpster Rental Process
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                Renting a dumpster in Holiday is quick and hassle-free. We've
+                Renting a dumpster in Holiday is quick and hassle-free. We&apos;ve
                 streamlined our process to get you the waste solution you need
                 without the runaround.
               </p>
@@ -425,7 +425,7 @@ export default function DumpsterRentalHoliday() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about renting a dumpster in
-              Holiday, FL. Don't see your question? Call us at (727) 317-6717.
+              Holiday, FL. Don&apos;t see your question? Call us at (727) 317-6717.
             </p>
           </div>
 
@@ -502,7 +502,7 @@ export default function DumpsterRentalHoliday() {
             </h2>
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>dumpster rental in Holiday, FL</strong>
-              , Lupo Enterprises is your trusted local provider. Whether you're
+              , Lupo Enterprises is your trusted local provider. Whether you&apos;re
               tackling a home renovation, construction project, or major
               cleanout, we make waste disposal easy and affordable with our
               professional dumpster rental services.

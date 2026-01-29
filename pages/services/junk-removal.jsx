@@ -240,7 +240,7 @@ export default function JunkRemoval() {
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Getting rid of unwanted junk has never been easier. Our
-                full-service process means you don't lift a finger—we handle
+                full-service process means you don&apos;t lift a finger—we handle
                 everything from start to finish.
               </p>
 
@@ -300,7 +300,7 @@ export default function JunkRemoval() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about our junk removal services
-              in Pasco County. Don't see your question? Call us at (727)
+              in Pasco County. Don&apos;t see your question? Call us at (727)
               317-6717.
             </p>
           </div>
@@ -380,7 +380,7 @@ export default function JunkRemoval() {
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>junk removal services</strong> in
               Pasco County, Lupo Enterprises provides full-service hauling that
-              takes all the work off your hands. Whether you're decluttering
+              takes all the work off your hands. Whether you&apos;re decluttering
               your home, clearing out an estate, renovating, or managing a
               cleanout project, we make junk removal easy and stress-free.
             </p>
@@ -400,7 +400,7 @@ export default function JunkRemoval() {
               <strong>junk removal</strong> is completely full-service. Our team
               arrives at your location, provides a final quote, handles all the
               heavy lifting, loads everything into our truck, sweeps up the
-              area, and hauls it all away. It's the most convenient way to get
+              area, and hauls it all away. It&apos;s the most convenient way to get
               rid of unwanted items quickly.
             </p>
 
@@ -421,7 +421,7 @@ export default function JunkRemoval() {
               Eco-Friendly Junk Disposal
             </h3>
             <p className="text-gray-700 mb-4">
-              We're committed to responsible disposal. Items in good condition
+              We&apos;re committed to responsible disposal. Items in good condition
               are donated to local charities including Goodwill, Salvation Army,
               and Habitat for Humanity ReStore. We recycle metals, electronics,
               appliances, and other materials whenever possible. We only resort
@@ -446,7 +446,7 @@ export default function JunkRemoval() {
             <p className="text-gray-700 mb-4">
               We proudly provide <strong>junk removal services</strong>{" "}
               throughout Pasco County, including New Port Richey, Hudson, Port
-              Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City,
+              Richey, Holiday, Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City,
               Zephyrhills, and surrounding communities. Our local expertise
               means faster response times, competitive pricing, and personalized
               service.

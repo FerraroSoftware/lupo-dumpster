@@ -527,7 +527,7 @@ export default function ConstructionDumpsterRental() {
               Flexible Rental Periods for Construction Projects
             </h3>
             <p className="text-gray-700 mb-4">
-              Construction projects rarely follow predictable timelines. That's
+              Construction projects rarely follow predictable timelines. That&apos;s
               why we offer flexible <strong>construction dumpster rental</strong>{" "}
               periods. Standard rentals are 4 days, but we offer weekly and
               monthly options for longer projects. Need an extension? Just call
@@ -541,9 +541,9 @@ export default function ConstructionDumpsterRental() {
             <p className="text-gray-700 mb-4">
               We deliver <strong>construction dumpsters</strong> directly to
               your job site throughout Pasco County including New Port Richey,
-              Hudson, Port Richey, Holiday, Trinity, Land O'Lakes, Wesley
-              Chapel, Dade City, and Zephyrhills. We'll work with you to place
-              the dumpster in the most convenient location that doesn't
+              Hudson, Port Richey, Holiday, Trinity, Land O&apos;Lakes, Wesley
+              Chapel, Dade City, and Zephyrhills. We&apos;ll work with you to place
+              the dumpster in the most convenient location that doesn&apos;t
               interfere with construction activities.
             </p>
 
@@ -554,7 +554,7 @@ export default function ConstructionDumpsterRental() {
               Our construction dumpsters accept most building materials
               including lumber, wood, drywall, sheetrock, metal, roofing
               shingles, siding, windows, doors, flooring, tiles, concrete (with
-              restrictions), bricks, and general construction debris. We'll
+              restrictions), bricks, and general construction debris. We&apos;ll
               guide you on proper disposal of specific materials like concrete,
               which may require dedicated containers.
             </p>
@@ -564,7 +564,7 @@ export default function ConstructionDumpsterRental() {
             </h3>
             <p className="text-gray-700 mb-4">
               As a fully licensed and insured company (License #L20000153106),
-              we've built our reputation on reliable service for contractors and
+              we&apos;ve built our reputation on reliable service for contractors and
               construction professionals. We understand construction timelines,
               job site logistics, and the importance of keeping your project on
               schedule. Our same-day delivery, flexible rentals, and responsive

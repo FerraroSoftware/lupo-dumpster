@@ -379,7 +379,7 @@ export default function FurnitureRemoval() {
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>furniture removal services</strong>{" "}
               in Pasco County, Lupo Enterprises is your trusted local partner.
-              Whether you're decluttering your home, moving, downsizing, or
+              Whether you&apos;re decluttering your home, moving, downsizing, or
               renovating, we make furniture disposal easy and stress-free.
             </p>
             <p className="text-gray-700 mb-4">
@@ -394,7 +394,7 @@ export default function FurnitureRemoval() {
               Eco-Friendly Furniture Disposal & Donation
             </h3>
             <p className="text-gray-700 mb-4">
-              We're committed to environmental responsibility. Furniture in good
+              We&apos;re committed to environmental responsibility. Furniture in good
               condition is donated to local charities like Goodwill, Salvation
               Army, and Habitat for Humanity ReStore. This helps families in
               need while keeping usable items out of landfills. We also recycle
@@ -417,7 +417,7 @@ export default function FurnitureRemoval() {
             <p className="text-gray-700 mb-4">
               We proudly provide <strong>furniture removal services</strong>{" "}
               throughout Pasco County, including New Port Richey, Hudson, Port
-              Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City,
+              Richey, Holiday, Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City,
               Zephyrhills, and surrounding communities. Our local expertise
               means faster response times and personalized service.
             </p>
@@ -432,7 +432,7 @@ export default function FurnitureRemoval() {
               furniture from any floor or location, and ensures your property
               remains protected throughout the process. With transparent
               pricing, exceptional customer service, and a commitment to
-              eco-friendly disposal, we've earned our 5-star reputation
+              eco-friendly disposal, we&apos;ve earned our 5-star reputation
               throughout Pasco County.
             </p>
 

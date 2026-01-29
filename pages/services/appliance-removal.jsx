@@ -301,7 +301,7 @@ export default function ApplianceRemoval() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about our appliance removal
-              services in Pasco County. Don't see your question? Call us at
+              services in Pasco County. Don&apos;t see your question? Call us at
               (727) 317-6717.
             </p>
           </div>
@@ -381,7 +381,7 @@ export default function ApplianceRemoval() {
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>appliance removal services</strong>{" "}
               in Pasco County, Lupo Enterprises provides safe, efficient, and
-              environmentally responsible disposal. Whether you're upgrading to
+              environmentally responsible disposal. Whether you&apos;re upgrading to
               new appliances, remodeling your kitchen, or clearing out an old
               property, we make appliance removal hassle-free.
             </p>
@@ -410,7 +410,7 @@ export default function ApplianceRemoval() {
               Eco-Friendly Appliance Recycling
             </h3>
             <p className="text-gray-700 mb-4">
-              We're committed to responsible <strong>appliance disposal</strong>
+              We&apos;re committed to responsible <strong>appliance disposal</strong>
               . Working appliances are donated to local charities including
               Goodwill, Salvation Army, and Habitat for Humanity ReStore,
               helping families in need. Non-working appliances are recycled—we
@@ -423,7 +423,7 @@ export default function ApplianceRemoval() {
             </h3>
             <p className="text-gray-700 mb-4">
               Need <strong>appliance removal</strong> quickly? We offer same-day
-              and next-day service throughout Pasco County. Whether you're
+              and next-day service throughout Pasco County. Whether you&apos;re
               preparing for new appliance delivery, cleaning out an estate, or
               managing a renovation timeline, we work on your schedule.
             </p>

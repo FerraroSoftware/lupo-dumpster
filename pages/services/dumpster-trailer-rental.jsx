@@ -357,7 +357,7 @@ export default function DumpsterTrailerRental() {
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Renting a dumpster trailer from Lupo Enterprises is quick and
-                hassle-free. We've streamlined our process to get you the waste
+                hassle-free. We&apos;ve streamlined our process to get you the waste
                 solution you need without the runaround.
               </p>
 
@@ -417,7 +417,7 @@ export default function DumpsterTrailerRental() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about our dumpster trailer rental
-              services in Pasco County. Can't find what you're looking for? Give
+              services in Pasco County. Can&apos;t find what you&apos;re looking for? Give
               us a call at (727) 317-6717.
             </p>
           </div>
@@ -511,9 +511,9 @@ export default function DumpsterTrailerRental() {
             </h3>
             <p className="text-gray-700 mb-4">
               Dumpster trailers provide unique advantages for Pasco County
-              residents and contractors. They're easier to place in restricted
+              residents and contractors. They&apos;re easier to place in restricted
               areas, have a lower profile for convenient loading, and are
-              exceptionally versatile for various project types. Whether you're
+              exceptionally versatile for various project types. Whether you&apos;re
               managing construction debris, household junk, or yard waste, our
               trailers deliver the flexibility you need.
             </p>
@@ -525,17 +525,17 @@ export default function DumpsterTrailerRental() {
               We proudly provide{" "}
               <strong>dumpster trailer rental services</strong> throughout Pasco
               County, including New Port Richey, Hudson, Port Richey, Holiday,
-              Trinity, Land O'Lakes, Wesley Chapel, Dade City, Zephyrhills, and
+              Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City, Zephyrhills, and
               all surrounding communities. Our local expertise means faster
               response times and personalized service that understands your
-              community's needs.
+              community&apos;s needs.
             </p>
 
             <h3 className="text-2xl font-bold mb-4 mt-8">
               Commitment to Customer Satisfaction
             </h3>
             <p className="text-gray-700 mb-4">
-              At Lupo Dumpster Rentals, we're fully licensed and insured
+              At Lupo Dumpster Rentals, we&apos;re fully licensed and insured
               (License #L20000153106), ensuring complete peace of mind for every
               rental. Our transparent pricing, flexible scheduling, and
               exceptional customer service have earned us a 5-star reputation

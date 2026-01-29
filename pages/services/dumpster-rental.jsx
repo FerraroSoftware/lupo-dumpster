@@ -360,7 +360,7 @@ export default function DumpsterRental() {
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Renting a dumpster from Lupo Enterprises is quick and
-                hassle-free. We've streamlined our process to get you the waste
+                hassle-free. We&apos;ve streamlined our process to get you the waste
                 solution you need without the runaround.
               </p>
 
@@ -417,7 +417,7 @@ export default function DumpsterRental() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about dumpster rentals in Pasco
-              County. Don't see your question? Call us at (727) 317-6717.
+              County. Don&apos;t see your question? Call us at (727) 317-6717.
             </p>
           </div>
 
@@ -496,7 +496,7 @@ export default function DumpsterRental() {
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>dumpster rental</strong> services in
               Pasco County, Lupo Enterprises delivers professional roll-off
-              dumpster solutions for any project. Whether you're tackling a home
+              dumpster solutions for any project. Whether you&apos;re tackling a home
               renovation, construction project, estate cleanout, or major
               decluttering, we make waste management simple and affordable.
             </p>
@@ -526,7 +526,7 @@ export default function DumpsterRental() {
             </h3>
             <p className="text-gray-700 mb-4">
               Need a <strong>dumpster rental</strong> quickly? We offer same-day
-              and next-day delivery throughout Pasco County. Whether you're
+              and next-day delivery throughout Pasco County. Whether you&apos;re
               starting a project immediately or need emergency waste removal, our
               fast delivery service ensures you stay on schedule. Just call us
               early at (727) 317-6717 for same-day availability.
@@ -548,7 +548,7 @@ export default function DumpsterRental() {
             </h3>
             <p className="text-gray-700 mb-4">
               We understand that projects rarely follow predictable timelines.
-              That's why our standard 4-day <strong>dumpster rental</strong>{" "}
+              That&apos;s why our standard 4-day <strong>dumpster rental</strong>{" "}
               period includes the flexibility to extend based on your needs. Need
               more time? Just call us—we offer affordable extensions to ensure
               your project stays on track without rushing.
@@ -560,7 +560,7 @@ export default function DumpsterRental() {
             <p className="text-gray-700 mb-4">
               We proudly provide <strong>dumpster rental services</strong>{" "}
               throughout Pasco County, including New Port Richey, Hudson, Port
-              Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City,
+              Richey, Holiday, Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City,
               Zephyrhills, and all surrounding communities. Our local expertise
               means faster response times, competitive pricing, and personalized
               service from people who know your area.
