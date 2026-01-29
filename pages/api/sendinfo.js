@@ -1,5 +1,5 @@
 import sgMail from "@sendgrid/mail";
-import { verifyRecaptcha } from "@/lib/recaptcha";
+import { verifyRecaptcha } from "../../lib/recaptcha";
 
 // Set SendGrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
