@@ -357,8 +357,8 @@ export default function DumpsterTrailerRental() {
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Renting a dumpster trailer from Lupo Enterprises is quick and
-                hassle-free. We&apos;ve streamlined our process to get you the waste
-                solution you need without the runaround.
+                hassle-free. We&apos;ve streamlined our process to get you the
+                waste solution you need without the runaround.
               </p>
 
               <div className="space-y-6">
@@ -417,8 +417,8 @@ export default function DumpsterTrailerRental() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about our dumpster trailer rental
-              services in Pasco County. Can&apos;t find what you&apos;re looking for? Give
-              us a call at (727) 317-6717.
+              services in Pasco County. Can&apos;t find what you&apos;re looking
+              for? Give us a call at (727) 317-6717.
             </p>
           </div>
 
@@ -511,11 +511,11 @@ export default function DumpsterTrailerRental() {
             </h3>
             <p className="text-gray-700 mb-4">
               Dumpster trailers provide unique advantages for Pasco County
-              residents and contractors. They&apos;re easier to place in restricted
-              areas, have a lower profile for convenient loading, and are
-              exceptionally versatile for various project types. Whether you&apos;re
-              managing construction debris, household junk, or yard waste, our
-              trailers deliver the flexibility you need.
+              residents and contractors. They&apos;re easier to place in
+              restricted areas, have a lower profile for convenient loading, and
+              are exceptionally versatile for various project types. Whether
+              you&apos;re managing construction debris, household junk, or yard
+              waste, our trailers deliver the flexibility you need.
             </p>
 
             <h3 className="text-2xl font-bold mb-4 mt-8">
@@ -525,8 +525,8 @@ export default function DumpsterTrailerRental() {
               We proudly provide{" "}
               <strong>dumpster trailer rental services</strong> throughout Pasco
               County, including New Port Richey, Hudson, Port Richey, Holiday,
-              Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City, Zephyrhills, and
-              all surrounding communities. Our local expertise means faster
+              Trinity, Land O&apos;Lakes, Wesley Chapel, Dade City, Zephyrhills,
+              and all surrounding communities. Our local expertise means faster
               response times and personalized service that understands your
               community&apos;s needs.
             </p>
@@ -540,8 +540,8 @@ export default function DumpsterTrailerRental() {
               rental. Our transparent pricing, flexible scheduling, and
               exceptional customer service have earned us a 5-star reputation
               throughout Pasco County. When you choose us for your dumpster
-              trailer rental, you're choosing a local company that cares about
-              quality and reliability.
+              trailer rental, you&apos;re choosing a local company that cares
+              about quality and reliability.
             </p>
 
             <div className="bg-red-50 border-l-4 border-red-600 p-6 mt-8">

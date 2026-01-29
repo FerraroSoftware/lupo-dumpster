@@ -180,9 +180,9 @@ export default function ApplianceRemoval() {
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional removal and disposal of all appliances. We handle
-              refrigerators, washers, dryers, stoves, and more. Same-day
-              service available with eco-friendly recycling and proper
-              refrigerant disposal.
+              refrigerators, washers, dryers, stoves, and more. Same-day service
+              available with eco-friendly recycling and proper refrigerant
+              disposal.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -358,10 +358,7 @@ export default function ApplianceRemoval() {
                 className="border-white text-black hover:bg-white/90"
                 asChild
               >
-                <Link
-                  href="tel:7273176717"
-                  className="flex items-center gap-2"
-                >
+                <Link href="tel:7273176717" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   <span>(727) 317-6717</span>
                 </Link>
@@ -381,9 +378,9 @@ export default function ApplianceRemoval() {
             <p className="text-gray-700 mb-4">
               When you need reliable <strong>appliance removal services</strong>{" "}
               in Pasco County, Lupo Enterprises provides safe, efficient, and
-              environmentally responsible disposal. Whether you&apos;re upgrading to
-              new appliances, remodeling your kitchen, or clearing out an old
-              property, we make appliance removal hassle-free.
+              environmentally responsible disposal. Whether you&apos;re
+              upgrading to new appliances, remodeling your kitchen, or clearing
+              out an old property, we make appliance removal hassle-free.
             </p>
             <p className="text-gray-700 mb-4">
               Our professional <strong>appliance removal service</strong>{" "}
@@ -410,12 +407,13 @@ export default function ApplianceRemoval() {
               Eco-Friendly Appliance Recycling
             </h3>
             <p className="text-gray-700 mb-4">
-              We&apos;re committed to responsible <strong>appliance disposal</strong>
-              . Working appliances are donated to local charities including
-              Goodwill, Salvation Army, and Habitat for Humanity ReStore,
-              helping families in need. Non-working appliances are recycled—we
-              recover metals, plastics, glass, and other materials, diverting
-              tons of waste from landfills each year.
+              We&apos;re committed to responsible{" "}
+              <strong>appliance disposal</strong>. Working appliances are
+              donated to local charities including Goodwill, Salvation Army, and
+              Habitat for Humanity ReStore, helping families in need.
+              Non-working appliances are recycled—we recover metals, plastics,
+              glass, and other materials, diverting tons of waste from landfills
+              each year.
             </p>
 
             <h3 className="text-2xl font-bold mb-4 mt-8">
@@ -434,9 +432,9 @@ export default function ApplianceRemoval() {
             <p className="text-gray-700 mb-4">
               We proudly provide <strong>appliance removal services</strong>{" "}
               throughout Pasco County, including New Port Richey, Hudson, Port
-              Richey, Holiday, Trinity, Land O'Lakes, Wesley Chapel, Dade City,
-              Zephyrhills, and surrounding communities. Our local expertise
-              means faster response times and personalized service.
+              Richey, Holiday, Trinity, Land O&apos;Lakes, Wesley Chapel, Dade
+              City, Zephyrhills, and surrounding communities. Our local
+              expertise means faster response times and personalized service.
             </p>
 
             <h3 className="text-2xl font-bold mb-4 mt-8">
