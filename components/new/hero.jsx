@@ -43,10 +43,20 @@ export default function Hero() {
             <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white font-bold">
               Request a Dumpster
             </Button>
-            <Link href="tel:7273176717" className="flex items-center justify-center gap-2 text-lg font-medium">
-              <Phone className="h-5 w-5" />
-              <span>(727) 317-6717</span>
-            </Link>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-medium"
+              asChild
+            >
+              <Link
+                href="tel:7273176717"
+                className="flex items-center justify-center gap-2"
+              >
+                <Phone className="h-5 w-5" />
+                <span>(727) 317-6717</span>
+              </Link>
+            </Button>
           </div>
 
           <div className="pt-8 border-t border-white/20 max-w-2xl mx-auto">

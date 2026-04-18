@@ -9,6 +9,7 @@ import Navbarthree from "../components/Navbarthree";
 import Stickybar from "../components/Stickybar";
 import Head from "next/head";
 import LupoNavbar from "@/components/Navitem";
+import MobileCallButton from "@/components/MobileCallButton";
 
 import { Analytics } from "@vercel/analytics/next";
 import OrganizationSchema from "@/components/organization-schema";
@@ -88,6 +89,7 @@ export default function App({ Component, pageProps }) {
         <Analytics />
 
         <Footer></Footer>
+        <MobileCallButton />
       </main>
     </>
   );
