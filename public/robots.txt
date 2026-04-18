@@ -3,9 +3,19 @@
 
 User-agent: *
 Allow: /
+# Allow crawlers to fetch Next.js build assets so pages render correctly in
+# Googlebot's headless-Chrome renderer. Blocking /_next/ wholesale was a
+# legacy copy-paste — Google explicitly advises against it because it breaks
+# Core Web Vitals measurement and mobile-friendly evaluation. We allow the
+# public subtree /_next/static/ (hashed JS, CSS, fonts, optimized images)
+# and only disallow the two internal preview/data paths that don't belong
+# in the index.
+Allow: /_next/static/
+Allow: /_next/image
+Disallow: /_next/data/
 Disallow: /api/
 Disallow: /thank-you
-Disallow: /_next/
+Disallow: /facebook-offer
 Disallow: /*?utm_
 
 Sitemap: https://www.lupodumpsterrentals.com/sitemap.xml

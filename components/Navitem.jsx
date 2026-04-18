@@ -33,7 +33,7 @@ const serviceLocations = [
   { title: "Palm Harbor", href: "/services/dumpster-rental-palm-harbor" },
   {
     title: "Pinellas County",
-    href: "/services/dumpster-rental-pinellas-county-fl",
+    href: "/services/dumpster-rental-pinellas-county",
   },
   {
     title: "Pinellas Park",

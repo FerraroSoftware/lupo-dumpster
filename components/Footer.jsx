@@ -84,7 +84,7 @@ const navigation = {
     },
     {
       name: "Pinellas County",
-      href: "/services/dumpster-rental-pinellas-county-fl",
+      href: "/services/dumpster-rental-pinellas-county",
     },
   ],
   social: [
