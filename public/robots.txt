@@ -9,3 +9,9 @@ Disallow: /_next/
 Disallow: /*?utm_
 
 Sitemap: https://www.lupodumpsterrentals.com/sitemap.xml
+
+# llms.txt (https://llmstxt.org) — machine-readable business and content
+# manifest for LLM crawlers (GPTBot, ClaudeBot, Perplexity, etc.).
+# Not a protocol directive, but surfacing the URL here gives crawlers an
+# easy discovery hop from the standard robots.txt entry point.
+# See: https://www.lupodumpsterrentals.com/llms.txt

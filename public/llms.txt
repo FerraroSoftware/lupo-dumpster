@@ -1,119 +1,155 @@
 # Lupo Dumpster Rentals
 
-## CORE BUSINESS DETAILS  
-**Business Name:** Lupo Enterprises LLC – Dumpster Rentals  
-**Website:** https://www.lupodumpsterrentals.com  
-**Logo:** https://www.lupodumpsterrentals.com/logo.svg
-**Image:** https://www.lupodumpsterrentals.com/dumpster-rental-pros.jpg
-**Description:**  
-Lupo Dumpster Rentals is a trusted dumpster rental and junk removal company based in Pasco County, Florida. We provide fast, affordable dumpster trailer rentals and junk hauling solutions for residential, commercial, and construction projects. Our mission is to make disposal simple with flexible scheduling, transparent pricing, and responsive service across Pasco, Pinellas, and surrounding Florida counties.  
+> Lupo Enterprises LLC (doing business as Lupo Dumpster Rentals) is a locally owned roll-off dumpster rental and full-service junk removal company headquartered in Holiday, FL. We deliver 10, 15, and 20-yard dump trailers across Pasco, Pinellas, Hernando, and Hillsborough counties with flat-rate pricing, same-day or next-day drop-off, and no hidden fees. Our #1 service area is New Port Richey, FL.
+
+## About
+
+- **Legal name:** Lupo Enterprises LLC
+- **Brand:** Lupo Dumpster Rentals
+- **Headquarters:** 5647 Andrea Dr, Holiday, FL 34690, USA
+- **Latitude / Longitude:** 28.1882, -82.7393
+- **Phone (tap-to-call):** [(727) 317-6717](tel:7273176717)
+- **Email:** a.lupollc@gmail.com
+- **Website:** <https://www.lupodumpsterrentals.com>
+- **Logo:** <https://www.lupodumpsterrentals.com/logo.svg>
+- **Hero image:** <https://www.lupodumpsterrentals.com/dumpster-rental-pros.jpg>
+- **Languages:** English
+- **Hours:** Open every day, 7:00 AM – 8:00 PM Eastern (including weekends)
+- **Rating:** 4.9 out of 5 stars from 130+ verified customer reviews
+- **Credentials:** Licensed & insured · Locally owned & operated · Flat-rate transparent pricing · Same-day & next-day service available · 5+ years in business
+
+## Mission
+
+Make disposal simple for Florida homeowners, contractors, and property managers with quick scheduling, flat-rate pricing, and responsive service. We help customers reclaim their space — one cleanout, remodel, or roofing job at a time.
+
+## Primary pages
+
+- [Home](https://www.lupodumpsterrentals.com/): Overview of dumpster rental and junk removal services across Pasco, Pinellas, Hernando, and Hillsborough counties.
+- [Dumpster Rental in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl): Primary service-area hub — 10/15/20-yard roll-off dumpsters with same-day delivery in New Port Richey.
+- [Contact / Request a Free Quote](https://www.lupodumpsterrentals.com/contact): Contact form for a flat-rate quote, availability check, or delivery scheduling.
+- [Pricing & Sizes](https://www.lupodumpsterrentals.com/dumpster-rental-pricing): How our flat-rate pricing works and which dumpster size fits which project.
+- [Service Locations](https://www.lupodumpsterrentals.com/service-locations): Directory of every Florida city and county we serve.
+- [About Us](https://www.lupodumpsterrentals.com/about-us): Company story, leadership (Alex Lupo, Amanda Lupo), and what makes Lupo different from national dumpster chains.
+- [Blog](https://www.lupodumpsterrentals.com/blog): Long-form guides on dumpster sizing, junk removal, estate cleanouts, and renovation waste management.
+
+## Dumpster rental & roll-off services
+
+- [Dumpster Trailer Rentals](https://www.lupodumpsterrentals.com/services/dumpster-trailer-rental): Overview of our 10/15/20-yard dump trailer fleet and delivery process.
+- [Dumpster Rental (general)](https://www.lupodumpsterrentals.com/services/dumpster-rental): General service page covering roll-off rental for residential and commercial projects.
+- [10-Yard Dump Trailer Rental](https://www.lupodumpsterrentals.com/services/10-yard-dump-trailer): Small project size — garage cleanouts, small remodels, yard debris (~3 pickup truck loads).
+- [15-Yard Dump Trailer Rental](https://www.lupodumpsterrentals.com/services/15-yard-dump-trailer): Medium project size — kitchen remodels, flooring tear-out, basement cleanouts (~4–5 pickup truck loads).
+- [20-Yard Dump Trailer Rental](https://www.lupodumpsterrentals.com/services/20-yard-dump-trailer): Large project size — whole-home renovations, construction debris, full property cleanouts (~6–7 pickup truck loads).
+- [Construction Dumpster Rental](https://www.lupodumpsterrentals.com/services/construction-dumpster-rental): Contractor-focused roll-offs for framing, drywall, demolition, and jobsite cleanup.
+
+## Junk removal & cleanout services
+
+- [Junk Removal](https://www.lupodumpsterrentals.com/services/junk-removal): Full-service loading and hauling for residential and commercial clients.
+- [Junk Pickup](https://www.lupodumpsterrentals.com/services/junk-pick-up): On-demand junk pickup where we load and haul — you don't lift a thing.
+- [Junk Removal in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/junk-removal-new-port-richey-fl): NPR-specific junk removal page with local pricing and availability.
+- [Junk Removal in Palm Harbor, FL](https://www.lupodumpsterrentals.com/services/junk-removal-palm-harbor): Palm Harbor junk removal and haul-away service.
+- [Junk Removal in Port Richey, FL](https://www.lupodumpsterrentals.com/services/junk-removal-port-richey): Port Richey junk removal and haul-away service.
+- [Haul-Away Junk Service](https://www.lupodumpsterrentals.com/services/haul-away-junk): Single-item and multi-item haul-away for heavy or awkward junk.
+- [Trash Pickup](https://www.lupodumpsterrentals.com/services/trash-pick-up): Scheduled trash pickup for homes and businesses.
+- [Trash Removal](https://www.lupodumpsterrentals.com/services/trash-removal): General trash and waste removal across our service area.
+- [Garbage Removal Service](https://www.lupodumpsterrentals.com/services/garbage-removal-service): Recurring or one-time garbage removal for properties we serve.
+- [Pasco County Trash Pickup](https://www.lupodumpsterrentals.com/services/pasco-county-trash-pickup): Pasco County-wide trash pickup and haul-away.
+
+## Specialty removal services
+
+- [Appliance Removal](https://www.lupodumpsterrentals.com/services/appliance-removal): Refrigerators, ovens, washers, dryers, AC units — with responsible recycling where possible.
+- [Appliance Removal in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/appliance-removal-new-port-richey-fl): NPR-specific appliance removal page.
+- [Furniture Removal](https://www.lupodumpsterrentals.com/services/furniture-removal): Couches, mattresses, dressers, desks — we load and haul.
+- [Mattress Disposal](https://www.lupodumpsterrentals.com/services/mattress-disposal): Mattress and box-spring disposal following Florida recycling guidelines.
+- [Garage Cleanout Service](https://www.lupodumpsterrentals.com/services/garage-cleaning-service): Full garage cleanouts — we sort, load, and haul.
+- [Garage Cleanout in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/garage-cleaning-service-new-port-richey-fl): NPR-specific garage cleanout page.
+- [Hoarding Cleanup](https://www.lupodumpsterrentals.com/services/hoarding-cleanup): Discreet, compassionate hoarding cleanup for homes and estates.
+- [Hoarding Cleanup in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/hoarding-cleanup-new-port-richey-fl): NPR-specific hoarding cleanup page.
+- [Construction Debris Removal](https://www.lupodumpsterrentals.com/services/construction-debris-removal): Drywall, framing, flooring, concrete, and remodel debris.
+- [Construction Debris Removal in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/construction-debris-removal-new-port-richey-fl): NPR-specific construction debris removal page.
+- [Yard Waste Removal](https://www.lupodumpsterrentals.com/services/yard-waste-removal): Brush, tree trimmings, storm debris, and landscape waste.
+- [Bobcat Services](https://www.lupodumpsterrentals.com/services/bobcat-services): Grading, leveling, small demolition, deck removal, and debris sweep-up.
+
+## Service areas — Pasco County, FL (primary)
+
+- [Dumpster Rental in New Port Richey, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl): #1 target city — roll-off dumpsters across every NPR ZIP code.
+- [Dumpster Rental in Holiday, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-holiday-fl): Dumpster delivery across Holiday and surrounding Pasco communities.
+- [Dumpster Rental in Trinity, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-trinity-fl): Roll-off dumpsters for Trinity homeowners and contractors.
+- [Dumpster Rental in Hudson, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-hudson-fl): Same-day dumpster delivery in Hudson.
+- [Dumpster Rental in Land O' Lakes, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-land-o-lakes-fl): Residential and commercial dumpsters in Land O' Lakes.
+- [Dumpster Rental in Wesley Chapel, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-wesley-chapel-fl): Dumpster rental across Wesley Chapel.
+- [Dumpster Rental in Zephyrhills, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-zephyrhills-fl): Dumpster rental and haul-away in Zephyrhills.
+- [Dumpster Rental in Dade City, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-dade-city-fl): Dumpsters delivered across Dade City.
+- [Dumpster Rental in San Antonio, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-san-antonio-fl): Roll-offs for San Antonio homes and contractors.
+- [Dumpster Rental in Odessa, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-odessa-fl): Dumpster rental across Odessa.
+- [Dumpster Rental in Spring Hill, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-spring-hill): Dumpster rental in Spring Hill (northern Pasco / Hernando line).
+
+## Service areas — Pinellas County, FL
+
+- [Dumpster Rental in Palm Harbor, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-palm-harbor): Dumpster rental across Palm Harbor.
+- [Dumpster Rental in Clearwater, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-clearwater-fl): Dumpster rental in Clearwater.
+- [Dumpster Rental in Dunedin, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-dunedin-fl): Dumpster rental in Dunedin.
+- [Dumpster Rental in Largo, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-largo-fl): Dumpster rental in Largo.
+- [Dumpster Rental in Oldsmar, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-oldsmar-fl): Dumpster rental in Oldsmar.
+- [Dumpster Rental in Safety Harbor, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-safety-harbor-fl): Dumpster rental in Safety Harbor.
+- [Dumpster Rental in Seminole, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-seminole-fl): Dumpster rental in Seminole.
+- [Dumpster Rental in Pinellas Park, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-pinellas-park-fl): Dumpster rental in Pinellas Park.
+- [Dumpster Rental in St. Petersburg, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-st-petersburg-fl): Dumpster rental in St. Petersburg.
+
+## Service areas — Hillsborough County, FL
+
+- [Dumpster Rental in Lutz, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-lutz-fl): Dumpster rental in Lutz.
+- [Dumpster Rental in Westchase, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-westchase-fl): Dumpster rental in Westchase.
+- [Dumpster Rental in Keystone, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-keystone-fl): Dumpster rental in the Keystone area.
+
+## Service areas — Hernando County, FL
+
+- [Dumpster Rental in Brooksville, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-brooksville-fl): Dumpster rental across Brooksville.
+
+## Service areas — county-level pages
+
+- [Dumpster Rental in Pasco County, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-new-port-richey-fl): Pasco County-wide dumpster rental (hub lives on the NPR page).
+- [Dumpster Rental in Pinellas County, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-pinellas-county): Pinellas County-wide dumpster rental directory page.
+- [Dumpster Rental in Hillsborough County, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-hillsborough-county-fl): Hillsborough County-wide dumpster rental directory page.
+- [Dumpster Rental in Hernando County, FL](https://www.lupodumpsterrentals.com/services/dumpster-rental-hernando-county-fl): Hernando County-wide dumpster rental directory page.
+- [Dumpster Rental across the Tampa Bay Area](https://www.lupodumpsterrentals.com/services/dumpster-rental-tampa-bay): Regional overview across the greater Tampa Bay metro.
+
+## Industries and project types we serve
+
+- Residential homeowners — home cleanouts, renovations, downsizing, moving
+- Real estate agents & property managers — turnover cleanouts, estate cleanouts, eviction clean-ups
+- Construction & renovation contractors — framing, drywall, flooring, demolition, kitchen & bath remodels
+- Roofing contractors — tear-off debris, shingle disposal, whole-roof replacement projects
+- Landscaping & outdoor projects — brush, tree trimming, storm debris, pool & deck tear-outs
+- Commercial businesses — office cleanouts, retail renovations, restaurant remodels
+- Municipal & community cleanups — neighborhood cleanup days, HOA-run projects
+
+## Guides and blog posts
+
+- [Ultimate Guide to Junk Removal](https://www.lupodumpsterrentals.com/blog/ultimate-guide-to-junk-removal): Deep guide to scoping, pricing, and scheduling a full-service junk removal.
+- [How to Rent a Dumpster — Tips, Tricks & Advice](https://www.lupodumpsterrentals.com/blog/how-to-rent-a-dumpster-tips-tricks-and-advice): Practical walkthrough of the rental process from quote to pickup.
+- [Guide to Roll-Off Dumpster Trailers — Choosing the Right Size](https://www.lupodumpsterrentals.com/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size): How to pick between 10, 15, and 20-yard sizes for your project.
+- [Dump Trailer Services Explained](https://www.lupodumpsterrentals.com/blog/dump-trailer-services-explained): What a dump trailer is, how it differs from a traditional roll-off, and when each makes sense.
+- [Affordable Dumpster Rental](https://www.lupodumpsterrentals.com/blog/affordable-dumpster-rental): Cost-saving tips and transparent-pricing breakdown for dumpster rentals.
+- [Appliance Removal — In-Depth Guide](https://www.lupodumpsterrentals.com/blog/appliance-removal-in-depth-guide): Refrigerant handling, recycling options, and pricing notes for appliance removal.
+- [Complete Guide to Estate Cleanout Services](https://www.lupodumpsterrentals.com/blog/complete-guide-to-estate-cleanout-services): Step-by-step guide for agents, executors, and families planning an estate cleanout.
+- [Haul Junk Away — Your Guide to Decluttering](https://www.lupodumpsterrentals.com/blog/haul-junk-away-your-guide-to-decluttering): Room-by-room decluttering framework and when to call a hauler.
+- [Top Five Projects That Call for a Dumpster Rental](https://www.lupodumpsterrentals.com/blog/top-five-projects-that-call-for-a-dumpster-rental): The five highest-ROI project types to justify renting a roll-off.
+
+## Booking and customer support
+
+- **Request a quote:** <https://www.lupodumpsterrentals.com/contact>
+- **Phone (fastest):** [(727) 317-6717](tel:7273176717)
+- **Email:** a.lupollc@gmail.com
+- **Typical response time:** Within 1 business hour during operating hours (7 AM – 8 PM ET)
+- **Typical delivery time:** Same-day or next-day for Pasco and northern Pinellas; 1–2 days for outer service area
+
+## Optional
+
+- [XML Sitemap](https://www.lupodumpsterrentals.com/sitemap.xml): Full machine-readable list of indexable pages with lastmod and priority.
+- [robots.txt](https://www.lupodumpsterrentals.com/robots.txt): Crawler directives.
 
 ---
 
-## CONTACT INFORMATION  
-**Phone:** (727) 317-6717  
-**Email:** a.lupollc@gmail.com  
-**Address:** 5647 Andrea Dr, Holiday, FL 34690, USA  
-**Latitude:** 28.1882  
-**Longitude:** -82.7393  
-**Service Area:** Pasco, Pinellas, Hernando, Hillsborough, and surrounding Florida counties  
-**Languages:** English  
-
----
-
-## HOURS OF OPERATION  
-- Monday: 07:00–20:00  
-- Tuesday: 07:00–20:00  
-- Wednesday: 07:00–20:00  
-- Thursday: 07:00–20:00  
-- Friday: 07:00–20:00  
-- Saturday: 07:00–20:00  
-- Sunday: 07:00–20:00  
-
----
-
-## SERVICE LOCATIONS (FLORIDA CITIES & COUNTIES)  
-- New Port Richey, FL  
-- Holiday, FL  
-- Trinity, FL  
-- Tampa Bay, FL  
-- Hudson, FL  
-- Spring Hill, FL  
-- Odessa, FL  
-- Clearwater, FL  
-- Westchase, FL  
-- Palm Harbor, FL  
-- Dunedin, FL  
-- Brooksville, FL  
-- Largo, FL  
-- Oldsmar, FL  
-- Safety Harbor, FL  
-- Land O’ Lakes, FL  
-- Lutz, FL  
-- Wesley Chapel, FL  
-- Zephyrhills, FL  
-- Dade City, FL  
-- Pinellas Park, FL  
-- Seminole, FL  
-- St. Petersburg, FL  
-- Keystone, FL  
-- San Antonio, FL  
-- Pasco County, FL  
-- Hernando County, FL  
-- Hillsborough County, FL  
-- Pinellas County, FL  
-
----
-
-## SERVICES OFFERED  
-- [Dumpster Trailer Rentals](https://www.lupodumpsterrentals.com/services/dumpster-trailer-rental)  
-- [15-Yard Dump Trailer Rentals](https://www.lupodumpsterrentals.com/services/15-yard-dump-trailer)  
-- [Construction Dumpster Rentals](https://www.lupodumpsterrentals.com/services/construction-dumpster-rental)  
-- [Junk Removal Services](https://www.lupodumpsterrentals.com/services/junk-removal-new-port-richey-fl)  
-- [Trash & Debris Hauling](https://www.lupodumpsterrentals.com/services/haul-away-junk)  
-- [Yard Waste Removal](https://www.lupodumpsterrentals.com/services/yard-waste-removal)  
-- [Appliance Removal](https://www.lupodumpsterrentals.com/services/appliance-removal)  
-- [Furniture Removal](https://www.lupodumpsterrentals.com/services/furniture-removal)  
-- [Garage Cleanouts](https://www.lupodumpsterrentals.com/services/garage-cleaning-service)  
-- [Hoarding Cleanups](https://www.lupodumpsterrentals.com/services/hoarding-cleanup)  
-- [Mattress Disposal](https://www.lupodumpsterrentals.com/services/mattress-disposal)  
-- [Estate Cleanouts](https://www.lupodumpsterrentals.com/blog/complete-guide-to-estate-cleanout-services)  
-- [Construction Debris Removal](https://www.lupodumpsterrentals.com/services/construction-debris-removal)  
-
----
-
-## INDUSTRIES SERVED  
-- Residential Homeowners  
-- Property Managers  
-- Construction & Renovation Contractors  
-- Real Estate Agents (Estate Cleanouts)  
-- Commercial Businesses  
-- Landscaping & Outdoor Projects  
-- Municipal & Community Cleanups  
-- Roofing
-
----
-
-## CREDENTIALS & REVIEWS  
-- **4.9/5 Google Rating (144+ Reviews)**  
-- **Locally Owned & Operated in Pasco County**  
-- **Affordable & Transparent Pricing**  
-- **Same-Day & Next-Day Service Available**  
-
----
-
-## MISSION STATEMENT  
-At Lupo Dumpster Rentals, our mission is to provide reliable, affordable, and stress-free dumpster rental and junk removal services for Florida homeowners and businesses. We are committed to helping customers reclaim their space with quick scheduling, transparent pricing, and exceptional service.  
-
----
-
-## GET IN TOUCH  
-- **Contact Form:** https://www.lupodumpsterrentals.com/contact  
-- **Phone:** (727) 317-6717  
-- **Appointments:** https://www.lupodumpsterrentals.com  
-
----
-
-## VERSIONING  
-LLMS Version: 1.0  
-Last Updated: 2025-09-17  
+LLMs Version: 2.0
+Spec: <https://llmstxt.org>
+Last Updated: 2026-04-17
