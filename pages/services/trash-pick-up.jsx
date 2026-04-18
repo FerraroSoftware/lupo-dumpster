@@ -25,6 +25,8 @@ import jordan from "../../public/jordan.png";
 import dump1 from "../../public/dump1.png";
 import dump2 from "../../public/dump2.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Reviews from "../../components/Reviews";
 import Contacttwo from "../../components/Contacttwo";
 import dumpstertrailer from "../../public/dumpster-trailer-1.png";
@@ -94,7 +96,7 @@ const faqs = [
   {
     question: "How much does the trash pick up service cost?",
     answer:
-      "The cost for trash pick-up depends on various factors, such as the volume of trash, frequency of pick-ups, and specific requirements. Pricing starts at $75. Please reach out to us for a personalized quote.",
+      "The cost for trash pick-up depends on various factors, such as the volume of trash, frequency of pick-ups, and specific requirements, so every job is quoted individually. Please reach out to us for a free, personalized quote.",
     items: [],
   },
   {
@@ -205,10 +207,15 @@ export default function dumpsterrental() {
         </title>
         <meta
           name="description"
-          content="Trash Pick Up Services in New Port Richey, FL. We offer affordable and convenient junk removal services for any project. Look no further and contact us today!"
+          content="Trash pick up in New Port Richey, FL by Lupo Dumpster Rentals. Same-day service for homes and businesses at flat rates. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Trash Pick Up Services | New Port Richey, FL | Flat Rates"
+          description="Trash pick up in New Port Richey, FL by Lupo Dumpster Rentals. Same-day service for homes and businesses at flat rates. Call (727) 317-6717."
+          path="/services/trash-pick-up"
+        />
       </Head>
       <div className="">
         <main>
@@ -222,13 +229,15 @@ export default function dumpsterrental() {
                     <Image
                       className="h-full w-full object-cover"
                       src={dumpstertrailer}
-                      alt="dumpster rental"
+                      alt="Dumpster trailer rental for trash pickup in New Port Richey, FL by Lupo Dumpster Rentals"
                     />
                     <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
                   </div>
                   <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                     <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                      <span className="block text-white">New Port Richey</span>
+                      <span className="block text-white">
+                        New Port Richey, FL
+                      </span>
                       <span className="block text-red-600">Trash Pick Up</span>
                     </h1>
                     <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
@@ -248,7 +257,7 @@ export default function dumpsterrental() {
                           href="#trash-pick-up"
                           className="flex items-center justify-center rounded-md border border-transparent bg-red-600 bg-opacity-90 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
                         >
-                          Learn More
+                          See trash pickup details
                         </Link>
                       </div>
                     </div>
@@ -261,6 +270,8 @@ export default function dumpsterrental() {
           {/* More main page content here... */}
         </main>
       </div>
+
+      <Breadcrumbs />
 
       {/* features */}
       <div className=" py-16 sm:py-24" id="trash-pick-up">
@@ -358,7 +369,7 @@ export default function dumpsterrental() {
                         <Image
                           className="h-6 w-6 rounded-full"
                           src={jordan}
-                          alt="testimonial"
+                          alt="Jordan Selders, Lupo Dumpster Rentals customer"
                         />
                       </div>
                       <div className="text-base font-medium text-gray-400">
@@ -533,7 +544,7 @@ export default function dumpsterrental() {
                   href="#faq"
                   className="text-base font-semibold leading-7 text-white"
                 >
-                  Learn more <span aria-hidden="true">→</span>
+                  See trash pickup FAQs <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -541,7 +552,7 @@ export default function dumpsterrental() {
               <img
                 className="absolute top-0 left-0 w-[56rem] lg:max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src="/dump1.png"
-                alt="App screenshot"
+                alt="Trash pickup dumpster in New Port Richey, FL by Lupo Dumpster Rentals"
                 width={1824}
                 height={1080}
               />

@@ -1,42 +1,87 @@
 import { HelpCircle } from "lucide-react";
+import Script from "next/script";
 
-// Hardcoded list of Frequently Asked Questions
-const faqsList = [
-  {
-    question: "How much does it cost to rent a dumpster in Trinity, FL?",
-    answer:
-      "Dumpster rental prices in Trinity vary based on size, rental duration, and the type of debris. Contact Lupo Dumpster Rentals for a transparent, free quote tailored to your specific Trinity project!",
-  },
-  {
-    question: "What dumpster sizes do you offer for Trinity residents?",
-    answer:
-      "We offer 10-yard, 15-yard, and 20-yard dumpsters, perfect for any project size in Trinity, from small home cleanouts to larger construction jobs. Our team can help you select the best fit.",
-  },
-  {
-    question: "How long can I keep the dumpster at my Trinity location?",
-    answer:
-      "Our standard rental period is typically 7 days, but we offer flexible options for Trinity customers. If you need it longer, just let us know, and we'll work with your schedule.",
-  },
-  {
-    question: "Do I need a permit for a dumpster in Trinity, FL?",
-    answer:
-      "If the dumpster is placed on private property in Trinity (like your driveway), a permit is usually not required. However, if it needs to be on a public street, a permit from Pasco County might be necessary. We can advise you on this.",
-  },
-  {
-    question: "How quickly can I get a dumpster delivered to Trinity?",
-    answer:
-      "We pride ourselves on prompt service! In many cases, we can offer same-day or next-day dumpster delivery to Trinity. Call us to check availability.",
-  },
-  {
-    question: "What if I fill my dumpster sooner than expected?",
-    answer:
-      "No problem! Just give us a call, and we can arrange an early pickup for your Trinity location and, if needed, swap it for an empty one (additional charges may apply).",
-  },
-];
+/**
+ * Per-city FAQ section + matching `FAQPage` JSON-LD.
+ *
+ * - Visible Q&As are generated from a city-specific template so Brooksville,
+ *   Clearwater, etc. don't render hardcoded "Trinity" copy (bug introduced
+ *   when the template was first forked from the NPR prototype).
+ * - The emitted JSON-LD mirrors exactly what's visible — Google's FAQ
+ *   rich-result guidance requires schema Q&As to match on-page content.
+ * - Pass `faqs` explicitly to override the defaults for a given page.
+ */
+function buildDefaultFaqs({ city, county, countyPermitPhone }) {
+  const permitAnswer = countyPermitPhone
+    ? `If the dumpster sits on private property in ${city} (like your driveway), a permit is typically NOT required. If it must be placed on a public street or right-of-way, you'll need a permit from ${county} Public Works at ${countyPermitPhone}. We can advise you on your specific situation.`
+    : `If the dumpster sits on private property in ${city} (like your driveway), a permit is typically NOT required. If it must be placed on a public street or right-of-way, you may need a permit from ${county}. We can advise you on your specific situation — just call us with the address.`;
 
-export function FaqSection({ title, subtitle }) {
+  return [
+    {
+      question: `How much does it cost to rent a dumpster in ${city}, FL?`,
+      answer: `Dumpster rental prices in ${city} vary based on size (10, 15, or 20 yard), rental duration, and the type of debris. Lupo Dumpster Rentals charges transparent flat rates with no hidden fees — contact us for a free quote tailored to your ${city} project.`,
+    },
+    {
+      question: `What dumpster sizes do you offer for ${city} residents?`,
+      answer: `We offer 10-yard, 15-yard, and 20-yard roll-off dumpsters in ${city}. A 10-yard works for garage cleanouts and small remodels, a 15-yard suits kitchen or basement projects, and a 20-yard handles full home renovations or major construction debris.`,
+    },
+    {
+      question: `How long can I keep the dumpster at my ${city} location?`,
+      answer: `Our standard rental period for ${city} customers is 7 days, with flexible extensions available. Let us know your project timeline when you book and we'll accommodate longer rentals at no surprise cost.`,
+    },
+    {
+      question: `Do I need a permit for a dumpster in ${city}, FL?`,
+      answer: permitAnswer,
+    },
+    {
+      question: `How quickly can I get a dumpster delivered to ${city}?`,
+      answer: `Most ${city} customers get same-day or next-day delivery when they book before 11 AM. Lupo Dumpster Rentals is locally owned and operated in ${county}, so we can usually have a dumpster in your driveway within 24 hours.`,
+    },
+    {
+      question: `What if I fill my dumpster sooner than expected?`,
+      answer: `No problem — just call and we'll arrange an early pickup at your ${city} location. If you need more capacity, we can swap in a fresh dumpster (additional rental charges apply).`,
+    },
+    {
+      question: `Do you serve all of ${city} and surrounding areas?`,
+      answer: `Yes. Lupo Dumpster Rentals delivers throughout ${city} and the broader ${county} service area, including neighboring cities and ZIP codes. Call (727) 317-6717 with your address to confirm coverage.`,
+    },
+  ];
+}
+
+export function FaqSection({
+  title,
+  subtitle,
+  city = "New Port Richey",
+  county = "Pasco County",
+  countyPermitPhone,
+  faqs,
+  schemaId,
+}) {
+  const items = faqs || buildDefaultFaqs({ city, county, countyPermitPhone });
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer,
+      },
+    })),
+  };
+
+  const scriptId = schemaId || `faq-schema-${city.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
   return (
     <section className="py-16 bg-white">
+      <Script
+        id={scriptId}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <HelpCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
@@ -48,7 +93,7 @@ export function FaqSection({ title, subtitle }) {
           </p>
         </div>
         <div className="max-w-3xl mx-auto space-y-6">
-          {faqsList.map((faq, index) => (
+          {items.map((faq, index) => (
             <div
               key={index}
               className="bg-zinc-50 rounded-lg p-6 border border-zinc-100"

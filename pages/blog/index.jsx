@@ -2,6 +2,8 @@ import { FadeIn } from "../../components/FadeIn";
 import { loadMDXMetadata } from "../../lib/loadMDXMetadata";
 import Image from "next/image";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function BlogPage({ paths }) {
   return (
@@ -12,18 +14,25 @@ export default function BlogPage({ paths }) {
         </title>
         <meta
           name="description"
-          content="Learn more about dumpster rentals, junk removal, and waste management from our blog. We provide dumpster rentals and junk removal services in Pasco County."
+          content="Dumpster rental and junk removal tips, guides, and local news from Lupo Dumpster Rentals. Serving Pasco County, FL. Call (727) 317-6717 for service."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Lupo Dumpster Rentals | Blog | Dumpster Rental and Junk Removal"
+          description="Dumpster rental and junk removal tips, guides, and local news from Lupo Dumpster Rentals. Serving Pasco County, FL. Call (727) 317-6717 for service."
+          path="/blog"
+        />
       </Head>
+
+      <Breadcrumbs />
 
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <FadeIn>
             <div className="mx-auto max-w-2xl lg:max-w-4xl">
               <h1 className="text-3xl font-semibold uppercase tracking-tight text-neutral-900 sm:text-4xl">
-                Latest from the blog
+                Dumpster Rental & Junk Removal Blog
               </h1>
               <p className="mt-2 text-lg leading-8 text-neutral-600">
                 Learn more about dumpster rentals, junk removal, and waste

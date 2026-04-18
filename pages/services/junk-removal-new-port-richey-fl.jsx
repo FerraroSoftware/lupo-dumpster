@@ -23,6 +23,8 @@ import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Reviews from "../../components/Reviews";
 import Junkcost from "../../components/Junkcost";
 import Contacttwo from "../../components/Contacttwo";
@@ -31,6 +33,7 @@ import Mission from "../../components/Mission";
 import Junkheader from "../../components/Junkheader";
 import junktrailer from "../../public/junk-trailer.png";
 import Multiblock from "../../components/Multiblock";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 
 import dumpsterrental from "../../public/dumpsterrental.png";
 import junkremovals from "../../public/junkremoval.jpg";
@@ -77,7 +80,7 @@ const faqs = [
   {
     question: "How much does junk removal cost?",
     answer:
-      "Our rates start at $75. The rate will increase depending on the amount of items you have and the distance of travel. Give us a call to get a free quote today. Another option is to rent a dumpster trailer. The cost of renting a dumpster can vary depending on several factors, such as dumpster size, rental period, location, and additional services.",
+      "Every job is quoted based on the amount of items you have and the distance of travel, so we price each project individually. Give us a call to get a free, no-obligation quote today. Another option is to rent a dumpster trailer — the cost can vary depending on dumpster size, rental period, location, and additional services, and we're happy to walk you through both options over the phone.",
     items: [],
   },
   {
@@ -138,15 +141,18 @@ export default function junkremoval() {
   return (
     <>
       <Head>
-        <title>
-          Expert Junk Removal New Port Richey | Trash Disposal | Call Now
-        </title>
+        <title>Junk Removal in New Port Richey, FL | Lupo Dumpster Rentals</title>
         <meta
           name="description"
-          content="Cluttered space? Let us take care of it. Our professional and hassle-free junk removal services in New Port Richey, FL will leave your space clean and organized."
+          content="Junk removal in New Port Richey, FL by Lupo Dumpster Rentals. Full-service hauling for furniture, appliances, yard waste & more. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Junk Removal in New Port Richey, FL | Lupo Dumpster Rentals"
+          description="Junk removal in New Port Richey, FL by Lupo Dumpster Rentals. Full-service hauling for furniture, appliances, yard waste & more. Call (727) 317-6717."
+          path="/services/junk-removal-new-port-richey-fl"
+        />
       </Head>
 
       <Junkheader
@@ -157,6 +163,8 @@ export default function junkremoval() {
         ptag="Experience unparalleled professionalism and efficiency with New Port Richey's premier junk removal service, catering to all your disposal needs responsibly."
         cta="Request Junk Removal"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Junk Removal New Port Richey"
@@ -218,6 +226,12 @@ export default function junkremoval() {
       </div>
 
       <Contact></Contact>
+      <NprHubCallout
+        service="junk removal"
+        anchorText="New Port Richey roll-off dumpster rental"
+        heading="Bigger job? Rent a dumpster in New Port Richey, FL"
+        body="Junk removal is perfect for quick hauls, but for whole-home cleanouts, roofing jobs, or multi-day projects in New Port Richey, a roll-off dumpster usually costs less per load. See sizes, flat-rate pricing, and same-day availability on our"
+      />
     </>
   );
 }

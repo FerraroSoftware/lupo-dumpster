@@ -9,7 +9,11 @@ export default function AboutFounder() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative transform transition-transform duration-500 ">
-              <Image src={alexlupo} alt="Alex Lupo" className="rounded-xl shadow-xl" />
+              <Image
+                src={alexlupo}
+                alt="Alex Lupo, founder of Lupo Dumpster Rentals in Pasco County, FL"
+                className="rounded-xl shadow-xl"
+              />
               <div className="absolute -bottom-6 -right-6 bg-red-600 text-white py-4 px-8 rounded-lg">
                 <h3 className="text-xl font-bold">Alex Lupo</h3>
                 <p>Founder, Lupo Dumpster Rentals</p>

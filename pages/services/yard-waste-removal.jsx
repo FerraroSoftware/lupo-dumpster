@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   CurrencyDollarIcon,
@@ -106,9 +109,9 @@ const features = [
   },
 ];
 
-const metatitle = "Yard Waste Removal Services | Clean & Green";
+const metatitle = "Yard Waste Removal in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Professional yard waste removal services to keep your lawn clean and healthy. Eco-friendly and efficient, we handle all types of yard debris. Contact us!";
+  "Yard waste removal in Pasco County, FL. Lupo Dumpster Rentals hauls branches, brush, palm fronds & landscaping debris same-day. Call (727) 317-6717.";
 
 export default function YardWasteRemoval() {
   return (
@@ -116,6 +119,11 @@ export default function YardWasteRemoval() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/yard-waste-removal"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -123,11 +131,13 @@ export default function YardWasteRemoval() {
       <Junkheader
         image={yardwasteremoval}
         alttext="Yard waste removal service"
-        location="Efficient and Eco-Friendly"
+        location="Pasco County, FL"
         service="Yard Waste Removal"
         ptag="Keep your yard clean and contribute to a healthier environment with our comprehensive yard waste removal services."
         cta="Get a Free Estimate"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Expert Yard Waste Removal"
@@ -159,6 +169,10 @@ export default function YardWasteRemoval() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="yard waste removal"
+        anchorText="dumpster rental in New Port Richey"
+      />
     </>
   );
 }

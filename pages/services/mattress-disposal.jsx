@@ -2,6 +2,8 @@ import dump1 from "../../public/mattress-disposal.png";
 import dump2 from "../../public/mattress-removal.png";
 
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -11,6 +13,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   BedIcon,
   CurrencyDollarIcon,
@@ -108,9 +111,9 @@ const features = [
   },
 ];
 
-const metatitle = "Mattress Disposal Services | Quick, Easy, & Eco-Friendly";
+const metatitle = "Mattress Disposal in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Need to dispose of an old mattress? Our eco-friendly mattress disposal service offers a hassle-free way to get rid of your old mattress responsibly.";
+  "Mattress disposal in Pasco County, FL. Lupo Dumpster Rentals offers eco-friendly mattress removal and same-day pickup. Call (727) 317-6717.";
 
 export default function MattressDisposal() {
   return (
@@ -118,6 +121,11 @@ export default function MattressDisposal() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/mattress-disposal"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -125,11 +133,13 @@ export default function MattressDisposal() {
       <Junkheader
         image={mattressDisposalImage}
         alttext="Mattress disposal service"
-        location="Easy and Eco-Friendly"
+        location="Pasco County, FL"
         service="Mattress Disposal"
         ptag="Get rid of your old mattress effortlessly with our professional disposal services. We ensure every mattress is handled responsibly."
         cta="Schedule Disposal"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Effortless Mattress Disposal"
@@ -162,6 +172,10 @@ export default function MattressDisposal() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="mattress disposal"
+        anchorText="New Port Richey roll-off dumpsters"
+      />
     </>
   );
 }

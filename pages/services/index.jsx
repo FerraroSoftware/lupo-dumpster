@@ -9,6 +9,7 @@ import junkremoval from "../../public/junkremoval.png";
 import dumpsterrental from "../../public/dumpsterrental.png";
 import appliances from "../../public/appliances.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
 import dominique from "../../public/dominique.png";
 import review from "../../public/review.png";
 import wastemanagement from "../../public/waste-management.png";
@@ -27,6 +28,7 @@ import dumptrailers from "../../public/dump-trailers.png";
 import junkbefore from "../../public/junkbefore.jpg";
 import Testimonialsection from "../../components/Testimonialsection";
 import RequestForm from "@/components/new/request-form";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import trailerthree from "../../public/trailer-1.jpg";
 
 const servicelist = [
@@ -155,10 +157,15 @@ export default function services() {
         </title>
         <meta
           name="description"
-          content="Looking for a dumpster rental service that won't break the bank? Lupo Dumpster Rentals offers affordable and reliable waste removal services for your next project."
+          content="Dumpster rental, junk removal, appliance & furniture haul-away across Pasco County, FL. Full-service by Lupo Dumpster Rentals. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Lupo Dumpster Rentals | Affordable and Reliable Dumpster and Junk Services"
+          description="Dumpster rental, junk removal, appliance & furniture haul-away across Pasco County, FL. Full-service by Lupo Dumpster Rentals. Call (727) 317-6717."
+          path="/services"
+        />
       </Head>
       {/*  */}
       <section className="py-10 sm:py-16 lg:py-24 bg-white">
@@ -190,7 +197,7 @@ export default function services() {
 
             <div>
               <h1 className="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl uppercase lg:leading-tight">
-                Pasco and Pinellas County Trash Services
+                Dumpster Rental & Junk Removal Services in Pasco County, FL
               </h1>
               <p className="mt-6 leading-relaxed  text-lg font-normal text-zinc-700">
                 With Lupo Dumpster Rentals, you can rest assured that your waste
@@ -213,6 +220,7 @@ export default function services() {
           </div>
         </div>
       </section>
+      <Breadcrumbs />
       {/* services */}
       <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-white">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -329,7 +337,7 @@ export default function services() {
                       <Image
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                         src={vitina}
-                        alt=""
+                        alt="Vitina Stevens, verified Lupo Dumpster Rentals customer"
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 ">
@@ -489,7 +497,7 @@ export default function services() {
                       <Image
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                         src={review}
-                        alt="Avi review"
+                        alt="Avi Levy, verified Lupo Dumpster Rentals customer (5-star Google review)"
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 ">

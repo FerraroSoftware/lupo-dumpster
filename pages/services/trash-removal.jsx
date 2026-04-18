@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TrashIcon,
   CurrencyDollarIcon,
@@ -106,9 +109,9 @@ const features = [
   },
 ];
 
-const metatitle = "Trash Removal Services | Quick, Efficient, & Eco-Friendly";
+const metatitle = "Trash Removal in Pasco County, FL | Lupo Dumpster Rentals";
 const description =
-  "Professional trash removal services that are fast, reliable, and environmentally responsible. Clear out your space with ease. Contact us today!";
+  "Trash removal in Pasco County, FL by Lupo Dumpster Rentals. Same-day hauling for household, yard & construction waste at flat rates. Call (727) 317-6717.";
 
 export default function TrashRemoval() {
   return (
@@ -116,6 +119,11 @@ export default function TrashRemoval() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/trash-removal"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -123,11 +131,13 @@ export default function TrashRemoval() {
       <Junkheader
         image={trashremoval}
         alttext="Professional trash removal services"
-        location="Efficient"
-        service="Trash Removal"
+        location="Pasco County, FL"
+        service="Trash Removal Services"
         ptag="Say goodbye to unwanted trash with our professional, efficient, and eco-friendly removal services."
         cta="Schedule Removal"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Expert Trash Removal"
@@ -160,6 +170,10 @@ export default function TrashRemoval() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="trash removal"
+        anchorText="New Port Richey dumpster rental page"
+      />
     </>
   );
 }

@@ -24,6 +24,8 @@ import Image from "next/image";
 import jordan from "../../public/jordan.png";
 import cleanoutservice from "../../public/garage-clean-out-service.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import messygarage from "../../public/messy-garage.png";
 import Contacttwo from "../../components/Contacttwo";
 import NewPricingtwo from "../../components/NewPricingtwo";
@@ -189,16 +191,21 @@ export default function garagecleaningservicenewportricheyfl() {
         </title>
         <meta
           name="description"
-          content="Trust Lupo Dumpster Rentals for efficient garage cleaning services in New Port Richey, FL. We handle the heavy lifting, allowing you to relax. Call us today!"
+          content="Garage cleaning in New Port Richey, FL by Lupo Dumpster Rentals. Clear junk, debris and clutter same-day with flat-rate pricing. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Lupo Dumpster Rentals | Garage Cleaning Service in New Port Richey, FL"
+          description="Garage cleaning in New Port Richey, FL by Lupo Dumpster Rentals. Clear junk, debris and clutter same-day with flat-rate pricing. Call (727) 317-6717."
+          path="/services/garage-cleaning-service-new-port-richey-fl"
+        />
       </Head>
       <div className="">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Unclutter Your Garage: Professional Garage Cleanout Services
+              Garage Cleanout Services in New Port Richey, FL
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
@@ -208,6 +215,8 @@ export default function garagecleaningservicenewportricheyfl() {
           </div>
         </div>
       </div>
+
+      <Breadcrumbs />
 
       {/* pic sections */}
       <div className="relative overflow-hidden py-16 sm:py-24">
@@ -269,7 +278,7 @@ export default function garagecleaningservicenewportricheyfl() {
                         <Image
                           className="h-6 w-6 rounded-full"
                           src={jordan}
-                          alt="testimonial"
+                          alt="Jordan Selders, Lupo Dumpster Rentals customer"
                         />
                       </div>
                       <div className="text-base font-medium text-gray-400">
@@ -487,7 +496,7 @@ export default function garagecleaningservicenewportricheyfl() {
                   href="#faq"
                   className="text-base font-semibold leading-7 text-white"
                 >
-                  Learn more <span aria-hidden="true">→</span>
+                  See garage cleanout FAQs <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -495,7 +504,7 @@ export default function garagecleaningservicenewportricheyfl() {
               <img
                 className="absolute top-0 left-0 w-[56rem] lg:max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src="/dump1.png"
-                alt="App screenshot"
+                alt="Garage cleanout dumpster in New Port Richey, FL by Lupo Dumpster Rentals"
                 width={1824}
                 height={1080}
               />

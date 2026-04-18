@@ -7,15 +7,13 @@ import Script from "next/script";
 import Navbartwo from "../components/Navbartwo";
 import Navbarthree from "../components/Navbarthree";
 import Stickybar from "../components/Stickybar";
-import LocationSchema from "../components/LocationSchema";
 import Head from "next/head";
 import LupoNavbar from "@/components/Navitem";
 
 import { Analytics } from "@vercel/analytics/next";
-import FaqSchema from "@/components/faq-schema";
 import OrganizationSchema from "@/components/organization-schema";
 import ServiceSchema from "@/components/service-schema";
-import ReviewSchema from "@/components/review-schema";
+import WebsiteSchema from "@/components/website-schema";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +21,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="robots" content="index,follow" />
+        <meta name="robots" content="index,follow" key="robots" />
       </Head>
       <Script
         id="facebook-pixel"
@@ -72,19 +70,20 @@ export default function App({ Component, pageProps }) {
         }}
       />
 
-      <LocationSchema></LocationSchema>
-      <FaqSchema></FaqSchema>
-      <ServiceSchema></ServiceSchema>
-      {/* <ReviewSchema></ReviewSchema> */}
-      <OrganizationSchema></OrganizationSchema>
+      {/*
+        Global JSON-LD — see §6.2 of seo-updates.md.
+        Only site-wide schemas belong here. Page-specific schemas
+        (LocalBusiness, FAQPage, Review) are injected by the individual
+        pages that render the matching visible content.
+        `Breadcrumbs` (§6.3/§8.6) is rendered by each page/template
+        *below* its hero so it sits where users expect it.
+      */}
+      <OrganizationSchema />
+      <WebsiteSchema />
+      <ServiceSchema />
 
       <main className={inter.className}>
-        {/* <Navbar></Navbar> */}
-        {/* <Stickybar></Stickybar> */}
-        {/* <Navbartwo></Navbartwo> */}
         <LupoNavbar></LupoNavbar>
-        {/* <Navbarthree></Navbarthree> */}
-        {/* <Sidebar></Sidebar> */}
         <Component {...pageProps} />
         <Analytics />
 

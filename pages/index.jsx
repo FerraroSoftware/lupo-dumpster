@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Seo from "@/components/Seo";
 import Calltoaction from "../components/Calltoactions";
 import Contact from "../components/Contact";
 import Featuredlist from "../components/Featuredlist";
@@ -38,6 +39,8 @@ import BlogSection from "@/components/new/blog-section";
 import FAQ from "@/components/new/faq";
 import AboutFounder from "@/components/new/about-founder";
 import { DumpsterOptions } from "@/components/new/dumpster-options";
+import LocationSchema from "@/components/LocationSchema";
+import ReviewSchema from "@/components/review-schema";
 
 import dumpsterrental from "../public/dumpsterrental.png";
 import dumptrailers from "../public/dump-trailers.png";
@@ -98,28 +101,29 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pasco County Dumpster Rental Professionals</title>
+        <title>Dumpster Rental in Pasco County, FL | Lupo Dumpster Rentals</title>
         <meta
           name="description"
-          content="Get fast and easy dumpster rentals in Pasco County. Lupo Dumpster Rentals offers various sizes of dumpsters for residential and commercial projects."
+          content="Dumpster rental in Pasco County, FL with same-day delivery and flat-rate pricing. Lupo Dumpster Rentals — 4.9/5 stars, locally owned. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.lupodumpsterrentals.com/" />
         <meta
           name="keywords"
           content="Pasco County dumpster rental, dumpster rental Pasco County, roll-off dumpsters, junk removal Pasco County, residential dumpsters, commercial dumpsters"
         />
         <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Pasco County Dumpster Rental Professionals"
-        />
-        <meta
-          property="og:description"
-          content="Get fast and easy dumpster rentals in Pasco County. Lupo Dumpster Rentals offers various sizes of dumpsters for residential and commercial projects."
+        <Seo
+          title="Dumpster Rental in Pasco County, FL | Lupo Dumpster Rentals"
+          description="Dumpster rental in Pasco County, FL with same-day delivery and flat-rate pricing. Lupo Dumpster Rentals — 4.9/5 stars, locally owned. Call (727) 317-6717."
+          path="/"
         />
       </Head>
+
+      {/* Home-specific JSON-LD: Pasco-wide LocalBusiness + AggregateRating/Reviews.
+          Both share @id so Google merges them into one entity. */}
+      <LocationSchema />
+      <ReviewSchema />
 
       <HeroUpdated></HeroUpdated>
       <RequestForm />

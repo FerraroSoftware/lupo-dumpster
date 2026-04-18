@@ -69,7 +69,7 @@ export default function Mission() {
               <Image
                 className="w-full rounded-md"
                 src={truck}
-                alt="dump trailer"
+                alt="Lupo Dumpster Rentals truck hauling a dump trailer in New Port Richey, FL"
               />
             </motion.div>
             <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">

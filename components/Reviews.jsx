@@ -84,7 +84,7 @@ export default function Reviews() {
                       <Image
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                         src={vitina}
-                        alt=""
+                        alt="Vitina Stevens, verified Lupo Dumpster Rentals customer"
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 ">
@@ -244,7 +244,7 @@ export default function Reviews() {
                       <Image
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                         src={review}
-                        alt="Avi review"
+                        alt="Avi Levy, verified Lupo Dumpster Rentals customer (5-star Google review)"
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 ">

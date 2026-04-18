@@ -78,7 +78,7 @@ export default function FeaturedServices() {
               <Image
                 className="object-contain w-full"
                 src={junkremoval}
-                alt="junk removal"
+                alt="Residential junk removal service in New Port Richey, FL by Lupo Dumpster Rentals"
               />
             </div>
           </div>

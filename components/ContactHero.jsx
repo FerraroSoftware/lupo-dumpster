@@ -170,7 +170,7 @@ export default function ContactHero({ header }) {
                 <dd>
                   <a
                     className="hover:text-zinc-700"
-                    href="mailto:lupodumpsters@gmail.com"
+                    href="mailto:a.lupollc@gmail.com"
                   >
                     Email Us
                   </a>

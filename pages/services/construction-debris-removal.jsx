@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -10,6 +12,7 @@ import Otherservices from "../../components/Otherservices";
 import Junkcost from "../../components/Junkcost";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   ClockIcon,
@@ -115,9 +118,9 @@ const features = [
   },
 ];
 
-const metatitle = "Professional Construction Debris Removal Services | Pasco";
+const metatitle = "Construction Debris Removal in Pasco County, FL | Lupo";
 const description =
-  "Expert construction debris removal services offering efficient, eco-friendly, and reliable solutions. Contact us for your construction waste needs.";
+  "Construction debris removal in Pasco County, FL by Lupo. Fast haul-away for drywall, wood, concrete, roofing & renovation waste. Call (727) 317-6717.";
 
 export default function ConstructionDebrisRemoval() {
   return (
@@ -125,6 +128,11 @@ export default function ConstructionDebrisRemoval() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/construction-debris-removal"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -132,11 +140,13 @@ export default function ConstructionDebrisRemoval() {
       <Junkheader
         image={constructiondebrisremoval}
         alttext="Efficient construction debris removal service"
-        location="Top-Rated"
+        location="Pasco County, FL"
         service="Construction Debris Removal"
         ptag="Efficiently manage your construction site with our professional debris removal services. Safe, quick, and eco-friendly solutions."
         cta="Schedule Debris Removal"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Your Construction Debris Solution"
@@ -173,6 +183,10 @@ export default function ConstructionDebrisRemoval() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="construction debris removal"
+        anchorText="roll-off dumpsters in New Port Richey"
+      />
     </>
   );
 }

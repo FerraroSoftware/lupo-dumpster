@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   ScaleIcon,
@@ -103,9 +106,9 @@ const features = [
   },
 ];
 
-const metatitle = "10 Yard Dumpster Trailer Rental | Compact & Convenient";
+const metatitle = "10 Yard Dump Trailer Rental in Pasco, FL | Lupo Dumpsters";
 const description =
-  "Discover the perfect 10-yard dumpster for smaller projects. Ideal for home cleanouts, minor renovations, and landscaping jobs. Easy booking and eco-friendly services.";
+  "10 yard dump trailer rental in Pasco, FL. Lupo Dumpster Rentals delivers same-day for garage cleanouts, remodels & landscaping. Call (727) 317-6717.";
 
 export default function FifteenYardDumpsterRental() {
   return (
@@ -113,8 +116,11 @@ export default function FifteenYardDumpsterRental() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/10-yard-dump-trailer"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -122,11 +128,13 @@ export default function FifteenYardDumpsterRental() {
       <Junkheader
         image={dumpsterrental} // Update the image to show a 10-yard dumpster
         alttext="10 Yard Dumpster Trailer Rental"
-        location="Your Local Area"
-        service="10 Yard Dumpster Trailer Rental"
+        location="Pasco County, FL"
+        service="10 Yard Dump Trailer Rental"
         pTag="The ultimate solution for small-scale waste management with our 10-yard dumpster trailers. Perfect for various compact projects."
         cta="Rent a 10-Yard Dumpster"
       />
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Efficient Waste Management with 10-Yard Dumpsters"
@@ -159,6 +167,10 @@ export default function FifteenYardDumpsterRental() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="10-yard dump trailer rental"
+        anchorText="10-yard dumpster rental in New Port Richey"
+      />
     </>
   );
 }

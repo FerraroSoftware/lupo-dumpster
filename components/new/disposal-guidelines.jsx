@@ -1,4 +1,4 @@
-import { PackageCheck, PackageX, Check } from "lucide-react";
+import { PackageCheck, PackageX, Check, X } from "lucide-react";
 
 // Updated lists as per your request
 const acceptedItemsList = [
@@ -64,9 +64,10 @@ export function DisposalGuidelines({ title, subtitle }) {
             <ul className="space-y-2">
               {prohibitedItemsList.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-red-500 font-bold mr-2 mt-1 flex-shrink-0 text-lg leading-tight">
-                    ✕
-                  </span>
+                  <X
+                    className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0"
+                    aria-hidden="true"
+                  />
                   <span className="text-zinc-700">{item}</span>
                 </li>
               ))}

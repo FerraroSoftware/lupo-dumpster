@@ -55,7 +55,7 @@ export default function Featuredlist() {
                 <Image
                   className="object-cover w-full h-full "
                   src={trailer}
-                  alt="dump trailer"
+                  alt="Lupo 20 yard dump trailer rental in New Port Richey, FL"
                 />
                 <div className="absolute inset-0 bg-zinc-900/10"></div>
               </div>

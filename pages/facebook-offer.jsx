@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -109,10 +110,16 @@ export default function FacebookOfferPage() {
   return (
     <>
       <Head>
-        <title>$275 Flat Rate 10 Yard Dumpster | Lupo Dumpster Rentals</title>
+        <title>$275 Flat-Rate 10 Yard Dumpster in FL | Lupo Dumpsters</title>
+        <meta name="robots" content="noindex, nofollow" key="robots" />
         <meta
           name="description"
-          content="Special Facebook Offer: Get a 10-yard dumpster for just $275 flat rate. 3 days to fill, licensed and insured. Book now!"
+          content="$275 flat-rate 10-yard dumpster rental in FL — 3 days to fill, licensed & insured. Book now with Lupo Dumpster Rentals. Call (727) 317-6717."
+        />
+        <Seo
+          title="$275 Flat-Rate 10 Yard Dumpster in FL | Lupo Dumpsters"
+          description="$275 flat-rate 10-yard dumpster rental in FL — 3 days to fill, licensed & insured. Book now with Lupo Dumpster Rentals. Call (727) 317-6717."
+          path="/facebook-offer"
         />
       </Head>
       <div className="bg-zinc-50">

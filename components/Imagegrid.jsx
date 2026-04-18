@@ -100,7 +100,7 @@ export default function Imagegrid() {
                 <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden">
                   <Image
                     src={file.source}
-                    alt="junk removal"
+                    alt={`${file.title} — junk removal project in New Port Richey, FL by Lupo Dumpster Rentals`}
                     className="pointer-events-none object-cover group-hover:opacity-90"
                   />
                   <button

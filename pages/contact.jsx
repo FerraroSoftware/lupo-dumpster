@@ -3,9 +3,11 @@ import Contact from "../components/Contact";
 import Image from "next/image";
 import dumpsterrental from "../public/dumpsterrental.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
 import Pricing from "../components/Pricing";
 import ContactHero from "../components/ContactHero";
 import RequestFormHero from "@/components/new/request-form-hero";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function contact() {
   return (
@@ -16,13 +18,19 @@ export default function contact() {
         </title>
         <meta
           name="description"
-          content="Need a dumpster rental? Contact Lupo Dumpster Rentals today to get a quote, schedule delivery, and rent a dumpster for your next project. Don't let your trash sit around."
+          content="Contact Lupo Dumpster Rentals for dumpster rental and junk removal in Pasco County, FL. Free quotes, fast booking, flat-rate pricing. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Contact Us Today | Lupo Dumpster Rental New Port Richey, FL"
+          description="Contact Lupo Dumpster Rentals for dumpster rental and junk removal in Pasco County, FL. Free quotes, fast booking, flat-rate pricing. Call (727) 317-6717."
+          path="/contact"
+        />
       </Head>
       {/* <ContactHero header="Book Your Dumpster Rental or Junk Removal"></ContactHero> */}
       <RequestFormHero />
+      <Breadcrumbs />
       {/* <div className="relative bg-zinc-700">
         <div className="absolute inset-0">
           <Image
@@ -37,7 +45,7 @@ export default function contact() {
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl uppercase">
-            Book Your Dumpster Rental
+            Book Your Dumpster Rental in Pasco County, FL
           </h1>
           <p className="mt-6 mx-auto max-w-3xl text-xl text-gray-100 text-center">
             Lupo Dumpster Rentals values clear communication and strives to

@@ -1,6 +1,7 @@
 import logo from "../public/logo3.svg";
 import Image from "next/image";
 import Head from "next/head";
+import Seo from "@/components/Seo";
 import castle from "../public/dumpster-trailer-1.png";
 import Script from "next/script";
 
@@ -37,13 +38,19 @@ export default function thankyou() {
       </noscript>
 
       <Head>
-        <title>Lupo Dumpster Rentals || Thank you for contacting us!</title>
+        <title>Thank You | Lupo Dumpster Rentals</title>
+        <meta name="robots" content="noindex, nofollow" key="robots" />
         <meta
           name="description"
-          content="Thank you for contacting us for a dumpster rental or junk removal. We will be in contact shortly. Feel free to give us a call if you have an emergency that needs to be cleaned up!"
+          content="Thanks for contacting Lupo Dumpster Rentals. We'll respond shortly. For urgent dumpster rental or junk removal in Pasco County, FL call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Thank You | Lupo Dumpster Rentals"
+          description="Thanks for contacting Lupo Dumpster Rentals. We'll respond shortly. For urgent dumpster rental or junk removal in Pasco County, FL call (727) 317-6717."
+          path="/thank-you"
+        />
       </Head>
 
       <Script
@@ -91,7 +98,7 @@ export default function thankyou() {
           <Image
             className="mx-auto h-16 rounded-full w-auto"
             src={logo}
-            alt="SmarTour logo"
+            alt="Lupo Dumpster Rentals logo"
           />
           <h2 className="mt-10 text-center text-4xl font-bold leading-9 tracking-tight text-black">
             Thanks for reaching out to Lupo Dumpster Rentals and Junk Removal!
@@ -104,7 +111,7 @@ export default function thankyou() {
         <Image
           src={castle}
           className="mx-auto max-w-sm md:max-w-xl lg:max-w-3xl xl:max-w-5xl rounded-md py-4 "
-          alt="thank you "
+          alt="Thanks for contacting Lupo Dumpster Rentals in New Port Richey, FL"
         />
       </div>
     </>

@@ -56,7 +56,7 @@ export default function Footer() {
                           className="flex text-base font-normal text-gray-300 transition-all transform hover:text-white "
                         >
                           {" "}
-                          Dumpster Rentals{" "}
+                          New Port Richey Dumpster Rentals{" "}
                         </Link>
                       </li>
                       <li>

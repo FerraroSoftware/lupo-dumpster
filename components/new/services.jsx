@@ -22,6 +22,7 @@ export default function Services() {
         "Same-day delivery available",
       ],
       link: "/services/dumpster-rental-new-port-richey-fl",
+      cta: "Rent a New Port Richey dumpster",
     },
     {
       title: "Junk Removal",
@@ -34,6 +35,7 @@ export default function Services() {
         "Residential and commercial services",
       ],
       link: "/services/junk-removal",
+      cta: "Book full-service junk removal",
     },
     {
       title: "Bobcat Services",
@@ -42,6 +44,7 @@ export default function Services() {
       image: demolition,
       features: ["Grading and leveling", "Debris removal and cleanup", "Experienced operators"],
       link: "/services/bobcat-services",
+      cta: "See bobcat & grading services",
     },
     {
       title: "Home Cleanouts",
@@ -50,6 +53,7 @@ export default function Services() {
       image: cleanoutservice,
       features: ["Full-service cleanouts", "Donation and recycling coordination", "Same-day service available"],
       link: "/services/hoarding-cleanup",
+      cta: "Book a whole-home cleanout",
     },
   ]
 
@@ -102,7 +106,7 @@ export default function Services() {
                       href={service.link}
                       className="inline-flex items-center text-red-600 font-medium hover:text-red-700 transition-colors group/link"
                     >
-                      Learn More
+                      {service.cta}
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                     </Link>
                   </div>

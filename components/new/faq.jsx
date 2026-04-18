@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ChevronDown, ChevronUp, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Script from "next/script"
 
 export default function FAQ() {
   const faqCategories = [
@@ -128,8 +129,32 @@ export default function FAQ() {
     })
   }
 
+  // FAQPage JSON-LD that mirrors the visible Q&As above. Google requires
+  // schema content to match what's visible on the page, so this is built
+  // from the same `faqCategories` array the UI renders.
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqCategories.flatMap((cat) =>
+      cat.questions.map((q) => ({
+        "@type": "Question",
+        name: q.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: q.answer,
+        },
+      }))
+    ),
+  }
+
   return (
     <section className="py-16 bg-zinc-50">
+      <Script
+        id="home-faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <div className="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">

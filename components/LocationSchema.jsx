@@ -4,6 +4,7 @@ const LocationSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.lupodumpsterrentals.com/#localbusiness",
     name: "Lupo Enterprises LLC - Pasco County Dumpster Rental Professionals",
     url: "https://www.lupodumpsterrentals.com/",
     logo: "https://www.lupodumpsterrentals.com/logo.svg",
@@ -87,11 +88,8 @@ const LocationSchema = () => {
         },
       },
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "131",
-    },
+    // aggregateRating is provided by ReviewSchema on the same @id to avoid
+    // duplicating rating/review count metadata across two schema blocks.
   };
 
   return (

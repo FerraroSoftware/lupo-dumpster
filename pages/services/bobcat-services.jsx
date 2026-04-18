@@ -2,6 +2,8 @@ import dump1 from "../../public/mattress-disposal.png";
 import dump2 from "../../public/mattress-removal.png";
 
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -11,6 +13,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   BedIcon,
   CurrencyDollarIcon,
@@ -108,9 +111,9 @@ const features = [
 ];
 
 const metatitle =
-  "Professional Bobcat Services | Land Clearing, Excavation & More";
+  "Bobcat Services in Pasco County, FL | Lupo Enterprises";
 const description =
-  "Looking for reliable Bobcat services? Our team offers comprehensive solutions for land clearing, excavation, and more, with a focus on eco-friendly practices.";
+  "Bobcat services in Pasco County, FL. Land clearing, excavation, grading & debris work by Lupo Enterprises. Free quotes. Call (727) 317-6717.";
 
 export default function BobcatServices() {
   return (
@@ -118,6 +121,11 @@ export default function BobcatServices() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/bobcat-services"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -125,11 +133,13 @@ export default function BobcatServices() {
       <Junkheader
         image={bobservicing}
         alttext="Professional Bobcat services"
-        location="Efficient and Reliable"
+        location="Pasco County, FL"
         service="Bobcat Services"
         ptag="Get professional Bobcat services for all your land clearing, excavation, and site preparation needs. We ensure every project is handled with precision and care."
         cta="Schedule Service"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Reliable Bobcat Services"
@@ -160,6 +170,10 @@ export default function BobcatServices() {
       <Faqs faqs={faqs} />
 
       <RequestForm />
+      <NprHubCallout
+        service="bobcat services"
+        anchorText="our New Port Richey dumpster rental"
+      />
     </>
   );
 }

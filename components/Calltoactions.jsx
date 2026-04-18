@@ -9,7 +9,7 @@ export default function Example() {
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src={autismcenter}
-          alt=""
+          alt="Junk removal project in New Port Richey, FL by Lupo Dumpster Rentals"
           className="h-full w-full object-cover object-center"
         />
       </div>

@@ -3,6 +3,8 @@ import junkremoving from "../../public/junkremoval.png";
 
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -12,6 +14,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TrashIcon,
   TruckIcon,
@@ -103,9 +106,9 @@ const features = [
 ];
 
 const metatitle =
-  "Port Richey Junk Removal | Lupo Dumpster Rentals | Fast and Affordable";
+  "Junk Removal in Port Richey, FL | Lupo Dumpster Rentals";
 const description =
-  "Expert junk removal services in Port Richey. Fast, reliable, and eco-conscious. Contact us for a cleaner and clutter-free space.";
+  "Junk removal in Port Richey, FL by Lupo Dumpster Rentals. Same-day hauling for furniture, appliances, yard waste & clutter. Call (727) 317-6717.";
 
 export default function JunkRemovalPortRichey() {
   return (
@@ -113,6 +116,11 @@ export default function JunkRemovalPortRichey() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/junk-removal-port-richey"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -125,6 +133,8 @@ export default function JunkRemovalPortRichey() {
         ptag="Efficient, responsible junk removal services for a clutter-free environment in Port Richey. We handle all types of junk with care."
         cta="Book a Pickup"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Expert Junk Removal in Port Richey"
@@ -155,6 +165,10 @@ export default function JunkRemovalPortRichey() {
       <Faqs faqs={faqs} />
 
       <Contact />
+      <NprHubCallout
+        service="junk removal"
+        anchorText="dumpster rental in nearby New Port Richey"
+      />
     </>
   );
 }

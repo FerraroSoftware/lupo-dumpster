@@ -447,7 +447,7 @@ export default function Twentyyard2() {
             <Image
               className="flex-shrink-0 object-cover mx-auto rounded-full w-28 h-28 sm:mx-0"
               src={alex}
-              alt=""
+              alt="Alex Lupo, owner of Lupo Dumpster Rentals in New Port Richey, FL"
             />
             <div className="mt-6 sm:mt-0 sm:ml-12">
               <blockquote>

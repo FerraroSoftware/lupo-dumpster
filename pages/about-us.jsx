@@ -8,6 +8,8 @@ import trailerfour from "../public/trailer-4.jpg";
 import junkremovalnewportrichey from "../public/junk-removal-new-port-richey.png";
 import construction from "../public/construction.jpg";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 const timeline = [
   {
     name: "Founded company",
@@ -61,9 +63,9 @@ const jobOpenings = [
   },
 ];
 
-const metatitle = "About Us | Lupo Dumpster Rental and Junk Removal";
+const metatitle = "About Lupo Dumpster Rentals | Pasco County, FL";
 const description =
-  "Lupo Enterprises is a family-owned and operated dumpster rental and junk removal company serving the Tampa Bay area. We are committed to providing our customers with the best services.";
+  "Lupo Dumpster Rentals is a family-owned dumpster rental and junk removal company in Pasco County, FL. Licensed, insured, 4.9/5 stars. Call (727) 317-6717.";
 
 export default function Aboutus() {
   return (
@@ -71,6 +73,11 @@ export default function Aboutus() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/about-us"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -86,12 +93,16 @@ export default function Aboutus() {
             <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
                 <h1 className="max-w-2xl text-4xl font-bold uppercase tracking-tight text-zinc-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                  Walking with integrity is our primary mission when serving our
-                  customers.
+                  About Lupo Dumpster Rentals — Pasco County, FL
                 </h1>
                 <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="text-lg leading-8 text-zinc-700">
-                    At Lupo Enterprises, we are committed to providing our
+                    <em>
+                      Walking with integrity is our primary mission when serving
+                      our customers.
+                    </em>{" "}
+                    At Lupo Enterprises, we&apos;re a family-owned dumpster
+                    rental and junk removal company committed to providing our
                     customers with unparalleled service and solutions for their
                     waste management needs. Our team is committed to safety,
                     integrity, and quality in everything we do.
@@ -99,13 +110,15 @@ export default function Aboutus() {
                 </div>
                 <img
                   src="/alex-lupo.png"
-                  alt=""
+                  alt="Alex Lupo, founder of Lupo Dumpster Rentals in Pasco County, FL"
                   className="mt-10 aspect-[6/5] w-full max-w-lg rounded-md object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
                 />
               </div>
             </div>
             <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
           </div>
+
+          <Breadcrumbs />
 
           {/* Timeline section */}
           <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">

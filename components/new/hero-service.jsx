@@ -58,7 +58,7 @@ export default function HeroService({
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-black hover:bg-white/90 w-full sm:w-auto"
+                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black w-full sm:w-auto"
                 asChild
               >
                 <Link

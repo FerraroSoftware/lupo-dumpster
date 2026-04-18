@@ -4,6 +4,7 @@ const OrganizationSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.lupodumpsterrentals.com/#organization",
     name: "Lupo Enterprises LLC",
     legalName: "Lupo Enterprises LLC",
     url: "https://www.lupodumpsterrentals.com/",

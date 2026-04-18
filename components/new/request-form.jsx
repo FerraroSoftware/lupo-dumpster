@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle, Phone, Shield, Star } from "lucide-react";
+import { Check, CheckCircle, Phone, Shield, Star } from "lucide-react";
 import Link from "next/link";
 
 export default function ClientForm() {
@@ -408,15 +408,18 @@ export default function ClientForm() {
                         Your information is secure and will never be shared
                       </span>
                     </div>
-                    <div className="text-center">
-                      <p className="text-sm font-medium text-green-600">
-                        ✓ No spam, ever
+                    <div className="flex flex-col items-center gap-1">
+                      <p className="flex items-center justify-center gap-1.5 text-sm font-medium text-green-600">
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                        No spam, ever
                       </p>
-                      <p className="text-sm font-medium text-green-600">
-                        ✓ Response within 30 minutes
+                      <p className="flex items-center justify-center gap-1.5 text-sm font-medium text-green-600">
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                        Response within 30 minutes
                       </p>
-                      <p className="text-sm font-medium text-green-600">
-                        ✓ Free consultation included
+                      <p className="flex items-center justify-center gap-1.5 text-sm font-medium text-green-600">
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                        Free consultation included
                       </p>
                     </div>
                     <div className="text-center text-xs text-gray-500 mt-4">

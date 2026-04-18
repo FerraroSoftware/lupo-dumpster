@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   ScaleIcon,
@@ -109,9 +112,9 @@ const features = [
   },
 ];
 
-const metatitle = "20 Yard Dumpster Trailer Rental | Convenient & Efficient";
+const metatitle = "20 Yard Dump Trailer Rental in Pasco, FL | Lupo Dumpsters";
 const description =
-  "Find the ideal 20-yard dumpster trailer for your project. Perfect for home renovations, cleanouts, and small construction jobs. Easy rental process and eco-friendly disposal.";
+  "20 yard dump trailer rental in Pasco County, FL. Lupo Dumpster Rentals delivers same-day for full renovations & major cleanouts. Call (727) 317-6717.";
 
 export default function FifteenYardDumpsterRental() {
   return (
@@ -119,8 +122,11 @@ export default function FifteenYardDumpsterRental() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/20-yard-dump-trailer"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -128,11 +134,13 @@ export default function FifteenYardDumpsterRental() {
       <Junkheader
         image={dumpsterrental}
         alttext="Yard Dumpster Trailer Rental"
-        location="The best 20"
-        service="Yard Dumpster Trailer Rental"
+        location="Pasco County, FL"
+        service="20 Yard Dump Trailer Rental"
         ptag="Discover the perfect solution for large-scale waste management with our 20-yard dumpster trailers. Ideal for various projects."
         cta="Rent a 20-Yard Dumpster"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Efficient Waste Management with 20-Yard Dumpsters"
@@ -165,6 +173,10 @@ export default function FifteenYardDumpsterRental() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="20-yard dump trailer rental"
+        anchorText="20-yard dumpster rental in New Port Richey"
+      />
     </>
   );
 }

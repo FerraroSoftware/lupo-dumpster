@@ -6,6 +6,8 @@ import trashremovalone from "../../public/trash-removal-1.png";
 
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -16,6 +18,7 @@ import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
 import Process from "../../components/Process";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 
 import {
   TrashIcon,
@@ -102,9 +105,9 @@ const features = [
 ];
 
 const metatitle =
-  "Garbage Removal Service | New Port Richey | Lupo Dumpster Rental";
+  "Garbage Removal in Pasco County, FL | Lupo Dumpster Rentals";
 const description =
-  "Professional garbage removal services for a clean and safe environment. Reliable, affordable, and eco-friendly solutions for all types of waste.";
+  "Garbage removal in Pasco County, FL. Lupo Dumpster Rentals offers same-day hauling and flat-rate pricing for any waste. Call (727) 317-6717.";
 
 export default function GarbageRemovalService() {
   return (
@@ -112,6 +115,11 @@ export default function GarbageRemovalService() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/garbage-removal-service"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -119,11 +127,13 @@ export default function GarbageRemovalService() {
       <Junkheader
         image={dumptrailers}
         alttext="Professional garbage removal service"
-        location="Efficient and Responsible"
-        service="Garbage Removal"
+        location="Pasco County, FL"
+        service="Garbage Removal Services"
         ptag="Keep your space clean and environmentally friendly with our top-notch garbage removal services."
         cta="Book a Pickup"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Reliable Garbage Removal Solutions"
@@ -154,6 +164,10 @@ export default function GarbageRemovalService() {
       <Faqs faqs={faqs} />
 
       <Contact />
+      <NprHubCallout
+        service="garbage removal"
+        anchorText="Lupo's New Port Richey dumpster rental"
+      />
     </>
   );
 }

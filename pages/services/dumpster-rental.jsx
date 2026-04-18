@@ -1,9 +1,12 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -26,9 +29,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Dumpster Rental Pasco County | 10, 15, 20 Yard Roll-Off Dumpsters";
+  "10, 15 & 20 Yard Dumpster Rental in Pasco, FL | Lupo Dumpsters";
 const description =
-  "Professional dumpster rental services in Pasco County. Choose from 10, 15, or 20-yard roll-off dumpsters for residential and commercial projects. Same-day delivery available. Transparent pricing with no hidden fees. Call (727) 317-6717 for a free quote.";
+  "10, 15 & 20-yard dumpster rentals across Pasco County, FL. Same-day delivery, flat-rate pricing, no hidden fees. Lupo Dumpster Rentals. Call (727) 317-6717.";
 
 const dumpsterSizes = [
   {
@@ -183,22 +186,16 @@ export default function DumpsterRental() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-rental"
-        />
         <meta
           name="keywords"
           content="dumpster rental, roll off dumpster, dumpster rental near me, rent a dumpster, 10 yard dumpster, 15 yard dumpster, 20 yard dumpster, Pasco County dumpster rental, dumpster rental services, waste removal"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/dumpster-rental"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/dumpster-rental"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -230,7 +227,7 @@ export default function DumpsterRental() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Dumpster Rental Services in Pasco County
+              Roll-Off Dumpster Rental Services in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional roll-off dumpster rentals for residential and
@@ -271,6 +268,8 @@ export default function DumpsterRental() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -596,6 +595,10 @@ export default function DumpsterRental() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="dumpster rental"
+        anchorText="dumpster rental in New Port Richey, FL"
+      />
     </>
   );
 }

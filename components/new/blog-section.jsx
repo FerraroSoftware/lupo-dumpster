@@ -49,15 +49,16 @@ export default function BlogSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post) => (
-            <div
+            <Link
               key={post.id}
-              className="bg-white rounded-xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full"
+              href={`/blog/${post.id}`}
+              className="bg-white rounded-xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={post.image || "/placeholder.svg"}
                   alt={post.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                   {post.category}
@@ -74,19 +75,25 @@ export default function BlogSection() {
                     <span>{post.date}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3">{post.title}</h3>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors">
+                  {post.title}
+                </h3>
                 <p className="text-zinc-600 mb-4 flex-grow">{post.excerpt}</p>
-                <Link href={`/blog/${post.id}`} className="text-red-600 font-medium inline-flex items-center group">
-                  Read More
+                <span className="text-red-600 font-medium inline-flex items-center mt-auto">
+                  Read the full article
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className="text-center">
-          <Button className="bg-black hover:bg-zinc-800 text-white">View All Blog Posts</Button>
+          <Link href="/blog">
+            <Button className="bg-black hover:bg-zinc-800 text-white">
+              Browse all dumpster & cleanout articles
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

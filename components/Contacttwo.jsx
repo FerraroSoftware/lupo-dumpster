@@ -59,13 +59,13 @@ export default function Contacttwo() {
               <div className="flex flex-col self-stretch justify-between">
                 <div className="flex-1 pb-6">
                   <h2 className="text-3xl font-semibold tracking-wide text-white sm:text-4xl uppercase">
-                    Our Junk Removal Pricing Starts at $75
+                    Get a Free, No-Obligation Junk Removal Quote
                   </h2>
                   <p className="mt-4 text-base font-normal leading-7 text-gray-300 lg:text-lg lg:mt-6 lg:leading-8">
-                    Discover New Port Richey&apos;s Premier Junk Removal
-                    Services for a Clutter-Free Life. We&apos;re here to help
-                    you get rid of your junk. We offer a wide range of junk
-                    removal services.
+                    Every job is quoted based on the volume of items, materials,
+                    and your location, so you only pay for what you actually
+                    need. Send us a quick message or call and we&apos;ll get
+                    back to you with a flat-rate quote — no hidden fees.
                   </p>
                 </div>
 
@@ -128,7 +128,7 @@ export default function Contacttwo() {
                       <img
                         className="object-cover rounded-full w-11 h-11 shrink-0"
                         src="/dominique.png"
-                        alt=""
+                        alt="Dominique Parise, verified Lupo Dumpster Rentals customer"
                       />
                       <div className="ml-4">
                         <p className="text-base font-semibold text-white">

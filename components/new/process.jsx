@@ -51,7 +51,11 @@ export default function Process() {
           </div>
 
           <div className="relative">
-            <Image src={junk} alt="Dump Trailer" className="rounded-xl shadow-xl" />
+            <Image
+              src={junk}
+              alt="Lupo Dumpster Rentals dump trailer delivered on-site in Pasco County, FL"
+              className="rounded-xl shadow-xl"
+            />
             <div className="absolute -bottom-6 -left-6 bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg">
               Call Us Now
             </div>

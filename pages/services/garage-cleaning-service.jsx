@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   CurrencyDollarIcon,
@@ -114,9 +117,9 @@ const features = [
   },
 ];
 
-const metatitle = "Expert Garage Cleaning Services | Organized & Efficient";
+const metatitle = "Garage Cleaning in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Professional garage cleaning and organizing services. Get a clutter-free, clean garage with our expert solutions. Contact us today.";
+  "Garage cleaning service in Pasco County, FL. Lupo Dumpster Rentals clears junk, debris and clutter — same-day at flat rates. Call (727) 317-6717.";
 
 export default function GarageCleaningService() {
   return (
@@ -124,6 +127,11 @@ export default function GarageCleaningService() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/garage-cleaning-service"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -131,11 +139,13 @@ export default function GarageCleaningService() {
       <Junkheader
         image={cleanoutservice}
         alttext="Expert garage cleaning service"
-        location="Professional"
+        location="Pasco County, FL"
         service="Garage Cleaning Service"
         ptag="Transform your garage with our top-notch cleaning and organizing services. Quality and efficiency at its best."
         cta="Book a Cleaning"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Garage Cleaning Made Easy"
@@ -168,6 +178,10 @@ export default function GarageCleaningService() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="garage cleaning"
+        anchorText="New Port Richey dumpster rentals"
+      />
     </>
   );
 }

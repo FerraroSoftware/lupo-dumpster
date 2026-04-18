@@ -38,7 +38,7 @@ export default function HeroUpdated() {
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-semibold tracking-tight">
-            #1 Dumpster Rental Service in Pasco County
+            #1 Dumpster Rental Service in Pasco County, FL
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             Fast, reliable, and affordable dumpster rentals for all your

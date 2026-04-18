@@ -1,5 +1,6 @@
 import React from "react";
 import { InboxIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   CheckIcon,
   ChevronDoubleRightIcon,
@@ -23,6 +24,8 @@ import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
 import jordan from "../../public/jordan.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Reviews from "../../components/Reviews";
 import Junkcost from "../../components/Junkcost";
 import Contacttwo from "../../components/Contacttwo";
@@ -135,9 +138,9 @@ const features = [
 ];
 
 const metatitle =
-  "Efficient Haul Away Junk Removal | Eco-Friendly Disposal | Get a Free Quote";
+  "Junk Haul Away in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Looking for 'junk hauling near me'? Our team provides efficient and eco-friendly 'haul away junk' services. Call now for a quick estimate and let us take the hassle out of junk removal.";
+  "Junk haul-away in Pasco County, FL. Full-service crew loads and removes anything you don't want, same-day. Flat-rate pricing by Lupo. Call (727) 317-6717.";
 
 export default function junkremoval() {
   return (
@@ -145,6 +148,11 @@ export default function junkremoval() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/haul-away-junk"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -152,11 +160,13 @@ export default function junkremoval() {
       <Junkheader
         image={trashremoval1}
         alttext="Haul away junk removal service truck"
-        location="Your Trusted"
-        service="Junk Hauling Experts"
+        location="Pasco County, FL"
+        service="Junk Haul-Away Services"
         ptag="From old furniture to renovation debris, we haul junk away quickly and responsibly. Get your free quote today!"
         cta="Schedule Junk Pickup"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Professional Junk Hauling in New Port Richey"
@@ -190,6 +200,10 @@ export default function junkremoval() {
 
       {/* <Contact></Contact> */}
       <RequestForm />
+      <NprHubCallout
+        service="junk hauling"
+        anchorText="dumpster rental service in New Port Richey"
+      />
     </>
   );
 }

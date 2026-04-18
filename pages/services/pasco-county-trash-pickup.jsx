@@ -5,6 +5,8 @@ import dumptrailers from "../../public/dump-trailers.png";
 
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -14,6 +16,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TrashIcon,
   CalendarIcon,
@@ -99,9 +102,9 @@ const features = [
 ];
 
 const metatitle =
-  "Pasco County Trash Pickup | Fast and Affordable | Lupo Dumpster";
+  "Pasco County Trash Pickup, FL | Lupo Dumpster Rentals";
 const description =
-  "Dependable trash pickup services for Pasco County. Affordable, efficient, and eco-friendly waste management solutions for your community.";
+  "Pasco County, FL trash pickup. Lupo Dumpster Rentals offers same-day hauling and flat-rate pricing for homes and businesses. Call (727) 317-6717.";
 
 export default function TrashPickupPascoCounty() {
   return (
@@ -109,6 +112,11 @@ export default function TrashPickupPascoCounty() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/pasco-county-trash-pickup"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -116,11 +124,13 @@ export default function TrashPickupPascoCounty() {
       <Junkheader
         image={dumpstertrailer}
         alttext="Pasco County Trash Pickup"
-        location="Pasco County's Preferred"
-        service="Trash Pickup"
+        location="Pasco County, FL"
+        service="Trash Pickup Services"
         ptag="Keep your surroundings clean with our regular and eco-friendly trash pickup services in Pasco County."
         cta="View Schedule"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Efficient Trash Pickup in Pasco County"
@@ -151,6 +161,10 @@ export default function TrashPickupPascoCounty() {
       <Faqs faqs={faqs} />
 
       <Contact />
+      <NprHubCallout
+        service="trash pickup"
+        anchorText="our New Port Richey dumpster service"
+      />
     </>
   );
 }

@@ -1,9 +1,12 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -29,9 +32,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Construction Dumpster Rental Pasco County | 10, 15, 20 Yard Dumpsters";
+  "Construction Dumpster Rental in Pasco, FL | Lupo Dumpsters";
 const description =
-  "Professional construction dumpster rental in Pasco County. Perfect for contractors, builders, and renovation projects. Choose from 10, 15, or 20-yard dumpsters. Same-day delivery available. Call (727) 317-6717 for a free quote.";
+  "Construction dumpster rental in Pasco County, FL. 10, 15 & 20-yard roll-offs for contractors, builders & remodels. Same-day delivery. Call (727) 317-6717.";
 
 const dumpsterSizes = [
   {
@@ -186,22 +189,16 @@ export default function ConstructionDumpsterRental() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/construction-dumpster-rental"
-        />
         <meta
           name="keywords"
           content="construction dumpster rental, construction dumpster, contractor dumpster rental, construction waste dumpster, construction debris dumpster, roll off dumpster construction, construction site dumpster, Pasco County construction dumpster"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/construction-dumpster-rental"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/construction-dumpster-rental"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -233,7 +230,7 @@ export default function ConstructionDumpsterRental() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Construction Dumpster Rental in Pasco County
+              Construction Dumpster Rental Services in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional construction dumpster rentals for contractors,
@@ -274,6 +271,8 @@ export default function ConstructionDumpsterRental() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -591,6 +590,10 @@ export default function ConstructionDumpsterRental() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="construction dumpster rental"
+        anchorText="construction dumpster rental in New Port Richey"
+      />
     </>
   );
 }

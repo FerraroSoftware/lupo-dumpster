@@ -4,7 +4,9 @@ const ReviewSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.lupodumpsterrentals.com/#localbusiness",
     name: "Lupo Enterprises LLC",
+    url: "https://www.lupodumpsterrentals.com/",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",

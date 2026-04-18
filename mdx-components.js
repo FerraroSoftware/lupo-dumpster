@@ -131,14 +131,14 @@ export function useMDXComponents(components) {
       </blockquote>
     ),
 
-    // Images
-    img: (props) => (
+    img: ({ alt, ...rest }) => (
       <Image
         width={480}
         height={480}
         sizes="100vw"
         style={{ width: "100%", height: "auto", padding: "10px" }}
-        {...props}
+        alt={alt || "Lupo Dumpster Rentals blog image"}
+        {...rest}
       />
     ),
 

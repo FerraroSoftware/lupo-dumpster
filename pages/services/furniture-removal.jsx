@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -23,9 +26,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Furniture Removal Services Pasco County | Fast & Eco-Friendly";
+  "Furniture Removal in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Professional furniture removal services in Pasco County. We remove sofas, beds, tables, appliances, and more. Same-day service available. Eco-friendly disposal and donation options. Call (727) 317-6717 for a free quote.";
+  "Furniture removal in Pasco County, FL. Lupo Dumpster Rentals hauls sofas, beds, tables & more same-day with flat-rate pricing. Call (727) 317-6717.";
 
 const processSteps = [
   {
@@ -128,22 +131,16 @@ export default function FurnitureRemoval() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/furniture-removal"
-        />
         <meta
           name="keywords"
           content="furniture removal, furniture removal service, furniture disposal, junk furniture removal, old furniture removal, couch removal, sofa removal, mattress removal, appliance removal, Pasco County furniture removal, furniture hauling, furniture pick up"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/furniture-removal"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/furniture-removal"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -175,7 +172,7 @@ export default function FurnitureRemoval() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Furniture Removal Services in Pasco County
+              Furniture Removal Services in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional furniture removal and disposal services. We remove
@@ -216,6 +213,8 @@ export default function FurnitureRemoval() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -455,6 +454,10 @@ export default function FurnitureRemoval() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="furniture removal"
+        anchorText="our New Port Richey dumpster service"
+      />
     </>
   );
 }

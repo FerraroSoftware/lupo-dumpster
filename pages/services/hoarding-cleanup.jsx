@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -9,6 +11,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   ClockIcon,
@@ -110,9 +113,9 @@ const features = [
 ];
 
 const metatitle =
-  "Professional Hoarding Cleanup Services | Compassionate & Thorough";
+  "Hoarding Cleanup in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Expert hoarding cleanup services offering compassionate, respectful, and thorough cleanup. Contact us for a discreet and effective solution.";
+  "Hoarding cleanup in Pasco County, FL by Lupo Dumpster Rentals. Compassionate, discreet full-service cleanouts with flat-rate pricing. Call (727) 317-6717.";
 
 export default function HoardingCleanup() {
   return (
@@ -120,6 +123,11 @@ export default function HoardingCleanup() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/hoarding-cleanup"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -127,11 +135,13 @@ export default function HoardingCleanup() {
       <Junkheader
         image={hoardingcleanup}
         alttext="Professional hoarding cleanup service"
-        location="Compassionate"
-        service="Hoarding Cleanup"
+        location="Pasco County, FL"
+        service="Hoarding Cleanup Services"
         ptag="Our experienced team provides respectful and thorough hoarding cleanup services to help restore order and cleanliness to your space."
         cta="Schedule Cleanup"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Hoarding Cleanup Services"
@@ -164,6 +174,10 @@ export default function HoardingCleanup() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="hoarding cleanup"
+        anchorText="our New Port Richey service area page"
+      />
     </>
   );
 }

@@ -1,4 +1,11 @@
-# Allow all crawlers
+# robots.txt — see §7.2 of seo-updates.md
+# Sitemap is generated at build time by next-sitemap (see next-sitemap.config.js)
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /thank-you
+Disallow: /_next/
+Disallow: /*?utm_
+
 Sitemap: https://www.lupodumpsterrentals.com/sitemap.xml

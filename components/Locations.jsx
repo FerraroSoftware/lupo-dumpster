@@ -231,7 +231,7 @@ export default function Locations() {
                   </p>
 
                   <div className="flex items-center text-red-600 text-sm font-medium">
-                    <span>Learn More</span>
+                    <span>View {location.name} dumpsters</span>
                     <svg
                       className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -288,7 +288,7 @@ export default function Locations() {
                   </p>
 
                   <div className="flex items-center text-red-600 text-sm font-medium">
-                    <span>Learn More</span>
+                    <span>View {location.name} dumpsters</span>
                     <svg
                       className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -345,7 +345,7 @@ export default function Locations() {
                   </p>
 
                   <div className="flex items-center text-red-600 text-sm font-medium">
-                    <span>Learn More</span>
+                    <span>View {location.name} service area</span>
                     <svg
                       className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform"
                       fill="none"

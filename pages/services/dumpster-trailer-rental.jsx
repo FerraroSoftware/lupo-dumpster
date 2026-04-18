@@ -1,9 +1,12 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -25,9 +28,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Dumpster Trailer Rental Pasco County | 10, 15, 20 Yard Trailers";
+  "Dumpster Trailer Rental in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Professional dumpster trailer rental in Pasco County. Choose from 10, 15, or 20-yard trailers for construction, renovation, or cleanout projects. Same-day delivery available. Call (727) 317-6717 for a free quote.";
+  "Dumpster trailer rental across Pasco County, FL. 10, 15 & 20-yard trailers with same-day delivery and flat-rate pricing by Lupo. Call (727) 317-6717.";
 
 const trailerSizes = [
   {
@@ -182,22 +185,16 @@ export default function DumpsterTrailerRental() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/dumpster-trailer-rental"
-        />
         <meta
           name="keywords"
           content="dumpster trailer rental, dump trailer rental, dumpster trailer rental near me, roll off trailer rental, 10 yard dumpster trailer, 15 yard dumpster trailer, 20 yard dumpster trailer, Pasco County dumpster trailer, dumpster rental Pasco County, waste removal trailer"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/dumpster-trailer-rental"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/dumpster-trailer-rental"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -229,7 +226,7 @@ export default function DumpsterTrailerRental() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Dumpster Trailer Rental in Pasco County
+              Roll-Off Dumpster Trailer Rental in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional dumpster trailer rentals for construction,
@@ -270,6 +267,8 @@ export default function DumpsterTrailerRental() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -563,6 +562,10 @@ export default function DumpsterTrailerRental() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="dump trailer rental"
+        anchorText="dump trailers in New Port Richey"
+      />
     </>
   );
 }

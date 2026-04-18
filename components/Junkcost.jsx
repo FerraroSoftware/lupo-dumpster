@@ -408,8 +408,14 @@ export default function Junkcost() {
 
                   <div className="mt-10 md:mt-0">
                     <div className="flex items-end">
-                      <p className="text-4xl font-bold text-white ">$75+</p>
+                      <p className="text-3xl font-bold text-white uppercase leading-tight">
+                        Free Quote
+                      </p>
                     </div>
+                    <p className="mt-2 text-sm text-gray-200 max-w-xs">
+                      Every job is quoted based on volume and location — no
+                      surprises, no hidden fees.
+                    </p>
 
                     <Link
                       href="/contact"
@@ -425,7 +431,7 @@ export default function Junkcost() {
                                "
                       role="button"
                     >
-                      Book It Now
+                      Request a Quote
                     </Link>
                   </div>
                 </div>
@@ -437,15 +443,16 @@ export default function Junkcost() {
             <Image
               className="flex-shrink-0 object-cover mx-auto rounded-full w-28 h-28 sm:mx-0"
               src={alex}
-              alt=""
+              alt="Alex Lupo, owner of Lupo Dumpster Rentals in New Port Richey, FL"
             />
             <div className="mt-6 sm:mt-0 sm:ml-12">
               <blockquote>
                 <p className="text-lg font-normal leading-relaxed text-gray-900 ">
                   At Lupo Dumpster Rentals, we{"'"}re proud to offer junk
-                  removal services in New Port Richey. Pricing starts at $75 and
-                  pricing will vary depending on location, and amount of junk
-                  being disposed. Contact us today for a free quote!
+                  removal services in New Port Richey. Every job is quoted
+                  individually based on location and the amount of junk being
+                  disposed, so you only pay for what you actually need. Contact
+                  us today for a free quote!
                 </p>
               </blockquote>
               <p className="mt-5 text-base font-bold text-gray-900 ">

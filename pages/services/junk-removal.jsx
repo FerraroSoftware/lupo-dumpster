@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -24,9 +27,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Junk Removal Services Pasco County | Same-Day Pickup Available";
+  "Junk Removal in Pasco County, FL | Lupo Dumpster Rentals";
 const description =
-  "Professional junk removal services in Pasco County. We remove furniture, appliances, yard waste, construction debris, and more. Full-service hauling with same-day pickup available. Call (727) 317-6717 for a free quote.";
+  "Junk removal in Pasco County, FL — furniture, appliances, yard waste & construction debris. Same-day pickup by Lupo Dumpster Rentals. Call (727) 317-6717.";
 
 const processSteps = [
   {
@@ -63,7 +66,7 @@ const faqs = [
   {
     question: "How much does junk removal cost?",
     answer:
-      "Our junk removal rates start at $75 and vary based on the volume of items, type of materials, and your location in Pasco County. We provide upfront pricing with no hidden fees—what we quote is what you pay. Call us at (727) 317-6717 for a free, no-obligation estimate.",
+      "Every junk removal job is priced based on the volume of items, type of materials, and your location in Pasco County, so we quote each project individually. We provide upfront, no-hidden-fee quotes — what we quote is what you pay. Call us at (727) 317-6717 or request a quote online for a free, no-obligation estimate.",
   },
   {
     question: "What items can you remove?",
@@ -129,22 +132,16 @@ export default function JunkRemoval() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/junk-removal"
-        />
         <meta
           name="keywords"
           content="junk removal, junk removal service, junk hauling, trash removal, furniture removal, appliance removal, junk pickup, estate cleanout, Pasco County junk removal, junk removal near me"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/junk-removal"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/junk-removal"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -176,7 +173,7 @@ export default function JunkRemoval() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Junk Removal Services in Pasco County
+              Full-Service Junk Removal in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional junk removal and hauling services. We remove
@@ -217,6 +214,8 @@ export default function JunkRemoval() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -483,6 +482,10 @@ export default function JunkRemoval() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="junk removal"
+        anchorText="New Port Richey dumpster rental"
+      />
     </>
   );
 }

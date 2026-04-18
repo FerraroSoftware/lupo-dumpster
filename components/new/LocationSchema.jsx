@@ -1,14 +1,29 @@
 import Script from "next/script";
 
+/**
+ * Per-page `LocalBusiness` JSON-LD — one distinct entity per city page.
+ *
+ * Each emitted schema uses `@id: {locationUrl}#localbusiness` so Google
+ * recognizes it as a city-specific location entity (sibling to, not
+ * duplicate of, the home page's Pasco-wide `#localbusiness`). Slug is
+ * used for the DOM `<script>` id so SPA navigation between city pages
+ * doesn't produce duplicate `id` collisions in the React tree.
+ */
 const LocationSchema = ({
   areaServed,
   geoCoordinates,
   locationUrl,
   locationName,
+  slug,
 }) => {
+  const schemaId = slug
+    ? `structured-data-location-${slug}`
+    : "structured-data-location";
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${locationUrl}#localbusiness`,
     name: `Lupo Enterprises LLC - ${locationName}`,
     url: locationUrl,
     logo: "https://www.lupodumpsterrentals.com/logo.svg",
@@ -85,8 +100,9 @@ const LocationSchema = ({
 
   return (
     <Script
-      id="structured-data-location"
+      id={schemaId}
       type="application/ld+json"
+      strategy="afterInteractive"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
     />
   );

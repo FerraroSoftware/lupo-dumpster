@@ -136,7 +136,7 @@ const navigation = {
     },
     {
       name: "Email",
-      href: "mailto:lupodumpsters@gmail.com",
+      href: "mailto:a.lupollc@gmail.com",
       icon: (props) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export default function Footer() {
               <img
                 className="h-16 rounded-full"
                 src="/logo3.svg"
-                alt="Company name"
+                alt="Lupo Dumpster Rentals logo"
               />
             </Link>
             <p className="text-sm leading-6 text-zinc-600">

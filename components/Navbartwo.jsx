@@ -141,7 +141,11 @@ export default function Navbartwo() {
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img className="h-16 w-auto" src="/logo.svg" alt="" />
+              <img
+                className="h-16 w-auto"
+                src="/logo.svg"
+                alt="Lupo Dumpster Rentals logo"
+              />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -289,7 +293,11 @@ export default function Navbartwo() {
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-14 w-auto" src="/logo.svg" alt="" />
+                <img
+                  className="h-14 w-auto"
+                  src="/logo.svg"
+                  alt="Lupo Dumpster Rentals logo"
+                />
               </Link>
               <button
                 type="button"

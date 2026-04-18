@@ -25,6 +25,8 @@ import applianceone from "../../public/appliance-1.png";
 import appliancetwo from "../../public/appliance-2.png";
 import jordan from "../../public/jordan.png";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Contacttwo from "../../components/Contacttwo";
 import NewPricingtwo from "../../components/NewPricingtwo";
 
@@ -198,17 +200,21 @@ export default function Applianceremoval() {
         </title>
         <meta
           name="description"
-          content="Upgrading your appliances? We can help. Our safe and efficient appliance removal services in New Port Richey, FL will take the hassle out of your old appliances."
+          content="Appliance removal in New Port Richey, FL. Lupo hauls fridges, washers, dryers & stoves same-day with eco-friendly disposal. Call (727) 317-6717."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Seo
+          title="Appliance Removal Services in New Port Richey, FL | Fast Service"
+          description="Appliance removal in New Port Richey, FL. Lupo hauls fridges, washers, dryers & stoves same-day with eco-friendly disposal. Call (727) 317-6717."
+          path="/services/appliance-removal-new-port-richey-fl"
+        />
       </Head>
       <div className="">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Efficient Appliance Removal and Disposal - Say Goodbye to Clutter
-              and Junk
+              Appliance Removal & Disposal in New Port Richey, FL
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg font-normal text-gray-400">
@@ -218,6 +224,8 @@ export default function Applianceremoval() {
           </div>
         </div>
       </div>
+
+      <Breadcrumbs />
 
       {/* pic sections */}
       <div className="relative overflow-hidden py-16 sm:py-24">
@@ -277,7 +285,7 @@ export default function Applianceremoval() {
                         <Image
                           className="h-6 w-6 rounded-full"
                           src={jordan}
-                          alt="testimonial"
+                          alt="Jordan Selders, Lupo Dumpster Rentals customer"
                         />
                       </div>
                       <div className="text-base font-medium text-gray-400">
@@ -492,7 +500,7 @@ export default function Applianceremoval() {
                   href="#faq"
                   className="text-base font-semibold leading-7 text-white"
                 >
-                  Learn more <span aria-hidden="true">→</span>
+                  See appliance removal FAQs <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -500,7 +508,7 @@ export default function Applianceremoval() {
               <img
                 className="absolute top-0 left-0 w-[56rem] lg:max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src="/dump1.png"
-                alt="App screenshot"
+                alt="Appliance removal dumpster in New Port Richey, FL by Lupo Dumpster Rentals"
                 width={1824}
                 height={1080}
               />

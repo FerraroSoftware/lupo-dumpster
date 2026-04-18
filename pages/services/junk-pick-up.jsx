@@ -4,6 +4,8 @@ import dumpstertrailer from "../../public/dumpster-trailer-1.png";
 
 import React from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Junkheader from "../../components/Junkheader";
 import Corefeatures from "../../components/Corefeatures";
 import Multiblock from "../../components/Multiblock";
@@ -13,6 +15,7 @@ import Reviews from "../../components/Reviews";
 import Otherservices from "../../components/Otherservices";
 import Contact from "../../components/Contact";
 import Faqs from "../../components/Faqs";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   TruckIcon,
   ClockIcon,
@@ -105,9 +108,9 @@ const features = [
   },
 ];
 
-const metatitle = "Efficient Junk Pick Up Services | Quick & Eco-Friendly";
+const metatitle = "Junk Pick Up in Pasco County, FL | Lupo Dumpster Rentals";
 const description =
-  "Need a junk pick up service? Our team offers fast, reliable, and eco-friendly junk removal solutions. Contact us for hassle-free junk pick up.";
+  "Junk pick up in Pasco County, FL. Lupo Dumpster Rentals hauls away furniture, appliances, debris & clutter — same-day service. Call (727) 317-6717.";
 
 export default function JunkPickUp() {
   return (
@@ -115,6 +118,11 @@ export default function JunkPickUp() {
       <Head>
         <title>{metatitle}</title>
         <meta name="description" content={description} />
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/junk-pick-up"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -122,11 +130,13 @@ export default function JunkPickUp() {
       <Junkheader
         image={dumpstertrailer}
         alttext="Efficient junk pick up service"
-        location="Quick and Reliable"
+        location="Pasco County, FL"
         service="Junk Pick Up"
         ptag="Declutter your space effortlessly with our professional junk pick up services. We handle the heavy lifting and proper disposal."
         cta="Schedule Pick Up"
       ></Junkheader>
+
+      <Breadcrumbs />
 
       <Corefeatures
         header="Junk Pick Up Made Easy"
@@ -159,6 +169,10 @@ export default function JunkPickUp() {
 
       {/* <Contact /> */}
       <RequestForm />
+      <NprHubCallout
+        service="junk pickup"
+        anchorText="roll-off dumpsters in New Port Richey, FL"
+      />
     </>
   );
 }

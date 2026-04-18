@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Head from "next/head";
+import Seo from "@/components/Seo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { NprHubCallout } from "@/components/new/npr-hub-callout";
 import {
   Phone,
   Star,
@@ -24,9 +27,9 @@ import RequestForm from "../../components/new/request-form";
 import { ComparisonTableSection } from "../../components/new/comparison-table-section";
 
 const metatitle =
-  "Appliance Removal Services Pasco County | Refrigerator, Washer & More";
+  "Appliance Removal in Pasco County, FL | Lupo Dumpsters";
 const description =
-  "Professional appliance removal services in Pasco County. We remove refrigerators, washers, dryers, stoves, dishwashers, and all appliances. Same-day service available. Eco-friendly disposal and recycling. Call (727) 317-6717 for a free quote.";
+  "Appliance removal in Pasco County, FL. Lupo hauls fridges, washers, dryers & stoves same-day with eco-friendly disposal. Call (727) 317-6717.";
 
 const processSteps = [
   {
@@ -129,22 +132,16 @@ export default function ApplianceRemoval() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.lupodumpsterrentals.com/services/appliance-removal"
-        />
         <meta
           name="keywords"
           content="appliance removal, appliance disposal, refrigerator removal, washer dryer removal, stove removal, dishwasher removal, freezer removal, old appliance removal, appliance hauling, Pasco County appliance removal, appliance recycling"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:url"
-          content="https://www.lupodumpsterrentals.com/services/appliance-removal"
+        <Seo
+          title={metatitle}
+          description={description}
+          path="/services/appliance-removal"
         />
-        <meta property="og:type" content="website" />
       </Head>
 
       {/* Hero Section */}
@@ -176,7 +173,7 @@ export default function ApplianceRemoval() {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Appliance Removal Services in Pasco County
+              Appliance Removal Services in Pasco County, FL
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               Professional removal and disposal of all appliances. We handle
@@ -218,6 +215,8 @@ export default function ApplianceRemoval() {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs />
 
       {/* Contact Form */}
       <RequestForm />
@@ -468,6 +467,10 @@ export default function ApplianceRemoval() {
           </div>
         </div>
       </section>
+      <NprHubCallout
+        service="appliance removal"
+        anchorText="New Port Richey dumpster rental service"
+      />
     </>
   );
 }
