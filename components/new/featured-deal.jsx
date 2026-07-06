@@ -46,9 +46,11 @@ export function FeaturedDeal() {
             </div>
           </div>
 
-          <div className="p-8 md:p-10">
-            <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-extrabold text-black">$275</span>
+          <div className="p-6 sm:p-8 md:p-10">
+            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+              <span className="text-4xl sm:text-5xl font-extrabold text-black">
+                $275
+              </span>
               <span className="text-lg font-medium text-zinc-500">
                 / 3-day rental
               </span>
@@ -69,7 +71,7 @@ export function FeaturedDeal() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Button
                 size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white font-bold flex-1"
+                className="w-full sm:flex-1 h-12 bg-red-600 hover:bg-red-700 text-white font-bold"
                 asChild
               >
                 <Link href="/contact">Reserve This Deal</Link>
@@ -77,12 +79,12 @@ export function FeaturedDeal() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-zinc-300 text-zinc-900 hover:bg-zinc-50 font-bold flex-1"
+                className="w-full sm:flex-1 h-12 border-zinc-300 text-zinc-900 hover:bg-zinc-50 font-bold"
                 asChild
               >
                 <Link
                   href="tel:7273176717"
-                  className="flex items-center justify-center gap-2"
+                  className="flex w-full items-center justify-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
                   (727) 317-6717
