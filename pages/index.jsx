@@ -39,6 +39,7 @@ import BlogSection from "@/components/new/blog-section";
 import FAQ from "@/components/new/faq";
 import AboutFounder from "@/components/new/about-founder";
 import { DumpsterOptions } from "@/components/new/dumpster-options";
+import { FeaturedDeal } from "@/components/new/featured-deal";
 import LocationSchema from "@/components/LocationSchema";
 import ReviewSchema from "@/components/review-schema";
 
@@ -127,6 +128,7 @@ export default function Home() {
 
       <HeroUpdated></HeroUpdated>
       <RequestForm />
+      <FeaturedDeal />
       <Testimonials />
       <DumpsterOptions
         locationName="Pasco County"
