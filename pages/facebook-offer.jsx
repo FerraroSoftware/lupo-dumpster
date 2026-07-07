@@ -435,7 +435,7 @@ export default function FacebookOfferPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Star className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                  <span className="font-semibold">4.9/5 Average Rating</span>
+                  <span className="font-semibold">5.0/5 Average Rating</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="h-5 w-5 text-green-600" />

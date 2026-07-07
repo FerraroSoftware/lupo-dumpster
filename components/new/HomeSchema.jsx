@@ -98,8 +98,8 @@ const HomePageSchema = () => {
     ],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "140",
+      ratingValue: "5.0",
+      reviewCount: "160",
     },
   };
 

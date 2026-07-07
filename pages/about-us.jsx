@@ -65,7 +65,7 @@ const jobOpenings = [
 
 const metatitle = "About Lupo Dumpster Rentals | Pasco County, FL";
 const description =
-  "Lupo Dumpster Rentals is a family-owned dumpster rental and junk removal company in Pasco County, FL. Licensed, insured, 4.9/5 stars. Call (727) 317-6717.";
+  "Lupo Dumpster Rentals is a family-owned dumpster rental and junk removal company in Pasco County, FL. Licensed, insured, 5.0/5 stars. Call (727) 317-6717.";
 
 export default function Aboutus() {
   return (

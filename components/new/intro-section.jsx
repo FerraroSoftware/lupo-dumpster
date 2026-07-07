@@ -33,13 +33,13 @@ export function IntroSection({
             We&apos;re family-owned, licensed, and insured right here in{" "}
             {county}, rated{" "}
             <strong className="inline-flex items-center gap-1 align-baseline">
-              4.9
+              5.0
               <Star
                 className="h-4 w-4 fill-yellow-400 text-yellow-400"
                 aria-hidden="true"
               />
               <span className="sr-only">out of 5 stars</span>
-              by 130+ verified customers
+              by 160+ verified customers
             </strong>
             ,
             and built around a simple promise: the price we quote is the price

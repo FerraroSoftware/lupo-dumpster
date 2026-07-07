@@ -58,7 +58,7 @@ export function LocalReviews({
             What {city} Customers Say About Lupo
           </h2>
           <p className="mt-4 text-lg text-zinc-600 max-w-3xl mx-auto">
-            130+ verified 4.9 out of 5 reviews from real {city} neighborhoods —
+            160+ verified 5.0 out of 5 reviews from real {city} neighborhoods —
             kitchen remodels, roofing jobs, estate cleanouts, garage
             haul-aways. Here&apos;s a sample of what our {city} customers have
             told us.
@@ -107,7 +107,7 @@ export function LocalReviews({
 
         <div className="bg-black rounded-xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-3">
-            Join 130+ Happy {city} Customers
+            Join 160+ Happy {city} Customers
           </h3>
           <p className="text-zinc-300 mb-6 max-w-2xl mx-auto">
             Read every verified review on Google, or share your own after your

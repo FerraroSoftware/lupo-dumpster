@@ -9,8 +9,8 @@ const ReviewSchema = () => {
     url: "https://www.lupodumpsterrentals.com/",
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "144",
+      ratingValue: "5.0",
+      reviewCount: "160",
       bestRating: "5",
       worstRating: "1",
     },

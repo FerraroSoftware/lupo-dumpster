@@ -20,7 +20,7 @@ Live site: https://www.lupodumpsterrentals.com
 | **Phone** | (727) 317-6717 |
 | **Email** | a.lupollc@gmail.com |
 | **Hours** | Mon–Sun, 7:00 AM – 8:00 PM ET |
-| **Rating** | 4.9 / 5 stars (130+ Google reviews) |
+| **Rating** | 5.0 / 5 stars (160+ Google reviews) |
 | **Social** | [Facebook](https://www.facebook.com/LupoLLC) · [Instagram](https://www.instagram.com/lupodumpsterrentals/) |
 
 ### Services

@@ -25,7 +25,7 @@ export function WhyChooseLocal({
     },
     {
       icon: Star,
-      title: "4.9 out of 5 from 130+ verified reviews",
+      title: "5.0 out of 5 from 160+ verified reviews",
       description: `${city} homeowners keep coming back because we show up when we say we will. See our live ratings on Google and Facebook.`,
     },
     {

@@ -135,7 +135,7 @@ export default function ClientForm() {
                     },
                     {
                       icon: Star,
-                      text: "4.9/5 stars (200+ reviews)",
+                      text: "5.0/5 stars (160+ reviews)",
                       highlight: false,
                     },
                     {
