@@ -124,6 +124,14 @@ export default function LupoNavbar() {
     return () => router.events.off("routeChangeStart", close);
   }, [router.events]);
 
+  // Lock body scroll while the full-screen mobile menu is open.
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
   const toggleDropdown = (name) => {
     setActiveDropdown(activeDropdown === name ? "" : name);
   };
@@ -314,134 +322,160 @@ export default function LupoNavbar() {
 
         {/* -------------------------------- Mobile Menu -------------------------------- */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-black border-t border-zinc-800 max-h-[calc(100vh-6rem)] overflow-y-auto">
-            {/* Conversion actions first */}
-            <div className="px-4 pt-4 pb-3 space-y-3 border-b border-zinc-800">
-              <Button
-                className="w-full h-12 bg-red-600 text-white hover:bg-red-700 font-bold text-base"
-                asChild
-              >
-                <Link href="/contact">Get a Free Quote →</Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-full h-12 border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white font-bold text-base"
-                asChild
-              >
-                <a href={PHONE_HREF} className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call {PHONE_DISPLAY}
-                </a>
-              </Button>
-              <div className="flex items-center justify-center gap-2 text-xs text-zinc-400">
-                <span className="flex items-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-3 w-3 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
+          <div className="md:hidden fixed inset-0 z-[60] flex flex-col bg-black">
+            {/* Overlay top bar with logo + close */}
+            <div className="flex-shrink-0 flex items-center justify-between h-16 px-4 border-b border-zinc-800">
+              <Link href="/" className="flex items-center">
+                <img
+                  src="/logo.svg"
+                  alt="Lupo Dumpster Rentals"
+                  className="h-10 w-auto mr-2"
+                />
+                <span className="font-bold text-white">
+                  Lupo Dumpster Rentals
                 </span>
-                <span>5.0/5 · 160+ reviews · Open 7 days</span>
-              </div>
+              </Link>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-white hover:bg-white/10 hover:text-white px-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+                aria-label="Close menu"
+              >
+                <X className="h-6 w-6" />
+              </Button>
             </div>
 
-            <div className="px-2 pt-2 pb-4 space-y-1">
-              <Link
-                href="/"
-                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
-              >
-                Home
-              </Link>
-
-              <div className="relative">
-                <button
-                  className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
-                  onClick={() => toggleDropdown("services")}
-                  aria-expanded={activeDropdown === "services"}
+            {/* Scrollable content — single scroll container for the whole menu */}
+            <div className="flex-1 overflow-y-auto overscroll-contain">
+              {/* Conversion actions first */}
+              <div className="px-4 pt-4 pb-3 space-y-3 border-b border-zinc-800">
+                <Button
+                  className="w-full h-12 bg-red-600 text-white hover:bg-red-700 font-bold text-base"
+                  asChild
                 >
-                  <span>Services</span>
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform duration-200 ${
-                      activeDropdown === "services" ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                <div
-                  className={
-                    activeDropdown === "services"
-                      ? "px-4 py-3 bg-zinc-900 rounded-md mt-1 max-h-[60vh] overflow-y-auto"
-                      : "hidden"
-                  }
+                  <Link href="/contact">Get a Free Quote →</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full h-12 border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white font-bold text-base"
+                  asChild
                 >
-                  {Object.entries(services).map(([category, items]) => (
-                    <div key={category} className="mb-4">
-                      <div className="font-semibold text-red-400 mb-2 text-sm uppercase tracking-wide">
-                        {category}
-                      </div>
-                      <div className="space-y-1">
-                        {items.map((item) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            className="block text-sm text-white hover:text-red-400 hover:bg-zinc-800 transition-colors px-2 py-1.5 rounded"
-                          >
-                            {item.title}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                  <a href={PHONE_HREF} className="flex items-center gap-2">
+                    <Phone className="h-5 w-5" />
+                    Call {PHONE_DISPLAY}
+                  </a>
+                </Button>
+                <div className="flex items-center justify-center gap-2 text-xs text-zinc-400">
+                  <span className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3 w-3 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </span>
+                  <span>5.0/5 · 160+ reviews · Open 7 days</span>
                 </div>
               </div>
 
-              <div className="relative">
-                <button
-                  className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
-                  onClick={() => toggleDropdown("locations")}
-                  aria-expanded={activeDropdown === "locations"}
+              <div className="px-2 pt-2 pb-10 space-y-1">
+                <Link
+                  href="/"
+                  className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
                 >
-                  <span>Service Locations</span>
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform duration-200 ${
-                      activeDropdown === "locations" ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                <div
-                  className={
-                    activeDropdown === "locations"
-                      ? "px-4 py-3 bg-zinc-900 rounded-md mt-1 max-h-[40vh] overflow-y-auto"
-                      : "hidden"
-                  }
-                >
-                  <div className="grid grid-cols-2 gap-1">
-                    {serviceLocations.map((location) => (
-                      <Link
-                        key={location.href}
-                        href={location.href}
-                        className="block text-sm text-white hover:text-red-500 hover:bg-white/10 transition-colors px-2 py-1.5 rounded"
-                      >
-                        {location.title}
-                      </Link>
+                  Home
+                </Link>
+
+                <div className="relative">
+                  <button
+                    className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
+                    onClick={() => toggleDropdown("services")}
+                    aria-expanded={activeDropdown === "services"}
+                  >
+                    <span>Services</span>
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        activeDropdown === "services" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={
+                      activeDropdown === "services"
+                        ? "px-4 py-3 bg-zinc-900 rounded-md mt-1"
+                        : "hidden"
+                    }
+                  >
+                    {Object.entries(services).map(([category, items]) => (
+                      <div key={category} className="mb-4">
+                        <div className="font-semibold text-red-400 mb-2 text-sm uppercase tracking-wide">
+                          {category}
+                        </div>
+                        <div className="space-y-1">
+                          {items.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              className="block text-sm text-white hover:text-red-400 hover:bg-zinc-800 transition-colors px-2 py-1.5 rounded"
+                            >
+                              {item.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
+
+                <div className="relative">
+                  <button
+                    className="flex items-center justify-between w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
+                    onClick={() => toggleDropdown("locations")}
+                    aria-expanded={activeDropdown === "locations"}
+                  >
+                    <span>Service Locations</span>
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        activeDropdown === "locations" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={
+                      activeDropdown === "locations"
+                        ? "px-4 py-3 bg-zinc-900 rounded-md mt-1"
+                        : "hidden"
+                    }
+                  >
+                    <div className="grid grid-cols-2 gap-1">
+                      {serviceLocations.map((location) => (
+                        <Link
+                          key={location.href}
+                          href={location.href}
+                          className="block text-sm text-white hover:text-red-500 hover:bg-white/10 transition-colors px-2 py-1.5 rounded"
+                        >
+                          {location.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <Link
+                  href="/about-us"
+                  className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
+                >
+                  About Us
+                </Link>
+
+                <Link
+                  href="/contact"
+                  className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
+                >
+                  Contact
+                </Link>
               </div>
-
-              <Link
-                href="/about-us"
-                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
-              >
-                About Us
-              </Link>
-
-              <Link
-                href="/contact"
-                className="flex items-center w-full text-white hover:bg-white/10 hover:text-red-500 transition-colors px-3 py-2.5 rounded-md font-medium"
-              >
-                Contact
-              </Link>
             </div>
           </div>
         )}
