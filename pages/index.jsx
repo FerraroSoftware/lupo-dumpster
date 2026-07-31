@@ -102,7 +102,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dumpster Rental in Pasco County, FL | Lupo Dumpster Rentals</title>
+        <title>
+          Dumpster Rental in Pasco County, FL | Lupo Dumpster Rentals
+        </title>
         <meta
           name="description"
           content="Dumpster rental in Pasco County, FL with same-day delivery and flat-rate pricing. Lupo Dumpster Rentals — 5.0/5 stars, locally owned. Call (727) 317-6717."
@@ -128,7 +130,7 @@ export default function Home() {
 
       <HeroUpdated></HeroUpdated>
       <RequestForm />
-      <FeaturedDeal />
+      {/* <FeaturedDeal /> */}
       <Testimonials />
       <DumpsterOptions
         locationName="Pasco County"
