@@ -1,26 +1,10 @@
 import sgMail from "@sendgrid/mail";
 import { verifyRecaptcha } from "../../lib/recaptcha";
-import { buildLeadEmail } from "../../lib/lead-email";
+import { buildLeadEmail, normalizePhone } from "../../lib/lead-email";
 import { siteConfig } from "../../lib/site-config";
 
 // Set SendGrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-function formatPhoneNumber(phone) {
-  // Remove all non-numeric characters
-  let cleaned = String(phone).replace(/\D/g, "");
-  if (cleaned.length === 11 && cleaned.startsWith("1")) cleaned = cleaned.slice(1);
-
-  // Format as (XXX) XXX-XXXX
-  if (cleaned.length === 10) {
-    return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(
-      6,
-    )}`;
-  }
-
-  // Return original if not 10 digits
-  return phone;
-}
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -75,7 +59,7 @@ export default async function handler(req, res) {
       hour12: true,
     });
 
-    const formattedPhone = formatPhoneNumber(phone);
+    const formattedPhone = normalizePhone(phone).display;
     const name = [firstName, lastName]
       .map((n) => (n || "").trim())
       .filter(Boolean)
@@ -83,8 +67,7 @@ export default async function handler(req, res) {
     const { subject, html, text } = buildLeadEmail({
       name,
       email,
-      phone: formattedPhone,
-      phoneDigits: String(phone).replace(/\D/g, "").slice(-10),
+      phone,
       serviceNeeded,
       message,
       receivedAt: easternTime,
