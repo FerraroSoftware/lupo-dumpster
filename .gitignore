@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-notes.txt
+notes.txt/.next-build/

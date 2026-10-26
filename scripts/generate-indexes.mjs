@@ -61,6 +61,7 @@ const posts = readdirSync(blogDir, { withFileTypes: true })
       title: field(src, "title"),
       description: field(src, "description"),
       date: field(src, "date"),
+      updated: field(src, "updated") || field(src, "date"),
       category: field(src, "category"),
       image: field(src, "image"),
       imageAlt: field(src, "imageAlt"),

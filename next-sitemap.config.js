@@ -26,9 +26,14 @@
  *   /facebook-offer  — paid-ad landing page, also marked `noindex`
  *   /api/*
  */
+const blogDates = Object.fromEntries(
+  require("./lib/blog-index.json").map((p) => [`/blog/${p.slug}`, p.updated || p.date]),
+);
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://www.lupodumpsterrentals.com",
+  sourceDir: process.env.NEXT_DIST_DIR || ".next",
   generateRobotsTxt: false,
   generateIndexSitemap: false,
   changefreq: "weekly",
@@ -57,7 +62,7 @@ module.exports = {
       loc: path,
       changefreq,
       priority,
-      lastmod: new Date().toISOString(),
+      lastmod: blogDates[path] ? new Date(`${blogDates[path]}T12:00:00Z`).toISOString() : new Date().toISOString(),
       alternateRefs: config.alternateRefs ?? [],
     };
   },
