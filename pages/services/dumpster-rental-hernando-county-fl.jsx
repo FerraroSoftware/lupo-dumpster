@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/hernando-county-fl";
 
 export default function DumpsterRentalHernandoCounty() {
-  return <CityDumpsterPage data={getCity("hernando-county-fl")} />;
+  return <CityPage city={getCity("hernando-county-fl")} content={content} />;
 }

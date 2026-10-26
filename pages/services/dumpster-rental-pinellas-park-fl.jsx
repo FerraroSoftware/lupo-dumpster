@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/pinellas-park-fl";
 
 export default function DumpsterRentalPinellasPark() {
-  return <CityDumpsterPage data={getCity("pinellas-park-fl")} />;
+  return <CityPage city={getCity("pinellas-park-fl")} content={content} />;
 }

@@ -1,10 +1,20 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import { siteConfig } from "@/lib/site-config";
 
 export default function Document() {
   return (
     <Html className="h-full antialiased scroll-smooth" lang="en">
       <Head>
+        <meta name="theme-color" content="#14120E" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://static.hotjar.com" />
         <Script
           id="google-analytics"
           strategy="afterInteractive"
@@ -25,7 +35,7 @@ export default function Document() {
           dangerouslySetInnerHTML={{
             __html: `
           gtag('config', 'AW-17610711210/DOx5CLaEvqUbEKrBuM1B', {
-            'phone_conversion_number': '(727) 317-6717'
+            'phone_conversion_number': '${siteConfig.phone}'
           });
       `,
           }}

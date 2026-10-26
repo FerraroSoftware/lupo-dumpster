@@ -2,12 +2,23 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./mdx-components.js",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ["var(--font-display)", "Impact", "Arial Narrow", "sans-serif"],
+      },
       colors: {
+        brand: {
+          DEFAULT: "#DC2626",
+          hover: "#B91C1C",
+          "on-dark": "#EF4444",
+          soft: "#FEE2E2",
+        },
+        ink: "#14120E",
         lightgray: "#ECECEC",
         darkgray: "#14120E",
         googleBlue: "#4285F4",

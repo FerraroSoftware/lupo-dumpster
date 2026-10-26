@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Script from "next/script";
+import Head from "next/head";
 import { ChevronRight, Home } from "lucide-react";
 import { cities } from "@/lib/cities";
 
@@ -43,13 +43,10 @@ const SEGMENT_LABELS = {
   "dumpster-trailer-rental": "Dumpster Trailer Rental",
   "construction-dumpster-rental": "Construction Dumpster Rental",
   "junk-removal": "Junk Removal",
-  "junk-pick-up": "Junk Pickup",
   "haul-away-junk": "Haul Away Junk",
-  "garbage-removal-service": "Garbage Removal",
   "mattress-disposal": "Mattress Disposal",
   "furniture-removal": "Furniture Removal",
   "appliance-removal": "Appliance Removal",
-  "trash-pick-up": "Trash Pickup",
   "trash-removal": "Trash Removal",
   "yard-waste-removal": "Yard Waste Removal",
   "bobcat-services": "Bobcat Services",
@@ -160,12 +157,13 @@ export default function Breadcrumbs({ currentLabel } = {}) {
 
   return (
     <>
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <Head>
+        <script
+          type="application/ld+json"
+          key="breadcrumb-schema"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
       <nav
         aria-label="Breadcrumb"
         className="bg-zinc-50 border-b border-zinc-200"

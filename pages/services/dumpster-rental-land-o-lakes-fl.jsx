@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/land-o-lakes-fl";
 
 export default function DumpsterRentalLandOLakes() {
-  return <CityDumpsterPage data={getCity("land-o-lakes-fl")} />;
+  return <CityPage city={getCity("land-o-lakes-fl")} content={content} />;
 }

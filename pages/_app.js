@@ -1,25 +1,26 @@
 import "../styles/globals.css";
-import { Inter } from "@next/font/google";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import { Barlow_Condensed, Inter } from "next/font/google";
 import Script from "next/script";
-import Navbartwo from "../components/Navbartwo";
-import Navbarthree from "../components/Navbarthree";
-import Stickybar from "../components/Stickybar";
 import Head from "next/head";
-import LupoNavbar from "@/components/Navitem";
-import MobileCallButton from "@/components/MobileCallButton";
 import TextUsButton from "@/components/TextUsButton";
+import { SiteHeader } from "@/components/site/site-header";
+import { SiteFooter } from "@/components/site/site-footer";
+import { StickyMobileBar } from "@/components/site/sticky-mobile-bar";
 
 import { Analytics } from "@vercel/analytics/next";
-import OrganizationSchema from "@/components/organization-schema";
-import ServiceSchema from "@/components/service-schema";
-import WebsiteSchema from "@/components/website-schema";
+import { SiteSchema } from "@/components/site/site-schema";
+import { useSiteTracking } from "@/lib/analytics";
 
 const inter = Inter({ subsets: ["latin"] });
+const display = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export default function App({ Component, pageProps }) {
+  useSiteTracking();
   return (
     <>
       <Head>
@@ -27,7 +28,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Script
         id="facebook-pixel"
-        strategy="beforeInteractive" // Add this line
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
@@ -45,6 +46,7 @@ export default function App({ Component, pageProps }) {
         }}
       />
       <noscript>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           height="1"
           width="1"
@@ -56,8 +58,7 @@ export default function App({ Component, pageProps }) {
 
       <Script
         id="hotjar"
-        async
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
           (function(h,o,t,j,a,r){
@@ -72,27 +73,19 @@ export default function App({ Component, pageProps }) {
         }}
       />
 
-      {/*
-        Global JSON-LD — see §6.2 of seo-updates.md.
-        Only site-wide schemas belong here. Page-specific schemas
-        (LocalBusiness, FAQPage, Review) are injected by the individual
-        pages that render the matching visible content.
-        `Breadcrumbs` (§6.3/§8.6) is rendered by each page/template
-        *below* its hero so it sits where users expect it.
-      */}
-      <OrganizationSchema />
-      <WebsiteSchema />
-      <ServiceSchema />
+      {/* Only sitewide entities here; page schemas (Service, FAQPage, Review) render with their visible content. */}
+      <SiteSchema />
 
-      <main className={inter.className}>
-        <LupoNavbar></LupoNavbar>
-        <Component {...pageProps} />
-        <Analytics />
-
-        <Footer></Footer>
-        {/* <MobileCallButton /> */}
+      <div className={`${inter.className} ${display.variable} pb-14 lg:pb-0`}>
+        <SiteHeader />
+        <main id="main-content" tabIndex={-1} className="focus:outline-none">
+          <Component {...pageProps} />
+        </main>
+        <SiteFooter />
+        <StickyMobileBar />
         <TextUsButton />
-      </main>
+        <Analytics />
+      </div>
     </>
   );
 }

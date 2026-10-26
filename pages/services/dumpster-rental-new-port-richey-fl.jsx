@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/new-port-richey-fl";
 
 export default function DumpsterRentalNewPortRichey() {
-  return <CityDumpsterPage data={getCity("new-port-richey-fl")} />;
+  return <CityPage city={getCity("new-port-richey-fl")} content={content} />;
 }

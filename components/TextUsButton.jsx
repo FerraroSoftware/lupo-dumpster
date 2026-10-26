@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { MessageSquare, X, Phone, Send } from "lucide-react";
+import { OPEN_TEXT_US_EVENT } from "@/components/site/sticky-mobile-bar";
+import { siteConfig, telHref } from "@/lib/site-config";
 
 /**
  * TextUsButton — floating "Text Us" CTA in the bottom-right corner.
@@ -28,6 +30,7 @@ export default function TextUsButton() {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [errors, setErrors] = useState({});
   const nameInputRef = useRef(null);
+  const focusOnOpen = useRef(true);
 
   // Wait for reCAPTCHA v3 (loaded globally in _document.js) to be ready.
   useEffect(() => {
@@ -47,10 +50,20 @@ export default function TextUsButton() {
     };
   }, []);
 
+  // The mobile sticky bar's "Text" button opens this widget via a window event.
+  useEffect(() => {
+    const open = () => {
+      focusOnOpen.current = true;
+      setIsOpen(true);
+    };
+    window.addEventListener(OPEN_TEXT_US_EVENT, open);
+    return () => window.removeEventListener(OPEN_TEXT_US_EVENT, open);
+  }, []);
+
   // Desktop-only: auto-open once, ~10s after load.
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
     if (!isDesktop) return;
 
     let alreadyOpened = false;
@@ -62,6 +75,7 @@ export default function TextUsButton() {
     if (alreadyOpened) return;
 
     const timer = setTimeout(() => {
+      focusOnOpen.current = false;
       setIsOpen(true);
       try {
         window.localStorage.setItem(AUTO_OPEN_FLAG, "1");
@@ -73,9 +87,10 @@ export default function TextUsButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Focus the first field when the popup opens.
+  // Focus the first field when the visitor opens the popup (never on auto-open,
+  // which would pull keyboard/screen-reader users away from what they're doing).
   useEffect(() => {
-    if (isOpen && nameInputRef.current) {
+    if (isOpen && focusOnOpen.current && nameInputRef.current) {
       nameInputRef.current.focus();
     }
   }, [isOpen]);
@@ -135,26 +150,26 @@ export default function TextUsButton() {
         const errorData = await response.json().catch(() => ({}));
         alert(
           errorData.error ||
-            "Something went wrong. Please try again or call us at (727) 317-6717.",
+            `Something went wrong. Please try again or call us at ${siteConfig.phone}.`,
         );
         setIsSubmitting(false);
       }
     } catch (error) {
       console.error("Text Us submission failed:", error);
       alert(
-        "An error occurred. Please try again or call us at (727) 317-6717.",
+        `An error occurred. Please try again or call us at ${siteConfig.phone}.`,
       );
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end">
+    <div className="fixed bottom-20 right-4 z-50 flex flex-col items-end lg:bottom-5 lg:right-5">
       {isOpen && (
         <div
           role="dialog"
           aria-label="Text us"
-          className="mb-3 w-[calc(100vw-2.5rem)] max-w-sm overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-black/10"
+          className="mb-3 w-[calc(100vw-2rem)] max-w-sm overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-black/10"
         >
           <div className="flex items-center justify-between bg-black px-5 py-4 text-white">
             <div>
@@ -266,7 +281,10 @@ export default function TextUsButton() {
 
             <p className="flex items-center justify-center gap-1 text-center text-xs text-zinc-500">
               <Phone className="h-3 w-3" />
-              Prefer to call? (727) 317-6717
+              Prefer to call?{" "}
+              <a href={telHref} className="font-semibold underline underline-offset-2">
+                {siteConfig.phone}
+              </a>
             </p>
           </form>
         </div>
@@ -277,7 +295,7 @@ export default function TextUsButton() {
         onClick={() => setIsOpen((o) => !o)}
         aria-label={isOpen ? "Close text us form" : "Open text us form"}
         aria-expanded={isOpen}
-        className="flex items-center gap-2 rounded-full bg-red-600 px-5 py-3 font-semibold text-white shadow-lg shadow-black/30 ring-2 ring-white/20 transition-colors hover:bg-red-700 active:bg-red-800"
+        className="hidden items-center gap-2 rounded-full bg-red-600 px-5 py-3 lg:flex font-semibold text-white shadow-lg shadow-black/30 ring-2 ring-white/20 transition-colors hover:bg-red-700 active:bg-red-800"
       >
         {isOpen ? (
           <X className="h-5 w-5" aria-hidden="true" />

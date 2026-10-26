@@ -1,532 +1,298 @@
-import React from "react";
-import Pricing from "../../components/Pricing";
-import Contact from "../../components/Contact";
-import Twentyyard from "../../components/Twentyyard";
-import Link from "next/link";
-import vitina from "../../public/vitina-stevens.png";
-import Image from "next/image";
-import junkremoval from "../../public/junkremoval.png";
-import dumpsterrental from "../../public/dumpsterrental.png";
-import appliances from "../../public/appliances.png";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Check, Phone } from "lucide-react";
 import Seo from "@/components/Seo";
-import dominique from "../../public/dominique.png";
-import review from "../../public/review.png";
-import wastemanagement from "../../public/waste-management.png";
-import cleanoutservice from "../../public/garage-clean-out-service.png";
-import constructiondebris from "../../public/construction-debris.png";
-import hoardingservices from "../../public/hoarding-services.png";
-import dumptrailer from "../../public/dump-trailer.png";
-import mattressremoval from "../../public/mattress-removal.png";
-import furnitureremovals from "../../public/furniture-removals.png";
-import junkpickup from "../../public/junk-pick-up.png";
-import trashremoval from "../../public/trash-removal.png";
-import yardwasteremoval from "../../public/yard-waste-removal.png";
-import dumpstertrailer from "../../public/dumpster-trailer-1.png";
-import debris from "../../public/constructiondebris/debris.png";
-import dumptrailers from "../../public/dump-trailers.png";
-import junkbefore from "../../public/junkbefore.jpg";
-import Testimonialsection from "../../components/Testimonialsection";
-import RequestForm from "@/components/new/request-form";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import trailerthree from "../../public/trailer-1.jpg";
+import { PageHero } from "@/components/site/page-hero";
+import { container, CtaBand, PlanSteps, PrimaryButton } from "@/components/site/home-sections";
+import { FaqSection } from "@/components/site/faq-section";
+import { Highlight, SectionHeading } from "@/components/site/section-heading";
+import { lowestPrice, navigation, siteConfig, sizes, telHref } from "@/lib/site-config";
+import heroImage from "@/public/trailer-4.webp";
+import dumpsterImg from "@/public/dumpsterrental.webp";
+import constructionImg from "@/public/construction-dumpster-rental.webp";
+import trailerImg from "@/public/dump-trailer.webp";
+import junkImg from "@/public/junk-removal.webp";
+import hoardingImg from "@/public/hoarding-services.webp";
+import garageImg from "@/public/garage-clean-out.webp";
+import debrisImg from "@/public/construction-debris.webp";
+import applianceImg from "@/public/appliances.webp";
+import furnitureImg from "@/public/furniture-removals.webp";
+import mattressImg from "@/public/mattress-removal.webp";
+import yardImg from "@/public/yard-waste-removal.webp";
 
-const servicelist = [
-  {
-    name: "Appliance Removal",
-    description: "Design System",
-    image: appliances,
-    alttext: "Appliances",
-    link: "/services/appliance-removal",
-  },
-  {
-    name: "Construction Debris Removal",
-    description: "Design System",
-    image: debris,
-    link: "/services/construction-debris-removal",
-    alttext: "Construction Debris Removal",
-  },
+const title = "Dumpster Rental & Junk Removal in Pasco County, FL | Lupo";
+const description = `Dumpster rentals from $${lowestPrice}, construction dumpsters, and full-service junk removal across Pasco, Pinellas, Hillsborough & Hernando. Call ${siteConfig.phone}.`;
+
+const dumpsterServices = [
   {
     name: "Dumpster Rental",
-    description: "Design System",
-    image: dumpsterrental,
-    link: "/services/dumpster-rental-new-port-richey-fl",
-    alttext: "Dumpster Rental",
+    href: "/services/dumpster-rental",
+    image: dumpsterImg,
+    text: "Flat-rate 10, 15, and 20-yard roll-off dumpsters for cleanouts, remodels, and moves. Delivery, pickup, and disposal included.",
   },
   {
-    name: "Dumpster Trailer Rentals",
-    description: "Design System",
-    image: dumptrailer,
-    link: "/services/dumpster-trailer-rental",
-    alttext: "Dumpster trailer rentals near you",
+    name: "Construction Dumpsters",
+    href: "/services/construction-dumpster-rental",
+    image: constructionImg,
+    text: "On-time swaps and drops for contractors and roofers, so your crew never waits on a full dumpster.",
   },
   {
-    name: "Furniture Removal",
-    description:
-      "Safe and efficient removal of unwanted furniture from homes or businesses.",
-    image: furnitureremovals,
-    link: "/services/furniture-removal",
-    alttext: "Furniture removal",
-  },
-  {
-    name: "Garage Cleaning Service",
-    description: "Design System",
-    image: cleanoutservice,
-    link: "/services/garage-cleaning-service",
-    alttext: "Garage Cleaning Service",
-  },
-  {
-    name: "Garbage Removal Service",
-    description:
-      "Comprehensive service for the removal and disposal of various types of garbage from residential and commercial locations.",
-    image: dumptrailers,
-    link: "/services/garbage-removal-service",
-    alttext: "Garbage Removal Service",
-  },
-  {
-    name: "Haul Away Junk",
-    description:
-      "Professional services to remove and dispose of all types of junk from properties.",
-    image: junkbefore,
-    link: "/services/haul-away-junk",
-    alttext: "Haul away junk",
-  },
-  {
-    name: "Hoarding Cleanup & Removal",
-    description: "Design System",
-    image: hoardingservices,
-    link: "/services/hoarding-cleanup",
-    alttext: "Hoarding Cleanup",
-  },
-  {
-    name: "Junk Pick Up",
-    description:
-      "Convenient and timely pick-up services for household or commercial junk items.",
-    image: junkpickup,
-    link: "/services/junk-pick-up",
-    alttext: "Junk Pick Up",
-  },
-  {
-    name: "Junk Removal & Recycling",
-    description: "Design System",
-    image: junkremoval,
-    link: "/services/junk-removal-new-port-richey-fl",
-    alttext: "Junk Removal & Recycling",
-  },
-  {
-    name: "Mattress Disposal",
-    description: "Design System",
-    image: mattressremoval,
-    link: "/services/mattress-disposal",
-    alttext: "Mattress removal",
-  },
-  {
-    name: "Trash Pickup",
-    description:
-      "Dedicated trash collection service in Pasco County, offering timely and reliable waste management solutions.",
-    image: dumpstertrailer,
-    link: "/services/pasco-county-trash-pickup",
-    alttext: "Pasco County Trash Pickup",
-  },
-
-  {
-    name: "Trash Removal",
-    description:
-      "Efficient removal of trash from homes, businesses, and public spaces to maintain cleanliness.",
-    image: trashremoval,
-    link: "/services/trash-removal",
-    alttext: "Trash Removal",
-  },
-  {
-    name: "Yard Waste Removal",
-    description:
-      "Eco-friendly disposal of yard debris, leaves, branches, and other green waste to maintain beautiful outdoor spaces.",
-    image: yardwasteremoval,
-    link: "/services/yard-waste-removal",
-    alttext: "Yard Waste Removal",
+    name: "Dumpster Trailer Rental",
+    href: "/services/dumpster-trailer-rental",
+    image: trailerImg,
+    text: "Low-profile dump trailers that fit tight driveways and are gentle on your concrete.",
   },
 ];
 
-export default function services() {
+const junkServices = [
+  { name: "Junk Removal", href: "/services/junk-removal", image: junkImg, text: "Point at it, we load it and haul it. No lifting on your end." },
+  { name: "Hoarding & Estate Cleanup", href: "/services/hoarding-cleanup", image: hoardingImg, text: "Respectful, discreet cleanouts for families handling an estate or a hoarding situation." },
+  { name: "Garage Cleanouts", href: "/services/garage-cleaning-service", image: garageImg, text: "Get your garage back. We clear it out top to bottom in one visit." },
+  { name: "Construction Debris Removal", href: "/services/construction-debris-removal", image: debrisImg, text: "Drywall, lumber, tile, and roofing debris hauled away after the job." },
+  { name: "Appliance Removal", href: "/services/appliance-removal", image: applianceImg, text: "Old fridges, washers, dryers, and water heaters taken off your hands." },
+  { name: "Furniture Removal", href: "/services/furniture-removal", image: furnitureImg, text: "Couches, recliners, dressers, and sectionals, carried out for you." },
+  { name: "Mattress Disposal", href: "/services/mattress-disposal", image: mattressImg, text: "Mattresses and box springs removed and disposed of properly." },
+  { name: "Yard Waste Removal", href: "/services/yard-waste-removal", image: yardImg, text: "Branches, palm fronds, and storm debris cleared from your yard." },
+];
+
+const moreServices = [
+  { name: "Bobcat Services", href: "/services/bobcat-services" },
+  { name: "Trash Removal", href: "/services/trash-removal" },
+  { name: "Haul Away Junk", href: "/services/haul-away-junk" },
+  { name: "Pasco County Trash Pickup", href: "/services/pasco-county-trash-pickup" },
+];
+
+const choose = [
+  {
+    title: "Rent a dumpster if…",
+    href: "/services/dumpster-rental",
+    cta: "See dumpster rentals",
+    points: [
+      "You're doing the work yourself over a few days",
+      "It's a remodel, roof, or big cleanout",
+      "You want the lowest price per load",
+    ],
+  },
+  {
+    title: "Book junk removal if…",
+    href: "/services/junk-removal",
+    cta: "See junk removal",
+    points: [
+      "You don't want to lift a thing",
+      "It's a few big items or one room",
+      "You need it gone today, not over a week",
+    ],
+  },
+];
+
+const servicesFaqs = [
+  {
+    q: "What's the difference between dumpster rental and junk removal?",
+    a: "With a dumpster rental, we drop off a dumpster, you fill it on your schedule, and we haul it away. With junk removal, our crew does all the loading and hauling for you in one visit.",
+  },
+  {
+    q: "What dumpster sizes do you offer?",
+    a: `${sizes.map((s) => `${s.name} ($${s.price})`).join(", ")}. Every price includes delivery, pickup, and disposal up to the weight limit.`,
+  },
+  {
+    q: "Do you work with contractors and roofers?",
+    a: "Yes. We run swaps and drops for contractors, roofers, and property managers across Pasco and the surrounding counties. Call to set up recurring service.",
+  },
+  {
+    q: "Which areas do you serve?",
+    a: "We're based in Holiday, FL and serve all of Pasco County plus nearby Pinellas, Hillsborough, and Hernando County cities.",
+  },
+];
+
+function ServiceCard({ service, priority }) {
+  return (
+    <Link
+      href={service.href}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+    >
+      <div className="relative bg-zinc-200" style={{ aspectRatio: "4 / 3" }}>
+        <Image
+          src={service.image}
+          alt=""
+          fill
+          priority={priority}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="font-display text-2xl font-bold text-ink group-hover:text-brand-hover">{service.name}</h3>
+        <p className="mt-2 flex-1 leading-relaxed text-zinc-600">{service.text}</p>
+        <span className="mt-5 inline-flex items-center gap-1.5 font-semibold text-brand-hover">
+          Learn more <ArrowRight aria-hidden className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+export default function Services() {
   return (
     <>
       <Head>
-        <title>
-          Lupo Dumpster Rentals | Affordable and Reliable Dumpster and Junk
-          Services
-        </title>
-        <meta
-          name="description"
-          content="Dumpster rental, junk removal, appliance & furniture haul-away across Pasco County, FL. Full-service by Lupo Dumpster Rentals. Call (727) 317-6717."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <Seo
-          title="Lupo Dumpster Rentals | Affordable and Reliable Dumpster and Junk Services"
-          description="Dumpster rental, junk removal, appliance & furniture haul-away across Pasco County, FL. Full-service by Lupo Dumpster Rentals. Call (727) 317-6717."
-          path="/services"
-        />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <Seo title={title} description={description} path="/services" />
       </Head>
-      {/*  */}
-      <section className="py-10 sm:py-16 lg:py-24 bg-white">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
-            <div className="relative mb-12">
-              <Image
-                className="contrast-125 w-full"
-                src={trailerthree}
-                alt="waste management"
-              />
 
-              <div className="absolute w-full max-w-xs px-4 -translate-x-1/2 sm:px-0 sm:max-w-sm left-1/2 -bottom-12">
-                <div className="overflow-hidden bg-black rounded">
-                  <div className="px-10 py-6">
-                    <div className="flex items-center">
-                      <p className="flex-shrink-0 text-3xl font-bold text-red-600 sm:text-4xl">
-                        7+
-                      </p>
-                      <p className="pl-6 text-sm font-medium text-white sm:text-lg">
-                        Years <br />
-                        of Experience
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <PageHero
+        image={heroImage}
+        eyebrow="Dumpster rental & junk removal services"
+        title={
+          <>
+            Every Way to Get Rid of It, <Highlight tone="dark">One Local Crew</Highlight>
+          </>
+        }
+        intro={`Rent a flat-rate dumpster from $${lowestPrice} and fill it yourself, or let us do the heavy lifting with full-service junk removal. Either way, it's gone.`}
+      />
+      <Breadcrumbs />
 
-            <div>
-              <h1 className="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl uppercase lg:leading-tight">
-                Dumpster Rental & Junk Removal Services in Pasco County, FL
-              </h1>
-              <p className="mt-6 leading-relaxed  text-lg font-normal text-zinc-700">
-                With Lupo Dumpster Rentals, you can rest assured that your waste
-                management needs will be taken care of quickly and efficiently.
-                Book a trailer now and experience our exceptional customer
-                service and competitive pricing.
-              </p>
-              <Link
-                href="/contact"
-                title=""
-                className="inline-flex items-center justify-center   border border-transparent  focus:outline-none mt-9
-                bg-black px-4 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-700 rounded-md
-                transition-all duration-300 uppercase"
-                role="button"
-              >
-                {" "}
-                Book Trailer Now{" "}
-              </Link>
-            </div>
+      <section aria-labelledby="dumpsters-title" className="bg-white py-20 lg:py-28">
+        <div className={container}>
+          <SectionHeading
+            id="dumpsters-title"
+            eyebrow="Dumpster rentals"
+            title={
+              <>
+                Roll-Off Dumpsters at <Highlight>One Flat Price</Highlight>
+              </>
+            }
+            intro="You fill it on your schedule. We drop it off, pick it up, and handle the dump."
+          />
+          <ul className="mt-8 flex flex-wrap justify-center gap-3">
+            {sizes.map((s) => (
+              <li key={s.id}>
+                <Link
+                  href={s.href}
+                  className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand-hover"
+                >
+                  {s.name} <span className="text-brand">${s.price}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {dumpsterServices.map((s) => (
+              <ServiceCard key={s.href} service={s} />
+            ))}
+          </div>
+          <div className="mt-10 flex justify-center">
+            <PrimaryButton href={navigation.bookHref}>
+              Book Your Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+            </PrimaryButton>
           </div>
         </div>
       </section>
-      <Breadcrumbs />
-      {/* services */}
-      <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-white">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-base font-semibold text-red-600">
-              Eco-Friendly Junk Removal Solutions
-            </p>
-            <h2 className="mt-4 text-3xl font-bold leading-tight text-black sm:text-4xl lg:leading-tight lg:mt-6">
-              DUMPSTER AND JUNK REMOVAL SERVICES
-            </h2>
-          </div>
 
-          <div className="grid max-w-md grid-cols-1 gap-8 mx-auto mt-12 xl:gap-16 md:max-w-7xl md:grid-cols-4 sm:mt-16">
-            {servicelist.map((service, index) => (
-              <div className="group" key={index}>
+      <section aria-labelledby="junk-title" className="bg-zinc-100 py-20 lg:py-28">
+        <div className={container}>
+          <SectionHeading
+            id="junk-title"
+            eyebrow="Junk removal & cleanouts"
+            title={
+              <>
+                Don&apos;t Want to Lift a Thing? <Highlight>We&apos;ll Load It.</Highlight>
+              </>
+            }
+            intro="Our crew shows up, loads everything, and hauls it away. You get a firm price before we start."
+          />
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {junkServices.map((s) => (
+              <ServiceCard key={s.href} service={s} />
+            ))}
+          </div>
+          <div className="mt-10 flex justify-center">
+            <a
+              href={telHref}
+              className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg border-2 border-ink px-7 text-base font-bold text-ink transition-colors hover:bg-ink hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+            >
+              <Phone aria-hidden className="h-5 w-5" /> Get a junk removal price: {siteConfig.phone}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="choose-title" className="bg-white py-20 lg:py-28">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            id="choose-title"
+            eyebrow="Not sure which you need?"
+            title={
+              <>
+                Dumpster Rental or <Highlight>Junk Removal?</Highlight>
+              </>
+            }
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {choose.map((c, i) => (
+              <div
+                key={c.title}
+                className={i === 0 ? "rounded-2xl bg-ink p-8 text-white" : "rounded-2xl border-2 border-zinc-200 p-8"}
+              >
+                <h3 className={`font-display text-3xl font-bold ${i === 0 ? "text-white" : "text-ink"}`}>{c.title}</h3>
+                <ul className="mt-6 space-y-3">
+                  {c.points.map((p) => (
+                    <li key={p} className={`flex gap-3 ${i === 0 ? "text-zinc-200" : "text-zinc-700"}`}>
+                      <Check aria-hidden className={`mt-0.5 h-5 w-5 shrink-0 ${i === 0 ? "text-brand-on-dark" : "text-brand"}`} />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
                 <Link
-                  href={service.link}
-                  title=""
-                  className="block overflow-hidden aspect-w-16 aspect-h-9  "
+                  href={c.href}
+                  className={`mt-8 inline-flex items-center gap-1.5 font-semibold underline-offset-4 hover:underline ${
+                    i === 0 ? "text-brand-on-dark" : "text-brand-hover"
+                  }`}
                 >
-                  <Image
-                    className="object-cover w-full h-full transition-all duration-200 transform group-hover:contrast-125 "
-                    src={service.image}
-                    alt={service.alttext}
-                  />
+                  {c.cta} <ArrowRight aria-hidden className="h-4 w-4" />
                 </Link>
-                <h3 className="mt-6 text-lg font-semibold text-black xl:text-xl group-hover:text-zinc-700">
-                  <Link href={service.link} title="" className="">
-                    {service.name}
-                  </Link>
-                </h3>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* <section className="py-12  sm:py-16 lg:py-20">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center">
-            <div className="text-center">
-              <p className="text-lg font-medium text-gray-300 ">
-                PASCO COUNTY DUMPSTER RENTALS
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl max-w-xl">
-                OVER 100+ FIVE STAR REVIEWS
-              </h2>
-            </div>
-
-            <div className="relative mt-10 md:mt-24 md:order-2">
-              <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
-                <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
-              </div>
-
-              <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
-                <div className="flex flex-col overflow-hidden shadow-xl">
-                  <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 ">
-                    <div className="flex-1">
-                      <div className="flex items-center">
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      </div>
-
-                      <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 ">
-                          “Alex made it extremely easy to rent. He always
-                          responds back to text & checked in on us to see if all
-                          was well. The dumpster was the perfect size, 20 yard,
-                          and fit a whole house gutting. I would definitely
-                          recommend Lupo Enterprises.”
-                        </p>
-                      </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <Image
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src={vitina}
-                        alt="Vitina Stevens, verified Lupo Dumpster Rentals customer"
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 ">
-                          Vitina Stevens
-                        </p>
-                        <Link
-                          className="mt-0.5 text-sm  text-gray-600 hover:text-red-600"
-                          href="https://g.co/kgs/aQCdpQ"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          See Review
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden shadow-xl">
-                  <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 ">
-                    <div className="flex-1">
-                      <div className="flex items-center">
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      </div>
-
-                      <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 ">
-                          “Very professional & reliable. I{"'"}ve used other
-                          dumpster rentals years ago but this one was hassle
-                          FREE. Thank you for making this junk removal less
-                          stressful. I highly recommend Lupo Dumpster Rentals to
-                          everyone.”
-                        </p>
-                      </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <Image
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src={dominique}
-                        alt="Dominuque Review"
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 ">
-                          Dominuque Parise
-                        </p>
-                        <Link
-                          className="mt-0.5 text-sm  text-gray-600 hover:text-red-600"
-                          href="https://g.co/kgs/koG496"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          See Review
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden shadow-xl">
-                  <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 ">
-                    <div className="flex-1">
-                      <div className="flex items-center">
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg
-                          className="w-5 h-5 text-red-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      </div>
-
-                      <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 ">
-                          “Was in constant contact with these guys and they
-                          allowed me extra time when I needed it.. they placed
-                          it exactly where I asked and dumpster was picked up
-                          when it was ready. Best price I could find in the area
-                          too so I’ll work with them again for sure.”
-                        </p>
-                      </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <Image
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src={review}
-                        alt="Avi Levy, verified Lupo Dumpster Rentals customer (5-star Google review)"
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 ">
-                          Avi Levy
-                        </p>
-                        <Link
-                          className="mt-0.5 text-sm  text-gray-600 hover:text-red-600"
-                          href="https://g.co/kgs/CFdoQe"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          See Review
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section aria-labelledby="more-title" className="bg-zinc-100 py-16 lg:py-20">
+        <div className={container}>
+          <h2 id="more-title" className="text-center font-display text-3xl font-bold text-ink">
+            More Hauling Services
+          </h2>
+          <ul className="mt-8 flex flex-wrap justify-center gap-3">
+            {moreServices.map((s) => (
+              <li key={s.href}>
+                <Link
+                  href={s.href}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 font-semibold text-ink shadow-sm ring-1 ring-zinc-200 transition-colors hover:text-brand-hover hover:ring-brand"
+                >
+                  {s.name}
+                  <ArrowRight aria-hidden className="h-4 w-4" />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </section> */}
-      <Testimonialsection></Testimonialsection>
+      </section>
 
-      <Twentyyard></Twentyyard>
+      <PlanSteps />
 
-      {/* <Pricing></Pricing> */}
-      {/* <Contact></Contact> */}
-      <RequestForm />
+      <FaqSection
+        id="services-faq-title"
+        title={
+          <>
+            Service <Highlight>FAQs</Highlight>
+          </>
+        }
+        items={servicesFaqs}
+      />
+
+      <CtaBand />
     </>
   );
 }

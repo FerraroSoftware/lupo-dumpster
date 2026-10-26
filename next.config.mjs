@@ -5,7 +5,14 @@ import createMDX from "@next/mdx";
 const nextConfig = {
   // Configure `pageExtensions`` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
-  // Optionally, add any other Next.js config below
+  // Merged pages (D15, docs/pre-launch.md §3): 301 into their cluster pillar.
+  async redirects() {
+    return [
+      { source: "/services/junk-pick-up", destination: "/services/junk-removal", permanent: true },
+      { source: "/services/trash-pick-up", destination: "/services/trash-removal", permanent: true },
+      { source: "/services/garbage-removal-service", destination: "/services/trash-removal", permanent: true },
+    ];
+  },
 };
 
 const withMDX = createMDX({

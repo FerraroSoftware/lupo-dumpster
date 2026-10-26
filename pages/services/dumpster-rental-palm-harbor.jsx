@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/palm-harbor";
 
 export default function DumpsterRentalPalmHarbor() {
-  return <CityDumpsterPage data={getCity("palm-harbor")} />;
+  return <CityPage city={getCity("palm-harbor")} content={content} />;
 }

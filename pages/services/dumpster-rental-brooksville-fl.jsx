@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/brooksville-fl";
 
 export default function DumpsterRentalBrooksville() {
-  return <CityDumpsterPage data={getCity("brooksville-fl")} />;
+  return <CityPage city={getCity("brooksville-fl")} content={content} />;
 }

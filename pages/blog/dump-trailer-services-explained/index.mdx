@@ -1,19 +1,43 @@
 import Bloglayout from "../../../components/Bloglayout";
-import RequestForm from "../../../components/new/request-form";
 import Head from "next/head";
+import { lowestPrice, priceOf, siteConfig, telHref } from "@/lib/site-config";
 
 export const article = {
   date: "2024-02-14",
-  title: "Dump Trailer Services Explained",
+  title: "Dump Trailer Rental: How It Works and What It Costs",
   description:
-    "Explore the benefits of dump trailer services for efficient waste management. Learn about types, safety, costs, and choosing the right provider.",
-  image: "/dump1.png",
-  imageAlt: "dump trailer service",
+    `What a dump trailer rental is, how it compares to a roll-off dumpster, and what it costs. Flat-rate dump trailers in Pasco County from $${lowestPrice}.`,
+  image: "/dump1.webp",
+  imageAlt: "Lupo dump trailer rental unloading at a disposal site",
+  category: "Projects & How-To",
+  updated: "2026-10-25",
+  keywords: [
+    "dump trailer rental",
+    "dump trailer services",
+    "dumpster trailer rental",
+    "dump trailer vs roll-off dumpster",
+    "driveway-friendly dumpster",
+    "dump trailer rental Pasco County FL",
+  ],
+  faqs: [
+    {
+      q: "How much weight can a dump trailer hold?",
+      a: "Lupo's flat rates include 2 tons in a 10-yard, 3 tons in a 15-yard, and 4 tons in a 20-yard trailer. Heavy debris like shingles, tile, and concrete reaches the weight limit fast, so tell us what you're tossing when you book.",
+    },
+    {
+      q: "What can't go in a dump trailer?",
+      a: `Hazardous chemicals, wet paint, and tires generally can't go in. If you're unsure about an item, call ${siteConfig.phone} before you load it.`,
+    },
+    {
+      q: "How much does a dump trailer rental cost?",
+      a: `Lupo dump trailers are ${priceOf("10")} for a 10-yard, ${priceOf("15")} for a 15-yard, and ${priceOf("20")} for a 20-yard, with delivery, pickup, and disposal included up to the weight limit. See every detail on our pricing page.`,
+    },
+  ],
 };
 
-<Bloglayout title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
+<Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
 
-![clean out service](/dump1.png)
+**Quick answer:** A dump trailer is a hydraulic trailer that's dropped in your driveway, filled at your own pace, then hauled away and tipped at the disposal site. It works like a roll-off dumpster. Lupo's [dump trailers](/services/dumpster-trailer-rental) come in 10, 15, and 20 yards, starting at ${lowestPrice} with delivery, pickup, and disposal included up to the weight limit.
 
 In today's fast-paced world, managing waste efficiently and effectively has become a paramount concern for businesses and homeowners alike. Dump trailer services offer a versatile and convenient solution for various waste management needs, from construction debris disposal to home renovation clean-ups. By providing on-demand waste removal with the flexibility to handle different types of materials, these services streamline project workflows and contribute to a cleaner, more sustainable environment. Discover the ease and efficiency of managing your waste with our comprehensive [dump trailer services](/services/dumpster-trailer-rental), tailored to meet the demands of any project, big or small.
 
@@ -107,23 +131,30 @@ Selecting a reputable dump trailer service provider is crucial for a hassle-free
 
 Our [services](/services) page showcases our wide range of options and emphasizes our commitment to reliability, customer satisfaction, and environmental responsibility.
 
+## Which Dump Trailer Size Fits Your Project?
+
+| Project | Recommended size | Flat price |
+| --- | --- | --- |
+| Garage, closet, or yard cleanup | [10-yard](/services/10-yard-dump-trailer) | {priceOf("10")} |
+| Kitchen or bath remodel, flooring tear-out | [15-yard](/services/15-yard-dump-trailer) | {priceOf("15")} |
+| Roof replacement or whole-house cleanout | [20-yard](/services/20-yard-dump-trailer) | {priceOf("20")} |
+
 ## Final Thoughts on Dump Trailer Services
 
 Dump trailer services offer a flexible, efficient, and environmentally friendly solution for managing waste from various projects. By understanding the types of trailers available, their benefits, and how to select an exemplary service, you can streamline your waste management process and ensure your project remains clean, safe, and compliant with regulations.
 
-## FAQ Section
+## Frequently Asked Questions
 
-**Q: How much weight can a dump trailer hold?**
-A: Weight limits vary by trailer size and type. Discussing your project's needs with the service provider to choose the appropriate trailer is important.
+### How much weight can a dump trailer hold?
 
-**Q: Can items not be disposed of in a dump trailer?**
-A: Yes, hazardous materials, certain electronics, and tires are usually not allowed. Always verify with your provider.
+Lupo's flat rates include 2 tons in a 10-yard, 3 tons in a 15-yard, and 4 tons in a 20-yard trailer. Heavy debris like shingles, tile, and concrete reaches the weight limit fast, so tell us what you're tossing when you book.
 
-**Q: How long can I rent a dump trailer?**
-A: Rental periods can vary. Depending on your project needs and the provider's policies, options range from a single day to several weeks.
+### What can't go in a dump trailer?
 
-For more answers to your questions, check out our [FAQ section](/services/dumpster-trailer-rental) or [contact us](/contact) directly for personalized assistance.
+Hazardous chemicals, wet paint, and tires generally can't go in. If you're unsure about an item, call <a href={telHref}>{siteConfig.phone}</a> before you load it.
+
+### How much does a dump trailer rental cost?
+
+Lupo dump trailers are {priceOf("10")} for a 10-yard, {priceOf("15")} for a 15-yard, and {priceOf("20")} for a 20-yard, with delivery, pickup, and disposal included up to the weight limit. See every detail on our [pricing page](/dumpster-rental-pricing).
 
 </Bloglayout>
-
-<RequestForm />

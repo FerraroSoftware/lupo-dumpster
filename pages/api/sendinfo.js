@@ -1,5 +1,7 @@
 import sgMail from "@sendgrid/mail";
 import { verifyRecaptcha } from "../../lib/recaptcha";
+import { buildLeadEmail } from "../../lib/lead-email";
+import { siteConfig } from "../../lib/site-config";
 
 // Set SendGrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -34,7 +36,13 @@ export default async function handler(req, res) {
       serviceNeeded,
       message,
       recaptchaToken,
+      company,
     } = req.body;
+
+    // Hidden honeypot field: real visitors never fill it in.
+    if (company) {
+      return res.status(200).json({ success: true });
+    }
 
     // Verify reCAPTCHA token with 0.9 minimum score
     const recaptchaResult = await verifyRecaptcha(
@@ -46,8 +54,7 @@ export default async function handler(req, res) {
     if (!recaptchaResult.success) {
       console.error("reCAPTCHA verification failed:", recaptchaResult.error);
       return res.status(400).json({
-        error:
-          "Security verification failed. Please try again or contact us directly at (727) 317-6717.",
+        error: `Security verification failed. Please try again or contact us directly at ${siteConfig.phone}.`,
         details: recaptchaResult.error,
       });
     }
@@ -55,32 +62,6 @@ export default async function handler(req, res) {
     console.log(
       `reCAPTCHA verified successfully with score: ${recaptchaResult.score}`,
     );
-
-    // Format the email content
-    const emailContent = `
-      New Service Request
-      
-      Name: ${firstName} ${lastName}
-      Email: ${email}
-      Phone: ${phone}
-      
-      Service Needed: ${serviceNeeded}
-      Message: ${message || "None provided"}
-    `;
-
-    // Configure email message
-    const msg = {
-      to: "a.lupollc@gmail.com",
-      // to: "contact@blackcatwebsitedesign.com",
-      cc: ["contact@blackcatwebsitedesign.com", "alupo825@gmail.com"],
-      // from: "contact@ferrarosoftware.com",
-      from: "contact@blackcatwebsitedesign.com",
-      subject: "New Dumpster Service Request", // Updated subject to be more generic
-      text: emailContent,
-      html: emailContent.replace(/\n/g, "<br>"),
-    };
-
-    const emailPromise = sgMail.send(msg);
 
     const easternTime = new Date().toLocaleString("en-US", {
       timeZone: "America/New_York",
@@ -94,6 +75,35 @@ export default async function handler(req, res) {
     });
 
     const formattedPhone = formatPhoneNumber(phone);
+    const name = [firstName, lastName]
+      .map((n) => (n || "").trim())
+      .filter(Boolean)
+      .join(" ");
+    const { subject, html, text } = buildLeadEmail({
+      name,
+      email,
+      phone: formattedPhone,
+      phoneDigits: String(phone).replace(/\D/g, "").slice(-10),
+      serviceNeeded,
+      message,
+      receivedAt: easternTime,
+    });
+
+    const msg = {
+      to: "a.lupollc@gmail.com",
+      // to: "contact@blackcatwebsitedesign.com",
+      cc: ["contact@blackcatwebsitedesign.com", "alupo825@gmail.com"],
+      from: {
+        email: "contact@blackcatwebsitedesign.com",
+        name: "Lupo Website Leads",
+      },
+      ...(email && { replyTo: email }),
+      subject,
+      text,
+      html,
+    };
+
+    const emailPromise = sgMail.send(msg);
 
     // Send to Zapier webhook if URL is configured
     const zapierPromise = process.env.ZAPIER_WEBHOOK_URL

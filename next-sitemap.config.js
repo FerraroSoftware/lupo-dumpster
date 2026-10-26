@@ -1,5 +1,5 @@
 /**
- * next-sitemap configuration — see §7.1 of seo-updates.md.
+ * next-sitemap configuration — see §7.1 of docs/legacy/seo-updates.md.
  *
  * Runs at postbuild time (see `scripts.postbuild` in package.json) and
  * writes a single flat `public/sitemap.xml` containing every indexable

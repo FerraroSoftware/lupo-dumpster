@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/zephyrhills-fl";
 
 export default function DumpsterRentalZephyrhills() {
-  return <CityDumpsterPage data={getCity("zephyrhills-fl")} />;
+  return <CityPage city={getCity("zephyrhills-fl")} content={content} />;
 }

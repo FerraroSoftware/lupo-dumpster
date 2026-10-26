@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/westchase-fl";
 
 export default function DumpsterRentalWestchase() {
-  return <CityDumpsterPage data={getCity("westchase-fl")} />;
+  return <CityPage city={getCity("westchase-fl")} content={content} />;
 }

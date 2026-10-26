@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/clearwater-fl";
 
 export default function DumpsterRentalClearwater() {
-  return <CityDumpsterPage data={getCity("clearwater-fl")} />;
+  return <CityPage city={getCity("clearwater-fl")} content={content} />;
 }

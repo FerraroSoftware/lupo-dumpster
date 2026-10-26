@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/oldsmar-fl";
 
 export default function DumpsterRentalOldsmar() {
-  return <CityDumpsterPage data={getCity("oldsmar-fl")} />;
+  return <CityPage city={getCity("oldsmar-fl")} content={content} />;
 }

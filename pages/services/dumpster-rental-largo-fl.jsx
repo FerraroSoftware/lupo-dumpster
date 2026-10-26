@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/largo-fl";
 
 export default function DumpsterRentalLargo() {
-  return <CityDumpsterPage data={getCity("largo-fl")} />;
+  return <CityPage city={getCity("largo-fl")} content={content} />;
 }

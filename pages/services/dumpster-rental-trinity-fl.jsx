@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/trinity-fl";
 
 export default function DumpsterRentalTrinity() {
-  return <CityDumpsterPage data={getCity("trinity-fl")} />;
+  return <CityPage city={getCity("trinity-fl")} content={content} />;
 }

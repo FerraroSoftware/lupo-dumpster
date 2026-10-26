@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/wesley-chapel-fl";
 
 export default function DumpsterRentalWesleyChapel() {
-  return <CityDumpsterPage data={getCity("wesley-chapel-fl")} />;
+  return <CityPage city={getCity("wesley-chapel-fl")} content={content} />;
 }

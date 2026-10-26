@@ -1,19 +1,43 @@
 import Bloglayout from "../../../components/Bloglayout";
-import RequestForm from "../../../components/new/request-form";
 import Head from "next/head";
+import { lowestPrice, siteConfig, telHref } from "@/lib/site-config";
 
 export const article = {
   date: "2024-01-01",
-  title: "Appliance Removal: An In-Depth Guide",
+  title: "Appliance Removal: How to Get Rid of Old Appliances",
   description:
-    "Appliance removal is a task that's often overlooked, but it's an integral part of any home renovation, cleanout, or move. Learn what you need to know about appliance removal, from the introduction to the execution process.",
-  image: "/applianceremoval/appliances-removal.png",
-  imageAlt: "appliance removal",
+    "How appliance removal works and how to dispose of old fridges, washers, dryers, and water heaters the right way in Pasco County, FL.",
+  image: "/applianceremoval/appliances-removal.webp",
+  imageAlt: "Old appliances stacked for appliance removal and disposal",
+  category: "Junk Removal & Cleanouts",
+  updated: "2026-10-25",
+  keywords: [
+    "appliance removal",
+    "old appliance disposal",
+    "refrigerator removal",
+    "washer and dryer removal",
+    "appliance pickup near me",
+    "appliance removal Pasco County FL",
+  ],
+  faqs: [
+    {
+      q: "Can I put an old appliance in a dumpster?",
+      a: "Often, yes. Refrigerators, freezers, and AC units contain refrigerant that has to be handled properly, so ask before you load one. If you're not sure, our crew can remove it for you.",
+    },
+    {
+      q: "How much does appliance removal cost?",
+      a: `It depends on how many appliances you have and how hard they are to reach. Text a photo to ${siteConfig.phone} and we'll give you a firm price before we start.`,
+    },
+    {
+      q: "Should I book appliance removal or rent a dumpster?",
+      a: "Book appliance removal if you only have a few items and don't want to lift anything. Rent a dumpster if you're also tossing remodel debris and can load it yourself.",
+    },
+  ],
 };
 
-<Bloglayout title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
+<Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
 
-![appliance removal](/applianceremoval/appliances-removal.png)
+**Quick answer:** The easiest way to get rid of an old appliance is to book an [appliance removal](/services/appliance-removal) crew that carries it out and disposes of it for you. Lupo removes refrigerators, washers, dryers, and water heaters across Pasco County and gives you a firm price before we start. Replacing appliances during a remodel? A [dumpster rental](/services/dumpster-rental) may cost less.
 
 Appliance removal is a task that's often overlooked, but it's an integral part of any home renovation, cleanout, or move. This comprehensive guide educates readers on everything they need to know about appliance removal, from the introduction to the execution process.
 
@@ -52,7 +76,7 @@ Hiring a professional appliance removal service has numerous benefits:
 
 ## Appliance Removal Process
 
-![appliance cleanup](/applianceremoval/appliance-cleanup.png)
+![Appliance cleanup and removal for disposal](/applianceremoval/appliance-cleanup.webp)
 
 ### A. Initial Consultation and Estimation
 
@@ -126,6 +150,17 @@ The project was completed within two days. Almost all removed appliances were re
 
 The case corroborated the beneficial role of recycling in reducing waste and conserving resources. Additionally, it highlighted the invaluable role of a professional appliance removal service in maintaining efficiency and safety in appliance disposal.
 
+## Junk Removal vs. Dumpster Rental
+
+| | Junk removal | Dumpster rental |
+| --- | --- | --- |
+| Who does the loading | Our crew | You, at your own pace |
+| Best for | A few bulky items or a single room | Remodels and big cleanouts |
+| Timeline | Done in one visit | Keep it on-site while you work |
+| Price | Firm quote before we start | Flat rate from ${lowestPrice}, disposal included |
+
+Not sure which fits? Call <a href={telHref}>{siteConfig.phone}</a> and we'll tell you honestly which one costs less for your job.
+
 ## Bringing It All Together
 
 Recycling is essential in appliance removal by aiding resource conservation and safeguarding the environment. Professional junk removal services, especially those that prioritize green disposal strategies, are beneficial in ensuring efficient and safe removal.
@@ -136,6 +171,18 @@ Hiring a professional ensures a seamless, safer, and faster removal process and 
 
 Ready to dispose of your unwanted appliances? Visit our [contact page](/contact) or check out our extensive range of [services](/services) to get started with your appliance removal today.
 
-</Bloglayout>
+## Frequently Asked Questions
 
-<RequestForm />
+### Can I put an old appliance in a dumpster?
+
+Often, yes. Refrigerators, freezers, and AC units contain refrigerant that has to be handled properly, so ask before you load one. If you're not sure, our crew can remove it for you.
+
+### How much does appliance removal cost?
+
+It depends on how many appliances you have and how hard they are to reach. Text a photo to {siteConfig.phone} and we'll give you a firm price before we start.
+
+### Should I book appliance removal or rent a dumpster?
+
+Book appliance removal if you only have a few items and don't want to lift anything. Rent a dumpster if you're also tossing remodel debris and can load it yourself.
+
+</Bloglayout>

@@ -1,5 +1,5 @@
 const BASE_URL = "https://www.lupodumpsterrentals.com";
-const DEFAULT_IMAGE = `${BASE_URL}/dumpster-rental-pros.jpg`;
+const DEFAULT_IMAGE = `${BASE_URL}/images/og/lupo-default-og.jpg`;
 const SITE_NAME = "Lupo Dumpster Rentals";
 
 export default function Seo({
@@ -12,6 +12,7 @@ export default function Seo({
   imageAlt,
   type = "website",
   twitterHandle = "@LupoDumpster",
+  keywords,
 }) {
   const url = path.startsWith("http") ? path : `${BASE_URL}${path}`;
   const absImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
@@ -20,6 +21,13 @@ export default function Seo({
   return (
     <>
       <link rel="canonical" href={url} key="canonical" />
+      {keywords?.length > 0 && (
+        <meta
+          name="keywords"
+          content={Array.isArray(keywords) ? keywords.join(", ") : keywords}
+          key="keywords"
+        />
+      )}
       <meta property="og:type" content={type} key="og:type" />
       <meta property="og:url" content={url} key="og:url" />
       <meta property="og:title" content={title} key="og:title" />

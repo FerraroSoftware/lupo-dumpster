@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/seminole-fl";
 
 export default function DumpsterRentalSeminole() {
-  return <CityDumpsterPage data={getCity("seminole-fl")} />;
+  return <CityPage city={getCity("seminole-fl")} content={content} />;
 }

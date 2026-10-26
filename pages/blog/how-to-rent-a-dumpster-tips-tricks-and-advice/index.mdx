@@ -1,19 +1,51 @@
 import Bloglayout from "../../../components/Bloglayout";
-import RequestForm from "../../../components/new/request-form";
 import Head from "next/head";
+import { lowestPrice, priceOf } from "@/lib/site-config";
 
 export const article = {
   date: "2024-01-21",
-  title: "How to Rent a Dumpster: Tips, Tricks, and Advice",
+  title: "How to Rent a Dumpster: Step-by-Step Tips",
   description:
-    "Learn key tips, tricks, and expert advice on renting a dumpster for your project needs, ensuring a smooth and cost-effective waste management process.",
-  image: "/dumpster-trailer-1.png",
-  imageAlt: "how to rent a dumpster",
+    "How to rent a dumpster step by step: choose a size, check what's included, prep the drop spot, and avoid extra fees. Book online in a minute.",
+  image: "/dumpster-trailer-1.webp",
+  imageAlt: "Rented Lupo dumpster trailer tipping its load at the dump",
+  category: "Projects & How-To",
+  updated: "2026-10-25",
+  keywords: [
+    "how to rent a dumpster",
+    "dumpster rental tips",
+    "renting a dumpster",
+    "dumpster rental near me",
+    "roll-off dumpster rental",
+    "dumpster rental Pasco County FL",
+  ],
+  faqs: [
+    {
+      q: "How far ahead should I book a dumpster?",
+      a: "Book as soon as you know your project date. Delivery is often available the same day, but booking ahead helps you get the date you want.",
+    },
+    {
+      q: "Do I need a permit for a dumpster?",
+      a: "Usually not if the dumpster sits on your driveway or yard. Street or right-of-way placement may need a permit from your city or county.",
+    },
+    {
+      q: "What can't go in a dumpster?",
+      a: "Hazardous chemicals, wet paint, and tires typically can't go in. Ask before you load anything you're unsure about.",
+    },
+  ],
 };
 
-<Bloglayout title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
+<Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
 
-![dumpster trailer](/dumpster-trailer-1.png)
+**Quick answer:** To rent a dumpster, pick a size that fits your whole project, confirm the flat price and what's included, choose a delivery date, and clear a flat spot for the drop-off. In Pasco County you can book a Lupo [dumpster rental](/services/dumpster-rental) online in under a minute, starting at ${lowestPrice} with delivery, pickup, and disposal included.
+
+| Size | Dimensions | Holds about | Weight included | Flat price |
+| --- | --- | --- | --- | --- |
+| [10-yard](/services/10-yard-dump-trailer) | 12' L × 8' W × 3.5' H | 3 pickup-truck loads | 2 tons | {priceOf("10")} |
+| [15-yard](/services/15-yard-dump-trailer) | 14' L × 8' W × 4' H | 4–5 pickup-truck loads | 3 tons | {priceOf("15")} |
+| [20-yard](/services/20-yard-dump-trailer) | 16' L × 8' W × 5' H | 6–7 pickup-truck loads | 4 tons | {priceOf("20")} |
+
+Every price includes delivery, pickup, and disposal up to the weight limit.
 
 ## Understanding Dumpster Rental
 
@@ -42,7 +74,7 @@ These are the most common types of rented dumpsters. Roll-off dumpsters have an 
 
 ### Front-load Dumpsters
 
-Businesses typically use front-load dumpsters for regular trash collection. They are smaller than roll-off dumpsters and are emptied on a scheduled basis. While not commonly rented for short-term projects, they are essential for ongoing waste management.
+Businesses typically use front-load dumpsters for regular trash collection. They are smaller than roll-off dumpsters and are emptied on a scheduled basis. While not commonly rented for short-term projects, they are essential for ongoing waste management. For home and job-site projects, Lupo rents dump trailers, which work like roll-offs: we drop it off, you fill it, and we haul it away.
 
 ### Specialized Dumpsters
 
@@ -60,7 +92,7 @@ Understanding the different types of dumpsters and selecting the right one for y
 
 Selecting the correct dumpster size is crucial for managing your waste disposal efficiently and cost-effectively. Renting a dumpster that's too small can result in needing a second rental, while choosing one that's too large may mean paying for unused space.
 
-![junk removal](/junk-removal.png)
+![Rented dumpster trailer filled with cleanout debris](/junk-removal.webp)
 
 ### Dumpster Sizes Explained
 
@@ -143,6 +175,18 @@ Remember, proper planning and communication with your rental provider are critic
 
 Ready to start your project with a clean slate? Contact us today to find the perfect dumpster rental solution for your needs. Whether you're clearing out clutter, embarking on a renovation, or managing construction debris, we have the resources and expertise to support your project from start to finish. Visit our [dumpster rental pricing](/dumpster-rental-pricing) page for detailed information and to get started.
 
-</Bloglayout>
+## Frequently Asked Questions
 
-<RequestForm />
+### How far ahead should I book a dumpster?
+
+Book as soon as you know your project date. Delivery is often available the same day, but booking ahead helps you get the date you want.
+
+### Do I need a permit for a dumpster?
+
+Usually not if the dumpster sits on your driveway or yard. Street or right-of-way placement may need a permit from your city or county.
+
+### What can't go in a dumpster?
+
+Hazardous chemicals, wet paint, and tires typically can't go in. Ask before you load anything you're unsure about.
+
+</Bloglayout>

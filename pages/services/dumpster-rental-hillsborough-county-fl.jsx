@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/hillsborough-county-fl";
 
 export default function DumpsterRentalHillsboroughCounty() {
-  return <CityDumpsterPage data={getCity("hillsborough-county-fl")} />;
+  return <CityPage city={getCity("hillsborough-county-fl")} content={content} />;
 }

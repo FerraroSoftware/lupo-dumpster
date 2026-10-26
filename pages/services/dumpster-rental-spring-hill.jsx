@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/spring-hill";
 
 export default function DumpsterRentalSpringHill() {
-  return <CityDumpsterPage data={getCity("spring-hill")} />;
+  return <CityPage city={getCity("spring-hill")} content={content} />;
 }

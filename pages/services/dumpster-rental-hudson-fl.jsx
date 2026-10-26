@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/hudson-fl";
 
 export default function DumpsterRentalHudson() {
-  return <CityDumpsterPage data={getCity("hudson-fl")} />;
+  return <CityPage city={getCity("hudson-fl")} content={content} />;
 }

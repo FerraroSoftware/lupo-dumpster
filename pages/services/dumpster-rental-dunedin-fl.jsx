@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/dunedin-fl";
 
 export default function DumpsterRentalDunedin() {
-  return <CityDumpsterPage data={getCity("dunedin-fl")} />;
+  return <CityPage city={getCity("dunedin-fl")} content={content} />;
 }

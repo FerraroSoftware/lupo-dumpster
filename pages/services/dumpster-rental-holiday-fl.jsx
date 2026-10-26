@@ -1,6 +1,7 @@
-import CityDumpsterPage from "@/components/new/city-dumpster-page";
+import CityPage from "@/components/site/city-page";
 import { getCity } from "@/lib/cities";
+import content from "@/content/cities/holiday-fl";
 
 export default function DumpsterRentalHoliday() {
-  return <CityDumpsterPage data={getCity("holiday-fl")} />;
+  return <CityPage city={getCity("holiday-fl")} content={content} />;
 }
