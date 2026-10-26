@@ -1,0 +1,162 @@
+import Bloglayout from "../../../components/Bloglayout";
+import { acceptedItems, priceOf, prohibitedItems, siteConfig, telHref } from "@/lib/site-config";
+
+export const article = {
+  date: "2026-07-21",
+  title: "What Can't Go in a Dumpster? Prohibited Items List",
+  description: "What can't go in a dumpster? See the prohibited items list, why landfills ban them, how to dispose of each safely in Pasco County, and what's OK.",
+  image: "/images/blog/what-cant-go-in-a-dumpster.webp",
+  imageAlt: "Paint cans, tires, and batteries set aside from a dumpster because they are prohibited items",
+  category: "Projects & How-To",
+  updated: "2026-07-21",
+  keywords: [
+    "what can't go in a dumpster",
+    "dumpster prohibited items",
+    "what can you put in a dumpster",
+    "hazardous waste disposal Pasco County",
+    "dumpster rental rules New Port Richey",
+    "how to dispose of paint cans Florida",
+  ],
+  faqs: [
+    {
+      q: "What can't go in a dumpster?",
+      a: `Lupo's dumpsters can't take: ${prohibitedItems.join(", ").toLowerCase()}. These need separate disposal, usually through your county's household hazardous waste program or a retailer that takes them back.`,
+    },
+    {
+      q: "Can I put paint cans in a dumpster?",
+      a: "Wet paint can't go in. Fully dried-out latex paint cans are a different story, but ask us first. Leftover liquid paint, stains, and solvents should go to your county's household hazardous waste drop-off.",
+    },
+    {
+      q: "What happens if a prohibited item ends up in my dumpster?",
+      a: "Landfills and transfer stations can reject loads with banned items, and the item may have to be pulled out and disposed of separately. If you're not sure about something, call or text before you toss it.",
+    },
+    {
+      q: "Can yard waste and palm fronds go in a dumpster?",
+      a: `Yes. Yard waste, branches, and palm fronds are fine. A 10-yard dumpster at ${priceOf("10")} is a common pick for yard cleanups.`,
+    },
+  ],
+};
+
+<Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
+
+**Quick answer:** Hazardous chemicals and solvents, wet paint, tires, batteries, propane tanks, and medical waste can't go in a Lupo dumpster. Landfills don't accept them with regular debris because they can leak, catch fire, or explode. Take them to your county's household hazardous waste facility or a retailer that accepts them, and keep your dumpster for household junk, remodel debris, and yard waste.
+
+## What Can't Go in a Dumpster: The Prohibited Items List
+
+Here's the list of items that can't go in a Lupo dumpster:
+
+<ul>
+  {prohibitedItems.map((item) => (
+    <li key={item}>{item}</li>
+  ))}
+</ul>
+
+Not sure whether something on your pile counts? Call or text <a href={telHref}>{siteConfig.phone}</a> before you load it. It's much easier to ask first than to dig something out of the bottom of a full dumpster.
+
+## Why Some Items Are Banned From Dumpsters
+
+It's not about making your life harder. There are real reasons these items need their own disposal.
+
+### Landfill rules
+
+Your dumpster load goes to a landfill or transfer station, and those facilities have rules about what they'll accept. Hazardous materials can contaminate soil and groundwater. That matters a lot in Florida, where sandy soil lets liquids soak down quickly and many communities depend on groundwater.
+
+### Safety
+
+Some of these items are dangerous in a closed load:
+
+- **Propane tanks** can leak or explode if they're crushed or get hot. A dumpster sitting in the Florida sun gets hot.
+- **Batteries**, especially lithium-ion batteries from tools and electronics, can spark and start fires when they're damaged.
+- **Solvents and chemicals** can react with each other or leak onto other debris.
+- **Medical waste**, like needles, can injure the people who handle the load.
+
+### Equipment and processing
+
+Tires don't break down in a landfill, and many facilities don't want them in mixed loads. Wet paint can spill and coat everything around it.
+
+## How to Dispose of Prohibited Items Safely
+
+Each item on the list has a better place to go. Rules and locations vary, so check with your county or city for current drop-off sites and hours.
+
+| Item | Where it usually goes |
+| --- | --- |
+| Hazardous chemicals and solvents | Your county's household hazardous waste (HHW) facility or collection event |
+| Wet paint | County HHW facility. Some areas allow fully dried latex paint in the trash, so check locally. |
+| Tires | Tire retailers (many take old tires, sometimes for a fee) or your county's tire drop-off |
+| Batteries and propane tanks | County HHW facility, battery recycling drop-offs at some retailers, or propane exchange and refill locations |
+| Medical waste | Pharmacy take-back programs, sharps containers, or your county's guidance on sharps disposal |
+
+### Hazardous chemicals and solvents
+
+This includes things like pool chemicals, pesticides, motor oil, gasoline, paint thinner, and strong cleaners. Tampa Bay–area counties generally offer household hazardous waste drop-off for residents, so check with your county for locations and hours. Keep products in their original containers, close the lids tightly, and don't mix anything together.
+
+### Wet paint
+
+Liquid paint, stain, and varnish need to go to a household hazardous waste site. If you have a little latex paint left over, some areas let you dry it out with kitty litter or a paint hardener before throwing out the can. Check with your county or city before you do, and ask us before putting any paint cans in your dumpster.
+
+### Tires
+
+Many tire shops will take old tires when you buy new ones, and some accept them separately. Your county may also have a tire drop-off. Never leave tires on the curb or in the woods. They collect rainwater and become mosquito breeding grounds, which is a real problem in a humid Florida summer.
+
+### Batteries and propane tanks
+
+Car batteries can often be returned where you buy a new one. Many home improvement and electronics stores have drop-off bins for rechargeable batteries. For propane tanks, use a tank exchange program, ask a propane refill location, or bring them to your county's hazardous waste facility.
+
+### Medical waste
+
+Use a sharps container for needles and check with your pharmacy or county about how to dispose of it. Many pharmacies run medication take-back programs.
+
+## What You *Can* Put in a Dumpster
+
+Good news: most of what people need to get rid of is fine. Here's what our dumpsters accept:
+
+<ul>
+  {acceptedItems.map((item) => (
+    <li key={item}>{item}</li>
+  ))}
+</ul>
+
+That covers most garage cleanouts, remodels, roofing jobs, and yard projects. A storm cleanup with oak branches and palm fronds? That's fine. A bathroom tear-out with tile and drywall? Fine. An estate cleanout with old furniture? Also fine.
+
+## Items to Ask About First
+
+Some things aren't on either list. Before loading these, call or text us:
+
+- **Refrigerators, freezers, and AC units.** Anything with refrigerant may need special handling. Our [appliance removal](/services/appliance-removal) service can take them separately.
+- **Mattresses.** They're bulky and some disposal sites handle them differently. See our guide on [how to dispose of a mattress](/blog/how-to-dispose-of-a-mattress-florida).
+- **Concrete, dirt, and brick.** Very heavy. They can push you over the weight limit quickly.
+- **Electronics.** TVs and computers may have local recycling options.
+
+## Watch the Weight, Too
+
+Even accepted items can cause trouble if they're too heavy. Each size includes a set weight:
+
+- [10-yard dumpster](/services/10-yard-dump-trailer): {priceOf("10")}, 2 tons included
+- [15-yard dumpster](/services/15-yard-dump-trailer): {priceOf("15")}, 3 tons included
+- [20-yard dumpster](/services/20-yard-dump-trailer): {priceOf("20")}, 4 tons included
+
+Shingles, tile, and wet yard debris are heavier than they look. If your project is heavy, tell us when you book and we'll help you pick the right size.
+
+## Need Help With the Rest?
+
+If you've got a pile that's a mix of OK and not-OK items, we can help you sort out the plan. Call or text <a href={telHref}>{siteConfig.phone}</a>, see sizes and rates on our [dumpster rental pricing page](/dumpster-rental-pricing), or let our crew handle it with [junk removal](/services/junk-removal). We serve [New Port Richey](/services/dumpster-rental-new-port-richey-fl), Holiday, and the rest of Pasco County.
+
+## Frequently Asked Questions
+
+### What can't go in a dumpster?
+
+Lupo's dumpsters can't take: {prohibitedItems.join(", ").toLowerCase()}. These need separate disposal, usually through your county's household hazardous waste program or a retailer that takes them back.
+
+### Can I put paint cans in a dumpster?
+
+Wet paint can't go in. Fully dried-out latex paint cans are a different story, but ask us first. Leftover liquid paint, stains, and solvents should go to your county's household hazardous waste drop-off.
+
+### What happens if a prohibited item ends up in my dumpster?
+
+Landfills and transfer stations can reject loads with banned items, and the item may have to be pulled out and disposed of separately. If you're not sure about something, call or text before you toss it.
+
+### Can yard waste and palm fronds go in a dumpster?
+
+Yes. Yard waste, branches, and palm fronds are fine. A [10-yard dumpster](/services/10-yard-dump-trailer) at {priceOf("10")} is a common pick for yard cleanups.
+
+</Bloglayout>

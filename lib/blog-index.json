@@ -1,5 +1,185 @@
 [
   {
+    "slug": "will-a-dumpster-damage-my-driveway",
+    "title": "Will a Dumpster Damage My Driveway? What to Know",
+    "description": "Will a dumpster damage my driveway? How protective boards and low-profile dump trailers help, plus paver, new concrete, and placement tips.",
+    "date": "2026-10-20",
+    "category": "Projects & How-To",
+    "image": "/images/blog/will-a-dumpster-damage-my-driveway.webp",
+    "imageAlt": "Dump trailer dumpster resting on protective wood boards on a concrete driveway in Florida"
+  },
+  {
+    "slug": "snowbird-home-cleanout-florida",
+    "title": "Snowbird Home Cleanout: Get Your Florida Home Ready",
+    "description": "A snowbird home cleanout checklist for Pasco County: clear the lanai, garage, and humidity-damaged items before arrival. Dumpsters from $325.",
+    "date": "2026-10-06",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/snowbird-home-cleanout-florida.webp",
+    "imageAlt": "Bright Florida lanai cleared of old patio furniture before snowbird season"
+  },
+  {
+    "slug": "how-to-help-a-loved-one-with-hoarding",
+    "title": "Hoarding Cleanup Help: How to Support a Loved One",
+    "description": "Hoarding cleanup help for families: how to start with the relationship, handle safety, bring in support, and plan a respectful cleanup in Pasco County.",
+    "date": "2026-09-15",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/how-to-help-a-loved-one-with-hoarding.webp",
+    "imageAlt": "Family member and cleanup crew sorting belongings together during a hoarding cleanup"
+  },
+  {
+    "slug": "flooring-removal-dumpster-size",
+    "title": "Dumpster for Flooring Removal: Size and Weight Guide",
+    "description": "Picking a dumpster for flooring removal? Carpet is bulky, tile is heavy. Size and weight tips for Pasco County tear-outs, from $325.",
+    "date": "2026-09-01",
+    "category": "Sizing & Pricing",
+    "image": "/images/blog/flooring-removal-dumpster-size.webp",
+    "imageAlt": "Rolled carpet and broken floor tile from a flooring tear-out loaded in a dump trailer"
+  },
+  {
+    "slug": "dumpster-permit-pasco-county",
+    "title": "Dumpster Permit in Pasco County: Do You Need One?",
+    "description": "Do you need a dumpster permit in Pasco County? Driveway drops usually don't. Here's when the street needs one, who to call, and HOA tips.",
+    "date": "2026-08-18",
+    "category": "Projects & How-To",
+    "image": "/images/blog/dumpster-permit-pasco-county.webp",
+    "imageAlt": "Dump trailer dumpster parked in a residential driveway in Pasco County, FL, no street permit needed"
+  },
+  {
+    "slug": "storm-debris-cleanup-after-hurricane",
+    "title": "Storm Debris Cleanup After a Hurricane: A Florida Guide",
+    "description": "Storm debris cleanup after a hurricane in Pasco County and Tampa Bay: safety, insurance photos, sorting debris, and when to rent a $325 dumpster.",
+    "date": "2026-08-04",
+    "category": "Projects & How-To",
+    "image": "/images/blog/storm-debris-cleanup-after-hurricane.webp",
+    "imageAlt": "Fallen oak branches and storm debris piled along a Florida street after a hurricane"
+  },
+  {
+    "slug": "what-cant-go-in-a-dumpster",
+    "title": "What Can't Go in a Dumpster? Prohibited Items List",
+    "description": "What can't go in a dumpster? See the prohibited items list, why landfills ban them, how to dispose of each safely in Pasco County, and what's OK.",
+    "date": "2026-07-21",
+    "category": "Projects & How-To",
+    "image": "/images/blog/what-cant-go-in-a-dumpster.webp",
+    "imageAlt": "Paint cans, tires, and batteries set aside from a dumpster because they are prohibited items"
+  },
+  {
+    "slug": "kitchen-remodel-dumpster-size",
+    "title": "Dumpster for Kitchen Remodel: What Size Do You Need?",
+    "description": "Picking a dumpster for a kitchen remodel? See which size fits cabinets, countertops, and flooring. Pasco County 15-yard dumpsters are $400 flat.",
+    "date": "2026-07-07",
+    "category": "Sizing & Pricing",
+    "image": "/images/blog/kitchen-remodel-dumpster-size.webp",
+    "imageAlt": "Old kitchen cabinets and countertop pieces stacked for disposal during a kitchen remodel"
+  },
+  {
+    "slug": "how-to-dispose-of-a-mattress-florida",
+    "title": "How to Dispose of a Mattress in Florida (Pasco County)",
+    "description": "How to dispose of a mattress in Pasco County, FL: donation, recycling, curbside bulk pickup, bedbug bagging, mattress disposal service, or a dumpster.",
+    "date": "2026-06-16",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/how-to-dispose-of-a-mattress-florida.webp",
+    "imageAlt": "Old mattress wrapped in plastic leaning by a garage in Florida, ready for mattress disposal"
+  },
+  {
+    "slug": "dumpster-rental-vs-junk-removal",
+    "title": "Dumpster Rental vs Junk Removal: Which Is Cheaper?",
+    "description": "Dumpster rental vs junk removal: compare cost, effort, and timing. Pasco County flat-rate dumpsters start at $325, or let our crew load it.",
+    "date": "2026-06-02",
+    "category": "Sizing & Pricing",
+    "image": "/images/blog/dumpster-rental-vs-junk-removal.webp",
+    "imageAlt": "Dump trailer dumpster in a driveway next to a junk removal crew carrying a sofa"
+  },
+  {
+    "slug": "moving-out-cleanout-guide",
+    "title": "Moving Out Cleanout: A 4-Week Plan to Move Day",
+    "description": "A moving out cleanout plan: a 4-week timeline, what to sell, donate, or toss, dumpster vs. junk removal, and how to leave a rental clean.",
+    "date": "2026-05-19",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/moving-out-cleanout-guide.webp",
+    "imageAlt": "Moving boxes and unwanted furniture in a Florida home during a moving-out cleanout"
+  },
+  {
+    "slug": "hurricane-season-yard-prep-checklist",
+    "title": "Hurricane Prep Checklist for Your Florida Yard & Home",
+    "description": "A hurricane prep checklist for Pasco County yards: trim trees, clear loose junk, clean gutters, free up the garage, and get debris hauled before June 1.",
+    "date": "2026-05-05",
+    "category": "Projects & How-To",
+    "image": "/images/blog/hurricane-season-yard-prep-checklist.webp",
+    "imageAlt": "Homeowner trimming palm fronds and clearing yard debris before hurricane season in Florida"
+  },
+  {
+    "slug": "yard-waste-disposal-pasco-county",
+    "title": "Yard Waste Disposal in Pasco County: 5 Options",
+    "description": "Yard waste disposal in Pasco County: curbside pickup, composting, hauling it yourself, a dumpster from $325, or a yard waste removal crew.",
+    "date": "2026-04-21",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/yard-waste-disposal-pasco-county.webp",
+    "imageAlt": "Piles of palm fronds, branches, and bagged leaves from a Pasco County yard cleanup"
+  },
+  {
+    "slug": "how-to-load-a-dumpster",
+    "title": "How to Load a Dumpster: Fit More, Stay Under Weight",
+    "description": "How to load a dumpster the smart way: heavy, flat items first, break down furniture, fill the gaps, and keep weight balanced so it all fits.",
+    "date": "2026-04-07",
+    "category": "Projects & How-To",
+    "image": "/images/blog/how-to-load-a-dumpster.webp",
+    "imageAlt": "Neatly loaded dump trailer with flat debris on the bottom and bagged trash on top"
+  },
+  {
+    "slug": "roof-replacement-dumpster-rental",
+    "title": "Dumpster Rental for Roof Replacement: A Florida Guide",
+    "description": "Dumpster rental for roof replacement in Florida: why shingle weight matters more than size, where to park it, and how to plan around rainy season.",
+    "date": "2026-03-17",
+    "category": "Projects & How-To",
+    "image": "/images/blog/roof-replacement-dumpster-rental.webp",
+    "imageAlt": "Roofers tossing old asphalt shingles into a dump trailer during a Florida roof replacement"
+  },
+  {
+    "slug": "spring-cleaning-junk-removal-florida",
+    "title": "Spring Cleaning Junk Removal: A Florida Declutter Plan",
+    "description": "A Florida spring cleaning junk removal plan: what to toss from the lanai, garage, and closets, and clearing out before summer heat and hurricane season.",
+    "date": "2026-03-03",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/spring-cleaning-junk-removal-florida.webp",
+    "imageAlt": "Bags and boxes of household junk sorted on a Florida lanai during spring cleaning"
+  },
+  {
+    "slug": "how-to-get-rid-of-old-furniture",
+    "title": "How to Get Rid of Old Furniture in Pasco County",
+    "description": "How to get rid of old furniture in Pasco County: sell, donate, use curbside bulk pickup, book junk removal, or rent a dumpster. Pros and cons of each.",
+    "date": "2026-02-17",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/how-to-get-rid-of-old-furniture.webp",
+    "imageAlt": "Old couch and armchair set out in a Florida driveway, waiting for furniture removal"
+  },
+  {
+    "slug": "bathroom-remodel-dumpster-size",
+    "title": "Dumpster Size for a Bathroom Remodel: What to Rent",
+    "description": "What dumpster size for a bathroom remodel? Most fit a 10-yard at $325. Learn how tile, tubs, and drywall add weight and how to load it right.",
+    "date": "2026-02-03",
+    "category": "Sizing & Pricing",
+    "image": "/images/blog/bathroom-remodel-dumpster-size.webp",
+    "imageAlt": "Torn-out bathroom vanity, tile, and drywall from a bathroom remodel ready for the dumpster"
+  },
+  {
+    "slug": "dumpster-rental-cost-pasco-county",
+    "title": "Dumpster Rental Cost in Pasco County: 2026 Guide",
+    "description": "What a dumpster rental costs in Pasco County in 2026: flat rates from $325, what's included, what drives price, and how to compare quotes.",
+    "date": "2026-01-20",
+    "category": "Sizing & Pricing",
+    "image": "/images/blog/dumpster-rental-cost-pasco-county.webp",
+    "imageAlt": "Black dump trailer dumpster rental parked on protective boards in a Pasco County, FL driveway"
+  },
+  {
+    "slug": "new-year-garage-cleanout-checklist",
+    "title": "Garage Cleanout Checklist: A New Year Plan for Florida",
+    "description": "A zone-by-zone garage cleanout checklist for Florida homes: keep, donate, sell, or toss, beat heat and pests, and pick a 10-yard dumpster or junk removal.",
+    "date": "2026-01-06",
+    "category": "Junk Removal & Cleanouts",
+    "image": "/images/blog/new-year-garage-cleanout-checklist.webp",
+    "imageAlt": "Homeowner sorting boxes in a cluttered Florida garage during a New Year garage cleanout"
+  },
+  {
     "slug": "top-five-projects-that-call-for-a-dumpster-rental",
     "title": "When to Rent a Dumpster: 5 Common Projects",
     "description": "When to rent a dumpster: remodels, roof replacements, yard cleanups, estate cleanouts, and big events. Find the right size for each project.",
