@@ -61,7 +61,7 @@ export function QuoteCard({
     if (company) return;
     const next = {};
     if (!firstName.trim()) next.firstName = "Enter your first name.";
-    if (phone.replace(/\D/g, "").length !== 10) next.phone = "Enter a 10-digit phone number.";
+    if (!phone.trim()) next.phone = "Enter your phone number.";
     if (!/^\d{5}$/.test(zip)) next.zip = "Enter your 5-digit ZIP code.";
     if (requireDetails && !details.trim()) next.details = "Tell us roughly what needs to go.";
     setErrors(next);

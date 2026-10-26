@@ -76,7 +76,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
     e.preventDefault();
     const next = {};
     if (!firstName.trim()) next.firstName = "Enter your first name.";
-    if (phone.replace(/\D/g, "").length !== 10) next.phone = "Enter a 10-digit phone number.";
+    if (!phone.trim()) next.phone = "Enter your phone number.";
     if (email && !/^\S+@\S+\.\S+$/.test(email)) next.email = "Check your email address.";
     setErrors(next);
     if (Object.keys(next).length) return;

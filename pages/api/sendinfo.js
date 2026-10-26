@@ -8,7 +8,8 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 function formatPhoneNumber(phone) {
   // Remove all non-numeric characters
-  const cleaned = phone.replace(/\D/g, "");
+  let cleaned = String(phone).replace(/\D/g, "");
+  if (cleaned.length === 11 && cleaned.startsWith("1")) cleaned = cleaned.slice(1);
 
   // Format as (XXX) XXX-XXXX
   if (cleaned.length === 10) {
