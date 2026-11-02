@@ -81,6 +81,7 @@ const pricingSchema = {
     description: `${s.dimensions}. ${s.loads}. ${s.weight}. Delivery, pickup, and disposal up to the weight limit included.`,
     brand: { "@type": "Brand", name: siteConfig.name },
     url: `${siteConfig.url}${s.href}`,
+    image: `${siteConfig.url}${s.image}`,
     offers: {
       "@type": "Offer",
       price: s.price,

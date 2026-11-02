@@ -582,7 +582,7 @@ function serviceSchema(data, url) {
       name: `${size.name} Rental`,
       description: `${size.dimensions}. ${size.loads}. ${size.weight}. Delivery, pickup, and disposal up to the weight limit included.`,
       brand: { "@type": "Brand", name: siteConfig.name },
-      image: `${BASE_URL}${data.hero.image}`,
+      image: `${BASE_URL}${size.image || data.hero.image}`,
       offers: {
         "@type": "Offer",
         price: size.price,
