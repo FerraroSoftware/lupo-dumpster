@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const { siteConfig, sizes, rental, acceptedItems, serviceAreas, navigation, lowestPrice } = await import(
+const { siteConfig, sizes, rental, acceptedItems, serviceAreas, navigation } = await import(
   path.join(root, "lib/site-config.js")
 );
 
@@ -38,14 +38,9 @@ const regionPages = [
   ["Dumpster Rental in the Tampa Bay Area", "/services/dumpster-rental-tampa-bay"],
 ];
 
-const { priceOf } = await import(path.join(root, "lib/site-config.js"));
-// Posts read prices and the phone from site-config via template literals; resolve
-// the few expressions they use so the index shows real values.
-const expand = (text) =>
-  text
-    .replace(/\$\{priceOf\("(\d+)"\)\}/g, (_, id) => priceOf(id))
-    .replace(/\$\{lowestPrice\}/g, String(lowestPrice))
-    .replace(/\$\{siteConfig\.phone\}/g, siteConfig.phone);
+// Posts read the phone from site-config via a template literal; resolve it so the
+// index shows the real number.
+const expand = (text) => text.replace(/\$\{siteConfig\.phone\}/g, siteConfig.phone);
 const field = (src, key) => {
   const m = src.match(new RegExp(`${key}:\\s*\\n?\\s*(?:"((?:[^"\\\\]|\\\\.)*)"|\`([^\`]*)\`)`));
   if (!m) return "";
@@ -81,7 +76,7 @@ const lines = [
     .replace(/, (?=[^,]*$)/, ", and ")}-yard dumpsters across ${serviceAreas
     .map((r) => r.county.replace(" County", ""))
     .join(", ")
-    .replace(/, (?=[^,]*$)/, ", and ")} counties at flat rates starting at $${lowestPrice}.`,
+    .replace(/, (?=[^,]*$)/, ", and ")} counties. Every rental starts with a free, upfront quote.`,
   "",
   "## About",
   "",
@@ -96,10 +91,10 @@ const lines = [
   `- **Rating:** ${siteConfig.rating.value} out of 5 from ${siteConfig.rating.countLabel} Google reviews`,
   `- **Registration:** ${siteConfig.registration}`,
   "",
-  "## Dumpster sizes and flat-rate prices",
+  "## Dumpster sizes (free quotes)",
   "",
   ...sizes.map(
-    (s) => `- [${s.name}](${url(s.href)}): $${s.price} flat. ${s.dimensions}. ${s.loads}. ${s.weight}. Best for ${s.bestFor.toLowerCase()}.`
+    (s) => `- [${s.name}](${url(s.href)}): ${s.dimensions}. ${s.loads}. ${s.weight}. Best for ${s.bestFor.toLowerCase()}.`
   ),
   "",
   `Every rental includes: ${rental.included.join("; ")}.`,
@@ -108,13 +103,13 @@ const lines = [
   "",
   "## Primary pages",
   "",
-  link("Home", "/", "Book a dumpster online and see sizes, prices, and reviews."),
-  link("Pricing", "/dumpster-rental-pricing", "Flat-rate prices for every size and what's included."),
+  link("Home", "/", "Get a free dumpster quote online and see sizes and reviews."),
+  link("Sizes & Quotes", "/dumpster-rental-pricing", "Compare every size, see what's included, and get a free quote."),
   link("All services", "/services", "Every dumpster rental and junk removal service."),
   link("Service areas", navigation.allAreasHref, "Every city and county we deliver to."),
   link("About", "/about-us", "The family behind Lupo and how we work."),
   link("Contact", "/contact", "Call, text, or send a message."),
-  link("Blog", "/blog", "Guides to sizing, pricing, and cleanouts."),
+  link("Blog", "/blog", "Guides to sizing, costs, and cleanouts."),
   "",
   ...navigation.services.flatMap((group) => [
     `## ${group.title}`,

@@ -1,10 +1,10 @@
-import { getSize, lowestPrice } from "@/lib/site-config";
+import { getSize } from "@/lib/site-config";
 
 const twenty = getSize("20");
 
 const dadeCity = {
   metaDescription:
-    `Dumpster rental in Dade City, FL for older-home renovations, farm cleanups & cleanouts. 10, 15 & 20-yard sizes from $${lowestPrice}, disposal included.`,
+    "Dumpster rental in Dade City, FL for older-home renovations, farm cleanups & cleanouts. 10, 15 & 20-yard sizes. Free, no-obligation quotes.",
   keywords: [
     "dumpster rental Dade City FL",
     "Dade City dumpster rental",
@@ -14,7 +14,7 @@ const dadeCity = {
   ],
   h1Desire: "Bring the Old Place Back to Life",
   answer:
-    `Lupo provides dumpster rental in Dade City, FL, the Pasco County seat, for older-home renovations, farm and barn cleanups, and estate cleanouts. We deliver 10, 15, and 20-yard dumpsters at a flat price starting at $${lowestPrice}. Dade City sits on the far east side of the county, so we schedule deliveries here a few days in advance.`,
+    "Lupo provides dumpster rental in Dade City, FL, the Pasco County seat, for older-home renovations, farm and barn cleanups, and estate cleanouts. We deliver 10, 15, and 20-yard dumpsters, and your free quote covers the trip out east, pickup, and disposal up to the included weight. Dade City sits on the far east side of the county, so we schedule deliveries here a few days in advance.",
   introTitle: ["Small-Town Dade City, ", "Big Cleanup Jobs"],
   localIntro: [
     "Dade City has deep roots. The historic courthouse anchors a downtown of early-1900s buildings, and the streets around it hold bungalows and frame houses that have been renovated more than once. Opening up those walls turns up plaster, lath, old wiring, and layers of flooring, and all of it weighs more than it looks.",

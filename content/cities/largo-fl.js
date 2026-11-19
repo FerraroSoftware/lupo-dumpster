@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const largo = {
   metaDescription:
-    `Dumpster rental in Largo, FL from $${lowestPrice} with delivery, pickup, and disposal included. Flat-rate dumpsters for cleanouts and remodels. Book ahead.`,
+    "Dumpster rental in Largo, FL for cleanouts and remodels. Get a free quote that includes delivery, pickup, and disposal, then book a day or two ahead.",
   keywords: [
     "dumpster rental Largo",
     "Largo dumpster rental",
@@ -12,7 +10,7 @@ const largo = {
   ],
   h1Desire: "Downsize With Less Stress",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters to Largo, FL, in central Pinellas County, at flat prices starting at $${lowestPrice} with delivery, pickup, and disposal included. Largo is near the southern edge of our service area, about 45 minutes from our Holiday yard, so booking a day or two ahead is the surest way to get your date.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters to Largo, FL, in central Pinellas County. Request a free quote and we'll tell you upfront what delivery, pickup, and disposal will run. Largo is near the southern edge of our service area, about 45 minutes from our Holiday yard, so booking a day or two ahead is the surest way to get your date.",
   introTitle: ["Honest Scheduling for ", "Largo Customers"],
   localIntro: [
     "We'll be straight with you: Largo is a longer drive for us than north Pinellas. It's about 45 minutes from our yard in Holiday, so same-day delivery is less likely here. What doesn't change is who shows up. It's the same family crew, with no broker in the middle.",
@@ -45,7 +43,7 @@ const largo = {
     },
     {
       q: "Can you help a family that lives out of state clear a Largo home?",
-      a: "Yes. You can book online or by phone, and we'll coordinate access with a neighbor, realtor, or park manager. You'll know the cost before we make the drive.",
+      a: "Yes. You can book online or by phone, and we'll coordinate access with a neighbor, realtor, or park manager. Your free quote means you'll know the cost before we make the drive.",
     },
   ],
   image: "/dumpster-rental-tampa-bay.webp",
@@ -56,7 +54,7 @@ const largo = {
     "D16: Alex must confirm we serve Largo regularly (edge city)",
     "Drive time from the Holiday yard (About 45 minutes)",
     "Same-day delivery described as unlikely in Largo",
-    "Pricing: confirm the standard flat prices apply in Largo with no distance surcharge",
+    "Quotes: confirm Largo jobs are quoted without a distance surcharge",
     "Disposal facility used for Largo loads",
     "City of Largo right-of-way permit process and phone (no city phone in lib/cities.js yet)",
     "Some Largo mailing addresses are unincorporated Pinellas County",

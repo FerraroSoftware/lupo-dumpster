@@ -1,4 +1,4 @@
-import { getSize } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const size = getSize("10");
 const loads = size.loads.toLowerCase();
@@ -10,7 +10,7 @@ const tenYard = {
   sizeId: "10",
   serviceType: "10-yard dumpster rental",
   title: "10-Yard Dumpster Rental in Pasco County, FL | Lupo Dumpster",
-  description: `Rent a 10-yard dumpster in Pasco County for $${size.price} flat. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Sized for garage cleanouts.`,
+  description: `Rent a 10-yard dumpster in Pasco County, FL. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Ideal for garage cleanouts. Free quote.`,
   keywords: [
     "10 yard dumpster rental",
     "10 yard dump trailer",
@@ -19,9 +19,9 @@ const tenYard = {
     "garage cleanout dumpster",
   ],
   hero: {
-    eyebrow: `${size.name} · $${size.price} flat`,
+    eyebrow: `${size.name} · Free quote`,
     title: ["Clear Out the Small Stuff with a ", "10-Yard Dumpster Rental"],
-    intro: `Our 10-yard dumpster rental is a ${size.dimensions} dump trailer that holds ${loads}, with ${size.weight}. At $${size.price} flat, delivery, pickup, and disposal are covered. It's the budget-friendly size for garage cleanouts, small remodels, and yard work in New Port Richey and across Pasco County.`,
+    intro: `Our 10-yard dumpster rental is a ${size.dimensions} dump trailer that holds ${loads}, with ${size.weight}. Your free quote covers delivery, pickup, and disposal. It's the compact size for garage cleanouts, small remodels, and yard work in New Port Richey and across Pasco County.`,
     image: "/waste-management.webp",
     imageAlt: "Lupo 10-yard dump trailer dumpster parked for delivery in Pasco County",
   },
@@ -33,14 +33,14 @@ const tenYard = {
       { icon: "Ruler", title: "A driveway you still need", text: `At ${size.dimensions.split(" ")[0]} long, the 10-yard leaves more of your driveway free for the car.` },
       { icon: "CalendarX", title: "A weekend of dump runs", text: `Hauling ${size.loads.replace("About ", "").toLowerCase()} to the landfill yourself eats a whole Saturday.` },
     ],
-    closing: "Get the right size for the job at our lowest flat price.",
+    closing: "Get the right size for the job, with a free quote before we deliver.",
   },
   about: {
     eyebrow: "Our smallest dumpster",
     title: ["Small Footprint, ", "Plenty of Room"],
     paragraphs: [
       `The 10-yard is our compact dump-trailer dumpster: ${size.dimensions}, roughly ${loads}. It's sized for one-room and one-weekend projects, like a cluttered garage, a bathroom tear-out, or a pile of storm branches.`,
-      `It's still a full Lupo rental. We set the low-profile trailer on protective boards in your driveway, you load it at your own pace, and one flat price of $${size.price} covers delivery, pickup, and disposal up to ${tons}.`,
+      `It's still a full Lupo rental. We set the low-profile trailer on protective boards in your driveway, you load it at your own pace, and your upfront quote covers delivery, pickup, and disposal up to ${tons}.`,
     ],
     perfectFor: ["Garage cleanouts", "Bathroom remodels", "Yard and storm debris", "Small flooring jobs", "Spring cleaning", "Decluttering before a move"],
     image: "/dump-trailer.webp",
@@ -70,14 +70,14 @@ const tenYard = {
     title: "The Right Size for Smaller Projects",
     paragraphs: [
       `Not every project needs a giant dumpster. A garage cleanout in Holiday, a bathroom refresh in Port Richey, or storm cleanup in Hudson usually fits in a 10-yard dumpster rental. At ${size.dimensions}, it holds ${loads} and includes ${size.weight}, which covers most household cleanouts and small remodels.`,
-      `You pay $${size.price} flat, with delivery, pickup, and disposal up to the weight limit included. Lupo Dumpster Rentals drops the trailer on protective boards, often the same day you call, and hauls it away when you're done. When you book, just tell us where on the driveway you'd like it.`,
-      "Dense material like tile, concrete, or dirt gets heavy fast, so tell us what you're tossing and we'll confirm the 10-yard is enough. From Trinity and Odessa to Spring Hill and Palm Harbor, it's the simple, low-cost way to clear out a small space without borrowing a truck.",
+      `Call or text for a free quote that includes delivery, pickup, and disposal up to the weight limit. Lupo Dumpster Rentals drops the trailer on protective boards, often the same day you call, and hauls it away when you're done. When you book, just tell us where on the driveway you'd like it.`,
+      "Dense material like tile, concrete, or dirt gets heavy fast, so tell us what you're tossing and we'll confirm the 10-yard is enough. From Trinity and Odessa to Spring Hill and Palm Harbor, it's the simple way to clear out a small space without borrowing a truck.",
     ],
   },
   related: [
     { name: "15-Yard Dumpster", href: "/services/15-yard-dump-trailer", text: "Our most popular size, with room for kitchen remodels and full move-outs." },
     { name: "Garage Cleanouts", href: "/services/garage-cleaning-service", text: "Rather not load it yourself? Our crew clears the garage for you." },
-    { name: "Dumpster Rental Pricing", href: "/dumpster-rental-pricing", text: "Compare every size and price, and see exactly what's included." },
+    { name: "Sizes & Free Quotes", href: "/dumpster-rental-pricing", text: "Compare sizes, see exactly what's included, and get a free quote." },
   ],
   posts: [
     { title: "What Size Dumpster Do I Need?", href: "/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size" },
@@ -92,7 +92,7 @@ const tenYard = {
     },
     {
       q: "How much does a 10-yard dumpster cost?",
-      a: `$${size.price} flat in Pasco County. Delivery, pickup, and disposal up to ${tons} are included.`,
+      a: `It depends on what you're tossing, how heavy it is, how long you need it, and where you are. Lupo gives you a free, upfront quote that includes delivery, pickup, and disposal up to ${tons}. Call or text ${siteConfig.phone} or request one online.`,
     },
     {
       q: "What fits in a 10-yard dumpster?",
@@ -100,11 +100,11 @@ const tenYard = {
     },
     {
       q: "Is a 10-yard big enough for a kitchen remodel?",
-      a: "Sometimes, for a small kitchen. Most kitchen remodels fit better in a 15-yard, and sizing up costs less than paying for a second haul.",
+      a: "Sometimes, for a small kitchen. Most kitchen remodels fit better in a 15-yard, and one bigger dumpster usually beats two hauls.",
     },
     {
       q: "What if I go over the weight limit?",
-      a: "We'll tell you the per-ton cost before delivery. Tile, concrete, and dirt are what usually push a 10-yard over, so let us know if they're in the mix.",
+      a: "We'll explain how extra weight is handled when we quote, so there are no surprise fees. Tile, concrete, and dirt are what usually push a 10-yard over, so let us know if they're in the mix.",
     },
   ],
 };

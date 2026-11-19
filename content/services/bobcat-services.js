@@ -5,7 +5,7 @@ const bobcatServices = {
   kind: "junk",
   serviceType: "Bobcat services",
   title: "Bobcat Services in Pasco County, FL | Lupo Dumpster",
-  description: `Bobcat services in Pasco County, FL: light grading, land clearing, leveling, and debris pushing. Family-owned, rated ${siteConfig.rating.value} on Google. Firm price first.`,
+  description: `Bobcat services in Pasco County, FL: light grading, land clearing, leveling, and debris pushing. Family-owned, rated ${siteConfig.rating.value} on Google. Free quote.`,
   keywords: [
     "bobcat services Pasco County",
     "bobcat service near me",
@@ -14,14 +14,14 @@ const bobcatServices = {
     "skid steer services",
     "yard leveling",
   ],
-  quoteTitle: "Get Your Bobcat Service Price",
+  quoteTitle: "Get Your Free Bobcat Service Quote",
   quotePlaceholder: "Example: level a bumpy backyard, clear brush from a lot, or grade a spot for a shed",
-  ctaLabel: "Get Your Price",
+  ctaLabel: "Get a Free Quote",
   hero: {
     eyebrow: "Light grading & clearing · Pasco County, FL",
     title: ["Get Your Yard Ready with ", "Bobcat Services in Pasco County"],
     intro:
-      "Lupo's bobcat services handle the small earthwork jobs that are too big for a shovel: light grading, land clearing, leveling, debris pushing, and cleanup after small demolition. We work on residential lots in Holiday, New Port Richey, and across Pasco County, and you get a firm price before we start.",
+      "Lupo's bobcat services handle the small earthwork jobs that are too big for a shovel: light grading, land clearing, leveling, debris pushing, and cleanup after small demolition. We work on residential lots in Holiday, New Port Richey, and across Pasco County, and you get a free quote before we start.",
     image: "/new/bob-catting.webp",
     imageAlt: "Lupo equipment and dump trailer at a Pasco County clearing job",
   },
@@ -51,31 +51,31 @@ const bobcatServices = {
     items: [
       { icon: "Tractor", title: "Equipment and operator", text: "We bring the machine and run it, so there's nothing for you to rent, tow, or learn." },
       { icon: "Truck", title: "Debris hauled away", text: "Cleared brush and debris can go right into one of our dump trailers and off your property." },
-      { icon: "Tag", title: "Firm price first", text: "Describe the job or send photos and you'll get a price before we schedule." },
+      { icon: "Tag", title: "Free quote first", text: "Describe the job or send photos and you'll get a free quote before we schedule." },
       { icon: "Home", title: "Family-owned and local", text: "Based in Holiday, FL. You talk to the owners, not a call center." },
     ],
   },
   proof: {
     title: ["A Local Crew ", "You Can Count On"],
-    intro: "Customers keep coming back because we price fairly and show up when we say we will.",
+    intro: "Customers keep coming back because we quote honestly and show up when we say we will.",
     reviewNames: ["Joseph S.", "David C.", "Brian O."],
   },
   stepsTitle: ["Your Site Cleared in ", "3 Easy Steps"],
-  stepsIntro: "Tell us about the job, get a firm price, and we show up with the machine.",
+  stepsIntro: "Tell us about the job, get a free quote, and we show up with the machine.",
   steps: [
     { title: "Describe the job", text: "Use the form, or call or text photos of the area and what you want done." },
-    { title: "Get a firm price", text: "We'll look over the details, give you a price, and set a date." },
+    { title: "Get a free quote", text: "We'll look over the details, quote the job upfront, and set a date." },
     { title: "We do the work", text: "We bring the equipment, handle the grading or clearing, and haul off the debris if you need it." },
   ],
   pricing: {
     dumpsterNote: false,
-    title: ["How We Price ", "Bobcat Jobs"],
+    title: ["How We Quote ", "Bobcat Jobs"],
     intro:
-      "Every site is different, so we price by the job. Send photos or a description and you'll get a firm price before anything is scheduled.",
+      "Every site is different, so we quote by the job. Send photos or a description and you'll get a free quote before anything is scheduled.",
     factors: [
       { title: "Size of the area", text: "A small patch of yard takes less machine time than a full lot." },
       { title: "Ground and growth", text: "Thick brush, roots, or rough ground take more work than light grading on open soil." },
-      { title: "Access and haul-off", text: "Tight gates and fenced backyards add time, and hauling away the cleared material is priced in if you need it." },
+      { title: "Access and haul-off", text: "Tight gates and fenced backyards add time, and hauling away the cleared material is included in your quote if you need it." },
     ],
   },
   items: {
@@ -105,7 +105,7 @@ const bobcatServices = {
     paragraphs: [
       "A backyard in Hudson with low spots and bumps that make mowing a chore. A lot in Land O' Lakes overrun with brush. A pile of rubble left after an old shed comes down in New Port Richey. These are the small earthwork jobs that are too big to tackle by hand and too small for a big excavation company.",
       "Lupo's bobcat services fill that gap. We bring the equipment and the operator for light grading, land clearing, leveling, debris pushing, and small demolition cleanup across Pasco County. Since we also run dump trailers, we can usually haul the cleared material away in the same visit.",
-      "Tell us what you're working with and we'll give you a firm price up front. If the job calls for heavier equipment, septic work, or large tree removal, we'll tell you straight. We're a family business in Holiday, FL, and we'd rather point you in the right direction than take on a job we shouldn't.",
+      "Tell us what you're working with and we'll give you a free quote up front. If the job calls for heavier equipment, septic work, or large tree removal, we'll tell you straight. We're a family business in Holiday, FL, and we'd rather point you in the right direction than take on a job we shouldn't.",
     ],
   },
   nprText: "Have a lot to clear near the coast?",
@@ -126,11 +126,11 @@ const bobcatServices = {
     },
     {
       q: "How much do bobcat services cost?",
-      a: "It depends on the size of the area, the ground and growth, and access. Send photos or a description and we'll give you a firm price before scheduling.",
+      a: `It depends on the size of the area, the ground and growth, access, and whether you need haul-off. Call or text ${siteConfig.phone} with photos or a description, or request online, and we'll give you a free quote before scheduling.`,
     },
     {
       q: "Can you haul away the debris too?",
-      a: "Usually, yes. We run dump trailers, so cleared brush and debris can be loaded and hauled off. We'll include it in your price if you need it.",
+      a: "Usually, yes. We run dump trailers, so cleared brush and debris can be loaded and hauled off. We'll include it in your quote if you need it.",
     },
     {
       q: "Do you do excavation or septic work?",
@@ -142,7 +142,7 @@ const bobcatServices = {
     },
   ],
   ctaTitle: ["Ready to Get Your ", "Ground in Shape?"],
-  ctaText: "Tell us about the job and get a firm price. We bring the equipment, do the work, and can haul off the debris.",
+  ctaText: "Tell us about the job and get a free quote. We bring the equipment, do the work, and can haul off the debris.",
 };
 
 export default bobcatServices;

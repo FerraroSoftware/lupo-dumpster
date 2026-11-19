@@ -1,4 +1,4 @@
-import { getSize, lowestPrice, siteConfig } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const small = getSize("10");
 
@@ -7,7 +7,7 @@ const garageCleanoutNewPortRichey = {
   kind: "junk",
   serviceType: "Garage cleanout",
   title: "Garage Cleanout in New Port Richey, FL | Lupo Dumpster",
-  description: `Garage cleanout in New Port Richey, FL. We haul old furniture, boxes, tools, and clutter so your car fits again. Firm price first. ${siteConfig.rating.value}★ on Google.`,
+  description: `Garage cleanout in New Port Richey, FL. We haul old furniture, boxes, tools, and clutter so your car fits again. Free quote first. ${siteConfig.rating.value}★ on Google.`,
   keywords: [
     "garage cleanout New Port Richey",
     "garage clean out service New Port Richey FL",
@@ -15,13 +15,13 @@ const garageCleanoutNewPortRichey = {
     "garage cleaning service New Port Richey",
     "garage clutter removal Pasco County",
   ],
-  quoteTitle: "Get Your Garage Cleanout Price",
+  quoteTitle: "Get a Free Garage Cleanout Quote",
   quotePlaceholder: "e.g. Two-car garage: old couch, boxes, shutters, and a broken treadmill",
   hero: {
     eyebrow: "Garage cleanouts · New Port Richey, FL",
     title: ["Park Inside Again with a ", "Garage Cleanout in New Port Richey"],
     intro:
-      "Our garage cleanout crew empties garages in New Port Richey and across west Pasco County. You point at what goes, we carry it out, load it, and sweep the floor when we're done. Keep what you want, set aside what's worth donating, and get a firm price before we start.",
+      "Our garage cleanout crew empties garages in New Port Richey and across west Pasco County. You point at what goes, we carry it out, load it, and sweep the floor when we're done. Keep what you want, set aside what's worth donating, and get a free quote before we start.",
     image: "/messy-garage.webp",
     imageAlt: "Cluttered garage with tools, boxes, and old equipment before a garage cleanout in New Port Richey",
   },
@@ -52,7 +52,7 @@ const garageCleanoutNewPortRichey = {
       { icon: "Users", title: "We do the lifting", text: "Old workbenches, chest freezers, and gym equipment come out without you straining your back." },
       { icon: "Recycle", title: "Usable items set aside", text: "Decent furniture, tools, and bikes get set aside for donation, and metal goes to recycling when we can." },
       { icon: "Clock", title: "Usually one visit", text: "Most single-garage jobs are finished in one trip, not spread over several weekends." },
-      { icon: "Tag", title: "Firm price first", text: "Send a few photos of the garage and we'll quote it before we schedule." },
+      { icon: "Tag", title: "Free quote first", text: "Send a few photos of the garage and we'll quote it for free before we schedule." },
     ],
   },
   proof: {
@@ -61,10 +61,10 @@ const garageCleanoutNewPortRichey = {
     reviewNames: ["Brian O.", "Crystal D.", "Owen R."],
   },
   pricing: {
-    title: ["What Goes Into ", "Your Garage Cleanout Price"],
-    intro: "Every garage is different. We price by what's actually in it, not a guess over the phone.",
+    title: ["What Goes Into ", "Your Garage Cleanout Quote"],
+    intro: "Every garage is different. Your free quote is based on what's actually in it, not a guess over the phone.",
     factors: [
-      { title: "How full it is", text: "A few items in a corner cost far less than a garage packed to the rafters." },
+      { title: "How full it is", text: "A few items in a corner is a much smaller job than a garage packed to the rafters." },
       { title: "What's in it", text: "Boxes and old furniture are light. Exercise equipment, leftover tile, or a dead chest freezer add weight." },
       { title: "Rafters and overhead storage", text: "Items stored overhead or in the garage attic take extra time to bring down safely." },
     ],
@@ -88,14 +88,14 @@ const garageCleanoutNewPortRichey = {
     paragraphs: [
       "In New Port Richey, the garage does a lot of work. Homes here almost never have basements, and few have attics you'd want to climb into in August, so it's where everything ends up: the snowbird's patio furniture, the boxes from a parent's move, the shutters from three hurricane seasons ago, and the treadmill that turned into a coat rack.",
       "Lupo's garage cleanout service is for the day you decide you're done with it. We clear garages all over the area, from older homes near downtown and in Tanglewood Village to newer ones in Longleaf and Seven Springs. You tell us what stays, our crew carries out the rest, and we sweep the floor before we leave.",
-      "Whether you're getting a home ready to sell, clearing a garage after a flood, or just want to park inside again, we'll give you a firm price first. Usable items are set aside for donation and metals for recycling when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road. You get the garage back in one visit, and you never have to borrow a truck.",
+      "Whether you're getting a home ready to sell, clearing a garage after a flood, or just want to park inside again, we'll give you a free quote first. Usable items are set aside for donation and metals for recycling when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road. You get the garage back in one visit, and you never have to borrow a truck.",
     ],
   },
   nprText: "Want to clean out the garage at your own pace instead?",
   areaLabel: "Dumpster rental",
   related: [
     { name: "Garage Cleanouts", href: "/services/garage-cleaning-service", text: "Garage cleanouts across Pasco County, Pinellas, and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Sort and toss on your own schedule with a flat-rate dumpster in your New Port Richey driveway." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Sort and toss on your own schedule with a dumpster in your New Port Richey driveway. Free quote, no surprise fees." },
     { name: "Furniture Removal", href: "/services/furniture-removal", text: "Couches, recliners, and dressers carried out and hauled away, garage or not." },
   ],
   posts: [
@@ -107,7 +107,7 @@ const garageCleanoutNewPortRichey = {
   faqs: [
     {
       q: "How much does a garage cleanout cost in New Port Richey?",
-      a: "It depends on how full the garage is, what's in it, and whether things are stored overhead. Send a few photos and we'll give you a firm price before we schedule.",
+      a: `It depends on how full the garage is, what's in it, and whether things are stored overhead. Send a few photos and we'll give you a free, no-obligation quote before we schedule. Call or text ${siteConfig.phone}, or request a quote online.`,
     },
     {
       q: "Do I have to sort everything before you come?",
@@ -123,10 +123,10 @@ const garageCleanoutNewPortRichey = {
     },
     {
       q: "Should I rent a dumpster for my garage instead?",
-      a: `If you'd rather sort and load at your own pace, a ${small.name.toLowerCase()} handles most single-garage jobs, and dumpsters start at $${lowestPrice} flat. If you want it done in one visit with no lifting, choose a cleanout.`,
+      a: `If you'd rather sort and load at your own pace, a ${small.name.toLowerCase()} handles most single-garage jobs, and we'll quote it for free. If you want it done in one visit with no lifting, choose a cleanout.`,
     },
   ],
-  ctaText: "Send a few photos of your garage and get a firm price. We'll carry it out and sweep up, so you can park inside again.",
+  ctaText: "Send a few photos of your garage and get a free quote. We'll carry it out and sweep up, so you can park inside again.",
   verify: [
     "Scope: crew hauls and sweeps only; no shelving installs or pressure-washing",
     "Crew clears flood-damaged garages near the coast after storm surge",

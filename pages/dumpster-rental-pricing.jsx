@@ -5,26 +5,25 @@ import Seo from "@/components/Seo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { BookingCard } from "@/components/site/booking-card";
 import { PageHero } from "@/components/site/page-hero";
-import { container, CtaBand, PriceCards } from "@/components/site/home-sections";
+import { container, CtaBand, SizeCards } from "@/components/site/home-sections";
 import { SizeQuiz } from "@/components/site/size-quiz";
 import { FaqSection } from "@/components/site/faq-section";
 import { Highlight, SectionHeading } from "@/components/site/section-heading";
-import { lowestPrice, prohibitedItems, rental, siteConfig, sizes } from "@/lib/site-config";
+import { prohibitedItems, rental, siteConfig } from "@/lib/site-config";
 import { useBooking } from "@/lib/use-booking";
 
-const priceList = sizes.map((s) => `${s.shortName.replace(" yd", "-yard")} $${s.price}`).join(", ");
-const title = `Dumpster Rental Prices in Pasco County, FL | From $${lowestPrice}`;
-const description = `Flat-rate dumpster prices: ${priceList}. Delivery, pickup & disposal included. Book online or call ${siteConfig.phone}.`;
+const title = "Dumpster Rental Quote in Pasco County, FL | Lupo";
+const description = `Get a free dumpster rental quote in Pasco County. Compare 10, 15 & 20-yard sizes; delivery, pickup & disposal included. Call ${siteConfig.phone}.`;
 
 // TODO(D1): add the actual extra-day and overweight rates once confirmed.
 const extras = [
   {
     title: "Extra rental days",
-    text: "Need it longer? Tell us when you book and we'll quote the extra days up front.",
+    text: "Need it longer? Tell us when you ask for a quote and we'll include the extra days up front.",
   },
   {
     title: "Going over the included weight",
-    text: "Each size includes a set tonnage. If you think you'll go over, we'll tell you the cost per ton before delivery.",
+    text: "Each size includes a set tonnage. If you think you'll go over, tell us and we'll build it into your quote before delivery.",
   },
   {
     title: "Items we can't accept",
@@ -37,7 +36,7 @@ const extras = [
 ];
 
 const comparison = [
-  { label: "Price published online", lupo: true, typical: "Call for a quote" },
+  { label: "Free, upfront quote", lupo: true, typical: "Varies" },
   { label: "Delivery & pickup included", lupo: true, typical: "Often extra" },
   { label: "Disposal included up to the weight limit", lupo: true, typical: "Varies" },
   { label: "Extra charges explained before delivery", lupo: true, typical: "Often after" },
@@ -48,50 +47,29 @@ const comparison = [
 const pricingFaqs = [
   {
     q: "How much does it cost to rent a dumpster in Pasco County?",
-    a: `Lupo's flat rates are ${priceList}. Every price includes delivery, pickup, and disposal up to the included weight limit.`,
+    a: `It depends on the size, the weight of your load, how long you need it, and where you are. Call or text ${siteConfig.phone} or request a free quote online and we'll give you an upfront price that includes delivery, pickup, and disposal up to the weight limit.`,
   },
   {
-    q: "What's included in the flat price?",
-    a: `${rental.included.join(". ")}. You'll see the full price before you book.`,
+    q: "What's included in my quote?",
+    a: `${rental.included.join(". ")}. You'll know the full price before we deliver.`,
   },
   {
     q: "Are there any hidden fees?",
-    a: "No. The only things that can change the price are extra rental days, going over the included weight, or items we can't accept, and we tell you those costs before delivery, never after.",
+    a: "No. Your quote covers delivery, pickup, and disposal up to the weight limit. The only things that can change it are extra rental days, going over the included weight, or items we can't accept, and we tell you about those before delivery, never after.",
   },
   {
     q: "How is the weight limit measured?",
     a: "Your load is weighed at the disposal facility. Each size includes a set tonnage (2, 3, or 4 tons). Most household cleanouts stay well under; heavy materials like concrete, dirt, or roofing shingles add up fastest, so tell us if that's what you're tossing.",
   },
   {
-    q: "Is it cheaper to rent a bigger dumpster or two small ones?",
-    a: "Usually one bigger dumpster. If you're between sizes, size up. It costs less than a second haul. Not sure? Pick “Not sure” when you book and we'll recommend one.",
+    q: "Is it better to rent one bigger dumpster or two small ones?",
+    a: "Usually one bigger dumpster. If you're between sizes, size up. It beats paying for a second haul. Not sure? Pick “Not sure” when you request a quote and we'll recommend one.",
   },
   {
     q: "How much does junk removal cost instead?",
-    a: `Junk removal is priced by how much we haul and how much loading is involved. Call or text ${siteConfig.phone} with a few photos and we'll give you a firm price before we start.`,
+    a: `Junk removal depends on how much we haul and how much loading is involved. Call or text ${siteConfig.phone} with a few photos and we'll give you a free quote before we start.`,
   },
 ];
-
-const pricingSchema = {
-  "@context": "https://schema.org",
-  "@graph": sizes.map((s) => ({
-    "@type": "Product",
-    "@id": `${siteConfig.url}${s.href}#product`,
-    name: `${s.name} Rental`,
-    description: `${s.dimensions}. ${s.loads}. ${s.weight}. Delivery, pickup, and disposal up to the weight limit included.`,
-    brand: { "@type": "Brand", name: siteConfig.name },
-    url: `${siteConfig.url}${s.href}`,
-    image: `${siteConfig.url}${s.image}`,
-    offers: {
-      "@type": "Offer",
-      price: s.price,
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: `${siteConfig.url}/dumpster-rental-pricing`,
-      seller: { "@id": `${siteConfig.url}/#organization` },
-    },
-  })),
-};
 
 export default function DumpsterRentalPricing() {
   const { selectedSize, setSelectedSize, scrollToBooking, bookSize } = useBooking();
@@ -102,33 +80,28 @@ export default function DumpsterRentalPricing() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <Seo title={title} description={description} path="/dumpster-rental-pricing" />
-        <script
-          type="application/ld+json"
-          key="pricing-schema"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
-        />
       </Head>
 
       <PageHero
-        eyebrow="Dumpster rental prices · Pasco County, FL"
+        eyebrow="Dumpster sizes & free quotes · Pasco County, FL"
         title={
           <>
-            Dumpster Rental Prices: <Highlight tone="dark">One Flat Rate, No Surprises</Highlight>
+            Get a Free Dumpster Rental Quote: <Highlight tone="dark">Upfront, No Surprises</Highlight>
           </>
         }
-        intro={`${priceList}. Every price includes delivery, pickup, and disposal up to the weight limit, so the number you book is the number you pay.`}
+        intro="Pick a 10, 15, or 20-yard dumpster and tell us your ZIP. We'll send a free, upfront quote that includes delivery, pickup, and disposal up to the weight limit."
         onBook={scrollToBooking}
-        aside={<BookingCard selectedSize={selectedSize} onSizeChange={setSelectedSize} source="Pricing page booking card" />}
+        aside={<BookingCard selectedSize={selectedSize} onSizeChange={setSelectedSize} source="Sizes & quote page booking card" />}
       />
       <Breadcrumbs />
 
-      <PriceCards onSelect={bookSize} showPricingLink={false} />
+      <SizeCards onSelect={bookSize} showSizesLink={false} />
 
       <section aria-labelledby="included-title" className="bg-white py-20 lg:py-28">
         <div className={container}>
           <SectionHeading
             id="included-title"
-            eyebrow="What you pay for"
+            eyebrow="What your quote covers"
             title={
               <>
                 What&apos;s Included, and <Highlight>What Isn&apos;t</Highlight>
@@ -140,7 +113,7 @@ export default function DumpsterRentalPricing() {
             <div className="rounded-2xl border border-zinc-200 bg-white p-8">
               <h3 className="font-display text-2xl font-bold text-ink">Always included</h3>
               <ul className="mt-6 space-y-4">
-                {[...rental.included, "Your flat price, shown before you book"].map((item) => (
+                {[...rental.included, "Your full price, quoted before we deliver"].map((item) => (
                   <li key={item} className="flex gap-3 text-zinc-700">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-100">
                       <Check aria-hidden className="h-4 w-4 text-green-700" />
@@ -179,7 +152,7 @@ export default function DumpsterRentalPricing() {
             eyebrow="Compare before you book"
             title={
               <>
-                What a <Highlight>Flat Rate</Highlight> Means for You
+                What an <Highlight>Upfront Quote</Highlight> Means for You
               </>
             }
             intro="Not all dumpster quotes are equal. Here's what to ask any company before you book."
@@ -249,13 +222,13 @@ export default function DumpsterRentalPricing() {
               <strong className="text-ink">weight</strong> of what goes in, how{" "}
               <strong className="text-ink">long</strong> you keep it, and{" "}
               <strong className="text-ink">what</strong> you&apos;re throwing away. Many companies
-              quote a low base price and add delivery, fuel, and disposal later. Lupo rolls
-              delivery, pickup, and disposal up to the weight limit into one flat rate, starting at
-              ${lowestPrice} for a 10-yard.
+              quote a low base price and add delivery, fuel, and disposal later. Lupo&apos;s free
+              quote rolls delivery, pickup, and disposal up to the weight limit into one upfront
+              price, so you know the full cost before we deliver.
             </p>
             <p>
               To keep your cost down, pick the size that fits the whole job (one bigger dumpster
-              is cheaper than two hauls), keep heavy materials like concrete and dirt separate, and
+              usually beats two hauls), keep heavy materials like concrete and dirt separate, and
               leave out items we can&apos;t accept. If you&apos;re not sure which size you need, see
               our{" "}
               <Link
@@ -275,7 +248,7 @@ export default function DumpsterRentalPricing() {
         className="bg-white"
         title={
           <>
-            Dumpster Pricing <Highlight>FAQs</Highlight>
+            Dumpster Quote <Highlight>FAQs</Highlight>
           </>
         }
         items={pricingFaqs}

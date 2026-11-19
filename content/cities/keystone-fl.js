@@ -1,10 +1,10 @@
-import { getSize, lowestPrice } from "@/lib/site-config";
+import { getSize } from "@/lib/site-config";
 
 const twenty = getSize("20");
 
 const keystone = {
   metaDescription:
-    `Dumpster rental in Keystone, FL for big-lot cleanups, dock and lake-house projects. From $${lowestPrice} with dump fees included. Family-run in Holiday.`,
+    "Dumpster rental in Keystone, FL for big-lot cleanups, dock and lake-house projects. Free quote, dump fees included. Family-run in Holiday.",
   keywords: [
     "dumpster rental Keystone",
     "Keystone dumpster rental",
@@ -14,7 +14,7 @@ const keystone = {
   ],
   h1Desire: "Tackle the Big-Lot Cleanup",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters to Keystone, FL, in northwest Hillsborough County, starting at $${lowestPrice} flat. Keystone's long driveways and lakefront lots are a good match for our dump trailers, and every price covers delivery, pickup, and disposal up to the weight limit.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters to Keystone, FL, in northwest Hillsborough County. Keystone's long driveways and lakefront lots are a good match for our dump trailers, and every free quote covers delivery, pickup, and disposal up to the weight limit.",
   introTitle: ["Room to Work, ", "Lakes All Around"],
   localIntro: [
     "Keystone is the quiet corner of northwest Hillsborough, between Gunn Highway and the Pinellas line. Homes here sit on bigger parcels than most of Tampa Bay, many on or near Lake Keystone and the smaller lakes around it. The county's community plan for the area is built around keeping it that way.",

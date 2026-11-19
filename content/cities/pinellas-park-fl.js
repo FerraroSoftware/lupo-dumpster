@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const pinellasPark = {
   metaDescription:
-    `Dumpster rental in Pinellas Park, FL from $${lowestPrice}. Flat-rate dumpsters for rentals, roofs, and shop cleanouts, with delivery, pickup & disposal included.`,
+    "Dumpster rental in Pinellas Park, FL for rentals, roofs, and shop cleanouts. Get a free quote that covers delivery, pickup & disposal. No surprise fees.",
   keywords: [
     "dumpster rental Pinellas Park",
     "Pinellas Park dumpster rental",
@@ -12,7 +10,7 @@ const pinellasPark = {
   ],
   h1Desire: "Haul It All Away in One Trip",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters in Pinellas Park, FL, in the middle of Pinellas County, at flat prices that start at $${lowestPrice}, delivery, pickup, and disposal included. Pinellas Park is about 50 minutes from our Holiday yard, near the far end of our routes, so a day or two of notice helps us fit you in.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters in Pinellas Park, FL, in the middle of Pinellas County. Call or text for a free quote that spells out delivery, pickup, and disposal before we book the run. Pinellas Park is about 50 minutes from our Holiday yard, near the far end of our routes, so a day or two of notice helps us fit you in.",
   introTitle: ["Straight Answers for ", "Pinellas Park"],
   localIntro: [
     "Pinellas Park is a working city in the center of the county, with block homes from the postwar decades, quiet streets off 49th Street, and a lot of small businesses along US-19 and Park Boulevard. It's also one of the longer drives we make from Holiday, so we plan these drops around our other routes.",
@@ -36,7 +34,7 @@ const pinellasPark = {
   localFaqs: [
     {
       q: "Can I get a dumpster for my business in Pinellas Park?",
-      a: "Yes. If you have room in a parking lot or behind the building, we can drop a dumpster for a shop cleanout or small renovation. You'll get the price before delivery.",
+      a: "Yes. If you have room in a parking lot or behind the building, we can drop a dumpster for a shop cleanout or small renovation. Send a photo of the spot and we'll give you a free quote before delivery.",
     },
     {
       q: "How much notice do you need for Pinellas Park?",
@@ -54,7 +52,7 @@ const pinellasPark = {
   verify: [
     "D16: Alex must confirm we serve Pinellas Park regularly (edge city)",
     "Drive time from the Holiday yard (About 50 minutes)",
-    "Pricing: confirm the standard flat prices apply in Pinellas Park with no distance surcharge",
+    "Quotes: confirm Pinellas Park jobs are quoted without a distance surcharge",
     "Disposal facility used for Pinellas Park loads (and 'a few miles away')",
     "City of Pinellas Park right-of-way permit process and phone (no city phone in lib/cities.js yet)",
     "We take commercial/business-lot jobs (shop and office cleanouts)",

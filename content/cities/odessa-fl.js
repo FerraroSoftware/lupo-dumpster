@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const odessa = {
   metaDescription:
-    `Dumpster rental in Odessa, FL for acreage cleanups, remodels & new builds. 10, 15 & 20-yard dumpsters from $${lowestPrice}, dump fees included.`,
+    "Dumpster rental in Odessa, FL for acreage cleanups, remodels & new builds. 10, 15 & 20-yard dumpsters. Free, no-obligation quote, dump fees included.",
   keywords: [
     "dumpster rental Odessa FL",
     "Odessa dumpster rental",
@@ -12,7 +10,7 @@ const odessa = {
   ],
   h1Desire: "Tame Your Property",
   answer:
-    `Lupo handles dumpster rental in Odessa, FL on both sides of the Pasco and Hillsborough County line, from Starkey Ranch to the lake homes around Lake Keystone. Choose a 10, 15, or 20-yard dumpster at a flat price from $${lowestPrice}, and we'll find a spot our truck can reach, even on larger rural lots.`,
+    "Lupo handles dumpster rental in Odessa, FL on both sides of the Pasco and Hillsborough County line, from Starkey Ranch to the lake homes around Lake Keystone. Choose a 10, 15, or 20-yard dumpster, get a free quote upfront, and we'll find a spot our truck can reach, even on larger rural lots.",
   introTitle: ["Room to Spread Out, ", "and Plenty to Haul"],
   localIntro: [
     "Odessa doesn't look like the rest of Pasco. Lots are bigger, many homes sit on acreage or along a lake, and you'll pass horse fences and long gravel driveways off Gunn Highway. Bigger properties collect bigger piles: old fencing, fallen oak limbs, and a barn full of things nobody has touched in years.",

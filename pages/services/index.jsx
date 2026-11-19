@@ -8,7 +8,7 @@ import { PageHero } from "@/components/site/page-hero";
 import { container, CtaBand, PlanSteps, PrimaryButton } from "@/components/site/home-sections";
 import { FaqSection } from "@/components/site/faq-section";
 import { Highlight, SectionHeading } from "@/components/site/section-heading";
-import { lowestPrice, navigation, siteConfig, sizes, telHref } from "@/lib/site-config";
+import { navigation, siteConfig, sizes, telHref } from "@/lib/site-config";
 import heroImage from "@/public/trailer-4.webp";
 import dumpsterImg from "@/public/dumpsterrental.webp";
 import constructionImg from "@/public/construction-dumpster-rental.webp";
@@ -23,14 +23,14 @@ import mattressImg from "@/public/mattress-removal.webp";
 import yardImg from "@/public/yard-waste-removal.webp";
 
 const title = "Dumpster Rental & Junk Removal in Pasco County, FL | Lupo";
-const description = `Dumpster rentals from $${lowestPrice}, construction dumpsters, and full-service junk removal across Pasco, Pinellas, Hillsborough & Hernando. Call ${siteConfig.phone}.`;
+const description = `Dumpster rentals, construction dumpsters, and junk removal across Pasco, Pinellas, Hillsborough & Hernando. Free quotes: ${siteConfig.phone}.`;
 
 const dumpsterServices = [
   {
     name: "Dumpster Rental",
     href: "/services/dumpster-rental",
     image: dumpsterImg,
-    text: "Flat-rate 10, 15, and 20-yard roll-off dumpsters for cleanouts, remodels, and moves. Delivery, pickup, and disposal included.",
+    text: "10, 15, and 20-yard roll-off dumpsters for cleanouts, remodels, and moves. Delivery, pickup, and disposal included.",
   },
   {
     name: "Construction Dumpsters",
@@ -94,7 +94,7 @@ const servicesFaqs = [
   },
   {
     q: "What dumpster sizes do you offer?",
-    a: `${sizes.map((s) => `${s.name} ($${s.price})`).join(", ")}. Every price includes delivery, pickup, and disposal up to the weight limit.`,
+    a: `${sizes.map((s) => `${s.name} (${s.weight})`).join(", ")}. Every quote includes delivery, pickup, and disposal up to the weight limit.`,
   },
   {
     q: "Do you work with contractors and roofers?",
@@ -150,7 +150,7 @@ export default function Services() {
             Every Way to Get Rid of It, <Highlight tone="dark">One Local Crew</Highlight>
           </>
         }
-        intro={`Rent a flat-rate dumpster from $${lowestPrice} and fill it yourself, or let us do the heavy lifting with full-service junk removal. Either way, it's gone.`}
+        intro="Rent a dumpster and fill it yourself, or let us do the heavy lifting with full-service junk removal. Either way, it's gone, and your quote is free."
       />
       <Breadcrumbs />
 
@@ -161,7 +161,7 @@ export default function Services() {
             eyebrow="Dumpster rentals"
             title={
               <>
-                Roll-Off Dumpsters at <Highlight>One Flat Price</Highlight>
+                Roll-Off Dumpsters with <Highlight>Free Quotes</Highlight>
               </>
             }
             intro="You fill it on your schedule. We drop it off, pick it up, and handle the dump."
@@ -173,7 +173,7 @@ export default function Services() {
                   href={s.href}
                   className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand-hover"
                 >
-                  {s.name} <span className="text-brand">${s.price}</span>
+                  {s.name} <span className="text-brand">{s.weight.replace(" included", "")}</span>
                 </Link>
               </li>
             ))}
@@ -185,7 +185,7 @@ export default function Services() {
           </div>
           <div className="mt-10 flex justify-center">
             <PrimaryButton href={navigation.bookHref}>
-              Book Your Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+              Get a Free Quote <ArrowRight aria-hidden className="h-5 w-5" />
             </PrimaryButton>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function Services() {
                 Don&apos;t Want to Lift a Thing? <Highlight>We&apos;ll Load It.</Highlight>
               </>
             }
-            intro="Our crew shows up, loads everything, and hauls it away. You get a firm price before we start."
+            intro="Our crew shows up, loads everything, and hauls it away. You get a free quote before we start."
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {junkServices.map((s) => (
@@ -213,7 +213,7 @@ export default function Services() {
               href={telHref}
               className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg border-2 border-ink px-7 text-base font-bold text-ink transition-colors hover:bg-ink hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-              <Phone aria-hidden className="h-5 w-5" /> Get a junk removal price: {siteConfig.phone}
+              <Phone aria-hidden className="h-5 w-5" /> Get a free junk removal quote: {siteConfig.phone}
             </a>
           </div>
         </div>

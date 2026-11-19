@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const trinity = {
   metaDescription:
-    `Dumpster rental in Trinity, FL for remodels, move-ins & yard projects. Driveway-safe 10, 15 & 20-yard dumpsters from $${lowestPrice}, one flat price.`,
+    "Dumpster rental in Trinity, FL for remodels, move-ins & yard projects. Driveway-safe 10, 15 & 20-yard dumpsters, with a free quote before we deliver.",
   keywords: [
     "dumpster rental Trinity FL",
     "Trinity dumpster rental",
@@ -12,7 +10,7 @@ const trinity = {
   ],
   h1Desire: "Remodel on Your Schedule",
   answer:
-    `Dumpster rental in Trinity, FL is simple with Lupo. We bring a low-profile 10, 15, or 20-yard dumpster to your driveway in Heritage Springs, Trinity Oaks, or anywhere off SR-54, set it on boards to protect the concrete, and haul it away when you're done. Flat prices start at $${lowestPrice} across Pasco County.`,
+    "Dumpster rental in Trinity, FL is simple with Lupo. We bring a low-profile 10, 15, or 20-yard dumpster to your driveway in Heritage Springs, Trinity Oaks, or anywhere off SR-54, set it on boards to protect the concrete, and haul it away when you're done. Text us the project for a free quote, so the price is settled before delivery.",
   introTitle: ["Driveway-Friendly Dumpsters for ", "Trinity Neighborhoods"],
   localIntro: [
     "Trinity grew up in the 1990s and 2000s as a planned community, with golf-course neighborhoods, gated entrances, and homes that are now old enough for their first big round of updates. Builder-grade kitchens, carpeted bedrooms, and worn pool-cage screens are what we haul most often here. When several rooms get updated at once, the debris piles up faster than most homeowners expect.",

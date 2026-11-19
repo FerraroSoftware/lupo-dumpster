@@ -1,11 +1,11 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const junkRemovalNewPortRichey = {
   path: "/services/junk-removal-new-port-richey-fl",
   kind: "junk",
   serviceType: "Junk removal",
   title: "Junk Removal in New Port Richey, FL | Lupo Dumpster",
-  description: `Junk removal in New Port Richey, FL. Our crew lifts, loads, and hauls furniture, appliances, and clutter. Firm price first. ${siteConfig.rating.value}★ on Google.`,
+  description: `Junk removal in New Port Richey, FL. Our crew lifts, loads, and hauls furniture, appliances, and clutter. Free quote first. ${siteConfig.rating.value}★ on Google.`,
   keywords: [
     "junk removal New Port Richey",
     "junk removal New Port Richey FL",
@@ -13,13 +13,13 @@ const junkRemovalNewPortRichey = {
     "furniture removal New Port Richey",
     "junk pickup west Pasco",
   ],
-  quoteTitle: "Get Your New Port Richey Junk Removal Price",
+  quoteTitle: "Get a Free New Port Richey Junk Removal Quote",
   quotePlaceholder: "e.g. Old sofa, two dressers, and a garage full of boxes near Gulf Harbors",
   hero: {
     eyebrow: "Full-service junk removal · New Port Richey, FL",
     title: ["Get Your Home Back with ", "Junk Removal in New Port Richey"],
     intro:
-      "Need junk removal in New Port Richey? Lupo's crew drives up from Holiday, carries out furniture, appliances, and clutter from anywhere in your home, and hauls it all away in one visit. We cover the whole New Port Richey area of west Pasco County, and you get a firm price before we lift a thing.",
+      "Need junk removal in New Port Richey? Lupo's crew drives up from Holiday, carries out furniture, appliances, and clutter from anywhere in your home, and hauls it all away in one visit. We cover the whole New Port Richey area of west Pasco County, and a quick description or a few photos gets you a free quote before we lift a thing.",
     image: "/new-port-richey.webp",
     imageAlt: "Illustration of a palm-lined marina at sunset, representing junk removal in New Port Richey, FL",
   },
@@ -49,7 +49,7 @@ const junkRemovalNewPortRichey = {
     title: ["Why New Port Richey ", "Calls Lupo"],
     items: [
       { icon: "Home", title: "Minutes away, not a franchise", text: "We're a family business based in Holiday, so the people who quote your job are the ones who show up." },
-      { icon: "Tag", title: "A firm price up front", text: "Text a few photos of what's going and we'll give you a number before anything is scheduled." },
+      { icon: "Tag", title: "A free quote up front", text: "Text a few photos of what's going and we'll quote it before anything is scheduled." },
       { icon: "Users", title: "We do the carrying", text: "From a back bedroom near Main Street to a canal-side shed in Gulf Harbors, our crew does the lifting." },
       { icon: "Recycle", title: "Donate and recycle when we can", text: "Usable furniture and scrap metal get pulled out before the rest goes to disposal." },
     ],
@@ -60,11 +60,11 @@ const junkRemovalNewPortRichey = {
     reviewNames: ["Owen R.", "Joseph S.", "Crystal D."],
   },
   pricing: {
-    title: ["Priced by the Load, ", "Quoted Before We Start"],
+    title: ["Quoted by the Load, ", "Free and Before We Start"],
     intro:
-      "No two New Port Richey jobs are alike. One recliner from a condo near Sims Park and a full house in Seven Springs are priced very differently, so we quote what you actually have.",
+      "No two New Port Richey jobs are alike. One recliner from a condo near Sims Park and a full house in Seven Springs are very different jobs, so we give you a free quote based on what you actually have.",
     factors: [
-      { title: "How much of the trailer it fills", text: "Volume is the biggest factor. A few pieces cost far less than a whole-house cleanout." },
+      { title: "How much of the trailer it fills", text: "Volume is the biggest factor. A few pieces is a much smaller job than a whole-house cleanout." },
       { title: "What's in the pile", text: "Heavy material like tile, concrete, or wet drywall from a flooded room costs more to dispose of than furniture." },
       { title: "How we get to it", text: "A pile in the driveway is quick. A second-floor condo or a packed attic takes more time." },
     ],
@@ -87,14 +87,14 @@ const junkRemovalNewPortRichey = {
     paragraphs: [
       "New Port Richey has a little of everything. There are older bungalows near Sims Park and the Cotee River, block ranch homes in neighborhoods like Tanglewood Village and Orchid Lake, canal homes in Gulf Harbors and Sea Ranch on Gulf, and newer deed-restricted communities out toward Seven Springs and Longleaf. Each one comes with its own kind of junk, and Lupo's junk removal crew has hauled from all of them.",
       "A typical week might include a recliner and a box spring from a downtown apartment, a full garage in Magnolia Valley, and a rental turnover off US-19 where the last tenant left half their furniture behind. After hurricane season, it can mean waterlogged couches and carpet from homes near the coast.",
-      "Here's how it works. You tell us what needs to go, we give you a firm price, and our crew shows up and does the lifting. We pull out usable items and metal when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road in Shady Hills. You get your rooms back without a single trip up US-19 in a borrowed truck.",
+      "Here's how it works. You tell us what needs to go or text a few photos, we send a free quote, and our crew shows up and does the lifting. We pull out usable items and metal when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road in Shady Hills. You get your rooms back without a single trip up US-19 in a borrowed truck.",
     ],
   },
   nprText: "Planning a bigger cleanout and want to load it yourself?",
   areaLabel: "Dumpster rental",
   related: [
     { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service junk removal across Pasco County and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Rather load at your own pace? Get a flat-rate dumpster in your New Port Richey driveway." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Rather load at your own pace? Get a free quote on a dumpster for your New Port Richey driveway." },
     { name: "Hoarding & Estate Cleanup", href: "/services/hoarding-cleanup", text: "Discreet, respectful cleanouts for families handling a parent's home or an estate." },
   ],
   posts: [
@@ -106,7 +106,7 @@ const junkRemovalNewPortRichey = {
   faqs: [
     {
       q: "How much does junk removal cost in New Port Richey?",
-      a: "It depends on how much there is, what it is, and how easy it is to reach. Text or email a few photos and we'll give you a firm price before anything is scheduled.",
+      a: `It depends on how much there is, what it is, and how easy it is to reach. Text or email a few photos and we'll send a free, no-obligation quote before anything is scheduled. Call or text ${siteConfig.phone}, or request your quote online.`,
     },
     {
       q: "How soon can you get to my New Port Richey home?",
@@ -118,14 +118,14 @@ const junkRemovalNewPortRichey = {
     },
     {
       q: "Can you haul furniture that got wet in a storm or flood?",
-      a: "Yes. Wet couches, mattresses, and carpet are much heavier than dry ones, which can affect the price, so mention it when you send photos. Call early after a storm, since demand jumps along the coast.",
+      a: "Yes. Wet couches, mattresses, and carpet are much heavier than dry ones, which can affect the quote, so mention it when you send photos. Call early after a storm, since demand jumps along the coast.",
     },
     {
       q: "Should I hire junk removal or rent a dumpster?",
-      a: `Hire junk removal if you want us to do the lifting or you only have a few heavy items. Rent a dumpster if you'd rather load it yourself over a few days. Dumpsters start at $${lowestPrice} flat.`,
+      a: `Hire junk removal if you want us to do the lifting or you only have a few heavy items. Rent a dumpster if you'd rather load it yourself over a few days, and ask us for a free dumpster quote.`,
     },
   ],
-  ctaText: "Tell us what needs to go from your New Port Richey home and get a firm price. Our crew does the lifting.",
+  ctaText: "Tell us what needs to go from your New Port Richey home and get a free quote. Our crew does the lifting.",
   verify: [
     "Drive time from the Holiday yard to New Port Richey (copy says 'a short drive')",
     "NPR junk loads generally go to Pasco County's solid waste facility on Hays Road, Shady Hills",

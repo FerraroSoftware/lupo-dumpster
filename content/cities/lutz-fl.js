@@ -1,10 +1,10 @@
-import { getSize, lowestPrice } from "@/lib/site-config";
+import { getSize } from "@/lib/site-config";
 
 const twenty = getSize("20");
 
 const lutz = {
   metaDescription:
-    `Dumpster rental in Lutz, FL for acreage cleanups, remodels, and new-build debris. Flat rates from $${lowestPrice}, delivery and disposal included.`,
+    "Dumpster rental in Lutz, FL for acreage cleanups, remodels, and new-build debris. Free, upfront quotes with delivery and disposal included.",
   keywords: [
     "dumpster rental Lutz",
     "Lutz dumpster rental",
@@ -14,8 +14,8 @@ const lutz = {
   ],
   h1Desire: "Clear the Acreage, Finish the Remodel",
   answer:
-    `Lupo brings 10, 15, and 20-yard dumpsters to Lutz, FL, in north Hillsborough County, at flat prices starting at $${lowestPrice}. Whether you're clearing an older lot off US-41 or finishing a newer home near Dale Mabry, delivery, pickup, and disposal are included, and the trailer sits on boards to protect your driveway.`,
-  introTitle: ["Old Lutz and New Lutz, ", "One Flat Price"],
+    "Lupo brings 10, 15, and 20-yard dumpsters to Lutz, FL, in north Hillsborough County. Whether you're clearing an older lot off US-41 or finishing a newer home near Dale Mabry, your free quote includes delivery, pickup, and disposal, and the trailer sits on boards to protect your driveway.",
+  introTitle: ["Old Lutz and New Lutz, ", "One Free Quote"],
   localIntro: [
     "Lutz doesn't fit one mold. Along US-41 and the back roads off Sunset Lane you'll find ranch houses, barns, and fenced pasture that have been in families for decades. A few miles west, gated communities like Cheval and newer subdivisions off Van Dyke Road look nothing like that. Both kinds of property end up needing a dumpster sooner or later.",
     "So the jobs vary. One week it's a collapsed shed, old fencing, and a pile of storm limbs on two acres. The next it's flooring and cabinets out of a 2000s build. We size the trailer to the job, not the zip code. Heads up: some Lutz addresses sit north of the county line in Pasco, which changes who you'd call about a street permit.",
@@ -60,7 +60,7 @@ const lutz = {
   localFaqs: [
     {
       q: "My Lutz address is in Pasco County. Does that change anything?",
-      a: "Not the price or the size options. It only changes which county you'd check with if the dumpster has to go on the street instead of your property.",
+      a: "Not the size options or how we quote the job. It only changes which county you'd check with if the dumpster has to go on the street instead of your property.",
     },
     {
       q: "Can you drop the trailer back on my acreage instead of the driveway?",

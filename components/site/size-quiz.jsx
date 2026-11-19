@@ -69,7 +69,7 @@ export function SizeQuiz({ onBook }) {
               Find Your Size in <Highlight>3 Questions</Highlight>
             </>
           }
-          intro="Answer three quick questions and we'll recommend a dumpster with its flat price."
+          intro="Answer three quick questions and we'll recommend a size. Then get a free quote on it."
         />
 
         <div className="mt-12 space-y-8 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 sm:p-8">
@@ -103,7 +103,7 @@ export function SizeQuiz({ onBook }) {
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-brand-on-dark">We recommend</p>
                   <p className="mt-1 font-display text-4xl font-extrabold">
-                    {result.size.name} · ${result.size.price}
+                    {result.size.name}
                   </p>
                   <p className="mt-2 text-zinc-300">
                     {result.size.dimensions}. {result.size.loads}. {result.size.weight}.
@@ -121,7 +121,7 @@ export function SizeQuiz({ onBook }) {
                     onClick={() => onBook(result.size.id)}
                     className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg bg-brand px-6 font-bold text-white transition-colors hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                   >
-                    Book the {getSize(result.size.id).shortName.replace(" yd", "-yard")}
+                    Quote the {getSize(result.size.id).shortName.replace(" yd", "-yard")}
                     <ArrowRight aria-hidden className="h-5 w-5" />
                   </button>
                   <button

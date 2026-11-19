@@ -1,10 +1,10 @@
-import { getSize, lowestPrice, siteConfig } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const fifteen = getSize("15");
 
 const westchase = {
   metaDescription:
-    `HOA-friendly dumpster rental in Westchase, FL. Low-profile trailers on driveway boards, flat rates from $${lowestPrice}, disposal included. ${siteConfig.rating.value} on Google.`,
+    `HOA-friendly dumpster rental in Westchase, FL. Low-profile trailers on driveway boards, free quotes, disposal included. ${siteConfig.rating.value} on Google.`,
   keywords: [
     "dumpster rental Westchase",
     "Westchase dumpster rental",
@@ -14,7 +14,7 @@ const westchase = {
   ],
   h1Desire: "Keep the HOA Happy",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters in Westchase, FL, in northwest Hillsborough County, starting at $${lowestPrice} flat. Our low-profile trailers sit on protective boards in your driveway and leave when you call. Delivery, pickup, and disposal are included in the price.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters in Westchase, FL, in northwest Hillsborough County. Our low-profile trailers sit on protective boards in your driveway and leave when you call. Ask for a free quote; delivery, pickup, and disposal are already in it.",
   introTitle: ["Built for Westchase ", "Driveways and Deed Rules"],
   localIntro: [
     "Westchase is a planned community, and it shows. Most homes belong to one of the villages under the Westchase Community Association, with deed restrictions on what can sit in a driveway and for how long. A low-profile dump trailer on boards, picked up as soon as you're done, tends to go over better with neighbors and the board than a steel box parked for weeks.",

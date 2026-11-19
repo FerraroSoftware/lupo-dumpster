@@ -1,11 +1,11 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const applianceRemovalNewPortRichey = {
   path: "/services/appliance-removal-new-port-richey-fl",
   kind: "junk",
   serviceType: "Appliance removal",
   title: "Appliance Removal in New Port Richey, FL | Lupo Dumpster",
-  description: `Appliance removal in New Port Richey, FL. We carry out fridges, washers, dryers, and stoves and recycle the metal. Firm price first. ${siteConfig.rating.value}★ on Google.`,
+  description: `Appliance removal in New Port Richey, FL. We carry out fridges, washers, dryers, and stoves and recycle the metal. Free quote first. ${siteConfig.rating.value}★ on Google.`,
   keywords: [
     "appliance removal New Port Richey",
     "refrigerator removal New Port Richey",
@@ -13,14 +13,14 @@ const applianceRemovalNewPortRichey = {
     "old appliance pickup Pasco County",
     "water heater haul away New Port Richey",
   ],
-  quoteTitle: "Get Your Appliance Removal Price",
+  quoteTitle: "Get a Free Appliance Removal Quote",
   quotePlaceholder: "e.g. Old side-by-side fridge and a washer in the garage",
-  ctaLabel: "Get Your Price",
+  ctaLabel: "Get a Free Quote",
   hero: {
     eyebrow: "Appliance removal · New Port Richey, FL",
     title: ["Make Room for the New One with ", "Appliance Removal in New Port Richey"],
     intro:
-      "Lupo offers appliance removal in New Port Richey and across west Pasco County. We carry the old fridge, washer, dryer, stove, or water heater out of your home, load it, and haul it away. Metal goes to recycling whenever we can, and you get a firm price before we schedule anything.",
+      "Lupo offers appliance removal in New Port Richey and across west Pasco County. We carry the old fridge, washer, dryer, stove, or water heater out of your home, load it, and haul it away. Metal goes to recycling whenever we can, and a quick description or photo gets you a free quote before we schedule anything.",
     image: "/appliances.webp",
     imageAlt: "Old washers and dryers stacked for recycling after appliance removal in New Port Richey",
   },
@@ -51,7 +51,7 @@ const applianceRemovalNewPortRichey = {
     items: [
       { icon: "Recycle", title: "Metal gets recycled", text: "Steel, copper, and aluminum are worth recovering, so appliances go to recycling whenever we can." },
       { icon: "ShieldCheck", title: "Refrigerant handled properly", text: "Fridges, freezers, and AC units hold refrigerant, so they go where it can be recovered instead of vented." },
-      { icon: "Tag", title: "One item or a whole kitchen", text: "A single dryer or every appliance in the house, you get a firm price before we schedule." },
+      { icon: "Tag", title: "One item or a whole kitchen", text: "A single dryer or every appliance in the house, you get a free quote before we schedule." },
       { icon: "Route", title: "Close by in Holiday", text: "We're a short drive from New Port Richey, which helps when the new appliance arrives tomorrow." },
     ],
   },
@@ -61,12 +61,12 @@ const applianceRemovalNewPortRichey = {
     reviewNames: ["Crystal D.", "Brian O.", "Joseph S."],
   },
   pricing: {
-    title: ["Simple Pricing ", "for Heavy Items"],
+    title: ["Free Quotes ", "for Heavy Items"],
     intro:
-      "Appliance removal is priced by what we're hauling and how hard it is to get out. Tell us the item and where it sits, and we'll give you a firm price.",
+      "Your appliance removal quote is based on what we're hauling and how hard it is to get out. Tell us the item and where it sits, and we'll quote it for free.",
     factors: [
       { title: "Which appliances", text: "A dishwasher is lighter work than a side-by-side fridge or a chest freezer full of ice." },
-      { title: "How many", text: "A washer and dryer together, or a few extra items, usually costs less per item than separate trips." },
+      { title: "How many", text: "A washer and dryer together, or a few extra items, can all go in one trip instead of several." },
       { title: "Where it sits", text: "A garage or carport is easy. A second-floor condo or a tight laundry closet takes more time and hands." },
     ],
   },
@@ -87,7 +87,7 @@ const applianceRemovalNewPortRichey = {
     title: "Old Appliances Out, Without the Hassle",
     paragraphs: [
       "Every week, someone in New Port Richey buys a new washer and realizes the old one has nowhere to go. Maybe it's a ranch home in Orchid Lake getting a kitchen update, a condo near Sims Park where the fridge finally quit, or a family home in Seven Springs replacing the whole laundry room. The new appliance shows up. The old one sits in the garage for months.",
-      "Lupo makes appliance removal simple. Send us a photo or tell us the type and size, and we'll give you a firm price. Our crew comes up from Holiday, walks the appliance out, and loads it onto the trailer. We're careful with floors, door frames, and screen doors on the way out.",
+      "Lupo makes appliance removal simple. Send us a photo or tell us the type and size, and we'll give you a free quote. Our crew comes up from Holiday, walks the appliance out, and loads it onto the trailer. We're careful with floors, door frames, and screen doors on the way out.",
       "Appliances are mostly metal, so they go to recycling whenever we can. Units with refrigerant, like fridges, freezers, and AC units, go where the refrigerant can be handled properly. Anything that can't be recycled generally goes to Pasco County's solid waste facility on Hays Road. If you're clearing more than appliances, we'll take the rest of the junk on the same trip.",
     ],
   },
@@ -95,7 +95,7 @@ const applianceRemovalNewPortRichey = {
   areaLabel: "Dumpster rental",
   related: [
     { name: "Appliance Removal", href: "/services/appliance-removal", text: "Appliance pickup and recycling across Pasco County and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Remodeling the whole kitchen? A flat-rate dumpster in your New Port Richey driveway handles it all." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "Remodeling the whole kitchen? A dumpster in your New Port Richey driveway handles it all. Get a free quote." },
     { name: "Junk Removal", href: "/services/junk-removal", text: "Furniture, garage clutter, and anything else that needs to go, loaded by our crew." },
   ],
   posts: [
@@ -106,7 +106,7 @@ const applianceRemovalNewPortRichey = {
   faqs: [
     {
       q: "How much does appliance removal cost in New Port Richey?",
-      a: "It depends on which appliances, how many, and where they sit. Tell us what you have or send a photo, and we'll give you a firm price before we schedule.",
+      a: `It depends on which appliances, how many, and where they sit. Tell us what you have or send a photo, and we'll give you a free, no-obligation quote before we schedule. Call or text ${siteConfig.phone}, or request a quote online.`,
     },
     {
       q: "Do I need to disconnect the appliance first?",
@@ -126,10 +126,10 @@ const applianceRemovalNewPortRichey = {
     },
     {
       q: "Is appliance removal cheaper than renting a dumpster?",
-      a: `For one or two appliances, yes, almost always. If you're gutting a kitchen and replacing everything, a dumpster starting at $${lowestPrice} flat may be the better deal.`,
+      a: "For one or two appliances, removal is usually the simpler choice. If you're gutting a kitchen and replacing everything, a dumpster may make more sense. Ask us to quote both for free and compare.",
     },
   ],
-  ctaText: "Tell us which appliance needs to go and get a firm price. We'll carry it out of your New Port Richey home.",
+  ctaText: "Tell us which appliance needs to go and get a free quote. We'll carry it out of your New Port Richey home.",
   verify: [
     "Refrigerant handling: fridges, freezers, and AC units go to a facility that recovers refrigerant",
     "Disconnect policy: customer empties/unplugs; gas and hardwired units disconnected by a pro first",

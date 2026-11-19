@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const seminole = {
   metaDescription:
-    `Dumpster rental in Seminole, FL from $${lowestPrice} flat. Roof, remodel, and cleanout dumpsters with delivery, pickup, and disposal included. Plan ahead.`,
+    "Dumpster rental in Seminole, FL for roofs, remodels, and cleanouts. Free quote covers delivery, pickup, and disposal. Plan a few days ahead.",
   keywords: [
     "dumpster rental Seminole",
     "Seminole dumpster rental",
@@ -12,7 +10,7 @@ const seminole = {
   ],
   h1Desire: "Tackle the Whole-House Project",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters in Seminole, FL, in southwest Pinellas County, for one flat price starting at $${lowestPrice}. That price includes delivery, pickup, and disposal. Seminole is one of the farthest points we reach from our Holiday yard, about 50 minutes away, so please plan a few days ahead.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters in Seminole, FL, in southwest Pinellas County. Tell us about the roof or remodel and we'll send a free quote that includes delivery, pickup, and disposal. Seminole is one of the farthest points we reach from our Holiday yard, about 50 minutes away, so please plan a few days ahead.",
   introTitle: ["Making the Drive to ", "Seminole for You"],
   localIntro: [
     "Seminole sits around Lake Seminole, a short drive from the Gulf beaches. It's near the outer edge of where we work, roughly 50 minutes from Holiday, and we'd rather tell you that up front than promise a same-day drop we can't make. We plan Seminole trips alongside our other south county stops, which keeps each delivery on schedule.",
@@ -56,7 +54,7 @@ const seminole = {
   verify: [
     "D16: Alex must confirm we serve Seminole regularly (edge city)",
     "Drive time from the Holiday yard (About 50 minutes)",
-    "Pricing: confirm the standard flat prices apply in Seminole with no distance surcharge",
+    "Quotes: confirm Seminole jobs are quoted without a distance surcharge",
     "Disposal facility used for Seminole loads",
     "City of Seminole right-of-way permit process and phone (no city phone in lib/cities.js yet)",
     "Claim that much of the Seminole-address area is unincorporated Pinellas County",

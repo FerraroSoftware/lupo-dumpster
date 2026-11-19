@@ -18,7 +18,7 @@ const description = `Family-owned dumpster rental and junk removal in Holiday, F
 const promises = [
   {
     icon: BadgeDollarSign,
-    title: "Flat-rate pricing",
+    title: "Free, upfront quotes",
     text: "The price we quote is the price you pay. Delivery, pickup, and disposal up to the weight limit are included.",
   },
   {
@@ -107,8 +107,8 @@ export default function AboutUs() {
                 or settle a loved one&apos;s estate. The last thing you need is a surprise bill.
               </p>
               <p>
-                So Lupo does it differently: one flat price with delivery, pickup, and disposal
-                included, extras explained before anything hits your driveway, and a local crew that
+                So Lupo does it differently: a free, upfront quote with delivery, pickup, and
+                disposal included, extras explained before anything hits your driveway, and a local crew that
                 shows up when we say we will. Today we serve homeowners, contractors, and roofers
                 across Pasco, Pinellas, Hillsborough, and Hernando County.
               </p>

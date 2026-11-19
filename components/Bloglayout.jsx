@@ -46,14 +46,14 @@ function SidebarCard() {
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
       <p className="font-display text-2xl font-bold text-ink">Need a dumpster?</p>
-      <p className="mt-1 text-sm text-zinc-600">Flat rates. Delivery, pickup &amp; disposal included.</p>
+      <p className="mt-1 text-sm text-zinc-600">Free, upfront quotes. Delivery, pickup &amp; disposal included.</p>
       <ul className="mt-5 divide-y divide-zinc-100 rounded-xl bg-zinc-50 px-4">
         {sizes.map((s) => (
           <li key={s.id} className="flex items-center justify-between py-3 text-sm">
             <Link href={s.href} className="font-semibold text-ink hover:text-brand-hover">
               {s.name}
             </Link>
-            <span className="font-display text-xl font-bold text-ink">${s.price}</span>
+            <span className="text-zinc-600">{s.weight.replace(" included", "")}</span>
           </li>
         ))}
       </ul>
@@ -66,7 +66,7 @@ function SidebarCard() {
         ))}
       </ul>
       <PrimaryButton href={navigation.bookHref} className="mt-6 w-full">
-        Book Your Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+        Get a Free Quote <ArrowRight aria-hidden className="h-5 w-5" />
       </PrimaryButton>
       <a
         href={telHref}
@@ -287,7 +287,7 @@ export default function Bloglayout({
           {children}
         </article>
 
-        <aside aria-label="Book a dumpster" className="hidden lg:block">
+        <aside aria-label="Get a free quote" className="hidden lg:block">
           <div className="sticky top-32">
             <SidebarCard />
           </div>

@@ -6,12 +6,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { PageHero } from "@/components/site/page-hero";
 import { container, CtaBand, PlanSteps } from "@/components/site/home-sections";
 import { Highlight, SectionHeading } from "@/components/site/section-heading";
-import { lowestPrice, serviceAreas, siteConfig, telHref } from "@/lib/site-config";
+import { serviceAreas, siteConfig, telHref } from "@/lib/site-config";
 import heroImage from "@/public/dumpster-rental-pasco-county.webp";
 
 const cityCount = serviceAreas.reduce((n, a) => n + a.cities.length, 0);
 const title = "Dumpster Rental Service Areas in Tampa Bay, FL | Lupo";
-const description = `Flat-rate dumpsters from $${lowestPrice} delivered to ${cityCount}+ cities in Pasco, Pinellas, Hillsborough & Hernando, FL. Find your city or call ${siteConfig.phone}.`;
+const description = `Dumpster rentals delivered to ${cityCount}+ cities in Pasco, Pinellas, Hillsborough & Hernando, FL. Find your city or call ${siteConfig.phone} for a free quote.`;
 
 const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent("Pasco County, FL")}&z=9&output=embed`;
 
@@ -39,7 +39,7 @@ export default function ServiceLocations() {
             Dumpster Rental Delivered <Highlight tone="dark">Across Tampa Bay&apos;s North Side</Highlight>
           </>
         }
-        intro={`Based in Holiday, FL, we deliver flat-rate dumpsters to ${cityCount}+ cities in ${serviceAreas.length} counties. Find yours below.`}
+        intro={`Based in Holiday, FL, we deliver dumpsters to ${cityCount}+ cities in ${serviceAreas.length} counties. Find yours below.`}
       />
       <Breadcrumbs />
 
@@ -53,7 +53,7 @@ export default function ServiceLocations() {
                 Where We <Highlight>Deliver</Highlight>
               </>
             }
-            intro="Pick your city for local delivery details and pricing."
+            intro="Pick your city for local delivery details and a free quote."
           />
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {serviceAreas.map((area, i) => (

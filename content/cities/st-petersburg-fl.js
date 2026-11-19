@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const stPetersburg = {
   metaDescription:
-    `Dumpster rental in St. Petersburg, FL from $${lowestPrice} flat. Low-profile dumpsters for historic bungalows and remodels, delivery and disposal included.`,
+    "Dumpster rental in St. Petersburg, FL. Low-profile dumpsters for historic bungalows and remodels. Free quote with delivery and disposal included.",
   keywords: [
     "dumpster rental St. Petersburg",
     "St. Petersburg dumpster rental",
@@ -12,7 +10,7 @@ const stPetersburg = {
   ],
   h1Desire: "Bring Your Old House Back",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters in St. Petersburg, FL, at flat prices starting at $${lowestPrice} with delivery, pickup, and disposal included. St. Pete is the farthest Pinellas County city we serve, about an hour from our Holiday yard, so we schedule deliveries here a few days ahead.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters in St. Petersburg, FL. Send us the bungalow, the alley, and the project, and we'll quote it free and upfront with delivery, pickup, and disposal included. St. Pete is the farthest Pinellas County city we serve, about an hour from our Holiday yard, so we schedule deliveries here a few days ahead.",
   introTitle: ["Low-Profile Dumpsters for ", "St. Pete's Historic Homes"],
   localIntro: [
     "St. Petersburg has some of the most distinctive housing in Tampa Bay. Historic Kenwood, Old Northeast, and Crescent Lake are full of 1920s bungalows and craftsman homes, many on narrow lots with alley access and brick streets out front. Lots that tight leave little room for a full-size roll-off, and neighbors notice fast when one blocks the alley.",
@@ -56,7 +54,7 @@ const stPetersburg = {
   verify: [
     "D16: Alex must confirm we serve St. Petersburg regularly (edge city)",
     "Drive time from the Holiday yard (About 60 minutes)",
-    "Pricing: confirm the standard flat prices apply in St. Petersburg with no distance surcharge",
+    "Quotes: confirm St. Petersburg jobs are quoted without a distance surcharge",
     "Disposal facility used for St. Pete loads",
     "City of St. Petersburg right-of-way permit process for street, alley, and brick-street placement (no city phone in lib/cities.js yet)",
     "Historic district exterior-work review claim (which neighborhoods are locally designated)",

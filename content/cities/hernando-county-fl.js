@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { lowestPrice } from "@/lib/site-config";
 
 const linkClass = "font-semibold text-ink underline underline-offset-4 hover:text-brand-hover";
 
 const hernandoCounty = {
   metaDescription:
-    `Dumpster rental in Hernando County, FL: Spring Hill, Brooksville, Weeki Wachee & more. 10, 15 & 20-yard dumpsters from $${lowestPrice}, disposal included.`,
+    "Dumpster rental in Hernando County, FL: Spring Hill, Brooksville, Weeki Wachee & more. 10, 15 & 20-yard dumpsters. Get a free, no-obligation quote.",
   keywords: [
     "dumpster rental Hernando County FL",
     "Hernando County dumpster rental",
@@ -15,11 +14,11 @@ const hernandoCounty = {
   ],
   h1Desire: "Take On Any Project",
   answer:
-    `Lupo offers dumpster rental in Hernando County, FL, from Spring Hill and Brooksville to Weeki Wachee, Hernando Beach, and Ridge Manor. Choose a 10, 15, or 20-yard dumpster at a flat price starting at $${lowestPrice}, with delivery, pickup, and disposal included. We drive north from our Holiday yard in Pasco County, so book a day or more ahead.`,
+    "Lupo offers dumpster rental in Hernando County, FL, from Spring Hill and Brooksville to Weeki Wachee, Hernando Beach, and Ridge Manor. Choose a 10, 15, or 20-yard dumpster and we'll send a free quote that includes delivery, pickup, and disposal up to the weight limit. We drive north from our Holiday yard in Pasco County, so book a day or more ahead.",
   introTitle: ["One Local Team for ", "All of Hernando County"],
   localIntro: [
     "Hernando County covers a lot of ground, from Gulf-front homes in Hernando Beach to the hills around Brooksville and the farm country near Ridge Manor and Istachatta. Spring Hill holds most of the population, with a huge grid of block homes built from the 1970s on, while the rest of the county is a mix of small towns, acreage, and coastal fishing communities.",
-    "We serve the whole county from our yard in Holiday, just south in Pasco. West-side addresses like Spring Hill and Weeki Wachee are the quickest for us to reach. Brooksville and the east side take longer, so we schedule those a few days out. Whatever the town, you get the same flat prices and the same driveway-safe trailers from a family-run business.",
+    "We serve the whole county from our yard in Holiday, just south in Pasco. West-side addresses like Spring Hill and Weeki Wachee are the quickest for us to reach. Brooksville and the east side take longer, so we schedule those a few days out. Whatever the town, you get an upfront quote and the same driveway-safe trailers from a family-run business.",
   ],
   landmarks: ["Weeki Wachee Springs State Park", "Withlacoochee State Forest", "Hernando Beach", "Suncoast Parkway"],
   driveTimeFromHQ: "About 35 to 60 minutes, depending on the town",
@@ -73,8 +72,8 @@ const hernandoCounty = {
       a: "Spring Hill, Brooksville, Weeki Wachee, Hernando Beach, Ridge Manor, Masaryktown, Aripeka, and the rural areas in between. If you're not sure, send your address and we'll confirm.",
     },
     {
-      q: "Do prices change for the farther parts of Hernando County?",
-      a: "No. The flat price is the same across the county. Farther addresses just need more notice so we can plan the drive.",
+      q: "Does it cost more to reach the farther parts of Hernando County?",
+      a: "Your free quote already includes the drive, pickup, and disposal, so there are no surprise fees once we arrive. Farther addresses like Ridge Manor just need more notice so we can plan the trip.",
     },
   ],
   image: "/trailer-4.webp",
@@ -84,7 +83,7 @@ const hernandoCounty = {
   verify: [
     "D16: Alex must confirm we serve Brooksville and east Hernando (Ridge Manor, Istachatta) regularly",
     "Drive time range from the Holiday yard (About 35 to 60 minutes, depending on the town)",
-    "Same flat price countywide, with no distance surcharge for far addresses",
+    "Quotes countywide include the drive (no separate distance surcharge for far addresses)",
     "Disposal facility used for Hernando loads (Northwest Solid Waste Management Facility)",
     "Hernando County right-of-way permit process; Brooksville and Weeki Wachee city processes",
     "Towns listed as served: Hernando Beach, Ridge Manor, Masaryktown, Aripeka, Istachatta",

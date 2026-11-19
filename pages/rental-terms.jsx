@@ -5,9 +5,9 @@ import { prohibitedItems, rental, siteConfig, sizes } from "@/lib/site-config";
 // TODO(D1): add rental days, extra-day fee, and overweight $/ton once confirmed.
 const sections = [
   {
-    title: "Your flat price",
+    title: "Your quote",
     body: [
-      `Our flat rates are ${sizes.map((s) => `${s.name} $${s.price} (${s.weight})`).join(", ")}. Each price includes ${rental.included
+      `Every rental starts with a free quote. Sizes are ${sizes.map((s) => `${s.name} (${s.weight})`).join(", ")}. Each quote includes ${rental.included
         .slice(0, 2)
         .join(" and ")
         .toLowerCase()}.`,
@@ -52,9 +52,9 @@ export default function RentalTerms() {
     <LegalPage
       title="Rental Terms"
       metaTitle={`Dumpster Rental Terms | ${siteConfig.name}`}
-      description={`The plain-English terms for renting a ${siteConfig.name} dumpster: what your flat price includes, what can change it, loading rules, and placement.`}
+      description={`The plain-English terms for renting a ${siteConfig.name} dumpster: what your quote includes, what can change it, loading rules, and placement.`}
       path="/rental-terms"
-      updated="October 26, 2026"
+      updated="November 19, 2026"
       intro="Renting a dumpster should be simple. These are the ground rules, in plain English."
       sections={sections}
     />

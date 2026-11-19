@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const wesleyChapel = {
   metaDescription:
-    `Dumpster rental in Wesley Chapel, FL for new-home projects, remodels & cleanouts. 10, 15 & 20-yard dumpsters from $${lowestPrice}, disposal included.`,
+    "Dumpster rental in Wesley Chapel, FL for new-home projects, remodels & cleanouts. 10, 15 & 20-yard dumpsters. Request your free quote online.",
   keywords: [
     "dumpster rental Wesley Chapel FL",
     "Wesley Chapel dumpster rental",
@@ -12,7 +10,7 @@ const wesleyChapel = {
   ],
   h1Desire: "Finish Settling In",
   answer:
-    `Lupo brings dumpster rental to Wesley Chapel, FL, one of the fastest-growing parts of Pasco County. We deliver 10, 15, and 20-yard dumpsters to Seven Oaks, Wiregrass Ranch, Meadow Pointe, and the newer communities off SR-56, at a flat price from $${lowestPrice}. Book a day or two ahead, since we come from our Holiday yard.`,
+    "Lupo brings dumpster rental to Wesley Chapel, FL, one of the fastest-growing parts of Pasco County. We deliver 10, 15, and 20-yard dumpsters to Seven Oaks, Wiregrass Ranch, Meadow Pointe, and the newer communities off SR-56, with a free quote upfront so there are no surprise fees. Book a day or two ahead, since we come from our Holiday yard.",
   introTitle: ["Built for ", "Growing Neighborhoods"],
   localIntro: [
     "Wesley Chapel has changed fast. Ranch and farm land along SR-56 and SR-54 turned into Wiregrass Ranch, Epperson, and dozens of subdivisions, plus the shopping around Tampa Premium Outlets and The Shops at Wiregrass. New neighbors mean new projects: finishing a bonus room, replacing builder carpet, or clearing a garage that's been a storage unit since closing day.",

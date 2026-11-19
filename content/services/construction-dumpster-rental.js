@@ -1,6 +1,5 @@
-import { lowestPrice, sizes } from "@/lib/site-config";
+import { siteConfig, sizes } from "@/lib/site-config";
 
-const priceList = sizes.map((s) => `${s.shortName.replace(" yd", "-yard")} $${s.price}`).join(", ");
 const ids = sizes.map((s) => s.id);
 const sizeList = `${ids.slice(0, -1).join(", ")}, or ${ids[ids.length - 1]}`;
 
@@ -9,7 +8,7 @@ const constructionDumpsterRental = {
   kind: "rental",
   serviceType: "Construction dumpster rental",
   title: "Construction Dumpster Rental in Pasco County, FL | Lupo",
-  description: `Construction dumpster rental in Pasco County, FL for contractors, roofers, and remodelers. Flat rates from $${lowestPrice}, disposal included.`,
+  description: "Construction dumpster rental in Pasco County, FL for contractors, roofers, and remodelers. Delivery and disposal included. Get a free quote.",
   keywords: [
     "construction dumpster rental",
     "construction dumpster Pasco County",
@@ -20,13 +19,13 @@ const constructionDumpsterRental = {
   hero: {
     eyebrow: "For contractors, roofers & remodelers · Pasco County, FL",
     title: ["Keep the Crew Working with ", "Construction Dumpster Rental"],
-    intro: `Lupo's construction dumpster rental gives contractors, roofers, and remodelers in New Port Richey and across Pasco County a flat-rate dump trailer on the job site. Pick a ${sizeList}-yard, starting at $${lowestPrice}. Delivery, pickup, and disposal up to the weight limit are included, and we can often deliver the same day.`,
+    intro: `Lupo's construction dumpster rental gives contractors, roofers, and remodelers in New Port Richey and across Pasco County a dump trailer on the job site. Pick a ${sizeList}-yard and get a free quote that covers delivery, pickup, and disposal up to the weight limit. We can often deliver the same day.`,
     image: "/clean-construction.webp",
     imageAlt: "New home under construction in Pasco County",
   },
   stakes: {
     title: ["Debris Shouldn't ", "Set the Schedule"],
-    intro: "On a job site, a late or overflowing dumpster costs labor hours, not just money.",
+    intro: "On a job site, a late or overflowing dumpster costs labor hours and throws off the schedule.",
     items: [
       { icon: "HardHat", title: "A crew with nowhere to toss", text: "Demo is done and the old material has nowhere to go but a pile on the lawn." },
       { icon: "Construction", title: "A yard that looks like a job site", text: "Debris stacked by the house bothers the homeowner and stretches out cleanup at the end." },
@@ -48,7 +47,7 @@ const constructionDumpsterRental = {
   values: {
     title: ["Why Contractors ", "Call Lupo"],
     items: [
-      { icon: "Tag", title: "One flat price per haul", text: "Delivery, pickup, and disposal up to the weight limit are in the number you book, so it's easy to bid." },
+      { icon: "Tag", title: "Upfront quotes", text: "Delivery, pickup, and disposal up to the weight limit are in your quote before we deliver, so it's easy to bid." },
       { icon: "Clock", title: "Often same-day delivery", text: "Call in the morning and we can often have a trailer on site that same day." },
       { icon: "Ruler", title: "Three sizes, one call", text: `${sizeList}-yard trailers, so you can match the dumpster to the phase of the job.` },
       { icon: "Users", title: "Talk to the owners", text: "You deal with Alex and Amanda directly, not a national dispatch line." },
@@ -56,7 +55,7 @@ const constructionDumpsterRental = {
   },
   proof: {
     title: ["Contractors Who ", "Keep Calling Back"],
-    intro: "Repeat customers say the same thing: fair prices, and we show up when we say we will.",
+    intro: "Repeat customers say the same thing: honest quotes, and we show up when we say we will.",
     reviewNames: ["Joseph S.", "David C.", "Kerry S."],
   },
   items: {
@@ -75,15 +74,15 @@ const constructionDumpsterRental = {
     eyebrow: "Construction dumpster rental in Pasco County, FL",
     title: "Less Hauling, More Building",
     paragraphs: [
-      "A roof tear-off in Hudson, a kitchen gut in Trinity, a bathroom remodel in Wesley Chapel: every job makes debris, and the crew needs somewhere to put it the moment demo starts. Lupo's construction dumpster rental gives contractors, roofers, and remodelers a flat-rate trailer on site so the work keeps moving.",
-      `Pick the ${sizeList}-yard, starting at $${lowestPrice}, with delivery, pickup, and disposal up to the weight limit included. We set the low-profile trailer on protective boards in the driveway or on the lot, often the same day you call. When it's full, call or text and we'll pull it.`,
+      "A roof tear-off in Hudson, a kitchen gut in Trinity, a bathroom remodel in Wesley Chapel: every job makes debris, and the crew needs somewhere to put it the moment demo starts. Lupo's construction dumpster rental gives contractors, roofers, and remodelers a trailer on site so the work keeps moving.",
+      `Pick the ${sizeList}-yard and call or text for a free quote, with delivery, pickup, and disposal up to the weight limit included. We set the low-profile trailer on protective boards in the driveway or on the lot, often the same day you call. When it's full, call or text and we'll pull it.`,
       "Running more than one site, or need a swap partway through a big job? Ask us. We're a family-owned company in Holiday, FL, serving Pasco, Pinellas, Hernando, and North Hillsborough, and we'll tell you honestly what we can schedule. A quick heads-up on the next phase of the job goes a long way.",
     ],
   },
   related: [
     { name: "20-Yard Dumpster", href: "/services/20-yard-dump-trailer", text: "Our largest trailer, the usual pick for roof tear-offs and big remodels." },
     { name: "Construction Debris Removal", href: "/services/construction-debris-removal", text: "Rather have our crew load it? We'll haul the debris pile for you." },
-    { name: "Dumpster Rental Pricing", href: "/dumpster-rental-pricing", text: "Every size and flat rate in one place, plus what's included." },
+    { name: "Sizes & Free Quotes", href: "/dumpster-rental-pricing", text: "Compare every size, see what's included, and get a quote." },
   ],
   posts: [
     { title: "What Size Dumpster Do I Need?", href: "/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size" },
@@ -98,7 +97,7 @@ const constructionDumpsterRental = {
     },
     {
       q: "How much does a construction dumpster cost?",
-      a: `Flat rates are ${priceList}. Delivery, pickup, and disposal up to the included weight are part of the price.`,
+      a: `It depends on the size, how heavy the debris is, the material, and the job location. Lupo gives a free, upfront quote that includes delivery, pickup, and disposal up to the weight limit, so you can bid with confidence. Call or text ${siteConfig.phone} or request one online.`,
     },
     {
       q: "Can you swap out a full dumpster during a job?",

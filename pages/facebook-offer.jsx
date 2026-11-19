@@ -10,8 +10,8 @@ import { facebookOffer, getSize, rental, siteConfig } from "@/lib/site-config";
 
 const size = getSize(facebookOffer.sizeId);
 const sizeLabel = size.shortName.replace(" yd", "-yard");
-const title = `$${facebookOffer.price} ${sizeLabel} Dumpster ${facebookOffer.label} | Lupo`;
-const description = `Claim our ${facebookOffer.label.toLowerCase()}: a ${sizeLabel} dumpster for $${facebookOffer.price} flat with ${facebookOffer.days} days to fill. Delivery, pickup, and disposal included.`;
+const title = `Free ${sizeLabel} Dumpster Quote | Lupo Dumpster Rentals`;
+const description = `Get a free quote on a ${sizeLabel} dumpster with ${facebookOffer.days} days to fill. Delivery, pickup, and disposal included. Pasco County & Tampa Bay.`;
 
 const included = [
   `${size.name} (${size.dimensions})`,
@@ -22,16 +22,16 @@ const included = [
 
 const faqs = [
   {
-    q: "Who can claim this offer?",
-    a: `Anyone booking a ${sizeLabel} dumpster in our Pasco County and Tampa Bay service area through this page. Mention the ${facebookOffer.label.toLowerCase()} if you call.`,
+    q: "Who can get a quote?",
+    a: `Anyone in our Pasco County and Tampa Bay service area. Fill out the form or call or text ${siteConfig.phone}, and mention you saw us on Facebook.`,
   },
   {
-    q: "What's included in the price?",
+    q: "What's included in my quote?",
     a: `${included.join(", ")}. Extra days or going over the weight limit are quoted before delivery.`,
   },
   {
     q: "What if I need a bigger dumpster?",
-    a: "Tell us when we call and we'll quote the 15 or 20-yard at our regular flat rate instead.",
+    a: "Tell us when we call and we'll quote the 15 or 20-yard instead.",
   },
 ];
 
@@ -48,23 +48,23 @@ export default function FacebookOffer() {
       </Head>
 
       <PageHero
-        eyebrow={`${facebookOffer.label} · Pasco County & Tampa Bay`}
+        eyebrow="Free quote · Pasco County & Tampa Bay"
         title={
           <>
-            Your {sizeLabel} Dumpster for <Highlight tone="dark">${facebookOffer.price} Flat</Highlight>
+            Your {sizeLabel} Dumpster, <Highlight tone="dark">Quoted Free</Highlight>
           </>
         }
-        intro={`Get a ${size.name.toLowerCase()} delivered to your driveway with ${facebookOffer.days} days to fill it and ${size.weight}. Delivery, pickup, and disposal are included, so the price you claim is the price you pay.`}
+        intro={`Get a ${size.name.toLowerCase()} delivered to your driveway with ${facebookOffer.days} days to fill it and ${size.weight}. Delivery, pickup, and disposal are included, so the price we quote is the price you pay.`}
         onBook={scrollToForm}
         aside={
           <QuoteCard
-            service={`${size.name} rental (${facebookOffer.label}, $${facebookOffer.price})`}
-            title={`Claim Your $${facebookOffer.price} Dumpster`}
-            intro="Leave your details and we'll call or text to confirm your address and delivery date."
+            service={`${size.name} quote (Facebook)`}
+            title="Get Your Free Quote"
+            intro="Leave your details and we'll call or text with your quote and to confirm your delivery date."
             detailsLabel="What's the project?"
             requireDetails={false}
             placeholder="Example: garage cleanout, starting Saturday"
-            submitLabel={`Claim My $${facebookOffer.price} Dumpster`}
+            submitLabel="Get My Free Quote"
             thankYouQuery={{}}
             source="Facebook offer page"
           />
@@ -78,7 +78,7 @@ export default function FacebookOffer() {
             eyebrow="What you get"
             title={
               <>
-                Everything Included for <Highlight>${facebookOffer.price}</Highlight>
+                Everything Included in <Highlight>Your Quote</Highlight>
               </>
             }
           />
@@ -98,13 +98,13 @@ export default function FacebookOffer() {
         </div>
       </section>
 
-      <PlanSteps onBook={scrollToForm} label={`Claim My $${facebookOffer.price} Dumpster`} />
+      <PlanSteps onBook={scrollToForm} label="Get My Free Quote" />
       <GuideProof />
-      <FaqSection id="offer-faq-title" className="bg-white" title={<>Offer <Highlight>FAQs</Highlight></>} items={faqs} />
+      <FaqSection id="offer-faq-title" className="bg-white" title={<>Quote <Highlight>FAQs</Highlight></>} items={faqs} />
       <CtaBand
         onBook={scrollToForm}
-        label={`Claim My $${facebookOffer.price} Dumpster`}
-        text={`${size.name}, ${facebookOffer.days} days, $${facebookOffer.price} flat. Delivery, pickup, and disposal included.`}
+        label="Get My Free Quote"
+        text={`${size.name}, ${facebookOffer.days} days to fill. Delivery, pickup, and disposal included. Get your free quote today.`}
       />
     </>
   );

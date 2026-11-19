@@ -80,7 +80,7 @@ right-of-way…
 | `title` | ✅ | ≤ 60 chars; question format works well. |
 | `description` | ✅ | ≤ 155 chars. |
 | `image` / `imageAlt` | ✅ | Unique per post; `/images/blog/<topic>.webp`, ~1200×630. |
-| `category` | ✅ *(new)* | One of: **Sizing & Pricing · Permits & Rules · Projects & How-To · Junk Removal & Cleanouts · Local Guides · Storm & Hurricane** |
+| `category` | ✅ *(new)* | One of: **Sizing & Costs · Permits & Rules · Projects & How-To · Junk Removal & Cleanouts · Local Guides · Storm & Hurricane** |
 | `readTime` | ✅ *(new)* | ~200 wpm. |
 | `keywords` | ✅ *(new)* | 4–8; primary first. Rendered into `<meta name="keywords">` and schema `keywords`. |
 

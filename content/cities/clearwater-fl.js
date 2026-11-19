@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const clearwater = {
   metaDescription:
-    `Dumpster rental in Clearwater, FL from $${lowestPrice} flat, disposal included. Dumpsters for condos, rentals, and homes from the beach to Countryside.`,
+    "Dumpster rental in Clearwater, FL with a free upfront quote, disposal included. Dumpsters for condos, rentals, and homes from the beach to Countryside.",
   keywords: [
     "dumpster rental Clearwater",
     "Clearwater dumpster rental",
@@ -12,7 +10,7 @@ const clearwater = {
   ],
   h1Desire: "Turn Over Your Property Faster",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters across Clearwater, FL, from Clearwater Beach and Island Estates to downtown and Countryside, at flat prices starting at $${lowestPrice}. Clearwater is the Pinellas County seat, and our Holiday yard is about 35 minutes from most of the city, a little longer out to the beach.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters across Clearwater, FL, from Clearwater Beach and Island Estates to downtown and Countryside. Send the address and project for a free quote, so you know the price before the trailer crosses the causeway. Clearwater is the Pinellas County seat, and our Holiday yard is about 35 minutes from most of the city, a little longer out to the beach.",
   introTitle: ["Clearwater Dumpsters for ", "Homes, Condos, and Rentals"],
   localIntro: [
     "Clearwater covers a lot of ground. There are beach condos and vacation rentals on Clearwater Beach and Sand Key, older neighborhoods near downtown, and larger family homes up in Countryside. The kind of job we haul changes with the address, and so does the way we get a trailer in and back out of a tight spot.",
@@ -42,7 +40,7 @@ const clearwater = {
     },
     {
       q: "Do you work with Clearwater landlords and property managers?",
-      a: "Yes. We can coordinate with a manager or tenant on site, and you'll know the cost before delivery.",
+      a: "Yes. We can coordinate with a manager or tenant on site, and you'll get a free quote, so you know the cost before delivery.",
     },
     {
       q: "How long does it take to get a dumpster to Clearwater?",

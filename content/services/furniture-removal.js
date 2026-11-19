@@ -1,10 +1,12 @@
+import { siteConfig } from "@/lib/site-config";
+
 const furnitureRemoval = {
   path: "/services/furniture-removal",
   kind: "junk",
   serviceType: "Furniture removal",
   title: "Furniture Removal in Pasco County, FL | Lupo Dumpster",
   description:
-    "Furniture removal in Pasco County, FL. We carry out couches, sectionals, recliners, and dressers and donate usable pieces when we can. Firm price first.",
+    "Furniture removal in Pasco County, FL. We carry out couches, sectionals, recliners, and dressers and donate usable pieces when we can. Free quote first.",
   keywords: [
     "furniture removal Pasco County",
     "furniture removal near me",
@@ -13,13 +15,13 @@ const furnitureRemoval = {
     "old furniture pickup",
     "furniture hauling",
   ],
-  quoteTitle: "Get Your Furniture Removal Price",
+  quoteTitle: "Get Your Free Furniture Removal Quote",
   quotePlaceholder: "e.g. Sectional sofa and a recliner downstairs, plus a dresser from an upstairs bedroom",
   hero: {
     eyebrow: "Furniture removal · Pasco County, FL",
     title: ["Get Your Room Back with ", "Furniture Removal in Pasco County"],
     intro:
-      "Our furniture removal crew carries couches, sectionals, recliners, dressers, and mattresses out of homes in Trinity, Hudson, and across Pasco County. We handle the stairs and tight doorways, load everything, and set aside pieces in good shape for donation whenever we can. You get a firm price first.",
+      "Our furniture removal crew carries couches, sectionals, recliners, dressers, and mattresses out of homes in Trinity, Hudson, and across Pasco County. We handle the stairs and tight doorways, load everything, and set aside pieces in good shape for donation whenever we can. Send a few photos for a free quote first.",
     image: "/images/services/furniture-removal/furniture-removal-crew-pasco-county-fl.webp",
     imageAlt: "Furniture removal crew carrying a dresser to a trailer loaded with a couch and bed frame in Pasco County, FL",
   },
@@ -50,7 +52,7 @@ const furnitureRemoval = {
       { icon: "Sofa", title: "Big pieces, tight spaces", text: "Sleeper sofas, sectionals, and armoires come out without forcing them through the frame." },
       { icon: "ShieldCheck", title: "Careful with walls and floors", text: "We pull drawers, take off legs when we can, and take the slower path past fresh paint." },
       { icon: "HeartHandshake", title: "Donated when it's usable", text: "Pieces in good shape are set aside for donation whenever we can, instead of heading straight to disposal." },
-      { icon: "Tag", title: "One piece or a whole house", text: "A single recliner or every room after a move, priced firm before we schedule." },
+      { icon: "Tag", title: "One piece or a whole house", text: "A single recliner or every room after a move, with a free quote before we schedule." },
     ],
   },
   proof: {
@@ -60,12 +62,12 @@ const furnitureRemoval = {
   },
   steps: [
     { title: "Show us the pieces", text: "Send a photo of each piece or a quick list, and let us know which floor it's on." },
-    { title: "Pick your time", text: "We'll confirm a firm price and a pickup window that fits your schedule." },
+    { title: "Pick your time", text: "We'll send a free quote and set a pickup window that fits your schedule." },
     { title: "We carry it out", text: "Our crew moves it out, sets aside what can be donated, and hauls the rest." },
   ],
   pricing: {
-    title: ["Furniture Removal Pricing, ", "Explained"],
-    intro: "You pay for what we take, not a vague estimate. Here's what sets the price.",
+    title: ["What Goes Into ", "Your Free Quote"],
+    intro: "Your quote is based on what we take, not a vague estimate. Here's what goes into it.",
     factors: [
       { title: "Number and size of pieces", text: "A loveseat takes less trailer space than a sectional and a king bed frame." },
       { title: "Stairs and access", text: "Second-floor bedrooms, narrow halls, and condo elevators add carry time." },
@@ -89,7 +91,7 @@ const furnitureRemoval = {
     title: "From Crowded Room to Clear Floor",
     paragraphs: [
       "Maybe you're moving into a smaller place in Trinity, swapping a worn-out sectional in Wesley Chapel, or getting a vacation rental in Hudson ready for new guests. Either way, the old furniture has to go somewhere. Lupo Dumpster Rentals provides furniture removal in every corner of Pasco County, from Holiday to Zephyrhills, and in nearby towns like Oldsmar and Dunedin.",
-      "You send photos or a list, we give you a firm price, and our crew carries every piece out, from the couch in the living room to the dresser at the top of the stairs. We set aside furniture that's still in good shape for donation whenever we can, and send metal frames to recycling. Everything else goes to proper disposal.",
+      "You send photos or a list, we give you a free quote, and our crew carries every piece out, from the couch in the living room to the dresser at the top of the stairs. We set aside furniture that's still in good shape for donation whenever we can, and send metal frames to recycling. Everything else goes to proper disposal.",
       "No borrowing a truck, no recruiting friends with the promise of pizza, and no couch sitting by the road for a week. Just an empty room ready for whatever comes next.",
     ],
   },
@@ -108,7 +110,7 @@ const furnitureRemoval = {
   faqs: [
     {
       q: "How much does furniture removal cost?",
-      a: "It depends on how many pieces you have, how big they are, and how hard they are to get out. Send photos and we'll give you a firm price before we schedule.",
+      a: `It depends on how many pieces you have, how big they are, and how hard they are to get out. Send photos and we'll give you a free, upfront quote before we schedule. Call or text ${siteConfig.phone} or request a quote online.`,
     },
     {
       q: "Do you donate furniture?",
@@ -127,7 +129,7 @@ const furnitureRemoval = {
       a: "Yes. We clear desks, chairs, filing cabinets, and conference tables from offices and small businesses.",
     },
   ],
-  ctaText: "Show us what needs to go and get a firm price. We'll carry it out, donate what we can, and haul the rest.",
+  ctaText: "Show us what needs to go and get a free quote. We'll carry it out, donate what we can, and haul the rest.",
 };
 
 export default furnitureRemoval;

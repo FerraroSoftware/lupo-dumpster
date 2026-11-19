@@ -37,12 +37,12 @@ function waitForRecaptcha() {
  */
 export function QuoteCard({
   service = "Junk removal",
-  title = "Get Your Junk Removal Price",
+  title = "Get Your Free Junk Removal Quote",
   placeholder = "Example: old couch, two mattresses, and about 10 boxes in the garage",
-  intro = "Tell us what needs to go. We'll text you a firm price before anything is scheduled.",
+  intro = "Tell us what needs to go. We'll text you a free, upfront quote before anything is scheduled.",
   detailsLabel = "What needs to go?",
   requireDetails = true,
-  submitLabel = "Get My Price",
+  submitLabel = "Get My Free Quote",
   thankYouQuery = { service: "quote" },
   source,
 }) {

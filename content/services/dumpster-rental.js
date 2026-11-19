@@ -1,13 +1,11 @@
-import { lowestPrice, sizes } from "@/lib/site-config";
-
-const priceList = sizes.map((s) => `${s.shortName.replace(" yd", "-yard")} $${s.price}`).join(", ");
+import { siteConfig } from "@/lib/site-config";
 
 const dumpsterRental = {
   path: "/services/dumpster-rental",
   kind: "rental",
   serviceType: "Dumpster rental",
   title: "Dumpster Rental in Pasco County, FL | Lupo Dumpster",
-  description: `Flat-rate dumpster rental in Pasco County, FL: ${priceList}. Delivery, pickup, and disposal included. Book online in a minute.`,
+  description: "Dumpster rental in Pasco County, FL: 10, 15, and 20-yard dump trailers. Delivery, pickup, and disposal in one upfront quote. Get a free quote.",
   keywords: [
     "dumpster rental Pasco County",
     "dumpster rental near me",
@@ -19,26 +17,26 @@ const dumpsterRental = {
   hero: {
     eyebrow: "Roll-off dumpster rental · Pasco County, FL",
     title: ["Finish Your Project Faster with ", "Dumpster Rental in Pasco County"],
-    intro: `Lupo delivers 10, 15, and 20-yard dumpsters to homes and job sites across Pasco County at one flat price, starting at $${lowestPrice}. Delivery, pickup, and disposal up to the weight limit are included, and we can often drop it off the same day you call.`,
+    intro: "Lupo delivers 10, 15, and 20-yard dumpsters to homes and job sites across Pasco County. Get a free, upfront quote that includes delivery, pickup, and disposal up to the weight limit, and we can often drop it off the same day you call.",
     image: "/dumpster-rental-pros.webp",
     imageAlt: "Lupo dumpster rental trailer parked in a Pasco County driveway",
   },
   stakes: {
-    title: ["A Stalled Project ", "Costs More Than a Dumpster"],
+    title: ["A Stalled Project ", "Is Worse Than a Messy One"],
     intro: "Debris piles up fast. Without a place to put it, the job slows down and the mess spreads.",
     items: [
       { icon: "CalendarX", title: "Endless dump runs", text: "Every trip to the landfill is an hour you're not working on the project." },
       { icon: "BadgeDollarSign", title: "Surprise fees", text: "Some companies quote low, then add delivery, fuel, and disposal to the final bill." },
       { icon: "Clock", title: "No-show deliveries", text: "The crew is ready on Monday and the dumpster shows up Thursday." },
     ],
-    closing: "Your project deserves a dumpster that shows up on time at the price you were quoted.",
+    closing: "Your project deserves a dumpster that shows up on time, with no surprise fees on the bill.",
   },
   about: {
     eyebrow: "How our dumpsters work",
     title: ["Dump-Trailer Dumpsters, ", "Delivered to Your Driveway"],
     paragraphs: [
       "Our dumpsters are low-profile dump trailers in three sizes: 10, 15, and 20 yards. We back it into your driveway or job site, set it on protective boards, and leave it for you to fill at your own pace.",
-      "When you're done, call or text and we haul it away. One flat price covers delivery, pickup, and disposal up to the included weight, so the number you book is the number you pay.",
+      "When you're done, call or text and we haul it away. Your quote covers delivery, pickup, and disposal up to the included weight, so you'll know your price before we deliver.",
     ],
     perfectFor: ["Home remodels", "Roof replacements", "Garage cleanouts", "Moving and downsizing", "Estate cleanouts", "Yard projects"],
     image: "/trailer-2.webp",
@@ -53,14 +51,14 @@ const dumpsterRental = {
     eyebrow: "Dumpster rental in Pasco County, FL",
     title: "The Easy Part of Your Project",
     paragraphs: [
-      "From kitchen remodels in Trinity to roof tear-offs in Hudson and estate cleanouts in New Port Richey, every project makes more debris than you expect. Lupo Dumpster Rentals delivers flat-rate 10, 15, and 20-yard dumpsters across Pasco County and nearby Pinellas, Hernando, and North Hillsborough, often on the same day you call.",
-      `Pick a size, pick a date, and see your price before you book. Rentals start at $${lowestPrice} with delivery, pickup, and disposal up to the weight limit included. We place every dumpster on protective boards, you load it at your own pace, and we haul it away when you're done. You get to focus on the project, not the trash.`,
+      "From kitchen remodels in Trinity to roof tear-offs in Hudson and estate cleanouts in New Port Richey, every project makes more debris than you expect. Lupo Dumpster Rentals delivers 10, 15, and 20-yard dumpsters across Pasco County and nearby Pinellas, Hernando, and North Hillsborough, often on the same day you call.",
+      "Tell us about the project and we'll quote it upfront, with delivery, pickup, and disposal up to the weight limit included. We place every dumpster on protective boards, you load it at your own pace, and we haul it away when you're done. You get to focus on the project, not the trash.",
     ],
   },
   related: [
     { name: "Construction Dumpster Rental", href: "/services/construction-dumpster-rental", text: "Dumpsters for contractors, roofers, and remodelers who need reliable drop-offs and swaps." },
     { name: "Junk Removal", href: "/services/junk-removal", text: "Rather not do the loading? Our crew lifts, loads, and hauls it away for you." },
-    { name: "Dumpster Rental Pricing", href: "/dumpster-rental-pricing", text: "Every price, what's included, and what can change the cost, all in one place." },
+    { name: "Sizes & Free Quotes", href: "/dumpster-rental-pricing", text: "Compare sizes, see what's included, and learn what affects your quote." },
   ],
   posts: [
     { title: "What Size Dumpster Do I Need?", href: "/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size" },
@@ -71,7 +69,7 @@ const dumpsterRental = {
   faqs: [
     {
       q: "How much does a dumpster rental cost in Pasco County?",
-      a: `Lupo's flat rates are ${priceList}. Every price includes delivery, pickup, and disposal up to the included weight limit.`,
+      a: `It depends on the dumpster size, the weight and type of material, how long you keep it, and where you are. Lupo gives you a free, upfront quote that includes delivery, pickup, and disposal up to the weight limit. Call or text ${siteConfig.phone} or request a quote online.`,
     },
     {
       q: "What size dumpster do I need?",

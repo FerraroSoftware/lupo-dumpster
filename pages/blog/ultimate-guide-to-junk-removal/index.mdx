@@ -1,6 +1,6 @@
 import Bloglayout from "../../../components/Bloglayout";
 import Head from "next/head";
-import { lowestPrice, siteConfig, telHref } from "@/lib/site-config";
+import { siteConfig, telHref } from "@/lib/site-config";
 
 export const article = {
   date: "2024-01-14",
@@ -10,7 +10,7 @@ export const article = {
   image: "/junk-removal.webp",
   imageAlt: "Lupo junk removal trailer loaded with furniture and debris",
   category: "Junk Removal & Cleanouts",
-  updated: "2026-10-25",
+  updated: "2026-11-19",
   keywords: [
     "junk removal",
     "junk removal services",
@@ -22,11 +22,11 @@ export const article = {
   faqs: [
     {
       q: "Is junk removal cheaper than renting a dumpster?",
-      a: `For a few large items, junk removal is often simpler. For a big cleanout you can load yourself, a dumpster is usually cheaper. Lupo's dumpsters start at $${lowestPrice}.`,
+      a: `For a few large items, junk removal is often simpler. For a big cleanout you can load yourself, a dumpster usually works out cheaper. Call or text ${siteConfig.phone} and we'll give you a free quote on both so you can compare.`,
     },
     {
       q: "How do I get a junk removal price?",
-      a: `Call or text ${siteConfig.phone} with photos of what needs to go. We'll give you a firm price before we start.`,
+      a: `Call or text ${siteConfig.phone} with a quick description or photos of what needs to go. We'll give you a free quote before we start.`,
     },
     {
       q: "What should I do before the crew arrives?",
@@ -37,7 +37,7 @@ export const article = {
 
 <Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
 
-**Quick answer:** Junk removal is a service where a crew comes to your home, loads your unwanted items, and hauls them away. You don't lift anything. The price depends on how much you're getting rid of. Lupo provides [junk removal](/services/junk-removal) across Pasco County and gives you a firm price before any work starts.
+**Quick answer:** Junk removal is a service where a crew comes to your home, loads your unwanted items, and hauls them away. You don't lift anything. The price depends on how much you're getting rid of. Lupo provides [junk removal](/services/junk-removal) across Pasco County with a free quote after a quick description or photos, so you know the price before any work starts.
 
 ## Understanding Junk Removal
 
@@ -177,9 +177,9 @@ When considering junk removal, consider doing it yourself versus hiring professi
 | Who does the loading | Our crew | You, at your own pace |
 | Best for | A few bulky items or a single room | Remodels and big cleanouts |
 | Timeline | Done in one visit | Keep it on-site while you work |
-| Price | Firm quote before we start | Flat rate from ${lowestPrice}, disposal included |
+| Quote | Free quote from a description or photos | Free upfront quote, with delivery, pickup, and disposal included |
 
-Not sure which fits? Call <a href={telHref}>{siteConfig.phone}</a> and we'll tell you honestly which one costs less for your job.
+Not sure which fits? Call <a href={telHref}>{siteConfig.phone}</a> and we'll tell you honestly which one makes more sense for your job.
 
 ## Tips for Reducing Junk Accumulation
 
@@ -193,17 +193,17 @@ Preventing junk accumulation can save you time, money, and effort in the long ru
 
 Junk removal services offer a convenient and efficient way to clear out unwanted items, reclaiming your space and peace of mind. By understanding the process, preparing adequately, and choosing the right service provider, you can ensure a smooth and hassle-free experience. Remember, reducing junk accumulation starts with mindful consumption and regular decluttering, making future junk removal tasks more accessible and less frequent.
 
-Ready to clear the clutter and reclaim your space? Contact our professional junk removal team for a firm price before we start, and see how we can help you achieve a cleaner, more organized environment. Whether you're looking for [specific junk removal services](/services/junk-removal-new-port-richey-fl) or need advice on managing waste, we're here to assist you at every step.
+Ready to clear the clutter and reclaim your space? Contact our professional junk removal team for a free, no-obligation quote, and see how we can help you achieve a cleaner, more organized environment. Whether you're looking for [specific junk removal services](/services/junk-removal-new-port-richey-fl) or need advice on managing waste, we're here to assist you at every step.
 
 ## Frequently Asked Questions
 
 ### Is junk removal cheaper than renting a dumpster?
 
-For a few large items, junk removal is often simpler. For a big cleanout you can load yourself, a dumpster is usually cheaper. Lupo's dumpsters start at ${lowestPrice}.
+For a few large items, junk removal is often simpler. For a big cleanout you can load yourself, a dumpster usually works out cheaper. Call or text {siteConfig.phone} and we'll give you a free quote on both so you can compare.
 
 ### How do I get a junk removal price?
 
-Call or text {siteConfig.phone} with photos of what needs to go. We'll give you a firm price before we start.
+Call or text {siteConfig.phone} with a quick description or photos of what needs to go. We'll give you a free quote before we start.
 
 ### What should I do before the crew arrives?
 

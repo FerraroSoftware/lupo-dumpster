@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ArrowRight, ChevronDown, Clock, Menu, Phone, Star, X } from "lucide-react";
-import { lowestPrice, navigation, siteConfig, telHref } from "@/lib/site-config";
+import { navigation, siteConfig, telHref } from "@/lib/site-config";
 import logo from "@/public/images/brand/lupo-logo.png";
 
 const focusRing =
@@ -165,9 +165,9 @@ function DesktopNav({ isActive }) {
               ))}
               <div className="flex flex-col justify-between bg-ink p-7 text-white">
                 <div>
-                  <p className="font-display text-2xl font-bold leading-tight">Flat prices from ${lowestPrice}.</p>
+                  <p className="font-display text-2xl font-bold leading-tight">Free, upfront quotes.</p>
                   <p className="mt-2 text-sm text-zinc-300">
-                    Delivery, pickup, and disposal up to the weight limit, all in one price.
+                    Delivery, pickup, and disposal up to the weight limit, included in your quote.
                   </p>
                 </div>
                 <div className="mt-6 space-y-3">
@@ -176,14 +176,14 @@ function DesktopNav({ isActive }) {
                     onClick={() => setOpen("")}
                     className="flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-brand px-4 font-bold text-white transition-colors hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                   >
-                    Book Your Dumpster <ArrowRight aria-hidden className="h-4 w-4" />
+                    Get a Free Quote <ArrowRight aria-hidden className="h-4 w-4" />
                   </Link>
                   <Link
                     href="/dumpster-rental-pricing"
                     onClick={() => setOpen("")}
                     className="block text-center text-sm font-semibold text-zinc-200 underline-offset-4 hover:underline"
                   >
-                    See all pricing
+                    Compare sizes
                   </Link>
                 </div>
               </div>
@@ -293,7 +293,7 @@ function MobileMenu({ open, onClose, toggleRef, isActive }) {
             onClick={onClose}
             className="flex min-h-[52px] items-center justify-center gap-2 rounded-lg bg-brand text-lg font-bold text-white hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
-            Book Your Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+            Get a Free Quote <ArrowRight aria-hidden className="h-5 w-5" />
           </Link>
           <a
             href={telHref}
@@ -393,7 +393,7 @@ export function SiteHeader() {
               href={navigation.bookHref}
               className={`hidden min-h-[44px] items-center gap-2 whitespace-nowrap rounded-lg bg-brand px-5 font-bold text-white shadow-lg shadow-brand/30 transition-colors hover:bg-brand-hover sm:flex ${focusRing}`}
             >
-              Book Your Dumpster <ArrowRight aria-hidden className="h-4 w-4" />
+              Get a Free Quote <ArrowRight aria-hidden className="h-4 w-4" />
             </Link>
             <button
               ref={toggleRef}

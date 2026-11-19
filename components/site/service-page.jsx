@@ -52,14 +52,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BookingCard } from "./booking-card";
 import { QuoteCard } from "./quote-card";
 import { PageHero } from "./page-hero";
-import { container, CtaBand, IconChip, PlanSteps, PriceCards, ReviewCard, ValueProps } from "./home-sections";
+import { container, CtaBand, IconChip, PlanSteps, SizeCards, ReviewCard, ValueProps } from "./home-sections";
 import { FaqSection } from "./faq-section";
 import { Highlight, SectionHeading } from "./section-heading";
 import { cn } from "@/lib/utils";
 import {
   acceptedItems,
   getSize,
-  lowestPrice,
   prohibitedItems,
   reviews,
   serviceAreas,
@@ -92,14 +91,14 @@ const icon = (name) => ICONS[name] || Check;
 
 const junkValues = [
   { icon: "Users", title: "We do all the lifting", text: "Our crew carries everything out, from the attic to the curb. You just point." },
-  { icon: "Tag", title: "Firm price before we start", text: "Send a description or a few photos and we'll give you a price before anything is scheduled." },
+  { icon: "Tag", title: "Free quote before we start", text: "Send a description or a few photos and we'll give you a free, upfront quote before anything is scheduled." },
   { icon: "Recycle", title: "Donate and recycle first", text: "Usable items and metals are set aside for donation or recycling whenever we can." },
   { icon: "Home", title: "Local and owner-run", text: "A family business from Holiday, FL. You deal with the Lupos, not a franchise call center." },
 ];
 
 const junkSteps = [
   { title: "Tell us what needs to go", text: "Fill out the quote form, or call or text a few photos. It takes about two minutes." },
-  { title: "Get a firm price", text: "We'll quote the job up front, then pick a time that works for you." },
+  { title: "Get your free quote", text: "We'll quote the job up front at no cost, then pick a time that works for you." },
   { title: "We load it and haul it", text: "Our crew does the lifting, sweeps up, and hauls it all away. Your space is clear." },
 ];
 
@@ -233,9 +232,8 @@ function SizeSpotlight({ size, data, onBook }) {
       <Section id="size-title" tone="zinc">
         <div className={container}>
           <SectionHeading id="size-title" eyebrow={`${size.name} at a glance`} title={<Titled parts={data.title} />} intro={data.intro} />
-          <dl className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-14 grid gap-4 sm:grid-cols-3">
             {[
-              { label: "Flat price", value: `$${size.price}` },
               { label: "Dimensions", value: size.dimensions },
               { label: "Holds", value: size.loads.replace("About ", "") },
               { label: "Weight included", value: size.weight.replace(" included", "") },
@@ -285,7 +283,7 @@ function SizeSpotlight({ size, data, onBook }) {
               onClick={() => onBook(size.id)}
               className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg bg-brand px-7 text-base font-bold text-white shadow-lg shadow-brand/20 hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-              Book the {size.name} · ${size.price} <ArrowRight aria-hidden className="h-5 w-5" />
+              Get a Free Quote on the {size.name} <ArrowRight aria-hidden className="h-5 w-5" />
             </button>
           </div>
         </div>
@@ -298,7 +296,7 @@ function SizeSpotlight({ size, data, onBook }) {
               <caption className="sr-only">Lupo dumpster sizes compared</caption>
               <thead className="bg-zinc-100 text-sm">
                 <tr>
-                  {["Size", "Dimensions", "Holds", "Weight included", "Flat price"].map((h) => (
+                  {["Size", "Dimensions", "Holds", "Weight included"].map((h) => (
                     <th key={h} scope="col" className="px-5 py-4 font-semibold text-zinc-600">
                       {h}
                     </th>
@@ -320,7 +318,6 @@ function SizeSpotlight({ size, data, onBook }) {
                     <td className="px-5 py-4 text-zinc-700">{s.dimensions}</td>
                     <td className="px-5 py-4 text-zinc-700">{s.loads.replace("About ", "")}</td>
                     <td className="px-5 py-4 text-zinc-700">{s.weight.replace(" included", "")}</td>
-                    <td className="px-5 py-4 font-semibold text-ink">${s.price}</td>
                   </tr>
                 ))}
               </tbody>
@@ -348,7 +345,7 @@ function JunkPricing({ data }) {
   return (
     <Section id="pricing-title" tone="zinc">
       <div className={container}>
-        <SectionHeading id="pricing-title" eyebrow="How pricing works" title={<Titled parts={data.title} />} intro={data.intro} />
+        <SectionHeading id="pricing-title" eyebrow="How your quote works" title={<Titled parts={data.title} />} intro={data.intro} />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {data.factors.map((f, i) => (
             <article key={f.title} className="rounded-2xl bg-white p-7">
@@ -366,14 +363,14 @@ function JunkPricing({ data }) {
             <span className="font-display text-2xl font-bold">Rather load it yourself?</span>
             <br />
             <span className="text-zinc-300">
-              A dumpster rental starts at ${lowestPrice} flat, with delivery, pickup, and disposal included.
+              Get a free quote on a dumpster rental, with delivery, pickup, and disposal included.
             </span>
           </p>
           <Link
             href="/dumpster-rental-pricing"
             className="inline-flex min-h-[48px] shrink-0 items-center gap-2 rounded-lg bg-white px-5 font-bold text-ink hover:bg-zinc-200"
           >
-            See dumpster prices <ArrowRight aria-hidden className="h-4 w-4" />
+            Compare dumpster sizes <ArrowRight aria-hidden className="h-4 w-4" />
           </Link>
         </div>
         )}
@@ -552,7 +549,6 @@ function NprCallout({ text }) {
 }
 
 function serviceSchema(data, url) {
-  const isRental = data.kind !== "junk";
   const size = data.sizeId && getSize(data.sizeId);
   const graph = [
     {
@@ -564,35 +560,8 @@ function serviceSchema(data, url) {
       url,
       provider: { "@id": `${BASE_URL}/#organization` },
       areaServed: serviceAreas.map((a) => ({ "@type": "AdministrativeArea", name: `${a.county}, FL` })),
-      ...(isRental && !size && {
-        offers: {
-          "@type": "AggregateOffer",
-          priceCurrency: "USD",
-          lowPrice: Math.min(...sizes.map((s) => s.price)),
-          highPrice: Math.max(...sizes.map((s) => s.price)),
-          offerCount: sizes.length,
-        },
-      }),
     },
   ];
-  if (size) {
-    graph.push({
-      "@type": "Product",
-      "@id": `${url}#product`,
-      name: `${size.name} Rental`,
-      description: `${size.dimensions}. ${size.loads}. ${size.weight}. Delivery, pickup, and disposal up to the weight limit included.`,
-      brand: { "@type": "Brand", name: siteConfig.name },
-      image: `${BASE_URL}${size.image || data.hero.image}`,
-      offers: {
-        "@type": "Offer",
-        price: size.price,
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-        url,
-        seller: { "@id": `${BASE_URL}/#organization` },
-      },
-    });
-  }
   return { "@context": "https://schema.org", "@graph": graph };
 }
 
@@ -606,8 +575,8 @@ export default function ServicePage({ data }) {
   const size = data.sizeId && getSize(data.sizeId);
   const url = `${BASE_URL}${data.path}`;
   const cta = isJunk
-    ? { label: data.ctaLabel || "Get Your Price", href: "#quote" }
-    : { label: "Book Your Dumpster" };
+    ? { label: data.ctaLabel || "Get a Free Quote", href: "#quote" }
+    : { label: "Get a Free Quote" };
   const scrollToQuote = () => document.getElementById("quote")?.scrollIntoView({ behavior: "smooth", block: "start" });
   const onPrimary = isJunk ? scrollToQuote : scrollToBooking;
   const selected = selectedSize || data.sizeId || "";
@@ -673,7 +642,7 @@ export default function ServicePage({ data }) {
       ) : isJunk ? (
         <JunkPricing data={data.pricing} />
       ) : (
-        <PriceCards onSelect={bookSize} />
+        <SizeCards onSelect={bookSize} />
       )}
       <ItemsLists data={data.items} />
       <Story data={data.story} />
@@ -693,7 +662,7 @@ export default function ServicePage({ data }) {
         text={
           data.ctaText ||
           (isJunk
-            ? "Tell us what needs to go and get a firm price. Our crew does the lifting, and your space is clear."
+            ? "Tell us what needs to go and get a free, upfront quote. Our crew does the lifting, and your space is clear."
             : undefined)
         }
       />

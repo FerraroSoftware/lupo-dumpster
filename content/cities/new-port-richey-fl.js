@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const newPortRichey = {
   metaDescription:
-    `Flat-rate dumpster rental in New Port Richey, FL. 10, 15 & 20-yard dumpsters from $${lowestPrice} with delivery, pickup, and disposal included.`,
+    "Dumpster rental in New Port Richey, FL from a local Holiday crew. 10, 15 & 20-yard dumpsters, with a free quote covering delivery, pickup & disposal.",
   keywords: [
     "dumpster rental New Port Richey",
     "New Port Richey dumpster rental",
@@ -12,7 +10,7 @@ const newPortRichey = {
   ],
   h1Desire: "Get Your Space Back",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters across New Port Richey, FL, from downtown to Gulf Harbors and Seven Springs, at one flat price starting at $${lowestPrice}. Our yard in Holiday is minutes away, so we can often drop your dumpster the same day you call anywhere in western Pasco County.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters across New Port Richey, FL, from downtown to Gulf Harbors and Seven Springs. Call or text for a free quote and you'll know your price before we deliver. Our yard in Holiday is minutes away, so we can often drop your dumpster the same day you call anywhere in western Pasco County.",
   introTitle: ["Your Neighborhood ", "Dumpster Company"],
   localIntro: [
     "New Port Richey is home turf for us. Our yard is just south in Holiday, so a dumpster headed downtown, to the canal homes in Gulf Harbors, or out to Seven Springs is a short drive, not a day trip for a national broker's subcontractor.",

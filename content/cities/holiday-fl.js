@@ -1,8 +1,8 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const holiday = {
   metaDescription:
-    `Dumpster rental in Holiday, FL from the family team based right here. 10, 15 & 20-yard dumpsters from $${lowestPrice} with pickup and disposal built in.`,
+    "Dumpster rental in Holiday, FL from the family team based right here. 10, 15 & 20-yard dumpsters, with a free quote that builds in pickup and disposal.",
   keywords: [
     "dumpster rental Holiday FL",
     "Holiday dumpster rental",
@@ -12,7 +12,7 @@ const holiday = {
   ],
   h1Desire: "Finish the Job Sooner",
   answer:
-    `Lupo Dumpster Rentals is based in Holiday, FL, so dumpster rental here means a trailer coming from down the road, not across Pasco County. We deliver 10, 15, and 20-yard dumpsters to homes from Holiday Lake Estates to the Anclote River at one flat price starting at $${lowestPrice}, and same-day drop-offs are often possible.`,
+    "Lupo Dumpster Rentals is based in Holiday, FL, so dumpster rental here means a trailer coming from down the road, not across Pasco County. We deliver 10, 15, and 20-yard dumpsters to homes from Holiday Lake Estates to the Anclote River. Call or text for a free quote and you'll know the cost upfront. Same-day drop-offs are often possible.",
   introTitle: ["Based in Holiday, ", "Working for Our Neighbors"],
   localIntro: [
     "Holiday is where Alex and Amanda Lupo run the business. When you book here, the driver who pulls up is usually someone who lives a few streets over, which makes it easy to ask a question in person or adjust a pickup time without a runaround. Being local also means a forgotten item or a half-full trailer is an easy conversation, not a ticket number.",

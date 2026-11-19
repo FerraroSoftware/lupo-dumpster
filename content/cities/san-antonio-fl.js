@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const sanAntonio = {
   metaDescription:
-    `Dumpster rental in San Antonio, FL for rural cleanups, remodels & cleanouts near Saint Leo. 10, 15 & 20-yard dumpsters from $${lowestPrice}, disposal included.`,
+    "Dumpster rental in San Antonio, FL for rural cleanups, remodels & cleanouts near Saint Leo. 10, 15 & 20-yard dumpsters. Get a free quote today.",
   keywords: [
     "dumpster rental San Antonio FL",
     "San Antonio Florida dumpster rental",
@@ -12,7 +10,7 @@ const sanAntonio = {
   ],
   h1Desire: "Finally Clear That Back Lot",
   answer:
-    `Lupo offers dumpster rental in San Antonio, FL, the small Pasco County city next to Saint Leo, for acreage cleanups, golf-community remodels at Lake Jovita, and home cleanouts. Dumpsters come in 10, 15, and 20-yard sizes at flat prices from $${lowestPrice}. San Antonio is a longer run from Holiday, so we set your date in advance.`,
+    "Lupo offers dumpster rental in San Antonio, FL, the small Pasco County city next to Saint Leo, for acreage cleanups, golf-community remodels at Lake Jovita, and home cleanouts. Dumpsters come in 10, 15, and 20-yard sizes, and a free quote tells you the full cost before we make the drive. San Antonio is a longer run from Holiday, so we set your date in advance.",
   introTitle: ["Small Town, ", "Straightforward Service"],
   localIntro: [
     "San Antonio is one of Pasco's smallest cities, a few quiet blocks of homes and churches around the city park, surrounded by rolling hills and open land along SR-52. Many properties here have room to spare, and that room tends to fill up with old sheds, brush piles, broken fencing, and equipment that stopped running years ago.",

@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const safetyHarbor = {
   metaDescription:
-    `Dumpster rental in Safety Harbor, FL from $${lowestPrice} flat. Low-profile dumpsters for cottage renovations, yard cleanups, and remodels, disposal included.`,
+    "Dumpster rental in Safety Harbor, FL. Low-profile dumpsters for cottage renovations, yard cleanups, and remodels. Free quote, disposal included.",
   keywords: [
     "dumpster rental Safety Harbor",
     "Safety Harbor dumpster rental",
@@ -12,7 +10,7 @@ const safetyHarbor = {
   ],
   h1Desire: "Clear Out and Start Fresh",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters in Safety Harbor, FL, the small Pinellas County city on Old Tampa Bay, for a flat price starting at $${lowestPrice}. Delivery, pickup, and disposal are part of that price. Our Holiday yard is about 35 minutes away, so calling a day ahead helps.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters in Safety Harbor, FL, the small Pinellas County city on Old Tampa Bay. Tell us about the cottage or the yard and we'll send a free quote with delivery, pickup, and disposal already in it. Our Holiday yard is about 35 minutes away, so calling a day ahead helps.",
   introTitle: ["Careful Deliveries on ", "Safety Harbor's Quiet Streets"],
   localIntro: [
     "Safety Harbor has a small-town feel that people here work to keep. Main Street runs down to the bay and the historic springs at the Safety Harbor Resort and Spa, and the blocks around it are full of cottages, bungalows, and mid-century block homes under heavy tree canopy.",

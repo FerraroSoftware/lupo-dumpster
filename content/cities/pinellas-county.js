@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const pinellasCounty = {
   metaDescription:
-    `Dumpster rental in Pinellas County, FL from $${lowestPrice}. Flat-rate 10, 15 & 20-yard dumpsters from Palm Harbor to St. Pete, delivery and disposal included.`,
+    "Dumpster rental in Pinellas County, FL. 10, 15 & 20-yard dumpsters from Palm Harbor to St. Pete. Free quotes with delivery and disposal included.",
   keywords: [
     "dumpster rental Pinellas County",
     "Pinellas County dumpster rental",
@@ -12,7 +10,7 @@ const pinellasCounty = {
   ],
   h1Desire: "Get Your Project Moving",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters across Pinellas County, FL, from Palm Harbor and Dunedin down to Largo and St. Petersburg, at flat prices starting at $${lowestPrice}. Our yard in Holiday sits just over the Pasco line, so north Pinellas is close, and we schedule the southern cities a day or more ahead.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters across Pinellas County, FL, from Palm Harbor and Dunedin down to Largo and St. Petersburg. Call or text your address for a free quote before we schedule. Our yard in Holiday sits just over the Pasco line, so north Pinellas is close, and we schedule the southern cities a day or more ahead.",
   introTitle: ["One Family Crew for ", "All of Pinellas County"],
   localIntro: [
     "Pinellas is a peninsula packed with cities, with unincorporated neighborhoods filling the gaps between them. Our yard in Holiday is right above the county line. Palm Harbor, Dunedin, Oldsmar, and Safety Harbor are short trips, Clearwater is a bit farther, and Largo, Seminole, Pinellas Park, and St. Petersburg sit at the far end of our routes. If you're not sure where your address falls, call and we'll tell you how soon we can be there.",
@@ -56,7 +54,7 @@ const pinellasCounty = {
   verify: [
     "D16: Alex must confirm we serve Largo, Seminole, Pinellas Park, and St. Petersburg regularly",
     "Drive time range from the Holiday yard (About 15 to 60 minutes)",
-    "Pricing: confirm the standard flat prices apply countywide with no distance surcharge",
+    "Quotes: confirm jobs countywide are quoted without a distance surcharge",
     "Disposal facility used for Pinellas loads (and whether north Pinellas loads go to Pasco instead)",
     "Pinellas County has 24 incorporated cities and towns",
     "Pinellas County right-of-way permit process for unincorporated areas (East Lake, Lealman, Palm Harbor)",

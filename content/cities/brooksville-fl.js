@@ -1,10 +1,10 @@
-import { getSize, lowestPrice } from "@/lib/site-config";
+import { getSize } from "@/lib/site-config";
 
 const twenty = getSize("20");
 
 const brooksville = {
   metaDescription:
-    `Dumpster rental in Brooksville, FL for old-home renovations, land cleanups & estate cleanouts. 10, 15 & 20-yard sizes from $${lowestPrice}, disposal included.`,
+    "Dumpster rental in Brooksville, FL for old-home renovations, land cleanups & estate cleanouts. 10, 15 & 20-yard sizes. Call or text for a free quote.",
   keywords: [
     "dumpster rental Brooksville FL",
     "Brooksville dumpster rental",
@@ -14,7 +14,7 @@ const brooksville = {
   ],
   h1Desire: "Get the Heavy Work Done",
   answer:
-    `Lupo provides dumpster rental in Brooksville, FL, the Hernando County seat, for renovations on older homes, rural land cleanups, and estate cleanouts. Our 10, 15, and 20-yard dumpsters come at one flat price, starting at $${lowestPrice}. Brooksville is one of our longer drives from Holiday, so we schedule deliveries here ahead of time.`,
+    "Lupo provides dumpster rental in Brooksville, FL, the Hernando County seat, for renovations on older homes, rural land cleanups, and estate cleanouts. Tell us about the house or the acreage and we'll quote a 10, 15, or 20-yard dumpster upfront, free. Brooksville is one of our longer drives from Holiday, so we schedule deliveries here ahead of time.",
   introTitle: ["Hills, History, ", "and Heavy Lifting"],
   localIntro: [
     "Brooksville surprises people who think Florida is flat. The county seat sits in rolling hills, with oak-shaded streets, a historic downtown around the old courthouse, and homes that go back a century or more. Renovating those houses means hauling out plaster, old trim, and layers of roofing, and having a dumpster on site keeps the work moving.",

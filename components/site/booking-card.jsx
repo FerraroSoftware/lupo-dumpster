@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { ArrowLeft, ArrowRight, Check, Loader2, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics";
-import { getSize, lowestPrice, rental, siteConfig, sizes, telHref } from "@/lib/site-config";
+import { getSize, rental, siteConfig, sizes, telHref } from "@/lib/site-config";
 
 const NOT_SURE = "not-sure";
 
@@ -53,7 +53,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
     setErrors(next);
     if (Object.keys(next).length === 0) {
       setStep(2);
-      track("booking_started", { size: selectedSize, ...(size && { value: size.price, currency: "USD" }), source });
+      track("booking_started", { size: selectedSize, source });
     }
   };
 
@@ -94,7 +94,8 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
       const message = [
         `ZIP: ${zip}`,
         `Preferred delivery: ${date || "ASAP"}`,
-        `Quoted flat price: ${size ? `$${size.price}` : "Needs help choosing a size"}`,
+        `Size: ${size ? size.name : "Needs help choosing a size"}`,
+        "Wants: free quote",
         `Source: ${source}`,
       ].join("\n");
 
@@ -106,7 +107,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
           lastName: "",
           email: email.trim(),
           phone,
-          serviceNeeded: size ? `${size.name} rental` : "Dumpster rental (help choosing a size)",
+          serviceNeeded: size ? `${size.name} quote` : "Dumpster rental quote (help choosing a size)",
           message,
           company,
           recaptchaToken: token,
@@ -114,7 +115,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
       });
 
       if (!res.ok) throw new Error("submit-failed");
-      track("generate_lead", { form: "booking", size: selectedSize, ...(size && { value: size.price, currency: "USD" }), source });
+      track("generate_lead", { form: "booking", size: selectedSize, source });
       router.push({ pathname: "/thank-you", query: size ? { size: size.id } : {} });
     } catch {
       setSubmitError(
@@ -130,7 +131,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
       className="scroll-mt-32 rounded-2xl bg-white p-6 text-ink shadow-2xl ring-1 ring-black/5 sm:p-8"
     >
       <div className="mb-6 flex items-center justify-between gap-4">
-        <h2 className="font-display text-3xl font-bold leading-none">Book Your Dumpster</h2>
+        <h2 className="font-display text-3xl font-bold leading-none">Get a Free Quote</h2>
         <p className="shrink-0 text-sm font-medium text-zinc-600" aria-live="polite">
           Step {step} of 2
         </p>
@@ -150,14 +151,14 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
                     checked={selectedSize === s.id}
                     onChange={() => {
                       onSizeChange(s.id);
-                      if (s.price) track("price_shown", { size: s.id, value: s.price, currency: "USD", source });
+                      track("size_selected", { size: s.id, source });
                     }}
                     className="peer sr-only"
                   />
                   <span className="flex min-h-[64px] flex-col items-center justify-center rounded-lg border-2 border-zinc-200 px-2 py-2 text-center transition-colors peer-checked:border-brand peer-checked:bg-brand-soft peer-focus-visible:ring-2 peer-focus-visible:ring-brand/50 hover:border-zinc-400">
                     <span className="font-display text-xl font-bold leading-none">{s.shortName}</span>
-                    {s.price && (
-                      <span className="mt-1 text-xs font-medium text-zinc-600">${s.price}</span>
+                    {s.weight && (
+                      <span className="mt-1 text-xs font-medium text-zinc-600">{s.weight.replace(" included", "")}</span>
                     )}
                   </span>
                 </label>
@@ -202,21 +203,17 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
 
           <div className="rounded-xl bg-zinc-100 p-4" aria-live="polite">
             {size ? (
-              <>
-                <p className="text-sm font-medium text-zinc-600">Your flat price</p>
-                <p className="font-display text-4xl font-extrabold leading-tight">
-                  ${size.price}
-                  <span className="ml-2 align-middle text-base font-semibold text-zinc-600">
-                    {size.name} · {size.weight}
-                  </span>
-                </p>
-              </>
+              <p className="text-sm text-zinc-700">
+                <span className="font-display text-2xl font-bold text-ink">{size.name}</span>
+                <br />
+                {size.dimensions} · {size.loads.toLowerCase()} · {size.weight}
+              </p>
             ) : (
               <p className="text-sm text-zinc-700">
-                <span className="font-semibold text-ink">Flat prices from ${lowestPrice}.</span>{" "}
+                <span className="font-semibold text-ink">Free, no-obligation quote.</span>{" "}
                 {selectedSize === NOT_SURE
-                  ? "No problem. We'll help you pick the right size when we confirm."
-                  : "Pick a size to see your exact price."}
+                  ? "No problem. We'll help you pick the right size when we call."
+                  : "Pick a size and we'll text you an upfront price."}
               </p>
             )}
             <ul className="mt-3 grid gap-1.5 text-sm text-zinc-700 sm:grid-cols-2">
@@ -233,7 +230,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
             type="submit"
             className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-lg bg-brand px-6 text-base font-bold text-white shadow-lg shadow-brand/20 transition-colors hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
           >
-            Continue to Reserve <ArrowRight aria-hidden className="h-5 w-5" />
+            Continue <ArrowRight aria-hidden className="h-5 w-5" />
           </button>
         </form>
       ) : (
@@ -244,7 +241,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
           </div>
           <div className="flex items-start justify-between gap-3 rounded-xl bg-zinc-100 p-4 text-sm">
             <p>
-              <span className="font-semibold">{size ? `${size.name} · $${size.price} flat` : "Help choosing a size"}</span>
+              <span className="font-semibold">{size ? `${size.name} · free quote` : "Help choosing a size"}</span>
               <br />
               <span className="text-zinc-600">
                 ZIP {zip} · {date || "As soon as possible"}
@@ -329,7 +326,7 @@ export function BookingCard({ selectedSize, onSizeChange, source = "Home page bo
               </>
             ) : (
               <>
-                Reserve My Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+                Get My Free Quote <ArrowRight aria-hidden className="h-5 w-5" />
               </>
             )}
           </button>

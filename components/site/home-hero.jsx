@@ -61,14 +61,14 @@ export function HomeHero({ selectedSize, onSizeChange, onBook }) {
             id="hero-title"
             className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Get Your Space Back with Flat-Rate{" "}
+            Get Your Space Back with{" "}
             <Highlight tone="dark">Dumpster Rental in Pasco County</Highlight>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-200 md:text-xl">
             Lupo Dumpster Rentals delivers 10, 15, and 20-yard dumpsters across Pasco County,
-            FL, often the same day, at one flat price that covers delivery, pickup, and disposal
-            up to the weight limit. Pick your size, we drop it in your driveway, and we haul it
-            away when you&apos;re done.
+            FL, often the same day. Get a free, upfront quote that covers delivery, pickup, and
+            disposal up to the weight limit. Pick your size, we drop it in your driveway, and we
+            haul it away when you&apos;re done.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -77,7 +77,7 @@ export function HomeHero({ selectedSize, onSizeChange, onBook }) {
               onClick={onBook}
               className="inline-flex min-h-[52px] items-center justify-center rounded-lg bg-brand px-7 text-base font-bold text-white shadow-lg shadow-black/30 transition-colors hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-ink lg:hidden"
             >
-              Book Your Dumpster
+              Get a Free Quote
             </button>
             <a
               href={telHref}

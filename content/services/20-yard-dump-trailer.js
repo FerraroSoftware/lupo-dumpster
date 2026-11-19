@@ -1,4 +1,4 @@
-import { getSize } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const size = getSize("20");
 
@@ -8,7 +8,7 @@ const twentyYard = {
   sizeId: "20",
   serviceType: "20-yard dumpster rental",
   title: "20-Yard Dumpster Rental in Pasco County, FL | Lupo",
-  description: `Rent a 20-yard dumpster in Pasco County for $${size.price} flat. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Built for roofs and big remodels.`,
+  description: `Rent a 20-yard dumpster in Pasco County, FL. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Built for roofs and remodels. Free quote.`,
   keywords: [
     "20 yard dumpster rental",
     "20 yard dumpster Pasco County",
@@ -17,21 +17,21 @@ const twentyYard = {
     "large dumpster rental",
   ],
   hero: {
-    eyebrow: `${size.name} · $${size.price} flat`,
+    eyebrow: `${size.name} · Free quote`,
     title: ["Tackle the Big Jobs with a ", "20-Yard Dumpster Rental"],
-    intro: `Our 20-yard dumpster is ${size.dimensions} and holds ${size.loads.toLowerCase()}, with ${size.weight}. At $${size.price} flat with delivery, pickup, and disposal included, it's the size for roof replacements, whole-home renovations, and full property cleanouts in Pasco County.`,
+    intro: `Our 20-yard dumpster is ${size.dimensions} and holds ${size.loads.toLowerCase()}, with ${size.weight}. With delivery, pickup, and disposal in one upfront quote, it's the size for roof replacements, whole-home renovations, and full property cleanouts in Pasco County.`,
     image: "/dump-trailers.webp",
     imageAlt: "Lupo 20-yard dumpster trailers ready for delivery in Pasco County",
   },
   stakes: {
-    title: ["Too Small a Dumpster ", "Costs You Twice"],
-    intro: "Big projects outgrow small dumpsters fast, and a second haul costs more than sizing up.",
+    title: ["Too Small a Dumpster ", "Means a Second Haul"],
+    intro: "Big projects outgrow small dumpsters fast, and one bigger dumpster usually beats two hauls.",
     items: [
       { icon: "Container", title: "Overflowing by day two", text: "A remodel or roof fills a small dumpster before the job is half done." },
-      { icon: "BadgeDollarSign", title: "Paying for a second haul", text: "Two small rentals cost more than one 20-yard, plus the downtime in between." },
+      { icon: "CalendarX", title: "Waiting on a second haul", text: "Two small rentals mean two drop-offs, two pickups, and downtime in between." },
       { icon: "Weight", title: "Going over the weight limit", text: "Heavy debris like shingles adds up fast. More capacity means more breathing room." },
     ],
-    closing: "Get the room you need the first time, at one flat price.",
+    closing: "Get the room you need the first time, with a free quote upfront.",
   },
   about: {
     eyebrow: "Our largest dumpster",
@@ -51,7 +51,7 @@ const twentyYard = {
   },
   sizing: {
     title: ["Is the 20-Yard ", "Right for You?"],
-    intro: "Here's what fits, and when a smaller size might save you money.",
+    intro: "Here's what fits, and when a smaller size makes more sense.",
     rightIf: [
       "Replacing the roof on a typical single-family home",
       "Gutting a kitchen and bathrooms in the same remodel",
@@ -68,13 +68,13 @@ const twentyYard = {
     title: "Built for the Biggest Jobs",
     paragraphs: [
       `When the project is big, like a roof in Hudson, a full renovation in Trinity, or an estate cleanout in New Port Richey, the 20-yard dumpster gives you the room to finish without a second haul. It's ${size.dimensions}, holds ${size.loads.toLowerCase()}, and includes ${size.weight}.`,
-      `You pay $${size.price} flat with delivery, pickup, and disposal up to the weight limit included. We drop it on protective boards, often the same day you call, and haul it away when you're done. Heavy debris like shingles, tile, or concrete adds weight quickly, so tell us what you're tossing and we'll make sure you have the right fit.`,
+      `Call or text for a free, no-obligation quote that includes delivery, pickup, and disposal up to the weight limit. We drop it on protective boards, often the same day you call, and haul it away when you're done. Heavy debris like shingles, tile, or concrete adds weight quickly, so tell us what you're tossing and we'll make sure you have the right fit.`,
     ],
   },
   related: [
     { name: "15-Yard Dumpster", href: "/services/15-yard-dump-trailer", text: "Our most popular size, built for kitchen remodels, flooring, and move-outs." },
     { name: "Construction Dumpster Rental", href: "/services/construction-dumpster-rental", text: "Reliable drop-offs and swaps for roofers, remodelers, and builders." },
-    { name: "Dumpster Rental Pricing", href: "/dumpster-rental-pricing", text: "Compare every size and price, and see exactly what's included." },
+    { name: "Sizes & Free Quotes", href: "/dumpster-rental-pricing", text: "Compare sizes, see what's included, and get a free quote." },
   ],
   posts: [
     { title: "What Size Dumpster Do I Need?", href: "/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size" },
@@ -89,7 +89,7 @@ const twentyYard = {
     },
     {
       q: "How much does a 20-yard dumpster cost?",
-      a: `$${size.price} flat in Pasco County, with delivery, pickup, and disposal up to ${size.weight.replace(" included", "")} included.`,
+      a: `It depends on the size, the weight of your debris, the material, and the location. Lupo gives a free upfront quote that includes delivery, pickup, and disposal up to ${size.weight.replace(" included", "")}. Call or text ${siteConfig.phone} or request one online.`,
     },
     {
       q: "Is a 20-yard big enough for a roof?",
@@ -101,7 +101,7 @@ const twentyYard = {
     },
     {
       q: "What if I go over the weight limit?",
-      a: "We'll tell you the cost per extra ton before delivery, so there are no surprises. Keeping concrete and dirt separate helps you stay under.",
+      a: "We'll explain how extra weight is handled in your quote, so there are no surprise fees. Keeping concrete and dirt separate helps you stay under.",
     },
   ],
 };

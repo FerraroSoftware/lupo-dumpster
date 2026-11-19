@@ -115,8 +115,8 @@ export function StakesSection() {
 const values = [
   {
     icon: Tag,
-    title: "One flat price",
-    text: "The price you see is the price you pay. Delivery, pickup, and disposal up to the weight limit are included.",
+    title: "Free, upfront quote",
+    text: "Tell us about the project and we'll quote it before we deliver. Delivery, pickup, and disposal up to the weight limit are included.",
   },
   {
     icon: Zap,
@@ -230,7 +230,7 @@ export function GuideProof({ reviewList = reviews.slice(0, 3) }) {
                   We Know You Just Want <Highlight tone="dark">the Mess Gone</Highlight>
                 </>
               }
-              intro={`Alex and Amanda Lupo started Lupo Dumpster Rentals in ${siteConfig.foundedYear} because getting rid of junk shouldn't mean surprise bills and no-show haulers. Today we serve homeowners, contractors, and families across Pasco, Pinellas, Hernando, and North Hillsborough with the same promise: a fair, flat price and a dumpster that shows up when we say it will.`}
+              intro={`Alex and Amanda Lupo started Lupo Dumpster Rentals in ${siteConfig.foundedYear} because getting rid of junk shouldn't mean surprise bills and no-show haulers. Today we serve homeowners, contractors, and families across Pasco, Pinellas, Hernando, and North Hillsborough with the same promise: an honest, upfront quote and a dumpster that shows up when we say it will.`}
             />
             <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-white/20 pt-8">
               {[
@@ -276,7 +276,7 @@ export function GuideProof({ reviewList = reviews.slice(0, 3) }) {
 const steps = [
   {
     title: "Pick your size & date",
-    text: "Book online in under a minute, or call or text. You'll see your flat price before you commit.",
+    text: "Request a free quote online in under a minute, or call or text. You'll know your price before you commit.",
   },
   {
     title: "We drop it off",
@@ -293,7 +293,7 @@ export function PlanSteps({
   title,
   intro = "No contracts to decode and no runaround. Here's the whole process.",
   items = steps,
-  label = "Book Your Dumpster",
+  label = "Get a Free Quote",
   href = navigation.bookHref,
 }) {
   return (
@@ -335,21 +335,21 @@ export function PlanSteps({
   );
 }
 
-/* ------------------------------- Price cards ------------------------------- */
+/* ------------------------------- Size cards -------------------------------- */
 
-export function PriceCards({ onSelect, showPricingLink = true }) {
+export function SizeCards({ onSelect, showSizesLink = true }) {
   return (
-    <section id="pricing" aria-labelledby="pricing-title" className="scroll-mt-28 bg-zinc-100 py-20 lg:py-28">
+    <section id="sizes" aria-labelledby="sizes-title" className="scroll-mt-28 bg-zinc-100 py-20 lg:py-28">
       <div className={container}>
         <SectionHeading
-          id="pricing-title"
-          eyebrow="Flat-rate pricing"
+          id="sizes-title"
+          eyebrow="Dumpster sizes"
           title={
             <>
-              Pick Your Size. <Highlight>See Your Price.</Highlight>
+              Pick Your Size. <Highlight>Get a Free Quote.</Highlight>
             </>
           }
-          intro="Most dumpster companies make you call for a quote. We publish ours. Every rental includes everything below, with no hidden fees."
+          intro="Every rental includes everything below. Tell us the size and your ZIP, and we'll send an upfront quote with no hidden fees."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3 lg:items-stretch">
@@ -368,10 +368,6 @@ export function PriceCards({ onSelect, showPricingLink = true }) {
               )}
               <h3 className="font-display text-3xl font-bold text-ink">{s.name}</h3>
               <p className="mt-1 text-zinc-600">{s.bestFor}</p>
-              <p className="mt-6 font-display text-6xl font-extrabold leading-none text-ink">
-                ${s.price}
-                <span className="ml-2 align-middle font-sans text-base font-semibold text-zinc-600">flat rate</span>
-              </p>
               <ul className="mt-6 space-y-2.5 text-sm text-zinc-700">
                 {[s.dimensions, s.loads, s.weight, ...rental.included].map((item) => (
                   <li key={item} className="flex gap-2.5">
@@ -386,7 +382,7 @@ export function PriceCards({ onSelect, showPricingLink = true }) {
                   href={onSelect ? undefined : navigation.bookHref}
                   className="w-full"
                 >
-                  Book the {s.shortName.replace(" yd", "-yard")}
+                  Quote the {s.shortName.replace(" yd", "-yard")}
                 </PrimaryButton>
                 <Link
                   href={s.href}
@@ -399,13 +395,13 @@ export function PriceCards({ onSelect, showPricingLink = true }) {
           ))}
         </div>
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-zinc-600">
-          Need extra days or think you&apos;ll go over the weight limit? We&apos;ll tell you the exact
-          cost before delivery, never after.
-          {showPricingLink && (
+          Need extra days or think you&apos;ll go over the weight limit? Tell us when you ask for
+          your quote and we&apos;ll include it up front, never after.
+          {showSizesLink && (
             <>
               {" "}
               <Link href="/dumpster-rental-pricing" className="font-semibold text-ink underline underline-offset-4 hover:text-brand-hover">
-                See full dumpster rental pricing
+                Compare sizes and what&apos;s included
               </Link>
             </>
           )}
@@ -470,7 +466,7 @@ export function SizeHelper({ project, onProject, onSelect }) {
                   <span className="text-sm text-zinc-300">We recommend the</span>
                   <br />
                   <span className="font-display text-3xl font-bold">
-                    {size.name} · ${size.price}
+                    {size.name}
                   </span>
                 </p>
                 <button
@@ -478,7 +474,7 @@ export function SizeHelper({ project, onProject, onSelect }) {
                   onClick={() => onSelect(size.id)}
                   className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-brand px-6 font-bold text-white hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                 >
-                  Book this size <ArrowRight aria-hidden className="h-5 w-5" />
+                  Get a free quote <ArrowRight aria-hidden className="h-5 w-5" />
                 </button>
               </div>
             )}
@@ -495,7 +491,7 @@ const audiences = [
   {
     icon: Home,
     title: "Homeowners",
-    text: "Cleanouts, remodels, moves, and yard projects with one flat price and a dumpster in your driveway.",
+    text: "Cleanouts, remodels, moves, and yard projects with a free upfront quote and a dumpster in your driveway.",
     href: "/services/dumpster-rental",
     cta: "Residential dumpster rental",
   },
@@ -592,7 +588,7 @@ export function StoryParagraph() {
               and Hillsborough communities, often on the same day you call.
             </p>
             <p>
-              You get one flat price up front, with delivery, pickup, and disposal up to the weight
+              You get a free quote up front, with delivery, pickup, and disposal up to the weight
               limit included. We place every dumpster on protective boards, give you time to load
               it at your own pace, and haul it away as soon as you&apos;re finished. No dump runs, no
               surprise fees, just your space back.
@@ -666,8 +662,8 @@ export function ServiceArea() {
 export function CtaBand({
   onBook,
   title,
-  text = "Book your dumpster in under a minute. Flat price, fast delivery, and a local team that shows up when we say we will.",
-  label = "Book Your Dumpster",
+  text = "Get a free quote in under a minute. Upfront pricing, fast delivery, and a local team that shows up when we say we will.",
+  label = "Get a Free Quote",
   href = navigation.bookHref,
 }) {
   return (

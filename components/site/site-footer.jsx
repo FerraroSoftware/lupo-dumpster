@@ -38,7 +38,7 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
-              Flat-rate dumpster rental and junk removal for Pasco County and the Tampa Bay area. Locally owned since{" "}
+              Dumpster rental and junk removal with free, upfront quotes for Pasco County and the Tampa Bay area. Locally owned since{" "}
               {siteConfig.foundedYear}.
             </p>
             <a
@@ -88,7 +88,7 @@ export function SiteFooter() {
             ))}
             <li>
               <Link href="/dumpster-rental-pricing" className={linkClass}>
-                Dumpster Rental Pricing
+                Dumpster Sizes &amp; Quotes
               </Link>
             </li>
           </Column>
@@ -159,7 +159,7 @@ export function SiteFooter() {
               href={navigation.bookHref}
               className="mt-6 inline-flex min-h-[48px] items-center gap-2 whitespace-nowrap rounded-lg bg-brand px-5 font-bold text-white transition-colors hover:bg-brand-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              Book Your Dumpster <ArrowRight aria-hidden className="h-4 w-4" />
+              Get a Free Quote <ArrowRight aria-hidden className="h-4 w-4" />
             </Link>
           </div>
         </div>

@@ -28,7 +28,7 @@ export function PageHero({
         href={onBook ? undefined : navigation.bookHref}
         className={aside ? "focus-visible:ring-offset-ink lg:hidden" : "focus-visible:ring-offset-ink"}
       >
-        Book Your Dumpster <ArrowRight aria-hidden className="h-5 w-5" />
+        Get a Free Quote <ArrowRight aria-hidden className="h-5 w-5" />
       </PrimaryButton>
       <a
         href={telHref}

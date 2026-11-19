@@ -1,4 +1,4 @@
-import { getSize, lowestPrice } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const big = getSize("20");
 
@@ -7,7 +7,7 @@ const constructionDebrisNewPortRichey = {
   kind: "junk",
   serviceType: "Construction debris removal",
   title: "Construction Debris Removal in New Port Richey, FL | Lupo",
-  description: `Construction debris removal in New Port Richey, FL. We load drywall, tile, lumber, and remodel waste. Firm price first, or rent a dumpster from $${lowestPrice}.`,
+  description: "Construction debris removal in New Port Richey, FL. We load and haul drywall, tile, lumber, and remodel waste. Send photos for a free quote.",
   keywords: [
     "construction debris removal New Port Richey",
     "remodel debris removal New Port Richey",
@@ -15,13 +15,14 @@ const constructionDebrisNewPortRichey = {
     "flood debris removal Pasco County",
     "contractor cleanup New Port Richey",
   ],
-  quoteTitle: "Get Your Debris Removal Price",
+  quoteTitle: "Get Your Free Debris Removal Quote",
+  ctaLabel: "Get a Free Quote",
   quotePlaceholder: "e.g. Bathroom tear-out: tile, vanity, and drywall stacked in the garage",
   hero: {
     eyebrow: "Construction debris removal · New Port Richey, FL",
     title: ["Finish the Job Clean with ", "Construction Debris Removal in New Port Richey"],
     intro:
-      "Lupo provides construction debris removal in New Port Richey and across west Pasco County. Our crew loads the drywall, tile, cabinets, lumber, and scrap from your remodel or repair and hauls it away, so the site is clear for the next trade or the final walk-through. You get a firm price first.",
+      "Lupo provides construction debris removal in New Port Richey and across west Pasco County. Our crew loads the drywall, tile, cabinets, lumber, and scrap from your remodel or repair and hauls it away, so the site is clear for the next trade or the final walk-through. You get a free quote first.",
     image: "/constructiondebris/construction-debris-removal.webp",
     imageAlt: "Crew clearing lumber and remodel debris from a street during construction debris removal in New Port Richey",
   },
@@ -50,9 +51,9 @@ const constructionDebrisNewPortRichey = {
     title: ["Cleanup That Keeps ", "Your Project Moving"],
     items: [
       { icon: "HardHat", title: "Built for contractors too", text: "We work around your schedule and can clear a site between phases so the next crew can start." },
-      { icon: "Scale", title: "Honest about heavy loads", text: "Tile, concrete, and plaster cost more to dispose of, and we tell you that before we schedule." },
+      { icon: "Scale", title: "Honest about heavy loads", text: "Tile, concrete, and plaster are heavy to dispose of, and your quote accounts for that before we schedule." },
       { icon: "Shovel", title: "We sweep up after", text: "We rake and sweep the area so loose screws and nails don't end up in your tires." },
-      { icon: "Container", title: "A dumpster if it fits better", text: "If the job will keep producing debris for weeks, we'll tell you a dumpster is the better deal." },
+      { icon: "Container", title: "A dumpster if it fits better", text: "If the job will keep producing debris for weeks, we'll tell you a dumpster is the better fit." },
     ],
   },
   proof: {
@@ -61,12 +62,12 @@ const constructionDebrisNewPortRichey = {
     reviewNames: ["Joseph S.", "Kerry S.", "David C."],
   },
   pricing: {
-    title: ["Priced by Volume ", "and Material"],
+    title: ["Quoted by Volume ", "and Material"],
     intro:
-      "Debris is priced by how much there is, what it's made of, and how hard it is to reach. Send photos and we'll give you a firm price before we schedule.",
+      "Your quote depends on how much debris there is, what it's made of, and how hard it is to reach. Send photos for a free quote before we schedule.",
     factors: [
       { title: "How much debris", text: "Volume is the starting point. A bathroom tear-out is a fraction of a whole-house gut." },
-      { title: "What it's made of", text: "Drywall and lumber are lighter. Tile, concrete, brick, and roofing shingles are heavy and cost more to dispose of." },
+      { title: "What it's made of", text: "Drywall and lumber are lighter. Tile, concrete, brick, and roofing shingles are heavy and take more to dispose of." },
       { title: "Where it's piled", text: "Debris stacked in the driveway loads fast. Debris inside the house, upstairs, or behind a fence takes longer." },
     ],
   },
@@ -95,14 +96,14 @@ const constructionDebrisNewPortRichey = {
     paragraphs: [
       "New Port Richey is in the middle of a long stretch of remodeling. Homes built when the area grew in the 1970s and '80s are getting new kitchens, baths, and flooring, and coastal neighborhoods along the Cotee River and in Gulf Harbors are still rebuilding after the 2024 storm surge. All that work leaves debris behind.",
       "Lupo's construction debris removal is built for that. Homeowners call us when a contractor leaves the cleanup behind. Contractors call us to clear a site between demo and install. Landlords call us when a rental off US-19 needs a fast turnaround. We show up, load the drywall, tile, lumber, and cabinets, sweep up, and haul it away.",
-      "Heavy material is priced honestly, and you'll know the cost before we schedule. Clean metal goes to recycling when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road. If your project will produce debris for a few weeks, we'll tell you when a flat-rate dumpster in your driveway is the smarter choice. Either way, you're dealing with a family business from Holiday, not a call center.",
+      "Heavy material is quoted honestly, and you'll know your price before we schedule. Clean metal goes to recycling when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road. If your project will produce debris for a few weeks, we'll tell you when a dumpster in your driveway is the smarter choice. Either way, you're dealing with a family business from Holiday, not a call center.",
     ],
   },
   nprText: "Got a longer remodel that will fill a dumpster over a few weeks?",
   areaLabel: "Dumpster rental",
   related: [
     { name: "Construction Debris Removal", href: "/services/construction-debris-removal", text: "Crew-loaded debris hauling for remodels and repairs across Pasco County and Tampa Bay." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "A flat-rate dumpster in your New Port Richey driveway for multi-week projects." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "A dumpster in your New Port Richey driveway for multi-week projects, with a free quote." },
     { name: "Construction Dumpsters", href: "/services/construction-dumpster-rental", text: "Low-profile dump trailers sized for remodels, roofing, and contractor jobs." },
   ],
   posts: [
@@ -114,7 +115,7 @@ const constructionDebrisNewPortRichey = {
   faqs: [
     {
       q: "How much does construction debris removal cost in New Port Richey?",
-      a: "It depends on the volume, the material, and where it's piled. Heavy debris like tile and concrete costs more than drywall or lumber. Send photos and we'll give you a firm price first.",
+      a: `It depends on the volume, the material, and where it's piled. Heavy debris like tile and concrete takes more to dispose of than drywall or lumber. Text photos to ${siteConfig.phone} or request online for a free, upfront quote.`,
     },
     {
       q: "Do you work with contractors in New Port Richey?",
@@ -122,18 +123,18 @@ const constructionDebrisNewPortRichey = {
     },
     {
       q: "Can you take flood-damaged drywall and flooring?",
-      a: "Yes. Wet material is much heavier, so tell us it's wet when you send photos so the price is accurate. We've cleared a lot of this near the coast since the 2024 storms.",
+      a: "Yes. Wet material is much heavier, so tell us it's wet when you send photos so the quote is accurate. We've cleared a lot of this near the coast since the 2024 storms.",
     },
     {
       q: "Do you remove concrete and roofing shingles?",
-      a: `Yes, in reasonable amounts, though they're heavy and priced that way. For a full roof tear-off, a ${big.name.toLowerCase()} usually costs less than crew-loaded removal.`,
+      a: `Yes, in reasonable amounts, though they're heavy and quoted that way. For a full roof tear-off, a ${big.name.toLowerCase()} is usually the better fit than crew-loaded removal.`,
     },
     {
       q: "Can you take asbestos or popcorn ceiling material?",
       a: "No. If your home was built before the 1980s and you're removing ceilings, flooring, or siding, have the material tested before demolition. We can take it once it's cleared as non-asbestos.",
     },
   ],
-  ctaText: "Send photos of your debris pile and get a firm price. We'll load it, sweep up, and haul it out of New Port Richey.",
+  ctaText: "Send photos of your debris pile and get a free quote. We'll load it, sweep up, and haul it out of New Port Richey.",
   verify: [
     "Claim that coastal NPR neighborhoods (Gulf Harbors, Cotee River) are still rebuilding after the 2024 hurricane surge, and that Lupo has cleared flood debris there",
     "Accepted debris list: insulation, small amounts of concrete, aluminum screen enclosure framing",

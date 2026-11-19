@@ -29,7 +29,7 @@ const SEGMENT_LABELS = {
   blog: "Blog",
   "about-us": "About Us",
   contact: "Contact",
-  "dumpster-rental-pricing": "Pricing",
+  "dumpster-rental-pricing": "Sizes & Quotes",
   "facebook-offer": "Facebook Offer",
   "service-locations": "Service Locations",
   reviews: "Reviews",

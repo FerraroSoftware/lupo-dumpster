@@ -1,4 +1,4 @@
-import { getSize } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const tenYard = getSize("10");
 
@@ -8,7 +8,7 @@ const yardWasteRemoval = {
   serviceType: "Yard waste removal",
   title: "Yard Waste Removal in Pasco County, FL | Lupo Dumpster",
   description:
-    "Yard waste removal in Pasco County, FL. We haul branches, palm fronds, sod, old fencing, and storm debris. Our crew loads it all. Firm price first.",
+    "Yard waste removal in Pasco County, FL. We haul branches, palm fronds, sod, old fencing, and storm debris. Our crew loads it all. Free quote first.",
   keywords: [
     "yard waste removal Pasco County",
     "yard debris removal near me",
@@ -17,13 +17,13 @@ const yardWasteRemoval = {
     "brush and branch hauling",
     "sod removal",
   ],
-  quoteTitle: "Get Your Yard Waste Removal Price",
+  quoteTitle: "Get Your Free Yard Waste Removal Quote",
   quotePlaceholder: "e.g. Large pile of palm fronds and oak limbs after a storm, plus a few old fence panels",
   hero: {
     eyebrow: "Yard waste removal · Pasco County, FL",
     title: ["Get Your Yard Back with ", "Yard Waste Removal in Pasco County"],
     intro:
-      "Lupo's yard waste removal crew hauls branches, palm fronds, sod, old fencing, and storm debris from homes in Hudson, Land O' Lakes, and across Pasco County. We load the pile by hand, so you don't have to bag it or bundle it for the curb. Tell us what's there and you'll get a firm price first.",
+      "Lupo's yard waste removal crew hauls branches, palm fronds, sod, old fencing, and storm debris from homes in Hudson, Land O' Lakes, and across Pasco County. We load the pile by hand, so you don't have to bag it or bundle it for the curb. Send a photo or a quick description for a free quote first.",
     image: "/images/services/yard-waste-removal/yard-waste-removal-palm-fronds-pasco-county-fl.webp",
     imageAlt: "Worker loading palm fronds and bagged leaves into a dump trailer for yard waste removal in Pasco County, FL",
   },
@@ -42,7 +42,7 @@ const yardWasteRemoval = {
     title: ["Brush, Fronds, and Fencing, ", "Loaded and Gone"],
     paragraphs: [
       "Florida yards grow fast and shed constantly. Palms drop fronds all year, oaks lose limbs in summer storms, and one weekend of trimming can leave a pile taller than you are. Yard waste removal means our crew loads that pile by hand and hauls it off, including the awkward stuff like rotted fence panels and rolls of old sod.",
-      "We haul debris. We don't cut down trees or trim limbs. If a tree service or landscaper is doing the cutting, we can follow behind and take what they leave. And if you have the time and energy to load it yourself, renting a dump trailer for a few days often costs less.",
+      "We haul debris. We don't cut down trees or trim limbs. If a tree service or landscaper is doing the cutting, we can follow behind and take what they leave. And if you have the time and energy to load it yourself, renting a dump trailer for a few days is another option, and we'll quote either one for free.",
     ],
     perfectFor: ["Storm cleanup", "Palm and hedge trimming piles", "Sod and landscape redos", "Old fence panels", "Overgrown lot cleanup", "Playset and shed debris"],
     image: "/images/services/yard-waste-removal/storm-branches-yard-debris-pile-florida.webp",
@@ -64,12 +64,12 @@ const yardWasteRemoval = {
   },
   steps: [
     { title: "Send a photo of the pile", text: "A quick picture of the yard debris, plus where we can reach it from, is all we need." },
-    { title: "Get your price and a time", text: "We'll quote it firm and set a time, working around the storm-season rush when there is one." },
+    { title: "Get your quote and a time", text: "We'll send a free quote and set a time, working around the storm-season rush when there is one." },
     { title: "We load it and rake up", text: "Our crew loads everything, rakes up the leftovers, and hauls it to disposal." },
   ],
   pricing: {
-    title: ["Yard Waste Pricing ", "Without Surprises"],
-    intro: "Yard debris ranges from light, dry fronds to soaking-wet sod. We'll price yours firm before we come.",
+    title: ["Free Yard Waste Quotes, ", "No Surprises"],
+    intro: "Yard debris ranges from light, dry fronds to soaking-wet sod. We'll quote yours for free before we come.",
     factors: [
       { title: "Size of the pile", text: "Volume matters most. Fluffy brush piles take up a lot of trailer space for their weight." },
       { title: "What's in it", text: "Sod, dirt, and waterlogged logs are heavy to dispose of. Dry fronds and leaves are light." },
@@ -100,14 +100,14 @@ const yardWasteRemoval = {
     title: "Storm Debris and Overgrowth, Cleared",
     paragraphs: [
       "Hurricane season runs from June through November, and even a passing tropical storm can leave a Pasco County yard covered in oak limbs and palm fronds. Add in the afternoon thunderstorms, the constant growth, and the once-a-year landscape overhaul, and most homeowners in Hudson, Odessa, and Land O' Lakes end up with a debris pile at some point. We clear yard waste throughout Pasco County and in neighboring towns like Spring Hill and Palm Harbor.",
-      "Send us a photo, and we'll give you a firm price. Our crew loads the brush, fronds, sod, and old fencing by hand, rakes up the small stuff, and hauls it away. No bundling, no cutting limbs to four-foot lengths, and no waiting weeks for a curbside pickup.",
-      "After a big storm, demand climbs fast, so reach out early. If you're planning a larger landscaping project and want to load at your own pace, a flat-rate dumpster in the driveway is another good option.",
+      "Send us a photo, and we'll give you a free quote. Our crew loads the brush, fronds, sod, and old fencing by hand, rakes up the small stuff, and hauls it away. No bundling, no cutting limbs to four-foot lengths, and no waiting weeks for a curbside pickup.",
+      "After a big storm, demand climbs fast, so reach out early. If you're planning a larger landscaping project and want to load at your own pace, a dumpster in the driveway is another good option, with a free quote up front.",
     ],
   },
   nprText: "Cleaning up a yard closer to the coast?",
   related: [
     { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service hauling for everything else, from old patio furniture to shed contents." },
-    { name: tenYard.name, href: tenYard.href, text: `Load yard debris at your own pace with a ${tenYard.name.toLowerCase()} at $${tenYard.price} flat.` },
+    { name: tenYard.name, href: tenYard.href, text: `Load yard debris at your own pace with a ${tenYard.name.toLowerCase()}. Get a free quote.` },
     { name: "Dumpster Trailer Rental", href: "/services/dumpster-trailer-rental", text: "Low-profile dump trailers that are easy to fill with brush and sod." },
   ],
   posts: [
@@ -119,7 +119,7 @@ const yardWasteRemoval = {
   faqs: [
     {
       q: "How much does yard waste removal cost?",
-      a: "It depends on the size of the pile, what's in it, and how easy it is to reach. Send a photo and we'll give you a firm price before we schedule.",
+      a: `It depends on the size of the pile, what's in it, and how easy it is to reach. Send a photo and we'll give you a free quote that covers loading, hauling, and disposal before we schedule. Call or text ${siteConfig.phone}, or request a quote online.`,
     },
     {
       q: "Do you pick up storm debris?",
@@ -135,10 +135,10 @@ const yardWasteRemoval = {
     },
     {
       q: "Should I rent a dumpster for yard waste instead?",
-      a: `For a big landscaping project you'll work on over several days, a ${tenYard.name.toLowerCase()} at $${tenYard.price} flat may cost less. For a pile that's already there, removal is quicker.`,
+      a: `For a big landscaping project you'll work on over several days, a ${tenYard.name.toLowerCase()} may be the better fit. Get a free quote on one. For a pile that's already there, removal is quicker.`,
     },
   ],
-  ctaText: "Send us a photo of the pile and get a firm price. We'll load it, rake up, and haul it all away.",
+  ctaText: "Send us a photo of the pile and get a free quote. We'll load it, rake up, and haul it all away.",
 };
 
 export default yardWasteRemoval;

@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const oldsmar = {
   metaDescription:
-    `Dumpster rental in Oldsmar, FL from $${lowestPrice}. Flat-rate 10, 15 & 20-yard dumpsters for newer subdivisions and remodels, with disposal included.`,
+    "Dumpster rental in Oldsmar, FL for newer subdivisions and remodels. 10, 15 & 20-yard dumpsters, with a free quote that includes disposal.",
   keywords: [
     "dumpster rental Oldsmar",
     "Oldsmar dumpster rental",
@@ -12,7 +10,7 @@ const oldsmar = {
   ],
   h1Desire: "Make Room for What's Next",
   answer:
-    `Lupo brings 10, 15, and 20-yard dumpsters to Oldsmar, FL, in northeast Pinellas County, for one flat price starting at $${lowestPrice}. From the subdivisions off Tampa Road and Forest Lakes Boulevard to homes near the bay, delivery, pickup, and disposal are included. Our Holiday yard is roughly 30 minutes away.`,
+    "Lupo brings 10, 15, and 20-yard dumpsters to Oldsmar, FL, in northeast Pinellas County. From the subdivisions off Tampa Road and Forest Lakes Boulevard to homes near the bay, we quote the job free and upfront, with delivery, pickup, and disposal included. Our Holiday yard is roughly 30 minutes away.",
   introTitle: ["A Local Crew for ", "Oldsmar Projects"],
   localIntro: [
     "Oldsmar is a small city at the top of Old Tampa Bay, and much of its housing went up from the 1980s on. Those homes are now at the age where kitchens, floors, and roofs need replacing, and that's most of what we haul here. Most of our trips come in along Tampa Road, and the drive from Holiday is easy outside rush hour.",

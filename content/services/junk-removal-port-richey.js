@@ -1,11 +1,11 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const junkRemovalPortRichey = {
   path: "/services/junk-removal-port-richey",
   kind: "junk",
   serviceType: "Junk removal",
   title: "Junk Removal in Port Richey, FL | Lupo Dumpster",
-  description: `Junk removal in Port Richey, FL. We haul furniture, appliances, and storm-soaked items from canal homes and mobile homes. Firm price first. ${siteConfig.rating.value}★ on Google.`,
+  description: `Junk removal in Port Richey, FL. We haul furniture, appliances, and storm-soaked items from canal homes and mobile homes. Free quote first. ${siteConfig.rating.value}★ on Google.`,
   keywords: [
     "junk removal Port Richey",
     "junk removal Port Richey FL",
@@ -13,13 +13,13 @@ const junkRemovalPortRichey = {
     "mobile home cleanout Port Richey",
     "storm debris junk removal Port Richey",
   ],
-  quoteTitle: "Get Your Port Richey Junk Removal Price",
+  quoteTitle: "Get a Free Port Richey Junk Removal Quote",
   quotePlaceholder: "e.g. Wet carpet and a sofa from a canal home, plus a shed full of old gear",
   hero: {
     eyebrow: "Full-service junk removal · Port Richey, FL",
     title: ["Clear Out the Clutter with ", "Junk Removal in Port Richey"],
     intro:
-      "Lupo offers junk removal in Port Richey, FL, the small waterfront city where the Cotee River meets the Gulf in west Pasco County. Our crew carries out furniture, appliances, and clutter from canal homes, manufactured homes, and condos, then hauls it all away. You get a firm price before we start.",
+      "Lupo offers junk removal in Port Richey, FL, the small waterfront city where the Cotee River meets the Gulf in west Pasco County. Our crew carries out furniture, appliances, and clutter from canal homes, manufactured homes, and condos, then hauls it all away. Send a quick description or photos for a free quote before we start.",
     image: "/port-richey.webp",
     imageAlt: "Illustration of a Gulf coast waterfront at sunset, representing junk removal in Port Richey, FL",
   },
@@ -48,7 +48,7 @@ const junkRemovalPortRichey = {
     title: ["Why Port Richey ", "Calls a Local Crew"],
     items: [
       { icon: "Route", title: "Close to home", text: "We're based in Holiday, a straight run up US-19, not driving in from across the bay." },
-      { icon: "Tag", title: "Firm price first", text: "Text photos of what's going and get a firm number before anything is scheduled." },
+      { icon: "Tag", title: "Free quote first", text: "Text photos of what's going and get a free, upfront quote before anything is scheduled." },
       { icon: "Users", title: "Tight spaces, handled", text: "Raised homes, narrow side yards, and mobile home steps are routine for our crew." },
       { icon: "Recycle", title: "Metal pulled for recycling", text: "Old grills, bikes, and appliances are separated for scrap whenever we can." },
     ],
@@ -59,11 +59,11 @@ const junkRemovalPortRichey = {
     reviewNames: ["Brian O.", "Joseph S.", "David C."],
   },
   pricing: {
-    title: ["Fair Pricing for ", "Port Richey Jobs"],
+    title: ["Free Quotes for ", "Port Richey Jobs"],
     intro:
-      "We price junk removal in Port Richey by what we're hauling and how we get to it. Text photos for a firm price before anything is scheduled.",
+      "We quote junk removal in Port Richey by what we're hauling and how we get to it. Text photos for a free quote before anything is scheduled.",
     factors: [
-      { title: "Volume", text: "How much of the trailer your items fill. A few pieces cost far less than a full mobile home cleanout." },
+      { title: "Volume", text: "How much of the trailer your items fill. A few pieces is a far smaller job than a full mobile home cleanout." },
       { title: "Weight and material", text: "Waterlogged furniture, carpet, and drywall weigh much more than dry belongings and cost more to dispose of." },
       { title: "Access", text: "Items at the curb load fast. Raised homes, upstairs condos, and back sheds on a canal lot take more time." },
     ],
@@ -86,14 +86,14 @@ const junkRemovalPortRichey = {
     paragraphs: [
       "Port Richey is a small city with a lot of water. It sits where the Cotee River runs into the Gulf, with canal homes, waterfront restaurants, and Werner-Boyce Salt Springs State Park just up the road. It's a great place to live, and it's also a place where junk builds up in sheds, carports, and spare rooms.",
       "Lupo's junk removal crew works all over the Port Richey area, inside city limits and in the unincorporated neighborhoods around it, like Jasmine Lakes, Embassy Hills, and Regency Park. We empty manufactured homes for families, turn over seasonal rentals between tenants, and haul away surge-soaked furniture and carpet after storms like Hurricane Helene in 2024.",
-      "It's simple. Tell us what needs to go and we'll give you a firm price. Our crew comes up from Holiday, does all the lifting, and sweeps up before we leave. Usable items and metals are set aside when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road in Shady Hills. If you'd rather load things yourself over a few days, we can drop off a flat-rate dumpster instead.",
+      "It's simple. Tell us what needs to go, or text a few photos, and we'll give you a free quote. Our crew comes up from Holiday, does all the lifting, and sweeps up before we leave. Usable items and metals are set aside when we can, and the rest generally goes to Pasco County's solid waste facility on Hays Road in Shady Hills. If you'd rather load things yourself over a few days, we can drop off a dumpster instead. Ask for a free quote.",
     ],
   },
   nprText: "Want to load it yourself? We deliver dumpsters to Port Richey too.",
   areaLabel: "Dumpster rental",
   related: [
     { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service junk removal across Pasco County and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "We deliver flat-rate dumpsters to Port Richey from our New Port Richey service area." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "We deliver dumpsters to Port Richey from our New Port Richey service area. Free quote, no surprise fees." },
     { name: "Appliance Removal", href: "/services/appliance-removal", text: "Old fridges, freezers, washers, and dryers carried out and recycled when possible." },
   ],
   posts: [
@@ -105,7 +105,7 @@ const junkRemovalPortRichey = {
   faqs: [
     {
       q: "How much does junk removal cost in Port Richey?",
-      a: "It depends on how much there is, what it is, and how easy it is to reach. Wet, storm-damaged items weigh more. Send photos and we'll give you a firm price first.",
+      a: `It depends on how much there is, what it is, and how easy it is to reach. Wet, storm-damaged items weigh more. Send photos and we'll give you a free, upfront quote first. Call or text ${siteConfig.phone}, or request one online.`,
     },
     {
       q: "Do you serve Jasmine Lakes, Embassy Hills, and other Port Richey addresses?",
@@ -125,10 +125,10 @@ const junkRemovalPortRichey = {
     },
     {
       q: "Do you rent dumpsters in Port Richey too?",
-      a: `Yes. If you'd rather load it yourself, dumpsters start at $${lowestPrice} flat with delivery, pickup, and disposal included. See our New Port Richey dumpster page for sizes.`,
+      a: "Yes. If you'd rather load it yourself, get a free quote on a dumpster. It covers delivery, pickup, and disposal up to the weight limit. See our New Port Richey dumpster page for sizes.",
     },
   ],
-  ctaText: "Tell us what needs to go from your Port Richey home and get a firm price. Our crew does the lifting and the hauling.",
+  ctaText: "Tell us what needs to go from your Port Richey home and get a free quote. Our crew does the lifting and the hauling.",
   verify: [
     "Drive time from the Holiday yard to Port Richey (copy avoids a number; says 'a straight run up US-19')",
     "Jasmine Lakes, Embassy Hills, and Regency Park have Port Richey mailing addresses but are unincorporated Pasco",

@@ -1,11 +1,11 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const junkRemovalPalmHarbor = {
   path: "/services/junk-removal-palm-harbor",
   kind: "junk",
   serviceType: "Junk removal",
   title: "Junk Removal in Palm Harbor, FL | Lupo Dumpster",
-  description: `Junk removal in Palm Harbor, FL. We lift, load, and haul furniture, appliances, and cleanout junk in north Pinellas. Firm price first. ${siteConfig.rating.value}★ on Google.`,
+  description: `Junk removal in Palm Harbor, FL. We lift, load, and haul furniture, appliances, and cleanout junk in north Pinellas. Free quote first. ${siteConfig.rating.value}★ on Google.`,
   keywords: [
     "junk removal Palm Harbor",
     "junk removal Palm Harbor FL",
@@ -13,13 +13,13 @@ const junkRemovalPalmHarbor = {
     "furniture removal Palm Harbor",
     "junk removal north Pinellas",
   ],
-  quoteTitle: "Get Your Palm Harbor Junk Removal Price",
+  quoteTitle: "Get a Free Palm Harbor Junk Removal Quote",
   quotePlaceholder: "e.g. Second-floor villa: sofa, two beds, and lanai furniture",
   hero: {
     eyebrow: "Full-service junk removal · Palm Harbor, FL",
     title: ["Reclaim Your Space with ", "Junk Removal in Palm Harbor"],
     intro:
-      "Lupo provides junk removal in Palm Harbor, FL, and across north Pinellas County. From Ozona and Crystal Beach to Lansbrook and the golf communities near Innisbrook, our crew carries out furniture, appliances, and clutter and hauls it all away. We're based just up US-19 in Holiday, and you get a firm price first.",
+      "Lupo provides junk removal in Palm Harbor, FL, and across north Pinellas County. From Ozona and Crystal Beach to Lansbrook and the golf communities near Innisbrook, our crew carries out furniture, appliances, and clutter and hauls it all away. We're based just up US-19 in Holiday, and a few photos get you a free quote first.",
     image: "/palm-harbor.webp",
     imageAlt: "Illustration of a palm-lined waterfront at sunset, representing junk removal in Palm Harbor, FL",
   },
@@ -48,7 +48,7 @@ const junkRemovalPalmHarbor = {
     title: ["Junk Removal That ", "Respects the Neighborhood"],
     items: [
       { icon: "Truck", title: "Nothing left at the curb", text: "We load straight from your home or garage onto our trailer, so there's no pile waiting for pickup day." },
-      { icon: "Tag", title: "Firm price before we schedule", text: "Send a few photos and you'll know the cost before anything is booked." },
+      { icon: "Tag", title: "Free quote before we schedule", text: "Send a few photos and you'll know your price before anything is booked." },
       { icon: "KeyRound", title: "Ready for gates and elevators", text: "Gated entries, stairwells, and condo elevators are part of the job in Palm Harbor, and we plan for them." },
       { icon: "Home", title: "Family-run from Holiday", text: "You deal with Alex and Amanda's crew, not a franchise call center in another state." },
     ],
@@ -59,11 +59,11 @@ const junkRemovalPalmHarbor = {
     reviewNames: ["Kerry S.", "Crystal D.", "Owen R."],
   },
   pricing: {
-    title: ["Clear Pricing for ", "Palm Harbor Homes"],
+    title: ["Free, Upfront Quotes for ", "Palm Harbor Homes"],
     intro:
-      "Palm Harbor junk removal is priced by what we haul and how hard it is to reach. Send a few photos and you'll get a firm price before anything is scheduled.",
+      "Every Palm Harbor junk removal quote is based on what we haul and how hard it is to reach. Send a quick description or a few photos and you'll get a free quote before anything is scheduled.",
     factors: [
-      { title: "How much there is", text: "A single sofa from a villa costs far less than a full house before a move to a 55+ community." },
+      { title: "How much there is", text: "A single sofa from a villa is a much smaller job than a full house before a move to a 55+ community." },
       { title: "What it is", text: "Heavy items like hot tubs, pavers, and old tile cost more to handle and dispose of than boxes or furniture." },
       { title: "Access and building rules", text: "Upstairs condos, long elevator carries, and communities with set work hours take more planning." },
     ],
@@ -86,14 +86,14 @@ const junkRemovalPalmHarbor = {
     paragraphs: [
       "Palm Harbor doesn't have a city government of its own, but it has plenty of character. There's Old Palm Harbor along the Pinellas Trail, the waterfront streets of Ozona and Crystal Beach on St. Joseph Sound, the Innisbrook golf resort off US-19, and the lakefront neighborhoods of Lansbrook near Lake Tarpon.",
       "That variety shows up in the junk removal jobs we get. One day it's a recliner and a dresser from a second-floor villa. The next, it's a whole house in Highland Lakes being cleared after a move, or a lanai full of sun-faded patio furniture in a subdivision that won't let anything sit at the curb.",
-      "Lupo makes it easy. Tell us what needs to go, and we'll give you a firm price before we schedule. Our crew comes down from Holiday, does all the lifting, loads straight onto the trailer, and sweeps up before we leave. Usable items and metals are set aside when we can. The rest generally goes to Pinellas County's Solid Waste disposal complex on 114th Avenue North in St. Petersburg. If you'd rather load it yourself, we deliver flat-rate dumpsters to Palm Harbor too.",
+      "Lupo makes it easy. Tell us what needs to go, and we'll give you a free quote before we schedule. Our crew comes down from Holiday, does all the lifting, loads straight onto the trailer, and sweeps up before we leave. Usable items and metals are set aside when we can. The rest generally goes to Pinellas County's Solid Waste disposal complex on 114th Avenue North in St. Petersburg. If you'd rather load it yourself, we deliver dumpsters to Palm Harbor too, and that quote is free as well.",
     ],
   },
   nprText: "Have a project just north of the county line in Pasco?",
   areaLabel: "Dumpster rental",
   related: [
     { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service junk removal across Pasco County, Pinellas, and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-palm-harbor", text: "Prefer to load it yourself? Get a flat-rate dumpster delivered to your Palm Harbor driveway." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-palm-harbor", text: "Prefer to load it yourself? Get a free quote on a dumpster for your Palm Harbor driveway." },
     { name: "Furniture Removal", href: "/services/furniture-removal", text: "Sofas, sectionals, recliners, and bedroom sets carried out of homes, condos, and villas." },
   ],
   posts: [
@@ -105,7 +105,7 @@ const junkRemovalPalmHarbor = {
   faqs: [
     {
       q: "How much does junk removal cost in Palm Harbor?",
-      a: "It depends on how much there is, what it is, and how hard it is to reach. Send a few photos and we'll give you a firm price before we schedule.",
+      a: `It depends on how much there is, what it is, and how hard it is to reach. Send a few photos and we'll give you a free quote, covering the carry-out, hauling, and disposal, before we schedule. Call or text ${siteConfig.phone} or ask online.`,
     },
     {
       q: "Do you serve all of Palm Harbor, including Ozona and Crystal Beach?",
@@ -125,10 +125,10 @@ const junkRemovalPalmHarbor = {
     },
     {
       q: "Should I hire junk removal or rent a dumpster?",
-      a: `Choose junk removal if you want us to do the lifting. Choose a dumpster if you'd rather load it over a few days and your HOA allows it. Dumpsters start at $${lowestPrice} flat.`,
+      a: `Choose junk removal if you want us to do the lifting. Choose a dumpster if you'd rather load it over a few days and your HOA allows it. We'll quote either option for free.`,
     },
   ],
-  ctaText: "Tell us what needs to go from your Palm Harbor home and get a firm price. We'll handle the lifting and the hauling.",
+  ctaText: "Tell us what needs to go from your Palm Harbor home and get a free quote. We'll handle the lifting and the hauling.",
   verify: [
     "Drive time from the Holiday yard to Palm Harbor (copy avoids a number; says 'just up US-19')",
     "Palm Harbor junk loads generally go to Pinellas County's Solid Waste complex at 3095 114th Ave N, St. Petersburg (vs. being hauled back to Pasco)",

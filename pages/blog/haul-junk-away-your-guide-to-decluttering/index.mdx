@@ -1,6 +1,6 @@
 import Bloglayout from "../../../components/Bloglayout";
 import Head from "next/head";
-import { lowestPrice, siteConfig, telHref } from "@/lib/site-config";
+import { siteConfig, telHref } from "@/lib/site-config";
 
 export const article = {
   date: "2024-01-28",
@@ -10,7 +10,7 @@ export const article = {
   image: "/hoarding-junk-removal.webp",
   imageAlt: "Pile of household clutter ready to haul away",
   category: "Junk Removal & Cleanouts",
-  updated: "2026-10-25",
+  updated: "2026-11-19",
   keywords: [
     "haul junk away",
     "junk hauling",
@@ -21,7 +21,7 @@ export const article = {
   faqs: [
     {
       q: "How much does junk hauling cost?",
-      a: `Junk hauling is priced by how much we haul and how much loading is involved. Text a few photos to ${siteConfig.phone} and we'll give you a firm price before we start.`,
+      a: `It depends on how much we haul and how much loading is involved. Text a few photos to ${siteConfig.phone} and we'll give you a free quote before we start, with disposal included.`,
     },
     {
       q: "What can a junk hauling crew take?",
@@ -29,7 +29,7 @@ export const article = {
     },
     {
       q: "Is it cheaper to rent a dumpster?",
-      a: `For large projects you can load yourself, usually yes. Lupo's dumpsters start at $${lowestPrice} with disposal included up to 2 tons.`,
+      a: "For large projects you can load yourself, usually yes. A Lupo dumpster quote includes delivery, pickup, and disposal up to the weight limit, starting with 2 tons in a 10-yard. Ask for a free quote on both and compare.",
     },
   ],
 };
@@ -100,9 +100,9 @@ Not all junk hauling services are created equal. Here are vital factors to consi
 
 - **Recycling and Donation Practices:** Choose a company that prioritizes recycling and donating over landfill disposal. Our commitment to environmental responsibility is detailed on our [services page](/services).
 
-### Pricing
+### Quotes
 
-- **Transparent Pricing:** Look for companies that offer clear, upfront pricing based on volume or type of service. Avoid companies with hidden fees or vague estimates.
+- **Upfront Quotes:** Look for companies that give you a clear quote before work starts, based on volume or type of service. Avoid companies with hidden fees or vague estimates.
 
 ## The Junk Hauling Process Explained
 
@@ -115,7 +115,7 @@ Understanding what to expect during the junk hauling process can help set your e
 ### Day of Service
 
 - **Preparation:** Ensure the items are accessible and marked for removal if necessary.
-- **The Pickup:** The team will arrive within the scheduled time window, review the items to be hauled away, and confirm the final price before beginning the work.
+- **The Pickup:** The team will arrive within the scheduled time window, review the items to be hauled away, and confirm the quote before beginning the work.
 - **Disposal:** After loading the junk, the team will haul it away for disposal, recycling, or donation, depending on the nature of the items.
 
 By following these steps and choosing exemplary service, you can ensure that your junk is hauled away efficiently, safely, and in an environmentally responsible manner. For more information or to schedule a service, visit our [haul away junk](/services/haul-away-junk) page.
@@ -146,9 +146,9 @@ When it comes to getting rid of junk, you have two main options: tackle the job 
 | Who does the loading | Our crew | You, at your own pace |
 | Best for | A few bulky items or a single room | Remodels and big cleanouts |
 | Timeline | Done in one visit | Keep it on-site while you work |
-| Price | Firm quote before we start | Flat rate from ${lowestPrice}, disposal included |
+| Quote | Free quote after a quick description or photos | Free upfront quote, disposal included up to the weight limit |
 
-Not sure which fits? Call <a href={telHref}>{siteConfig.phone}</a> and we'll tell you honestly which one costs less for your job.
+Not sure which fits? Call <a href={telHref}>{siteConfig.phone}</a> for a free quote, and we'll tell you honestly which option fits your job.
 
 ## Reducing Junk Accumulation in the Future
 
@@ -173,13 +173,13 @@ To avoid future clutter and the need for frequent junk hauling, consider adoptin
 
 Whether you haul junk away or opt for professional junk hauling services, the key is to handle your unwanted items responsibly. By choosing exemplary service and taking steps to reduce future junk accumulation, you can enjoy a cleaner, more organized space.
 
-Ready to clear out your clutter? Contact our professional junk-hauling team for a firm price before we start, and see how we can help you reclaim your space. Explore our [haul away junk services](/services/haul-away-junk) for more information, or reach out directly through our [contact page](/contact) to schedule your service.
+Ready to clear out your clutter? Contact our professional junk-hauling team for a free, no-obligation quote, and see how we can help you reclaim your space. Explore our [haul away junk services](/services/haul-away-junk) for more information, or reach out directly through our [contact page](/contact) to schedule your service.
 
 ## Frequently Asked Questions
 
 ### How much does junk hauling cost?
 
-Junk hauling is priced by how much we haul and how much loading is involved. Text a few photos to {siteConfig.phone} and we'll give you a firm price before we start.
+It depends on how much we haul and how much loading is involved. Text a few photos to <a href={telHref}>{siteConfig.phone}</a> and we'll give you a free quote before we start, with disposal included.
 
 ### What can a junk hauling crew take?
 
@@ -187,6 +187,6 @@ Furniture, appliances, mattresses, yard waste, and general household junk. Hazar
 
 ### Is it cheaper to rent a dumpster?
 
-For large projects you can load yourself, usually yes. Lupo's dumpsters start at ${lowestPrice} with disposal included up to 2 tons.
+For large projects you can load yourself, usually yes. A Lupo dumpster quote includes delivery, pickup, and disposal up to the weight limit, starting with 2 tons in a [10-yard](/services/10-yard-dump-trailer). Ask for a free quote on both and compare.
 
 </Bloglayout>

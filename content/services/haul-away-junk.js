@@ -1,10 +1,12 @@
+import { siteConfig } from "@/lib/site-config";
+
 const haulAwayJunk = {
   path: "/services/haul-away-junk",
   kind: "junk",
   serviceType: "Junk haul-away",
   title: "Junk Haul-Away in Pasco County, FL | Lupo Dumpster",
   description:
-    "Junk haul-away in Pasco County, FL for one couch, an old fridge, or a few items. Small loads welcome. Text a photo and get a firm price first.",
+    "Junk haul-away in Pasco County, FL for one couch, an old fridge, or a few items. Small loads welcome. Text a photo for a free quote first.",
   keywords: [
     "haul away junk",
     "junk haul away Pasco County",
@@ -13,14 +15,14 @@ const haulAwayJunk = {
     "couch haul away",
     "fridge haul away",
   ],
-  quoteTitle: "Get Your Haul-Away Price",
+  quoteTitle: "Get Your Free Haul-Away Quote",
   quotePlaceholder: "Example: one recliner in the living room and an old mini fridge in the garage",
-  ctaLabel: "Get Your Price",
+  ctaLabel: "Get a Free Quote",
   hero: {
     eyebrow: "Single-item & small-load haul-away · Pasco County, FL",
     title: ["Get That Couch Out the Door with ", "Junk Haul-Away in Pasco County"],
     intro:
-      "Need to haul away junk but only have a couch, a fridge, or a few odd items? Lupo's junk haul-away is built for small loads in New Port Richey, Trinity, and across Pasco County. Text a photo, get a firm price, and our crew carries it out and takes it away.",
+      "Need to haul away junk but only have a couch, a fridge, or a few odd items? Lupo's junk haul-away is built for small loads in New Port Richey, Trinity, and across Pasco County. Text a photo, get a free quote, and our crew carries it out and takes it away.",
     image: "/furniture-pick-up.webp",
     imageAlt: "Old couch in a cluttered living room waiting for junk haul-away in Pasco County",
   },
@@ -39,7 +41,7 @@ const haulAwayJunk = {
     title: ["One Item or a Few. ", "We'll Haul It Away."],
     paragraphs: [
       "Not every job is a full cleanout. Our junk haul-away service is for the times you have one or two things that need to go: a sleeper sofa after a furniture upgrade, a fridge that finally quit, or the treadmill nobody uses.",
-      "Send a photo and we'll give you a firm price. Our crew comes out, carries the item from wherever it sits, and loads it onto our truck. If you've got a whole garage or house to clear, our full junk removal service is the better fit.",
+      "Send a photo for a free quote. Our crew comes out, carries the item from wherever it sits, and loads it onto our truck. If you've got a whole garage or house to clear, our full junk removal service is the better fit.",
     ],
     perfectFor: ["One couch or recliner", "An old fridge or washer", "A mattress set", "Exercise equipment", "A few boxes", "Leftovers after a move"],
     image: "/junk-trailer.webp",
@@ -50,27 +52,27 @@ const haulAwayJunk = {
     items: [
       { icon: "Package", title: "Single items welcome", text: "One piece is a real job to us. We'll come out for a lone couch or a single appliance." },
       { icon: "Users", title: "We carry it out", text: "From the back bedroom, the garage, or upstairs. You don't lift a thing." },
-      { icon: "Camera", title: "Price from a photo", text: "Text a picture and get a firm number before we schedule anything." },
+      { icon: "Camera", title: "Quote from a photo", text: "Text a picture and get a free quote before we schedule anything." },
       { icon: "Recycle", title: "Reuse when we can", text: "Furniture in good shape and scrap metal get a second life through donation or recycling when possible." },
     ],
   },
   proof: {
     title: ["Quick Visits, ", "Happy Customers"],
-    intro: "Big job or small, customers notice the same things: friendly people and prices that hold.",
+    intro: "Big job or small, customers notice the same things: friendly people and quotes that hold.",
     reviewNames: ["Brian O.", "Crystal D.", "Joseph S."],
   },
   steps: [
     { title: "Text a photo", text: "Send a picture of the item through the form or by text. A quick description works too." },
-    { title: "Approve your price", text: "We'll reply with a firm price and a pickup window that fits your day." },
+    { title: "Approve your quote", text: "We'll reply with a free, upfront quote and a pickup window that fits your day." },
     { title: "We grab it and go", text: "Our crew carries it out, loads it, and hauls it away. It's usually a quick visit." },
   ],
   pricing: {
-    title: ["Fair Pricing for ", "Small Loads"],
+    title: ["What Goes Into ", "Your Quote"],
     intro:
-      "You only pay for what we haul, so a single item costs far less than a full trailer load. You'll know the price before we schedule.",
+      "Every haul-away is quoted on what we're actually taking. Send a photo or a quick description for a free quote, and you'll know your price before we schedule.",
     factors: [
-      { title: "What the item is", text: "A dresser is simpler to dispose of than a fridge or a mattress, which can carry extra disposal costs." },
-      { title: "How many pieces", text: "One item or a few. The more trailer space it takes, the higher the price." },
+      { title: "What the item is", text: "A dresser is simpler to dispose of than a fridge or a mattress, which can need special handling." },
+      { title: "How many pieces", text: "One item or a few. The more trailer space it takes, the more it factors into your quote." },
       { title: "Where it's sitting", text: "Curbside or garage pickups are quickest. Stairs and tight hallways add labor." },
     ],
   },
@@ -90,7 +92,7 @@ const haulAwayJunk = {
     title: "Small Job, Same Crew",
     paragraphs: [
       "Sometimes the problem isn't a house full of junk. It's one recliner in a Trinity living room, a dead fridge in a Holiday garage, or a mattress leaning against the wall of a New Port Richey apartment. Lupo's junk haul-away service is for exactly that kind of job.",
-      "Text a photo and we'll send back a firm price. Our crew shows up, carries the item out from wherever it is, and hauls it away for disposal, donation, or recycling. No truck rental, no favors from friends, and no sore back. If the item is already outside or in an open garage, ask whether we can grab it while you're at work, so you don't have to take time off for one couch.",
+      "Text a photo and we'll send back a free quote. Our crew shows up, carries the item out from wherever it is, and hauls it away for disposal, donation, or recycling. No truck rental, no favors from friends, and no sore back. If the item is already outside or in an open garage, ask whether we can grab it while you're at work, so you don't have to take time off for one couch.",
       "We're a family business based in Holiday, FL, and we cover Pasco County plus nearby Pinellas, Hernando, and North Hillsborough. If one item turns into a whole garage once you get started, that's fine. We'll quote the bigger job too.",
     ],
   },
@@ -108,11 +110,11 @@ const haulAwayJunk = {
   faqs: [
     {
       q: "Will you come out for just one item?",
-      a: "Yes. Single-item pickups are what this service is for. Send a photo and we'll give you a price.",
+      a: "Yes. Single-item pickups are what this service is for. Send a photo and we'll give you a free quote.",
     },
     {
       q: "How much does it cost to haul away one couch?",
-      a: "It depends on the size, where it's sitting, and how easy it is to reach. Text a photo and we'll give you a firm price before scheduling.",
+      a: `It depends on the size of the couch, where it's sitting, and how easy it is to reach. Text a photo to ${siteConfig.phone} or request online, and we'll give you a free, upfront quote before scheduling.`,
     },
     {
       q: "Can you take an old refrigerator?",
@@ -124,10 +126,10 @@ const haulAwayJunk = {
     },
     {
       q: "What's the difference between haul-away and junk removal?",
-      a: "Haul-away is for one item or a small load. Junk removal is our full-service option for whole garages, homes, and cleanouts. Same crew, same firm pricing.",
+      a: "Haul-away is for one item or a small load. Junk removal is our full-service option for whole garages, homes, and cleanouts. Same crew, same free upfront quotes.",
     },
   ],
-  ctaText: "Text a photo of the item and get a firm price. We carry it out and haul it away, even if it's just one piece.",
+  ctaText: "Text a photo of the item and get a free quote. We carry it out and haul it away, even if it's just one piece.",
 };
 
 export default haulAwayJunk;

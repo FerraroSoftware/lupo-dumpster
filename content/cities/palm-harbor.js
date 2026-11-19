@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const palmHarbor = {
   metaDescription:
-    `Dumpster rental in Palm Harbor, FL from $${lowestPrice}, delivered from our Holiday yard just up US-19. One flat price covers delivery, pickup, and disposal.`,
+    "Dumpster rental in Palm Harbor, FL, delivered from our Holiday yard just up US-19. One free, upfront quote covers delivery, pickup, and disposal.",
   keywords: [
     "dumpster rental Palm Harbor",
     "Palm Harbor dumpster rental",
@@ -12,7 +10,7 @@ const palmHarbor = {
   ],
   h1Desire: "Finish the Project Without the Mess",
   answer:
-    `Lupo delivers 10, 15, and 20-yard dumpsters across Palm Harbor, FL, from Ozona and Crystal Beach to Lansbrook and Highland Lakes, at flat prices starting at $${lowestPrice}. Palm Harbor is the closest part of Pinellas County to our Holiday yard, so we can often get a dumpster to your driveway the same day you call.`,
+    "Lupo delivers 10, 15, and 20-yard dumpsters across Palm Harbor, FL, from Ozona and Crystal Beach to Lansbrook and Highland Lakes. Call for a free quote and you'll have your price on the phone. Palm Harbor is the closest part of Pinellas County to our Holiday yard, so we can often get a dumpster to your driveway the same day you call.",
   introTitle: ["The First Pinellas Stop ", "From Our Yard"],
   localIntro: [
     "Palm Harbor starts just below the Pasco line, a quick run down US-19 or Alternate 19 from our yard in Holiday. It's the first place we reach in Pinellas County and one of the areas our trucks know street by street. Because the drive is short, we can often work around tight timelines here, like a closing date or a crew that wants to start tomorrow.",

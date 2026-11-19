@@ -1,9 +1,9 @@
-import { lowestPrice, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const hillsboroughCounty = {
   metaTitle: "Dumpster Rental in North Hillsborough County, FL | Lupo",
   metaDescription:
-    `Dumpster rental in North Hillsborough County: Lutz, Westchase, Keystone and nearby. One flat price from $${lowestPrice} covers haul-off. ${siteConfig.rating.value} on Google.`,
+    `Dumpster rental in North Hillsborough County: Lutz, Westchase, Keystone and nearby. Free quote includes haul-off. ${siteConfig.rating.value} on Google.`,
   keywords: [
     "dumpster rental Hillsborough County",
     "Hillsborough County dumpster rental",
@@ -14,7 +14,7 @@ const hillsboroughCounty = {
   eyebrow: "Dumpster rental · North & Northwest Hillsborough",
   h1Desire: "Get Debris Gone North of Tampa",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters in north and northwest Hillsborough County, FL, including Lutz, Westchase, Keystone, Odessa, Citrus Park, and Carrollwood, from $${lowestPrice} flat. We're a family-run company based just over the Pasco line in Holiday, so these communities are our regular routes, not an afterthought.`,
+    `Lupo rents 10, 15, and 20-yard dumpsters in north and northwest Hillsborough County, FL, including Lutz, Westchase, Keystone, Odessa, Citrus Park, and Carrollwood, and quotes every job free and upfront. We're a family-run company based just over the Pasco line in Holiday, so these communities are our regular routes, not an afterthought.`,
   introTitle: ["The Part of Hillsborough ", "We Serve Most Often"],
   localIntro: [
     "Hillsborough is a big county, and we'd rather be straight with you than pretend to cover all of it. Our trucks run out of Holiday, so the north and northwest side is where we're on the road most often: Lutz, Westchase, Keystone, Odessa, Citrus Park, Carrollwood, and the neighborhoods along the Veterans Expressway and Gunn Highway.",
@@ -59,7 +59,7 @@ const hillsboroughCounty = {
     },
     {
       q: "Is the price higher because you're coming from Pasco?",
-      a: "Not for the north and northwest communities on our regular routes. The same flat size pricing applies, and we'll tell you the cost before delivery.",
+      a: "The north and northwest communities are on our regular routes, so they're quoted like any other stop. Your free quote covers delivery, pickup, and disposal up to the weight limit, and you'll know the cost before we cross the county line.",
     },
   ],
   image: "/dumpster-rental-tampa-bay.webp",
@@ -70,7 +70,7 @@ const hillsboroughCounty = {
     "Drive time range from the Holiday yard (estimated 25 minutes to Keystone, 45 minutes to Carrollwood and east Lutz)",
     "Exact list of Hillsborough communities on regular routes (Lutz, Westchase, Keystone, Odessa, Citrus Park, Carrollwood, Town 'N' Country?)",
     "Whether Lupo ever serves Brandon, Riverview, Valrico, South Tampa (the registry's neighborhood chips list Brandon, Riverview, Valrico, and Tampa, which contradicts the 'north and northwest only' copy)",
-    "That flat pricing is the same in north Hillsborough (no distance surcharge)",
+    "That north Hillsborough jobs are quoted without a distance surcharge",
     "Which Hillsborough County facility loads go to",
     "Hillsborough County right-of-way permit process and the (813) 635-5400 number in the registry",
     "Carrollwood and Citrus Park being unincorporated (believed true)",

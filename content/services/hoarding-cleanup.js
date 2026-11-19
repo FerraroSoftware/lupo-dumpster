@@ -1,4 +1,4 @@
-import { getSize } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const twentyYard = getSize("20");
 
@@ -8,7 +8,7 @@ const hoardingCleanup = {
   serviceType: "Hoarding and estate cleanup",
   title: "Hoarding & Estate Cleanup in Pasco County, FL | Lupo",
   description:
-    "Hoarding and estate cleanup in Pasco County, FL. A discreet, respectful local crew that works with your family at your pace. Firm price before we begin.",
+    "Hoarding and estate cleanup in Pasco County, FL. A discreet, respectful local crew that works with your family at your pace. Free quote before we begin.",
   keywords: [
     "hoarding cleanup Pasco County",
     "estate cleanout Pasco County",
@@ -24,7 +24,7 @@ const hoardingCleanup = {
     eyebrow: "Hoarding & estate cleanup · Pasco County, FL",
     title: ["Bring Calm Back to the Home with ", "Hoarding Cleanup in Pasco County"],
     intro:
-      "Lupo provides hoarding and estate cleanup across Pasco County, from New Port Richey to Zephyrhills. Our crew works quietly and respectfully, at a pace your family is comfortable with. We help set aside what matters, haul what goes, and give you a firm price before any work begins.",
+      "Lupo provides hoarding and estate cleanup across Pasco County, from New Port Richey to Zephyrhills. Our crew works quietly and respectfully, at a pace your family is comfortable with. We help set aside what matters, haul what goes, and give you a free, private quote before any work begins.",
     image: "/images/services/hoarding-cleanup/hoarding-cleanup-crew-sorting-pasco-county.webp",
     imageAlt: "Hoarding cleanup crew sorting boxes and bagged belongings in a crowded living room in Pasco County, FL",
   },
@@ -66,16 +66,16 @@ const hoardingCleanup = {
     reviewNames: ["Owen R.", "Brian O.", "Joseph S."],
   },
   stepsTitle: ["A Calmer Cleanup in ", "3 Steps"],
-  stepsIntro: "We go at your pace, with a firm price before anything moves.",
+  stepsIntro: "We go at your pace, with a free quote before anything moves.",
   steps: [
     { title: "Start with a private conversation", text: "Call, text, or use the form. Share as much or as little as you want, and send photos only if you're comfortable." },
-    { title: "Make a plan together", text: "We'll agree on what to keep, what to look for, and a schedule, then give you a firm price." },
+    { title: "Make a plan together", text: "We'll agree on what to keep, what to look for, and a schedule, then give you a free quote." },
     { title: "We clear it carefully", text: "Our crew works room by room, sets aside keepsakes, and hauls the rest away quietly." },
   ],
   pricing: {
     dumpsterNote: false,
-    title: ["Clear Pricing for a ", "Difficult Job"],
-    intro: "Every home is different. We'll walk through it with you, in person or by photos, and give you a firm price before we begin.",
+    title: ["A Free, Clear Quote for a ", "Difficult Job"],
+    intro: "Every home is different. We'll walk through it with you, in person or by photos, and give you a free quote before we begin.",
     factors: [
       { title: "Size of the home", text: "The number of rooms involved and how full they are set the starting point." },
       { title: "How much sorting you want", text: "Searching for papers and keepsakes takes more time than a straight haul-out, so we plan for it together." },
@@ -106,13 +106,13 @@ const hoardingCleanup = {
     title: "Help That Moves at Your Family's Pace",
     paragraphs: [
       "Many of the homes we help with belonged to someone who lived there for decades. A parent's house in Port Richey, a family home in Dade City, or a rental in Hudson that has to be ready by the end of the month. Sometimes it's an estate after a loss, and sometimes it's a hoarding situation that built up slowly over years. We provide hoarding and estate cleanup throughout Pasco County and in surrounding communities such as Spring Hill and Palm Harbor.",
-      "We start by listening. You tell us what matters, what to look for, and how fast you want to go. Then you get a firm price, and our crew works through the home room by room, setting aside photos, papers, and keepsakes for the family and hauling the rest away. Usable items are donated whenever we can.",
+      "We start by listening. You tell us what matters, what to look for, and how fast you want to go. Then you get a free quote, and our crew works through the home room by room, setting aside photos, papers, and keepsakes for the family and hauling the rest away. Usable items are donated whenever we can.",
       "We're a family business from Holiday, and we treat every home the way we'd want our own parents' home treated: with patience, privacy, and respect.",
     ],
   },
   nprText: "Handling a family home closer to the coast?",
   related: [
-    { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service hauling for any cleanout, big or small, priced before we start." },
+    { name: "Junk Removal", href: "/services/junk-removal", text: "Full-service hauling for any cleanout, big or small, quoted free before we start." },
     { name: "Furniture Removal", href: "/services/furniture-removal", text: "Couches, beds, and dressers carried out, with usable pieces donated when we can." },
     { name: twentyYard.name, href: twentyYard.href, text: "Prefer to work through the house yourself? Our largest dumpster fits a full property cleanout." },
   ],
@@ -125,7 +125,7 @@ const hoardingCleanup = {
   faqs: [
     {
       q: "How much does hoarding or estate cleanup cost?",
-      a: "It depends on how many rooms are involved, how full they are, and how much sorting you want. We'll walk through it with you, in person or by photos, and give you a firm price before we begin.",
+      a: `It depends on how many rooms are involved, how full they are, and how much sorting you want. We'll walk through it with you, in person or by photos, and give you a free, upfront quote before we begin. Call or text ${siteConfig.phone}, or reach out privately online.`,
     },
     {
       q: "Will you keep this private?",
@@ -145,7 +145,7 @@ const hoardingCleanup = {
     },
   ],
   ctaTitle: ["Ready to Take ", "the First Step?"],
-  ctaText: "Reach out privately. We'll listen, make a plan with you, and give you a firm price before anything is moved.",
+  ctaText: "Reach out privately. We'll listen, make a plan with you, and give you a free quote before anything is moved.",
 };
 
 export default hoardingCleanup;

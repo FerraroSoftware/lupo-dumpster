@@ -11,8 +11,8 @@ import { OPEN_TEXT_US_EVENT } from "@/components/site/sticky-mobile-bar";
 import { serviceAreas, siteConfig, telHref } from "@/lib/site-config";
 import { useBooking } from "@/lib/use-booking";
 
-const title = "Book a Dumpster Rental | Contact Lupo Dumpster Rentals";
-const description = `Book a 10, 15 or 20-yard dumpster online, or call or text ${siteConfig.phone}. ${siteConfig.hoursShort}. Serving Pasco, Pinellas, Hillsborough & Hernando.`;
+const title = "Get a Free Dumpster Quote | Contact Lupo Dumpster";
+const description = `Get a free quote on a 10, 15 or 20-yard dumpster, or call or text ${siteConfig.phone}. ${siteConfig.hoursShort}. Serving Pasco, Pinellas, Hillsborough & Hernando.`;
 
 const { address } = siteConfig;
 const addressLine = `${address.street}, ${address.city}, ${address.state} ${address.zip}`;
@@ -29,7 +29,7 @@ const contactFaqs = [
   },
   {
     q: "Can I book junk removal or a cleanout here?",
-    a: `Yes. Call or text ${siteConfig.phone} with a few photos of what needs to go and we'll give you a firm price before we start.`,
+    a: `Yes. Call or text ${siteConfig.phone} with a few photos of what needs to go and we'll give you a free quote before we start.`,
   },
   {
     q: "Do you work on weekends?",
@@ -59,7 +59,7 @@ export default function Contact() {
         eyebrow="Contact & booking"
         title={
           <>
-            Book Your Dumpster <Highlight tone="dark">in Under a Minute</Highlight>
+            Get a Free Quote <Highlight tone="dark">in Under a Minute</Highlight>
           </>
         }
         intro={`Pick a size, tell us where it's going, and we'll call or text to confirm your delivery. Rather talk? Call or text ${siteConfig.phone}. We're open 7 days, 7 AM to 8 PM.`}

@@ -6,8 +6,8 @@ import { Highlight } from "@/components/site/section-heading";
 import { navigation, siteConfig, telHref } from "@/lib/site-config";
 
 const links = [
-  { name: "Book a dumpster", href: navigation.bookHref },
-  { name: "Dumpster rental pricing", href: "/dumpster-rental-pricing" },
+  { name: "Get a free quote", href: navigation.bookHref },
+  { name: "Dumpster sizes & free quotes", href: "/dumpster-rental-pricing" },
   { name: "All services", href: "/services" },
   { name: "Junk removal", href: "/services/junk-removal" },
   { name: "Service areas", href: "/service-locations" },

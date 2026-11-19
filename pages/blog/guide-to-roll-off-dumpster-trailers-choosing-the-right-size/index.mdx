@@ -1,6 +1,6 @@
 import Bloglayout from "../../../components/Bloglayout";
 import Head from "next/head";
-import { priceOf } from "@/lib/site-config";
+import { siteConfig, telHref } from "@/lib/site-config";
 
 export const article = {
   date: "2024-01-07",
@@ -9,8 +9,8 @@ export const article = {
     "Compare 10, 15, and 20-yard dumpster sizes, dimensions, and weight limits, and find the right one for your cleanout, remodel, or roof.",
   image: "/dump-trailer.webp",
   imageAlt: "Lupo dumpster trailer, one of three dumpster sizes available",
-  category: "Sizing & Pricing",
-  updated: "2026-10-25",
+  category: "Sizing & Costs",
+  updated: "2026-11-19",
   keywords: [
     "what size dumpster do I need",
     "dumpster sizes",
@@ -31,22 +31,22 @@ export const article = {
     },
     {
       q: "What if I'm not sure which size to pick?",
-      a: "Choose “Not sure” when you book online and we'll recommend a size before delivery. Or check our pricing page for a side-by-side comparison.",
+      a: "Choose “Not sure” when you book online and we'll recommend a size before delivery. Or compare the sizes side by side online and request a free quote.",
     },
   ],
 };
 
 <Bloglayout keywords={article.keywords} faqs={article.faqs} category={article.category} dateModified={article.updated} title={article.title} date={article.date} description={article.description} image={article.image} imageAlt={article.imageAlt}>
 
-**Quick answer:** Pick a 10-yard for a garage cleanout or small remodel, a 15-yard for a kitchen remodel or flooring tear-out, and a 20-yard for a whole-home renovation, roof, or full property cleanout. If you're stuck between two sizes, size up. It costs less than paying for a second haul.
+**Quick answer:** Pick a 10-yard for a garage cleanout or small remodel, a 15-yard for a kitchen remodel or flooring tear-out, and a 20-yard for a whole-home renovation, roof, or full property cleanout. If you're stuck between two sizes, size up. One bigger dumpster usually beats a second haul. Call or text <a href={telHref}>{siteConfig.phone}</a> for a free quote.
 
-| Size | Dimensions | Holds about | Weight included | Flat price |
-| --- | --- | --- | --- | --- |
-| [10-yard](/services/10-yard-dump-trailer) | 12' L × 8' W × 3.5' H | 3 pickup-truck loads | 2 tons | {priceOf("10")} |
-| [15-yard](/services/15-yard-dump-trailer) | 14' L × 8' W × 4' H | 4–5 pickup-truck loads | 3 tons | {priceOf("15")} |
-| [20-yard](/services/20-yard-dump-trailer) | 16' L × 8' W × 5' H | 6–7 pickup-truck loads | 4 tons | {priceOf("20")} |
+| Size | Dimensions | Holds about | Weight included |
+| --- | --- | --- | --- |
+| [10-yard](/services/10-yard-dump-trailer) | 12' L × 8' W × 3.5' H | 3 pickup-truck loads | 2 tons |
+| [15-yard](/services/15-yard-dump-trailer) | 14' L × 8' W × 4' H | 4–5 pickup-truck loads | 3 tons |
+| [20-yard](/services/20-yard-dump-trailer) | 16' L × 8' W × 5' H | 6–7 pickup-truck loads | 4 tons |
 
-Every price includes delivery, pickup, and disposal up to the weight limit.
+Every quote includes delivery, pickup, and disposal up to the weight limit.
 
 ## Understanding Roll-Off Dumpster Trailers
 
@@ -62,7 +62,7 @@ Opting for a roll-off dumpster trailer brings numerous advantages, from improvin
 
 1. **Convenience**: The mobility of roll-off dumpster trailers allows for easy placement and relocation on your site, which is particularly beneficial in restricted spaces or sites with specific access requirements.
 2. **Versatility**: With various sizes available, roll-off dumpsters can accommodate the waste disposal needs of many projects, from minor yard cleanups to significant construction endeavors. Our [services page](/services) provides a comprehensive overview of the different sizes and types of dumpsters available, ensuring you find the perfect match for your project.
-3. **Cost-Effectiveness**: By choosing the right dumpster size for your project, you avoid overpaying for unused space or needing multiple hauls. Our [dumpster rental pricing guide](/dumpster-rental-pricing) offers transparent information to help you budget effectively for your project.
+3. **Cost-Effectiveness**: By choosing the right dumpster size for your project, you avoid overpaying for unused space or needing multiple hauls. [See sizes and get a free quote](/dumpster-rental-pricing) so you know your price before we deliver.
 4. **Eco-Friendliness**: Proper waste management is about disposal and environmental responsibility. Roll-off dumpsters facilitate the segregation and recycling of waste materials, contributing to more sustainable construction and renovation practices. For projects in specific areas, our localized service pages, such as [dumpster rental in New Port Richey, FL](/services/dumpster-rental-new-port-richey-fl), provide tailored information to meet regional waste management regulations and practices.
 
 ## Choosing the Right Size Dumpster Trailer
@@ -71,7 +71,7 @@ When planning a project, selecting the appropriate dumpster size is crucial. The
 
 ### 10-Yard Dumpster
 
-A 10-yard dumpster trailer is 12 feet long, 8 feet wide, and 3.5 feet high, includes 2 tons, and costs {priceOf("10")} flat. This size is ideal for small-scale projects like bathroom remodels, garage cleanouts, or small landscaping jobs. It's compact enough to fit in a driveway without taking up too much space, making it a popular choice for residential projects.
+A 10-yard dumpster trailer is 12 feet long, 8 feet wide, and 3.5 feet high, with 2 tons included. This size is ideal for small-scale projects like bathroom remodels, garage cleanouts, or small landscaping jobs. It's compact enough to fit in a driveway without taking up too much space, making it a popular choice for residential projects.
 
 Despite its smaller size, a 10-yard dumpster can hold approximately three pickup truck loads of waste, making it a versatile option for projects requiring moderate waste removal. See our [10-yard dumpster rental page](/services/10-yard-dump-trailer) for details.
 
@@ -79,13 +79,13 @@ Despite its smaller size, a 10-yard dumpster can hold approximately three pickup
 
 The 15 cubic-yard dumpster trailers offer a middle ground between the compact 10-yard and the more substantial 20-yard sizes. These trailers suit medium-sized projects such as deck removals, large landscaping tasks, or extensive home cleanouts.
 
-At 14 feet long, 8 feet wide, and 4 feet high, with 3 tons included for {priceOf("15")}, the 15-yard dumpster provides a significant volume increase without a massive footprint. It's capable of handling more oversized items and a greater volume of waste, making it an excellent choice for projects that exceed the capacity of a 10-yard dumpster but only require part of a 20-yard. More details and specific use cases can be found on our [15-yard dumpster trailer rental page](/services/15-yard-dump-trailer).
+At 14 feet long, 8 feet wide, and 4 feet high, with 3 tons included, the 15-yard dumpster provides a significant volume increase without a massive footprint. It's capable of handling more oversized items and a greater volume of waste, making it an excellent choice for projects that exceed the capacity of a 10-yard dumpster but only require part of a 20-yard. More details and specific use cases can be found on our [15-yard dumpster trailer rental page](/services/15-yard-dump-trailer).
 
 ### 20-Yard Dumpster
 
 ![Lupo 20-yard dump trailers ready for delivery](/dump-trailers.webp)
 
-The 20 cubic yard dumpster trailers are the largest of the standard sizes, 16 feet long, 8 feet wide, and 5 feet high, with 4 tons included for {priceOf("20")}. This size is perfect for significant renovation projects, large-scale cleanouts, and construction sites with substantial debris.
+The 20 cubic yard dumpster trailers are the largest of the standard sizes, 16 feet long, 8 feet wide, and 5 feet high, with 4 tons included. This size is perfect for significant renovation projects, large-scale cleanouts, and construction sites with substantial debris.
 
 Due to its capacity, the 20-yard dumpster can handle about 6–7 pickup-truck loads of waste, making it an ideal choice for projects with considerable waste disposal needs. While larger and requires more space, its design is still efficient for most residential and commercial locations. For more details on 20-yard dumpsters, visit our [20-yard dumpster rental page](/services/20-yard-dump-trailer).
 
@@ -95,7 +95,7 @@ Safety should always be a top priority when using a roll-off dumpster trailer. E
 
 ## Rental Tips and Best Practices
 
-Selecting the right rental company is crucial for a hassle-free experience. Look for transparent pricing, flexible rental periods, and positive customer reviews. Before renting, ensure you understand the terms, especially regarding weight limits and prohibited items. To maximize the use of your dumpster, fill it evenly, avoid overloading, and follow all guidelines provided by the rental company. For comprehensive rental advice, our [services page](/services) includes detailed information on various rental services and best practices.
+Selecting the right rental company is crucial for a hassle-free experience. Look for upfront quotes, flexible rental periods, and positive customer reviews. Before renting, ensure you understand the terms, especially regarding weight limits and prohibited items. To maximize the use of your dumpster, fill it evenly, avoid overloading, and follow all guidelines provided by the rental company. For comprehensive rental advice, our [services page](/services) includes detailed information on various rental services and best practices.
 
 ## Local Regulations and Permissions
 
@@ -113,6 +113,6 @@ Shingles are heavy, so weight matters more than volume. A 20-yard includes 4 ton
 
 ### What if I'm not sure which size to pick?
 
-Choose “Not sure” when you book online and we'll recommend a size before delivery. Or check our [pricing page](/dumpster-rental-pricing) for a side-by-side comparison.
+Choose “Not sure” when you book online and we'll recommend a size before delivery. Or [compare the sizes side by side](/dumpster-rental-pricing) and request a free quote.
 
 </Bloglayout>

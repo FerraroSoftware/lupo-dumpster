@@ -27,7 +27,7 @@ export function StickyMobileBar() {
       </button>
       <Link href={navigation.bookHref} className={`${item} bg-brand hover:bg-brand-hover`}>
         <CalendarCheck aria-hidden className="h-5 w-5" />
-        Book
+        Free Quote
       </Link>
     </nav>
   );

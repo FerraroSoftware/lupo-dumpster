@@ -1,6 +1,5 @@
-import { lowestPrice, sizes, siteConfig } from "@/lib/site-config";
+import { sizes, siteConfig } from "@/lib/site-config";
 
-const priceList = sizes.map((s) => `${s.shortName.replace(" yd", "-yard")} $${s.price}`).join(", ");
 const ids = sizes.map((s) => s.id);
 const sizeList = `${ids.slice(0, -1).join(", ")}, and ${ids[ids.length - 1]}`;
 
@@ -9,7 +8,7 @@ const dumpsterTrailerRental = {
   kind: "rental",
   serviceType: "Dumpster trailer rental",
   title: "Dumpster Trailer Rental in Pasco County, FL | Lupo Dumpster",
-  description: `Dumpster trailer rental in Pasco County, FL from $${lowestPrice} flat. Low-profile dump trailers on protective boards, with delivery and disposal included.`,
+  description: "Dumpster trailer rental in Pasco County, FL. Low-profile dump trailers set on protective boards, with delivery and disposal included. Free quote.",
   keywords: [
     "dumpster trailer rental",
     "dump trailer dumpster",
@@ -20,7 +19,7 @@ const dumpsterTrailerRental = {
   hero: {
     eyebrow: "Dump-trailer dumpsters · Pasco County, FL",
     title: ["Make Cleanup Easier with ", "Dumpster Trailer Rental"],
-    intro: `Dumpster trailer rental from Lupo puts a low-profile dump trailer in your driveway instead of a tall steel roll-off box. We tow it in, set it on protective boards, and haul it off when you're done. Three sizes start at $${lowestPrice} flat in Holiday, New Port Richey, and across Pasco County.`,
+    intro: `Dumpster trailer rental from Lupo puts a low-profile dump trailer in your driveway instead of a tall steel roll-off box. We tow it in, set it on protective boards, and haul it off when you're done. Three sizes, with free quotes in Holiday, New Port Richey, and across Pasco County.`,
     image: "/dumpster-trailer-1.webp",
     imageAlt: "Lupo dumpster trailer with its bed raised in Pasco County",
   },
@@ -32,7 +31,7 @@ const dumpsterTrailerRental = {
       { icon: "Truck", title: "Big trucks, tight streets", text: "Roll-off trucks need plenty of room to drop and pick up the box, which can be tricky on a neighborhood street." },
       { icon: "CalendarX", title: "Waiting on a big hauler", text: "Larger companies can be booked out for days when you need a dumpster this week." },
     ],
-    closing: "A dump-trailer dumpster gives you the same flat-rate disposal in a lower, simpler package.",
+    closing: "A dump-trailer dumpster gives you the same disposal service in a lower, simpler package.",
   },
   about: {
     eyebrow: "Dump trailer vs. roll-off",
@@ -40,7 +39,7 @@ const dumpsterTrailerRental = {
     paragraphs: [
       "A dumpster trailer is just what it sounds like: a heavy-duty dump trailer that works as your dumpster. Instead of a steel box slid off a roll-off truck, we back the trailer into place with a pickup and leave it for you to fill.",
       "Because the trailer is low-profile, the sides are easier to reach when you're tossing in bags, boards, or boxes. We set it on protective boards in your driveway or on the job site. When you're finished, we hitch it up and tip the load at the disposal facility, so you never handle it twice.",
-      `You get the same ${sizeList}-yard sizes as any dumpster rental, at one flat price that includes delivery, pickup, and disposal up to the weight limit.`,
+      `You get the same ${sizeList}-yard sizes as any dumpster rental, with an upfront quote that includes delivery, pickup, and disposal up to the weight limit.`,
     ],
     perfectFor: ["Driveway projects", "Home cleanouts", "Remodels", "Roofing jobs", "Yard cleanups", "Moving out"],
     image: "/trailer-1.webp",
@@ -59,12 +58,12 @@ const dumpsterTrailerRental = {
     title: "A Lower, Simpler Kind of Dumpster",
     paragraphs: [
       "Plenty of homeowners in Holiday, Hudson, and Palm Harbor have never heard of a dumpster trailer until they rent one. It does the same job as a roll-off dumpster, holding your debris until it's hauled to the dump, but it arrives behind a pickup truck and sits low in the driveway.",
-      `Lupo Dumpster Rentals has offered dumpster trailer rental out of Holiday, FL since ${siteConfig.foundedYear}, serving Pasco County along with nearby Pinellas, Hernando, and North Hillsborough. Pick a ${sizeList}-yard trailer, and the flat price, starting at $${lowestPrice}, covers delivery, pickup, and disposal up to the weight limit.`,
+      `Lupo Dumpster Rentals has offered dumpster trailer rental out of Holiday, FL since ${siteConfig.foundedYear}, serving Pasco County along with nearby Pinellas, Hernando, and North Hillsborough. Pick a ${sizeList}-yard trailer and we'll give you a free quote covering delivery, pickup, and disposal up to the weight limit, with no surprise fees.`,
       "We set the trailer on protective boards, you load it whenever it suits you, and we come back when you call or text. For cleanouts in New Port Richey, remodels in Trinity, or yard work in Spring Hill, it's a straightforward way to get the mess out without hauling it yourself.",
     ],
   },
   related: [
-    { name: "Dumpster Rental", href: "/services/dumpster-rental", text: "Our main rental page, with every size, price, and booking option." },
+    { name: "Dumpster Rental", href: "/services/dumpster-rental", text: "Our main rental page, with every size, booking option, and how to get a quote." },
     { name: "15-Yard Dumpster", href: "/services/15-yard-dump-trailer", text: "The trailer size most customers choose for remodels and move-outs." },
     { name: "Construction Dumpster Rental", href: "/services/construction-dumpster-rental", text: "Job-site trailers for contractors, roofers, and remodelers." },
   ],
@@ -81,7 +80,7 @@ const dumpsterTrailerRental = {
     },
     {
       q: "How much does dumpster trailer rental cost?",
-      a: `${priceList}, all flat rates. Delivery, pickup, and disposal up to the included weight are part of the price.`,
+      a: `It depends on the trailer size, the weight and type of debris, and your location. We'll give you a free, no-obligation quote that includes delivery, pickup, and disposal up to the weight limit. Call or text ${siteConfig.phone} or request a quote online.`,
     },
     {
       q: "Is a dumpster trailer easier to load?",

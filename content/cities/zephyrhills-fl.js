@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const zephyrhills = {
   metaDescription:
-    `Dumpster rental in Zephyrhills, FL for cleanouts, roofs & remodels. 10, 15 & 20-yard dumpsters from $${lowestPrice}, with hauling and dump fees covered.`,
+    "Dumpster rental in Zephyrhills, FL for cleanouts, roofs & remodels. 10, 15 & 20-yard dumpsters, hauling and dump fees in one free, upfront quote.",
   keywords: [
     "dumpster rental Zephyrhills FL",
     "Zephyrhills dumpster rental",
@@ -12,10 +10,10 @@ const zephyrhills = {
   ],
   h1Desire: "Lighten the Load",
   answer:
-    `Lupo offers dumpster rental in Zephyrhills, FL, inside city limits and across the surrounding east Pasco County area, for estate cleanouts, roof tear-offs, and manufactured-home projects. Choose a 10, 15, or 20-yard dumpster at a flat price starting at $${lowestPrice}. Zephyrhills is a longer drive from our Holiday base, so we schedule your delivery in advance.`,
+    "Lupo offers dumpster rental in Zephyrhills, FL, inside city limits and across the surrounding east Pasco County area, for estate cleanouts, roof tear-offs, and manufactured-home projects. Choose a 10, 15, or 20-yard dumpster, and ask for a free quote so you know the cost before we head east. Zephyrhills is a longer drive from our Holiday base, so we schedule your delivery in advance.",
   introTitle: ["East Pasco Jobs, ", "Planned Ahead"],
   localIntro: [
-    "Zephyrhills is a long way from our Holiday yard, on the far east side of Pasco County, so we treat every job here as a planned delivery. Call a few days out and we'll set a firm date, rather than promising a quick drop we can't keep. You still get the same flat price and the same low-profile trailer on protective boards.",
+    "Zephyrhills is a long way from our Holiday yard, on the far east side of Pasco County, so we treat every job here as a planned delivery. Call a few days out and we'll set a firm date, rather than promising a quick drop we can't keep. You still get a free upfront quote and the same low-profile trailer on protective boards.",
     "The town has a large retiree community, with many 55+ manufactured-home and RV parks along Gall Boulevard and a long tradition of winter residents. That means a lot of estate cleanouts, downsizing moves, and Florida-room or carport tear-outs. Closer to downtown and the airport, older block homes need new roofs and kitchens like anywhere else in Pasco. Tell us what's going in and we'll suggest a size so it all leaves in one trip.",
   ],
   landmarks: ["Zephyrhills Municipal Airport", "Skydive City", "Gall Boulevard (US-301)"],

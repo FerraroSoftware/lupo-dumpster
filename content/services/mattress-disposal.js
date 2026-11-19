@@ -5,7 +5,7 @@ const mattressDisposal = {
   kind: "junk",
   serviceType: "Mattress disposal",
   title: "Mattress Disposal in Pasco County, FL | Lupo Dumpster",
-  description: `Mattress disposal in Pasco County, FL. We carry old mattresses and box springs out of any room and haul them off. Firm price first. ${siteConfig.rating.value}-star rated.`,
+  description: `Mattress disposal in Pasco County, FL. We carry old mattresses and box springs out of any room and haul them off. Free quote first. ${siteConfig.rating.value}-star rated.`,
   keywords: [
     "mattress disposal Pasco County",
     "mattress removal near me",
@@ -14,13 +14,13 @@ const mattressDisposal = {
     "mattress haul away",
     "bed frame removal",
   ],
-  quoteTitle: "Get Your Mattress Pickup Price",
+  quoteTitle: "Get Your Free Mattress Pickup Quote",
   quotePlaceholder: "e.g. Queen mattress and box spring from an upstairs bedroom, plus a metal frame",
   hero: {
     eyebrow: "Mattress disposal · Pasco County, FL",
     title: ["Finally Get Rid of the Old Bed with ", "Mattress Disposal in Pasco County"],
     intro:
-      "Mattress disposal in Pasco County is simple with Lupo. We carry old mattresses and box springs out of any bedroom in New Port Richey, Holiday, and nearby towns, load them, and haul them off. No wrestling it down the stairs, no strapping it to your roof, and you get a firm price before we schedule.",
+      "Mattress disposal in Pasco County is simple with Lupo. We carry old mattresses and box springs out of any bedroom in New Port Richey, Holiday, and nearby towns, load them, and haul them off. No wrestling it down the stairs, no strapping it to your roof, and a quick description gets you a free quote before we schedule.",
     image: "/images/services/mattress-disposal/mattress-disposal-pickup-pasco-county-fl.webp",
     imageAlt: "Two workers carrying an old mattress from a home to a dump trailer for mattress disposal in Pasco County, FL",
   },
@@ -61,12 +61,12 @@ const mattressDisposal = {
   },
   steps: [
     { title: "Tell us the size and count", text: "Let us know how many mattresses and box springs you have and which rooms they're in." },
-    { title: "Get your price", text: "We'll give you a firm price and set a pickup window that works for you." },
+    { title: "Get your free quote", text: "We'll give you a free quote and set a pickup window that works for you." },
     { title: "We take the whole bed", text: "We bring it down, put it on the trailer, and take it for recycling or disposal." },
   ],
   pricing: {
-    title: ["Simple Pricing for ", "Mattress Pickup"],
-    intro: "Mattress jobs are quick to quote. Tell us what you have and we'll give you a firm number.",
+    title: ["Free Quotes for ", "Mattress Pickup"],
+    intro: "Mattress jobs are quick to quote. Tell us what you have and we'll give you a free quote.",
     factors: [
       { title: "How many pieces", text: "A single twin is a quick stop. A mattress, box spring, and frame from every bedroom takes more trailer space." },
       { title: "The size", text: "King and California king sets take up more room than twin and full sets." },
@@ -90,7 +90,7 @@ const mattressDisposal = {
     title: "One Less Thing Leaning Against the House",
     paragraphs: [
       "It usually starts the same way. The new mattress shows up, the old one gets dragged into the garage or propped against the side of the house, and there it stays. In Port Richey, Hudson, and Spring Hill, plenty of old mattresses sit outside through a few summer storms before anyone deals with them. Lupo Dumpster Rentals picks up mattresses anywhere in Pasco County and in nearby cities like Clearwater and Lutz.",
-      "Tell us how many mattresses and box springs you have and where they are. We'll give you a firm price, show up when we said we would, and carry everything out ourselves. Bed frames, headboards, and the old nightstand can go in the same trip.",
+      "Tell us how many mattresses and box springs you have and where they are. We'll give you a free quote, show up when we said we would, and carry everything out ourselves. Bed frames, headboards, and the old nightstand can go in the same trip.",
       "We send steel springs and metal frames to recycling whenever we can and take the rest to proper disposal. No roof rack, no sore back, and no mattress greeting the neighbors from your driveway.",
     ],
   },
@@ -108,7 +108,7 @@ const mattressDisposal = {
   faqs: [
     {
       q: "How much does mattress disposal cost in Pasco County?",
-      a: "It depends on how many pieces you have, their size, and where they are in the house. Tell us what you have and we'll give you a firm price before we schedule.",
+      a: `It depends on how many pieces you have, their size, and where they are in the house. Tell us what you have and we'll give you a free quote, including the carry-out and disposal, before we schedule. Call or text ${siteConfig.phone} or request a quote online.`,
     },
     {
       q: "Can I put my old mattress out with the trash?",
@@ -127,7 +127,7 @@ const mattressDisposal = {
       a: "No. Our crew carries it out from the bedroom, including upstairs rooms. Just make sure there's a clear path.",
     },
   ],
-  ctaText: "Tell us how many mattresses and box springs need to go. You'll get a firm price, and we'll carry them out for you.",
+  ctaText: "Tell us how many mattresses and box springs need to go. You'll get a free quote, and we'll carry them out for you.",
 };
 
 export default mattressDisposal;

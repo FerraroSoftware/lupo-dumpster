@@ -36,7 +36,7 @@ const quoteSteps = [
   },
   {
     icon: Truck,
-    title: "You get a firm price",
+    title: "You get your free quote",
     text: "We quote the job up front. Nothing is scheduled until you say yes.",
   },
   {
@@ -50,7 +50,7 @@ const quotePrep = [
   {
     icon: Ruler,
     title: "Snap a few photos",
-    text: "Photos of the pile or the room help us give you an accurate price faster. Text them to us anytime.",
+    text: "Photos of the pile or the room help us give you an accurate quote faster. Text them to us anytime.",
   },
   {
     icon: ShieldAlert,
@@ -161,10 +161,10 @@ export default function ThankYou() {
               <p className="text-sm font-semibold uppercase tracking-wider text-zinc-500">Your request</p>
               <div className="mt-2 flex items-baseline justify-between gap-4">
                 <p className="font-display text-3xl font-bold">{size.name}</p>
-                <p className="font-display text-3xl font-bold text-brand">${size.price}</p>
+                <p className="font-display text-lg font-bold text-brand">Free quote</p>
               </div>
               <p className="mt-1 text-zinc-600">
-                Flat rate · {size.weight} · delivery, pickup &amp; disposal included
+                {size.weight} · delivery, pickup &amp; disposal included
               </p>
             </div>
           )}

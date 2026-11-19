@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const springHill = {
   metaDescription:
-    `Dumpster rental in Spring Hill, FL for roofs, remodels & estate cleanouts. 10, 15 & 20-yard dumpsters from $${lowestPrice}, hauling and disposal included.`,
+    "Dumpster rental in Spring Hill, FL for roofs, remodels & estate cleanouts. 10, 15 & 20-yard dumpsters with a free upfront quote, disposal included.",
   keywords: [
     "dumpster rental Spring Hill FL",
     "Spring Hill dumpster rental",
@@ -12,7 +10,7 @@ const springHill = {
   ],
   h1Desire: "Give Your Home a Fresh Start",
   answer:
-    `Lupo offers dumpster rental in Spring Hill, FL, Hernando County's largest community, from Timber Pines and Seven Hills to Sterling Hill and the streets off Mariner Boulevard. Pick a 10, 15, or 20-yard dumpster at one flat price starting at $${lowestPrice}, with delivery, pickup, and disposal included. We drive up from our Holiday yard in Pasco County.`,
+    "Lupo offers dumpster rental in Spring Hill, FL, Hernando County's largest community, from Timber Pines and Seven Hills to Sterling Hill and the streets off Mariner Boulevard. Pick a 10, 15, or 20-yard dumpster and get a free quote that covers delivery, pickup, and disposal up to the included weight. We drive up from our Holiday yard in Pasco County.",
   introTitle: ["Spring Hill Homes, ", "Ready for Their Next Chapter"],
   localIntro: [
     "Spring Hill was laid out by the Deltona Corporation in the late 1960s, and it filled in with block homes on quarter-acre lots through the 1970s, '80s, and '90s. A lot of those houses still have original kitchens, aging roofs, and tired flooring, which keeps renovation projects going all over the community. Block construction holds up well, but the finishes inside rarely last forty years.",

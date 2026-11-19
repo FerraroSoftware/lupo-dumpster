@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const landOLakes = {
   metaDescription:
-    `Dumpster rental in Land O' Lakes, FL for lake-home remodels, roofs & cleanouts. 10, 15 & 20-yard sizes from $${lowestPrice}, delivery and disposal included.`,
+    "Dumpster rental in Land O' Lakes, FL for lake-home remodels, roofs & cleanouts. 10, 15 & 20-yard sizes. Free quote with delivery and disposal included.",
   keywords: [
     "dumpster rental Land O' Lakes FL",
     "Land O Lakes dumpster rental",
@@ -12,7 +10,7 @@ const landOLakes = {
   ],
   h1Desire: "Make Room for Lake Life",
   answer:
-    `Lupo offers dumpster rental in Land O' Lakes, FL for everything from Lake Padgett remodels to new-build cleanups in Connerton and Ballantrae. We deliver 10, 15, and 20-yard dumpsters along US-41 and SR-54 in central Pasco County at a flat price starting at $${lowestPrice}, with delivery, pickup, and disposal included.`,
+    "Lupo offers dumpster rental in Land O' Lakes, FL for everything from Lake Padgett remodels to new-build cleanups in Connerton and Ballantrae. We deliver 10, 15, and 20-yard dumpsters along US-41 and SR-54 in central Pasco County, and our free quote includes delivery, pickup, and disposal up to the included weight.",
   introTitle: ["Old Lake Homes and ", "New Subdivisions Alike"],
   localIntro: [
     "Land O' Lakes earned its name. Lake Padgett and the many smaller lakes around it are ringed with homes from the 1970s and 1980s, and a lot of them are now getting new kitchens, new roofs, and sometimes a full gut down to the studs. Those jobs produce a steady stream of drywall, cabinets, and shingles.",

@@ -1,4 +1,4 @@
-import { lowestPrice } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const hoardingCleanupNewPortRichey = {
   path: "/services/hoarding-cleanup-new-port-richey-fl",
@@ -6,7 +6,7 @@ const hoardingCleanupNewPortRichey = {
   serviceType: "Hoarding cleanup",
   title: "Hoarding Cleanup in New Port Richey, FL | Lupo Dumpster",
   description:
-    "Discreet hoarding cleanup in New Port Richey, FL. A family-run crew that works at your pace, sets aside keepsakes, and gives you a firm price first.",
+    "Discreet hoarding cleanup in New Port Richey, FL. A family-run crew that works at your pace, sets aside keepsakes, and gives you a free quote first.",
   keywords: [
     "hoarding cleanup New Port Richey",
     "hoarder house cleanout New Port Richey FL",
@@ -21,7 +21,7 @@ const hoardingCleanupNewPortRichey = {
     eyebrow: "Discreet hoarding cleanup · New Port Richey, FL",
     title: ["Make the Home Safe Again with ", "Hoarding Cleanup in New Port Richey"],
     intro:
-      "Lupo provides discreet, judgment-free hoarding cleanup in New Port Richey and the rest of west Pasco County. We work at your pace, set aside photos, papers, and keepsakes, and carry out everything else. You talk with the Lupos directly, and you get a firm price before any work begins.",
+      "Lupo provides discreet, judgment-free hoarding cleanup in New Port Richey and the rest of west Pasco County. We work at your pace, set aside photos, papers, and keepsakes, and carry out everything else. You talk with the Lupos directly, and you get a free quote before any work begins.",
     image: "/hoarding-services.webp",
     imageAlt: "Room stacked with clothing and belongings before a hoarding cleanup in New Port Richey",
   },
@@ -54,14 +54,14 @@ const hoardingCleanupNewPortRichey = {
       { icon: "Lock", title: "Private by default", text: "Your job stays between us. We don't share details or photos of your home without your permission." },
       { icon: "HeartHandshake", title: "No judgment", text: "We treat every home and every family with respect, no matter how long things have built up." },
       { icon: "ClipboardCheck", title: "We look for what matters", text: "Photos, documents, jewelry, and keepsakes are set aside for you as we go." },
-      { icon: "Tag", title: "A firm price first", text: "We'll walk through or review photos and quote the job before any work begins." },
+      { icon: "Tag", title: "A free quote first", text: "We'll walk through or review photos and quote the job for free before any work begins." },
     ],
   },
   stepsTitle: ["A Calmer Cleanup in ", "3 Steps"],
-  stepsIntro: "We go at your pace, with a firm price before anything moves.",
+  stepsIntro: "We go at your pace, with a free quote before anything moves.",
   steps: [
     { title: "Talk it through", text: "Call or text. Tell us as much or as little as you're comfortable with, and send photos if you can." },
-    { title: "Agree on a plan and a price", text: "We'll settle what to keep, what to look for, and how many visits it'll take, with a firm price." },
+    { title: "Agree on a plan and a quote", text: "We'll settle what to keep, what to look for, and how many visits it'll take, with a free quote." },
     { title: "We clear it room by room", text: "Our crew carries everything out, sets aside what matters, and leaves the space swept and safe." },
   ],
   proof: {
@@ -72,9 +72,9 @@ const hoardingCleanupNewPortRichey = {
   },
   pricing: {
     dumpsterNote: false,
-    title: ["A Clear Price for ", "a Hard Situation"],
+    title: ["A Free, Clear Quote for ", "a Hard Situation"],
     intro:
-      "Hoarding cleanups vary a lot, so we price each one after seeing it, in person or through photos. You'll have a firm number before work begins.",
+      "Hoarding cleanups vary a lot, so we quote each one after seeing it, in person or through photos. The quote is free, and you'll have it before work begins.",
     factors: [
       { title: "How much there is", text: "The amount of material, room by room, is the biggest factor." },
       { title: "How much sorting you want", text: "Searching for papers, photos, or valuables takes more care and time than a straight clear-out." },
@@ -114,7 +114,7 @@ const hoardingCleanupNewPortRichey = {
   areaLabel: "Dumpster rental",
   related: [
     { name: "Hoarding & Estate Cleanup", href: "/services/hoarding-cleanup", text: "Discreet hoarding and estate cleanouts across Pasco County and nearby Tampa Bay communities." },
-    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "A flat-rate dumpster in a New Port Richey driveway for families clearing a home themselves." },
+    { name: "Local Dumpster Rental", href: "/services/dumpster-rental-new-port-richey-fl", text: "A dumpster in a New Port Richey driveway for families clearing a home themselves. Free quote." },
     { name: "Junk Removal", href: "/services/junk-removal", text: "Single rooms, garages, or a few large items carried out and hauled away." },
   ],
   posts: [
@@ -125,7 +125,7 @@ const hoardingCleanupNewPortRichey = {
   faqs: [
     {
       q: "How much does hoarding cleanup cost in New Port Richey?",
-      a: "It depends on how much there is, how much sorting you want, and the conditions inside. We'll walk through or review photos and give you a firm price before any work begins.",
+      a: `It depends on how much there is, how much sorting you want, and the conditions inside. We'll walk through or review photos and give you a free quote before any work begins. Call or text ${siteConfig.phone} when you're ready, or send a private request online.`,
     },
     {
       q: "Will my neighbors know?",
@@ -141,11 +141,11 @@ const hoardingCleanupNewPortRichey = {
     },
     {
       q: "Can the cleanup be split into several visits?",
-      a: `Yes. Some families prefer a few shorter visits so they can sort between them. Others rent a dumpster, starting at $${lowestPrice} flat, and clear the home together over a few weekends.`,
+      a: `Yes. Some families prefer a few shorter visits so they can sort between them. Others rent a dumpster and clear the home together over a few weekends. We'll give you a free quote on either.`,
     },
   ],
   ctaTitle: ["When You're Ready, ", "We're Here"],
-  ctaText: "Call, text, or send a short note. We'll listen, make a plan with you, and give you a firm price for your New Port Richey cleanup.",
+  ctaText: "Call, text, or send a short note. We'll listen, make a plan with you, and give you a free quote for your New Port Richey cleanup.",
   verify: [
     "Privacy practice: no sharing of job details or photos of the home without permission",
     "Crew sends progress photos to out-of-state family members",

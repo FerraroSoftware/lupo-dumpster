@@ -1,4 +1,4 @@
-import { getSize } from "@/lib/site-config";
+import { getSize, siteConfig } from "@/lib/site-config";
 
 const size = getSize("15");
 const loads = size.loads.toLowerCase();
@@ -10,7 +10,7 @@ const fifteenYard = {
   sizeId: "15",
   serviceType: "15-yard dumpster rental",
   title: "15-Yard Dumpster Rental in Pasco County, FL | Lupo Dumpster",
-  description: `Rent a 15-yard dumpster in Pasco County for $${size.price} flat. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Our most popular size.`,
+  description: `Rent a 15-yard dumpster in Pasco County, FL. ${size.loads.replace("About", "Holds about")}, ${size.weight}. Our most popular size. Free quote.`,
   keywords: [
     "15 yard dumpster rental",
     "15 yard dump trailer",
@@ -19,9 +19,9 @@ const fifteenYard = {
     "medium dumpster rental",
   ],
   hero: {
-    eyebrow: `${size.name} · $${size.price} flat · Most popular`,
+    eyebrow: `${size.name} · Most popular · Free quote`,
     title: ["Keep Your Remodel Moving with a ", "15-Yard Dumpster Rental"],
-    intro: `Our 15-yard dumpster rental is the size most Pasco County customers pick. The ${size.dimensions} dump trailer holds ${loads}, with ${size.weight}. One flat $${size.price} covers delivery, pickup, and disposal, so it's a natural fit for kitchen remodels, flooring tear-outs, and move-outs from Trinity to New Port Richey.`,
+    intro: `Our 15-yard dumpster rental is the size most Pasco County customers pick. The ${size.dimensions} dump trailer holds ${loads}, with ${size.weight}. Your free quote covers delivery, pickup, and disposal, and it's a natural fit for kitchen remodels, flooring tear-outs, and move-outs from Trinity to New Port Richey.`,
     image: "/trailer-4.webp",
     imageAlt: "Lupo truck towing a 15-yard dumpster trailer in Pasco County",
   },
@@ -30,7 +30,7 @@ const fifteenYard = {
     intro: "Most mid-size projects land somewhere between too small and too much.",
     items: [
       { icon: "Container", title: "Full before the job is", text: "A kitchen tear-out can fill a small dumpster before the last cabinet comes off the wall." },
-      { icon: "BadgeDollarSign", title: "Paying for empty space", text: "Jumping straight to the biggest size means paying for room you never fill." },
+      { icon: "Ruler", title: "More box than you need", text: "Jumping straight to the biggest size can mean hauling around room you never fill." },
       { icon: "Weight", title: "Heavy flooring adds up", text: `Tile and mortar get heavy fast. With ${tons} included, the 15-yard has room for most flooring jobs.` },
     ],
     closing: "The 15-yard is the middle ground that fits most jobs the first time.",
@@ -40,7 +40,7 @@ const fifteenYard = {
     title: ["The Size That ", "Fits Most Projects"],
     paragraphs: [
       `The 15-yard sits right in the middle of our lineup: ${size.dimensions}, ${loads}. It has room for a full kitchen or a whole house's worth of move-out clutter without taking over the driveway.`,
-      "We set the low-profile trailer on protective boards where you want it, you fill it on your schedule, and we pick it up when you call or text. Delivery, pickup, and disposal up to the weight limit are all part of the flat price.",
+      "We set the low-profile trailer on protective boards where you want it, you fill it on your schedule, and we pick it up when you call or text. Delivery, pickup, and disposal up to the weight limit are all in your quote, so you'll know your price before we deliver.",
     ],
     perfectFor: ["Kitchen remodels", "Flooring tear-outs", "Move-outs", "Mid-size cleanouts", "Deck removal", "Multi-room decluttering"],
     image: "/trailer-3.webp",
@@ -70,14 +70,14 @@ const fifteenYard = {
     title: "Most Projects Fit Right Here",
     paragraphs: [
       `If you're not sure which size to book, the 15-yard dumpster rental is usually the safe pick. It handles a kitchen remodel in Trinity, a flooring job in Land O' Lakes, or a move-out in New Port Richey without a second haul. It's ${size.dimensions}, holds ${loads}, and includes ${size.weight}.`,
-      `The price is $${size.price} flat, covering delivery, pickup, and disposal up to the weight limit. Lupo Dumpster Rentals, a family business based in Holiday, sets it on protective boards, often the same day you call. Load it over a few days, then call or text and we'll haul it off.`,
+      `Tell us about the project and we'll quote it upfront, covering delivery, pickup, and disposal up to the weight limit. Lupo Dumpster Rentals, a family business based in Holiday, sets it on protective boards, often the same day you call. Load it over a few days, then call or text and we'll haul it off.`,
       "Still deciding? Tell us what you're tearing out and roughly how many rooms are involved. We'll tell you honestly whether the 15-yard is the right call or whether a smaller or larger trailer makes more sense. A quick call now saves a second haul later.",
     ],
   },
   related: [
     { name: "20-Yard Dumpster", href: "/services/20-yard-dump-trailer", text: "Our largest size, built for roofs, whole-home renovations, and estate cleanouts." },
     { name: "Construction Dumpster Rental", href: "/services/construction-dumpster-rental", text: "Job-site dumpsters for contractors, roofers, and remodelers." },
-    { name: "Dumpster Rental Pricing", href: "/dumpster-rental-pricing", text: "Every size and price side by side, plus what's included." },
+    { name: "Sizes & Free Quotes", href: "/dumpster-rental-pricing", text: "Every size side by side, plus what's included and how to get a quote." },
   ],
   posts: [
     { title: "What Size Dumpster Do I Need?", href: "/blog/guide-to-roll-off-dumpster-trailers-choosing-the-right-size" },
@@ -92,7 +92,7 @@ const fifteenYard = {
     },
     {
       q: "How much does a 15-yard dumpster cost?",
-      a: `$${size.price} flat in Pasco County, with delivery, pickup, and disposal up to ${tons} included.`,
+      a: `It depends on the material, the weight, your rental length, and your location. We'll give you a free quote upfront that includes delivery, pickup, and disposal up to ${tons}. Call or text ${siteConfig.phone}, or request a quote online.`,
     },
     {
       q: "Why is the 15-yard your most popular size?",

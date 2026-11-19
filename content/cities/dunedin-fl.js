@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const dunedin = {
   metaDescription:
-    `Dumpster rental in Dunedin, FL with flat prices from $${lowestPrice}. Low-profile dumpsters that fit older downtown driveways, from a family-run local crew.`,
+    "Dumpster rental in Dunedin, FL with free, upfront quotes. Low-profile dumpsters that fit older downtown driveways, from a family-run local crew.",
   keywords: [
     "dumpster rental Dunedin",
     "Dunedin dumpster rental",
@@ -12,7 +10,7 @@ const dunedin = {
   ],
   h1Desire: "Bring Your Older Home Up to Date",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters in Dunedin, FL, in Pinellas County, at one flat price starting at $${lowestPrice}, with delivery, pickup, and disposal included. Our low-profile dump trailers fit the short driveways near downtown and along Alternate 19, and our Holiday yard is about 25 minutes away.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters in Dunedin, FL, in Pinellas County, and every job starts with a free quote that includes delivery, pickup, and disposal. Our low-profile dump trailers fit the short driveways near downtown and along Alternate 19, and our Holiday yard is about 25 minutes away.",
   introTitle: ["Dumpsters Sized for ", "Dunedin's Older Streets"],
   localIntro: [
     "Dunedin is one of the older towns on the Pinellas coast. Many houses near Main Street and the waterfront have stood for decades, on tight lots under big oaks, with short driveways that were never laid out for a steel roll-off box. Downtown streets fill up on weekends and event days, so we like to drop off on those blocks early in the morning when parking is easier.",

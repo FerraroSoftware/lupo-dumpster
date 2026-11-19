@@ -1,10 +1,12 @@
+import { siteConfig } from "@/lib/site-config";
+
 const pascoTrashPickup = {
   path: "/services/pasco-county-trash-pickup",
   kind: "junk",
   serviceType: "Bulk trash pickup",
   title: "Bulk Trash Pickup in Pasco County, FL | Lupo Dumpster",
   description:
-    "Bulk trash pickup in Pasco County, FL for couches, mattresses, and overflow curbside won't take. One-time hauling with a firm price first.",
+    "Bulk trash pickup in Pasco County, FL for couches, mattresses, and overflow curbside won't take. One-time hauling with a free quote first.",
   keywords: [
     "Pasco County trash pickup",
     "bulk trash pickup Pasco County",
@@ -12,14 +14,14 @@ const pascoTrashPickup = {
     "large item trash pickup",
     "overflow trash removal",
   ],
-  quoteTitle: "Get Your Bulk Trash Pickup Price",
+  quoteTitle: "Get Your Free Bulk Pickup Quote",
   quotePlaceholder: "Example: old sofa and mattress at the curb, plus about 10 extra bags in the garage",
-  ctaLabel: "Get Your Price",
+  ctaLabel: "Get a Free Quote",
   hero: {
     eyebrow: "One-time bulk trash pickup · Pasco County, FL",
     title: ["Clear the Curb with ", "Pasco County Trash Pickup"],
     intro:
-      "Lupo's Pasco County trash pickup handles the bulky items and overflow your regular curbside service won't take: couches, mattresses, old grills, and stacks of extra bags from homes in Hudson, New Port Richey, Land O' Lakes, and Wesley Chapel. One visit, a firm price up front, and we do the lifting.",
+      "Lupo's Pasco County trash pickup handles the bulky items and overflow your regular curbside service won't take: couches, mattresses, old grills, and stacks of extra bags from homes in Hudson, New Port Richey, Land O' Lakes, and Wesley Chapel. One visit, a free quote up front, and we do the lifting.",
     image: "/junk-pick-up.webp",
     imageAlt: "Living room piled with bulky trash before a Pasco County trash pickup",
   },
@@ -49,7 +51,7 @@ const pascoTrashPickup = {
     items: [
       { icon: "Sofa", title: "Big items welcome", text: "Furniture, mattresses, and other oversized pieces are exactly what we're set up to haul." },
       { icon: "Users", title: "We carry it out", text: "No dragging a sofa to the curb. Our crew picks it up wherever it is." },
-      { icon: "Tag", title: "Firm price first", text: "Text a photo of the pile and get a price before we schedule anything." },
+      { icon: "Tag", title: "Free quote first", text: "Text a photo of the pile and get a free quote before we schedule anything." },
       { icon: "Route", title: "Close to home", text: "Based in Holiday, we cover Pasco from the Gulf coast towns out to Dade City." },
     ],
   },
@@ -60,15 +62,15 @@ const pascoTrashPickup = {
   },
   steps: [
     { title: "Snap a photo", text: "Send a picture or a quick list of the bulky items and overflow through the form, a call, or a text." },
-    { title: "Get your price", text: "We'll give you a firm number and pick a pickup time that works for you." },
+    { title: "Get your free quote", text: "We'll quote it upfront and pick a pickup time that works for you." },
     { title: "We clear it out", text: "Our crew loads the big stuff and the bags, then hauls it all away." },
   ],
   pricing: {
-    title: ["Simple Pricing for ", "Bulky Pickups"],
-    intro: "We price each pickup on what's actually there, and you'll know the number before we schedule.",
+    title: ["Simple Quotes for ", "Bulky Pickups"],
+    intro: "We quote each pickup on what's actually there. Send a photo for a free quote, and you'll know your price before we schedule.",
     factors: [
       { title: "Size of the pile", text: "How much space it takes in our trailer, from one recliner to a garage full." },
-      { title: "Type of items", text: "Mattresses, appliances, and heavy materials can cost more to dispose of than bags and boxes." },
+      { title: "Type of items", text: "Mattresses, appliances, and heavy materials take more to dispose of than bags and boxes." },
       { title: "Where we're picking up", text: "Curbside is quickest. Upstairs, backyard, or inside pickups take more time." },
     ],
   },
@@ -89,7 +91,7 @@ const pascoTrashPickup = {
     title: "Bulk Trash, Gone in One Trip",
     paragraphs: [
       "Across Pasco County, from older homes in Port Richey and Holiday to newer subdivisions in Wesley Chapel and Land O' Lakes, the same thing happens after a big cleanout. The bags get handled, but the couch, the mattress, and the broken patio set are still sitting there. Regular curbside service has limits on bulky items, so check with Pasco County on what it will take.",
-      "When the pile is too big, too awkward, or you just don't want to wait, Lupo's Pasco County trash pickup gets it all in one visit. Send a photo, get a firm price, and our crew loads everything from the curb, the garage, or the living room. The bags and the bulky pieces leave together, so nothing is left behind for next week.",
+      "When the pile is too big, too awkward, or you just don't want to wait, Lupo's Pasco County trash pickup gets it all in one visit. Send a photo, get a free quote, and our crew loads everything from the curb, the garage, or the living room. The bags and the bulky pieces leave together, so nothing is left behind for next week.",
       "We're a family business based in Holiday, serving Hudson, Zephyrhills, Dade City, Trinity, and Odessa too. We're not a weekly hauler. We're the one-time help you call when the trash outgrows the cans.",
     ],
   },
@@ -116,7 +118,7 @@ const pascoTrashPickup = {
     },
     {
       q: "What does bulk trash pickup cost?",
-      a: "It depends on how much there is, what it is, and where we're picking it up. Send a photo and we'll give you a firm price before scheduling.",
+      a: `It depends on how much there is, what it is, and where we're picking it up. Text a photo to ${siteConfig.phone} or request online, and we'll give you a free quote before scheduling.`,
     },
     {
       q: "Do I have to drag everything to the curb?",
@@ -127,7 +129,7 @@ const pascoTrashPickup = {
       a: "We cover Pasco County, including New Port Richey, Holiday, Hudson, Trinity, Odessa, Land O' Lakes, Wesley Chapel, Zephyrhills, and Dade City.",
     },
   ],
-  ctaText: "Send a photo of the bulky items and overflow and get a firm price. We carry it out and haul it all away.",
+  ctaText: "Send a photo of the bulky items and overflow and get a free quote. We carry it out and haul it all away.",
 };
 
 export default pascoTrashPickup;

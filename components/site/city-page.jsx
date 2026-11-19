@@ -6,17 +6,16 @@ import Seo from "@/components/Seo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { BookingCard } from "./booking-card";
 import { PageHero } from "./page-hero";
-import { container, CtaBand, GuideProof, IconChip, PlanSteps, PriceCards, StakesSection } from "./home-sections";
+import { container, CtaBand, GuideProof, IconChip, PlanSteps, SizeCards, StakesSection } from "./home-sections";
 import { FaqSection } from "./faq-section";
 import { Highlight, SectionHeading } from "./section-heading";
 import { Titled } from "./service-page";
 import { getNearbyLinks } from "@/lib/cities";
-import { getSize, lowestPrice, prohibitedItems, reviews, siteConfig, sizes } from "@/lib/site-config";
+import { getSize, prohibitedItems, reviews, siteConfig, sizes } from "@/lib/site-config";
 import { useBooking } from "@/lib/use-booking";
 import { cn } from "@/lib/utils";
 
 const NPR_SLUG = "new-port-richey-fl";
-const priceList = sizes.map((s) => `${s.shortName.replace(" yd", "-yard")} $${s.price}`).join(", ");
 
 export function cityMetaTitle(place) {
   for (const t of [
@@ -50,7 +49,7 @@ function sharedFaqs(place, county, permitPhone, localFaqs = []) {
   return [
     {
       q: `How much does a dumpster rental cost in ${place}?`,
-      a: `Lupo's flat rates in ${place} are ${priceList}. Every price includes delivery, pickup, and disposal up to the included weight limit.`,
+      a: `It depends on the size, how heavy the load is, and how long you need it. Call or text ${siteConfig.phone} or request a free quote online and we'll give you an upfront price for ${place} that includes delivery, pickup, and disposal up to the weight limit.`,
     },
     ...(hasDeliveryFaq
       ? []
@@ -88,13 +87,6 @@ function serviceSchema({ place, county, url, description, isCountyPage }) {
     areaServed: isCountyPage
       ? { "@type": "AdministrativeArea", name: `${place}, FL` }
       : { "@type": "City", name: `${place}, FL`, containedInPlace: { "@type": "AdministrativeArea", name: `${county}, FL` } },
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      lowPrice: Math.min(...sizes.map((s) => s.price)),
-      highPrice: Math.max(...sizes.map((s) => s.price)),
-      offerCount: sizes.length,
-    },
   };
 }
 
@@ -126,7 +118,7 @@ export default function CityPage({ city, content }) {
     { icon: Clock, label: "From our Holiday yard", value: content.driveTimeFromHQ },
     { icon: Building2, label: city.isCountyPage ? "Area" : "County", value: city.isCountyPage ? `${place}, FL` : county },
     { icon: MapPin, label: "ZIP codes", value: city.zipCodes?.slice(0, 6).join(", ") },
-    { icon: Ruler, label: "Flat prices from", value: `$${lowestPrice}` },
+    { icon: Ruler, label: "Sizes", value: sizes.map((s) => s.shortName.replace(" yd", "")).join(", ") + "-yard" },
   ].filter((f) => f.value);
 
   return (
@@ -198,7 +190,7 @@ export default function CityPage({ city, content }) {
       </section>
 
       <StakesSection />
-      <PriceCards onSelect={bookSize} />
+      <SizeCards onSelect={bookSize} />
 
       <section aria-labelledby="projects-title" className="bg-white py-20 lg:py-28">
         <div className={container}>
@@ -224,7 +216,7 @@ export default function CityPage({ city, content }) {
                       onClick={() => bookSize(s.id)}
                       className="mt-5 inline-flex items-center gap-1.5 self-start font-semibold text-brand-hover underline-offset-4 hover:underline"
                     >
-                      Usually a {s.shortName.replace(" yd", "-yard")} · ${s.price} <ArrowRight aria-hidden className="h-4 w-4" />
+                      Usually a {s.shortName.replace(" yd", "-yard")} · get a quote <ArrowRight aria-hidden className="h-4 w-4" />
                     </button>
                   )}
                 </article>
@@ -335,9 +327,9 @@ export default function CityPage({ city, content }) {
               ))}
             </ul>
             <p className="mt-6 text-zinc-700">
-              See every size and price on our{" "}
+              Compare every size and what&apos;s included on our{" "}
               <Link href="/dumpster-rental-pricing" className="font-semibold text-ink underline underline-offset-4 hover:text-brand-hover">
-                dumpster rental pricing
+                dumpster sizes and free quote
               </Link>{" "}
               page.
             </p>
@@ -396,7 +388,7 @@ export default function CityPage({ city, content }) {
             Ready for a Dumpster in <Highlight tone="dark">{place}?</Highlight>
           </>
         }
-        text={`Book online in under a minute, or call ${siteConfig.phone}. One flat price, delivered by a local team that shows up when we say we will.`}
+        text={`Request a free quote in under a minute, or call ${siteConfig.phone}. Upfront pricing, delivered by a local team that shows up when we say we will.`}
       />
     </>
   );

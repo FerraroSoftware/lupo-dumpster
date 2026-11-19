@@ -1,8 +1,6 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const hudson = {
   metaDescription:
-    `Dumpster rental in Hudson, FL for storm cleanups, roofs & cleanouts. 10, 15 & 20-yard dumpsters from $${lowestPrice} with delivery and disposal included.`,
+    "Dumpster rental in Hudson, FL for storm cleanups, roofs & cleanouts. 10, 15 & 20-yard dumpsters. Call or text for a free quote with disposal included.",
   keywords: [
     "dumpster rental Hudson FL",
     "Hudson dumpster rental",
@@ -12,7 +10,7 @@ const hudson = {
   ],
   h1Desire: "Bounce Back Faster",
   answer:
-    `Lupo provides dumpster rental in Hudson, FL for flood gut-outs, roof tear-offs, and whole-home cleanouts, from the canal streets near Hudson Beach to Beacon Woods and Sea Pines. Pick a 10, 15, or 20-yard dumpster at a flat price starting at $${lowestPrice}. We drive up US-19 from Holiday to reach northwest Pasco County.`,
+    "Lupo provides dumpster rental in Hudson, FL for flood gut-outs, roof tear-offs, and whole-home cleanouts, from the canal streets near Hudson Beach to Beacon Woods and Sea Pines. Pick a 10, 15, or 20-yard dumpster and get a free, no-obligation quote before we load the trailer. We drive up US-19 from Holiday to reach northwest Pasco County.",
   introTitle: ["Coastal Cleanups, ", "Done Right in Hudson"],
   localIntro: [
     "Hudson sits on the Gulf at the northwest corner of Pasco County, and the water shapes a lot of the work here. Low-lying canal homes near Hudson Beach take storm surge hard, and after a hurricane the curbs fill with soaked drywall, carpet, and furniture. A dumpster in the driveway lets you clear it out in days instead of waiting weeks on bulk pickup.",

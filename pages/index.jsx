@@ -8,7 +8,7 @@ import {
   CtaBand,
   GuideProof,
   PlanSteps,
-  PriceCards,
+  SizeCards,
   ServiceArea,
   SizeHelper,
   StakesSection,
@@ -20,7 +20,7 @@ import { reviews, siteConfig } from "@/lib/site-config";
 import { useBooking } from "@/lib/use-booking";
 
 const title = "Dumpster Rental in Pasco County, FL | Lupo Dumpster Rentals";
-const description = `Flat-rate 10, 15 & 20-yard dumpsters in Pasco County, often delivered same day. ${siteConfig.rating.value}★ from ${siteConfig.rating.countLabel} neighbors. Book online or call ${siteConfig.phone}.`;
+const description = `10, 15 & 20-yard dumpsters in Pasco County, often delivered same day. ${siteConfig.rating.value}★ from ${siteConfig.rating.countLabel} neighbors. Get a free quote: ${siteConfig.phone}.`;
 
 export default function Home() {
   const { selectedSize, setSelectedSize, scrollToBooking, bookSize } = useBooking();
@@ -44,7 +44,7 @@ export default function Home() {
         <ValueProps />
         <GuideProof />
         <PlanSteps onBook={scrollToBooking} />
-        <PriceCards onSelect={bookSize} />
+        <SizeCards onSelect={bookSize} />
         <SizeHelper project={project} onProject={setProject} onSelect={bookSize} />
         <AudienceCards />
         <StoryParagraph />

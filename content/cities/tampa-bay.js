@@ -1,9 +1,7 @@
-import { lowestPrice } from "@/lib/site-config";
-
 const tampaBay = {
   metaTitle: "Dumpster Rental in the Tampa Bay Area | Lupo Dumpster",
   metaDescription:
-    `Tampa Bay area dumpster rental on the north side of the bay: Pinellas, Hernando, and North Hillsborough. Flat rates from $${lowestPrice}, disposal included.`,
+    "Tampa Bay area dumpster rental on the north side of the bay: Pinellas, Hernando, and North Hillsborough. Free quotes with disposal included.",
   keywords: [
     "dumpster rental Tampa Bay",
     "Tampa Bay dumpster rental",
@@ -13,7 +11,7 @@ const tampaBay = {
   eyebrow: "Dumpster rental · North Tampa Bay",
   h1Desire: "Start in the Right County",
   answer:
-    `Lupo rents 10, 15, and 20-yard dumpsters across the northern Tampa Bay area, FL, covering Pinellas, Hernando, and North Hillsborough County along with our home base in Pasco, from $${lowestPrice} flat. We're strongest close to Holiday and thinner the farther south you go, so start with your county page.`,
+    "Lupo rents 10, 15, and 20-yard dumpsters across the northern Tampa Bay area, FL, covering Pinellas, Hernando, and North Hillsborough County along with our home base in Pasco, with a free quote for every job. We're strongest close to Holiday and thinner the farther south you go, so start with your county page.",
   introTitle: ["Find Your County, ", "Then Your Town"],
   localIntro: [
     "Tampa Bay covers a lot of ground, and no small hauler serves every corner of it the same way. We're a family business in Holiday, on the Pasco and Pinellas line. That puts north Pinellas, west Pasco, southern Hernando, and the northwest edge of Hillsborough within easy reach. Downtown Tampa, South Tampa, Brandon, and the Manatee side are another story.",
@@ -29,7 +27,7 @@ const tampaBay = {
     },
     {
       title: "Contractor jobs that cross county lines",
-      text: "Remodelers working in more than one county can book the same flat sizes everywhere we run, from Spring Hill to Westchase.",
+      text: "Remodelers working in more than one county can book the same three sizes everywhere we run, from Spring Hill to Westchase.",
       size: "15",
     },
     {
@@ -56,7 +54,7 @@ const tampaBay = {
     },
     {
       q: "Which page should I use to book?",
-      a: "Any of them. The booking form and prices are the same everywhere. The county and city pages just add local details like permits and drive time.",
+      a: "Any of them. The booking form and free quote request are the same everywhere. The county and city pages just add local details like permits and drive time.",
     },
   ],
   image: "/tampa.webp",
@@ -70,7 +68,7 @@ const tampaBay = {
     "Registry countyPermitPhone for tampa-bay is (727) 847-8032 (Pasco); the shared FAQ will render it as the 'Tampa Bay Area' permit number, which is misleading",
     "Pinellas disposal complex address 3095 114th Ave N; Hernando Northwest facility; Hays Road facility (from brief)",
     "Brooksville, Clearwater, Dunedin, St. Petersburg as incorporated cities handling street placement",
-    "Same flat prices in every county (FAQ answer)",
+    "Same booking form and quote process in every county (FAQ answer)",
     "Snowbird/second-home cleanouts as a real Lupo job type",
   ],
 };
